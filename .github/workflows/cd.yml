@@ -1,0 +1,112 @@
+name: cd
+
+on:
+  push:
+    branches: main
+  workflow_dispatch:
+
+concurrency:
+  group: publish
+  cancel-in-progress: true
+
+# WARNING WARNING
+# we do --size-only because there is no other easy strategy to ensure that
+# we are not invalidating cloudfront for files that have not changed
+# this is risky for `/index.html` for which we should go the extra mile
+# and do a content hash check
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    name: www.pkgx.${{ matrix.cfg.tld }}
+    strategy:
+      matrix:
+        cfg:
+        - tld: dev
+          cfid: E15VQ3SI584CSG
+        - tld: sh
+          cfid: E8ZRC36XS5K65
+        - tld: app
+          cfid: EFLDW0FN49Z5Z
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.WWW_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+
+      - run: npm ci
+      - run: npm run build
+        env:
+          VITE_PKGX_TLD: ${{ matrix.cfg.tld }}
+          NODE_ENV: production
+
+      - name: determine paths to invalidate
+        id: invalidate
+        run: |
+          aws s3 \
+              sync dist s3://www.pkgx.${{ matrix.cfg.tld }} \
+              --size-only \
+              --dryrun | \
+            awk '{print $3}' | \
+            sed 's/^dist//' > paths-to-invalidate.txt
+
+          if [ -s paths-to-invalidate.txt ]; then
+            echo "status=proceed" >> $GITHUB_OUTPUT
+          fi
+
+      - name: sync immutable assets
+        run: aws s3 sync
+          dist/assets
+          s3://www.pkgx.${{ matrix.cfg.tld }}/assets
+          --metadata-directive REPLACE
+          --cache-control max-age=31536000,immutable
+          --size-only
+
+      - name: sync mutable, cachable assets
+        run: aws s3
+          sync dist/ s3://www.pkgx.${{ matrix.cfg.tld }}
+          --exclude assets
+          --exclude index.html
+          --metadata-directive REPLACE
+          --cache-control max-age=86400
+          --size-only
+
+      - name: sync index.html
+        run: |
+          aws s3 cp s3://www.pkgx.${{ matrix.cfg.tld }}/index.html ./index.html.remote
+          local_hash=$(shasum dist/index.html | awk '{print $1}')
+          remote_hash=$(shasum index.html.remote | awk '{print $1}')
+          if [ "$local_hash" != "$remote_hash" ]; then
+            aws s3 cp dist/index.html s3://www.pkgx.${{ matrix.cfg.tld }}/index.html \
+              --metadata-directive REPLACE \
+              --cache-control no-cache,must-revalidate
+            echo /index.html >> paths-to-invalidate.txt
+          fi
+
+      - name: invalidate
+        if: ${{ steps.invalidate.outputs.status == 'proceed' }}
+        run:
+          aws cloudfront
+            create-invalidation
+            --distribution-id ${{ matrix.cfg.cfid }}
+            --paths $(cat paths-to-invalidate.txt)
+
+  blog:
+    name: blog.pkgx.dev
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: blog
+    steps:
+      - uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.WWW_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+      - uses: actions/checkout@v4
+      - uses: teaxyz/setup@v1
+      - run: tea hugo
+      - run: tea hugo deploy
