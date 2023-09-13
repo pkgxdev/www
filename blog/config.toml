@@ -1,0 +1,52 @@
+baseURL = 'https://blog.pkgx.dev/'
+languageCode = 'en-us'
+title = 'cd pkgx; ls'
+theme ="basic"
+googleAnalytics = "UA-XXXXXXXXX-X"
+enableEmoji = true
+copyright = "© 2023 pkgx inc."
+description = "pkgx — Run Anything"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[params]
+  titleEmoji = ":tada:"
+  # change this!
+  twitter = "siegerts"
+
+[Permalinks]
+  post = "post/:slug"
+
+[[params.menu]]
+  name = "blog"
+  url = "post/"
+
+[[params.menu]]
+  name = "post series"
+  url = "series/"
+
+
+[[params.menu]]
+  name = "about"
+  url = "about/"
+
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[deployment]
+
+[[deployment.targets]]
+name = "iota"
+URL = "s3://blog.pkgx.dev?region=us-east-1"
+cloudFrontDistributionID = "E3D6KVP4WEGT7K"
