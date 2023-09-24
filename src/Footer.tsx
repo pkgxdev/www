@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
-import { Link, LinkProps, Typography, useTheme, useMediaQuery } from "@mui/material"
-import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-import logo from "./assets/pkgx.svg"
+import { Link, LinkProps, Typography, useTheme, useMediaQuery } from "@mui/material";
+import ArrowOutwardIcon from '@mui/icons-material/CallMade';
+import logo from "./assets/pkgx.svg";
 
 
 export default function Footer() {
@@ -24,7 +24,9 @@ export default function Footer() {
     ©{year} PKGX INC. All Rights Reserved
   </Typography>;
 
-  return <Grid container spacing={2} columns={isxs ? 12 : 11}>
+  const icon = <ArrowOutwardIcon fontSize="inherit" style={{transform: 'translateY(3px)'}} />
+
+  return <Grid container spacing={2} columns={isxs ? 12 : 11} width='100%'>
            <Grid xs={12} md={5}>
              <img src={logo} height={18} />
              {!isxs && c}
@@ -49,7 +51,7 @@ export default function Footer() {
                <Li><Link href='https://pkgx.dev/privacy-policy' {...link_props}>Privacy Policy</Link></Li>
                <Li><Link href='https://pkgx.dev/terms-of-use' {...link_props}>Terms of Use</Link></Li>
                <Li><Link href='https://blog.pkgx.dev' {...link_props}>Blog</Link></Li>
-               <Li><Link href='mailto:hi@pkgx.dev' {...link_props}>Contact <ArrowOutwardIcon fontSize="inherit"/></Link></Li>
+               <Li><Link href='mailto:hi@pkgx.dev' {...link_props}>Contact{icon}</Link></Li>
              </ul>
            </Grid>
            <Grid xs={4} md={2}>
@@ -57,8 +59,9 @@ export default function Footer() {
                Community
              </Typography>
              <ul style={ul_style}>
-               <Li><Link href='https://github.com/pkgXdev' {...link_props}>GitHub</Link></Li>
-               <Li><Link href='https://x.com/pkgxdev' {...link_props}>𝕏</Link></Li>
+               <Li><Link href='https://github.com/pkgXdev' {...link_props}>GitHub{icon}</Link></Li>
+               <Li><Link href='https://x.com/pkgxdev' {...link_props}>𝕏{icon}</Link></Li>
+               <Li><Link href='https://www.irccloud.com/irc/libera.chat/channel/pkgx' {...link_props}>irc:#pkgx{icon}</Link></Li>
              </ul>
            </Grid>
            {isxs && <Grid xs={12}>

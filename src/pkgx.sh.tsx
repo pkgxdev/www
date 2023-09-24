@@ -42,6 +42,7 @@ function MyMasthead() {
 
   return <Masthead>
     <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>
+    <Button href='https://www.irccloud.com/irc/libera.chat/channel/pkgx' color='inherit'>irc</Button>
     <Stack spacing={0} direction='row' alignItems='center'>
       <IconButton href='https://github.com/pkgXdev/cli'>
         <Box component='img' src={github}/>
