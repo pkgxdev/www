@@ -44,10 +44,6 @@ export function RunAnything() {
       <Dim># …</Dim>
     </Terminal>
 
-    <Typography variant="h5" color='text.secondary' textAlign='center' px={isxs ? 1 : 11} sx={{"&&": { mb: 2 }}}>
-      Max Howell the mind behind Homebrew, wants to shake up the foundation of dev once again with <code>pkgx</code>.
-    </Typography>
-
     <div>{/* required to work around https://github.com/mui/material-ui/issues/29221 */}
       <Grid container spacing={2}>
         <Grid xs={12} md={6}>
@@ -122,6 +118,15 @@ export function RunAnything() {
       </Button>
     </Typography>
   </Stack>
+}
+
+export function Quote() {
+  const theme = useTheme();
+  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+
+  return <Typography variant="h5" color='text.secondary' textAlign='center' px={isxs ? 1 : 11} sx={{"&&": { mt: 16 }}}>
+    “Max Howell, the mind behind Homebrew, is shaking up the foundation of development once again with his new creation, <code>pkgx</code>”
+  </Typography>
 }
 
 export function RunAnywhere() {
@@ -285,7 +290,7 @@ export function Dev() {
       </H3>
 
       <Typography variant="h5" color='text.secondary' textAlign='center'>
-        The tools you need for work. Where and when you need them.
+        The tools you need for work, where and when you need them.
       </Typography>
     </Stack>
 
@@ -313,6 +318,9 @@ export function Dev() {
         </ImageListItem>
       ))}
     </ImageList>
+    <Typography variant='subtitle1' textAlign='right' sx={{"&&": {mt: 4}}}>
+      All the tools you need for work? Check.
+    </Typography>
 
     <div>{/* required to work around https://github.com/mui/material-ui/issues/29221 */}
       <Grid container spacing={2}>

@@ -1,6 +1,6 @@
 import { ThemeProvider, useTheme } from '@mui/material/styles';
-import { Box, Button, Container, CssBaseline, IconButton, Stack, Typography, useMediaQuery } from '@mui/material';
-import { RunAnything, RunAnywhere, Dev, Trusted } from "./Landing";
+import { Box, Button, CssBaseline, IconButton, Stack, Typography, useMediaQuery } from '@mui/material';
+import { RunAnything, RunAnywhere, Dev, Trusted, Quote } from "./Landing";
 import React, { useEffect, useState } from "react";
 import github from "./assets/wordmarks/github.svg";
 import * as ReactDOM from 'react-dom/client';
@@ -19,6 +19,7 @@ function Body() {
       <MyMasthead />
       <Hero />
       <RunAnything />
+      <Quote />
       <RunAnywhere />
       <Dev />
       <Trusted />

@@ -18,16 +18,10 @@ export default function Hero() {
     setOpen(true)
   };
 
-  const byline_props: TypographyProps = isxs ? {mt: 2} : {ml: 1.5, mt: -1.5, mb: -1, textAlign: 'left'}
-
   return <Container><Stack spacing={6} width={isxs ? undefined : 570} textAlign='center' mx='auto'>
     <HeroTypography>
       Run Anything
     </HeroTypography>
-
-    {/* <Typography variant='h2' fontSize={13} fontWeight='bold' {...byline_props} sx={{textTransform: 'uppercase', letterSpacing: 2}} color='text.secondary'>
-      From the creator of <code>brew</code>
-    </Typography> */}
 
     <Typography variant="h5" px={1} sx={{"&&": {mt: 4}}}>
       <code>pkgx</code> is a blazingly fast, standalone, cross‐platform binary that <i>runs anything</i>
