@@ -44,7 +44,7 @@ jobs:
           NODE_ENV: production
 
       - name: determine paths to invalidate
-        id: count
+        id: invalidate
         run: |
           aws s3 \
               sync dist s3://www.pkgx.${{ matrix.cfg.tld }} \
@@ -53,8 +53,9 @@ jobs:
             awk '{print $3}' | \
             sed 's/^dist//' > paths-to-invalidate.txt
 
-      - name: print paths to invalidate
-        run: cat paths-to-invalidate.txt
+          if [ -s paths-to-invalidate.txt ]; then
+            echo "status=proceed" >> $GITHUB_OUTPUT
+          fi
 
       - name: sync immutable assets
         run: aws s3 sync
@@ -86,13 +87,12 @@ jobs:
           fi
 
       - name: invalidate
+        if: ${{ steps.invalidate.outputs.status == 'proceed' }}
         run:
-          if [ -s paths-to-invalidate.txt ]; then
-            aws cloudfront
-              create-invalidation
-              --distribution-id ${{ matrix.cfg.cfid }}
-              --paths $(cat paths-to-invalidate.txt);
-          fi
+          aws cloudfront
+            create-invalidation
+            --distribution-id ${{ matrix.cfg.cfid }}
+            --paths $(cat paths-to-invalidate.txt)
 
   blog:
     name: blog.pkgx.dev
