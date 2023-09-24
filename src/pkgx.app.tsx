@@ -31,10 +31,9 @@ function Body() {
 
     <Stack spacing={4} textAlign='center'>
       <HeroTypography>
-        The Open Source App Store
+      Open Source is a Treasure Trove
       </HeroTypography>
       <Typography variant="h5" my={1}>
-        Open source is a treasure trove.<br/>
         What jewel will you discover today?
       </Typography>
     </Stack>
