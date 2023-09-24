@@ -35,7 +35,7 @@ function Body() {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
-  return <Stack direction="column" maxWidth='md' sx={{p: 2, minHeight: '100vh'}} mx='auto' spacing={4} alignItems='center'>
+  return <Stack direction="column" width={isxs ? undefined : 'min-content'} maxWidth='md' sx={{p: 2, minHeight: '100vh'}} mx='auto' spacing={4} alignItems='center'>
 
       <Box flexGrow={1} />
 
@@ -46,7 +46,7 @@ function Body() {
         </Typography>
       </Stack>
 
-      <Box display='inline-block'>
+      <Box display='inline-block' width='max-content'>
         <Grid container spacing={2} textAlign='center'>
           <Grid item xs={12} md={6}>
             <ButtonBase href='https://pkgx.sh'>
