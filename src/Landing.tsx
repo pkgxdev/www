@@ -1,5 +1,5 @@
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
-import { Box, Button, Card, CardContent, ImageList, ImageListItem, Stack, Typography, TypographyProps, styled, useMediaQuery, useTheme } from "@mui/material"
+import { Alert, Box, Button, Card, CardContent, ImageList, ImageListItem, Stack, Typography, TypographyProps, styled, useMediaQuery, useTheme } from "@mui/material"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import React from "react"
 
@@ -27,16 +27,10 @@ export function RunAnything() {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
-  const footnote_props: TypographyProps = isxs ? {textAlign: "center"} : { pr: 1, align: "right", sx: {"&&": { mb: 2, mt: 1 }}}
-
-  return <Stack spacing={2}>
-    <H3>
-      Quit “managing packages” {isxs && <br />}<Typography display='inline' variant='h3' fontSize='inherit' color='primary' fontWeight='bold' component='span'>Just Run</Typography>
+  return <Stack spacing={3}>
+    <H3 sx={{"&&": { mb: 3}}}>
+      What’s better than a package manager? {isxs && <br />}<Typography display='inline' variant='h3' fontSize='inherit' color='primary' fontWeight='bold' component='span'>No package manager</Typography>
     </H3>
-
-    <Typography variant="h5" color='text.secondary' textAlign='center' px={isxs ? 1 : 11} sx={{"&&": { mb: 2 }}}>
-      Say goodbye to package managers. Say hello to just typing what you need and getting it. Super fast.
-    </Typography>
 
     <Terminal>
       <Prompt/> bun<br/>
@@ -50,8 +44,8 @@ export function RunAnything() {
       <Dim># …</Dim>
     </Terminal>
 
-    <Typography color='rgba(255,255,255,0.65)' {...footnote_props}>
-      Eliminate installphobia. <i>Just Run</i>.
+    <Typography variant="h5" color='text.secondary' textAlign='center' px={isxs ? 1 : 11} sx={{"&&": { mb: 2 }}}>
+      Max Howell the mind behind Homebrew, wants to shake up the foundation of dev once again with <code>pkgx</code>.
     </Typography>
 
     <div>{/* required to work around https://github.com/mui/material-ui/issues/29221 */}
@@ -79,15 +73,16 @@ export function RunAnything() {
                 Zero System Impact
               </Typography>
               <Typography my={1.5} color="text.secondary">
-                We don’t install packages, <i>we cache them</i>.
+                We don’t install packages. <i>We cache them</i>.
                 Just like <code>npx</code> caches node packages, <code>pkgx</code> caches everything else (including <code>npx</code>).
               </Typography>
 
               <Terminal width='100%' mb={0} mt={2}>
                 <Prompt/> <Orange>pkgx</Orange> rustc --version<br/>
-                rustc 1.72.1<br/>
+                rustc 1.72.1<br/><br/>
                 <Prompt /> which rustc<br />
-                command not found: rustc
+                command not found: rustc<br />
+                <Dim># ^^ not installed!</Dim>
               </Terminal>
             </CardContent>
           </Card>
@@ -105,13 +100,16 @@ export function RunAnything() {
                 When our investors ask why this is cool we just shrug and say “do you even dev?”.
               </Typography>
 
-              <Terminal width='100%' mb={0} mt={2}>
+              <Terminal width='100%' mb={2} mt={2}>
                 <Prompt/> deno<br/>
                 command not found: deno<br/>
                 <Prompt/> <Orange>pkgx</Orange> +deno^1.35<br/>
                 <Prompt/> deno --version<br/>
                 deno 1.36.1<br/>
               </Terminal>
+              <Alert severity="info">
+                <code>deno’s</code> not installed, <code>pkgx</code> just added it to your shell session. It’ll be gone when you <code>exit</code> 🥹
+              </Alert>
             </CardContent>
           </Card>
         </Grid>
