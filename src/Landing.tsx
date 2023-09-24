@@ -226,7 +226,7 @@ export function RunAnywhere() {
                 Editors
               </Typography>
               <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                Just works in VSCode? nps.
+                Just Works™ in VSCode? nps.
               </Typography>
               <Typography align='right'>
                 <Button sx={{mt: 2}} size='small' color='inherit' href='https://docs.pkgx.sh/run-anywhere/editors' endIcon={<ArrowForwardIcon />}>
@@ -379,12 +379,9 @@ export function Trusted() {
       Trusted by <Typography fontWeight='bold' component='span' display='inline' variant='h3' color='primary'>10k</Typography> Engineers
     </H3>
 
-    <Typography variant="h5" color='text.secondary' textAlign='center' sx={{"&&": {my: 1}}} >
-      And built by them too.
-    </Typography>
-
-    <Typography variant="h6" color='text.secondary' textAlign='center' sx={{"&&": {mt: 0, mb: 6}}}>
-      <code>pkgx</code> is open source. Through and through.
+    <Typography variant="h5" color='text.secondary' textAlign='center' sx={{"&&": {mt: 1, mb: 4}}} >
+      And built by them too.<br/>
+      <code>pkgx</code> is open source <Typography fontWeight='inherit' component='span' color='text.primary' fontSize='inherit'>through and through</Typography>.
     </Typography>
 
     <Grid container spacing={2}>

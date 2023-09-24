@@ -33,7 +33,7 @@ html, body {
 }
 
 .text-gradient, .text-gradient-white {
-  background: linear-gradient(to right, #444FE2, #F26412, white);
+  background: linear-gradient(to right, #4156E1 0%, #F26412 75%, #EDF2EF 130%);
   background-clip: text;
   color: transparent;
   font-size: 48px;
