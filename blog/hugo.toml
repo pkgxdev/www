@@ -49,4 +49,4 @@ description = "pkgx — Run Anything"
 [[deployment.targets]]
 name = "iota"
 URL = "s3://blog.pkgx.dev?region=us-east-1"
-cloudFrontDistributionID = "EKCIM3MXUPH33"
+cloudFrontDistributionID = "E3D6KVP4WEGT7K"

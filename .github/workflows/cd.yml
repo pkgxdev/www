@@ -23,11 +23,11 @@ jobs:
       matrix:
         cfg:
         - tld: dev
-          cfid: EB41KDGQIHT7U
+          cfid: E15VQ3SI584CSG
         - tld: sh
-          cfid: E23FFD3ZXG4J1O
+          cfid: E8ZRC36XS5K65
         - tld: app
-          cfid: EWW9Y26JBYNRP
+          cfid: EFLDW0FN49Z5Z
     steps:
       - uses: actions/checkout@v4
 
