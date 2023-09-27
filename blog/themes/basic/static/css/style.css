@@ -2,13 +2,24 @@ body {
   -webkit-font-smoothings: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background-color: #0D1117;
+  color: #EDF2EF;
+}
+
+a {
+  color: #EDF2EF !important;
+  text-decoration: none; /* Ensuring the card link does not have underline */
+}
+
+a:hover {
+  color: #4156E1 !important;
 }
 
 code {
   padding: 2px 4px;
   font-size: 90%;
-  background-color: #eeeeee;
-  /* border-radius: 4px; */
+  background-color: #0D1117 !important;
+  color: #EDF2EF !important;
 }
 
 pre {
@@ -19,12 +30,121 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   border: 1px solid #ccc;
-  /* border-radius: 4px; */
 }
 
-pre,
-code {
+pre, code {
   font-family: monocode, monospace;
   -webkit-font-smoothings: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0; /* This border color can be changed to match your theme */
+  overflow: hidden;
+  padding: 15px;
+  background-color: #0D1117; /* Given your background color */
+  color: inherit; /* Ensures that the text color is consistent */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-content a {
+  display: block;
+  margin-bottom: 10px;
+  color: #EDF2EF; /* Making sure the link inside the card-content follows the color scheme */
+}
+
+.card-content a:hover {
+  color: #4156E1; /* Matching your hover color scheme */
+}
+
+.card-content span {
+  display: block;
+}
+
+/* Existing CSS styles... */
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content {
+  flex: 3; /* Adjusts the width of the main content */
+  margin-right: 20px; /* Spacing between main content and sidebar */
+}
+
+.sidebar {
+  flex: 1; /* Adjusts the width of the sidebar */
+  height: 100vh; /* Makes it full height */
+  position: fixed; /* Makes it fixed */
+  right: 0; /* Positions it to the right */
+  top: 0; /* Positions it to the top */
+  border-left: 1px solid #e0e0e0; /* Border on the left side only */
+  padding: 15px; /* Spacing inside the sidebar */
+  background-color: #0D1117; /* Background color to match the site's theme */
+  overflow-y: auto; /* Allows scrolling within the sidebar if the content overflows */
+}
+
+.sidebar h3 {
+  color: #EDF2EF; /* Title color to match the site's theme */
+  border-bottom: 1px solid #e0e0e0; /* Separator line */
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar a {
+  color: #EDF2EF; /* Link color to match the site's theme */
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #4156E1; /* Link hover color to match the site's theme */
+}
+
+/* Tablet: 2 column grid */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column grid and hide sidebar */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sidebar {
+    display: none;
+  }
 }

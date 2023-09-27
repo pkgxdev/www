@@ -9,34 +9,22 @@
     class="b bw1 bb pb1 no-underline black"
     >{{ .Site.Title  }}</a
   >
-  <span class="b"> / </span>
-  <a href="/categories" class="b bw1 bb pb1 no-underline black">categories</a>
-  <span class="b"> / </span>
-  <!-- prettier-ignore -->
-  <span class="b pb1 no-underline black">{{ .Title | lower }}</span>
-
-  <section id="main" class="mt5">
-    <div>
-      <ul id="list" class="pl0">
-        <!-- prettier-ignore -->
-        {{ range .Data.Pages.ByDate.Reverse }}
-        <li class="list pl0 lh-copy">
-          <a
-            class="f3 b dib black no-underline"
-            href="{{ .Permalink}}"
-            >{{ .Title }}</a
-          >
-          <span
-            class="f6 gray db dib-ns"
-            >{{ .Date.Format "January 2, 2006" }}</span
-          >
-        </li>
-        <!-- prettier-ignore -->
+  <section id="main" class="mt5 grid-container">
+    <!-- prettier-ignore -->
+    {{ range .Data.Pages.ByDate.Reverse }}
+    <a href="{{ .Permalink }}" class="card no-underline">
+        {{ with .Params.featured_image }}
+        <img src="{{ . }}" alt="{{ $.Title }}" class="card-img">
         {{ end }}
-      </ul>
-    </div>
+        <div class="card-content">
+            <span class="f3 b dib black">{{ .Title }}</span>
+            <span class="f6 gray db">{{ .Date.Format "January 2, 2006" }}</span>
+        </div>
+    </a>
+    <!-- prettier-ignore -->
+    {{ end }}
   </section>
 
   {{ partial "footer.html" . }}
-  </body>
+</body>
 </html>
