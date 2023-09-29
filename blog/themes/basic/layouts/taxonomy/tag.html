@@ -12,31 +12,56 @@
   <span class="b"> / </span>
   <a href="/tags" class="b bw1 bb pb1 no-underline black">tags</a>
   <span class="b"> / </span>
-  <!-- prettier-ignore -->
   <span class="b pb1 no-underline black">{{ .Title | lower }}</span>
 
-  <section id="main" class="mt5">
-    <div>
-      <ul id="list" class="pl0">
-        <!-- prettier-ignore -->
-        {{ range .Data.Pages.ByDate.Reverse }}
-        <li class="list pl0 lh-copy">
-          <a
-            class="f3 b dib black no-underline"
-            href="{{ .Permalink}}"
-            >{{ .Title }}</a
-          >
-          <span
-            class="f6 gray db dib-ns"
-            >{{ .Date.Format "January 2, 2006" }}</span
-          >
-        </li>
-        <!-- prettier-ignore -->
+  <div class="content-container">
+    <section id="main" class="main-content mt5 grid-container">
+      <!-- prettier-ignore -->
+      {{ range .Data.Pages.ByDate.Reverse }}
+      <a href="{{ .Permalink }}" class="card no-underline">
+          {{ with .Params.featured_image }}
+          <img src="{{ . }}" alt="{{ $.Title }}" class="card-img">
+          {{ end }}
+          <div class="card-content">
+              <span class="f3 b dib">{{ .Title }}</span>
+              <span class="f6 gray db">{{ .Date.Format "January 2, 2006" }}</span>
+          </div>
+      </a>
+      <!-- prettier-ignore -->
+      {{ end }}
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <section class="recent-posts">
+        <h3>Recent Posts</h3>
+        <ul>
+        {{ range first 5 .Data.Pages.ByDate.Reverse }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
-      </ul>
-    </div>
-  </section>
+        </ul>
+      </section>
+
+      <section class="categories">
+        <h3>Categories</h3>
+        <ul>
+        {{ range .Site.Taxonomies.categories }}
+          <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+        </ul>
+      </section>
+
+      <section class="tags">
+        <h3>Tags</h3>
+        <ul>
+        {{ range .Site.Taxonomies.tags }}
+          <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+        </ul>
+      </section>
+    </aside>
+  </div>
 
   {{ partial "footer.html" . }}
-  </body>
+</body>
 </html>

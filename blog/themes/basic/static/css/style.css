@@ -16,6 +16,16 @@ a:hover {
   color: #4156E1 !important;
 }
 
+/* Styling for links in the breadcrumbs */
+a.b {
+    color: white;
+}
+
+/* Styling for the current breadcrumb */
+span.b.pb1.no-underline.black {
+    color: white;
+}
+
 code {
   padding: 2px 4px;
   font-size: 90%;
