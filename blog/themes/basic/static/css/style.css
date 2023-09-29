@@ -56,12 +56,15 @@ pre, code {
   background-color: #0D1117;
   color: inherit;
   transition: transform 0.3s, box-shadow 0.3s;
+  padding: 0;
 }
 
+/*
 .card:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+*/
 
 .card-img {
   width: 100%;
@@ -71,12 +74,14 @@ pre, code {
 
 .card-content {
   flex: 1;
+  padding: 15px; /* Add padding */
 }
 
 .card-content a {
   display: block;
   margin-bottom: 10px;
   color: #EDF2EF;
+  flex: 1;
 }
 
 .card-content a:hover {
@@ -102,8 +107,11 @@ pre, code {
 
 .sidebar {
   flex: 1;
-  border-left: 1px solid #e0e0e0; /* Border on the left side */
+  /*
+  border-left: 1px solid #e0e0e0;
+  */
   padding: 15px;
+  padding-top: 0px !important;
   background-color: #0D1117;
   height: 100%; /* Ensure the sidebar takes up full height of its parent */
   overflow-y: auto; /* Allows scrolling within the sidebar if content overflows */
