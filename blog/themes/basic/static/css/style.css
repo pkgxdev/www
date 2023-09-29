@@ -98,6 +98,7 @@ pre, code {
   margin: 0 auto;
   height: 100vh; /* Set to full viewport height */
   overflow: hidden; /* Prevent any unintended overflow */
+  align-items: flex-start; /* Add this line */
 }
 
 .main-content {
