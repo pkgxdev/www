@@ -3,7 +3,7 @@ title: "dev.diary—tea is env++"
 date: 2023-01-31
 categories: [dev.diaries, programming]
 draft: false
-featured_image: "/Images/blog/tea-is-env.jpg"
+featured_image: "/img/tea-is-env.jpg"
 ---
 A few aspects of the shape of tea’s CLI have been bothering me.
 

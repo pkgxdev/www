@@ -4,7 +4,7 @@ date: 2023-01-23
 categories: [dev.diaries, open-source]
 tags: [open-source, homebrew, programming]
 draft: false
-featured_image: "/img/tea-release-cover-image.jpg"
+featured_image: "/img/finding-the-fun.jpg"
 ---
 When building any kind of product it takes a little time before you figure out its shape. Famous games developer Sid Meier described this process as “finding the fun”. He would iterate compulsively on his ideas until those little changes in the little details would uncover something sufficiently new and engaging that he had the basis for a new game.
 

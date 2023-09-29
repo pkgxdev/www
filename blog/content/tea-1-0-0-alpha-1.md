@@ -5,7 +5,7 @@ date: 2023-09-11
 categories: [open-source, web3]
 tags: [web3 for open-source]
 draft: false
-featured_image: "/Images/blog/tea-release-cover-image.jpg"
+featured_image: "/img/tea-release-cover-image.jpg"
 ---
 ![Featured Image](/img/tea-release-cover-image.jpg)
 
