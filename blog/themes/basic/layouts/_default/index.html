@@ -1,9 +1,9 @@
 {{ partial "header.html" . }}
 <body
   lang="{{ .Site.LanguageCode }}"
-  class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
+  class="sans-serif mw9 center center-ns pa5-ns pa3"
 >
-  <span class="b">/ </span>
+  <span class="b">❯ </span>
   <a
     href="{{ .Site.BaseURL  }}"
     class="b bw1 bb pb1 no-underline black"
@@ -11,7 +11,7 @@
   >
 
   <div class="content-container">
-    <section id="main" class="main-content mt5">
+    <section id="main" class="main-content mt4">
       <div class="grid-container">
         <!-- prettier-ignore -->
         {{ range .Data.Pages.ByDate.Reverse }}
