@@ -104,9 +104,8 @@ pre, code {
 
 .content-container {
   display: flex;
-  max-width: 1200px;
   margin: 0 auto;
-  height: 100vh; /* Set to full viewport height */
+  min-height: 100vh; /* Set to full viewport height */
   overflow: hidden; /* Prevent any unintended overflow */
   align-items: flex-start; /* Add this line */
 }
@@ -151,17 +150,19 @@ pre, code {
   color: #4156E1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 850px) {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
 
+@media (max-width: 480px) {
   .sidebar {
     display: none;
   }
