@@ -9,6 +9,7 @@ import Masthead from "./Masthead";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import './main.css';
+import CoreContributor from './components/CoreContributor';
 
 function Body() {
   const theme = useTheme();
@@ -23,6 +24,7 @@ function Body() {
       <RunAnywhere />
       <Dev />
       <Trusted />
+      <CoreContributor />
       <Footer />
     </Stack>
   )

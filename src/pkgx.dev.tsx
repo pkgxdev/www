@@ -1,11 +1,10 @@
 import { ThemeProvider } from '@mui/material/styles';
-import { useTheme, CssBaseline, Box, Grid, Button, Stack, Typography, Paper, ButtonBase, useMediaQuery, Link } from '@mui/material';
+import { useTheme, CssBaseline, Box, Grid, Stack, Typography, Paper, ButtonBase, useMediaQuery, Link } from '@mui/material';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import CoreContributor from './components/CoreContributor';
 import pkgxsh_txt from "./assets/pkgxsh.text.svg";
 import ossapp_txt from "./assets/ossapp.text.svg";
 import * as ReactDOM from 'react-dom/client';
-import tea from "./assets/wordmarks/tea.svg";
 import logo from "./assets/pkgx.purple.svg";
 import PrivacyPolicy from './PrivacyPolicy';
 import pkgxsh from "./assets/pkgxsh.svg";
@@ -78,18 +77,10 @@ function Body() {
       </Box>
 
       <Stack direction={isxs ? 'column' : 'row'} spacing={isxs ? 2 : 4} alignItems='center'>
-        <Typography>Be the first to hear what’s going down at our <Link color='secondary' underline='hover' href="https://blog.pkgx.dev">blog</Link></Typography>
+        <Typography>Be the first to hear what’s going down at our <Link color='inherit' underline='always' style={{textDecoration: 'underline'}} href="https://blog.pkgx.dev">blog</Link></Typography>
       </Stack>
 
-      <Stack direction={isxs ? 'column' : 'row'} spacing={isxs ? 2: 3} alignItems='center' sx={{"&&": {mt: 16}}}>
-        <Box component='img' src={tea} height='20px' />
-        <Typography>
-          pkgx is a core contributor to the tea protocol
-        </Typography>
-        <Button variant='outlined' color='inherit' href='https://tea.xyz' size='small' endIcon={<ArrowForwardIcon />}>
-          Learn More
-        </Button>
-      </Stack>
+      <CoreContributor />
 
       <Box flexGrow={1} />
 
