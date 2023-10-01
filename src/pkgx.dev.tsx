@@ -78,7 +78,7 @@ function Body() {
       </Box>
 
       <Stack direction={isxs ? 'column' : 'row'} spacing={isxs ? 2 : 4} alignItems='center'>
-        <Typography>Be the first to hear what’s going down at our <Link color='secondary' underline='hover' href="https://blog.pkgx.dev">blog</Link></Typography>
+        <Typography>Be the first to hear what’s going down at our <Link color='inherit' underline='always' style={{textDecoration: 'underline'}} href="https://blog.pkgx.dev">blog</Link></Typography>
       </Stack>
 
       <Stack direction={isxs ? 'column' : 'row'} spacing={isxs ? 2: 3} alignItems='center' sx={{"&&": {mt: 16}}}>

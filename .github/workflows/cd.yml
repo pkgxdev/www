@@ -107,6 +107,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
       - uses: actions/checkout@v4
-      - uses: teaxyz/setup@v1
-      - run: tea hugo
-      - run: tea hugo deploy
+      - uses: pkgxdev/setup@v1
+      - run: pkgx hugo
+      - run: pkgx hugo deploy
