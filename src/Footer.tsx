@@ -59,7 +59,7 @@ export default function Footer() {
                Community
              </Typography>
              <ul style={ul_style}>
-               <Li><Link href='https://github.com/pkgXdev' {...link_props}>GitHub{icon}</Link></Li>
+               <Li><Link href='https://github.com/pkgxdev' {...link_props}>GitHub{icon}</Link></Li>
                <Li><Link href='https://x.com/pkgxdev' {...link_props}>𝕏{icon}</Link></Li>
                <Li><Link href='https://www.irccloud.com/irc/libera.chat/channel/pkgx' {...link_props}>irc:#pkgx{icon}</Link></Li>
              </ul>
