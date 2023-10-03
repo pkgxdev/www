@@ -44,7 +44,6 @@ jobs:
           NODE_ENV: production
 
       - name: determine paths to invalidate
-        id: invalidate
         run: |
           aws s3 \
               sync dist s3://www.pkgx.${{ matrix.cfg.tld }} \
@@ -52,10 +51,6 @@ jobs:
               --dryrun | \
             awk '{print $3}' | \
             sed 's/^dist//' > paths-to-invalidate.txt
-
-          if [ -s paths-to-invalidate.txt ]; then
-            echo "status=proceed" >> $GITHUB_OUTPUT
-          fi
 
       - name: sync immutable assets
         run: aws s3 sync
@@ -75,6 +70,7 @@ jobs:
           --size-only
 
       - name: sync index.html
+        id: invalidate
         run: |
           aws s3 cp s3://www.pkgx.${{ matrix.cfg.tld }}/index.html ./index.html.remote
           local_hash=$(shasum dist/index.html | awk '{print $1}')
@@ -84,6 +80,10 @@ jobs:
               --metadata-directive REPLACE \
               --cache-control no-cache,must-revalidate
             echo /index.html >> paths-to-invalidate.txt
+          fi
+
+          if [ -s paths-to-invalidate.txt ]; then
+            echo "status=proceed" >> $GITHUB_OUTPUT
           fi
 
       - name: invalidate

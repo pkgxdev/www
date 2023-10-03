@@ -23,3 +23,9 @@ Pushing to `main` deploys all three. See `cd.yml` for details.
 
 Note that pages in the React Router are handled by a CloudFront Function
 on the CloudFront Distribution.
+
+
+## Notes
+
+* The “Shader” font’s license stipulates that it only be published to a CDN
+  or web platform that we control so it is not committed to GitHub
