@@ -59,7 +59,8 @@ code {
 
 @font-face {
   font-family: 'shader';
-  src: url('/fonts/Shader_Trial_Lt.ttf');
+  src: url('/fonts/Shader_W_Lt.woff2') format('woff2'),
+       url('/fonts/Shader_W_Lt.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
