@@ -1,0 +1,47 @@
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ./github/workflows/stars.yml
+
+jobs:
+  stars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: calc star total
+        id: fetch
+        uses: actions/github-script@v5
+        with:
+          script: |
+            const { paginateRest } = github.paginate;
+            let totalStars = 0;
+
+            const response = await paginateRest(github.rest.repos.listForOrg, {
+              org: 'pkgxdev',
+              type: 'public'
+            });
+
+            for (const repo of response) {
+              totalStars += repo.stargazers_count;
+            }
+
+            const abbreviateNumber = num => num >= 1000 ? (num / 1000).toFixed(1) + 'k' : num.toString();
+            const abbreviatedStars = abbreviateNumber(totalStars);
+
+            return abbreviatedStars;
+
+      - name: write ./total-stars.json
+        run: |
+          echo '"${{ steps.fetch.outputs.result }}"' > stars.json
+
+          aws s3 cp s3://www.pkgx.sh/total-stars.json ./remote
+
+          if [ "$(cat ./stars.json)" != "$(cat ./remote)" ]; then
+            aws s3 cp ./stars.json s3://www.pkgx.sh/stars.json
+            aws cloudfront \
+              create-invalidation \
+              --distribution-id E8ZRC36XS5K65 \
+              --paths /stars.json
+          fi
