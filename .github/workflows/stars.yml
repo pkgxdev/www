@@ -42,7 +42,7 @@ jobs:
         run: |
           set -x
 
-          echo '"${{ steps.fetch.outputs.result }}"' > stars.json
+          echo '${{ steps.fetch.outputs.result }}' > stars.json
 
           aws s3 cp s3://www.pkgx.sh/stars.json ./remote
 
