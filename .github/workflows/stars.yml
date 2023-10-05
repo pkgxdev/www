@@ -1,0 +1,55 @@
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - .github/workflows/stars.yml
+
+jobs:
+  stars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.WWW_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+
+      - name: compute total stars
+        id: fetch
+        uses: actions/github-script@v5
+        with:
+          script: |
+            let totalStars = 0;
+
+            const repos = await github.paginate(github.rest.repos.listForOrg, {
+              org: 'pkgxdev',
+              type: 'public'
+            });
+
+            for (const repo of repos) {
+              totalStars += repo.stargazers_count;
+            }
+
+            const abbreviateNumber = num => num >= 1000 ? (num / 1000).toFixed(1) + 'k' : num.toString();
+            const abbreviatedStars = abbreviateNumber(totalStars);
+
+            return abbreviatedStars;
+
+
+      - name: write ./total-stars.json
+        run: |
+          set -x
+
+          echo '${{ steps.fetch.outputs.result }}' > stars.json
+
+          aws s3 cp s3://www.pkgx.sh/stars.json ./remote
+
+          if [ "$(cat ./stars.json)" != "$(cat ./remote)" ]; then
+            aws s3 cp ./stars.json s3://www.pkgx.sh/stars.json
+            aws cloudfront \
+              create-invalidation \
+              --distribution-id E8ZRC36XS5K65 \
+              --paths /stars.json
+          fi
