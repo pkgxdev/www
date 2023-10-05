@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
-      - ./github/workflows/stars.yml
+      - .github/workflows/stars.yml
 
 jobs:
   stars:
