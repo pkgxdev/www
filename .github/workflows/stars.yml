@@ -10,20 +10,19 @@ jobs:
   stars:
     runs-on: ubuntu-latest
     steps:
-      - name: calc star total
+      - name: compute total stars
         id: fetch
         uses: actions/github-script@v5
         with:
           script: |
-            const { paginateRest } = github.paginate;
             let totalStars = 0;
 
-            const response = await paginateRest(github.rest.repos.listForOrg, {
+            const repos = await github.paginate(github.rest.repos.listForOrg, {
               org: 'pkgxdev',
               type: 'public'
             });
 
-            for (const repo of response) {
+            for (const repo of repos) {
               totalStars += repo.stargazers_count;
             }
 
@@ -31,6 +30,7 @@ jobs:
             const abbreviatedStars = abbreviateNumber(totalStars);
 
             return abbreviatedStars;
+
 
       - name: write ./total-stars.json
         run: |
