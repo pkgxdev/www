@@ -36,7 +36,7 @@ jobs:
         run: |
           echo '"${{ steps.fetch.outputs.result }}"' > stars.json
 
-          aws s3 cp s3://www.pkgx.sh/total-stars.json ./remote
+          aws s3 cp s3://www.pkgx.sh/stars.json ./remote
 
           if [ "$(cat ./stars.json)" != "$(cat ./remote)" ]; then
             aws s3 cp ./stars.json s3://www.pkgx.sh/stars.json
