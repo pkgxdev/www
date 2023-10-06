@@ -204,7 +204,7 @@ export function RunAnywhere() {
               <Terminal width='100%' mb={0} mt={2}>
                 <Purple>FROM</Purple> ubuntu<br/>
                 <Purple>RUN</Purple> curl https://pkgx.sh | sh<br/>
-                <Purple>RUN</Purple> pkgx python@3.10 -m http.server 8000
+                <Purple>RUN</Purple> pkgx python@3.12 -m http.server 8000
               </Terminal>
             </CardContent>
           </Card>
