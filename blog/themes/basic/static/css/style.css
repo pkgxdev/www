@@ -16,6 +16,14 @@ a:hover {
   color: #4156E1 !important;
 }
 
+article a{
+  color: #4156E1 !important;
+}
+
+article a:hover{
+  color: #6C80FF !important;
+}
+
 a.b {
     color: white;
 }
@@ -39,6 +47,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   border: 1px solid #ccc;
+  background-color: #0D1117 !important;
 }
 
 pre, code {
