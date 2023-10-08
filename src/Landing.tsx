@@ -409,7 +409,7 @@ export function Trusted() {
         <Card>
           <CardContent>
             <Typography variant="h5" component="div">
-              Packagers Who Care
+              Packagers Who Care ❤️
             </Typography>
             <Typography sx={{ mt: 1, mb: 1.5 }} color="text.secondary">
               We go the extra mile so you don’t have to.
@@ -417,8 +417,11 @@ export function Trusted() {
             <Box component='ul' mb={0} color='text.secondary'>
               <li>Our <code>git</code> is configured to ignore <code>.DS_Store</code> files 😍</li>
               <li>We configure package managers to install to <code>~/.local/bin</code> (and ensure that’s in the <code>PATH</code>) unless they can write to <code>/usr/local/bin</code></li>
+              <li>We codesign all our packagers with both GPG and the platform code-signing engine</li>
               <li>We automatically install great git extensions like <code>git absorb</code> <i>when you type them</i></li>
               <li>We configure other version managers like <code>pyenv</code> to automatically install the Pythons you ask for</li>
+              <li>We build new releases almost immediately</li>
+              <li>We add everything that people want without qualms. If people want it we want it too. We love open source.</li>
             </Box>
           </CardContent>
         </Card>
