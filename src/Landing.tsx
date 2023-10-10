@@ -29,7 +29,7 @@ export function RunAnything() {
 
   return <Stack spacing={3}>
     <H3 sx={{"&&": { mb: 3}}}>
-      What’s better than a package manager? {isxs && <br />}<Typography display='inline' variant='h3' fontSize='inherit' color='primary' fontWeight='bold' component='span'>No package manager</Typography>
+      Whatever you want to run {isxs && <br />}<Typography display='inline' variant='h3' fontSize='inherit' color='primary' fontWeight='bold' component='span'>Just type it</Typography>
     </H3>
 
     <Terminal>
