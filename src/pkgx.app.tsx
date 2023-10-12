@@ -83,6 +83,12 @@ function Download() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  return <Box textAlign='center'>
+    <Button variant='contained' size='large' onClick={handleOpen}>
+      Coming Soon
+    </Button>
+  </Box>
+
   return (
     <Box textAlign='center'>
       <Button variant='contained' size='large' onClick={handleOpen}>
