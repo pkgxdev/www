@@ -1,5 +1,5 @@
 import { ThemeProvider, useTheme } from '@mui/material/styles';
-import { Box, Button, CssBaseline, IconButton, Stack, Typography, useMediaQuery } from '@mui/material';
+import { Box, Button, CssBaseline, IconButton, Stack, Tooltip, Typography, useMediaQuery } from '@mui/material';
 import { RunAnything, RunAnywhere, Dev, Trusted, Quote } from "./Landing";
 import React, { useEffect, useState } from "react";
 import github from "./assets/wordmarks/github.svg";
@@ -44,14 +44,16 @@ function MyMasthead() {
   return <Masthead>
     <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>
     <Button href='https://web.libera.chat/?channel=#pkgx' color='inherit'>irc</Button>
-    <Stack spacing={0} direction='row' alignItems='center'>
-      <IconButton href='https://github.com/pkgxdev/pkgx'>
-        <Box component='img' src={github}/>
-      </IconButton>
-      <Typography color='text.secondary' width={44} fontSize={13} overflow='clip' component='span'>
-        {stars}
-      </Typography>
-    </Stack>
+      <Stack spacing={0} direction='row' alignItems='center'>
+        <IconButton href='https://github.com/pkgxdev/pkgx'>
+          <Box component='img' src={github}/>
+        </IconButton>
+        <Tooltip title='Total Org. Stars' arrow placement='right' enterTouchDelay={0}>
+          <Typography color='text.secondary' width={44} fontSize={13} overflow='clip' component='span'>
+            {stars}
+          </Typography>
+        </Tooltip>
+      </Stack>
   </Masthead>
 }
 
