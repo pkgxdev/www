@@ -33,12 +33,12 @@ export function RunAnything() {
     </H3>
 
     <Terminal>
-      <Prompt/> bun<br/>
+      <Prompt/> bun run<br/>
       command not found: bun<br/>
-      <Dim>^^ type `</Dim>pkgx<Dim>` to run that</Dim><br/>
+      <Dim>^^ btw, `</Dim>pkgx<Dim>` can run that</Dim><br/>
       <br/>
-      <Prompt/> <Orange>pkgx</Orange><br/>
-      <Dim>running `</Dim>bun<Dim>`…</Dim><br/>
+      <Prompt/> <Orange>pkgx</Orange> bun run<br/>
+      <Dim>running `</Dim>bun run<Dim>`…</Dim><br/>
       <br/>
       Bun: a fast JavaScript runtime, package manager, bundler and test runner.<br/>
       <Dim># …</Dim>
