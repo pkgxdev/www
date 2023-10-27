@@ -83,12 +83,6 @@ function Download() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  return <Box textAlign='center'>
-    <Button variant='contained' size='large' onClick={handleOpen}>
-      Coming Soon
-    </Button>
-  </Box>
-
   return (
     <Box textAlign='center'>
       <Button variant='contained' size='large' onClick={handleOpen}>
@@ -97,10 +91,10 @@ function Download() {
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Which Platform?</DialogTitle>
         <Stack direction='row' spacing={2} p={4} pt={0}>
-          <Button variant='contained' size='large'>
+          <Button variant='contained' size='large' href='https://gui.pkgx.dev/release/ossapp-latest-arm64.dmg'>
             Apple Silicon
           </Button>
-          <Button variant='contained' size='large'>
+          <Button variant='contained' size='large' href='https://gui.pkgx.dev/release/ossapp-latest.dmg'>
             macOS Intel
           </Button>
         </Stack>
