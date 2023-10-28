@@ -86,7 +86,7 @@ function Listing({ dirs }: { dirs: string[] }) {
 }
 
 function Package({ project, dirs }: { project: string, dirs: string[] }) {
-  return <Stack direction='row' spacing={4}>
+  return <Stack direction={{xs: "column", md: "row"}} spacing={4}>
     <img src={`https://gui.tea.xyz/prod/${project}/1024x1024.webp`} width={375} height={375} />
     <Box>
       <h1>{project}</h1>
