@@ -1,8 +1,7 @@
 import { Box, Button, Stack, Typography } from '@mui/material';
-import { useEffect, useState } from 'react';
-import { S3Client, ListObjectsV2Command, _Object } from "@aws-sdk/client-s3";
+import { S3Client, ListObjectsV2Command, _Object } from '@aws-sdk/client-s3';
 import { Link, useParams } from 'react-router-dom';
-import { useAsync } from "react-use"
+import { useAsync } from 'react-use';
 import Footer from '../components/Footer';
 import Masthead from '../components/Masthead';
 
@@ -79,8 +78,8 @@ function PackageListingMeat() {
 
 function Listing({ dirs }: { dirs: string[] }) {
   return <ul>
-    {dirs.map(obj => <li>
-      <Link key={obj} to={`/pkgs/${obj}`}>{obj}</Link>
+    {dirs.map(obj => <li key={obj}>
+      <Link to={`/pkgs/${obj}`}>{obj}</Link>
     </li>)}
   </ul>
 }
