@@ -6,8 +6,8 @@ import HeroTypography from './components/HeroTypography';
 import * as ReactDOM from 'react-dom/client';
 import gui from "./assets/gui.png";
 import theme from './utils/theme';
-import Masthead from './Masthead';
-import Footer from "./Footer";
+import Masthead from './components/Masthead';
+import Footer from "./components/Footer";
 import './main.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

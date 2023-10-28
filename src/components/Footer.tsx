@@ -2,8 +2,8 @@ import Grid from '@mui/material/Unstable_Grid2/Grid2';
 import { Link, LinkProps, Typography, useTheme, useMediaQuery, Box, Button, Stack } from "@mui/material";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowOutwardIcon from '@mui/icons-material/CallMade';
-import tea from "./assets/wordmarks/tea.svg";
-import logo from "./assets/pkgx.svg";
+import tea from "../assets/wordmarks/tea.svg";
+import logo from "../assets/pkgx.svg";
 
 
 export default function Footer() {
@@ -52,7 +52,7 @@ export default function Footer() {
           <Li><Link href='https://pkgx.sh' {...link_props}>pkgx</Link></Li>
           <Li><Link href='https://pkgx.app' {...link_props}>oss.app</Link></Li>
           <Li><Link href='https://docs.pkgx.sh' {...link_props}>docs</Link></Li>
-          <Li><Link href='https://dist.pkgx.dev' {...link_props}>pkgs</Link></Li>
+          <Li><Link href='https://pkgx.dev/pkgs/' {...link_props}>pkgs</Link></Li>
         </ul>
       </Grid>
       <Grid xs={4} md={2}>
