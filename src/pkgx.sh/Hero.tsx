@@ -2,7 +2,7 @@ import { Box, InputAdornment, Button, TextField, Typography, Stack, Snackbar, Al
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import React, { useState } from "react";
-import HeroTypography from "./components/HeroTypography"
+import HeroTypography from "../components/HeroTypography"
 
 export default function Hero() {
   const theme = useTheme();

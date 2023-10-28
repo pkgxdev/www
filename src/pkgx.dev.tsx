@@ -3,15 +3,15 @@ import { useTheme, CssBaseline, Box, Grid, Button, Stack, Typography, Paper, But
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import pkgxsh_txt from "./assets/pkgxsh.text.svg";
 import ossapp_txt from "./assets/ossapp.text.svg";
+import PackageListing from './pkgx.dev/PackageListing';
 import * as ReactDOM from 'react-dom/client';
-import tea from "./assets/wordmarks/tea.svg";
 import logo from "./assets/pkgx.purple.svg";
 import PrivacyPolicy from './PrivacyPolicy';
+import Footer from "./components/Footer";
 import pkgxsh from "./assets/pkgxsh.svg";
 import ossapp from "./assets/ossapp.svg";
 import TermsOfUse from './TermsOfUse';
 import theme from './utils/theme';
-import Footer from "./Footer";
 import React from "react";
 import './main.css';
 
@@ -24,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path='/' element={<Body />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
           <Route path='/terms-of-use' element={<TermsOfUse/>} />
+          <Route path='/pkgs/*' element={<PackageListing/>} />
         </Routes>
       </Router>
     </ThemeProvider>

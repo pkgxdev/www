@@ -3,14 +3,14 @@ import { Alert, Box, Button, Card, CardContent, ImageList, ImageListItem, Stack,
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import React from "react"
 
-import charm from "./assets/wordmarks/charm.png"
-import node from "./assets/wordmarks/node.png"
-import openai from "./assets/wordmarks/OpenAI.svg"
-import python from "./assets/wordmarks/python.png"
-import rust from "./assets/wordmarks/rust.svg"
-import deno from "./assets/wordmarks/deno.svg"
-import go from "./assets/wordmarks/go.png"
-import php from "./assets/wordmarks/php.svg"
+import charm from "../assets/wordmarks/charm.png"
+import node from "../assets/wordmarks/node.png"
+import openai from "../assets/wordmarks/OpenAI.svg"
+import python from "../assets/wordmarks/python.png"
+import rust from "../assets/wordmarks/rust.svg"
+import deno from "../assets/wordmarks/deno.svg"
+import go from "../assets/wordmarks/go.png"
+import php from "../assets/wordmarks/php.svg"
 
 function H3({ children, ...props }: React.ComponentProps<typeof Typography>) {
   const StyledTypography = styled(Typography)(({ theme }) => ({

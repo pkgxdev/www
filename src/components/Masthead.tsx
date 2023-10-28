@@ -1,6 +1,6 @@
 import { Stack, Link, Box, useTheme, useMediaQuery } from "@mui/material"
-import logo from "./assets/wordmarks/pkgx.svg"
-import Search from "./components/Search"
+import logo from "../assets/wordmarks/pkgx.svg"
+import Search from "./Search"
 
 export default function Masthead({ children }: { children?: React.ReactNode }) {
   const theme = useTheme();
