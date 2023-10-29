@@ -138,6 +138,10 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
           <Typography variant='h5'>Companions</Typography>
           {companions()}
         </Box>
+        <Box>
+          <Typography variant='h5'>Dependencies</Typography>
+          {deps()}
+        </Box>
       </Stack>
 
       function programs() {
@@ -168,6 +172,48 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
             </ul>
           } else {
             return <Typography>none</Typography>
+          }
+        }
+      }
+      function deps() {
+        const deps: Record<string, string> = value?.dependencies ?? {}
+        if (!isPlainObject(deps)) {
+          return <Alert severity="error">Unexpected error</Alert>
+        } else {
+          return entries(deps)
+        }
+
+        function entries(deps: Record<string, string>) {
+          const entries = Object.entries(deps)
+          if (entries.length) {
+            return <ul>
+              {entries.map(entry)}
+            </ul>
+          } else {
+            return <Typography>none</Typography>
+          }
+        }
+
+        function entry([name, version]: [name: string, version: string | Record<string, string>]) {
+          if (isPlainObject(version)) {
+            return <li key={name}>
+              {name}
+              {entries(version)}
+            </li>
+          } else {
+            return <li key={name}>
+              <Link component={RouterLink} to={`/pkgs/${name}/`}>{name}{pretty(version)}</Link>
+            </li>
+          }
+        }
+
+        function pretty(version: string) {
+          if (version == '*') {
+            return ''
+          } else if (/^\d/.test(version)) {
+            return `@${version}`
+          } else {
+            return version
           }
         }
       }
