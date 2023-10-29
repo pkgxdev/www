@@ -2,11 +2,9 @@ import { Stack, IconButton, Box, Tooltip, Typography } from "@mui/material";
 import { useAsync } from "react-use";
 import github from "../assets/wordmarks/github.svg";
 
-const url = process.env.NODE_ENV == 'production' ? '/stars.json' : 'https://pkgx.sh/stars.json';
-
 export default function Stars() {
   const {value: stars} = useAsync(async () => {
-    const response = await fetch(url);
+    const response = await fetch('https://pkgx.sh/stars.json');
     const data = await response.json();
     return data
   }, [])
