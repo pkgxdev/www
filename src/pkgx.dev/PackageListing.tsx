@@ -1,10 +1,12 @@
-import { Box, Button, Stack, Typography, Link } from '@mui/material';
 import { S3Client, ListObjectsV2Command, _Object } from '@aws-sdk/client-s3';
+import { Box, Button, Stack, Typography, Link, Alert } from '@mui/material';
 import { useParams, Link as RouterLink } from 'react-router-dom';
-import { useAsync } from 'react-use';
-import Footer from '../components/Footer';
 import Masthead from '../components/Masthead';
+import Footer from '../components/Footer';
 import Stars from '../components/Stars';
+import { useAsync } from 'react-use';
+import * as yaml from 'yaml';
+import { isArray } from 'is-what';
 
 function dirname(path: string | undefined) {
   path ??= ''
@@ -42,7 +44,6 @@ function PackageListingMeat() {
     let ispkg = false
 
     const dirs = data.CommonPrefixes?.filter(({Prefix}) => {
-      console.log(dirname(Prefix))
       switch (dirname(Prefix)) {
       case 'darwin':
       case 'linux':
@@ -66,9 +67,7 @@ function PackageListingMeat() {
   if (loading) {
     return <Typography>Loading…</Typography>
   } else if (error) {
-    return <Typography color='error'>
-      {error.message}
-    </Typography>
+    return <Alert severity="error">{error.message}</Alert>
   } else {
     const {dirs, ispkg} = value!
     return <Stack spacing={3}>
@@ -89,27 +88,68 @@ function Listing({ dirs }: { dirs: string[] }) {
 }
 
 function Package({ project, dirs }: { project: string, dirs: string[] }) {
+  const { loading, error, value } = useAsync(async () => {
+    const url = `https://raw.githubusercontent.com/pkgxdev/pantry/main/projects/${project}/package.yml`
+    const rsp = await fetch(url)
+    const txt = await rsp.text()
+    const yml = yaml.parse(txt)
+    return yml
+  }, [project])
+
   return <Stack direction={{xs: "column", md: "row"}} spacing={4}>
     <img src={`https://gui.tea.xyz/prod/${project}/1024x1024.webp`} width={375} height={375} />
-    <Box>
-      <h1>{project}</h1>
-      <Stack direction={'row'} spacing={2}>
-        <Button href={`tea://packages/${project}`}>Open in OSS.app</Button>
-        <Button href={`https://github.com/pkgxdev/pantry/tree/main/projects/${project}/package.yml`}>View package.yml</Button>
-      </Stack>
+    <Stack spacing={2}>
+      <Box>
+        <Typography variant='h2'>{project}</Typography>
+        <Stack direction={'row'} spacing={2}>
+          <Button href={`tea://packages/${project}`}>Open in OSS.app</Button>
+          <Button href={`https://github.com/pkgxdev/pantry/tree/main/projects/${project}/package.yml`}>View package.yml</Button>
+        </Stack>
+      </Box>
 
-      <h2>Versions</h2>
-      <Versions project={project} />
-      <Typography variant="subtitle2" color='textSecondary'>
-        If you need a version we don’t have <Link href='https://github.com/pkgxdev/pantry/issues/new'>request it here</Link>.
-      </Typography>
+      <Box>
+        {metadata()}
+      </Box>
 
-      {dirs.length > 0 && <>
-        <h2>Subprojects</h2>
+      <Box>
+        <Typography variant='h5'>Versions</Typography>
+        <Versions project={project} />
+      </Box>
+
+      {dirs.length > 0 && <Box>
+        <Typography variant='h5'>Subprojects</Typography>
         <Listing dirs={dirs} />
-      </> }
-    </Box>
+      </Box> }
+    </Stack>
   </Stack>
+
+  function metadata() {
+    const provides: string[] = value?.provides ?? []
+
+    if (loading) {
+      return <Typography>Loading Metadata…</Typography>
+    } else if (error) {
+      return <Alert severity="error">{error.message}</Alert>
+    } else if (!isArray(provides)) {
+      return <Alert severity="error">Unexpected error</Alert>
+    } else {
+      return <>
+        <Typography variant='h5'>Programs</Typography>
+        {body()}
+      </>
+      function body() {
+        if (provides.length) {
+          return <ul>
+            {provides.map((program, i) => <li key={i}>
+              <code>{program.replace(/^bin\//g, '')}</code>
+            </li>)}
+          </ul>
+        } else {
+          return <Typography>none</Typography>
+        }
+      }
+    }
+  }
 }
 
 function Versions({ project }: { project: string }) {
@@ -124,12 +164,16 @@ function Versions({ project }: { project: string }) {
     return <p>Loading…</p>
   } else if (state.error) {
     return <>
-      <h2>Error</h2>
-      <p>{state.error.message}</p>
+      <Alert severity="error">{state.error.message}</Alert>
     </>
   } else {
-    return <ul>
-      {state.value!.map(version => <li key={version}>{version}</li>)}
-    </ul>
+    return <>
+      <ul>
+        {state.value!.map(version => <li key={version}>{version}</li>)}
+      </ul>
+      <Typography variant="subtitle2" color='textSecondary'>
+        If you need a version we don’t have <Link href='https://github.com/pkgxdev/pantry/issues/new'>request it here</Link>.
+      </Typography>
+    </>
   }
 }

@@ -14,12 +14,14 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
+    "is-what": "^4.1.16",
     "libpkgx": "^0.15.1",
     "mui-markdown": "^1.1.9",
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "^6.16.0",
-    "react-use": "^17.4.0"
+    "react-use": "^17.4.0",
+    "yaml": "^2.3.3"
   },
   "devDependencies": {
     "@types/node": "^20.6.2",

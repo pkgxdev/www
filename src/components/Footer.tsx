@@ -28,7 +28,7 @@ export default function Footer() {
 
   const icon = <ArrowOutwardIcon fontSize="inherit" style={{transform: 'translateY(3px)'}} />
 
-  return <Stack spacing={8}>
+  return <Stack spacing={8} sx={{alignItems: 'center'}}>
     <Stack direction={isxs ? 'column' : 'row'} spacing={isxs ? 2: 3} alignItems='center' sx={{"&&": {mt: 16}}}>
       <Box component='img' src={tea} height='20px' />
       <Typography>
