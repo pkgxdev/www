@@ -1,12 +1,12 @@
 import { S3Client, ListObjectsV2Command, _Object } from '@aws-sdk/client-s3';
 import { Box, Button, Stack, Typography, Link, Alert } from '@mui/material';
 import { useParams, Link as RouterLink } from 'react-router-dom';
+import { isArray, isPlainObject } from 'is-what';
 import Masthead from '../components/Masthead';
 import Footer from '../components/Footer';
 import Stars from '../components/Stars';
 import { useAsync } from 'react-use';
 import * as yaml from 'yaml';
-import { isArray } from 'is-what';
 
 function dirname(path: string | undefined) {
   path ??= ''
@@ -124,21 +124,27 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
   </Stack>
 
   function metadata() {
-    const provides: string[] = value?.provides ?? []
-
     if (loading) {
       return <Typography>Loading Metadata…</Typography>
     } else if (error) {
       return <Alert severity="error">{error.message}</Alert>
-    } else if (!isArray(provides)) {
-      return <Alert severity="error">Unexpected error</Alert>
     } else {
-      return <>
-        <Typography variant='h5'>Programs</Typography>
-        {body()}
-      </>
-      function body() {
-        if (provides.length) {
+      return <Stack spacing={2}>
+        <Box>
+          <Typography variant='h5'>Programs</Typography>
+          {programs()}
+        </Box>
+        <Box>
+          <Typography variant='h5'>Companions</Typography>
+          {companions()}
+        </Box>
+      </Stack>
+
+      function programs() {
+        const provides: string[] = value?.provides ?? []
+        if (!isArray(provides)) {
+          return <Alert severity="error">Unexpected error</Alert>
+        } else if (provides.length) {
           return <ul>
             {provides.map((program, i) => <li key={i}>
               <code>{program.replace(/^bin\//g, '')}</code>
@@ -146,6 +152,23 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
           </ul>
         } else {
           return <Typography>none</Typography>
+        }
+      }
+      function companions() {
+        const companions: Record<string, string> = value?.companions ?? []
+        if (!isPlainObject(companions)) {
+          return <Alert severity="error">Unexpected error</Alert>
+        } else {
+          const entries = Object.entries(companions)
+          if (entries.length) {
+            return <ul>
+              {entries.map(([companion]) => <li key={companion}>
+                <Link component={RouterLink} to={`/pkgs/${companion}/`}>{companion}</Link>
+              </li>)}
+            </ul>
+          } else {
+            return <Typography>none</Typography>
+          }
         }
       }
     }
