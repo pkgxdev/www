@@ -1,9 +1,10 @@
-import { Box, Button, Stack, Typography } from '@mui/material';
+import { Box, Button, Stack, Typography, Link } from '@mui/material';
 import { S3Client, ListObjectsV2Command, _Object } from '@aws-sdk/client-s3';
-import { Link, useParams } from 'react-router-dom';
+import { useParams, Link as RouterLink } from 'react-router-dom';
 import { useAsync } from 'react-use';
 import Footer from '../components/Footer';
 import Masthead from '../components/Masthead';
+import Stars from '../components/Stars';
 
 function dirname(path: string | undefined) {
   path ??= ''
@@ -14,7 +15,10 @@ function dirname(path: string | undefined) {
 
 export default function PackageListing() {
   return <Stack direction="column" maxWidth='md' p={2} minHeight='100vh' mx='auto' spacing={4}>
-    <Masthead />
+    <Masthead>
+      <Button href='/pkgs/' color='inherit'>pkgs</Button>
+      <Stars />
+    </Masthead>
     <PackageListingMeat />
     <Footer/>
   </Stack>
@@ -79,7 +83,7 @@ function PackageListingMeat() {
 function Listing({ dirs }: { dirs: string[] }) {
   return <ul>
     {dirs.map(obj => <li key={obj}>
-      <Link to={`/pkgs/${obj}`}>{obj}</Link>
+      <Link component={RouterLink} to={`/pkgs/${obj}`}>{obj}</Link>
     </li>)}
   </ul>
 }
@@ -96,8 +100,8 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
 
       <h2>Versions</h2>
       <Versions project={project} />
-      <Typography variant="subtitle2">
-        If you need a version we don’t have <a href='https://github.com/pkgxdev/pantry/issues/new'>request it here</a>.
+      <Typography variant="subtitle2" color='textSecondary'>
+        If you need a version we don’t have <Link href='https://github.com/pkgxdev/pantry/issues/new'>request it here</Link>.
       </Typography>
 
       {dirs.length > 0 && <>
