@@ -155,7 +155,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
         }
       }
       function companions() {
-        const companions: Record<string, string> = value?.companions ?? []
+        const companions: Record<string, string> = value?.companions ?? {}
         if (!isPlainObject(companions)) {
           return <Alert severity="error">Unexpected error</Alert>
         } else {
