@@ -241,7 +241,7 @@ function Versions({ project }: { project: string }) {
         {state.value!.map(version => <li key={version}>{version}</li>)}
       </ul>
       <Typography variant="subtitle2" color='textSecondary'>
-        If you need a version we don’t have <Link href='https://github.com/pkgxdev/pantry/issues/new'>request it here</Link>.
+        If you need a version we don’t have <Link href={`https://github.com/pkgxdev/pantry/issues/new?title=version+request:+${project}`}>request it here</Link>.
       </Typography>
     </>
   }
