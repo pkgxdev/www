@@ -1,5 +1,5 @@
 import { S3Client, ListObjectsV2Command, _Object } from '@aws-sdk/client-s3';
-import { Box, Button, Stack, Typography, Link, Alert, Skeleton, Grid } from '@mui/material';
+import { Box, Button, Stack, Typography, Link, Alert, Skeleton, Grid, Card, Paper } from '@mui/material';
 import { useParams, Link as RouterLink } from 'react-router-dom';
 import ArrowOutwardIcon from '@mui/icons-material/CallMade';
 import { isArray, isPlainObject } from 'is-what';
@@ -76,7 +76,7 @@ function PackageListingMeat() {
   }, [splat])
 
   if (loading) {
-    return <Typography>Loading…</Typography>
+    return <Skeleton animation="wave" />
   } else if (error) {
     return <Alert severity="error">{error.message}</Alert>
   } else {
@@ -124,14 +124,16 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
   </>
 
   return <Stack direction={{xs: "column", md: "row"}} spacing={4}>
-    <img src={`https://gui.tea.xyz/prod/${project}/1024x1024.webp`} width={375} height={375} />
+    <Card sx={{height: 'fit-content'}}>
+      <img style={{display: 'block'}} src={`https://gui.tea.xyz/prod/${project}/1024x1024.webp`} width={375} height={375} />
+    </Card>
     <Stack spacing={2}>
       <Box>
         <Typography mb={1} variant='h2'>{project}</Typography>
         {description_body()}
         <Grid container spacing={2} mt={1}>
           <Grid item xs={6}>
-            <Button variant='outlined' href={`tea://packages/${project}`}>Open in OSS.app</Button>
+            <Button variant='contained' href={`tea://packages/${project}`}>Open in OSS.app</Button>
           </Grid>
           <Grid item xs={6}>
             <Button variant='outlined' target='_blank' rel='noreferrer' href={`https://github.com/pkgxdev/pantry/tree/main/projects/${project}/package.yml`} endIcon={<ArrowOutwardIcon />}>View package.yml</Button>
@@ -180,7 +182,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
 
   function metadata() {
     if (loading) {
-      return <Typography>Loading Metadata…</Typography>
+      return <Skeleton animation="wave" />
     } else if (error) {
       return <Alert severity="error">{error.message}</Alert>
     } else {
@@ -285,7 +287,11 @@ function Versions({ project }: { project: string }) {
   }, [project]);
 
   if (state.loading) {
-    return <p>Loading…</p>
+    return <>
+      <Skeleton animation="wave" />
+      <Skeleton animation="wave" />
+      <Skeleton animation="wave" />
+    </>
   } else if (state.error) {
     return <>
       <Alert severity="error">{state.error.message}</Alert>
