@@ -27,7 +27,7 @@ interface DumbPackage {
 }
 
 export default function PackageListing() {
-  return <Stack direction="column" maxWidth='md' p={2} minHeight='100vh' mx='auto' spacing={4}>
+  return <Stack direction="column" width='fit-content' minWidth='md' p={2} minHeight='100vh' mx='auto' spacing={4}>
     <Masthead>
       <Button href='/pkgs/' color='inherit'>pkgs</Button>
       <Stars />
