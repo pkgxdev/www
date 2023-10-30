@@ -113,14 +113,10 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
   })
 
   const buttons = description.value && <>
-    <Grid item xs={6}>
-      {description.value.homepage &&
-        <Button variant='outlined' href={description.value.homepage} target='_blank' rel='noreferrer' endIcon={<ArrowOutwardIcon />}>Homepage</Button>
-      }
-    </Grid>
-    <Grid item xs={6}>
-      <Button variant='outlined' href={description.value.github} target='_blank' rel='noreferrer' endIcon={<ArrowOutwardIcon />}>GitHub</Button>
-    </Grid>
+    {description.value.homepage &&
+      <Button variant='outlined' href={description.value.homepage} target='_blank' rel='noreferrer' endIcon={<ArrowOutwardIcon />}>Homepage</Button>
+    }
+    <Button variant='outlined' href={description.value.github} target='_blank' rel='noreferrer' endIcon={<ArrowOutwardIcon />}>GitHub</Button>
   </>
 
   return <Stack direction={{xs: "column", md: "row"}} spacing={4}>
@@ -131,15 +127,11 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
       <Box>
         <Typography mb={1} variant='h2'>{project}</Typography>
         {description_body()}
-        <Grid container spacing={2} mt={1}>
-          <Grid item xs={6}>
-            <Button variant='contained' href={`tea://packages/${project}`}>Open in OSS.app</Button>
-          </Grid>
-          <Grid item xs={6}>
-            <Button variant='outlined' target='_blank' rel='noreferrer' href={`https://github.com/pkgxdev/pantry/tree/main/projects/${project}/package.yml`} endIcon={<ArrowOutwardIcon />}>View package.yml</Button>
-          </Grid>
+        <Stack useFlexGap direction='row' spacing={2} mt={3}>
+          <Button variant='contained' href={`tea://packages/${project}`}>Open in OSS.app</Button>
+          <Button variant='outlined' target='_blank' rel='noreferrer' href={`https://github.com/pkgxdev/pantry/tree/main/projects/${project}/package.yml`} endIcon={<ArrowOutwardIcon />}>View package.yml</Button>
           {buttons}
-        </Grid>
+        </Stack>
       </Box>
 
       <Terminal>
