@@ -1,18 +1,29 @@
 import { S3Client, ListObjectsV2Command, _Object } from '@aws-sdk/client-s3';
-import { Box, Button, Stack, Typography, Link, Alert } from '@mui/material';
+import { Box, Button, Stack, Typography, Link, Alert, Skeleton, Grid } from '@mui/material';
 import { useParams, Link as RouterLink } from 'react-router-dom';
+import ArrowOutwardIcon from '@mui/icons-material/CallMade';
 import { isArray, isPlainObject } from 'is-what';
 import Masthead from '../components/Masthead';
+import Terminal from '../components/Terminal';
 import Footer from '../components/Footer';
 import Stars from '../components/Stars';
 import { useAsync } from 'react-use';
 import * as yaml from 'yaml';
+import { get } from '../utils/api';
 
 function dirname(path: string | undefined) {
   path ??= ''
   path = path.trim().replace(/\/+$/, '');
   const ii = path.lastIndexOf('/');
   return ii >= 0 ? path.slice(ii + 1) : path;
+}
+
+// Dumb because the interface was thoughtlessly constructed
+interface DumbPackage {
+  description: string
+  short_description: string
+  homepage?: string
+  github: string
 }
 
 export default function PackageListing() {
@@ -96,16 +107,42 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
     return yml
   }, [project])
 
+  const description = useAsync(async () => {
+    const dumb_mangle = project.replaceAll("/", ":")  // see dumb rationale above
+    return await get<DumbPackage>(`packages/${dumb_mangle}`)
+  })
+
+  const buttons = description.value && <>
+    <Grid item xs={6}>
+      {description.value.homepage &&
+        <Button variant='outlined' href={description.value.homepage} target='_blank' rel='noreferrer' endIcon={<ArrowOutwardIcon />}>Homepage</Button>
+      }
+    </Grid>
+    <Grid item xs={6}>
+      <Button variant='outlined' href={description.value.github} target='_blank' rel='noreferrer' endIcon={<ArrowOutwardIcon />}>GitHub</Button>
+    </Grid>
+  </>
+
   return <Stack direction={{xs: "column", md: "row"}} spacing={4}>
     <img src={`https://gui.tea.xyz/prod/${project}/1024x1024.webp`} width={375} height={375} />
     <Stack spacing={2}>
       <Box>
-        <Typography variant='h2'>{project}</Typography>
-        <Stack direction={'row'} spacing={2}>
-          <Button href={`tea://packages/${project}`}>Open in OSS.app</Button>
-          <Button href={`https://github.com/pkgxdev/pantry/tree/main/projects/${project}/package.yml`}>View package.yml</Button>
-        </Stack>
+        <Typography mb={1} variant='h2'>{project}</Typography>
+        {description_body()}
+        <Grid container spacing={2} mt={1}>
+          <Grid item xs={6}>
+            <Button variant='outlined' href={`tea://packages/${project}`}>Open in OSS.app</Button>
+          </Grid>
+          <Grid item xs={6}>
+            <Button variant='outlined' target='_blank' rel='noreferrer' href={`https://github.com/pkgxdev/pantry/tree/main/projects/${project}/package.yml`} endIcon={<ArrowOutwardIcon />}>View package.yml</Button>
+          </Grid>
+          {buttons}
+        </Grid>
       </Box>
+
+      <Terminal>
+        {codeblock()}
+      </Terminal>
 
       <Box>
         {metadata()}
@@ -122,6 +159,24 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
       </Box> }
     </Stack>
   </Stack>
+
+  function codeblock() {
+    if (loading || error || !value?.entrypoint) {
+      return `sh <(curl https://pkgx.sh) +${project} sh`
+    } else {
+      return `sh <(curl https://pkgx.sh) +brewkit -- run ${project}`
+    }
+  }
+
+  function description_body() {
+    if (description.loading) {
+      return <Skeleton animation="wave" />
+    } else if (description.error) {
+      return <Alert severity="error">{description.error.message}</Alert>
+    } else {
+      return <Typography>{description.value!.short_description}</Typography>
+    }
+  }
 
   function metadata() {
     if (loading) {
