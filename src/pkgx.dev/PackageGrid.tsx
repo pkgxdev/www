@@ -7,7 +7,8 @@ import {
   Box,
   CardActionArea,
   useMediaQuery,
-  useTheme
+  useTheme,
+  Chip
 } from "@mui/material";
 import React, { CSSProperties } from "react";
 import get_pkg_name from "../utils/pkg-name";
@@ -17,6 +18,7 @@ interface Package {
   project: string
   birthtime: string
   description?: string
+  labels?: string[]
 }
 
 export default function PackageGrid({ pkgs }: {pkgs: Package[]}) {
@@ -33,8 +35,12 @@ export default function PackageGrid({ pkgs }: {pkgs: Package[]}) {
   const columnWidth = isxs ? (window.innerWidth - 28) / 2 : 300
 
   const Item = ({ columnIndex, rowIndex, style }: { columnIndex: number, rowIndex: number, style: React.CSSProperties }) => {
-    const {project, name, description} = pkgs[rowIndex * 3 + columnIndex] ?? {}
+    const {project, name, description, labels} = pkgs[rowIndex * 3 + columnIndex] ?? {}
+
     if (!project) return
+
+    const chips = (labels ?? []).map(label => <Chip sx={{ml: 0.5}} label={label} color='secondary' variant="outlined" size='small' />)
+
     return <Box style={style} pb={1.5}>
       <Card sx={{m: 0.75, height: '100%'}}>
         <CardActionArea href={`/pkgs/${project}/`}>
@@ -44,9 +50,12 @@ export default function PackageGrid({ pkgs }: {pkgs: Package[]}) {
             image={`https://gui.tea.xyz/prod/${project}/512x512.webp`}
           />
           <CardContent>
-            <Typography variant='overline' component="h2" style={text_style}>
-              {name || get_pkg_name(project)}
-            </Typography>
+            <div>
+              <Typography variant='overline' component="h2" style={text_style} display='inline'>
+                {name || get_pkg_name(project)}
+              </Typography>
+              {chips}
+            </div>
             <Typography variant='caption' component="h3" style={text_style}>
               {description}
             </Typography>
