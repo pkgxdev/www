@@ -1,7 +1,8 @@
-import { Box, Button, Stack, Typography, Link, Alert, Skeleton, Card } from '@mui/material';
+import { Box, Button, Stack, Typography, Link, Alert, Skeleton, Card, Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
 import { S3Client, ListObjectsV2Command, _Object } from '@aws-sdk/client-s3';
 import { useParams, Link as RouterLink } from 'react-router-dom';
 import ArrowOutwardIcon from '@mui/icons-material/CallMade';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { isArray, isPlainObject } from 'is-what';
 import Terminal from '../components/Terminal';
 import get_pkg_name from '../utils/pkg-name';
@@ -107,7 +108,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
   </>
 
   return <Stack direction={{xs: "column", md: "row"}} spacing={4}>
-    <Card sx={{height: 'fit-content'}}>
+    <Card sx={{height: 'fit-content', minWidth: 375}}>
       <img style={{display: 'block'}} src={`https://gui.tea.xyz/prod/${project}/1024x1024.webp`} width={375} height={375} />
     </Card>
     <Stack spacing={2}>
@@ -155,7 +156,14 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
     } else if (description.error) {
       return <Alert severity="error">{description.error.message}</Alert>
     } else {
-      return <Typography>{description.value!.short_description}</Typography>
+      return <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>{description.value!.short_description}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>{description.value!.description}</Typography>
+        </AccordionDetails>
+      </Accordion>
     }
   }
 
