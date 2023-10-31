@@ -10,6 +10,7 @@ import {
   useTheme
 } from "@mui/material";
 import React, { CSSProperties } from "react";
+import get_pkg_name from "../utils/pkg-name";
 
 interface Package {
   name?: string
@@ -44,7 +45,7 @@ export default function PackageGrid({ pkgs }: {pkgs: Package[]}) {
           />
           <CardContent>
             <Typography variant='overline' component="h2" style={text_style}>
-              {name || project}
+              {name || get_pkg_name(project)}
             </Typography>
             <Typography variant='caption' component="h3" style={text_style}>
               {description}

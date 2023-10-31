@@ -1,16 +1,13 @@
+import { Box, Button, Stack, Typography, Link, Alert, Skeleton, Card } from '@mui/material';
 import { S3Client, ListObjectsV2Command, _Object } from '@aws-sdk/client-s3';
-import { Box, Button, Stack, Typography, Link, Alert, Skeleton, Grid, Card, Paper } from '@mui/material';
 import { useParams, Link as RouterLink } from 'react-router-dom';
 import ArrowOutwardIcon from '@mui/icons-material/CallMade';
 import { isArray, isPlainObject } from 'is-what';
-import Masthead from '../components/Masthead';
 import Terminal from '../components/Terminal';
-import Footer from '../components/Footer';
-import Stars from '../components/Stars';
+import get_pkg_name from '../utils/pkg-name';
 import { useAsync } from 'react-use';
-import * as yaml from 'yaml';
 import { get } from '../utils/api';
-import PackageGrid from './PackageGrid';
+import * as yaml from 'yaml';
 
 function dirname(path: string | undefined) {
   path ??= ''
@@ -115,7 +112,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
     </Card>
     <Stack spacing={2}>
       <Box>
-        <Typography mb={1} variant='h2'>{project}</Typography>
+        <Typography mb={1} variant='h2'>{get_pkg_name(project)}</Typography>
         {description_body()}
         <Stack useFlexGap direction='row' spacing={2} mt={3}>
           <Button variant='contained' href={`tea://packages/${project}`}>Open in OSS.app</Button>
