@@ -1,15 +1,18 @@
 import { ThemeProvider } from '@mui/material/styles';
 import { useTheme, CssBaseline, Box, Grid, Button, Stack, Typography, Paper, ButtonBase, useMediaQuery, Link } from '@mui/material';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import PackageShowcase from './pkgx.dev/PackageShowcase';
+import PackageListing from './pkgx.dev/PackageListing';
 import pkgxsh_txt from "./assets/pkgxsh.text.svg";
 import ossapp_txt from "./assets/ossapp.text.svg";
-import PackageListing from './pkgx.dev/PackageListing';
 import * as ReactDOM from 'react-dom/client';
+import Masthead from './components/Masthead';
 import logo from "./assets/pkgx.purple.svg";
 import PrivacyPolicy from './PrivacyPolicy';
 import Footer from "./components/Footer";
 import pkgxsh from "./assets/pkgxsh.svg";
 import ossapp from "./assets/ossapp.svg";
+import Stars from './components/Stars';
 import TermsOfUse from './TermsOfUse';
 import theme from './utils/theme';
 import React from "react";
@@ -24,12 +27,31 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path='/' element={<Body />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
           <Route path='/terms-of-use' element={<TermsOfUse/>} />
-          <Route path='/pkgs/*' element={<PackageListing/>} />
+          <Route path='/pkgs' element={<PackageListingFrame>
+            <Typography variant='h4' component='h1'>
+              New Packages
+            </Typography>
+            <PackageShowcase />
+          </PackageListingFrame>} />
+          <Route path='/pkgs/*' element={<PackageListingFrame>
+              <PackageListing/>
+          </PackageListingFrame>} />
         </Routes>
       </Router>
     </ThemeProvider>
   </React.StrictMode>,
 );
+
+function PackageListingFrame({children}: {children: React.ReactNode}) {
+  return <Stack direction="column" width='fit-content' minWidth='md' p={2} minHeight='100vh' mx='auto' spacing={4}>
+    <Masthead>
+      <Button href='/pkgs/' color='inherit'>pkgs</Button>
+      <Stars />
+    </Masthead>
+    {children}
+    <Footer/>
+  </Stack>
+}
 
 function Body() {
   const theme = useTheme();

@@ -10,6 +10,7 @@ import Stars from '../components/Stars';
 import { useAsync } from 'react-use';
 import * as yaml from 'yaml';
 import { get } from '../utils/api';
+import PackageGrid from './PackageGrid';
 
 function dirname(path: string | undefined) {
   path ??= ''
@@ -27,17 +28,6 @@ interface DumbPackage {
 }
 
 export default function PackageListing() {
-  return <Stack direction="column" width='fit-content' minWidth='md' p={2} minHeight='100vh' mx='auto' spacing={4}>
-    <Masthead>
-      <Button href='/pkgs/' color='inherit'>pkgs</Button>
-      <Stars />
-    </Masthead>
-    <PackageListingMeat />
-    <Footer/>
-  </Stack>
-}
-
-function PackageListingMeat() {
   const { "*": splat } = useParams();
 
   const {loading, value, error} = useAsync(async () => {
