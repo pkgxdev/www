@@ -36,7 +36,6 @@ export function RunAnything() {
     <Terminal>
       <Prompt/> bun run<br/>
       command not found: bun<br/>
-      <Dim>^^ btw, `</Dim>pkgx<Dim>` can run that</Dim><br/>
       <br/>
       <Prompt/> <Orange>pkgx</Orange> bun run<br/>
       <Dim>running `</Dim>bun run<Dim>`…</Dim><br/>
@@ -100,12 +99,13 @@ export function RunAnything() {
               <Terminal width='100%' mb={2} mt={2}>
                 <Prompt/> deno<br/>
                 command not found: deno<br/>
+                <Dim>^^ type `</Dim>x<Dim>` to run that</Dim><br/>
                 <br/>
-                <Prompt/> <Orange>env</Orange> +deno^1.35<br/>
-                <Dim>added ~/.pkgx/</Dim>deno.land<Dim>/v</Dim>1.36.1<br/>
+                <Prompt/> <Orange>x</Orange><br/>
+                <Purple>env</Purple> +deno <Dim>&&</Dim> deno<br/>
                 <br/>
-                <Prompt/> deno --version<br/>
-                deno 1.36.1<br/>
+                Deno 1.37.1<br/>
+                <Dim>&gt;</Dim>
               </Terminal>
               <Alert severity="info">
                 <code>deno</code>’s not installed, <code>pkgx</code> just added it to your shell session. It’ll be gone when you <code>exit</code> 🥹
