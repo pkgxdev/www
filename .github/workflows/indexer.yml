@@ -1,0 +1,62 @@
+name: indexer
+
+# we have to generate an index for each pkg so that the index.html that is
+# served has the correct metadata
+
+#TODO a lambda would be better because we copy the index.html from the bucket
+# root and modify it then push that back so it could easily get out of sync
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  schedule:
+    - cron: "13,26,39,52 3,9,15,21 * * *"
+  pull_request:
+    branches: main
+    paths:
+      - .github/scripts/indexer.ts
+      - .github/workflows/indexer.yml
+
+concurrency:
+  group: indexer/${{ github.ref || 'main' }}
+  cancel-in-progress: true
+
+jobs:
+  indexer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: pkgxdev/pantry
+          path: pantry
+          fetch-depth: 0  # needed to get git metadata for ordering purposes
+
+      - uses: pkgxdev/setup@v2
+
+      - uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.WWW_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+
+      - run: aws s3 sync s3://www.pkgx.dev/pkgs/ ./out
+      - run: aws s3 cp s3://www.pkgx.dev/index.html ./out/index.html
+
+      - run: ../.github/scripts/gen-index.json.ts > ../out/index.json
+        working-directory: pantry
+
+      - run: cat ./out/index.html
+      - run: .github/scripts/gen-index.html.ts
+
+      - run: aws s3 sync
+              out/ s3://www.pkgx.dev/pkgs/
+              --size-only
+              --metadata-directive REPLACE
+              --cache-control no-cache,must-revalidate
+
+      - run: aws cloudfront
+               create-invalidation
+               --distribution-id E15VQ3SI584CSG
+               --paths /pkgs /pkgs/ /pkgs/*

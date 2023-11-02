@@ -5,7 +5,7 @@ import { Alert, Skeleton } from "@mui/material";
 
 export default function showcase() {
   const {loading, error, value: pkgs} = useAsync(async () => {
-    const rsp = await fetch('https://pkgxdev.github.io/pantry/pkgs.json')
+    const rsp = await fetch('https://pkgx.dev/pkgs/index.json')
     return await rsp.json()
   })
 
