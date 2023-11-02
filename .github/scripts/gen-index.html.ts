@@ -10,6 +10,8 @@ interface Pkg {
 
 const pkgs: Pkg[] = JSON.parse(Deno.readTextFileSync("./out/index.json"));
 
+console.log({pkgs})
+
 for (const pkg of pkgs) {
   Deno.mkdirSync(`./out/${pkg.project}`, {recursive: true});
   let txt = Deno.readTextFileSync('./out/index.html');
