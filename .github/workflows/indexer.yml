@@ -41,7 +41,7 @@ jobs:
           aws-region: us-east-2
 
       - run: aws s3 sync s3://www.pkgx.dev/pkgs/ ./out
-      - run: aws s3 sync s3://www.pkgx.dev/index.html ./out/index.html
+      - run: aws s3 sync s3://www.pkgx.dev/index.html ./out/
 
       - run: ../.github/scripts/gen-index.json.ts > ../out/index.json
         working-directory: pantry
