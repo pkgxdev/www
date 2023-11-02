@@ -16,6 +16,8 @@ for (const pkg of pkgs) {
   txt = replace(txt, 'image',  `https://gui.tea.xyz/prod/${pkg.project}/1024x1024.webp`)
 
   Deno.writeTextFileSync(`./out/${pkg.project}/index.html`, txt);
+
+  console.log(`./out/${pkg.project}/index.html`)
 }
 
 function replace(txt: string, attr: string, value: string) {
