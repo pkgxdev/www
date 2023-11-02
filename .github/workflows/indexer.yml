@@ -52,7 +52,7 @@ jobs:
       - run: aws s3 sync
               out/ s3://www.pkgx.dev/pkgs/
               --size-only
-              --metadata-directive REPLACE \
+              --metadata-directive REPLACE
               --cache-control no-cache,must-revalidate
 
       - run: aws cloudfront
