@@ -10,6 +10,8 @@ interface Package {
   labels?: string[]
 }
 
+console.error('HI')
+
 export async function getKettleRemoteMetadata() {
   const headers = { Authorization: 'public' }
   const rsp = await fetch(`https://app.pkgx.dev/v1/packages/`, {headers})
@@ -23,7 +25,7 @@ export async function getKettleRemoteMetadata() {
 const descriptions = await getKettleRemoteMetadata();
 
 async function getPackageYmlCreationDates(): Promise<Package[]> {
-  const cmdString = "git log --pretty=format:'%H %aI' --name-only --diff-filter=A -- '**/package.yml'";
+  const cmdString = "git log --pretty=format:'%H %aI' --name-only --diff-filter=A -- 'projects/**/package.yml'";
   const process = Deno.run({
     cmd: ["bash", "-c", cmdString],
     stdout: "piped",
@@ -66,6 +68,8 @@ async function getPackageYmlCreationDates(): Promise<Package[]> {
 }
 
 const pkgs = await getPackageYmlCreationDates();
+
+console.error({pkgs})
 
 // sort by birthtime
 pkgs.sort((a, b) => b.birthtime.getTime() - a.birthtime.getTime());
