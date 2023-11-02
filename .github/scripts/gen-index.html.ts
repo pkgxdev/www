@@ -11,9 +11,9 @@ const pkgs: Pkg[] = JSON.parse(Deno.readTextFileSync("./out/index.json"));
 for (const pkg of pkgs) {
   Deno.mkdirSync(`./out/${pkg.project}`, {recursive: true});
   let txt = Deno.readTextFileSync('./out/index.html');
-  txt = replace(txt, 'title', pkg.name || pkg.project)
+  txt = replace(txt, 'title', `${pkg.name || pkg.project} — pkgx`)
   txt = replace(txt, 'description', pkg.description)
-  txt = replace(txt, 'image',  `https://gui.tea.xyz/prod/${project}/1024x1024.webp`)
+  txt = replace(txt, 'image',  `https://gui.tea.xyz/prod/${pkg.project}/1024x1024.webp`)
 
   Deno.writeTextFileSync(`./out/${pkg.project}/index.html`, txt);
 }
