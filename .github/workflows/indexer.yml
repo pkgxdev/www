@@ -43,12 +43,12 @@ jobs:
       - run: aws s3 sync s3://www.pkgx.dev/pkgs/ ./out
       - run: aws s3 sync s3://www.pkgx.dev/index.html ./out
 
-      - run: |
-          cd pantry
-          ../.github/scripts/gen-index.json.ts > ../out/index.json
-      - run: ./.github/scripts/gen-index.html.ts
+      - run: ../.github/scripts/gen-index.json.ts > ../out/index.json
+        working-directory: pantry
 
-      - run: aws s3 sync out/ s3://www.pkgx.dev/pkgs/
+      - run: .github/scripts/gen-index.html.ts
+
+      - run: aws s3 sync --size-only out/ s3://www.pkgx.dev/pkgs/
 
       - run: aws cloudfront
                create-invalidation

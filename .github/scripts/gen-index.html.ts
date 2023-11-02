@@ -1,5 +1,7 @@
 #!/usr/bin/env -S pkgx deno run --allow-read --allow-write=./out
 
+console.log('hio')
+
 interface Pkg {
   name?: string
   project: string
