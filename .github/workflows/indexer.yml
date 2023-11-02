@@ -45,6 +45,9 @@ jobs:
           rm ./out/index.json
       - run: aws s3 sync s3://www.pkgx.dev/index.html ./out
 
+      - run: git log --pretty=format:'%H %aI' --name-only --diff-filter=A -- 'projects/**/package.yml'
+        working-directory: pantry
+
       - run: ../.github/scripts/gen-index.json.ts > ../out/index.json
         working-directory: pantry
 
