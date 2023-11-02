@@ -49,9 +49,13 @@ jobs:
       - run: cat ./out/index.html
       - run: .github/scripts/gen-index.html.ts
 
-      - run: aws s3 sync --size-only out/ s3://www.pkgx.dev/pkgs/
+      - run: aws s3 sync
+              out/ s3://www.pkgx.dev/pkgs/
+              --size-only
+              --metadata-directive REPLACE \
+              --cache-control no-cache,must-revalidate
 
       - run: aws cloudfront
                create-invalidation
                --distribution-id E15VQ3SI584CSG
-               --paths pkgs/
+               --paths /pkgs /pkgs/ /pkgs/*
