@@ -46,6 +46,7 @@ jobs:
       - run: ../.github/scripts/gen-index.json.ts > ../out/index.json
         working-directory: pantry
 
+      - run: cat ./out/index.html
       - run: .github/scripts/gen-index.html.ts
 
       - run: aws s3 sync --size-only out/ s3://www.pkgx.dev/pkgs/
