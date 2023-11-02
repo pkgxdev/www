@@ -45,7 +45,7 @@ jobs:
 
       - run: |
           cd pantry
-          deno run -A ../.github/scripts/gen-index.json.ts > out/index.json
+          deno run -A ../.github/scripts/gen-index.json.ts > ../out/index.json
       - run: ./.github/scripts/gen-index.html.ts
 
       - run: aws s3 sync out/ s3://www.pkgx.dev/pkgs/
