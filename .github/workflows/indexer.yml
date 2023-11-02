@@ -7,6 +7,7 @@ name: indexer
 # root and modify it then push that back so it could easily get out of sync
 
 on:
+  workflow_call:
   workflow_dispatch:
   schedule:
     - cron: "13,26,39,52 3,9,15,21 * * *"

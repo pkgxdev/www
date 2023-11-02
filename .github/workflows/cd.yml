@@ -110,3 +110,8 @@ jobs:
       - uses: pkgxdev/setup@v1
       - run: pkgx hugo
       - run: pkgx hugo deploy
+
+  indexer:
+    needs: publish
+    runs-on: ubuntu-latest
+    uses: .github/workflows/indexer.yml
