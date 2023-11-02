@@ -10,7 +10,9 @@ interface Pkg {
 
 const pkgs: Pkg[] = JSON.parse(Deno.readTextFileSync("./out/index.json"));
 
-console.log({pkgs})
+if (pkgs.length <= 0) {
+  throw new Error("Empty pkgs!")
+}
 
 for (const pkg of pkgs) {
   Deno.mkdirSync(`./out/${pkg.project}`, {recursive: true});
