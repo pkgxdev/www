@@ -40,13 +40,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
-      - run: |
-          aws s3 sync s3://www.pkgx.dev/pkgs/ ./out
-          rm ./out/index.json
+      - run: aws s3 sync s3://www.pkgx.dev/pkgs/ ./out
       - run: aws s3 sync s3://www.pkgx.dev/index.html ./out
-
-      - run: git log --pretty=format:'%H %aI' --name-only --diff-filter=A -- 'projects/**/package.yml'
-        working-directory: pantry
 
       - run: ../.github/scripts/gen-index.json.ts > ../out/index.json
         working-directory: pantry
