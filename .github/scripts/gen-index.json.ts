@@ -10,8 +10,6 @@ interface Package {
   labels?: string[]
 }
 
-console.error('HI')
-
 export async function getKettleRemoteMetadata() {
   const headers = { Authorization: 'public' }
   const rsp = await fetch(`https://app.pkgx.dev/v1/packages/`, {headers})
@@ -68,8 +66,6 @@ async function getPackageYmlCreationDates(): Promise<Package[]> {
 }
 
 const pkgs = await getPackageYmlCreationDates();
-
-console.error({pkgs})
 
 // sort by birthtime
 pkgs.sort((a, b) => b.birthtime.getTime() - a.birthtime.getTime());

@@ -1,7 +1,5 @@
 #!/usr/bin/env -S pkgx deno run --allow-read --allow-write=./out
 
-console.log('hio')
-
 interface Pkg {
   name?: string
   project: string
@@ -27,11 +25,13 @@ for (const pkg of pkgs) {
 
   txt = txt.replace(/<title>.*<\/title>/, `<title>${title}</title>`);
 
+  txt = txt.replace('<meta name="twitter:card" content="summary_large_image" />', '<meta name="twitter:card" content="summary" />');
+
   Deno.writeTextFileSync(`./out/${pkg.project}/index.html`, txt);
 
   console.log(`./out/${pkg.project}/index.html`)
 }
 
 function replace(txt: string, attr: string, value: string) {
-  return txt.replace(new RegExp(`<meta property="og:${attr}" content=".*">`), `<meta property="og:${attr}" content="${value}">`)
+  return txt.replace(new RegExp(`<meta property="og:${attr}" content=".*" />`), `<meta property="og:${attr}" content="${value}" />`);
 }
