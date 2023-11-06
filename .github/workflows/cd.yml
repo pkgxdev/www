@@ -12,22 +12,28 @@ concurrency:
 # WARNING WARNING
 # we do --size-only because there is no other easy strategy to ensure that
 # we are not invalidating cloudfront for files that have not changed
-# this is risky for `/index.html` for which we should go the extra mile
+# this is risky for `/index.html` which is why we go the extra mile
 # and do a content hash check
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    name: www.pkgx.${{ matrix.cfg.tld }}
+    name: ${{ matrix.cfg.s3id }}
     strategy:
       matrix:
         cfg:
-        - tld: dev
+        - host: pkgx.dev
           cfid: E15VQ3SI584CSG
-        - tld: sh
+          s3id: www.pkgx.dev
+        - host: pkgx.sh
           cfid: E8ZRC36XS5K65
-        - tld: app
+          s3id: www.pkgx.sh
+        - host: pkgx.app
           cfid: EFLDW0FN49Z5Z
+          s3id: www.pkgx.app
+        - host: hub.pkgx.sh
+          cfid: E1H6XLDEJ08BJK
+          s3id: hub.pkgx.sh
     steps:
       - uses: actions/checkout@v4
 
@@ -40,13 +46,13 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          VITE_PKGX_TLD: ${{ matrix.cfg.tld }}
+          VITE_HOST: ${{ matrix.cfg.host }}
           NODE_ENV: production
 
       - name: determine paths to invalidate
         run: |
           aws s3 \
-              sync dist s3://www.pkgx.${{ matrix.cfg.tld }} \
+              sync dist s3://${{ matrix.cfg.s3id }} \
               --size-only \
               --dryrun | \
             awk '{print $3}' | \
@@ -55,14 +61,14 @@ jobs:
       - name: sync immutable assets
         run: aws s3 sync
           dist/assets
-          s3://www.pkgx.${{ matrix.cfg.tld }}/assets
+          s3://${{ matrix.cfg.s3id }}/assets
           --metadata-directive REPLACE
           --cache-control max-age=31536000,immutable
           --size-only
 
       - name: sync mutable, cachable assets
         run: aws s3
-          sync dist/ s3://www.pkgx.${{ matrix.cfg.tld }}
+          sync dist/ s3://${{ matrix.cfg.s3id }}
           --exclude assets
           --exclude index.html
           --metadata-directive REPLACE
@@ -72,11 +78,11 @@ jobs:
       - name: sync index.html
         id: invalidate
         run: |
-          aws s3 cp s3://www.pkgx.${{ matrix.cfg.tld }}/index.html ./index.html.remote
+          aws s3 cp s3://${{ matrix.cfg.s3id }}/index.html ./index.html.remote
           local_hash=$(shasum dist/index.html | awk '{print $1}')
           remote_hash=$(shasum index.html.remote | awk '{print $1}')
           if [ "$local_hash" != "$remote_hash" ]; then
-            aws s3 cp dist/index.html s3://www.pkgx.${{ matrix.cfg.tld }}/index.html \
+            aws s3 cp dist/index.html s3://${{ matrix.cfg.s3id }}/index.html \
               --metadata-directive REPLACE \
               --cache-control no-cache,must-revalidate
             echo /index.html >> paths-to-invalidate.txt

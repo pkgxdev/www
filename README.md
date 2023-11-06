@@ -10,8 +10,9 @@ This repo creates the websites for
 ## How to dev
 
 ```sh
-$ VITE_PKGX_TLD=sh npm run dev
-# ^^ tld can be `sh`, `dev` or `app`
+$ VITE_HOST=pkgx.sh npm run dev
+# ^^ one of `pkgx.sh`, `pkgx.dev` or `pkgx.app` or `hub.pkgx.sh`
+# there is no default! set one!
 
 $ cd blog
 $ hugo server --buildDrafts

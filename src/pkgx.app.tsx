@@ -8,7 +8,7 @@ import gui from "./assets/gui.png";
 import theme from './utils/theme';
 import Masthead from './components/Masthead';
 import Footer from "./components/Footer";
-import './main.css';
+import './assets/main.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>

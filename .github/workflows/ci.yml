@@ -1,0 +1,26 @@
+on:
+  pull_request:
+    paths:
+      - src/**/*
+      - tsconfig.*
+      - index.html
+      - package*.json
+      - vite.config.ts
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: ${{ matrix.host }}
+    strategy:
+      matrix:
+        host:
+        - pkgx.dev
+        - pkgx.sh
+        - pkgx.app
+        - hub.pkgx.sh
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm run build
+        env:
+          VITE_HOST: ${{ matrix.host }}

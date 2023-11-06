@@ -8,15 +8,15 @@ import ossapp_txt from "./assets/ossapp.text.svg";
 import * as ReactDOM from 'react-dom/client';
 import Masthead from './components/Masthead';
 import logo from "./assets/pkgx.purple.svg";
-import PrivacyPolicy from './PrivacyPolicy';
+import PrivacyPolicy from './pkgx.dev/PrivacyPolicy';
 import Footer from "./components/Footer";
 import pkgxsh from "./assets/pkgxsh.svg";
 import ossapp from "./assets/ossapp.svg";
 import Stars from './components/Stars';
-import TermsOfUse from './TermsOfUse';
+import TermsOfUse from './pkgx.dev/TermsOfUse';
 import theme from './utils/theme';
 import React from "react";
-import './main.css';
+import './assets/main.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
