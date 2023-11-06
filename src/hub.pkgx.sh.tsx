@@ -1,10 +1,10 @@
-import { ThemeProvider, useTheme } from '@mui/material/styles';
-import { Button, CssBaseline, Stack, useMediaQuery } from '@mui/material';
-import HeroTypography from "./components/HeroTypography"
+import { Button, CssBaseline, Stack, useMediaQuery, ThemeProvider, useTheme } from '@mui/material';
 import * as ReactDOM from 'react-dom/client';
 import Masthead from "./components/Masthead";
+import Landing from './hub.pkgx.sh/Landing';
 import Footer from "./components/Footer";
 import Stars from './components/Stars';
+import Hero from './hub.pkgx.sh/Hero';
 import theme from './utils/theme';
 import './assets/main.css';
 import React from "react";
@@ -17,13 +17,10 @@ function Body() {
     <Stack maxWidth='md' p={isxs ? 1 : 4} spacing={isxs ? 8 : 16} mx='auto'>
       <MyMasthead />
       <Hero />
+      <Landing />
       <Footer />
     </Stack>
   )
-}
-
-function Hero() {
-  return <HeroTypography>ScriptHub</HeroTypography>
 }
 
 function MyMasthead() {
