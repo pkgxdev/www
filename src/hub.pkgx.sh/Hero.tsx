@@ -1,17 +1,28 @@
-import { Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
-import HeroTypography from "../components/HeroTypography"
+import { Card, CardContent, Link, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Orange } from '../components/Terminal';
 
 export default function Hero() {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
-  return <Stack spacing={6} textAlign='center' mx='auto' alignItems='center' sx={isxs ? undefined : {"&&": {mt: 22}}}>
-    <Typography my={1.5} color="text.secondary">
-      Scripts are the glue that binds the gems of UNIX and open source together.
-    </Typography>
-    <HeroTypography>Scripting Without Limits</HeroTypography>
-    <Typography variant="h5" px={1} sx={{"&&": {mt: 6.5}}}  maxWidth={isxs ? undefined : 570}>
-      Create powerful scripts that can run anything.
-    </Typography>
+  return <Stack spacing={2}>
+    <Card>
+      <CardContent>
+        <Typography component='h1'>
+        <Orange><b>ScriptHub</b></Orange> is
+        a community of thousands of passinate computer users.
+        </Typography>
+        <Typography variant='body2' mt={1}>
+          We glue together the gems of Open Source into unimaginably powerful scripts.
+        </Typography>
+      </CardContent>
+    </Card>
+    <Card>
+      <CardContent>
+        To submit a script, simply fork <Link href='https://github.com/pkgxdev/scripthub'>
+          <code>pkgxdev/scripthub</code>
+        </Link> and add push your scripts. <i>It’s that simple!</i>
+      </CardContent>
+    </Card>
   </Stack>
 }

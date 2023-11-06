@@ -32,7 +32,7 @@ jobs:
           cfid: EFLDW0FN49Z5Z
           s3id: www.pkgx.app
         - host: hub.pkgx.sh
-          cfid: EFLDW0FN49Z5Z
+          cfid: E1H6XLDEJ08BJK
           s3id: hub.pkgx.sh
     steps:
       - uses: actions/checkout@v4
