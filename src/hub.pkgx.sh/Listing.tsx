@@ -10,7 +10,7 @@ interface Script {
   birthtime: string
   description?: string
   avatar: string
-  username: string
+  url: string
 }
 
 export default function Landing() {
