@@ -4,11 +4,11 @@ export default function get_name(project: string): string {
   } else {
     const match = project.match(/^(.*)\.github.io\/(.*)/)
     if (match) {
-      return match[1] == match[2] ? match[1] : match[1] + '/' + match[2];
+      return match[1] == match[2] ? match[1] : `@${match[1]}/${match[2]}`;
     } else {
       const match = project.match(/^github.com\/(.*)\/(.*)/)
       if (match) {
-        return match[1] == match[2] ? match[1] : match[1] + '/' + match[2];
+        return match[1] == match[2] ? match[1] : `@${match[1]}/${match[2]}`;
       } else {
         return project
       }

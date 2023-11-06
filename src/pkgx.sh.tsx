@@ -1,5 +1,5 @@
 import { ThemeProvider, useTheme } from '@mui/material/styles';
-import { Box, Button, CssBaseline, IconButton, Stack, Tooltip, Typography, useMediaQuery } from '@mui/material';
+import { Button, CssBaseline, Stack, useMediaQuery } from '@mui/material';
 import { RunAnything, RunAnywhere, Dev, Trusted, Quote } from "./pkgx.sh/Landing";
 import React from "react";
 import * as ReactDOM from 'react-dom/client';
@@ -7,7 +7,7 @@ import theme from './utils/theme';
 import Masthead from "./components/Masthead";
 import Footer from "./components/Footer";
 import Hero from "./pkgx.sh/Hero";
-import './main.css';
+import './assets/main.css';
 import Stars from './components/Stars';
 
 function Body() {
