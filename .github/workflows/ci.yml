@@ -1,0 +1,25 @@
+on:
+  pull_request:
+    paths:
+      - src/**/*
+      - tsconfig.*
+      - index.html
+      - package*.json
+      - vite.config.ts
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: www.pkgx.${{ matrix.cfg.tld }}
+    strategy:
+      matrix:
+        cfg:
+        - tld: dev
+        - tld: sh
+        - tld: app
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm run build
+        env:
+          VITE_PKGX_TLD: ${{ matrix.cfg.tld }}
