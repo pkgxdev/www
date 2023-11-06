@@ -10,16 +10,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: www.pkgx.${{ matrix.cfg.tld }}
+    name: ${{ matrix.host }}
     strategy:
       matrix:
-        cfg:
-        - tld: dev
-        - tld: sh
-        - tld: app
+        host:
+        - pkgx.dev
+        - pkgx.sh
+        - pkgx.app
+        - hub.pkgx.sh
     steps:
       - uses: actions/checkout@v4
       - run: npm ci
       - run: npm run build
         env:
-          VITE_PKGX_TLD: ${{ matrix.cfg.tld }}
+          VITE_HOST: ${{ matrix.host }}
