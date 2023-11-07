@@ -57,7 +57,6 @@ function PackageListingFrame({children}: {children: React.ReactNode}) {
         <Button href='/pkgs/' color='inherit'>pkgs</Button>
         <Stars href={`https://github.com/pkgxdev/${href}`} />
       </Masthead>
-      <SearchResults />
       {children}
       <Footer/>
     </Stack>

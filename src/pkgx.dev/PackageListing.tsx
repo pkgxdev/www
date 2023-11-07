@@ -27,6 +27,7 @@ interface DumbPackage {
 
 export default function PackageListing() {
   const { "*": splat } = useParams();
+  const project = splat?.slice(0, -1)
 
   const {loading, value, error} = useAsync(async () => {
     const client = new S3Client({
@@ -57,7 +58,7 @@ export default function PackageListing() {
       }
     }).map(x => x.Prefix!) ?? []
 
-    document.title = `pkgx — ${splat || 'pkgs'}`
+    document.title = `pkgx — ${project || 'pkgs'}`
 
     return {dirs, ispkg}
 
@@ -71,7 +72,7 @@ export default function PackageListing() {
     const {dirs, ispkg} = value!
     return <Stack spacing={3}>
       {ispkg
-        ? <Package project={splat!.slice(0, -1)} dirs={dirs} />
+        ? <Package project={project!} dirs={dirs} />
         : <Listing dirs={dirs} />
       }
     </Stack>
