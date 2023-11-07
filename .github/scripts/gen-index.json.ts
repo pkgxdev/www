@@ -75,18 +75,12 @@ console.log(JSON.stringify(pkgs, null, 2));
 //////////////////////////////////////////////////////
 import { parse } from "https://deno.land/std@0.204.0/yaml/mod.ts";
 import { isArray } from "https://deno.land/x/is_what@v4.1.15/src/index.ts";
-import get_pkg_name from "../../src/utils/pkg-name.ts";
+import get_pkg_name from "./utils/get-name.ts";
 
 async function get_name(path: string, project: string): Promise<string | undefined> {
   const txt = await Deno.readTextFileSync(path)
   const yml = await parse(txt) as Record<string, any>
-  if (yml['display-name']) {
-    return yml['display-name']
-  } else if (isArray(yml.provides) && yml.provides.length == 1) {
-    return yml.provides[0].slice(4)
-  } else {
-    return get_pkg_name(project)
-  }
+  return get_pkg_name({ project, display_name: yml['display_name'], provides: yml['provides'] })
 }
 
 import { parse_pkgs_node } from "https://deno.land/x/libpkgx@v0.15.1/src/hooks/usePantry.ts"
