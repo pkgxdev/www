@@ -14,7 +14,7 @@ export async function getKettleRemoteMetadata() {
   const headers = { Authorization: 'public' }
   const rsp = await fetch(`https://app.pkgx.dev/v1/packages/`, {headers})
   const foo = await rsp.json() as {project: string, short_description: string}[]
-  return foo.reduce((acc, {project, short_description}) => {
+  return foo.reduce((acc, {project, short_description, description}) => {
     acc[project] = short_description
     return acc
   }, {} as Record<string, string>)
