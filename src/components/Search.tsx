@@ -1,4 +1,4 @@
-import { InputAdornment, Link, TextField } from '@mui/material';
+import { InputAdornment, Link, TextField, Typography } from '@mui/material';
 import { useCallback } from 'react';
 import { useHits, useSearchBox } from 'react-instantsearch';
 import { Link as RouterLink } from 'react-router-dom'
@@ -36,6 +36,6 @@ export function SearchResults() {
 
   function fu(input: any) {
     const {project, displayName, brief} = input
-    return <li key={project}><Link component={RouterLink} to={`/pkgs/${project}/`}>{displayName}, {brief}</Link></li>
+    return <li key={project}><Typography><Link component={RouterLink} to={`/pkgs/${project}/`}>{displayName}</Link> {brief}</Typography></li>
   }
 }
