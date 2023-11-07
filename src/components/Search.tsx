@@ -4,7 +4,7 @@ import { useHits, useSearchBox } from 'react-instantsearch';
 import { Link as RouterLink } from 'react-router-dom'
 
 export default function Search() {
-  const memoizedSearch = useCallback((query, search) => {
+  const memoizedSearch = useCallback((query: any, search: (arg0: string) => void) => {
     search(query);
   }, []);
   const { refine } = useSearchBox({
@@ -35,7 +35,7 @@ export function SearchResults() {
   </ul>
 
   function fu(input: any) {
-    const {project} = input
-    return <li key={project}><Link component={RouterLink} to={`/pkgs/${project}/`}>{project}</Link></li>
+    const {project, displayName, brief} = input
+    return <li key={project}><Link component={RouterLink} to={`/pkgs/${project}/`}>{displayName}, {brief}</Link></li>
   }
 }
