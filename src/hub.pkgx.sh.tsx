@@ -35,7 +35,7 @@ function MyMasthead() {
     <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>
     <Button href='https://pkgx.dev/pkgs/' color='inherit'>pkgs</Button>
     <Button href='https://web.libera.chat/?channel=#pkgx' color='inherit'>irc</Button>
-    <Stars />
+    <Stars href='https://github.com/pkgxdev/scripthub/' />
   </Masthead>
 }
 

@@ -1,6 +1,6 @@
 import { ThemeProvider } from '@mui/material/styles';
 import { useTheme, CssBaseline, Box, Grid, Button, Stack, Typography, Paper, ButtonBase, useMediaQuery, Link } from '@mui/material';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import PackageShowcase from './pkgx.dev/PackageShowcase';
 import PackageListing from './pkgx.dev/PackageListing';
 import pkgxsh_txt from "./assets/pkgxsh.text.svg";
@@ -43,10 +43,12 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 );
 
 function PackageListingFrame({children}: {children: React.ReactNode}) {
+  const path = useLocation().pathname;
+  const href = path.startsWith('/pkgs') ? 'pantry' : 'pkgx'
   return <Stack direction="column" width='fit-content' minWidth='md' p={2} minHeight='100vh' mx='auto' spacing={4}>
     <Masthead>
       <Button href='/pkgs/' color='inherit'>pkgs</Button>
-      <Stars />
+      <Stars href={`https://github.com/pkgxdev/${href}`} />
     </Masthead>
     {children}
     <Footer/>
