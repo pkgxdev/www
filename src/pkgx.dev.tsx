@@ -17,6 +17,9 @@ import TermsOfUse from './pkgx.dev/TermsOfUse';
 import theme from './utils/theme';
 import React from "react";
 import './assets/main.css';
+import Search from './components/Search';
+import { InstantSearch } from 'react-instantsearch';
+import algoliasearch from 'algoliasearch/lite';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -42,17 +45,22 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   </React.StrictMode>,
 );
 
+const searchClient = algoliasearch('UUTLHX01W7', '819a841ca219754c38918b8bcbbbfea7');
+
 function PackageListingFrame({children}: {children: React.ReactNode}) {
   const path = useLocation().pathname;
   const href = path.startsWith('/pkgs') ? 'pantry' : 'pkgx'
-  return <Stack direction="column" width='fit-content' minWidth='md' p={2} minHeight='100vh' mx='auto' spacing={4}>
-    <Masthead>
-      <Button href='/pkgs/' color='inherit'>pkgs</Button>
-      <Stars href={`https://github.com/pkgxdev/${href}`} />
-    </Masthead>
-    {children}
-    <Footer/>
-  </Stack>
+  return <InstantSearch searchClient={searchClient} indexName="pkgs">
+    <Stack direction="column" width='fit-content' minWidth='md' p={2} minHeight='100vh' mx='auto' spacing={4}>
+      <Masthead>
+        <Search />
+        <Button href='/pkgs/' color='inherit'>pkgs</Button>
+        <Stars href={`https://github.com/pkgxdev/${href}`} />
+      </Masthead>
+      {children}
+      <Footer/>
+    </Stack>
+  </InstantSearch>
 }
 
 function Body() {

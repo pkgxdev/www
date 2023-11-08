@@ -60,3 +60,27 @@ jobs:
                create-invalidation
                --distribution-id E15VQ3SI584CSG
                --paths /pkgs /pkgs/ /pkgs/*
+
+  algolia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: pkgxdev/pantry
+          fetch-depth: 0  # needed to get git metadata for ordering purposes
+
+      - uses: actions/checkout@v4
+        with:
+          path: utils
+
+      - uses: pkgxdev/setup@v2
+
+      - run: utils/.github/scripts/gen-algolia-data.ts > algolia.json
+
+      # FIXME replace with something that cares about versioning :-/
+      - uses: wangchucheng/algolia-uploader@master
+        with:
+          app_id: UUTLHX01W7
+          admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          index_name: pkgs
+          index_file_path: ./algolia.json
