@@ -17,7 +17,7 @@ import TermsOfUse from './pkgx.dev/TermsOfUse';
 import theme from './utils/theme';
 import React from "react";
 import './assets/main.css';
-import Search, { SearchResults } from './components/Search';
+import Search from './components/Search';
 import { InstantSearch } from 'react-instantsearch';
 import algoliasearch from 'algoliasearch/lite';
 
