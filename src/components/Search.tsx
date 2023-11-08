@@ -1,4 +1,4 @@
-import { Fade, Grow, InputAdornment, List, ListItem, ListItemButton, ListItemText, Paper, Popper, Skeleton, TextField, Typography } from '@mui/material';
+import { Fade, Grow, InputAdornment, List, ListItem, ListItemButton, ListItemText, Paper, Popper, Skeleton, TextField, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useHits, useSearchBox } from 'react-instantsearch';
 
@@ -28,6 +28,12 @@ export default function Search() {
   const [isopen, setopen] = useState(false)
   const [has_text, set_has_text] = useState(false)
 
+  const theme = useTheme();
+  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+
+  const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+  const shortcut_txt = isMac ? '⌘K' : 'Ctrl+K'
+
   return <>
     <TextField
       type="search"
@@ -41,8 +47,8 @@ export default function Search() {
         refine(e.target.value);
       }}
       inputRef={inputRef}
-      InputProps={{
-        endAdornment: <InputAdornment position="end">⌘K</InputAdornment>,
+      InputProps={isxs ? undefined : {
+        endAdornment: <InputAdornment position="end">{shortcut_txt}</InputAdornment>,
       }}
     />
     {/* always open so fade away works */}
