@@ -19,9 +19,15 @@ export default function Hero() {
     </Card>
     <Card>
       <CardContent>
-        To submit a script, simply fork <Link href='https://github.com/pkgxdev/scripthub'>
-          <code>pkgxdev/scripthub</code>
-        </Link> and add push your scripts. <i>It’s that simple!</i>
+        <Typography variant='overline' component='h2'>
+          Submitting Scripts
+        </Typography>
+        <Typography component='ol'>
+          <li><Link href='https://github.com/pkgxdev/scripthub'>Fork</Link></li>
+          <li>Commit scripts</li>
+          <li>Push</li>
+          <li>Wait an hour</li>
+        </Typography>
       </CardContent>
     </Card>
   </Stack>
