@@ -44,7 +44,7 @@ jobs:
       - run: aws s3 sync s3://www.pkgx.dev/pkgs/ ./out
       - run: aws s3 cp s3://www.pkgx.dev/index.html ./out/index.html
 
-      - run: ../.github/scripts/gen-index.json.ts > ../out/index.json
+      - run: ../.github/scripts/gen-pkgs-index.json.ts > ../out/index.json
         working-directory: pantry
 
       - run: cat ./out/index.html
@@ -59,6 +59,48 @@ jobs:
                create-invalidation
                --distribution-id E15VQ3SI584CSG
                --paths /pkgs /pkgs/ /pkgs/*
+
+      - run: actions/upload-artifact@v3
+        with:
+          paths: out/index.json
+
+  root-indexer:
+    needs: indexer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          path: pkgs-json
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repo: pkgxdev/pantry
+          path: pantry
+
+      - run: curl https://pkgxdev.github.io/scripthub/index.json > scripthub.json
+
+      - run: >
+          .github/scripts/gen-feed.ts
+              --blog-path ./blog
+              --pkgs-json ./pkgs-json/index.json
+              --scripthub-json ./scripthub.json
+              --pantry-path ./pantry
+            > index.json
+
+      - uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.WWW_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+
+      - run: aws s3 cp index.json s3://www.pkgx.dev/index.json
+
+      - run: aws cloudfront
+               create-invalidation
+               --distribution-id E15VQ3SI584CSG
+               --paths /index.json
 
   algolia:
     runs-on: ubuntu-latest

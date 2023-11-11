@@ -74,7 +74,6 @@ console.log(JSON.stringify(pkgs, null, 2));
 
 //////////////////////////////////////////////////////
 import { parse } from "https://deno.land/std@0.204.0/yaml/mod.ts";
-import { isArray } from "https://deno.land/x/is_what@v4.1.15/src/index.ts";
 import get_pkg_name from "./utils/get-name.ts";
 
 async function get_name(path: string, project: string): Promise<string | undefined> {
