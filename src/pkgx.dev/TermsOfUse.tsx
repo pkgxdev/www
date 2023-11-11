@@ -5,11 +5,7 @@ import { Stack } from "@mui/material";
 import Footer from "../components/Footer";
 
 export default function TermsOfUse() {
-  return <Stack direction="column" maxWidth='md' p={2} minHeight='100vh' mx='auto' spacing={4}>
-    <Masthead />
-    <MuiMarkdown>
-      {md}
-    </MuiMarkdown>
-    <Footer/>
-  </Stack>
+  return <MuiMarkdown>
+    {md}
+  </MuiMarkdown>
 }

@@ -45,7 +45,7 @@ for (const {name, isFile} of Deno.readDirSync(`./blog/content`)) {
     time: new Date(date),
     description,
     title,
-    image: `https://blog.pkgx.dev/${featured_image}`,
+    image: `https://blog.pkgx.dev${featured_image}`,
     url: `https://blog.pkgx.dev/${slug}`,
   })
 }

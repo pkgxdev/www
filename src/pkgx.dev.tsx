@@ -1,120 +1,185 @@
 import { ThemeProvider } from '@mui/material/styles';
-import { useTheme, CssBaseline, Box, Grid, Button, Stack, Typography, Paper, ButtonBase, useMediaQuery, Link } from '@mui/material';
-import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
+import { useTheme, CssBaseline, Box, Button, Stack, Typography, Paper, ButtonBase, useMediaQuery, Link, Alert, Card, CardActionArea, CardContent, CardMedia, Chip } from '@mui/material';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import PackageShowcase from './pkgx.dev/PackageShowcase';
 import PackageListing from './pkgx.dev/PackageListing';
+import PrivacyPolicy from './pkgx.dev/PrivacyPolicy';
 import pkgxsh_txt from "./assets/pkgxsh.text.svg";
 import ossapp_txt from "./assets/ossapp.text.svg";
+import TermsOfUse from './pkgx.dev/TermsOfUse';
 import * as ReactDOM from 'react-dom/client';
 import Masthead from './components/Masthead';
 import logo from "./assets/pkgx.purple.svg";
-import PrivacyPolicy from './pkgx.dev/PrivacyPolicy';
 import Footer from "./components/Footer";
 import pkgxsh from "./assets/pkgxsh.svg";
 import ossapp from "./assets/ossapp.svg";
-import Stars from './components/Stars';
-import TermsOfUse from './pkgx.dev/TermsOfUse';
-import theme from './utils/theme';
-import React from "react";
-import './assets/main.css';
 import Search from './components/Search';
+import Stars from './components/Stars';
+import theme from './utils/theme';
+import React, { CSSProperties, useState } from "react";
+import './assets/main.css';
+import { useAsync } from 'react-use';
+import useInfiniteScroll from 'react-infinite-scroll-hook';
+import FeedItem from "./utils/FeedItem"
 import { InstantSearch } from 'react-instantsearch';
 import algoliasearch from 'algoliasearch/lite';
+
+const searchClient = algoliasearch('UUTLHX01W7', '819a841ca219754c38918b8bcbbbfea7');
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
-        <Routes>
-          <Route path='/' element={<Body />} />
-          <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
-          <Route path='/terms-of-use' element={<TermsOfUse/>} />
-          <Route path='/pkgs' element={<PackageListingFrame>
-            <Typography variant='h4' component='h1'>
-              New Packages
-            </Typography>
-            <PackageShowcase />
-          </PackageListingFrame>} />
-          <Route path='/pkgs/*' element={<PackageListingFrame>
-              <PackageListing/>
-          </PackageListingFrame>} />
-        </Routes>
+        <Stack direction="column" p={2} maxWidth='lg' minHeight='100vh' mx='auto' spacing={4}>
+          <Masthead>
+            <InstantSearch searchClient={searchClient} indexName="pkgs">
+              <Search />
+            </InstantSearch>
+            <Button href='/pkgs/' color='inherit'>pkgs</Button>
+            <Stars href={`https://github.com/pkgxdev/`} />
+          </Masthead>
+          <Routes>
+            <Route path='/' element={<Body />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
+            <Route path='/terms-of-use' element={<TermsOfUse/>} />
+            <Route path='/pkgs' element={<>
+              <Typography variant='h4' component='h1'>
+                New Packages
+              </Typography>
+              <PackageShowcase />
+            </>} />
+            <Route path='/pkgs/*' element={<PackageListing/>} />
+          </Routes>
+          <Footer/>
+        </Stack>
       </Router>
     </ThemeProvider>
   </React.StrictMode>,
 );
 
-const searchClient = algoliasearch('UUTLHX01W7', '819a841ca219754c38918b8bcbbbfea7');
-
-function PackageListingFrame({children}: {children: React.ReactNode}) {
-  const path = useLocation().pathname;
-  const href = path.startsWith('/pkgs') ? 'pantry' : 'pkgx'
-  return <InstantSearch searchClient={searchClient} indexName="pkgs">
-    <Stack direction="column" width='fit-content' minWidth='md' p={2} minHeight='100vh' mx='auto' spacing={4}>
-      <Masthead>
-        <Search />
-        <Button href='/pkgs/' color='inherit'>pkgs</Button>
-        <Stars href={`https://github.com/pkgxdev/${href}`} />
-      </Masthead>
-      {children}
-      <Footer/>
-    </Stack>
-  </InstantSearch>
-}
+import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import HeroTypography from './components/HeroTypography';
 
 function Body() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  return <>
+    <HeroTypography>
+      Crafters of Fine Open Source Products
+    </HeroTypography>
 
-  return <Stack direction="column" width={isxs ? undefined : 'min-content'} maxWidth='md' sx={{p: 2, minHeight: '100vh'}} mx='auto' spacing={4} alignItems='center'>
-
-    <Box flexGrow={1} />
-
-    <Stack direction="column" spacing={4} pb={4}>
-      <Box component='img' src={logo} height={111.45}/>
-      <Typography variant="h2" my={6} fontWeight='regular' textAlign='center' fontSize={20} letterSpacing={0.4}>
-        Crafters of fine open source products
-      </Typography>
-    </Stack>
-
-    <Box display='inline-block' width='max-content'>
-      <Grid container spacing={2} textAlign='center'>
-        <Grid item xs={12} md={6}>
-          <ButtonBase href='https://pkgx.sh'>
-            <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
-              <Stack direction='column' spacing={2}>
-                <img src={pkgxsh} height='33px' />
-                <img src={pkgxsh_txt} height='34px' />
-                <Typography variant='subtitle1' style={{marginTop: 5}}>
-                  Blazingly fast, standalone pkg runner
-                </Typography>
-              </Stack>
-            </Paper>
-          </ButtonBase>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <ButtonBase href='https://pkgx.app'>
-            <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
-              <Stack direction='column' spacing={2}>
-                <img src={ossapp} height='33px' />
-                <img src={ossapp_txt} height='19px' style={{marginTop: 23}} />
-                <Typography variant='subtitle1' style={{marginTop: 13}}>
-                  The Open Source App Store
-                </Typography>
-              </Stack>
-            </Paper>
-          </ButtonBase>
-        </Grid>
+    <Grid container spacing={2} textAlign='center'>
+      <Grid xs={12} md={6}>
+        <ButtonBase href='https://pkgx.sh'>
+          <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
+            <Stack direction='column' spacing={2}>
+              <img src={pkgxsh} height='33px' />
+              <img src={pkgxsh_txt} height='34px' />
+              <Typography variant='subtitle1' style={{marginTop: 5}}>
+                Blazingly fast, standalone pkg runner
+              </Typography>
+            </Stack>
+          </Paper>
+        </ButtonBase>
       </Grid>
-    </Box>
+      <Grid xs={12} md={6}>
+        <ButtonBase href='https://pkgx.app'>
+          <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
+            <Stack direction='column' spacing={2}>
+              <img src={ossapp} height='33px' />
+              <img src={ossapp_txt} height='19px' style={{marginTop: 23}} />
+              <Typography variant='subtitle1' style={{marginTop: 13}}>
+                The Open Source App Store
+              </Typography>
+            </Stack>
+          </Paper>
+        </ButtonBase>
+      </Grid>
+    </Grid>
 
-    <Stack direction={isxs ? 'column' : 'row'} spacing={isxs ? 2 : 4} alignItems='center'>
-      <Typography>Stay in the loop. Check out our <Link color='inherit' underline='always' style={{textDecoration: 'underline'}} href="https://blog.pkgx.dev">blog</Link>.</Typography>
-    </Stack>
+    <Typography variant='h4' sx={{"&&": {mt: 12}}} component='h1'>
+      What’s New?
+    </Typography>
 
-    <Box flexGrow={1} />
+    <Feed />
+  </>
+}
 
-    <Footer />
-  </Stack>
+function Feed() {
+  const { loading, items, hasNextPage, error, loadMore } = useLoadItems();
+
+  const [sentryRef] = useInfiniteScroll({
+    loading,
+    hasNextPage,
+    onLoadMore: loadMore,
+    // When there is an error, we stop infinite loading.
+    // It can be reactivated by setting "error" state as undefined.
+    disabled: !!error,
+    // `rootMargin` is passed to `IntersectionObserver`.
+    // We can use it to trigger 'onLoadMore' when the sentry comes near to become
+    // visible, instead of becoming fully visible on the screen.
+    rootMargin: '0px 0px 800px 0px',
+    delayInMs: 0
+  });
+
+  return <Grid container>
+    {items.map(item => <Grid xs={3}>
+      <FeedItemBox {...item} />
+    </Grid>)}
+    {(loading || hasNextPage) && <Grid xs={12} ref={sentryRef}>Skeleton</Grid>}
+    {error && <Grid xs={12}><Alert severity='error'>{error.message}</Alert></Grid>}
+  </Grid>
+}
+
+function useLoadItems() {
+  const [index, setIndex] = useState(0);
+
+  const async = useAsync(async () => {
+    const rsp = await fetch('https://pkgx.dev/index.json')
+    if (!rsp.ok) throw new Error(rsp.statusText)
+    const data = await rsp.json() as FeedItem[]
+    setIndex(Math.min(data.length, 25))
+    return data
+  });
+
+  return {
+    loading: async.loading,
+    items: (async.value ?? []).slice(0, index),
+    hasNextPage: async.value ? index < async.value.length : false,
+    error: async.error,
+    loadMore: () => setIndex(index => Math.min(index + 25, async.value?.length ?? 0))
+  }
+}
+
+function FeedItemBox(item: FeedItem) {
+  const { url, title, image, description, type } = item
+  const text_style: CSSProperties = {whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden'}
+
+  if (type == 'blog') {
+    console.log(item)
+  }
+
+  return (
+    <Card sx={{m: 0.75, height: '100%'}}>
+      <CardActionArea href={url}>
+        <CardMedia
+          height={300}
+          component={Box}
+          image={image}
+          textAlign='right'
+        >
+          {type !== 'pkg' && <Chip sx={{m: 1}} label={type} color='primary' variant='filled' size='small' />}
+        </CardMedia>
+        <CardContent>
+          <div>
+            <Typography variant='overline' component="h2" style={text_style} display='inline'>
+              {title}
+            </Typography>
+          </div>
+          <Typography variant='caption' component="h3" style={text_style}>
+            {description}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  )
 }
