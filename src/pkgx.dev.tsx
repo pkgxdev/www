@@ -105,6 +105,9 @@ function Body() {
 }
 
 function Feed() {
+  const theme = useTheme();
+  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+
   const { loading, items, hasNextPage, error, loadMore } = useLoadItems();
 
   const [sentryRef] = useInfiniteScroll({
@@ -121,8 +124,8 @@ function Feed() {
     delayInMs: 0
   });
 
-  return <Grid container>
-    {items.map(item => <Grid xs={3}>
+  return <Grid container spacing={isxs ? 1 : 2}>
+    {items.map(item => <Grid xs={6} md={3}>
       <FeedItemBox {...item} />
     </Grid>)}
     {(loading || hasNextPage) && <Grid xs={12} ref={sentryRef}>Skeleton</Grid>}
@@ -151,6 +154,9 @@ function useLoadItems() {
 }
 
 function FeedItemBox(item: FeedItem) {
+  const theme = useTheme();
+  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+
   const { url, title, image, description, type } = item
   const text_style: CSSProperties = {whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden'}
 
@@ -159,10 +165,10 @@ function FeedItemBox(item: FeedItem) {
   }
 
   return (
-    <Card sx={{m: 0.75, height: '100%'}}>
+    <Card sx={{height: '100%'}}>
       <CardActionArea href={url}>
         <CardMedia
-          height={300}
+          height={isxs ? 150 : 300}
           component={Box}
           image={image}
           textAlign='right'
