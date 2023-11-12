@@ -1,14 +1,17 @@
-import { Button, CssBaseline, Stack, useMediaQuery, ThemeProvider, useTheme } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import { Button, CssBaseline, Stack, useMediaQuery, useTheme } from '@mui/material';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import * as ReactDOM from 'react-dom/client';
 import Masthead from "./components/Masthead";
 import Listing from './hub.pkgx.sh/Listing';
+import Script from './hub.pkgx.sh/Script';
 import Footer from "./components/Footer";
 import Stars from './components/Stars';
 import Hero from './hub.pkgx.sh/Hero';
 import theme from './utils/theme';
 import './assets/main.css';
 import React from "react";
-import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
 function Body() {
   const theme = useTheme();
@@ -19,7 +22,12 @@ function Body() {
       <MyMasthead />
       <Grid container spacing={2} sx={{"&&": {mt: 4}}}>
         <Grid xs={12} md={9}>
-          <Listing />
+          <Router>
+            <Routes>
+              <Route path='/' element={<Listing />} />
+              <Route path='/*' element={<Script />} />
+            </Routes>
+          </Router>
         </Grid>
         <Grid xs={12} md={3}>
           <Hero />

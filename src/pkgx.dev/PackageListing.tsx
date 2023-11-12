@@ -99,7 +99,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
   const description = useAsync(async () => {
     const dumb_mangle = project.replaceAll("/", ":")  // see dumb rationale above
     return await get<DumbPackage>(`packages/${dumb_mangle}`)
-  })
+  }, [project])
 
   const buttons = description.value && <>
     {description.value.homepage &&

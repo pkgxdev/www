@@ -10,10 +10,10 @@ export default function Hero() {
       <CardContent>
         <Typography component='h1'>
         <Orange><b>ScriptHub</b></Orange> is
-        a community of thousands of passinate computer users.
+        a community of thousands of passionate computer users.
         </Typography>
         <Typography variant='body2' mt={1}>
-          We glue together the gems of Open Source into unimaginably powerful scripts.
+          We glue together the gems of Open Source into tools that couldn’t be made any other way.
         </Typography>
       </CardContent>
     </Card>
