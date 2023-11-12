@@ -5,7 +5,7 @@ export default function get_name(opts: {display_name?: string, provides?: (strin
   const { display_name, provides, project } = opts
   if (display_name) {
     return display_name
-  } else if (isArray(provides) && provides?.length == 1) {
+  } else if (isArray(provides) && provides?.length == 1 && !provides[0].endsWith('-config')) {
     return provides[0].slice(4)
   } else if (isString(provides)) {
     return (provides as string)!.slice(4)
