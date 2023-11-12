@@ -5,18 +5,22 @@ import HeroTypography from '../components/HeroTypography';
 import pkgxsh_txt from "../assets/pkgxsh.text.svg";
 import ossapp_txt from "../assets/ossapp.text.svg";
 import { useState, CSSProperties } from 'react';
-import FeedItem from '../utils/FeedItem';
 import pkgxsh from "../assets/pkgxsh.svg";
 import ossapp from "../assets/ossapp.svg";
+import FeedItem from '../utils/FeedItem';
 import { useAsync } from 'react-use';
 
 export default function HomeFeed() {
   return <>
-    <HeroTypography>
-      Crafters of Fine Open Source Products
-    </HeroTypography>
+    <Stack textAlign='center'>
+      <Typography variant='overline'>Crafters of Fine</Typography>
+      <HeroTypography>
+        Open Source
+      </HeroTypography>
+      <Typography variant='overline'>Products</Typography>
+    </Stack>
 
-    <Grid container spacing={2} textAlign='center'>
+    <Grid container spacing={{xs: 1, md: 2}} textAlign='center'>
       <Grid xs={12} md={6}>
         <ButtonBase href='https://pkgx.sh'>
           <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
@@ -109,12 +113,30 @@ function FeedItemBox(item: FeedItem) {
   const { url, title, image, description, type } = item
   const text_style: CSSProperties = {whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden'}
 
-  if (type == 'blog') {
-    console.log(item)
-  }
+  const color = (() => {
+    switch (type) {
+      case 'blog': return 'secondary'
+      case 'script': return 'primary'
+    }
+  })()
+
+  const borderColor = color ? `${color}.main` : undefined
+  const borderWidth = color ? 2 : undefined
+
+  const chip = color && <Chip
+    label={type} color={color} variant='filled' size='small'
+    sx={{
+      m: isxs ? 0.5 : 1,
+      color: color == 'secondary' ? 'background.default' : undefined,
+      fontVariant: 'small-caps'
+    }} />
 
   return (
-    <Card sx={{height: '100%'}}>
+    <Card
+      variant={color ? 'outlined' : undefined}
+      raised={!!color}
+      sx={{ borderColor, borderWidth }}
+    >
       <CardActionArea href={url}>
         <CardMedia
           height={isxs ? 150 : 300}
@@ -122,11 +144,11 @@ function FeedItemBox(item: FeedItem) {
           image={image}
           textAlign='right'
         >
-          {type !== 'pkg' && <Chip sx={{m: 1}} label={type} color='primary' variant='filled' size='small' />}
+          {chip}
         </CardMedia>
-        <CardContent>
+        <CardContent sx={isxs ? {p: 0.75} : undefined}>
           <div>
-            <Typography variant='overline' component="h2" style={text_style} display='inline'>
+            <Typography variant='overline' component="h2" style={text_style}>
               {title}
             </Typography>
           </div>

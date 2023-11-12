@@ -23,13 +23,13 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
-        <Stack direction="column" p={2} maxWidth='lg' minHeight='100vh' mx='auto' spacing={4}>
+        <Stack direction="column" p={{xs: 1, md: 2}} maxWidth='lg' minHeight='100vh' mx='auto' spacing={4}>
           <Masthead>
+            <Button href='/pkgs/' color='inherit'>pkgs</Button>
+            <Stars href={`https://github.com/pkgxdev/`} hideCountIfMobile={true} />
             <InstantSearch searchClient={searchClient} indexName="pkgs">
               <Search />
             </InstantSearch>
-            <Button href='/pkgs/' color='inherit'>pkgs</Button>
-            <Stars href={`https://github.com/pkgxdev/`} />
           </Masthead>
           <Routes>
             <Route path='/' element={<HomeFeed />} />

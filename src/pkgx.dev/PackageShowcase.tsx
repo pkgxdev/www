@@ -1,5 +1,5 @@
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
-import { Alert, Card, CardActionArea, CardContent, CardMedia, Chip, Skeleton, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Alert, Box, Card, CardActionArea, CardContent, CardMedia, Chip, Skeleton, Typography, useMediaQuery, useTheme } from "@mui/material";
 import useInfiniteScroll from 'react-infinite-scroll-hook';
 import { CSSProperties, useState } from "react";
 import get_pkg_name from "../utils/pkg-name";
@@ -9,7 +9,7 @@ export default function Showcase() {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
-  const { loading, items, hasNextPage, error, loadMore } = useLoadItems();
+  const { loading, items, hasNextPage, error, loadMore, total } = useLoadItems();
 
   const [sentryRef] = useInfiniteScroll({
     loading,
@@ -25,9 +25,13 @@ export default function Showcase() {
     delayInMs: 0
   });
 
+  const count = total && <Typography
+    display='inline' color='text.secondary' variant='h6'
+  >{new Intl.NumberFormat().format(total)}</Typography>
+
   return <>
-    <Typography variant='h4' component='h1'>
-      Available Packages
+    <Typography variant='h4' component='h1' textAlign={isxs ? "center" : undefined}>
+      Available Packages {count}
     </Typography>
     <Grid container spacing={isxs ? 1 : 2}>
       {items.map(item => <Grid xs={6} md={3}>
@@ -63,7 +67,8 @@ function useLoadItems() {
     items: (async.value ?? []).slice(0, index),
     hasNextPage: async.value ? index < async.value.length : false,
     error: async.error,
-    loadMore: () => setIndex(index => Math.min(index + 25, async.value?.length ?? 0))
+    loadMore: () => setIndex(index => Math.min(index + 25, async.value?.length ?? 0)),
+    total: async.value?.length
   }
 }
 
@@ -72,25 +77,29 @@ function PkgCard({project, description, name, labels}: Package) {
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
   const text_style: CSSProperties = {whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden'}
-  const columnCount = isxs ? 2 : 3
-  const columnWidth = isxs ? (window.innerWidth - 28) / 2 : 300
 
-  const chips = (labels ?? []).map(label => <Chip sx={{ml: 0.5}} label={label} color='secondary' variant="outlined" size='small' />)
+  const chips = (labels ?? []).map(label =>
+    <Chip sx={{m: isxs ? 0.5 : 1, color: 'background.default', fontVariant: 'small-caps'}}
+      label={label} color='secondary' variant="filled" size='small' />
+  )
 
   return (
     <Card>
       <CardActionArea href={`/pkgs/${project}/`}>
         <CardMedia
-          height={columnWidth}
-          component='img'
+          height={isxs ? 150 : 300}
+          component={Box}
           image={`https://gui.tea.xyz/prod/${project}/512x512.webp`}
-        />
-        <CardContent>
+          textAlign='right'
+        >
+          {chips}
+        </CardMedia>
+        <CardContent sx={isxs ? {p: 0.75} : undefined}>
           <div>
-            <Typography variant='overline' component="h2" style={text_style} display='inline'>
+            <Typography variant='overline' component="h2" style={text_style}>
               {name || get_pkg_name(project)}
             </Typography>
-            {chips}
+
           </div>
           <Typography variant='caption' component="h3" style={text_style}>
             {description}
