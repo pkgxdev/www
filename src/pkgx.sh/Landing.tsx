@@ -87,7 +87,7 @@ export function RunAnything() {
           <Card>
             <CardContent>
               <Typography variant="h5">
-                Shell Integration
+                Aksually… <b>Really</b> Just Type It
               </Typography>
               <Typography my={1.5} color="text.secondary">
                 <code>pkgx</code> can <i>optionally</i> integrate with your shell giving it <b>pkging powers</b>.
