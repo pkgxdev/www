@@ -112,6 +112,22 @@ export function RunAnything() {
               </Alert>
             </CardContent>
           </Card>
+          <Card sx={{mt: 2}}>
+            <CardContent>
+              <Typography variant="h5">
+                Or Just Install Stuff
+              </Typography>
+              <Terminal width='100%' mb={2} mt={2}>
+                <Prompt/> <Orange>pkgx</Orange> install gh<br/>
+                installed ~/.local/bin/gh<br/>
+              </Terminal>
+              <Alert severity="info">
+                Some tools you need at the system level, but generally we feel you should
+                use our shell integration and our <Orange>dev</Orange> tool which makes tools
+                available on a per project basis.
+              </Alert>
+            </CardContent>
+          </Card>
         </Grid>
       </Grid>
     </div>
