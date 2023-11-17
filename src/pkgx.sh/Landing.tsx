@@ -30,7 +30,7 @@ export function RunAnything() {
 
   return <Stack spacing={3} p={0}>
     <H3 sx={{"&&": { mb: 3}}}>
-      It’s <code>npx</code>, but for <Typography display='inline' variant='h3' fontSize='inherit' color='primary' fontWeight='bold' component='span'>Everything Else</Typography>
+      It’s <code style={{marginRight: 1}}>npx</code>—but for <Typography display='inline' variant='h3' fontSize='inherit' color='primary' fontWeight='bold' component='span'>Everything Else</Typography>
     </H3>
 
     <Terminal>
@@ -87,7 +87,7 @@ export function RunAnything() {
           <Card>
             <CardContent>
               <Typography variant="h5">
-                Actually… Just Type It
+                Whatever you want to run<br/><i>Just type it</i>
               </Typography>
               <Typography my={1.5} color="text.secondary">
                 <code>pkgx</code> can <i>optionally</i> integrate with your shell giving it <b>pkging powers</b>.
