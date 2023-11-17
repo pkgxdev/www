@@ -74,6 +74,7 @@ export default function Footer() {
         <ul style={ul_style}>
           <Li><Link href='https://github.com/pkgxdev' {...link_props}>GitHub{icon}</Link></Li>
           <Li><Link href='https://x.com/pkgxdev' {...link_props}>𝕏{icon}</Link></Li>
+          <Li><Link href='https://discord.gg/rNwNUY83XS' {...link_props}>Discord{icon}</Link></Li>
           <Li><Link href='https://web.libera.chat/?channel=#pkgx' {...link_props}>irc:#pkgx{icon}</Link></Li>
         </ul>
       </Grid>

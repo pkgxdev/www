@@ -27,17 +27,16 @@ export default function Hero() {
       <code>pkgx</code> is a blazingly fast, standalone, cross‐platform binary that <i>runs anything</i>
     </Typography>
 
-    <Box onClick={click} px={isxs ? undefined : 10} width={isxs ? undefined : 570}>
+    <Box onClick={click} px={isxs ? undefined : 10} width={isxs ? '90vw' : 570}>
       <Tooltip title="Click to Copy" placement='right' arrow>
       <TextField
         className="halo"
         value={brew_install}
-        size='medium'
         fullWidth={true}
         InputProps={{
           endAdornment: <InputAdornment position="end"><ContentCopyIcon /></InputAdornment>,
           readOnly: true,
-          style: {cursor: 'default', fontFamily: 'monospace'},
+          style: {cursor: 'default', fontFamily: 'monospace', fontSize: isxs ? 14 : undefined},
         }}
       />
       </Tooltip>

@@ -1,5 +1,5 @@
 import { CssBaseline, Button, Stack, Typography, ThemeProvider } from '@mui/material';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import PackageShowcase from './pkgx.dev/PackageShowcase';
 import PackageListing from './pkgx.dev/PackageListing';
 import PrivacyPolicy from './pkgx.dev/PrivacyPolicy';
@@ -15,6 +15,7 @@ import Stars from './components/Stars';
 import theme from './utils/theme';
 import React, {  } from "react";
 import './assets/main.css';
+import Discord from './components/Discord';
 
 const searchClient = algoliasearch('UUTLHX01W7', '819a841ca219754c38918b8bcbbbfea7');
 
@@ -24,13 +25,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <CssBaseline />
       <Router>
         <Stack direction="column" p={{xs: 1, md: 2}} maxWidth='lg' minHeight='100vh' mx='auto' spacing={4}>
-          <Masthead>
-            <Button href='/pkgs/' color='inherit'>pkgs</Button>
-            <Stars href={`https://github.com/pkgxdev/`} hideCountIfMobile={true} />
-            <InstantSearch searchClient={searchClient} indexName="pkgs">
-              <Search />
-            </InstantSearch>
-          </Masthead>
+          <MyMasthead />
           <Routes>
             <Route path='/' element={<HomeFeed />} />
             <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
@@ -44,3 +39,17 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     </ThemeProvider>
   </React.StrictMode>,
 );
+
+function MyMasthead() {
+  const { pathname } = useLocation()
+  const is_pkgs = pathname.startsWith('/pkgs')
+  return <Masthead>
+    <Button href='/pkgs/' color='inherit'>pkgs</Button>
+    {is_pkgs && <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>}
+    <Discord />
+    <Stars href={`https://github.com/pkgxdev/`} hideCountIfMobile={true} />
+    <InstantSearch searchClient={searchClient} indexName="pkgs">
+      <Search />
+    </InstantSearch>
+  </Masthead>
+}

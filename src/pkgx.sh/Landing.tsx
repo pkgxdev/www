@@ -28,9 +28,9 @@ export function RunAnything() {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
-  return <Stack spacing={3}>
+  return <Stack spacing={3} p={0}>
     <H3 sx={{"&&": { mb: 3}}}>
-      Whatever you want to run {isxs && <br />}<Typography display='inline' variant='h3' fontSize='inherit' color='primary' fontWeight='bold' component='span'>Just type it</Typography>
+      It’s <code>npx</code>, but for <Typography display='inline' variant='h3' fontSize='inherit' color='primary' fontWeight='bold' component='span'>Everything Else</Typography>
     </H3>
 
     <Terminal>
@@ -87,7 +87,7 @@ export function RunAnything() {
           <Card>
             <CardContent>
               <Typography variant="h5">
-                Aksually… <b>Really</b> Just Type It
+                Actually… Just Type It
               </Typography>
               <Typography my={1.5} color="text.secondary">
                 <code>pkgx</code> can <i>optionally</i> integrate with your shell giving it <b>pkging powers</b>.
@@ -413,7 +413,7 @@ export function Trusted() {
 
   return <Stack spacing={1}>
     <H3>
-      Trusted by <Typography fontWeight='bold' component='span' display='inline' variant='h3' color='primary'>10k</Typography> Engineers
+      Trusted by <Typography fontWeight='bold' component='span' display='inline' variant='h3' color='primary'>15k</Typography> Engineers
     </H3>
 
     <Typography variant="h5" color='text.secondary' textAlign='center' sx={{"&&": {mt: 1, mb: 4}}} >

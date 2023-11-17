@@ -19,7 +19,8 @@ export default function Terminal({ children, width, mb, mt }: { children: React.
       mx: 'auto',
       mb: mb ?? 4,
       mt: mt ?? 4,
-      overflow: 'visible'
+      overflow: 'visible',
+      fontSize: isxs ? 14 : undefined
   }}>
     <Card variant="outlined" sx={sx} data-terminal={stoplights}>
       {children}

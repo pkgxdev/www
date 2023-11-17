@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Hero from "./pkgx.sh/Hero";
 import './assets/main.css';
 import Stars from './components/Stars';
+import Discord from './components/Discord';
 
 function Body() {
   const theme = useTheme();
@@ -29,11 +30,15 @@ function Body() {
 }
 
 function MyMasthead() {
+  const theme = useTheme();
+  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const size = isxs ? 'small' : undefined
+
   return <Masthead>
-    <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>
-    <Button href='https://pkgx.dev/pkgs/' color='inherit'>pkgs</Button>
-    <Button href='https://web.libera.chat/?channel=#pkgx' color='inherit'>irc</Button>
-    <Stars />
+    <Button href='https://docs.pkgx.sh' color='inherit' size={size}>docs</Button>
+    <Button href='https://pkgx.dev/pkgs/' color='inherit' size={size}>pkgs</Button>
+    <Discord />
+    <Stars hideCountIfMobile />
   </Masthead>
 }
 

@@ -12,6 +12,7 @@ import Hero from './hub.pkgx.sh/Hero';
 import theme from './utils/theme';
 import './assets/main.css';
 import React from "react";
+import Discord from './components/Discord';
 
 function Body() {
   const theme = useTheme();
@@ -42,7 +43,7 @@ function MyMasthead() {
   return <Masthead>
     <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>
     <Button href='https://pkgx.dev/pkgs/' color='inherit'>pkgs</Button>
-    <Button href='https://web.libera.chat/?channel=#pkgx' color='inherit'>irc</Button>
+    <Discord />
     <Stars href='https://github.com/pkgxdev/scripthub/' />
   </Masthead>
 }
