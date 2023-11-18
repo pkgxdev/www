@@ -10,7 +10,7 @@ on:
   workflow_call:
   workflow_dispatch:
   schedule:
-    - cron: "13,26,39,52 3,9,15,21 * * *"
+    - cron: "13 * * * *"
   pull_request:
     branches: main
     paths:
