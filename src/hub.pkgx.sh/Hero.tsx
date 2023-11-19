@@ -24,9 +24,11 @@ export default function Hero() {
         </Typography>
         <Typography component='ol'>
           <li><Link href='https://github.com/pkgxdev/scripthub'>Fork</Link></li>
-          <li>Commit scripts</li>
-          <li>Push</li>
+          <li>Push scripts</li>
           <li>Wait an hour</li>
+        </Typography>
+        <Typography variant='body2' mt={1}>
+          No pull request required! <i>We index the fork graph.</i>
         </Typography>
       </CardContent>
     </Card>
