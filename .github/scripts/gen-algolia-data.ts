@@ -21,7 +21,7 @@ export async function getKettleRemoteMetadata() {
 }
 
 function get_name(yml: any, project: string) {
-  return get_pkg_name({ project, display_name: yml['display_name'], provides: yml['provides'] })
+  return get_pkg_name({ project, display_name: yml['display-name'], provides: yml['provides'] })
 }
 
 

@@ -79,7 +79,7 @@ import get_pkg_name from "./utils/get-name.ts";
 async function get_name(path: string, project: string): Promise<string | undefined> {
   const txt = await Deno.readTextFileSync(path)
   const yml = await parse(txt) as Record<string, any>
-  return get_pkg_name({ project, display_name: yml['display_name'], provides: yml['provides'] })
+  return get_pkg_name({ project, display_name: yml['display-name'], provides: yml['provides'] })
 }
 
 import { parse_pkgs_node } from "https://deno.land/x/libpkgx@v0.15.1/src/hooks/usePantry.ts"
