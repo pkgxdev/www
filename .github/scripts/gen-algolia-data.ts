@@ -10,6 +10,7 @@ interface Package {
   brief: string
   displayName: string
   programs: string[]
+  objectID: string
 }
 
 export async function getKettleRemoteMetadata() {
@@ -17,7 +18,9 @@ export async function getKettleRemoteMetadata() {
   const rsp = await fetch(`https://app.pkgx.dev/v1/packages/`, {headers})
   const data = await rsp.json() as (Package & { short_description: string })[]
   /// just pick out the fields we want
-  return data.map(({ project, description, short_description }) => ({ project, description, brief: short_description }))
+  return data.map(({ project, description, short_description }) => ({
+    project, description, brief: short_description, objectID: project
+  }))
 }
 
 function get_name(yml: any, project: string) {
