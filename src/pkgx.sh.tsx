@@ -10,22 +10,25 @@ import Hero from "./pkgx.sh/Hero";
 import './assets/main.css';
 import Stars from './components/Stars';
 import Discord from './components/Discord';
+import { BrowserRouter } from 'react-router-dom';
 
 function Body() {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <Stack maxWidth='md' p={isxs ? 1 : 4} spacing={isxs ? 8 : 16} mx='auto'>
-      <MyMasthead />
-      <Hero />
-      <RunAnything />
-      <Quote />
-      <RunAnywhere />
-      <Dev />
-      <Trusted />
-      <Footer />
-    </Stack>
+    <BrowserRouter>
+      <Stack maxWidth='md' p={isxs ? 1 : 4} spacing={isxs ? 8 : 16} mx='auto'>
+        <MyMasthead />
+        <Hero />
+        <RunAnything />
+        <Quote />
+        <RunAnywhere />
+        <Dev />
+        <Trusted />
+        <Footer />
+      </Stack>
+    </BrowserRouter>
   )
 }
 
