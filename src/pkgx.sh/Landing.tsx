@@ -30,7 +30,7 @@ export function RunAnything() {
 
   return <Stack spacing={3} p={0}>
     <H3 sx={{"&&": { mb: 3}}}>
-      It’s <code style={{marginRight: 1}}>npx</code>—but for <Typography display='inline' variant='h3' fontSize='inherit' color='primary' fontWeight='bold' component='span'>Everything Else</Typography>
+      It’s <code style={{marginRight: 1}}>npx</code> for <Typography display='inline' variant='h3' fontSize='inherit' color='primary' fontWeight='bold' component='span'>everything else</Typography>
     </H3>
 
     <Terminal>
