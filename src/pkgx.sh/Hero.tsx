@@ -1,17 +1,17 @@
-import { Box, InputAdornment, Button, TextField, Typography, Stack, Snackbar, Alert, Tooltip, useMediaQuery, useTheme, Tabs, Tab } from "@mui/material"
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward"
-import ContentCopyIcon from "@mui/icons-material/ContentCopy"
-import React, { useState } from "react"
-import HeroTypography from "../components/HeroTypography"
-import { useSearchParams } from "react-router-dom"
+import { Box, InputAdornment, Button, TextField, Typography, Stack, Snackbar, Alert, Tooltip, useMediaQuery, useTheme, Tabs, Tab } from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import React, { useState } from "react";
+import HeroTypography from "../components/HeroTypography";
+import { useSearchParams } from "react-router-dom";
 
 export default function Hero() {
-  const theme = useTheme()
-  const isxs = useMediaQuery(theme.breakpoints.down("md"))
-  const [searchParams, setSearchParams] = useSearchParams({ tab: "brew" })
+  const theme = useTheme();
+  const isxs = useMediaQuery(theme.breakpoints.down("md"));
+  const [searchParams, setSearchParams] = useSearchParams({ tab: "brew" });
 
-  const [open, setOpen] = useState(false)
-  const close = () => setOpen(false)
+  const [open, setOpen] = useState(false);
+  const close = () => setOpen(false);
 
   const text = () =>
     searchParams.get("tab") === "brew"
@@ -19,9 +19,9 @@ export default function Hero() {
       : "curl -Ssf https://pkgx.sh | sh"
 
   const click = (event: React.MouseEvent<HTMLElement>) => {
-    navigator.clipboard.writeText(text())
-    setOpen(true)
-  }
+    navigator.clipboard.writeText(text());
+    setOpen(true);
+  };
 
   const style = isxs
     ? { minWidth: "fit-content", height: "fit-content", padding: 12 }
@@ -110,4 +110,4 @@ export default function Hero() {
       </Box>
     </Stack>
   )
-}
+};
