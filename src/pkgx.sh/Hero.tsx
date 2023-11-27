@@ -1,13 +1,13 @@
-import { Box, InputAdornment, Button, TextField, Typography, Stack, Snackbar, Alert, Tooltip, useMediaQuery, useTheme, Tabs, Tab } from '@mui/material'
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
-import ContentCopyIcon from '@mui/icons-material/ContentCopy'
-import React, { useState } from 'react'
+import { Box, InputAdornment, Button, TextField, Typography, Stack, Snackbar, Alert, Tooltip, useMediaQuery, useTheme, Tabs, Tab } from "@mui/material";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import React, { useState } from "react";
 import HeroTypography from '../components/HeroTypography'
 import { useSearchParams } from 'react-router-dom'
 
 export default function Hero() {
-  const theme = useTheme()
-  const isxs = useMediaQuery(theme.breakpoints.down('md'))
+  const theme = useTheme();
+  const isxs = useMediaQuery(theme.breakpoints.down('md'));
   const [searchParams, setSearchParams] = useSearchParams({ via: 'brew' })
 
   const [open, setOpen] = useState(false)
@@ -35,56 +35,34 @@ export default function Hero() {
       alignItems='center'
       sx={isxs ? undefined : { '&&': { mt: 22 } }}
     >
-      <HeroTypography>Run Anything</HeroTypography>
+      <HeroTypography>
+        Run Anything
+      </HeroTypography>
 
-      <Typography
-        variant='h5'
-        px={1}
-        sx={{ '&&': { mt: 6.5 } }}
-        maxWidth={isxs ? undefined : 570}
-      >
-        <code>pkgx</code> is a blazingly fast, standalone, cross‐platform binary
-        that <i>runs anything</i>
+      <Typography variant="h5" px={1} sx={{"&&": {mt: 6.5}}}  maxWidth={isxs ? undefined : 570}>
+        <code>pkgx</code> is a blazingly fast, standalone, cross‐platform binary that <i>runs anything</i>
       </Typography>
 
       <Box px={isxs ? undefined : 10} width={isxs ? '90vw' : 570}>
-        <Tooltip title='Click to Copy' placement='right' arrow>
+        <Tooltip title="Click to Copy" placement='right' arrow>
           <TextField
             onClick={click}
-            className='halo'
+            className="halo"
             value={text()}
             fullWidth={true}
             InputProps={{
-              endAdornment: (
-                <InputAdornment position='end'>
-                  <ContentCopyIcon />
-                </InputAdornment>
-              ),
+              endAdornment: <InputAdornment position="end"><ContentCopyIcon /></InputAdornment>,
               readOnly: true,
-              style: {
-                cursor: 'default',
-                fontFamily: 'monospace',
-                fontSize: isxs ? 14 : undefined,
-              },
+              style: {cursor: 'default', fontFamily: 'monospace', fontSize: isxs ? 14 : undefined},
             }}
           />
         </Tooltip>
 
-        <Snackbar
-          open={open}
-          autoHideDuration={1500}
-          onClose={close}
-          anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-        >
-          <Alert
-            onClose={close}
-            severity='success'
-            variant='filled'
-            color={'primary' as any}
-          >
-            Copied to Clipboard
-          </Alert>
-        </Snackbar>
+      <Snackbar open={open} autoHideDuration={1500} onClose={close} anchorOrigin={{vertical: 'top', horizontal: 'center'}}>
+        <Alert onClose={close} severity="success" variant='filled' color={'primary' as any}>
+          Copied to Clipboard
+        </Alert>
+      </Snackbar>
 
         <Tabs
           value={searchParams.get('via')?.toLowerCase()}
