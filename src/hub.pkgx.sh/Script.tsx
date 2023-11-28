@@ -16,7 +16,7 @@ export default function ScriptRoute() {
   const path = useLocation().pathname
 
   const data = useAsync(async () => {
-    const rsp = await fetch('https://pkgxdev.github.io/scripthub/index.json')
+    const rsp = await fetch('https://pkgxdev.github.io/mash/index.json')
     const data = await rsp.json()
     return data.scripts.find((s: any) => `/${s.fullname}` === path) as Script
   })
@@ -32,7 +32,7 @@ export default function ScriptRoute() {
 
 export function ScriptComponent({fullname, birthtime, description, avatar, url}: Script) {
   const {loading, error, value: content} = useAsync(async () => {
-    const rsp = await fetch(`https://pkgxdev.github.io/scripthub/${fullname}`)
+    const rsp = await fetch(`https://pkgxdev.github.io/mash/${fullname}`)
     const txt = await rsp.text()
     return txt.split('\n').slice(0, 5).join('\n')
   })

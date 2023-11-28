@@ -78,7 +78,7 @@ jobs:
 
       - uses: actions/download-artifact@v3
 
-      - run: curl https://pkgxdev.github.io/scripthub/index.json > scripthub.json
+      - run: curl https://pkgxdev.github.io/mash/index.json > scripthub.json
 
       - run: |
           .github/scripts/gen-feed.ts \

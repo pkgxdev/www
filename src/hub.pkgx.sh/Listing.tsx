@@ -4,7 +4,7 @@ import { useAsync } from 'react-use';
 
 export default function Landing() {
   const data = useAsync(async () => {
-    const rsp = await fetch('https://pkgxdev.github.io/scripthub/index.json')
+    const rsp = await fetch('https://pkgxdev.github.io/mash/index.json')
     const data = await rsp.json()
     return data.scripts as Script[]
   })
