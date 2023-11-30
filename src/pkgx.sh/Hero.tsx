@@ -2,24 +2,30 @@ import { Box, InputAdornment, Button, TextField, Typography, Stack, Snackbar, Al
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import React, { useState } from "react";
-import HeroTypography from "../components/HeroTypography"
+import HeroTypography from '../components/HeroTypography'
+import { useSearchParams } from 'react-router-dom'
 
 export default function Hero() {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const [searchParams, setSearchParams] = useSearchParams({ via: 'brew' })
 
   const [open, setOpen] = useState(false)
   const close = () => setOpen(false)
-  const [tabIndex, setTabIndex] = useState(0)
 
-  const text = () => tabIndex == 0 ? "brew install pkgxdev/made/pkgx" : "curl -Ssf https://pkgx.sh | sh"
+  const text = () =>
+    searchParams.get('via') === 'brew'
+      ? 'brew install pkgxdev/made/pkgx'
+      : 'curl -Ssf https://pkgx.sh | sh'
 
   const click = (event: React.MouseEvent<HTMLElement>) => {
     navigator.clipboard.writeText(text())
     setOpen(true)
-  };
+  }
 
-  const style = isxs ? {minWidth: "fit-content", height: 'fit-content', padding: 12} : undefined
+  const style = isxs
+    ? { minWidth: 'fit-content', height: 'fit-content', padding: 12 }
+    : undefined
 
   return <Stack spacing={6} textAlign='center' mx='auto' alignItems='center' sx={isxs ? undefined : {"&&": {mt: 22}}}>
     <HeroTypography>
@@ -51,12 +57,22 @@ export default function Hero() {
         </Alert>
       </Snackbar>
 
-      <Tabs value={tabIndex} onChange={(_, i) => setTabIndex(i)} style={{paddingInline: '0.5em' }}>
-        <Tab label='brew' />
-        <Tab label='cURL' />
+      <Tabs
+        value={searchParams.get('via')?.toLowerCase()}
+        onChange={(_, val) => setSearchParams({ via: val })}
+        style={{ paddingInline: '0.5em' }}
+      >
+        <Tab label='brew' value='brew' />
+        <Tab label='cURL' value='curl' />
         <Box width='100%'>
-          <Stack direction="row" justifyContent="end" mt={1}>
-            <Button href='https://docs.pkgx.sh/installing-w/out-brew' sx={{mt: 0.5}} size='small' color='inherit' endIcon={<ArrowForwardIcon />}>
+          <Stack direction='row' justifyContent='end' mt={1}>
+            <Button
+              href='https://docs.pkgx.sh/installing-w/out-brew'
+              sx={{ mt: 0.5 }}
+              size='small'
+              color='inherit'
+              endIcon={<ArrowForwardIcon />}
+            >
               other ways {isxs || 'to install'}
             </Button>
           </Stack>
