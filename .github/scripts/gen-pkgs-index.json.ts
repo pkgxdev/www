@@ -43,9 +43,9 @@ async function getPackageYmlCreationDates(): Promise<Package[]> {
     } else if (line.endsWith('package.yml')) {
       const project = line.slice(9, -12)
 
-      if (!fs.existsSync(line)) {
+      if (!fs.existsSync(line) || project.startsWith('tea.xyz')) {
         // the file used to exist but has been deleted
-        console.warn("skipping yanked: ", project)
+        console.warn("::warning::skipping yanked:", project)
         continue
       }
 
@@ -57,6 +57,7 @@ async function getPackageYmlCreationDates(): Promise<Package[]> {
 
       let labels: string[] | undefined = [...await get_labels(line)]
       if (labels.length == 0) labels = undefined
+
 
       rv.push({ project, birthtime, name, description, labels })
     }

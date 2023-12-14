@@ -31,15 +31,20 @@ function get_name(yml: any, project: string) {
 const rv = await getKettleRemoteMetadata()
 
 for (const obj of rv as Package[]) {
+  if (obj.project.startsWith('tea.xyz')) continue
   const yaml_path = `./projects/${obj.project}/package.yml`
-  const txt = await Deno.readTextFileSync(yaml_path)
-  const yml = await yaml.parse(txt) as Record<string, any>
+  try {
+    const txt = await Deno.readTextFileSync(yaml_path)
+    const yml = await yaml.parse(txt) as Record<string, any>
 
-  const node = yml['provides']
-  const provides: string[] = isArray(node) ? node : isString(node) ? [node] : []
+    const node = yml['provides']
+    const provides: string[] = isArray(node) ? node : isString(node) ? [node] : []
 
-  obj.displayName = get_name(yaml_path, obj.project)
-  obj.programs = provides.map(x => x.slice(4))
+    obj.displayName = get_name(yaml_path, obj.project)
+    obj.programs = provides.map(x => x.slice(4))
+  } catch (err) {
+    console.warn(`::warning::${err.message}`)
+  }
 }
 
 console.log(JSON.stringify(rv, null, 2))
