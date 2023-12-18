@@ -60,7 +60,7 @@ jobs:
                --distribution-id E15VQ3SI584CSG
                --paths /pkgs /pkgs/ /pkgs/*
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           path: out/index.json
 
