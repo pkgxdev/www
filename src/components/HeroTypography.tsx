@@ -12,5 +12,5 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
 }));
 
 export default function HeroTypography({ children, ...props }: React.ComponentProps<typeof Typography>) {
-  return <StyledTypography className='text-gradient' fontFamily='shader' variant='h1' {...props}>{children}</StyledTypography>
+  return <StyledTypography className='text-gradient' variant='h1' {...props}>{children}</StyledTypography>
 }
