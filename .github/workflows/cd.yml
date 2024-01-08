@@ -18,7 +18,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    name: ${{ matrix.cfg.s3id }}
+    name: ${{ matrix.cfg.host }}
     strategy:
       matrix:
         cfg:
@@ -31,7 +31,7 @@ jobs:
         - host: pkgx.app
           cfid: EFLDW0FN49Z5Z
           s3id: www.pkgx.app
-        - host: hub.pkgx.sh
+        - host: mash.pkgx.sh
           cfid: E1H6XLDEJ08BJK
           s3id: hub.pkgx.sh
     steps:

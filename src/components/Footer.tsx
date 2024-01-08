@@ -51,6 +51,7 @@ export default function Footer() {
         <ul style={ul_style}>
           <Li><Link href='https://pkgx.sh' {...link_props}>pkgx</Link></Li>
           <Li><Link href='https://pkgx.app' {...link_props}>oss.app</Link></Li>
+          <Li><Link href='https://mash.pkgx.sh' {...link_props}>mash</Link></Li>
           <Li><Link href='https://docs.pkgx.sh' {...link_props}>docs</Link></Li>
           <Li><Link href='https://pkgx.dev/pkgs/' {...link_props}>pkgs</Link></Li>
         </ul>

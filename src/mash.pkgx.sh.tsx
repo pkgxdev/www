@@ -1,14 +1,14 @@
 import { ThemeProvider } from '@mui/material/styles';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
-import { Button, CssBaseline, Stack, useMediaQuery, useTheme } from '@mui/material';
+import { Button, CssBaseline, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import * as ReactDOM from 'react-dom/client';
 import Masthead from "./components/Masthead";
-import Listing from './hub.pkgx.sh/Listing';
-import Script from './hub.pkgx.sh/Script';
+import Listing from './mash.pkgx.sh/Listing';
+import Script from './mash.pkgx.sh/Script';
 import Footer from "./components/Footer";
 import Stars from './components/Stars';
-import Hero from './hub.pkgx.sh/Hero';
+import Hero from './mash.pkgx.sh/Hero';
 import theme from './utils/theme';
 import './assets/main.css';
 import React from "react";
@@ -40,11 +40,11 @@ function Body() {
 }
 
 function MyMasthead() {
-  return <Masthead>
+  return <Masthead left={<Typography fontFamily='shader' color='secondary'>MASH</Typography>}>
     <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>
     <Button href='https://pkgx.dev/pkgs/' color='inherit'>pkgs</Button>
     <Discord />
-    <Stars href='https://github.com/pkgxdev/scripthub/' />
+    <Stars href='https://github.com/pkgxdev/mash/' />
   </Masthead>
 }
 

@@ -17,7 +17,7 @@ jobs:
         - pkgx.dev
         - pkgx.sh
         - pkgx.app
-        - hub.pkgx.sh
+        - mash.pkgx.sh
     steps:
       - uses: actions/checkout@v4
       - run: npm ci

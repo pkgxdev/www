@@ -1,4 +1,5 @@
-import { Alert, Avatar, Card, CardActionArea, CardContent, Skeleton, Stack, Typography } from '@mui/material';
+import { Alert, Avatar, Button, Card, CardActionArea, CardContent, Skeleton, Stack, Typography } from '@mui/material';
+import ArrowOutwardIcon from '@mui/icons-material/CallMade';
 import Terminal, { Dim } from '../components/Terminal';
 import { useLocation } from 'react-router-dom';
 import Markdown from '../components/Markdown';
@@ -41,15 +42,17 @@ export function ScriptComponent({fullname, birthtime, description, avatar, url}:
 
   return <Card>
     <CardContent>
-      <CardActionArea href={url} target={username}>
-        <Stack spacing={2} direction='row'>
-          <Avatar alt={username} title={username} src={avatar} sx={{ width: 24, height: 24 }} />
-          <Typography>{fullname}</Typography>
-          <Typography variant='caption'>{timeAgo(birthtime)}</Typography>
-        </Stack>
-        {description && <Markdown txt={description} />}
-        {excerpt()}
-      </CardActionArea>
+      <Stack spacing={2} direction='row'>
+        <Avatar alt={username} title={username} src={avatar} sx={{ width: 24, height: 24 }} />
+        <Typography>{fullname}</Typography>
+        <Typography variant='caption'>{timeAgo(birthtime)}</Typography>
+      </Stack>
+      {description && <Markdown txt={description} />}
+      {excerpt()}
+      <Stack direction='row' spacing={2}>
+        <Button href={`/${fullname}`} variant='outlined'>Details</Button>
+        <Button href={url}>GitHub <ArrowOutwardIcon/></Button>
+      </Stack>
     </CardContent>
   </Card>
 

@@ -6,12 +6,13 @@ This repo creates the websites for
 2. https://pkgx.dev
 3. https://pkgx.app
 4. https://blog.pkgx.dev
+5. https://mash.pkgx.sh
 
 ## How to dev
 
 ```sh
 $ VITE_HOST=pkgx.sh npm run dev
-# ^^ one of `pkgx.sh`, `pkgx.dev` or `pkgx.app` or `hub.pkgx.sh`
+# ^^ one of `pkgx.sh`, `pkgx.dev` or `pkgx.app` or `mash.pkgx.sh`
 # there is no default! set one!
 
 $ cd blog

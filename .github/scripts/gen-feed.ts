@@ -52,7 +52,7 @@ for (const {name, isFile} of Deno.readDirSync(`./blog/content`)) {
 
 for (const script of JSON.parse(Deno.readTextFileSync(scripthubJson)).scripts) {
   const { fullname, description, birthtime, avatar } = script
-  const url = `https://hub.pkgx.sh/${fullname}`
+  const url = `https://mash.pkgx.sh/${fullname}`
   rv.push({
     type: 'script',
     time: new Date(birthtime),
