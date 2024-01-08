@@ -58,7 +58,7 @@ export default function PackageListing() {
       }
     }).map(x => x.Prefix!) ?? []
 
-    document.title = `pkgx — ${project || 'pkgs'}`
+    document.title = `${project || 'pkgs'} — pkgx`
 
     return {dirs, ispkg}
 
