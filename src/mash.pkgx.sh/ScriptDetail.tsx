@@ -43,7 +43,7 @@ export default function ScriptComponent({fullname, birthtime, README: descriptio
     } else if (error) {
       return <Alert severity='error'>{error.message}</Alert>
     } else {
-      return <Terminal>{content}<br/><Dim>…</Dim></Terminal>
+      return <Terminal>{content}</Terminal>
     }
   }
 }
