@@ -5,23 +5,24 @@ import HeroTypography from '../components/HeroTypography';
 import pkgxsh_txt from "../assets/pkgxsh.text.svg";
 import ossapp_txt from "../assets/ossapp.text.svg";
 import { useState, CSSProperties } from 'react';
+import mash_txt from "../assets/mash.text.svg";
 import pkgxsh from "../assets/pkgxsh.svg";
 import ossapp from "../assets/ossapp.svg";
 import FeedItem from '../utils/FeedItem';
+import mash from "../assets/mash.svg";
 import { useAsync } from 'react-use';
 
 export default function HomeFeed() {
   return <>
     <Stack textAlign='center'>
-      <Typography variant='overline'>Crafters of Fine</Typography>
+      <Typography variant='overline'>We are Crafters of Fine</Typography>
       <HeroTypography>
         Open Source
       </HeroTypography>
-      <Typography variant='overline'>Products</Typography>
     </Stack>
 
     <Grid container spacing={{xs: 1, md: 2}} textAlign='center'>
-      <Grid xs={12} md={6}>
+      <Grid xs={12} md={4}>
         <ButtonBase href='https://pkgx.sh'>
           <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
             <Stack direction='column' spacing={2}>
@@ -34,7 +35,20 @@ export default function HomeFeed() {
           </Paper>
         </ButtonBase>
       </Grid>
-      <Grid xs={12} md={6}>
+      <Grid xs={12} md={4}>
+        <ButtonBase href='https://mash.pkgx.sh'>
+          <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
+            <Stack direction='column' spacing={2}>
+              <img src={mash} height='33px' />
+              <img src={mash_txt} height='17px' style={{marginTop: 23}} />
+              <Typography variant='subtitle1' style={{marginTop: 12}}>
+                Monstrously powerful scriping
+              </Typography>
+            </Stack>
+          </Paper>
+        </ButtonBase>
+      </Grid>
+      <Grid xs={12} md={4}>
         <ButtonBase href='https://pkgx.app'>
           <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
             <Stack direction='column' spacing={2}>
