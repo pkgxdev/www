@@ -1,10 +1,11 @@
 import { Alert, Avatar, Button, Card, CardActionArea, CardContent, Chip, Skeleton, Stack, Typography } from '@mui/material';
 import ArrowOutwardIcon from '@mui/icons-material/CallMade';
-import Terminal, { Dim } from '../components/Terminal';
+import EastIcon from '@mui/icons-material/East';
 import { useLocation } from 'react-router-dom';
 import Markdown from '../components/Markdown';
-import { useAsync } from 'react-use';
+import Terminal from '../components/Terminal';
 import ScriptDetail from './ScriptDetail';
+import { useAsync } from 'react-use';
 
 export interface Script {
   fullname: string
@@ -50,7 +51,7 @@ export function ScriptComponent({fullname, birthtime, description, avatar, url, 
       {description && <Markdown txt={description} />}
       <Terminal>{cmd}</Terminal>
       <Stack direction='row' spacing={2}>
-        <Button href={`/${fullname}`} variant='outlined'>Details</Button>
+        <Button href={`/${fullname}`} variant='outlined'>Usage <EastIcon /></Button>
         <Button href={url}>GitHub <ArrowOutwardIcon/></Button>
       </Stack>
     </CardContent>

@@ -42,7 +42,7 @@ export default function HomeFeed() {
               <img src={mash} height='33px' />
               <img src={mash_txt} height='17px' style={{marginTop: 23}} />
               <Typography variant='subtitle1' style={{marginTop: 12}}>
-                Monstrously powerful scriping
+                Monstrously powerful scripting
               </Typography>
             </Stack>
           </Paper>
