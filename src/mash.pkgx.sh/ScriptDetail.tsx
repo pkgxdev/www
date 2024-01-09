@@ -1,10 +1,9 @@
-import { Alert, Avatar, Button, Card, CardActionArea, CardContent, Chip, Skeleton, Stack, Typography } from '@mui/material';
+import { Alert, Avatar, Button, Card, CardActionArea, CardContent, Skeleton, Stack, Typography } from '@mui/material';
 import ArrowOutwardIcon from '@mui/icons-material/CallMade';
 import Terminal, { Dim } from '../components/Terminal';
 import { useLocation } from 'react-router-dom';
 import Markdown from '../components/Markdown';
 import { useAsync } from 'react-use';
-import ScriptDetail from './ScriptDetail';
 
 export interface Script {
   fullname: string
@@ -12,30 +11,15 @@ export interface Script {
   description?: string
   avatar: string
   url: string
-  cmd: string
   README?: string
-  category?: string
 }
 
-export default function ScriptRoute() {
-  const path = useLocation().pathname
-
-  const data = useAsync(async () => {
-    const rsp = await fetch('https://pkgxdev.github.io/mash/index.json')
-    const data = await rsp.json()
-    return data.scripts.find((s: any) => `/${s.fullname}` === path) as Script
+export default function ScriptComponent({fullname, birthtime, README: description, avatar, url}: Script) {
+  const {loading, error, value: content} = useAsync(async () => {
+    const rsp = await fetch(`https://pkgxdev.github.io/mash/u/${fullname}`)
+    return await rsp.text()
   })
 
-  if (data.loading) {
-    return <Skeleton />
-  } else if (data.error || !data.value) {
-    return <Alert severity='error'>{data.error?.message ?? 'Script not found'}</Alert>
-  } else {
-    return <ScriptDetail {...data.value} />
-  }
-}
-
-export function ScriptComponent({fullname, birthtime, description, avatar, url, cmd, category}: Script) {
   const username = fullname.split('/')[0]
 
   return <Card>
@@ -44,17 +28,24 @@ export function ScriptComponent({fullname, birthtime, description, avatar, url, 
         <Avatar alt={username} title={username} src={avatar} sx={{ width: 24, height: 24 }} />
         <Typography>{fullname}</Typography>
         <Typography variant='caption'>{timeAgo(birthtime)}</Typography>
-        {category && <Chip sx={{color: 'background.default', textTransform: 'uppercase'}}
-          label={category} color='secondary' variant="filled" size='small' />}
       </Stack>
       {description && <Markdown txt={description} />}
-      <Terminal>{cmd}</Terminal>
+      {excerpt()}
       <Stack direction='row' spacing={2}>
-        <Button href={`/${fullname}`} variant='outlined'>Details</Button>
-        <Button href={url}>GitHub <ArrowOutwardIcon/></Button>
+        <Button variant='contained' href={url}>GitHub <ArrowOutwardIcon/></Button>
       </Stack>
     </CardContent>
   </Card>
+
+  function excerpt() {
+    if (loading) {
+      return <Skeleton />
+    } else if (error) {
+      return <Alert severity='error'>{error.message}</Alert>
+    } else {
+      return <Terminal>{content}<br/><Dim>…</Dim></Terminal>
+    }
+  }
 }
 
 function timeAgo(date: Date | string) {

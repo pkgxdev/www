@@ -12,7 +12,7 @@ export default function Hero() {
         <Orange><b>mash</b> up</Orange> millions of open source packages into monstrously powerful scripts.
         </Typography>
         <Typography variant='body2' mt={1}>
-          We’re a community of thousands of passionate computer users who want to make the most of the fruits of open soure software.
+          We’re a community of thousands of passionate computer users who want to make the most of the fruits of open source software.
         </Typography>
       </CardContent>
     </Card>
