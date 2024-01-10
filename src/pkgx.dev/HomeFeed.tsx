@@ -29,7 +29,7 @@ export default function HomeFeed() {
               <img src={pkgxsh} height='33px' />
               <img src={pkgxsh_txt} height='34px' />
               <Typography variant='subtitle1' style={{marginTop: 5}}>
-                Blazingly fast, standalone pkg runner
+                Blazingly Fast Package Runner
               </Typography>
             </Stack>
           </Paper>
@@ -42,7 +42,7 @@ export default function HomeFeed() {
               <img src={mash} height='33px' />
               <img src={mash_txt} height='17px' style={{marginTop: 23}} />
               <Typography variant='subtitle1' style={{marginTop: 12}}>
-                Monstrously powerful scripting
+                The Package Manager for Scripts
               </Typography>
             </Stack>
           </Paper>

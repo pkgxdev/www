@@ -35,7 +35,7 @@ function title() {
   case 'pkgx.dev':
     return 'pkgx, inc.'
   case 'mash.pkgx.sh':
-    return 'mash — Monstrously Powerful Scripts'
+    return 'mash — The Package Manager for Scripts'
   case 'pkgx.app':
     return 'The App Store for Open Source'
   }

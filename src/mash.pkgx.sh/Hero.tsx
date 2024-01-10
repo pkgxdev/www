@@ -10,7 +10,13 @@ export default function Hero() {
     <Card>
       <CardContent>
         <Typography component='h1'>
-        <Orange><b>mash</b> up</Orange> millions of open source packages into monstrously powerful scripts.
+        <Orange><b>mash</b>—the package manager for scripts.</Orange>
+        </Typography>
+        <Typography mt={1}>
+          Mash up millions of open source packages into monstrously powerful scripts.
+        </Typography>
+        <Typography mt={1}>
+          <i>Bash is ancient</i>. Write scripts in any language you want and trivially distribute them to the whole world.
         </Typography>
         <Typography variant='body2' mt={1}>
           We’re a community of thousands of passionate computer users who want to make the most of the fruits of open source software.
