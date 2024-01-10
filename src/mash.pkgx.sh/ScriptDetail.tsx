@@ -32,7 +32,7 @@ export default function ScriptComponent({fullname, birthtime, README: descriptio
       {description && <Markdown txt={description} />}
       {excerpt()}
       <Stack direction='row' spacing={2}>
-        <Button variant='contained' href={url}>GitHub <ArrowOutwardIcon/></Button>
+        <Button variant='contained' href={url} target='github'>GitHub <ArrowOutwardIcon/></Button>
       </Stack>
     </CardContent>
   </Card>

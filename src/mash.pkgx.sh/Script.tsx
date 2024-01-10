@@ -52,7 +52,7 @@ export function ScriptComponent({fullname, birthtime, description, avatar, url, 
       <Terminal>{cmd}</Terminal>
       <Stack direction='row' spacing={2}>
         <Button href={`/${fullname}`} variant='outlined'>Usage <EastIcon /></Button>
-        <Button href={url}>GitHub <ArrowOutwardIcon/></Button>
+        <Button href={url} target='github'>GitHub <ArrowOutwardIcon/></Button>
       </Stack>
     </CardContent>
   </Card>

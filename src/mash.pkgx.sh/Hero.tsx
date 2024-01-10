@@ -1,4 +1,5 @@
-import { Card, CardContent, Link, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Button, Card, CardContent, Link, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
+import ArrowOutwardIcon from '@mui/icons-material/CallMade';
 import { Orange } from '../components/Terminal';
 
 export default function Hero() {
@@ -14,6 +15,16 @@ export default function Hero() {
         <Typography variant='body2' mt={1}>
           We’re a community of thousands of passionate computer users who want to make the most of the fruits of open source software.
         </Typography>
+      </CardContent>
+    </Card>
+    <Card>
+      <CardContent>
+      <Typography variant='overline' component='h2'>
+        Get Started
+      </Typography>
+      <Button href='https://github.com/pkgxdev/mash' variant='contained' target='github'>
+        Install Mash <ArrowOutwardIcon/>
+      </Button>
       </CardContent>
     </Card>
     <Card>
