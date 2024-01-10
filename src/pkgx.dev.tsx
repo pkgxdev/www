@@ -1,4 +1,4 @@
-import { CssBaseline, Button, Stack, Typography, ThemeProvider } from '@mui/material';
+import { CssBaseline, Button, Stack, useTheme, ThemeProvider, useMediaQuery } from '@mui/material';
 import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import PackageShowcase from './pkgx.dev/PackageShowcase';
 import PackageListing from './pkgx.dev/PackageListing';
@@ -40,16 +40,26 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   </React.StrictMode>,
 );
 
+import MenuIcon from '@mui/icons-material/Menu';
+
 function MyMasthead() {
-  const { pathname } = useLocation()
-  const is_pkgs = pathname.startsWith('/pkgs')
-  return <Masthead>
+  const theme = useTheme();
+  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const { pathname } = useLocation();
+  const is_pkgs = pathname.startsWith('/pkgs');
+
+  const search = <InstantSearch searchClient={searchClient} indexName="pkgs">
+    <Search />
+  </InstantSearch>
+
+  const stuff = <>
     <Button href='/pkgs/' color='inherit'>pkgs</Button>
-    {is_pkgs && <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>}
     <Discord />
     <Stars href={`https://github.com/pkgxdev/`} hideCountIfMobile={true} />
-    <InstantSearch searchClient={searchClient} indexName="pkgs">
-      <Search />
-    </InstantSearch>
+  </>
+
+  return <Masthead>
+    {!is_pkgs && stuff}
+    {(is_pkgs || !isxs) && search}
   </Masthead>
 }

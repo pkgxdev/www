@@ -40,9 +40,14 @@ function Body() {
 }
 
 function MyMasthead() {
+  const theme = useTheme();
+  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+
   return <Masthead left={<Typography fontFamily='shader' color='secondary'>MASH</Typography>}>
-    <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>
-    <Button href='https://pkgx.dev/pkgs/' color='inherit'>pkgs</Button>
+    {!isxs && <>
+      <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>
+      <Button href='https://pkgx.dev/pkgs/' color='inherit'>pkgs</Button>
+    </>}
     <Discord />
     <Stars href='https://github.com/pkgxdev/mash/' />
   </Masthead>
