@@ -51,8 +51,11 @@ export default function Search() {
         endAdornment: <InputAdornment position="end">{shortcut_txt}</InputAdornment>,
       }}
     />
-    {/* always open so fade away works */}
-    <Popper open={true} anchorEl={inputRef.current} placement='bottom-end'>
+    {/*
+      NOTE always open so fade away works
+      FIXME instead set to isopen otherwise some of the UI is occluded and unclickable after fade away
+    */}
+    <Popper open={isopen} anchorEl={inputRef.current} placement='bottom-end'>
       <Grow timeout={200} in={isopen}>
         <Paper>
           {has_text && <SearchResults />}
