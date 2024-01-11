@@ -55,8 +55,10 @@ function MyMasthead() {
     <Stars href={`https://github.com/pkgxdev/`} hideCountIfMobile={true} />
   </>
 
+  console.log(/\/pkgs\/.+/.test(pathname), pathname)
+
   return <Masthead>
-    {/\/pkgs\/.+/.test(pathname) || stuff}
-    {(pathname.startsWith('/pkgs') || !isxs) && search}
+    {pathname.startsWith('/pkgs') && isxs ? null : stuff}
+    {pathname.startsWith('/pkgs') || !isxs ? search : undefined}
   </Masthead>
 }

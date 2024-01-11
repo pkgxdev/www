@@ -53,9 +53,9 @@ export default function Search() {
     />
     {/*
       NOTE always open so fade away works
-      FIXME instead set to isopen otherwise some of the UI is occluded and unclickable after fade away
+      FIXME this occludes content :/
     */}
-    <Popper open={isopen} anchorEl={inputRef.current} placement='bottom-end'>
+    <Popper open={true} anchorEl={inputRef.current} placement='bottom-end'>
       <Grow timeout={200} in={isopen}>
         <Paper>
           {has_text && <SearchResults />}
