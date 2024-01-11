@@ -40,13 +40,10 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   </React.StrictMode>,
 );
 
-import MenuIcon from '@mui/icons-material/Menu';
-
 function MyMasthead() {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
   const { pathname } = useLocation();
-  const is_pkgs = pathname.startsWith('/pkgs');
 
   const search = <InstantSearch searchClient={searchClient} indexName="pkgs">
     <Search />
@@ -59,7 +56,7 @@ function MyMasthead() {
   </>
 
   return <Masthead>
-    {!is_pkgs && stuff}
-    {(is_pkgs || !isxs) && search}
+    {/\/pkgs\/.+/.test(pathname) || stuff}
+    {(pathname.startsWith('/pkgs') || !isxs) && search}
   </Masthead>
 }
