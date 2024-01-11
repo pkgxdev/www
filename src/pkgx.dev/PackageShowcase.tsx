@@ -34,8 +34,8 @@ export default function Showcase() {
       Available Packages {count}
     </Typography>
     <Grid container spacing={isxs ? 1 : 2}>
-      {items.map(item => <Grid xs={6} md={3}>
-        <PkgCard key={item.project} {...item} />
+      {items.map(item => <Grid xs={6} md={3} key={item.project}>
+        <PkgCard {...item} />
       </Grid>)}
       {(loading || hasNextPage) && <Grid xs={12} ref={sentryRef}><Skeleton /></Grid>}
       {error && <Grid xs={12}><Alert severity='error'>{error.message}</Alert></Grid>}
@@ -80,7 +80,7 @@ function PkgCard({project, description, name, labels}: Package) {
 
   const chips = (labels ?? []).map(label =>
     <Chip sx={{m: isxs ? 0.5 : 1, color: 'background.default', fontVariant: 'small-caps'}}
-      label={label} color='secondary' variant="filled" size='small' />
+      label={label} color='secondary' variant="filled" size='small' key={label} />
   )
 
   return (
