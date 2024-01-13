@@ -48,5 +48,17 @@ export default function Hero() {
         </Typography>
       </CardContent>
     </Card>
+    <Card>
+      <CardContent>
+        <Typography variant='overline' component='h2'>
+          Improving This Website
+        </Typography>
+        <Typography variant='body2' mt={1}>
+          Even this site is Open Source!
+          If you have ideas for improving it, why not give it a go?
+          <Link href='https://github.com/pkgxdev/www'>github.com/pkgxdev/www</Link>
+        </Typography>
+      </CardContent>
+    </Card>
   </Stack>
 }
