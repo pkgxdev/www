@@ -12,9 +12,10 @@ export interface Script {
   avatar: string
   url: string
   README?: string
+  cmd: string
 }
 
-export default function ScriptComponent({fullname, birthtime, README: description, avatar, url}: Script) {
+export default function ScriptComponent({fullname, birthtime, cmd, README: description, avatar, url}: Script) {
   const {loading, error, value: content} = useAsync(async () => {
     const rsp = await fetch(`https://pkgxdev.github.io/mash/u/${fullname}`)
     return await rsp.text()
@@ -29,7 +30,10 @@ export default function ScriptComponent({fullname, birthtime, README: descriptio
         <Typography>{fullname}</Typography>
         <Typography variant='caption'>{timeAgo(birthtime)}</Typography>
       </Stack>
-      {description && <Markdown txt={description} />}
+      {description
+        ? <Markdown txt={description} />
+        : <Terminal>{cmd}</Terminal>
+      }
       {excerpt()}
       <Stack direction='row' spacing={2}>
         <Button variant='contained' href={url} target='github'>GitHub <ArrowOutwardIcon/></Button>
