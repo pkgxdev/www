@@ -147,7 +147,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
     if (loading || error || !value?.entrypoint) {
       return `sh <(curl https://pkgx.sh) +${project} sh`
     } else {
-      return `sh <(curl https://pkgx.sh) +brewkit -- run ${project}`
+      return `sh <(curl https://pkgx.sh) mash pkgxdev/run ${project}`
     }
   }
 
