@@ -19,7 +19,7 @@ for (const pkg of JSON.parse(Deno.readTextFileSync(pkgsJson))) {
   const { project, name, description, birthtime } = pkg
   const txt = await Deno.readTextFileSync(`${pantryPath}/projects/${project}/package.yml`)
   const yml = await parse(txt) as Record<string, any>
-  if (isArray(yml.provides)) {
+  if (yml.provides) {
     rv.push({
       type: 'pkg',
       title: name ?? project,

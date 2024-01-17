@@ -1,8 +1,9 @@
 #!/usr/bin/env -S pkgx deno run --allow-read=. --allow-net
 
 import * as yaml from "https://deno.land/std@0.204.0/yaml/mod.ts";
-import { isArray, isString } from "https://deno.land/x/is_what@v4.1.15/src/index.ts";
 import get_pkg_name from "./utils/get-name.ts"
+import get_provides from "./utils/get-provides.ts"
+import { basename } from "node:path";
 
 interface Package {
   project: string
@@ -24,7 +25,8 @@ export async function getKettleRemoteMetadata() {
 }
 
 function get_name(yml: any, project: string) {
-  return get_pkg_name({ project, display_name: yml['display-name'], provides: yml['provides'] })
+  const provides = get_provides(yml)
+  return get_pkg_name({ project, display_name: yml['display-name'], provides })
 }
 
 
@@ -37,11 +39,8 @@ for (const obj of rv as Package[]) {
     const txt = await Deno.readTextFileSync(yaml_path)
     const yml = await yaml.parse(txt) as Record<string, any>
 
-    const node = yml['provides']
-    const provides: string[] = isArray(node) ? node : isString(node) ? [node] : []
-
     obj.displayName = get_name(yaml_path, obj.project)
-    obj.programs = provides.map(x => x.slice(4))
+    obj.programs = get_provides(yml).map(x => basename(x))
   } catch (err) {
     console.warn(`::warning::${err.message}`)
   }

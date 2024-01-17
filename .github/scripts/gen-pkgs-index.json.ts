@@ -75,12 +75,14 @@ console.log(JSON.stringify(pkgs, null, 2));
 
 //////////////////////////////////////////////////////
 import { parse } from "https://deno.land/std@0.204.0/yaml/mod.ts";
+import get_provides from "./utils/get-provides.ts";
 import get_pkg_name from "./utils/get-name.ts";
 
 async function get_name(path: string, project: string): Promise<string | undefined> {
   const txt = await Deno.readTextFileSync(path)
   const yml = await parse(txt) as Record<string, any>
-  return get_pkg_name({ project, display_name: yml['display-name'], provides: yml['provides'] })
+  const provides = get_provides(yml)
+  return get_pkg_name({ project, display_name: yml['display-name'], provides })
 }
 
 import { parse_pkgs_node } from "https://deno.land/x/libpkgx@v0.15.1/src/hooks/usePantry.ts"
@@ -106,8 +108,6 @@ async function get_labels(path: string) {
       return 'rust'
     }
   }))
-
-  console.error(path)
 
   if (yml.build?.dependencies) for (const dep of parse_pkgs_node(yml.build.dependencies)) {
     switch (dep.project) {

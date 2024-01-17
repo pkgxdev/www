@@ -3,7 +3,7 @@ import { S3Client, ListObjectsV2Command, _Object } from '@aws-sdk/client-s3';
 import { useParams, Link as RouterLink } from 'react-router-dom';
 import ArrowOutwardIcon from '@mui/icons-material/CallMade';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { isArray, isPlainObject } from 'is-what';
+import { isArray, isPlainObject, isString } from 'is-what';
 import Terminal from '../components/Terminal';
 import get_pkg_name from '../utils/pkg-name';
 import { useAsync } from 'react-use';
@@ -190,13 +190,13 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
       </Stack>
 
       function programs() {
-        const provides: string[] = value?.provides ?? []
+        const provides: string[] = get_provides(value)
         if (!isArray(provides)) {
           return <Alert severity="error">Unexpected error</Alert>
         } else if (provides.length) {
           return <ul>
             {provides.map((program, i) => <li key={i}>
-              <code>{program.replace(/^bin\//g, '')}</code>
+              <code>{program.replace(/^s?bin\//g, '')}</code>
             </li>)}
           </ul>
         } else {
@@ -299,4 +299,23 @@ function Versions({ project }: { project: string }) {
       </Typography>
     </>
   }
+}
+
+function get_provides(yml: any): string[] {
+  let provides = yml['provides']
+  if (isString(provides)) {
+    return [provides]
+  }
+  if (isPlainObject(provides)) {
+    const { darwin, linux, windows } = provides
+    provides = []
+    const set = new Set()
+    for (const x of [darwin, linux, windows].flatMap(x => x)) {
+      if (x && !set.has(x)) {
+        provides.push(x)
+        set.add(x)
+      }
+    }
+  }
+  return provides ?? []
 }
