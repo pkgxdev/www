@@ -1,7 +1,6 @@
-import { Alert, Avatar, Button, Card, CardActionArea, CardContent, Skeleton, Stack, Typography } from '@mui/material';
+import { Alert, Avatar, Button, Card, CardContent, Skeleton, Stack, Typography } from '@mui/material';
 import ArrowOutwardIcon from '@mui/icons-material/CallMade';
-import Terminal, { Dim } from '../components/Terminal';
-import { useLocation } from 'react-router-dom';
+import Terminal from '../components/Terminal';
 import Markdown from '../components/Markdown';
 import { useAsync } from 'react-use';
 

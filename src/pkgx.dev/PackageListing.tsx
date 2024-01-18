@@ -116,6 +116,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
       <Box>
         <Typography mb={1} variant='h2'>{get_pkg_name(project)}</Typography>
         {description_body()}
+        <README project={project} />
         <Stack useFlexGap direction='row' spacing={2} mt={3}>
           <Button variant='contained' href={`tea://packages/${project}`}>Open in OSS.app</Button>
           <Button variant='outlined' target='_blank' rel='noreferrer' href={`https://github.com/pkgxdev/pantry/tree/main/projects/${project}/package.yml`} endIcon={<ArrowOutwardIcon />}>View package.yml</Button>
@@ -157,14 +158,10 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
     } else if (description.error) {
       return <Alert severity="error">{description.error.message}</Alert>
     } else {
-      return <Accordion>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography>{description.value!.short_description}</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>{description.value!.description}</Typography>
-        </AccordionDetails>
-      </Accordion>
+      return <Box>
+        <Typography variant='h5'>{description.value!.short_description}</Typography>
+        <Typography variant='body2' mt={1} mb={3} color='text.secondary'>{description.value!.description}</Typography>
+      </Box>
     }
   }
 
@@ -263,6 +260,27 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
         }
       }
     }
+  }
+}
+
+import Markdown from '../components/Markdown';
+
+function README({ project }: { project: string }) {
+  const state = useAsync(async () => {
+    let rsp = await fetch(`https://raw.githubusercontent.com/pkgxdev/pantry/main/projects/${project}/README.md`);
+    if (rsp.ok) {
+      return await rsp.text()
+    }
+  }, [project]);
+
+  if (state.loading) {
+    return <Skeleton animation="wave" />
+  } else if (state.error) {
+    return <Alert severity="error">{state.error.message}</Alert>
+  } else if (state.value) {
+    return <Markdown txt={state.value} />
+  } else {
+    return null
   }
 }
 
