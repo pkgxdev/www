@@ -329,7 +329,7 @@ function get_provides(yml: any): string[] {
     provides = []
     const set = new Set()
     for (const x of [darwin, linux, windows, star].flatMap(x => x)) {
-      if (!set.has(x)) {
+      if (!set.has(x) && x) {
         provides.push(x)
         set.add(x)
       }
