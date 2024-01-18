@@ -325,11 +325,11 @@ function get_provides(yml: any): string[] {
     return [provides]
   }
   if (isPlainObject(provides)) {
-    const { darwin, linux, windows } = provides
+    const { darwin, linux, windows, '*': star } = provides
     provides = []
     const set = new Set()
-    for (const x of [darwin, linux, windows].flatMap(x => x)) {
-      if (x && !set.has(x)) {
+    for (const x of [darwin, linux, windows, star].flatMap(x => x)) {
+      if (!set.has(x)) {
         provides.push(x)
         set.add(x)
       }
