@@ -28,7 +28,7 @@ export default function Hero() {
       <Typography variant='overline' component='h2'>
         Get Started
       </Typography>
-      <Button href='https://github.com/pkgxdev/mash#getting-started' variant='contained' target='github'>
+      <Button href='https://github.com/pkgxdev/mash#installing-mash' variant='contained' target='github'>
         Install Mash <ArrowOutwardIcon/>
       </Button>
       </CardContent>
