@@ -45,6 +45,9 @@ function MyMasthead() {
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
   const { pathname } = useLocation();
 
+  let gh = `https://github.com/pkgxdev/`
+  if (pathname.startsWith('/pkgs')) gh += 'pantry/'
+
   const search = <InstantSearch searchClient={searchClient} indexName="pkgs">
     <Search />
   </InstantSearch>
@@ -52,10 +55,8 @@ function MyMasthead() {
   const stuff = <>
     <Button href='/pkgs/' color='inherit'>pkgs</Button>
     <Discord />
-    <Stars href={`https://github.com/pkgxdev/`} hideCountIfMobile={true} />
+    <Stars href={gh} hideCountIfMobile={true} />
   </>
-
-  console.log(/\/pkgs\/.+/.test(pathname), pathname)
 
   return <Masthead>
     {pathname.startsWith('/pkgs') && isxs ? null : stuff}
