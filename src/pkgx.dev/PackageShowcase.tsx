@@ -37,18 +37,24 @@ export default function Showcase() {
       {items.map(item => <Grid xs={6} md={3} key={item.project}>
         <PkgCard {...item} />
       </Grid>)}
-      {(loading || hasNextPage) && <Grid xs={12} ref={sentryRef}><Skeleton /></Grid>}
+      {(loading || hasNextPage) &&
+          Array.from({ length: isxs ? 2 : 4 }).map((_, index) => (
+            <Grid xs={6} md={3} key={index}  ref={index === 0 ? sentryRef : null}>
+              <PkgCard isLoader />
+            </Grid>
+          ))}
       {error && <Grid xs={12}><Alert severity='error'>{error.message}</Alert></Grid>}
     </Grid>
   </>
 }
 
 interface Package {
-  name?: string
-  project: string
-  birthtime: string
-  description?: string
-  labels?: string[]
+  name?: string;
+  project?: string;
+  birthtime?: string;
+  description?: string;
+  labels?: string[];
+  isLoader?: boolean;
 }
 
 function useLoadItems() {
@@ -72,7 +78,7 @@ function useLoadItems() {
   }
 }
 
-function PkgCard({project, description, name, labels}: Package) {
+function PkgCard({project, description, name, labels, isLoader}: Package) {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -82,29 +88,39 @@ function PkgCard({project, description, name, labels}: Package) {
     <Chip sx={{m: isxs ? 0.5 : 1, color: 'background.default', fontVariant: 'small-caps'}}
       label={label} color='secondary' variant="filled" size='small' key={label} />
   )
-
+  const mediaHeight = isxs ? 150 : 300;
   return (
     <Card>
       <CardActionArea href={`/pkgs/${project}/`}>
-        <CardMedia
-          height={isxs ? 150 : 300}
-          component={Box}
-          image={`https://gui.tea.xyz/prod/${project}/512x512.webp`}
-          textAlign='right'
-        >
-          {chips}
-        </CardMedia>
-        <CardContent sx={isxs ? {p: 0.75} : undefined}>
-          <div>
-            <Typography variant='overline' component="h2" style={text_style}>
-              {name || get_pkg_name(project)}
+        {isLoader ? (
+          <Skeleton sx={{ height: mediaHeight }} animation="wave" variant="rectangular" />
+        ) : (
+          <CardMedia
+            height={mediaHeight}
+            component={Box}
+            image={`https://gui.tea.xyz/prod/${project}/512x512.webp`}
+            textAlign="right"
+          >
+            {chips}
+          </CardMedia>
+        )}
+        {isLoader ? (
+          <CardContent sx={isxs ? {p: 0.75} : undefined}>
+            <Skeleton animation="wave" height={10} style={{ marginBottom: 6 }} />
+            <Skeleton animation="wave" height={10} width="80%" />
+          </CardContent>
+        ) : (
+          <CardContent sx={isxs ? {p: 0.75} : undefined}>
+            <div>
+              <Typography variant='overline' component="h2" style={text_style}>
+                {name || get_pkg_name(project!)}
+              </Typography>
+            </div>
+            <Typography variant='caption' component="h3" style={text_style}>
+              {description}
             </Typography>
-
-          </div>
-          <Typography variant='caption' component="h3" style={text_style}>
-            {description}
-          </Typography>
-        </CardContent>
+          </CardContent>
+        )}
       </CardActionArea>
     </Card>
   )
