@@ -167,7 +167,7 @@ function FeedItemBox(item: FeedItem) {
             </Typography>
           </div>
           <Typography variant='caption' component="h3" style={text_style}>
-            {description}
+            {/* {description} */}
           </Typography>
         </CardContent>
       </CardActionArea>

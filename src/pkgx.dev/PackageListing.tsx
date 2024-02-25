@@ -115,7 +115,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
     <Stack spacing={2}>
       <Box>
         <Typography mb={1} variant='h2'>{get_pkg_name(project)}</Typography>
-        {description_body()}
+        {/* {description_body()} */}
         <README project={project} />
         <Stack useFlexGap direction='row' spacing={2} mt={3}>
           <Button variant='contained' href={`tea://packages/${project}`}>Open in OSS.app</Button>
@@ -153,16 +153,17 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
   }
 
   function description_body() {
-    if (description.loading) {
-      return <Skeleton animation="wave" />
-    } else if (description.error) {
-      return <Alert severity="error">{description.error.message}</Alert>
-    } else {
-      return <Box>
-        <Typography variant='h5'>{description.value!.short_description}</Typography>
-        <Typography variant='body2' mt={1} mb={3} color='text.secondary'>{description.value!.description}</Typography>
-      </Box>
-    }
+    return
+    // if (description.loading) {
+    //   return <Skeleton animation="wave" />
+    // } else if (description.error) {
+    //   return <Alert severity="error">{description.error.message}</Alert>
+    // } else {
+    //   return <Box>
+    //     <Typography variant='h5'>{description.value!.short_description}</Typography>
+    //     <Typography variant='body2' mt={1} mb={3} color='text.secondary'>{description.value!.description}</Typography>
+    //   </Box>
+    // }
   }
 
   function metadata() {

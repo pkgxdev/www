@@ -117,7 +117,7 @@ function PkgCard({project, description, name, labels, isLoader}: Package) {
               </Typography>
             </div>
             <Typography variant='caption' component="h3" style={text_style}>
-              {description}
+              {/* {description} */}
             </Typography>
           </CardContent>
         )}
