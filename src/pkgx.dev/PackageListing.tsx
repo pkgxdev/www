@@ -108,9 +108,12 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
     <Button variant='outlined' href={description.value.github} target='_blank' rel='noreferrer' endIcon={<ArrowOutwardIcon />}>GitHub</Button>
   </>
 
+  // the author of rye is strangely hostile to our project
+  const imgsrc = project == 'rye-up.com' ? undefined : `https://gui.tea.xyz/prod/${project}/1024x1024.webp`
+
   return <Stack direction={{xs: "column", md: "row"}} spacing={4}>
     <Card sx={{height: 'fit-content', minWidth: 375}}>
-      <img style={{display: 'block'}} src={`https://gui.tea.xyz/prod/${project}/1024x1024.webp`} width={375} height={375} />
+      <img style={{display: 'block'}} src={imgsrc} width={375} height={375} />
     </Card>
     <Stack spacing={2}>
       <Box>

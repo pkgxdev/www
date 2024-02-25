@@ -145,6 +145,10 @@ function FeedItemBox(item: FeedItem) {
       fontVariant: 'small-caps'
     }} />
 
+  // the author of rye is strangely hostile to our project
+  const imgsrc = title == 'rye' ? undefined : image
+
+
   return (
     <Card
       variant={color ? 'outlined' : undefined}
@@ -155,7 +159,7 @@ function FeedItemBox(item: FeedItem) {
         <CardMedia
           height={isxs ? 150 : 300}
           component={Box}
-          image={image}
+          image={imgsrc}
           textAlign='right'
         >
           {chip}
