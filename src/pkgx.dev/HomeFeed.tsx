@@ -127,6 +127,8 @@ function FeedItemBox(item: FeedItem) {
   const { url, title, image, description, type } = item
   const text_style: CSSProperties = {whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden'}
 
+  if (type == 'pkg') return
+
   const color = (() => {
     switch (type) {
       case 'blog': return 'secondary'
