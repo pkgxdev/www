@@ -127,8 +127,6 @@ function FeedItemBox(item: FeedItem) {
   const { url, title, image, description, type } = item
   const text_style: CSSProperties = {whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden'}
 
-  if (type == 'pkg') return
-
   const color = (() => {
     switch (type) {
       case 'blog': return 'secondary'
@@ -147,10 +145,6 @@ function FeedItemBox(item: FeedItem) {
       fontVariant: 'small-caps'
     }} />
 
-  // the author of rye is strangely hostile to our project
-  const imgsrc = title == 'rye' ? undefined : image
-
-
   return (
     <Card
       variant={color ? 'outlined' : undefined}
@@ -161,7 +155,7 @@ function FeedItemBox(item: FeedItem) {
         <CardMedia
           height={isxs ? 150 : 300}
           component={Box}
-          image={imgsrc}
+          image={type == 'pkg' ? undefined : image}
           textAlign='right'
         >
           {chip}

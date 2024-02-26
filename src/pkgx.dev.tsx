@@ -30,6 +30,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
             <Route path='/' element={<HomeFeed />} />
             <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
             <Route path='/terms-of-use' element={<TermsOfUse/>} />
+            <Route path='/pkgs' element={<PackageShowcase />} />
+            <Route path='/pkgs/*' element={<PackageListing/>} />
           </Routes>
           <Footer/>
         </Stack>
