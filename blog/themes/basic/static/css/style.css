@@ -4,7 +4,7 @@ body {
   text-rendering: optimizeLegibility;
   background-color: #0D1117;
   color: #EDF2EF;
-  line-height: 1.3;  /* Increased line-height */
+  line-height: 1.3;
 }
 
 a {
@@ -16,12 +16,18 @@ a:hover {
   color: #4156E1 !important;
 }
 
-/* Styling for links in the breadcrumbs */
+article a{
+  color: #4156E1 !important;
+}
+
+article a:hover{
+  color: #6C80FF !important;
+}
+
 a.b {
     color: white;
 }
 
-/* Styling for the current breadcrumb */
 span.b.pb1.no-underline.black {
     color: white;
 }
@@ -41,6 +47,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   border: 1px solid #ccc;
+  background-color: #0D1117 !important;
 }
 
 pre, code {
@@ -53,38 +60,38 @@ pre, code {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 0;
-  list-style: none;
+  grid-auto-rows: 1fr; /* New - makes each row the same height */
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Distributes space between card elements */
   border: 1px solid #e0e0e0;
   overflow: hidden;
-  padding: 15px;
   background-color: #0D1117;
   color: inherit;
   transition: transform 0.3s, box-shadow 0.3s;
-  padding: 0;
 }
 
-/*
-.card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.card-content {
+  flex: 1; /* Ensure the card-content takes the available space */
+  padding: 15px;
 }
-*/
+
+.card-content .f3 { /* targeting the title within the card-content */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(1.3em * 3); /* This is for fallback, 1.3em is the line-height, and 3 is the number of lines */
+}
 
 .card-img {
   width: 100%;
   object-fit: cover;
   height: 200px;
-}
-
-.card-content {
-  flex: 1;
-  padding: 15px; /* Add padding */
 }
 
 .card-content a {
@@ -105,29 +112,25 @@ pre, code {
 .content-container {
   display: flex;
   margin: 0 auto;
-  min-height: 100vh; /* Set to full viewport height */
-  overflow: hidden; /* Prevent any unintended overflow */
-  align-items: flex-start; /* Add this line */
+  min-height: 100vh;
+  overflow: hidden;
+  align-items: flex-start;
 }
 
 .main-content {
   flex: 3;
-  overflow-y: auto; /* Allows scrolling within main content if content overflows */
+  overflow-y: auto;
 }
 
 .sidebar {
   flex: 1;
-  /*
-  border-left: 1px solid #e0e0e0;
-  */
   padding: 15px;
   padding-top: 0px !important;
   background-color: #0D1117;
-  height: 100%; /* Ensure the sidebar takes up full height of its parent */
-  overflow-y: auto; /* Allows scrolling within the sidebar if content overflows */
-  margin-left: 20px; /* Margin to push the sidebar away from the cards */
+  height: 100%;
+  overflow-y: auto;
+  margin-left: 20px;
 }
-
 
 .sidebar h3 {
   color: #EDF2EF;
