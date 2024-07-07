@@ -289,8 +289,10 @@ function Versions({ project }: { project: string }) {
   const state = useAsync(async () => {
     let rsp = await fetch(`https://dist.pkgx.dev/${project}/darwin/aarch64/versions.txt`);
     if (!rsp.ok) rsp = await fetch(`https://dist.pkgx.dev/${project}/linux/x86-64/versions.txt`);
-    const txt = await rsp.text()
-    return txt.split("\n")
+    const txt = await rsp.text();
+    const versions = txt.split("\n");
+    const sortedVersions = versions.sort().reverse();
+    return sortedVersions;
   }, [project]);
 
   if (state.loading) {
