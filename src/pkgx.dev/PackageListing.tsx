@@ -291,8 +291,7 @@ function Versions({ project }: { project: string }) {
     if (!rsp.ok) rsp = await fetch(`https://dist.pkgx.dev/${project}/linux/x86-64/versions.txt`);
     const txt = await rsp.text();
     const versions = txt.split("\n");
-    const sortedVersions = versions.sort().reverse();
-    return sortedVersions;
+    return versions.sort().reverse();
   }, [project]);
 
   if (state.loading) {
