@@ -67,7 +67,7 @@ export default function Hero() {
         <Box width='100%'>
           <Stack direction='row' justifyContent='end' mt={1}>
             <Button
-              href='https://docs.pkgx.sh/installing-w/out-brew'
+              href='https://docs.pkgx.sh/run-anywhere/terminals#other-ways-to-install'
               sx={{ mt: 0.5 }}
               size='small'
               color='inherit'
