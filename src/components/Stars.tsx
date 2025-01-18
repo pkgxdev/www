@@ -7,7 +7,7 @@ export default function Stars({ href, hideCountIfMobile }: { href?: string, hide
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
   const {value: stars} = useAsync(async () => {
-    const response = await fetch('https://pkgx.sh/stars.json');
+    const response = await fetch('/stars.json');
     const data = await response.json();
     return data
   }, [])

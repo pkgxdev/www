@@ -2,6 +2,11 @@ on:
   schedule:
     - cron: "17 */2 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/stars.yml
   pull_request:
     paths:
       - .github/workflows/stars.yml
@@ -44,12 +49,18 @@ jobs:
 
           echo '${{ steps.fetch.outputs.result }}' > stars.json
 
-          aws s3 cp s3://www.pkgx.sh/stars.json ./remote
+          aws s3 cp s3://www.pkgx.dev/stars.json ./remote
 
           if [ "$(cat ./stars.json)" != "$(cat ./remote)" ]; then
             aws s3 cp ./stars.json s3://www.pkgx.sh/stars.json
             aws cloudfront \
               create-invalidation \
               --distribution-id E8ZRC36XS5K65 \
+              --paths /stars.json
+
+            aws s3 cp ./stars.json s3://www.pkgx.dev/stars.json
+            aws cloudfront \
+              create-invalidation \
+              --distribution-id E15VQ3SI584CSG \
               --paths /stars.json
           fi

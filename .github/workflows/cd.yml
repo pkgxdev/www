@@ -101,6 +101,7 @@ jobs:
             --paths $(cat paths-to-invalidate.txt)
 
   blog:
+    if: false
     name: blog.pkgx.dev
     runs-on: ubuntu-latest
     defaults:
