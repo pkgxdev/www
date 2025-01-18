@@ -23,7 +23,7 @@ export async function getKettleRemoteMetadata() {
 const descriptions = await getKettleRemoteMetadata();
 
 async function getPackageYmlCreationDates(): Promise<Package[]> {
-  const cmdString = "git log --pretty=format:'%H %aI' --name-only --diff-filter=A -- 'projects/**/package.yml'";
+  const cmdString = "git log --pretty=format:'%H %aI' --name-only --diff-filter=ACMR -- 'projects/**/package.yml'";
   const process = Deno.run({
     cmd: ["bash", "-c", cmdString],
     stdout: "piped",
@@ -33,8 +33,9 @@ async function getPackageYmlCreationDates(): Promise<Package[]> {
   await process.status();
   process.close();
 
+  const projects = new Set();
   const lines = output.trim().split('\n');
-  const rv: Package[] = []
+  const rv: Record<string, Package> = {}
   let currentCommitDate: string | null = null;
 
   for (const line of lines) {
@@ -59,11 +60,11 @@ async function getPackageYmlCreationDates(): Promise<Package[]> {
       if (labels.length == 0) labels = undefined
 
 
-      rv.push({ project, birthtime, name, description, labels })
+      rv[project] = { project, birthtime, name, description, labels };
     }
   }
 
-  return rv;
+  return Object.values(rv);
 }
 
 const pkgs = await getPackageYmlCreationDates();
