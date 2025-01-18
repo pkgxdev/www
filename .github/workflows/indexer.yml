@@ -117,10 +117,16 @@ jobs:
 
       - run: utils/.github/scripts/gen-algolia-data.ts > algolia.json
 
-      # FIXME replace with something that cares about versioning :-/
-      - uses: wangchucheng/algolia-uploader@master
-        with:
-          app_id: UUTLHX01W7
-          admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          index_name: pkgs
-          index_file_path: ./algolia.json
+      - name: Upload JSON file to Algolia
+        env:
+          ALGOLIA_APP_ID: UUTLHX01W7
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          INDEX_NAME: pkgs
+          JSON_FILE: ./algolia.json
+        run: |
+          curl -X POST \
+            -H "X-Algolia-Application-Id: $ALGOLIA_APP_ID" \
+            -H "X-Algolia-API-Key: $ALGOLIA_API_KEY" \
+            -H "Content-Type: application/json" \
+            --data-binary "@$JSON_FILE" \
+            "https://${ALGOLIA_APP_ID}-dsn.algolia.net/1/indexes/$INDEX_NAME/batch"
