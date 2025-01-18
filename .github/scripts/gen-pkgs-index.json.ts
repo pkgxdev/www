@@ -1,4 +1,4 @@
-#!/usr/bin/env -S pkgx deno run -A
+#!/usr/bin/env -S pkgx deno^1 run -A
 
 import * as fs from "node:fs"
 

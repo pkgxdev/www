@@ -1,4 +1,4 @@
-#!/usr/bin/env -S pkgx deno run --allow-read=. --allow-net
+#!/usr/bin/env -S pkgx deno^1 run --allow-read=. --allow-net
 
 import * as yaml from "https://deno.land/std@0.204.0/yaml/mod.ts";
 import get_pkg_name from "./utils/get-name.ts"

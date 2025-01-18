@@ -1,4 +1,4 @@
-#!/usr/bin/env -S pkgx deno run --allow-read --allow-write=./out
+#!/usr/bin/env -S pkgx deno^1 run --allow-read --allow-write=./out
 
 interface Pkg {
   name?: string

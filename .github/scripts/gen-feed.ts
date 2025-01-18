@@ -1,4 +1,4 @@
-#!/usr/bin/env -S pkgx deno run -A --unstable
+#!/usr/bin/env -S pkgx deno^1 run -A --unstable
 
 import { Command } from "https://deno.land/x/cliffy@v1.0.0-rc.3/command/mod.ts"
 import FeedItem from "../../src/utils/FeedItem.ts"

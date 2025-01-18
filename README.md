@@ -11,6 +11,7 @@ This repo creates the websites for
 ## How to dev
 
 ```sh
+$ npm i
 $ VITE_HOST=pkgx.sh npm run dev
 # ^^ one of `pkgx.sh`, `pkgx.dev` or `pkgx.app` or `mash.pkgx.sh`
 # there is no default! set one!

@@ -33,7 +33,7 @@ jobs:
           path: pantry
           fetch-depth: 0  # needed to get git metadata for ordering purposes
 
-      - uses: pkgxdev/setup@v2
+      - uses: pkgxdev/setup@v3
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -68,7 +68,7 @@ jobs:
     needs: indexer
     runs-on: ubuntu-latest
     steps:
-      - uses: pkgxdev/setup@v2
+      - uses: pkgxdev/setup@v3
       - uses: actions/checkout@v4
 
       - uses: actions/checkout@v4
@@ -113,7 +113,7 @@ jobs:
         with:
           path: utils
 
-      - uses: pkgxdev/setup@v2
+      - uses: pkgxdev/setup@v3
 
       - run: utils/.github/scripts/gen-algolia-data.ts > algolia.json
 
