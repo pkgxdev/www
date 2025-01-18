@@ -15,7 +15,7 @@ export default function Hero() {
 
   const text = () =>
     searchParams.get('via') === 'brew'
-      ? 'brew install pkgxdev/made/pkgx'
+      ? 'brew install pkgx'
       : 'curl -Ssf https://pkgx.sh | sh'
 
   const click = (event: React.MouseEvent<HTMLElement>) => {
