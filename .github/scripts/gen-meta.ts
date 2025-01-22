@@ -2,16 +2,16 @@
 
 //TODO if no homepage at the end check of it all check the project name for a 200 HEAD request
 //TODO if no github check if project name is a github
+//TODO sometimes the github homepageUrl is actually the docs url and the project ID is actually the homepage
+//TODO do the github figure out -> description + homepage first as brew provides lookup should be a last resort I think eg. xcodeproj
+//TODO use gems, pypi, crates etc. to get better homepage, description, etc.
 
-
-import { plumbing } from "https://deno.land/x/libpkgx@v0.20.3/mod.ts";
 import { fromFileUrl, dirname, join } from "jsr:@std/path@^1.0.8";
 import { ensureDirSync, exists } from "jsr:@std/fs"
 import { existsSync } from "node:fs";
 import usePantry from "https://deno.land/x/libpkgx@v0.20.3/src/hooks/usePantry.ts";
 
 const kv = await Deno.openKv();
-const { which } = plumbing;
 
 const out = join(dirname(fromFileUrl(import.meta.url)), '../../out');
 ensureDirSync(out);
@@ -28,7 +28,7 @@ console.error("got", got.size);
 console.error("go")
 for (const obj of json) {
 
-  const {name, versions: {stable}, revision, desc: description, homepage, license, bottle: {stable: {rebuild}}, urls: {head}, ruby_source_path} = obj;
+  const {name, desc: description, homepage, license, urls: {head}, ruby_source_path} = obj;
 
   if (got.has(name) || name.includes("@")) {
     continue
@@ -61,72 +61,102 @@ for (const obj of json) {
 console.error('writing');
 
 for await (const { project } of usePantry().ls()) {
-  const foo = await usePantry().project(project)
-  const provides = await foo.provides();
+  const pantry_entry = await usePantry().project(project)
+
+  const provides = await pantry_entry.provides();
+  let { homepage, description, brew_url, license, github } = await assign(project, provides) ?? {};
+
+  let gh_description: string | undefined = undefined;
+
+  if (!github) {
+    const yaml = await pantry_entry.yaml()
+
+    if (yaml?.versions?.github) {
+      const foo = yaml.versions.github.split('/', 2).join('/');
+      github = `https://github.com/${foo}`;
+    } else {
+      const url = yaml?.distributable?.url;
+      if (url && /github.com\//.test(url)) {
+        const match = url.match(/github.com\/([^\/]+)\/([^\/]+)/);
+        const [_, owner, repo] = match;
+        if (owner && repo) {
+          github = `https://github.com/${owner}/${repo}`;
+        }
+      }
+    }
+  }
+
+  if (github) {
+    const gh = await get_github_JSON_values(github);
+
+    if (homepage == github) {
+      homepage = undefined;
+    }
+    if (!homepage && github) {
+      homepage = gh?.homepageUrl;
+    }
+    if (homepage == github) {
+      homepage = undefined;
+    }
+
+    if (!description) {
+      description = gh?.description;
+    } else {
+      gh_description = gh?.description;
+    }
+
+    if (!homepage?.trim()) homepage = undefined;
+    if (!description?.trim()) description = undefined;
+  }
+
+  let brief = (gh_description?.length ?? 0) < (description?.length ?? 0) ? gh_description : description;
+  description = (gh_description?.length ?? 0) < (description?.length ?? 0) ? description : gh_description;
+
+  if (!description?.trim()) description = undefined;
+  if (!brief?.trim()) brief = undefined;
+  if (!description && brief) {
+    description = brief;
+    brief = undefined;
+  }
+  if (description == brief) {
+    brief = undefined;
+  }
+
+  let json: any = {
+    brief, description, homepage, provides, brew_url, license, github
+  }
   if (provides.length == 0) {
+    delete json['provides'];
+  }
+  if (Object.values(json).length) {
+    const fn = join(out, `${project}.json`);
+    ensureDirSync(dirname(fn));
+    const str = JSON.stringify(json, null, 2);
+    if (str != "{}") {
+      Deno.writeTextFileSync(fn, str);
+    }
+  }
+}
 
-    //TODO
-
-  } else for (const provide of provides) {
+async function assign(project: string, provides: string[]) {
+  for (const provide of provides) {
     const bar = await kv.get(['provides', `bin/${provide}`])
     const baz = (bar.value as { ff: string[] } | null)?.ff;
-    if (!baz) {
-      console.error("failed to map", project, provide);
-    } else if (baz.length == 1) {
-      let { homepage, description, provides, brew_url, license, github } = (await kv.get(["formula", baz[0]])).value as any;
-      let gh_description: string | undefined = undefined;
 
-      if (github) {
-        const gh = await get_github_JSON_values(github);
-
-        if (homepage == github) {
-          homepage = undefined;
-        }
-        if (!homepage && github) {
-          homepage = gh?.homepageUrl;
-        }
-        if (homepage == github) {
-          homepage = undefined;
-        }
-
-        if (!description) {
-          description = gh?.description;
-        } else {
-          gh_description = gh?.description;
-        }
-
-        if (!homepage?.trim()) homepage = undefined;
-        if (!description?.trim()) description = undefined;
-      }
-
-      let brief = (gh_description?.length ?? 0) < (description?.length ?? 0) ? gh_description : description;
-      description = (gh_description?.length ?? 0) < (description?.length ?? 0) ? description : gh_description;
-
-      if (!description?.trim()) description = undefined;
-      if (!brief?.trim()) brief = undefined;
-      if (!description && brief) {
-        description = brief;
-        brief = undefined;
-      }
-      if (description == brief) {
-        brief = undefined;
-      }
-
-      let json = {
-        brief, description, homepage, provides, brew_url, license, github
-      }
-      const fn = join(out, `${project}.json`);
-      ensureDirSync(dirname(fn));
-      Deno.writeTextFileSync(fn, JSON.stringify(json, null, 2));
-      break;
+    if (!baz || baz.length == 0) {
+      continue;
     }
+    if (baz.length > 1) {
+      console.error("warning: multiple formulae provide", provide, baz);
+    }
+    return (await kv.get(["formula", baz[0]])).value as any;
   }
 }
 
 async function get_formula_json() {
   const headers: Record<string, string> = {};
   try {
-    if (existsSync(join(out, 'formula.json'))) {
+    if (existsSync(join(out, '.git/formula.json'))) {
       headers["If-None-Match"] = Deno.readTextFileSync(join(out, '.git/formula.json.ETAG'));
     }
   } catch {}
@@ -150,14 +180,14 @@ async function get_formula_json() {
   const json = await rsp.json();
 
   if (etag) {
-    Deno.writeTextFileSync(join(out, 'ETAG'), etag);
-    Deno.writeTextFileSync(join(out, 'formula.json'), JSON.stringify(json));
+    Deno.writeTextFileSync(join(out, '.git/formula.json.ETAG'), etag);
+    Deno.writeTextFileSync(join(out, '.git/formula.json'), JSON.stringify(json));
   }
 
   return json
 }
 
-async function get_manifest({name, versions: {stable}, revision, desc: description, homepage, license, bottle: {stable: {rebuild}}, head, ruby_source_path}: any) {
+async function get_manifest({name, versions: {stable}, revision, bottle: {stable: {rebuild}}}: any) {
   const version = typeof stable == 'string' ? stable : {stable}
 
   //TODO check age is less than 3 hours, then do ETAG check
@@ -227,10 +257,13 @@ function try_github(head: { url: string } | null, homepage: string) {
   }
   return rv;
 
-
   function get() {
     if (/github.com\//.test(homepage)) {
-      return homepage;
+      const match = homepage.match(/github.com\/([^\/]+)\/([^\/]+)/);
+      if (match) {
+        const [_, owner, repo] = match;
+        return `https://github.com/${owner}/${repo}`;
+      }
     }
 
     if (head?.url && /github.com\//.test(head.url)) {
