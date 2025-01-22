@@ -1,4 +1,8 @@
-#!/usr/bin/env -S pkgx deno^2 run --allow-net --allow-write=./out --allow-read --unstable-kv --allow-env
+#!/usr/bin/env -S pkgx deno^2 run --allow-net --allow-write=./out --allow-read --unstable-kv --allow-env --allow-run
+
+//TODO if no homepage at the end check of it all check the project name for a 200 HEAD request
+//TODO if no github check if project name is a github
+
 
 import { plumbing } from "https://deno.land/x/libpkgx@v0.20.3/mod.ts";
 import { fromFileUrl, dirname, join } from "jsr:@std/path@^1.0.8";
@@ -58,15 +62,58 @@ console.error('writing');
 
 for await (const { project } of usePantry().ls()) {
   const foo = await usePantry().project(project)
-  for (const provide of await foo.provides()) {
+  const provides = await foo.provides();
+  if (provides.length == 0) {
+
+    //TODO
+
+  } else for (const provide of provides) {
     const bar = await kv.get(['provides', `bin/${provide}`])
     const baz = (bar.value as { ff: string[] } | null)?.ff;
     if (!baz) {
       console.error("failed to map", project, provide);
     } else if (baz.length == 1) {
-      const { homepage, description, provides, brew_url, license, github } = (await kv.get(["formula", baz[0]])).value as any;
+      let { homepage, description, provides, brew_url, license, github } = (await kv.get(["formula", baz[0]])).value as any;
+      let gh_description: string | undefined = undefined;
+
+      if (github) {
+        const gh = await get_github_JSON_values(github);
+
+        if (homepage == github) {
+          homepage = undefined;
+        }
+        if (!homepage && github) {
+          homepage = gh?.homepageUrl;
+        }
+        if (homepage == github) {
+          homepage = undefined;
+        }
+
+        if (!description) {
+          description = gh?.description;
+        } else {
+          gh_description = gh?.description;
+        }
+
+        if (!homepage?.trim()) homepage = undefined;
+        if (!description?.trim()) description = undefined;
+      }
+
+      let brief = (gh_description?.length ?? 0) < (description?.length ?? 0) ? gh_description : description;
+      description = (gh_description?.length ?? 0) < (description?.length ?? 0) ? description : gh_description;
+
+      if (!description?.trim()) description = undefined;
+      if (!brief?.trim()) brief = undefined;
+      if (!description && brief) {
+        description = brief;
+        brief = undefined;
+      }
+      if (description == brief) {
+        brief = undefined;
+      }
+
       let json = {
-        description, homepage, provides, brew_url, license, github
+        brief, description, homepage, provides, brew_url, license, github
       }
       const fn = join(out, `${project}.json`);
       ensureDirSync(dirname(fn));
@@ -201,5 +248,18 @@ function try_github(head: { url: string } | null, homepage: string) {
       const [_, owner, repo] = match;
       return `https://github.com/${owner}/${repo}`;
     }
+  }
+}
+
+async function get_github_JSON_values(github: string): Promise<{ description?: string, homepageUrl?: string } | undefined> {
+  const cmd = new Deno.Command("pkgx", {
+    args: ["--quiet", "gh", "repo", "view", github, "--json", "description,homepageUrl"],
+    stdout: "piped",
+  }).spawn();
+
+  const {success} = await cmd.status;
+  if (success) {
+    const output = new TextDecoder().decode((await cmd.output()).stdout).trim();
+    return JSON.parse(output);
   }
 }

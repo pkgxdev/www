@@ -33,6 +33,11 @@ jobs:
           path: pantry
           fetch-depth: 0  # needed to get git metadata for ordering purposes
 
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
       - uses: pkgxdev/setup@v3
 
       - uses: aws-actions/configure-aws-credentials@v4
@@ -47,7 +52,6 @@ jobs:
       - run: ../.github/scripts/gen-pkgs-index.json.ts > ../out/index.json
         working-directory: pantry
 
-      - run: cat ./out/index.html
       - run: .github/scripts/gen-index.html.ts
 
       - run: aws s3 sync
