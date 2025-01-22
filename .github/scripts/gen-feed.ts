@@ -13,13 +13,12 @@ const { options: { pkgsJson, pantryPath, blogPath, scripthubJson } } = await new
 const rv: FeedItem[] = []
 
 import { parse } from "https://deno.land/std@0.204.0/yaml/mod.ts";
-import { isArray } from "https://deno.land/x/is_what@v4.1.15/src/index.ts";
 
 for (const pkg of JSON.parse(Deno.readTextFileSync(pkgsJson))) {
   const { project, name, description, birthtime } = pkg
   const txt = await Deno.readTextFileSync(`${pantryPath}/projects/${project}/package.yml`)
   const yml = await parse(txt) as Record<string, any>
-  if (yml.provides) {
+  if (yml.provides?.length) {
     rv.push({
       type: 'pkg',
       title: name ?? project,

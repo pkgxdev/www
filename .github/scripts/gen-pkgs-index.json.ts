@@ -83,7 +83,7 @@ const pkgs = await getPackageYmlCreationDates();
 // sort by birthtime
 pkgs.sort((a, b) => b.birthtime.getTime() - a.birthtime.getTime());
 
-console.log(JSON.stringify(pkgs, null, 2));
+console.log(JSON.stringify(pkgs));
 
 //////////////////////////////////////////////////////
 import { parse } from "https://deno.land/std@0.204.0/yaml/mod.ts";

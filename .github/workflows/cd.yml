@@ -3,6 +3,9 @@ name: cd
 on:
   push:
     branches: main
+    paths:
+      - src/**
+      - package.json
   workflow_dispatch:
 
 concurrency:
@@ -117,8 +120,3 @@ jobs:
       - uses: pkgxdev/setup@v3
       - run: pkgx hugo
       - run: pkgx hugo deploy
-
-  indexer:
-    needs: publish
-    uses: ./.github/workflows/indexer.yml
-    secrets: inherit

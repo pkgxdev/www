@@ -14,11 +14,16 @@ on:
   pull_request:
     branches: main
     paths:
-      - .github/scripts/indexer.ts
+      - .github/scripts/*.ts
+      - .github/workflows/indexer.yml
+  push:
+    branches: main
+    paths:
+      - .github/scripts/*.ts
       - .github/workflows/indexer.yml
 
 concurrency:
-  group: indexer/${{ github.ref || 'main' }}
+  group: indexer
   cancel-in-progress: true
 
 jobs:
@@ -66,6 +71,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
+          name: pkg-index
           path: out/index.json
 
   root-indexer:
@@ -81,16 +87,18 @@ jobs:
           path: pantry
 
       - uses: actions/download-artifact@v4
+        with:
+          name: pkg-index
 
       - run: curl https://pkgxdev.github.io/mash/index.json > scripthub.json
 
       - run: |
           .github/scripts/gen-feed.ts \
               --blog-path ./blog \
-              --pkgs-json ./artifact/index.json \
+              --pkgs-json ./index.json \
               --scripthub-json ./scripthub.json \
               --pantry-path ./pantry \
-            > index.json
+            > out_index.json
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -98,7 +106,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
-      - run: aws s3 cp index.json s3://www.pkgx.dev/index.json
+      - run: aws s3 cp out_index.json s3://www.pkgx.dev/index.json
 
       - run: aws cloudfront
                create-invalidation
@@ -106,6 +114,7 @@ jobs:
                --paths /index.json
 
   algolia:
+    needs: indexer
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -117,6 +126,10 @@ jobs:
         with:
           path: utils
 
+      - uses: actions/download-artifact@v4
+        with:
+          name: pkg-index
+
       - uses: pkgxdev/setup@v3
 
       - run: utils/.github/scripts/gen-algolia-data.ts > algolia.json
@@ -124,13 +137,20 @@ jobs:
       - name: Upload JSON file to Algolia
         env:
           ALGOLIA_APP_ID: UUTLHX01W7
-          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          INDEX_NAME: pkgs
           JSON_FILE: ./algolia.json
         run: |
-          curl -X POST \
-            -H "X-Algolia-Application-Id: $ALGOLIA_APP_ID" \
-            -H "X-Algolia-API-Key: $ALGOLIA_API_KEY" \
-            -H "Content-Type: application/json" \
+          curl \
+            --fail \
+            --request POST \
+            --header 'accept: application/json' \
+            --header 'content-type: application/json' \
+            --header "X-Algolia-Application-Id: $ALGOLIA_APP_ID" \
+            --header "X-Algolia-API-Key: ${{ secrets.ALGOLIA_ADMIN_KEY }}" \
             --data-binary "@$JSON_FILE" \
-            "https://${ALGOLIA_APP_ID}-dsn.algolia.net/1/indexes/$INDEX_NAME/batch"
+            "https://${ALGOLIA_APP_ID}.algolia.net/1/indexes/pkgs/batch"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: algolia
+          path: ./algolia.json
