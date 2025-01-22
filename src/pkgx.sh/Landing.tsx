@@ -1,4 +1,4 @@
-import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import Grid from '@mui/material/Grid2';
 import { Alert, Box, Button, Card, CardContent, ImageList, ImageListItem, Stack, Typography, styled, useMediaQuery, useTheme } from "@mui/material"
 import Terminal, { Dim, Orange, Prompt, Purple } from '../components/Terminal';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -46,7 +46,7 @@ export function RunAnything() {
 
     <div>{/* required to work around https://github.com/mui/material-ui/issues/29221 */}
       <Grid container spacing={2}>
-        <Grid xs={12} md={6}>
+        <Grid size={{xs: 12, md: 6}}>
           <Card>
             <CardContent>
               <Typography variant="h5">
@@ -83,7 +83,7 @@ export function RunAnything() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={12} md={6}>
+        <Grid size={{xs: 12, md: 6}}>
           <Card>
             <CardContent>
               <Typography variant="h5">
@@ -161,7 +161,7 @@ export function RunAnywhere() {
 
     <div>{/* required to work around https://github.com/mui/material-ui/issues/29221 */}
       <Grid container spacing={2}>
-        <Grid xs={6} md={4}>
+        <Grid size={{xs: 6, md: 4}}>
           <Card>
             <CardContent>
               <Typography variant="h6" component="div">
@@ -176,7 +176,7 @@ export function RunAnywhere() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={6} md={4}>
+        <Grid size={{xs: 6, md: 4}}>
           <Card>
             <CardContent>
             <Typography variant="h6" component="div">
@@ -191,7 +191,7 @@ export function RunAnywhere() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={6} md={4}>
+        <Grid size={{xs: 6, md: 4}}>
           <Card>
             <CardContent>
             <Typography variant="h6" component="div">
@@ -206,7 +206,7 @@ export function RunAnywhere() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={12} md={7}>
+        <Grid  size={{xs: 12, md: 7}}>
           <Card>
             <CardContent>
               <Typography variant="h6" component="div">
@@ -226,7 +226,7 @@ export function RunAnywhere() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={12} md={5}>
+        <Grid size={{xs: 12, md: 5}}>
           <Card sx={{height: '100%'}}>
             <CardContent>
               <Typography variant="h6" component="div">
@@ -244,7 +244,7 @@ export function RunAnywhere() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={12} md={4}>
+        <Grid size={{xs: 12, md: 4}}>
           <Card>
             <CardContent>
               <Typography variant="h6" component="div">
@@ -261,7 +261,7 @@ export function RunAnywhere() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={12} md={8}>
+        <Grid size={{xs: 12, md: 8}}>
           <Card>
             <CardContent>
               <Typography variant="h6" component="div">
@@ -350,7 +350,7 @@ export function Dev() {
 
     <div>{/* required to work around https://github.com/mui/material-ui/issues/29221 */}
       <Grid container spacing={2}>
-        <Grid xs={12} md={6}>
+        <Grid size={{xs: 12, md: 6}}>
           <Card>
             <CardContent>
               <Typography variant="h6" component="div">
@@ -368,7 +368,7 @@ export function Dev() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={12} md={6}>
+        <Grid size={{xs: 12, md: 6}}>
           <Card>
             <CardContent>
               <Typography variant="h6" component="div">
@@ -422,7 +422,7 @@ export function Trusted() {
     </Typography>
 
     <Grid container spacing={2}>
-      <Grid xs={12} md={6}>
+      <Grid size={{xs: 12, md: 6}}>
         <Card>
           <CardContent>
             <Typography variant="h5" component="div">
@@ -443,7 +443,7 @@ export function Trusted() {
           </CardContent>
         </Card>
       </Grid>
-      <Grid xs={12} md={6}>
+      <Grid size={{xs: 12, md: 6}}>
         <Card sx={{mb: 2}}>
           <CardContent>
             <Typography variant="h5" component="div">

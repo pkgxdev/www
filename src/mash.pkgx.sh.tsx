@@ -1,5 +1,5 @@
 import { ThemeProvider } from '@mui/material/styles';
-import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import Grid from '@mui/material/Grid2';
 import { Button, CssBaseline, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import * as ReactDOM from 'react-dom/client';
@@ -22,7 +22,7 @@ function Body() {
     <Stack minWidth='lg' p={isxs ? 1 : 4} spacing={isxs ? 8 : 16}>
       <MyMasthead />
       <Grid container spacing={2} sx={{"&&": {mt: 4}}}>
-        <Grid xs={12} md={9}>
+        <Grid size={{xs: 12, md: 9}}>
           <Router>
             <Routes>
               <Route path='/' element={<Listing />} />
@@ -30,7 +30,7 @@ function Body() {
             </Routes>
           </Router>
         </Grid>
-        <Grid xs={12} md={3}>
+        <Grid size={{xs: 12, md: 3}}>
           <Hero />
         </Grid>
       </Grid>

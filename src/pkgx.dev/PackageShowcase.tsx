@@ -1,4 +1,4 @@
-import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import Grid from '@mui/material/Grid2';
 import { Alert, Box, Card, CardActionArea, CardContent, CardMedia, Chip, Skeleton, Typography, useMediaQuery, useTheme } from "@mui/material";
 import useInfiniteScroll from 'react-infinite-scroll-hook';
 import { CSSProperties, useState } from "react";
@@ -34,16 +34,16 @@ export default function Showcase() {
       Available Packages {count}
     </Typography>
     <Grid container spacing={isxs ? 1 : 2}>
-      {items.map(item => <Grid xs={6} md={3} key={item.project}>
+      {items.map(item => <Grid size={{xs: 6, md: 3}} key={item.project}>
         <PkgCard {...item} />
       </Grid>)}
       {(loading || hasNextPage) &&
           Array.from({ length: isxs ? 2 : 4 }).map((_, index) => (
-            <Grid xs={6} md={3} key={index}  ref={index === 0 ? sentryRef : null}>
+            <Grid size={{xs: 6, md: 3}} key={index}  ref={index === 0 ? sentryRef : null}>
               <PkgCard isLoader />
             </Grid>
           ))}
-      {error && <Grid xs={12}><Alert severity='error'>{error.message}</Alert></Grid>}
+      {error && <Grid size={12}><Alert severity='error'>{error.message}</Alert></Grid>}
     </Grid>
   </>
 }
@@ -98,7 +98,7 @@ function PkgCard({project, description, name, labels, isLoader}: Package) {
           <CardMedia
             height={mediaHeight}
             component={Box}
-            image={/*`https://gui.tea.xyz/prod/${project}/512x512.webp`*/ undefined}
+            image={`https://gui.tea.xyz/prod/${project}/512x512.webp`}
             textAlign="right"
           >
             {chips}
@@ -117,7 +117,7 @@ function PkgCard({project, description, name, labels, isLoader}: Package) {
               </Typography>
             </div>
             <Typography variant='caption' component="h3" style={text_style}>
-              {/* {description} */}
+              {description}
             </Typography>
           </CardContent>
         )}

@@ -1,4 +1,4 @@
-import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import Grid from '@mui/material/Grid2';
 import { useTheme, ButtonBase, Paper, Stack, Typography, useMediaQuery, Alert, Card, CardActionArea, CardMedia, Box, Chip, CardContent, Skeleton } from '@mui/material';
 import useInfiniteScroll from 'react-infinite-scroll-hook';
 import HeroTypography from '../components/HeroTypography';
@@ -22,7 +22,7 @@ export default function HomeFeed() {
     </Stack>
 
     <Grid container spacing={{xs: 1, md: 2}} textAlign='center'>
-      <Grid xs={12} md={4}>
+      <Grid size={{xs: 12, md: 4}}>
         <ButtonBase href='https://pkgx.sh'>
           <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
             <Stack direction='column' spacing={2}>
@@ -35,7 +35,7 @@ export default function HomeFeed() {
           </Paper>
         </ButtonBase>
       </Grid>
-      <Grid xs={12} md={4}>
+      <Grid size={{xs: 12, md: 4}}>
         <ButtonBase href='https://mash.pkgx.sh'>
           <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
             <Stack direction='column' spacing={2}>
@@ -48,7 +48,7 @@ export default function HomeFeed() {
           </Paper>
         </ButtonBase>
       </Grid>
-      <Grid xs={12} md={4}>
+      <Grid size={{xs: 12, md: 4}}>
         <ButtonBase href='https://pkgx.app'>
           <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
             <Stack direction='column' spacing={2}>
@@ -92,11 +92,11 @@ function Feed() {
   });
 
   return <Grid container spacing={isxs ? 1 : 2}>
-    {items.map(item => <Grid xs={6} md={3}>
+    {items.map(item => <Grid size={{xs: 6, md: 3}}>
       <FeedItemBox {...item} />
     </Grid>)}
-    {(loading || hasNextPage) && <Grid xs={12} ref={sentryRef}><Skeleton /></Grid>}
-    {error && <Grid xs={12}><Alert severity='error'>{error.message}</Alert></Grid>}
+    {(loading || hasNextPage) && <Grid size={12} ref={sentryRef}><Skeleton /></Grid>}
+    {error && <Grid size={12}><Alert severity='error'>{error.message}</Alert></Grid>}
   </Grid>
 }
 
@@ -155,7 +155,7 @@ function FeedItemBox(item: FeedItem) {
         <CardMedia
           height={isxs ? 150 : 300}
           component={Box}
-          image={type == 'pkg' ? undefined : image}
+          image={image}
           textAlign='right'
         >
           {chip}
@@ -167,7 +167,7 @@ function FeedItemBox(item: FeedItem) {
             </Typography>
           </div>
           <Typography variant='caption' component="h3" style={text_style}>
-            {/* {description} */}
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
