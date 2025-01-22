@@ -1,0 +1,22 @@
+{
+  "brief": "Mirror of Apache Subversion",
+  "description": "Version control system designed to be a better CVS",
+  "homepage": "https://subversion.apache.org/",
+  "provides": [
+    "svn",
+    "svnadmin",
+    "svnbench",
+    "svndumpfilter",
+    "svnfsfs",
+    "svnlook",
+    "svnmucc",
+    "svnrdump",
+    "svnserve",
+    "svnsync",
+    "svnversion"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/subversion",
+  "license": "Apache-2.0",
+  "github": "https://github.com/apache/subversion",
+  "project": "apache.org/subversion"
+}

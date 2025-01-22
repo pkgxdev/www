@@ -1,0 +1,13 @@
+{
+  "brief": "Post-modern modal text editor",
+  "description": "A post-modern modal text editor.",
+  "homepage": "https://helix-editor.com",
+  "provides": [
+    "hx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/helix",
+  "license": "MPL-2.0",
+  "github": "https://github.com/helix-editor/helix",
+  "project": "helix-editor.com",
+  "displayName": "hx"
+}

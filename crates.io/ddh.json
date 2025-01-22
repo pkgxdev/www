@@ -1,0 +1,12 @@
+{
+  "brief": "Fast duplicate file finder",
+  "description": "A fast duplicate file finder",
+  "provides": [
+    "ddh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ddh",
+  "license": "LGPL-3.0-only",
+  "github": "https://github.com/darakian/ddh",
+  "project": "crates.io/ddh",
+  "displayName": "ddh"
+}

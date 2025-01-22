@@ -1,0 +1,6 @@
+{
+  "description": "The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (bdwgc, also known as bdw-gc, boehm-gc, libgc)",
+  "homepage": "https://www.hboehm.info/gc/",
+  "github": "https://github.com/ivmai/bdwgc",
+  "project": "hboehm.info/gc"
+}

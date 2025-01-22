@@ -1,0 +1,13 @@
+{
+  "brief": "a git launcher :-)",
+  "description": "ASCII-art displaying typo-corrector for commands",
+  "homepage": "https://r-wos.org/hacks/gti",
+  "provides": [
+    "gti"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gti",
+  "license": "MIT",
+  "github": "https://github.com/rwos/gti",
+  "project": "r-wos.org/gti",
+  "displayName": "gti"
+}

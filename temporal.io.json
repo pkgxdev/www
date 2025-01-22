@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line interface for running and interacting with Temporal Server and UI",
+  "description": "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal",
+  "homepage": "https://temporal.io/",
+  "provides": [
+    "temporal"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/temporal",
+  "license": "MIT",
+  "github": "https://github.com/temporalio/cli",
+  "project": "temporal.io",
+  "displayName": "temporal"
+}

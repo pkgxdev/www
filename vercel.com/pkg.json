@@ -1,0 +1,10 @@
+{
+  "description": "Package your Node.js project into an executable",
+  "homepage": "https://npmjs.com/pkg",
+  "provides": [
+    "pkg"
+  ],
+  "github": "https://github.com/vercel/pkg",
+  "project": "vercel.com/pkg",
+  "displayName": "pkg"
+}

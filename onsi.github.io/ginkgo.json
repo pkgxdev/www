@@ -1,0 +1,10 @@
+{
+  "description": "A Modern Testing Framework for Go",
+  "homepage": "http://onsi.github.io/ginkgo/",
+  "provides": [
+    "ginkgo"
+  ],
+  "github": "https://github.com/onsi/ginkgo",
+  "project": "onsi.github.io/ginkgo",
+  "displayName": "ginkgo"
+}

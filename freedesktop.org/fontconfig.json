@@ -1,0 +1,18 @@
+{
+  "description": "XML-based font configuration API for X Windows",
+  "homepage": "https://wiki.freedesktop.org/www/Software/fontconfig/",
+  "provides": [
+    "fc-cache",
+    "fc-cat",
+    "fc-conflist",
+    "fc-list",
+    "fc-match",
+    "fc-pattern",
+    "fc-query",
+    "fc-scan",
+    "fc-validate"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fontconfig",
+  "license": "MIT",
+  "project": "freedesktop.org/fontconfig"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Cut, copy, and paste anything, anywhere, all from the terminal",
+  "description": "😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager",
+  "homepage": "https://getclipboard.app",
+  "provides": [
+    "cb"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/clipboard",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/Slackadays/Clipboard",
+  "project": "getclipboard.app",
+  "displayName": "cb"
+}

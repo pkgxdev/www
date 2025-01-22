@@ -1,0 +1,13 @@
+{
+  "brief": "Open source, general-purpose policy engine",
+  "description": "Open Policy Agent (OPA) is an open source, general-purpose policy engine.",
+  "homepage": "https://www.openpolicyagent.org",
+  "provides": [
+    "opa"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/opa",
+  "license": "Apache-2.0",
+  "github": "https://github.com/open-policy-agent/opa",
+  "project": "openpolicyagent.org",
+  "displayName": "opa"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Data and connectivity library for the icecast server",
+  "homepage": "https://icecast.org/",
+  "provides": [
+    "shout"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libshout",
+  "license": "LGPL-2.0-or-later",
+  "project": "xiph.org/libshout",
+  "displayName": "shout"
+}

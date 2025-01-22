@@ -1,0 +1,11 @@
+{
+  "description": "Detect, track and alert on infrastructure drift",
+  "provides": [
+    "driftctl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/driftctl",
+  "license": "Apache-2.0",
+  "github": "https://github.com/snyk/driftctl",
+  "project": "snyk.io/driftctl",
+  "displayName": "driftctl"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Secure and free password manager for all of your devices",
+  "homepage": "https://bitwarden.com/",
+  "provides": [
+    "bw"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bitwarden-cli",
+  "license": "GPL-3.0-only",
+  "project": "bitwarden.com",
+  "displayName": "bw"
+}

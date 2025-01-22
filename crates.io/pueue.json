@@ -1,0 +1,12 @@
+{
+  "brief": ":stars: Manage your shell commands.",
+  "description": "Command-line tool for managing long-running shell commands",
+  "provides": [
+    "pueue",
+    "pueued"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pueue",
+  "license": "MIT",
+  "github": "https://github.com/Nukesor/pueue",
+  "project": "crates.io/pueue"
+}

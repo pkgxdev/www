@@ -1,0 +1,13 @@
+{
+  "brief": "Configuration helper for talos clusters",
+  "description": "A tool to help creating Talos kubernetes cluster",
+  "homepage": "https://budimanjojo.github.io/talhelper/latest/",
+  "provides": [
+    "talhelper"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/talhelper",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/budimanjojo/talhelper",
+  "project": "budimanjojo.github.io/talhelper",
+  "displayName": "talhelper"
+}

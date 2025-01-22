@@ -1,0 +1,20 @@
+{
+  "brief": "Erlang/OTP",
+  "description": "Programming language for highly scalable real-time systems",
+  "homepage": "https://www.erlang.org/",
+  "provides": [
+    "ct_run",
+    "dialyzer",
+    "epmd",
+    "erl",
+    "erlc",
+    "escript",
+    "run_erl",
+    "to_erl",
+    "typer"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/erlang",
+  "license": "Apache-2.0",
+  "github": "https://github.com/erlang/otp",
+  "project": "erlang.org"
+}

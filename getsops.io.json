@@ -1,0 +1,13 @@
+{
+  "brief": "Editor of encrypted files",
+  "description": "Simple and flexible tool for managing secrets",
+  "homepage": "https://getsops.io/",
+  "provides": [
+    "sops"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sops",
+  "license": "MPL-2.0",
+  "github": "https://github.com/getsops/sops",
+  "project": "getsops.io",
+  "displayName": "sops"
+}

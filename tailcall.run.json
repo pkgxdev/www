@@ -1,0 +1,10 @@
+{
+  "description": "High Performance GraphQL Runtime",
+  "homepage": "https://tailcall.run",
+  "provides": [
+    "tailcall"
+  ],
+  "github": "https://github.com/tailcallhq/tailcall",
+  "project": "tailcall.run",
+  "displayName": "tailcall"
+}

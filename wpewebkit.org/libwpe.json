@@ -1,0 +1,5 @@
+{
+  "description": "General-purpose library specifically developed for the WPE-flavored port of WebKit.",
+  "github": "https://github.com/WebPlatformForEmbedded/libwpe",
+  "project": "wpewebkit.org/libwpe"
+}

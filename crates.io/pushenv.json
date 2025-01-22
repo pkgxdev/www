@@ -1,0 +1,10 @@
+{
+  "description": "A CLI utility that reads a .env file before starting a process",
+  "homepage": "https://crates.io/crates/pushenv",
+  "provides": [
+    "pushenv"
+  ],
+  "github": "https://github.com/JensGM/pushenv",
+  "project": "crates.io/pushenv",
+  "displayName": "pushenv"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Tools for and transforming and inspecting PDF files",
+  "description": "qpdf: A content-preserving PDF document transformer",
+  "homepage": "https://qpdf.sourceforge.io/",
+  "provides": [
+    "qpdf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/qpdf",
+  "license": "Apache-2.0",
+  "github": "https://github.com/qpdf/qpdf",
+  "project": "qpdf.sourceforge.io",
+  "displayName": "qpdf"
+}

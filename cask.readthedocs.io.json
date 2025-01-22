@@ -1,0 +1,13 @@
+{
+  "brief": "Emacs dependency management",
+  "description": "Project management tool for Emacs",
+  "homepage": "https://cask.readthedocs.io/",
+  "provides": [
+    "cask"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cask",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/cask/cask",
+  "project": "cask.readthedocs.io",
+  "displayName": "cask"
+}

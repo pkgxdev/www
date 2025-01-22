@@ -1,0 +1,13 @@
+{
+  "brief": "The Cocoa Dependency Manager.",
+  "description": "Dependency manager for Cocoa projects",
+  "homepage": "https://cocoapods.org/",
+  "provides": [
+    "pod"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cocoapods",
+  "license": "MIT",
+  "github": "https://github.com/CocoaPods/CocoaPods",
+  "project": "cocoapods.org",
+  "displayName": "pod"
+}

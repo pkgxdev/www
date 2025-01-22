@@ -1,0 +1,11 @@
+{
+  "description": "Official GitLab CI runner",
+  "homepage": "https://gitlab.com/gitlab-org/gitlab-runner",
+  "provides": [
+    "gitlab-runner"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gitlab-runner",
+  "license": "MIT",
+  "project": "gitlab.com/gitlab-org/gitlab-runner",
+  "displayName": "gitlab-runner"
+}

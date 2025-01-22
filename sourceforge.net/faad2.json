@@ -1,0 +1,13 @@
+{
+  "brief": "ISO AAC audio decoder",
+  "description": "Freeware Advanced Audio (AAC) Decoder faad2 mirror",
+  "homepage": "https://sourceforge.net/projects/faac/",
+  "provides": [
+    "faad"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/faad2",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/knik0/faad2",
+  "project": "sourceforge.net/faad2",
+  "displayName": "faad"
+}

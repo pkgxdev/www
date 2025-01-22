@@ -1,0 +1,11 @@
+{
+  "description": "Utility to configure and test X input devices",
+  "homepage": "https://gitlab.freedesktop.org/xorg/app/xinput",
+  "provides": [
+    "xinput"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xinput",
+  "license": "MIT",
+  "project": "x.org/xinput",
+  "displayName": "xinput"
+}

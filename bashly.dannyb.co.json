@@ -1,0 +1,10 @@
+{
+  "description": "Bash command line framework and CLI generator",
+  "homepage": "https://bashly.dev",
+  "provides": [
+    "bashly"
+  ],
+  "github": "https://github.com/DannyBen/bashly",
+  "project": "bashly.dannyb.co",
+  "displayName": "bashly"
+}

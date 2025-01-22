@@ -1,0 +1,10 @@
+{
+  "description": "Cloud-native search engine for observability. An open-source alternative to Datadog, Elasticsearch, Loki, and Tempo.",
+  "homepage": "https://quickwit.io",
+  "provides": [
+    "quickwit"
+  ],
+  "github": "https://github.com/quickwit-oss/quickwit",
+  "project": "quickwit.io",
+  "displayName": "quickwit"
+}

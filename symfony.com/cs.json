@@ -1,0 +1,13 @@
+{
+  "brief": "Tool to automatically fix PHP coding standards issues",
+  "description": "A tool to automatically fix PHP Coding Standards issues",
+  "homepage": "https://cs.symfony.com/",
+  "provides": [
+    "php-cs-fixer"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/php-cs-fixer",
+  "license": "MIT",
+  "github": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer",
+  "project": "symfony.com/cs",
+  "displayName": "php-cs-fixer"
+}

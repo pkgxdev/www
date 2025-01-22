@@ -1,0 +1,6 @@
+{
+  "description": "canonical libwebsockets.org networking library",
+  "homepage": "https://libwebsockets.org",
+  "github": "https://github.com/warmcat/libwebsockets",
+  "project": "libwebsockets.org"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Compute various size metrics for a Git repository",
+  "description": "Compute various size metrics for a Git repository, flagging those that might cause problems",
+  "provides": [
+    "git-sizer"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-sizer",
+  "license": "MIT",
+  "github": "https://github.com/github/git-sizer",
+  "project": "github.com/github/git-sizer",
+  "displayName": "git-sizer"
+}

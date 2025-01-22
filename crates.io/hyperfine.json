@@ -1,0 +1,12 @@
+{
+  "brief": "Command-line benchmarking tool",
+  "description": "A command-line benchmarking tool",
+  "provides": [
+    "hyperfine"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hyperfine",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/sharkdp/hyperfine",
+  "project": "crates.io/hyperfine",
+  "displayName": "hyperfine"
+}

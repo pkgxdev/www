@@ -1,0 +1,11 @@
+{
+  "description": "Next generation frontend tooling. It's fast!",
+  "homepage": "https://vitejs.dev/",
+  "provides": [
+    "vite"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/vite",
+  "license": "MIT",
+  "project": "vitejs.dev",
+  "displayName": "vite"
+}

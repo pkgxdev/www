@@ -1,0 +1,13 @@
+{
+  "brief": "Portable library for importing many well-known 3D model formats",
+  "description": "The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure. ",
+  "homepage": "https://www.assimp.org/",
+  "provides": [
+    "assimp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/assimp",
+  "license": "BSD-3-Clause AND CC-PDDC AND MIT AND BSL-1.0 AND Unlicense AND Zlib",
+  "github": "https://github.com/assimp/assimp",
+  "project": "assimp.org",
+  "displayName": "assimp"
+}

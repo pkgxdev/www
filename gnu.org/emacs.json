@@ -1,0 +1,13 @@
+{
+  "brief": "Mirror of GNU Emacs",
+  "description": "GNU Emacs text editor",
+  "homepage": "https://www.gnu.org/software/emacs/",
+  "provides": [
+    "emacs"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/emacs",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/emacs-mirror/emacs",
+  "project": "gnu.org/emacs",
+  "displayName": "emacs"
+}

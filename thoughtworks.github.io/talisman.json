@@ -1,0 +1,13 @@
+{
+  "brief": "Tool to detect and prevent secrets from getting checked in",
+  "description": "Using a pre-commit hook, Talisman validates the outgoing changeset for things that look suspicious — such as tokens, passwords, and private keys.",
+  "homepage": "https://thoughtworks.github.io/talisman/",
+  "provides": [
+    "talisman"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/talisman",
+  "license": "MIT",
+  "github": "https://github.com/thoughtworks/talisman",
+  "project": "thoughtworks.github.io/talisman",
+  "displayName": "talisman"
+}

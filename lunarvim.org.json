@@ -1,0 +1,13 @@
+{
+  "brief": "Vim-fork focused on extensibility and usability",
+  "description": "Ambitious Vim-fork focused on extensibility and agility",
+  "homepage": "https://neovim.io/",
+  "provides": [
+    "lvim",
+    "nvim"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/neovim",
+  "license": "Apache-2.0",
+  "github": "https://github.com/neovim/neovim",
+  "project": "lunarvim.org"
+}

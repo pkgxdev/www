@@ -1,0 +1,14 @@
+{
+  "brief": "OpenGL and OpenGL ES reference compiler for shading languages",
+  "description": "Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.",
+  "homepage": "https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/",
+  "provides": [
+    "glslang",
+    "glslangValidator",
+    "spirv-remap"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/glslang",
+  "license": "BSD-3-Clause AND GPL-3.0-or-later AND MIT AND Apache-2.0",
+  "github": "https://github.com/KhronosGroup/glslang",
+  "project": "khronos.org/glslang"
+}

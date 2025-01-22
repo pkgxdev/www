@@ -1,0 +1,12 @@
+{
+  "brief": "Generate a Go ORM tailored to your database schema",
+  "description": "Generate a Go ORM tailored to your database schema.",
+  "provides": [
+    "sqlboiler"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sqlboiler",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/volatiletech/sqlboiler",
+  "project": "github.com/volatiletech/sqlboiler",
+  "displayName": "sqlboiler"
+}

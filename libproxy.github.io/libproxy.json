@@ -1,0 +1,12 @@
+{
+  "description": "Library that provides automatic proxy configuration management",
+  "homepage": "https://libproxy.github.io/libproxy/",
+  "provides": [
+    "proxy"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libproxy",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/libproxy/libproxy",
+  "project": "libproxy.github.io/libproxy",
+  "displayName": "proxy"
+}

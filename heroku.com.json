@@ -1,0 +1,11 @@
+{
+  "description": "CLI for Heroku",
+  "homepage": "https://www.npmjs.com/package/heroku/",
+  "provides": [
+    "heroku"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/heroku",
+  "license": "ISC",
+  "project": "heroku.com",
+  "displayName": "heroku"
+}

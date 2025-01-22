@@ -1,0 +1,9 @@
+{
+  "description": "GoMock is a mocking framework for the Go programming language.",
+  "provides": [
+    "mockgen"
+  ],
+  "github": "https://github.com/uber-go/mock",
+  "project": "go.uber.org/mock/mockgen",
+  "displayName": "mockgen"
+}

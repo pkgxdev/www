@@ -1,0 +1,12 @@
+{
+  "brief": "Simple terminal UI for git commands",
+  "description": "simple terminal UI for git commands",
+  "provides": [
+    "lazygit"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lazygit",
+  "license": "MIT",
+  "github": "https://github.com/jesseduffield/lazygit/",
+  "project": "github.com/jesseduffield/lazygit",
+  "displayName": "lazygit"
+}

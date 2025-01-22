@@ -1,0 +1,13 @@
+{
+  "brief": "Language for writing HTML user interfaces in Go",
+  "description": "A language for writing HTML user interfaces in Go.",
+  "homepage": "https://templ.guide",
+  "provides": [
+    "templ"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/templ",
+  "license": "MIT",
+  "github": "https://github.com/a-h/templ",
+  "project": "templ.guide",
+  "displayName": "templ"
+}

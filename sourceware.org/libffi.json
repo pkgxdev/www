@@ -1,0 +1,6 @@
+{
+  "description": "A portable foreign-function interface library.",
+  "homepage": "http://sourceware.org/libffi",
+  "github": "https://github.com/libffi/libffi",
+  "project": "sourceware.org/libffi"
+}

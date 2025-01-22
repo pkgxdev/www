@@ -1,0 +1,10 @@
+{
+  "description": "A tool for secrets management, encryption as a service, and privileged access management",
+  "homepage": "https://www.vaultproject.io/",
+  "provides": [
+    "vault"
+  ],
+  "github": "https://github.com/hashicorp/vault",
+  "project": "vaultproject.io",
+  "displayName": "vault"
+}

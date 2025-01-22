@@ -1,0 +1,13 @@
+{
+  "brief": "📦🐈 Active development trunk for Yarn ⚒",
+  "description": "Framework for distributed processing of large data sets",
+  "homepage": "https://hadoop.apache.org/",
+  "provides": [
+    "yarn",
+    "yarnpkg"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hadoop",
+  "license": "Apache-2.0",
+  "github": "https://github.com/yarnpkg/berry",
+  "project": "yarnpkg.com"
+}

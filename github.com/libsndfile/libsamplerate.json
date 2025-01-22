@@ -1,0 +1,6 @@
+{
+  "description": "An audio Sample Rate Conversion library",
+  "homepage": "http://libsndfile.github.io/libsamplerate/",
+  "github": "https://github.com/libsndfile/libsamplerate",
+  "project": "github.com/libsndfile/libsamplerate"
+}

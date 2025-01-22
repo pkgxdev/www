@@ -1,0 +1,6 @@
+{
+  "description": "Free implementation of the OpenGL Utility Toolkit (GLUT)",
+  "homepage": "http://freeglut.sourceforge.net",
+  "github": "https://github.com/FreeGLUTProject/freeglut",
+  "project": "freeglut.sourceforge.io"
+}

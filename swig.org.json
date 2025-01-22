@@ -1,0 +1,13 @@
+{
+  "brief": "Generate scripting interfaces to C/C++ code",
+  "description": "SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.",
+  "homepage": "https://www.swig.org/",
+  "provides": [
+    "swig",
+    "ccache-swig"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/swig",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/swig/swig",
+  "project": "swig.org"
+}

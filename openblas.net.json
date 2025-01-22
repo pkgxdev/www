@@ -1,0 +1,6 @@
+{
+  "description": "OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version. ",
+  "homepage": "http://www.openblas.net",
+  "github": "https://github.com/xianyi/OpenBLAS",
+  "project": "openblas.net"
+}

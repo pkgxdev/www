@@ -1,0 +1,13 @@
+{
+  "brief": "Talos Linux is a modern Linux distribution built for Kubernetes.",
+  "description": "CLI for out-of-band management of Kubernetes nodes created by Talos",
+  "homepage": "https://www.talos.dev/",
+  "provides": [
+    "talosctl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/talosctl",
+  "license": "MPL-2.0",
+  "github": "https://github.com/siderolabs/talos",
+  "project": "talos.dev",
+  "displayName": "talosctl"
+}

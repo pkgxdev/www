@@ -1,0 +1,12 @@
+{
+  "brief": "Flexible Kustomize Plugin for SOPS Encrypted Resources",
+  "description": "KSOPS - A Flexible Kustomize Plugin for SOPS Encrypted Resources",
+  "provides": [
+    "ksops"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ksops",
+  "license": "Apache-2.0",
+  "github": "https://github.com/viaduct-ai/kustomize-sops",
+  "project": "viaduct.ai/ksops",
+  "displayName": "ksops"
+}

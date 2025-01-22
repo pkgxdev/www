@@ -1,0 +1,11 @@
+{
+  "description": "Source code spell checker",
+  "provides": [
+    "typos"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/typos-cli",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/crate-ci/typos",
+  "project": "crates.io/typos",
+  "displayName": "typos"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line utility for uploading Gists",
+  "description": "Potentially the best command line gister.",
+  "homepage": "http://defunkt.io/gist/",
+  "provides": [
+    "gist"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gist",
+  "license": "MIT",
+  "github": "https://github.com/defunkt/gist",
+  "project": "rubygems.org/gist",
+  "displayName": "gist"
+}

@@ -1,0 +1,5 @@
+{
+  "description": "Backported and experimental type hints for Python",
+  "github": "https://github.com/python/typing_extensions",
+  "project": "python.org/typing_extensions"
+}

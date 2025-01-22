@@ -1,0 +1,11 @@
+{
+  "description": "Lightweight and fast AMQP (0-9-1) server",
+  "homepage": "https://lavinmq.com",
+  "provides": [
+    "lavinmq",
+    "lavinmqctl",
+    "lavinmqperf"
+  ],
+  "github": "https://github.com/cloudamqp/lavinmq",
+  "project": "lavinmq.com"
+}

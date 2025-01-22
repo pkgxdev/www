@@ -1,0 +1,14 @@
+{
+  "brief": "C library for files containing sampled sound",
+  "description": "A C library for reading and writing sound files containing sampled audio data.",
+  "homepage": "https://libsndfile.github.io/libsndfile/",
+  "provides": [
+    "sndfile-info",
+    "sndfile-convert",
+    "sndfile-play"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libsndfile",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/libsndfile/libsndfile",
+  "project": "github.com/libsndfile/libsndfile"
+}

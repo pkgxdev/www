@@ -1,0 +1,31 @@
+{
+  "description": "Program that can automate interactive applications",
+  "homepage": "https://core.tcl-lang.org/expect/index",
+  "provides": [
+    "autoexpect",
+    "autopasswd",
+    "cryptdir",
+    "decryptdir",
+    "dislocate",
+    "expect",
+    "ftp-rfc",
+    "kibitz",
+    "lpunlock",
+    "mkpasswd",
+    "multixterm",
+    "passmass",
+    "rftp",
+    "rlogin-cwd",
+    "timed-read",
+    "timed-run",
+    "tknewsbiff",
+    "tkpasswd",
+    "unbuffer",
+    "weather",
+    "xkibitz",
+    "xpstat"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/expect",
+  "license": "LicenseRef-Homebrew-public-domain",
+  "project": "tcl-lang.org/expect"
+}

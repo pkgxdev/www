@@ -1,0 +1,9 @@
+{
+  "description": "A shell script to build fancy DMGs",
+  "provides": [
+    "create-dmg"
+  ],
+  "github": "https://github.com/create-dmg/create-dmg",
+  "project": "github.com/create-dmg/create-dmg",
+  "displayName": "create-dmg"
+}

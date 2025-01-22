@@ -1,0 +1,13 @@
+{
+  "brief": "Language for application scale JavaScript development",
+  "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+  "homepage": "https://www.typescriptlang.org/",
+  "provides": [
+    "tsc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/typescript",
+  "license": "Apache-2.0",
+  "github": "https://github.com/Microsoft/TypeScript",
+  "project": "typescriptlang.org",
+  "displayName": "tsc"
+}

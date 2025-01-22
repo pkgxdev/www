@@ -1,0 +1,12 @@
+{
+  "brief": "Lightweight, configurable incoming webhook server",
+  "description": "webhook is a lightweight incoming webhook server to run shell commands",
+  "provides": [
+    "webhook"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/webhook",
+  "license": "MIT",
+  "github": "https://github.com/adnanh/webhook",
+  "project": "github.com/adnanh/webhook",
+  "displayName": "webhook"
+}

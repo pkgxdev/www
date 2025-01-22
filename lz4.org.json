@@ -1,0 +1,12 @@
+{
+  "description": "Extremely Fast Compression algorithm",
+  "homepage": "https://lz4.github.io/lz4/",
+  "provides": [
+    "lz4"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lz4",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/lz4/lz4",
+  "project": "lz4.org",
+  "displayName": "lz4"
+}

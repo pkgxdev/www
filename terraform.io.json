@@ -1,0 +1,13 @@
+{
+  "brief": "OpenTofu / Terraform / Terragrunt / Atmos version manager",
+  "description": "OpenTofu / Terraform / Terragrunt and Atmos version manager",
+  "homepage": "https://tofuutils.github.io/tenv/",
+  "provides": [
+    "terraform"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tenv",
+  "license": "Apache-2.0",
+  "github": "https://github.com/tofuutils/tenv",
+  "project": "terraform.io",
+  "displayName": "terraform"
+}

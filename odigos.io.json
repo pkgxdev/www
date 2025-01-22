@@ -1,0 +1,10 @@
+{
+  "description": "Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetry and eBPF",
+  "homepage": "https://odigos.io",
+  "provides": [
+    "odigos"
+  ],
+  "github": "https://github.com/keyval-dev/odigos",
+  "project": "odigos.io",
+  "displayName": "odigos"
+}

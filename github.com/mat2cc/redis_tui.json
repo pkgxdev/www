@@ -1,0 +1,9 @@
+{
+  "description": "Redis terminal application",
+  "provides": [
+    "redis_tui"
+  ],
+  "github": "https://github.com/mat2cc/redis_tui",
+  "project": "github.com/mat2cc/redis_tui",
+  "displayName": "redis_tui"
+}

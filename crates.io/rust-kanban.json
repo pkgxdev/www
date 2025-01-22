@@ -1,0 +1,10 @@
+{
+  "description": "A kanban board for the terminal built with ❤️ in Rust",
+  "homepage": "https://crates.io/crates/rust-kanban",
+  "provides": [
+    "rust-kanban"
+  ],
+  "github": "https://github.com/yashs662/rust_kanban",
+  "project": "crates.io/rust-kanban",
+  "displayName": "rust-kanban"
+}

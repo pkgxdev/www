@@ -1,0 +1,13 @@
+{
+  "brief": "💎 Amber the programming language compiled to Bash",
+  "description": "Crystal web framework. Bare metal performance, productivity and happiness",
+  "homepage": "https://amberframework.org/",
+  "provides": [
+    "amber"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/amber",
+  "license": "MIT",
+  "github": "https://github.com/Ph0enixKM/Amber",
+  "project": "amber-lang.com",
+  "displayName": "amber"
+}

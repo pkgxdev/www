@@ -1,0 +1,22 @@
+{
+  "brief": "ncurses Git mirror",
+  "description": "Text-based UI library",
+  "homepage": "https://invisible-island.net/ncurses/announce.html",
+  "provides": [
+    "captoinfo",
+    "clear",
+    "infocmp",
+    "infotocap",
+    "ncursesw6-config",
+    "reset",
+    "tabs",
+    "tic",
+    "toe",
+    "tput",
+    "tset"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ncurses",
+  "license": "MIT",
+  "github": "https://github.com/mirror/ncurses",
+  "project": "invisible-island.net/ncurses"
+}

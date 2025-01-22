@@ -1,0 +1,9 @@
+{
+  "description": "Policy enforcement for your pipelines.",
+  "provides": [
+    "conform"
+  ],
+  "github": "https://github.com/siderolabs/conform",
+  "project": "github.com/siderolabs/conform",
+  "displayName": "conform"
+}

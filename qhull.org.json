@@ -1,0 +1,17 @@
+{
+  "brief": "Computes convex hulls in n dimensions",
+  "description": "Qhull development for www.qhull.org -- Qhull 2020.2 (8.1-alpha1) at https://github.com/qhull/qhull/wiki",
+  "homepage": "http://www.qhull.org/",
+  "provides": [
+    "qconvex",
+    "qdelaunay",
+    "qhalf",
+    "qhull",
+    "qvoronoi",
+    "rbox"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/qhull",
+  "license": "Qhull",
+  "github": "https://github.com/qhull/qhull",
+  "project": "qhull.org"
+}

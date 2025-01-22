@@ -1,0 +1,9 @@
+{
+  "description": "🗽 Fast, Proxy Package Manager for JavaScript",
+  "provides": [
+    "ny"
+  ],
+  "github": "https://github.com/krzkaczor/ny",
+  "project": "github.com/krzkaczor/ny",
+  "displayName": "ny"
+}

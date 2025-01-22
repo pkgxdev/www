@@ -1,0 +1,13 @@
+{
+  "brief": "Cross-shell prompt for astronauts",
+  "description": "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+  "homepage": "https://starship.rs",
+  "provides": [
+    "starship"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/starship",
+  "license": "ISC",
+  "github": "https://github.com/starship/starship",
+  "project": "starship.rs",
+  "displayName": "starship"
+}

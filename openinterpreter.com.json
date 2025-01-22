@@ -1,0 +1,10 @@
+{
+  "description": "A natural language interface for computers",
+  "homepage": "http://openinterpreter.com/",
+  "provides": [
+    "interpreter"
+  ],
+  "github": "https://github.com/KillianLucas/open-interpreter",
+  "project": "openinterpreter.com",
+  "displayName": "interpreter"
+}

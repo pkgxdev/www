@@ -1,0 +1,12 @@
+{
+  "brief": "Heavily optimized DEFLATE/zlib/gzip compression and decompression",
+  "description": "Heavily optimized library for DEFLATE/zlib/gzip compression and decompression",
+  "provides": [
+    "libdeflate-gzip",
+    "libdeflate-gunzip"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libdeflate",
+  "license": "MIT",
+  "github": "https://github.com/ebiggers/libdeflate",
+  "project": "github.com/ebiggers/libdeflate"
+}

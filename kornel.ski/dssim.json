@@ -1,0 +1,13 @@
+{
+  "brief": "RGBA Structural Similarity Rust implementation",
+  "description": "Image similarity comparison simulating human perception (multiscale SSIM in Rust)",
+  "homepage": "https://kornel.ski/dssim",
+  "provides": [
+    "dssim"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dssim",
+  "license": "AGPL-3.0-or-later",
+  "github": "https://github.com/kornelski/dssim",
+  "project": "kornel.ski/dssim",
+  "displayName": "dssim"
+}

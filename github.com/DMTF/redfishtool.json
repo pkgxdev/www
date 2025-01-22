@@ -1,0 +1,9 @@
+{
+  "description": "A Python34 program that implements a command line tool for accessing the Redfish API.",
+  "provides": [
+    "redfishtool"
+  ],
+  "github": "https://github.com/DMTF/Redfishtool",
+  "project": "github.com/DMTF/redfishtool",
+  "displayName": "redfishtool"
+}

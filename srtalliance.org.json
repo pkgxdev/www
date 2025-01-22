@@ -1,0 +1,16 @@
+{
+  "brief": "Secure Reliable Transport",
+  "description": "Secure, Reliable, Transport",
+  "homepage": "https://www.srtalliance.org/",
+  "provides": [
+    "srt-ffplay",
+    "srt-file-transmit",
+    "srt-live-transmit",
+    "srt-tunnel"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/srt",
+  "license": "MPL-2.0",
+  "github": "https://github.com/Haivision/srt",
+  "project": "srtalliance.org",
+  "displayName": "srt-ffplay"
+}

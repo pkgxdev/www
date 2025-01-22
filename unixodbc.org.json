@@ -1,0 +1,17 @@
+{
+  "brief": "ODBC 3 connectivity for UNIX",
+  "description": "The unixODBC Project goals are to develop and promote unixODBC to be the definitive standard for ODBC on non MS Windows platforms.",
+  "homepage": "https://www.unixodbc.org/",
+  "provides": [
+    "dltest",
+    "isql",
+    "iusql",
+    "odbc_config",
+    "odbcinst",
+    "slencheck"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/unixodbc",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/lurcher/unixODBC",
+  "project": "unixodbc.org"
+}

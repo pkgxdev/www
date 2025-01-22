@@ -1,0 +1,12 @@
+{
+  "description": "Utilities for interacting with PyPI",
+  "homepage": "https://twine.readthedocs.io/",
+  "provides": [
+    "twine"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/twine",
+  "license": "Apache-2.0",
+  "github": "https://github.com/pypa/twine",
+  "project": "github.com/pypa/twine",
+  "displayName": "twine"
+}

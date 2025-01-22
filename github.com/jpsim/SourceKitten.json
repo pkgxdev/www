@@ -1,0 +1,12 @@
+{
+  "brief": "Framework and command-line tool for interacting with SourceKit",
+  "description": "An adorable little framework and command line tool for interacting with SourceKit.",
+  "provides": [
+    "sourcekitten"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sourcekitten",
+  "license": "MIT",
+  "github": "https://github.com/jpsim/SourceKitten",
+  "project": "github.com/jpsim/SourceKitten",
+  "displayName": "sourcekitten"
+}

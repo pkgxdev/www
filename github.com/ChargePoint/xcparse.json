@@ -1,0 +1,9 @@
+{
+  "description": "Command line tool & Swift framework for parsing Xcode 11+ xcresult",
+  "provides": [
+    "xcparse"
+  ],
+  "github": "https://github.com/ChargePoint/xcparse",
+  "project": "github.com/ChargePoint/xcparse",
+  "displayName": "xcparse"
+}

@@ -1,0 +1,5 @@
+{
+  "description": "Image decoding for many popular formats for Simple Directmedia Layer.",
+  "github": "https://github.com/libsdl-org/SDL_image",
+  "project": "libsdl.org/SDL_image"
+}

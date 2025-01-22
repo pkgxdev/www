@@ -1,0 +1,10 @@
+{
+  "description": "A code coverage tool for Rust projects",
+  "homepage": "https://crates.io/crates/cargo-tarpaulin",
+  "provides": [
+    "cargo-tarpaulin"
+  ],
+  "github": "https://github.com/xd009642/tarpaulin",
+  "project": "crates.io/cargo-tarpaulin",
+  "displayName": "cargo-tarpaulin"
+}

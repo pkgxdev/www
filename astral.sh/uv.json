@@ -1,0 +1,13 @@
+{
+  "brief": "Extremely fast Python package installer and resolver, written in Rust",
+  "description": "An extremely fast Python package and project manager, written in Rust.",
+  "homepage": "https://docs.astral.sh/uv",
+  "provides": [
+    "uv",
+    "uvx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/uv",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/astral-sh/uv",
+  "project": "astral.sh/uv"
+}

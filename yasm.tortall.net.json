@@ -1,0 +1,13 @@
+{
+  "brief": "Modular BSD reimplementation of NASM",
+  "description": "Yasm Assembler mainline development tree",
+  "homepage": "https://yasm.tortall.net/",
+  "provides": [
+    "yasm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/yasm",
+  "license": "BSD-2-Clause AND BSD-3-Clause AND LicenseRef-Homebrew-public-domain AND (Artistic-1.0-Perl OR GPL-2.0-or-later OR LGPL-2.0-or-later)",
+  "github": "https://github.com/yasm/yasm",
+  "project": "yasm.tortall.net",
+  "displayName": "yasm"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Codec library for encoding and decoding AV1 video streams",
+  "homepage": "https://aomedia.googlesource.com/aom",
+  "provides": [
+    "aomenc",
+    "aomdec"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/aom",
+  "license": "BSD-2-Clause",
+  "project": "aomedia.googlesource.com/aom"
+}

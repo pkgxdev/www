@@ -1,0 +1,27 @@
+{
+  "brief": "Tools and libraries to manipulate images in many formats",
+  "description": "ImageMagick is a powerful, open-source software suite for creating, editing, converting, and manipulating images in over 200 formats. Ideal for web developers, graphic designers, and researchers, it offers versatile tools for image processing, including batch processing, format conversion, and complex image transformations.",
+  "homepage": "https://imagemagick.org/index.php",
+  "provides": [
+    "animate",
+    "compare",
+    "composite",
+    "conjure",
+    "convert",
+    "display",
+    "identify",
+    "import",
+    "magick",
+    "magick-script",
+    "Magick++-config",
+    "MagickCore-config",
+    "MagickWand-config",
+    "mogrify",
+    "montage",
+    "stream"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/imagemagick",
+  "license": "ImageMagick",
+  "github": "https://github.com/ImageMagick/ImageMagick",
+  "project": "imagemagick.org"
+}

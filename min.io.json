@@ -1,0 +1,13 @@
+{
+  "brief": "High Performance, Kubernetes Native Object Storage",
+  "description": "MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.",
+  "homepage": "https://min.io",
+  "provides": [
+    "minio"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/minio",
+  "license": "AGPL-3.0-or-later",
+  "github": "https://github.com/minio/minio",
+  "project": "min.io",
+  "displayName": "minio"
+}

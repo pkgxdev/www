@@ -1,0 +1,13 @@
+{
+  "brief": "Release engineering, simplified",
+  "description": "Deliver Go binaries as fast and easily as possible",
+  "homepage": "https://goreleaser.com/",
+  "provides": [
+    "goreleaser"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/goreleaser",
+  "license": "MIT",
+  "github": "https://github.com/goreleaser/goreleaser",
+  "project": "goreleaser.com",
+  "displayName": "goreleaser"
+}

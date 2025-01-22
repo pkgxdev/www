@@ -1,0 +1,13 @@
+{
+  "description": "A library of various helper routines and frameworks used by many of the lab's software",
+  "provides": [
+    "cmpnbrs",
+    "csrcnv",
+    "fis",
+    "gkgraph",
+    "gkrw",
+    "m2mnbrs"
+  ],
+  "github": "https://github.com/KarypisLab/GKlib",
+  "project": "github.com/KarypisLab/GKlib"
+}

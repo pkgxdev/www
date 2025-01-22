@@ -1,0 +1,10 @@
+{
+  "description": "A system to programmatically run data pipelines",
+  "homepage": "http://snowplowanalytics.com/blog/2016/04/09/introducing-factotum-data-pipeline-runner/",
+  "provides": [
+    "factotum"
+  ],
+  "github": "https://github.com/snowplow/factotum",
+  "project": "github.com/snowplow/factotum",
+  "displayName": "factotum"
+}

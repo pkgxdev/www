@@ -1,0 +1,13 @@
+{
+  "brief": "Blazing fast terminal file manager written in Rust, based on async I/O",
+  "description": "💥 Blazing fast terminal file manager written in Rust, based on async I/O.",
+  "homepage": "https://yazi-rs.github.io",
+  "provides": [
+    "yazi"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/yazi",
+  "license": "MIT",
+  "github": "https://github.com/sxyazi/yazi",
+  "project": "github.com/sxyazi/yazi",
+  "displayName": "yazi"
+}

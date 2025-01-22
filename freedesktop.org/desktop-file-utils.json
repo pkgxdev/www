@@ -1,0 +1,13 @@
+{
+  "description": "Command-line utilities for working with desktop entries",
+  "homepage": "https://wiki.freedesktop.org/www/Software/desktop-file-utils/",
+  "provides": [
+    "desktop-file-edit",
+    "desktop-file-install",
+    "desktop-file-validate",
+    "update-desktop-database"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/desktop-file-utils",
+  "license": "GPL-2.0-or-later",
+  "project": "freedesktop.org/desktop-file-utils"
+}

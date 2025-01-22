@@ -1,0 +1,10 @@
+{
+  "description": "The EdgeDB CLI",
+  "homepage": "https://www.edgedb.com/docs/cli/index",
+  "provides": [
+    "edgedb"
+  ],
+  "github": "https://github.com/edgedb/edgedb-cli",
+  "project": "edgedb.com",
+  "displayName": "edgedb"
+}

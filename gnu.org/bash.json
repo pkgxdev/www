@@ -1,0 +1,11 @@
+{
+  "description": "Bourne-Again SHell, a UNIX command interpreter",
+  "homepage": "https://www.gnu.org/software/bash/",
+  "provides": [
+    "bash",
+    "bashbug"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bash",
+  "license": "GPL-3.0-or-later",
+  "project": "gnu.org/bash"
+}

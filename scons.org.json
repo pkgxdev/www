@@ -1,0 +1,13 @@
+{
+  "brief": "SCons - a software construction tool",
+  "description": "Substitute for classic 'make' tool with autoconf/automake functionality",
+  "homepage": "https://www.scons.org/",
+  "provides": [
+    "scons"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/scons",
+  "license": "MIT",
+  "github": "https://github.com/SCons/scons",
+  "project": "scons.org",
+  "displayName": "scons"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Dart Language SDK, including the VM, dart2js, core libraries, and more",
+  "description": "The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.",
+  "homepage": "https://dart.dev",
+  "provides": [
+    "dart",
+    "dartaotruntime"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dart-sdk",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/dart-lang/sdk",
+  "project": "dart.dev"
+}

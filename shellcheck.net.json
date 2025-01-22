@@ -1,0 +1,13 @@
+{
+  "brief": "Static analysis and lint tool, for (ba)sh scripts",
+  "description": "ShellCheck, a static analysis tool for shell scripts",
+  "homepage": "https://www.shellcheck.net/",
+  "provides": [
+    "shellcheck"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/shellcheck",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/koalaman/shellcheck",
+  "project": "shellcheck.net",
+  "displayName": "shellcheck"
+}

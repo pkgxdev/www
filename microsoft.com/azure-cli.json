@@ -1,0 +1,13 @@
+{
+  "brief": "Microsoft Azure CLI 2.0",
+  "description": "Azure Command-Line Interface",
+  "homepage": "https://docs.microsoft.com/cli/azure/overview",
+  "provides": [
+    "az"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/azure-cli",
+  "license": "MIT",
+  "github": "https://github.com/Azure/azure-cli",
+  "project": "microsoft.com/azure-cli",
+  "displayName": "az"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Azure Storage data transfer utility",
+  "description": "The new Azure Storage data transfer utility - AzCopy v10",
+  "provides": [
+    "azcopy"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/azcopy",
+  "license": "MIT",
+  "github": "https://github.com/Azure/azure-storage-azcopy",
+  "project": "microsoft.com/azure-storage-azcopy",
+  "displayName": "azcopy"
+}

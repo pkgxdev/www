@@ -1,0 +1,10 @@
+{
+  "description": "YANG data modeling language library",
+  "provides": [
+    "yanglint",
+    "yangre"
+  ],
+  "github": "https://github.com/CESNET/libyang",
+  "project": "github.com/cesnet/libyang",
+  "displayName": "yanglint"
+}

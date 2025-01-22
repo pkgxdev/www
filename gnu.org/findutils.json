@@ -1,0 +1,9 @@
+{
+  "provides": [
+    "find",
+    "locate",
+    "updatedb",
+    "xargs"
+  ],
+  "project": "gnu.org/findutils"
+}

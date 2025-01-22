@@ -1,0 +1,13 @@
+{
+  "brief": "Video processing framework with simplicity in mind",
+  "description": "A video processing framework with simplicity in mind",
+  "homepage": "https://www.vapoursynth.com",
+  "provides": [
+    "vspipe"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/vapoursynth",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/vapoursynth/vapoursynth",
+  "project": "vapoursynth.com",
+  "displayName": "vspipe"
+}

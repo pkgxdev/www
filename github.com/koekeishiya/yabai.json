@@ -1,0 +1,9 @@
+{
+  "description": "A tiling window manager for macOS based on binary space partitioning",
+  "provides": [
+    "yabai"
+  ],
+  "github": "https://github.com/koekeishiya/yabai",
+  "project": "github.com/koekeishiya/yabai",
+  "displayName": "yabai"
+}

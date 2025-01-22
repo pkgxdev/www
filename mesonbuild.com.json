@@ -1,0 +1,13 @@
+{
+  "brief": "The Meson Build System",
+  "description": "Fast and user friendly build system",
+  "homepage": "https://mesonbuild.com/",
+  "provides": [
+    "meson"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/meson",
+  "license": "Apache-2.0",
+  "github": "https://github.com/mesonbuild/meson",
+  "project": "mesonbuild.com",
+  "displayName": "meson"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "HTTP and WebDAV client library with a C interface",
+  "description": "neon - an HTTP/1.1 and WebDAV client library with a C API",
+  "homepage": "https://notroj.github.io/neon/",
+  "provides": [
+    "neon-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/neon",
+  "license": "LGPL-2.0-or-later",
+  "github": "https://github.com/notroj/neon",
+  "project": "notroj.github.io/neon",
+  "displayName": "neon-config"
+}

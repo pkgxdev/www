@@ -1,0 +1,11 @@
+{
+  "description": "AV1 decoder targeted to be small and fast",
+  "homepage": "https://code.videolan.org/videolan/dav1d",
+  "provides": [
+    "dav1d"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dav1d",
+  "license": "BSD-2-Clause",
+  "project": "code.videolan.org/videolan/dav1d",
+  "displayName": "dav1d"
+}

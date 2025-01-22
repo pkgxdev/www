@@ -1,0 +1,12 @@
+{
+  "brief": "Perform least recently used (LRU) eviction of Docker images",
+  "description": "Docuum performs least recently used (LRU) eviction of Docker images. 🗑️",
+  "provides": [
+    "docuum"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/docuum",
+  "license": "MIT",
+  "github": "https://github.com/stepchowfun/docuum",
+  "project": "crates.io/docuum",
+  "displayName": "docuum"
+}

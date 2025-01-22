@@ -1,0 +1,10 @@
+{
+  "description": "Source code for the Mun language and runtime.",
+  "homepage": "https://mun-lang.org",
+  "provides": [
+    "mun"
+  ],
+  "github": "https://github.com/mun-lang/mun",
+  "project": "mun-lang.org",
+  "displayName": "mun"
+}

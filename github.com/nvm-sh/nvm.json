@@ -1,0 +1,9 @@
+{
+  "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions",
+  "provides": [
+    "nvm-exec"
+  ],
+  "github": "https://github.com/nvm-sh/nvm",
+  "project": "github.com/nvm-sh/nvm",
+  "displayName": "nvm-exec"
+}

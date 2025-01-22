@@ -1,0 +1,13 @@
+{
+  "brief": "The Crystal Programming Language",
+  "description": "Fast and statically typed, compiled language with Ruby-like syntax",
+  "homepage": "https://crystal-lang.org/",
+  "provides": [
+    "crystal"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/crystal",
+  "license": "Apache-2.0",
+  "github": "https://github.com/crystal-lang/crystal",
+  "project": "crystal-lang.org",
+  "displayName": "crystal"
+}

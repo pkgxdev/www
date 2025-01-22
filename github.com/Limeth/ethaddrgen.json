@@ -1,0 +1,9 @@
+{
+  "description": "Custom Ethereum vanity address generator made in Rust",
+  "provides": [
+    "ethaddrgen"
+  ],
+  "github": "https://github.com/Limeth/ethaddrgen",
+  "project": "github.com/Limeth/ethaddrgen",
+  "displayName": "ethaddrgen"
+}

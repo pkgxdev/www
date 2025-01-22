@@ -1,0 +1,17 @@
+{
+  "brief": "A Python bindings generator for C/C++ libraries",
+  "description": "Tool to create Python bindings for C and C++ libraries",
+  "homepage": "https://python-sip.readthedocs.io/en/latest/",
+  "provides": [
+    "sip-install",
+    "sip-build",
+    "sip-distinfo",
+    "sip-module",
+    "sip-sdist",
+    "sip-wheel"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sip",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/Python-SIP/sip",
+  "project": "riverbankcomputing.com/sip"
+}

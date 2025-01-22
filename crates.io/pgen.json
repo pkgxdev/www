@@ -1,0 +1,9 @@
+{
+  "description": "Command-line passphrase generator",
+  "provides": [
+    "pgen"
+  ],
+  "github": "https://github.com/ctsrc/Pgen",
+  "project": "crates.io/pgen",
+  "displayName": "pgen"
+}

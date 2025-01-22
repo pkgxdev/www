@@ -1,0 +1,11 @@
+{
+  "description": "CLI tool for Angular",
+  "homepage": "https://angular.dev/cli/",
+  "provides": [
+    "ng"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/angular-cli",
+  "license": "MIT",
+  "project": "angular.dev",
+  "displayName": "ng"
+}

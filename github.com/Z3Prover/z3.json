@@ -1,0 +1,12 @@
+{
+  "brief": "The Z3 Theorem Prover",
+  "description": "High-performance theorem prover",
+  "provides": [
+    "z3"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/z3",
+  "license": "MIT",
+  "github": "https://github.com/Z3Prover/z3",
+  "project": "github.com/Z3Prover/z3",
+  "displayName": "z3"
+}

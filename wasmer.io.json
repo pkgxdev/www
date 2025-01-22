@@ -1,0 +1,13 @@
+{
+  "brief": "Universal WebAssembly Runtime",
+  "description": "🚀 Fast, secure, lightweight containers based on WebAssembly",
+  "homepage": "https://wasmer.io",
+  "provides": [
+    "wasmer"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/wasmer",
+  "license": "MIT",
+  "github": "https://github.com/wasmerio/wasmer",
+  "project": "wasmer.io",
+  "displayName": "wasmer"
+}

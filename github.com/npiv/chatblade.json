@@ -1,0 +1,12 @@
+{
+  "brief": "CLI Swiss Army Knife for ChatGPT",
+  "description": "A CLI Swiss Army Knife for ChatGPT",
+  "provides": [
+    "chatblade"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/chatblade",
+  "license": "GPL-3.0-only",
+  "github": "https://github.com/npiv/chatblade",
+  "project": "github.com/npiv/chatblade",
+  "displayName": "chatblade"
+}

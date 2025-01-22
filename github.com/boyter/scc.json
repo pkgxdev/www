@@ -1,0 +1,12 @@
+{
+  "brief": "Fast and accurate code counter with complexity and COCOMO estimates",
+  "description": "Sloc, Cloc and Code: scc is a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go",
+  "provides": [
+    "scc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/scc",
+  "license": "MIT OR Unlicense",
+  "github": "https://github.com/boyter/scc/",
+  "project": "github.com/boyter/scc",
+  "displayName": "scc"
+}

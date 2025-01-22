@@ -1,0 +1,12 @@
+{
+  "brief": "Used as a compiler wrapper and avoids compilation when possible",
+  "description": "Sccache is a ccache-like tool. It is used as a compiler wrapper and avoids compilation when possible. Sccache has the capability to utilize caching in remote storage environments, including various cloud storage options, or alternatively, in local storage.",
+  "provides": [
+    "sccache"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sccache",
+  "license": "Apache-2.0",
+  "github": "https://github.com/mozilla/sccache",
+  "project": "crates.io/sccache",
+  "displayName": "sccache"
+}

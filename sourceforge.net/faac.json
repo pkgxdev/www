@@ -1,0 +1,13 @@
+{
+  "brief": "ISO AAC audio encoder",
+  "description": "Freeware Advanced Audio Coder faac mirror",
+  "homepage": "https://sourceforge.net/projects/faac/",
+  "provides": [
+    "faac"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/faac",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/knik0/faac",
+  "project": "sourceforge.net/faac",
+  "displayName": "faac"
+}

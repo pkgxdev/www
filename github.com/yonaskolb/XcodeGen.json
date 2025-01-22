@@ -1,0 +1,12 @@
+{
+  "brief": "A Swift command line tool for generating your Xcode project",
+  "description": "Generate your Xcode project from a spec file and your folder structure",
+  "provides": [
+    "xcodegen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xcodegen",
+  "license": "MIT",
+  "github": "https://github.com/yonaskolb/XcodeGen",
+  "project": "github.com/yonaskolb/XcodeGen",
+  "displayName": "xcodegen"
+}

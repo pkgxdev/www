@@ -1,0 +1,13 @@
+{
+  "brief": "Isolated development environments using Docker",
+  "description": "Define and run multi-container applications with Docker",
+  "homepage": "https://docs.docker.com/compose/",
+  "provides": [
+    "docker-compose"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/docker-compose",
+  "license": "Apache-2.0",
+  "github": "https://github.com/docker/compose",
+  "project": "docker.com/compose",
+  "displayName": "docker-compose"
+}

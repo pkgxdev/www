@@ -1,0 +1,5 @@
+{
+  "description": "Bare libuv bindings for lua",
+  "github": "https://github.com/luvit/luv",
+  "project": "github.com/luvit/luv"
+}

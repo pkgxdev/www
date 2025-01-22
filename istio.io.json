@@ -1,0 +1,13 @@
+{
+  "brief": "Istio configuration command-line utility",
+  "description": "Connect, secure, control, and observe services.",
+  "homepage": "https://istio.io/",
+  "provides": [
+    "istioctl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/istioctl",
+  "license": "Apache-2.0",
+  "github": "https://github.com/istio/istio",
+  "project": "istio.io",
+  "displayName": "istioctl"
+}

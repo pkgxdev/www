@@ -1,0 +1,12 @@
+{
+  "brief": "Intuitive find & replace CLI",
+  "description": "Intuitive find & replace CLI (sed alternative)",
+  "provides": [
+    "sd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sd",
+  "license": "MIT",
+  "github": "https://github.com/chmln/sd",
+  "project": "crates.io/sd",
+  "displayName": "sd"
+}

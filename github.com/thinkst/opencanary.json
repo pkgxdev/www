@@ -1,0 +1,10 @@
+{
+  "description": "Modular and decentralised honeypot",
+  "homepage": "http://opencanary.org",
+  "provides": [
+    "opencanaryd"
+  ],
+  "github": "https://github.com/thinkst/opencanary",
+  "project": "github.com/thinkst/opencanary",
+  "displayName": "opencanaryd"
+}

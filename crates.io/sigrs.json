@@ -1,0 +1,9 @@
+{
+  "description": "Interactive grep (for streaming)",
+  "provides": [
+    "sig"
+  ],
+  "github": "https://github.com/ynqa/sig",
+  "project": "crates.io/sigrs",
+  "displayName": "sig"
+}

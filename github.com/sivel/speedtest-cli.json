@@ -1,0 +1,12 @@
+{
+  "brief": "Command-line interface for https://speedtest.net bandwidth tests",
+  "description": "Command line interface for testing internet bandwidth using speedtest.net",
+  "provides": [
+    "speedtest-cli",
+    "speedtest"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/speedtest-cli",
+  "license": "Apache-2.0",
+  "github": "https://github.com/sivel/speedtest-cli",
+  "project": "github.com/sivel/speedtest-cli"
+}

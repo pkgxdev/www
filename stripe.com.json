@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line tool for Stripe",
+  "description": "A command-line tool for Stripe",
+  "homepage": "https://stripe.com/docs/stripe-cli",
+  "provides": [
+    "stripe"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/stripe-cli",
+  "license": "Apache-2.0",
+  "github": "https://github.com/stripe/stripe-cli",
+  "project": "stripe.com",
+  "displayName": "stripe"
+}

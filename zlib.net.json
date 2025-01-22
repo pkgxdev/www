@@ -1,0 +1,6 @@
+{
+  "description": "A massively spiffy yet delicately unobtrusive compression library.",
+  "homepage": "http://zlib.net/",
+  "github": "https://github.com/madler/zlib",
+  "project": "zlib.net"
+}

@@ -1,0 +1,5 @@
+{
+  "description": "NUMA support for Linux",
+  "github": "https://github.com/numactl/numactl",
+  "project": "github.com/numactl/numactl"
+}

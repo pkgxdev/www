@@ -1,0 +1,11 @@
+{
+  "description": "Command-line benchmark tool",
+  "provides": [
+    "bench",
+    "sqruff"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bench",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/Gabriella439/bench",
+  "project": "quary.dev/sqruff"
+}

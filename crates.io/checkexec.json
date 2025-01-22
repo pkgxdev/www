@@ -1,0 +1,9 @@
+{
+  "description": "CLI tool to conditionally execute commands only when files in a dependency list have been updated. Like `make`, but standalone.",
+  "provides": [
+    "checkexec"
+  ],
+  "github": "https://github.com/kurtbuilds/checkexec",
+  "project": "crates.io/checkexec",
+  "displayName": "checkexec"
+}

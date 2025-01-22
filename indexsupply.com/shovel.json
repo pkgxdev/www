@@ -1,0 +1,10 @@
+{
+  "description": "An Ethereum to Postgres indexer",
+  "homepage": "https://indexsupply.com/shovel",
+  "provides": [
+    "shovel"
+  ],
+  "github": "https://github.com/indexsupply/code",
+  "project": "indexsupply.com/shovel",
+  "displayName": "shovel"
+}

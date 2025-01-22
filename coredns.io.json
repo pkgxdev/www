@@ -1,0 +1,13 @@
+{
+  "brief": "DNS server that chains plugins",
+  "description": "CoreDNS is a DNS server that chains plugins",
+  "homepage": "https://coredns.io/",
+  "provides": [
+    "coredns"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/coredns",
+  "license": "Apache-2.0",
+  "github": "https://github.com/coredns/coredns",
+  "project": "coredns.io",
+  "displayName": "coredns"
+}

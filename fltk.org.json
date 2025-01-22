@@ -1,0 +1,13 @@
+{
+  "brief": "Cross-platform C++ GUI toolkit",
+  "description": "FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development",
+  "homepage": "https://www.fltk.org/",
+  "provides": [
+    "fluid",
+    "fltk-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fltk",
+  "license": "LGPL-2.0-only WITH FLTK-exception",
+  "github": "https://github.com/fltk/fltk",
+  "project": "fltk.org"
+}

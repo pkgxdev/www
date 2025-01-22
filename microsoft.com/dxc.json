@@ -1,0 +1,12 @@
+{
+  "description": "This repo hosts the source for the DirectX Shader Compiler which is based on LLVM/Clang.",
+  "provides": [
+    "dxc",
+    "dxv",
+    "dxa",
+    "dxr",
+    "dxl"
+  ],
+  "github": "https://github.com/microsoft/DirectXShaderCompiler",
+  "project": "microsoft.com/dxc"
+}

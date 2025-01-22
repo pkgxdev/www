@@ -1,0 +1,13 @@
+{
+  "brief": "Tool for managing your YubiKey configuration",
+  "description": "Python library and command line tool for configuring any YubiKey over all USB interfaces.",
+  "homepage": "https://developers.yubico.com/yubikey-manager/",
+  "provides": [
+    "ykman"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ykman",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/Yubico/yubikey-manager",
+  "project": "developers.yubico.com/yubikey-manager",
+  "displayName": "ykman"
+}

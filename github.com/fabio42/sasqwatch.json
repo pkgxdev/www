@@ -1,0 +1,9 @@
+{
+  "description": "A modern take on the classic watch command",
+  "provides": [
+    "sasqwatch"
+  ],
+  "github": "https://github.com/fabio42/sasqwatch",
+  "project": "github.com/fabio42/sasqwatch",
+  "displayName": "sasqwatch"
+}

@@ -1,0 +1,16 @@
+{
+  "description": "Audio compression format and tools",
+  "homepage": "https://www.musepack.net/",
+  "provides": [
+    "mpc2sv8",
+    "mpcchap",
+    "mpccut",
+    "mpcdec",
+    "mpcenc",
+    "mpcgain",
+    "wavcmp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/musepack",
+  "license": "BSD-3-Clause AND LGPL-2.1-or-later AND GPL-2.0-or-later AND Zlib",
+  "project": "musepack.net"
+}

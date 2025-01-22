@@ -1,0 +1,13 @@
+{
+  "description": "Reliable Internet Stream Transport (RIST)",
+  "homepage": "https://code.videolan.org/rist/",
+  "provides": [
+    "rist2rist",
+    "ristreceiver",
+    "ristsender",
+    "ristsrppasswd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/librist",
+  "license": "BSD-2-Clause",
+  "project": "code.videolan.org/rist/librist"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Select default apps for documents and URL schemes on macOS",
+  "description": "A command-line tool to select default applications for document types and URL schemes on Mac OS X",
+  "provides": [
+    "duti"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/duti",
+  "license": "LicenseRef-Homebrew-public-domain",
+  "github": "https://github.com/moretension/duti/",
+  "project": "github.com/moretension/duti",
+  "displayName": "duti"
+}

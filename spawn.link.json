@@ -1,0 +1,11 @@
+{
+  "description": "a featureful union filesystem",
+  "homepage": "https://trapexit.github.io/mergerfs/",
+  "provides": [
+    "mergerfs",
+    "mergerfs-fusermount",
+    "mount.mergerfs"
+  ],
+  "github": "https://github.com/trapexit/mergerfs",
+  "project": "spawn.link"
+}

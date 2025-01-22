@@ -1,0 +1,14 @@
+{
+  "brief": "C library for reading, creating, and modifying zip archives",
+  "description": "A C library for reading, creating, and modifying zip archives.",
+  "homepage": "https://libzip.org/",
+  "provides": [
+    "zipcmp",
+    "zipmerge",
+    "ziptool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libzip",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/nih-at/libzip",
+  "project": "libzip.org"
+}

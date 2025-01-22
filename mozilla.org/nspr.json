@@ -1,0 +1,11 @@
+{
+  "description": "Platform-neutral API for system-level and libc-like functions",
+  "homepage": "https://hg.mozilla.org/projects/nspr",
+  "provides": [
+    "nspr-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nspr",
+  "license": "MPL-2.0",
+  "project": "mozilla.org/nspr",
+  "displayName": "nspr-config"
+}

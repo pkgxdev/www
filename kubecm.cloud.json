@@ -1,0 +1,13 @@
+{
+  "brief": "KubeConfig Manager",
+  "description": "Manage your kubeconfig more easily.",
+  "homepage": "https://kubecm.cloud",
+  "provides": [
+    "kubecm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kubecm",
+  "license": "Apache-2.0",
+  "github": "https://github.com/sunny0826/kubecm",
+  "project": "kubecm.cloud",
+  "displayName": "kubecm"
+}

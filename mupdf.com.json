@@ -1,0 +1,14 @@
+{
+  "brief": "mupdf mirror",
+  "description": "Lightweight PDF and XPS viewer",
+  "homepage": "https://mupdf.com/",
+  "provides": [
+    "mupdf-gl",
+    "muraster",
+    "mutool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mupdf",
+  "license": "AGPL-3.0-or-later",
+  "github": "https://github.com/ArtifexSoftware/mupdf",
+  "project": "mupdf.com"
+}

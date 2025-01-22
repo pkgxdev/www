@@ -1,0 +1,12 @@
+{
+  "brief": "Secure your credentials in environment variables",
+  "description": "Environment variables meet macOS Keychain and gnome-keyring <3",
+  "provides": [
+    "envchain"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/envchain",
+  "license": "MIT",
+  "github": "https://github.com/sorah/envchain",
+  "project": "github.com/sorah/envchain",
+  "displayName": "envchain"
+}

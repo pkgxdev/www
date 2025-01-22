@@ -1,0 +1,12 @@
+{
+  "description": "ASN.1 structure parser library",
+  "homepage": "https://www.gnu.org/software/libtasn1/",
+  "provides": [
+    "asn1Coding",
+    "asn1Decoding",
+    "asn1Parser"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libtasn1",
+  "license": "LGPL-2.1-or-later",
+  "project": "gnu.org/libtasn1"
+}

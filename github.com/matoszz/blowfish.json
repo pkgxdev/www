@@ -1,0 +1,9 @@
+{
+  "description": "blowfish is a command line interface for interacting with DMTF Redfish and SNIA Swordfish enabled devices based on gofish",
+  "provides": [
+    "blowfish"
+  ],
+  "github": "https://github.com/matoszz/blowfish",
+  "project": "github.com/matoszz/blowfish",
+  "displayName": "blowfish"
+}

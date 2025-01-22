@@ -1,0 +1,11 @@
+{
+  "description": "Exact clone of the ancient BASIC Hunt the Wumpus game",
+  "homepage": "http://www.catb.org/~esr/wumpus/",
+  "provides": [
+    "wumpus",
+    "superhack"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/wumpus",
+  "license": "BSD-2-Clause",
+  "project": "catb.org/wumpus"
+}

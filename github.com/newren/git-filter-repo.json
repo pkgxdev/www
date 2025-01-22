@@ -1,0 +1,12 @@
+{
+  "brief": "Quickly rewrite git repository history",
+  "description": "Quickly rewrite git repository history (filter-branch replacement)",
+  "provides": [
+    "git-filter-repo"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-filter-repo",
+  "license": "MIT",
+  "github": "https://github.com/newren/git-filter-repo",
+  "project": "github.com/newren/git-filter-repo",
+  "displayName": "git-filter-repo"
+}

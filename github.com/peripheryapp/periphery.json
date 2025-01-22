@@ -1,0 +1,12 @@
+{
+  "brief": "Identify unused code in Swift projects",
+  "description": "A tool to identify unused code in Swift projects.",
+  "provides": [
+    "periphery"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/periphery",
+  "license": "MIT",
+  "github": "https://github.com/peripheryapp/periphery",
+  "project": "github.com/peripheryapp/periphery",
+  "displayName": "periphery"
+}

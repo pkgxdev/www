@@ -1,0 +1,13 @@
+{
+  "brief": "Vulnerability scanner for container images, file systems, and Git repos",
+  "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
+  "homepage": "https://aquasecurity.github.io/trivy/",
+  "provides": [
+    "trivy"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/trivy",
+  "license": "Apache-2.0",
+  "github": "https://github.com/aquasecurity/trivy",
+  "project": "aquasecurity.github.io/trivy",
+  "displayName": "trivy"
+}

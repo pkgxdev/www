@@ -1,0 +1,9 @@
+{
+  "description": "Generates LLVM IR for Xcode Projects",
+  "provides": [
+    "gen-ir"
+  ],
+  "github": "https://github.com/veracode/gen-ir",
+  "project": "veracode.com/gen-ir",
+  "displayName": "gen-ir"
+}

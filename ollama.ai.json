@@ -1,0 +1,13 @@
+{
+  "brief": "Create, run, and share large language models (LLMs)",
+  "description": "Get up and running with Llama 3.3, Phi 4, Gemma 2, and other large language models.",
+  "homepage": "https://ollama.com/",
+  "provides": [
+    "ollama"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ollama",
+  "license": "MIT",
+  "github": "https://github.com/ollama/ollama",
+  "project": "ollama.ai",
+  "displayName": "ollama"
+}

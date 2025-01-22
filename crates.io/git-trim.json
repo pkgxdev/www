@@ -1,0 +1,12 @@
+{
+  "brief": "Trim your git remote tracking branches that are merged or gone",
+  "description": "Automatically trims your branches whose tracking remote refs are merged or stray",
+  "provides": [
+    "git-trim"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-trim",
+  "license": "MIT",
+  "github": "https://github.com/foriequal0/git-trim",
+  "project": "crates.io/git-trim",
+  "displayName": "git-trim"
+}

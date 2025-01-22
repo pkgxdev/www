@@ -1,0 +1,11 @@
+{
+  "description": "Database of common MIME types",
+  "homepage": "https://wiki.freedesktop.org/www/Software/shared-mime-info",
+  "provides": [
+    "update-mime-database"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/shared-mime-info",
+  "license": "GPL-2.0-only",
+  "project": "freedesktop.org/shared-mime-info",
+  "displayName": "update-mime-database"
+}

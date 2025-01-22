@@ -1,0 +1,13 @@
+{
+  "brief": "OpenGL Extension Wrangler Library",
+  "description": "The OpenGL Extension Wrangler Library",
+  "homepage": "https://glew.sourceforge.net/",
+  "provides": [
+    "glewinfo",
+    "visualinfo"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/glew",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/nigels-com/glew",
+  "project": "glew.sourceforge.io"
+}

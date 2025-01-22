@@ -1,0 +1,19 @@
+{
+  "brief": "Suite of language analyzers",
+  "description": "The most popular spellchecking library.",
+  "homepage": "https://nlp.lsi.upc.edu/freeling/",
+  "provides": [
+    "analyze",
+    "chmorph",
+    "hunspell",
+    "hunzip",
+    "hzip",
+    "munch",
+    "unmunch"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/freeling",
+  "license": "AGPL-3.0-only",
+  "github": "https://github.com/hunspell/hunspell",
+  "project": "hunspell.github.io",
+  "displayName": "analyze"
+}

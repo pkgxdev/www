@@ -1,0 +1,12 @@
+{
+  "brief": "Simple jira command-line client in Go",
+  "description": "simple jira command line client in Go",
+  "provides": [
+    "jira"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/go-jira",
+  "license": "Apache-2.0",
+  "github": "https://github.com/go-jira/jira",
+  "project": "github.com/ankitpokhrel/jira-cli",
+  "displayName": "jira"
+}

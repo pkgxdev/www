@@ -1,0 +1,11 @@
+{
+  "description": "C++ wrapper library around CGAL",
+  "homepage": "https://sfcgal.gitlab.io/SFCGAL/",
+  "provides": [
+    "sfcgal-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sfcgal",
+  "license": "LGPL-2.0-or-later",
+  "project": "sfcgal.org",
+  "displayName": "sfcgal-config"
+}

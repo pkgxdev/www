@@ -1,0 +1,5 @@
+{
+  "description": "A YAML parser and emitter in C++",
+  "github": "https://github.com/jbeder/yaml-cpp",
+  "project": "github.com/jbeder/yaml-cpp"
+}

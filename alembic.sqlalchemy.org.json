@@ -1,0 +1,9 @@
+{
+  "description": "A database migrations tool for SQLAlchemy.",
+  "provides": [
+    "alembic"
+  ],
+  "github": "https://github.com/sqlalchemy/alembic",
+  "project": "alembic.sqlalchemy.org",
+  "displayName": "alembic"
+}

@@ -1,0 +1,6 @@
+{
+  "description": "A low-level library which implements some Python packaging  standards (PEPs) and which could be used by third-party packaging tools to achieve interoperability.",
+  "homepage": "http://distlib.readthedocs.io/",
+  "github": "https://github.com/pypa/distlib",
+  "project": "pypa.io/distlib"
+}

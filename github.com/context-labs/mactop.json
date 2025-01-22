@@ -1,0 +1,12 @@
+{
+  "brief": "mactop - Apple Silicon Monitor Top",
+  "description": "Apple Silicon Monitor Top written in Golang",
+  "provides": [
+    "mactop"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mactop",
+  "license": "MIT",
+  "github": "https://github.com/context-labs/mactop",
+  "project": "github.com/context-labs/mactop",
+  "displayName": "mactop"
+}

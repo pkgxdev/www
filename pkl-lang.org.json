@@ -1,0 +1,13 @@
+{
+  "brief": "CLI for the Pkl programming language",
+  "description": "A configuration as code language with rich validation and tooling.",
+  "homepage": "https://pkl-lang.org",
+  "provides": [
+    "jpkl",
+    "pkl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pkl",
+  "license": "Apache-2.0",
+  "github": "https://github.com/apple/pkl",
+  "project": "pkl-lang.org"
+}

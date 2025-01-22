@@ -1,0 +1,12 @@
+{
+  "brief": "Statistics utility to count lines of code",
+  "description": "cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.",
+  "provides": [
+    "cloc",
+    "config_data"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cloc",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/AlDanial/cloc/",
+  "project": "github.com/AlDanial/cloc"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Fast, highly customisable system info script",
+  "description": "🖼️  A command-line system information tool written in bash 3.2+",
+  "provides": [
+    "neofetch"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/neofetch",
+  "license": "MIT",
+  "github": "https://github.com/dylanaraps/neofetch",
+  "project": "github.com/dylanaraps/neofetch",
+  "displayName": "neofetch"
+}

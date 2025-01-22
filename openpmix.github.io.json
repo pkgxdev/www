@@ -1,0 +1,20 @@
+{
+  "brief": "OpenPMIx Project Repository",
+  "description": "Process Management Interface for HPC environments",
+  "homepage": "https://openpmix.github.io/",
+  "provides": [
+    "palloc",
+    "pattrs",
+    "pctrl",
+    "pevent",
+    "plookup",
+    "pmix_info",
+    "pmixcc",
+    "pps",
+    "pquery"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pmix",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/openpmix/openpmix",
+  "project": "openpmix.github.io"
+}

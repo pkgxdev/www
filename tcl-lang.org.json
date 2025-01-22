@@ -1,0 +1,12 @@
+{
+  "description": "Tool Command Language",
+  "homepage": "https://www.tcl-lang.org",
+  "provides": [
+    "tclsh",
+    "wish",
+    "critcl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tcl-tk",
+  "license": "TCL",
+  "project": "tcl-lang.org"
+}

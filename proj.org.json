@@ -1,0 +1,13 @@
+{
+  "brief": "Cartographic Projections Library",
+  "description": "PROJ - Cartographic Projections and Coordinate Transformations Library",
+  "homepage": "https://proj.org/",
+  "provides": [
+    "proj"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/proj",
+  "license": "MIT",
+  "github": "https://github.com/OSGeo/proj",
+  "project": "proj.org",
+  "displayName": "proj"
+}

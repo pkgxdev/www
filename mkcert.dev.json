@@ -1,0 +1,13 @@
+{
+  "brief": "Simple tool to make locally trusted development certificates",
+  "description": "A simple zero-config tool to make locally trusted development certificates with any names you'd like.",
+  "homepage": "https://mkcert.dev",
+  "provides": [
+    "mkcert"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mkcert",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/FiloSottile/mkcert",
+  "project": "mkcert.dev",
+  "displayName": "mkcert"
+}

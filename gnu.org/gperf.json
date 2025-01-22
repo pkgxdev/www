@@ -1,0 +1,11 @@
+{
+  "description": "Perfect hash function generator",
+  "homepage": "https://www.gnu.org/software/gperf/",
+  "provides": [
+    "gperf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gperf",
+  "license": "GPL-3.0-or-later",
+  "project": "gnu.org/gperf",
+  "displayName": "gperf"
+}

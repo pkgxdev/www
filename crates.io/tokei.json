@@ -1,0 +1,12 @@
+{
+  "brief": "Count your code, quickly.",
+  "description": "Program that allows you to count code, quickly",
+  "provides": [
+    "tokei"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tokei",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/XAMPPRocky/tokei",
+  "project": "crates.io/tokei",
+  "displayName": "tokei"
+}

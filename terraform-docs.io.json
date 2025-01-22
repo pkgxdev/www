@@ -1,0 +1,13 @@
+{
+  "brief": "Tool to generate documentation from Terraform modules",
+  "description": "Generate documentation from Terraform modules in various output formats",
+  "homepage": "https://terraform-docs.io",
+  "provides": [
+    "terraform-docs"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/terraform-docs",
+  "license": "MIT",
+  "github": "https://github.com/terraform-docs/terraform-docs",
+  "project": "terraform-docs.io",
+  "displayName": "terraform-docs"
+}

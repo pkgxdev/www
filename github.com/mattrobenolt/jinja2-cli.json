@@ -1,0 +1,12 @@
+{
+  "brief": "CLI for Jinja2",
+  "description": "CLI for the Jinja2 templating language",
+  "provides": [
+    "jinja2"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jinja2-cli",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/mattrobenolt/jinja2-cli",
+  "project": "github.com/mattrobenolt/jinja2-cli",
+  "displayName": "jinja2"
+}

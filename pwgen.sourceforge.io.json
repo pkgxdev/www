@@ -1,0 +1,11 @@
+{
+  "description": "Password generator",
+  "homepage": "https://pwgen.sourceforge.net/",
+  "provides": [
+    "pwgen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pwgen",
+  "license": "GPL-2.0-only",
+  "project": "pwgen.sourceforge.io",
+  "displayName": "pwgen"
+}

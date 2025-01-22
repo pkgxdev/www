@@ -1,0 +1,12 @@
+{
+  "brief": "Super fast CLI tool to decode and encode JWTs built in Rust",
+  "description": "A super fast CLI tool to decode and encode JWTs built in Rust",
+  "provides": [
+    "jwt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jwt-cli",
+  "license": "MIT",
+  "github": "https://github.com/mike-engel/jwt-cli",
+  "project": "crates.io/jwt-cli",
+  "displayName": "jwt"
+}

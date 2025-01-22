@@ -1,0 +1,10 @@
+{
+  "description": "World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.",
+  "homepage": "https://www.bytebase.com",
+  "provides": [
+    "bytebase"
+  ],
+  "github": "https://github.com/bytebase/bytebase",
+  "project": "bytebase.com",
+  "displayName": "bytebase"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line interface for JFrog products",
+  "description": "JFrog CLI is a client that provides a simple interface that automates access to the JFrog products.",
+  "homepage": "https://www.jfrog.com/confluence/display/CLI/JFrog+CLI",
+  "provides": [
+    "jf",
+    "jfrog"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jfrog-cli",
+  "license": "Apache-2.0",
+  "github": "https://github.com/jfrog/jfrog-cli",
+  "project": "jfrog.com/jfrog-cli"
+}

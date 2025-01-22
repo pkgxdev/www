@@ -1,0 +1,10 @@
+{
+  "description": "High-performance image manipulation for web servers. Includes imageflow_server, imageflow_tool, and libimageflow",
+  "homepage": "https://docs.imageflow.io/",
+  "provides": [
+    "imageflow_tool"
+  ],
+  "github": "https://github.com/imazen/imageflow.git",
+  "project": "imageflow.io/imageflow_tool",
+  "displayName": "imageflow_tool"
+}

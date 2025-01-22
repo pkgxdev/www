@@ -1,0 +1,12 @@
+{
+  "description": "App source + Nix packages + Docker = Image",
+  "homepage": "https://nixpacks.com/",
+  "provides": [
+    "nixpacks"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nixpacks",
+  "license": "MIT",
+  "github": "https://github.com/railwayapp/nixpacks",
+  "project": "nixpacks.com",
+  "displayName": "nixpacks"
+}

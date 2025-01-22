@@ -1,0 +1,9 @@
+{
+  "description": "Docker CLI plugin for extended build capabilities with BuildKit",
+  "provides": [
+    "buildx"
+  ],
+  "github": "https://github.com/docker/buildx",
+  "project": "docker.com/buildx",
+  "displayName": "buildx"
+}

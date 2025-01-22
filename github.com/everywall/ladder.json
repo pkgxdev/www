@@ -1,0 +1,9 @@
+{
+  "description": "Selfhosted alternative to 12ft.io. and 1ft.io bypass paywalls with a proxy ladder and remove CORS headers from any URL",
+  "provides": [
+    "ladder"
+  ],
+  "github": "https://github.com/everywall/ladder",
+  "project": "github.com/everywall/ladder",
+  "displayName": "ladder"
+}

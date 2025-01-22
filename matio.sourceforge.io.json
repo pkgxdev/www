@@ -1,0 +1,11 @@
+{
+  "description": "C library for reading and writing MATLAB MAT files",
+  "homepage": "https://matio.sourceforge.net/",
+  "provides": [
+    "matdump"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libmatio",
+  "license": "BSD-2-Clause",
+  "project": "matio.sourceforge.io",
+  "displayName": "matdump"
+}

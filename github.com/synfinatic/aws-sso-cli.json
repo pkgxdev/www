@@ -1,0 +1,13 @@
+{
+  "brief": "Securely manage AWS API credentials using AWS SSO",
+  "description": "A powerful tool for using AWS Identity Center for the CLI and web console.",
+  "homepage": "https://synfinatic.github.io/aws-sso-cli/",
+  "provides": [
+    "aws-sso"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/aws-sso-cli",
+  "license": "GPL-3.0-only",
+  "github": "https://github.com/synfinatic/aws-sso-cli",
+  "project": "github.com/synfinatic/aws-sso-cli",
+  "displayName": "aws-sso"
+}

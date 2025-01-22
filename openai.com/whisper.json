@@ -1,0 +1,12 @@
+{
+  "brief": "General-purpose speech recognition model",
+  "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
+  "provides": [
+    "whisper"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/openai-whisper",
+  "license": "MIT",
+  "github": "https://github.com/openai/whisper",
+  "project": "openai.com/whisper",
+  "displayName": "whisper"
+}

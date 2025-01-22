@@ -1,0 +1,33 @@
+{
+  "brief": "GNU gettext. Mirror of git://git.savannah.gnu.org/gettext.git ",
+  "description": "GNU internationalization (i18n) and localization (l10n) library",
+  "homepage": "https://www.gnu.org/software/gettext/",
+  "provides": [
+    "autopoint",
+    "envsubst",
+    "gettext",
+    "gettext.sh",
+    "gettextize",
+    "msgattrib",
+    "msgcat",
+    "msgcmp",
+    "msgcomm",
+    "msgconv",
+    "msgen",
+    "msgexec",
+    "msgfilter",
+    "msgfmt",
+    "msggrep",
+    "msginit",
+    "msgmerge",
+    "msgunfmt",
+    "msguniq",
+    "ngettext",
+    "recode-sr-latin",
+    "xgettext"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gettext",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/autotools-mirror/gettext",
+  "project": "gnu.org/gettext"
+}

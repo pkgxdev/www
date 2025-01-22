@@ -1,0 +1,17 @@
+{
+  "brief": "Image manipulation library",
+  "description": "Main libjpeg-turbo repository",
+  "homepage": "https://www.ijg.org/",
+  "provides": [
+    "cjpeg",
+    "djpeg",
+    "jpegtran",
+    "rdjpgcom",
+    "tjbench",
+    "wrjpgcom"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jpeg",
+  "license": "IJG",
+  "github": "https://github.com/libjpeg-turbo/libjpeg-turbo",
+  "project": "libjpeg-turbo.org"
+}

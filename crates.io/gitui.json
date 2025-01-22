@@ -1,0 +1,12 @@
+{
+  "brief": "Blazing fast terminal-ui for git written in rust",
+  "description": "Blazing 💥 fast terminal-ui for git written in rust 🦀",
+  "provides": [
+    "gitui"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gitui",
+  "license": "MIT",
+  "github": "https://github.com/extrawurst/gitui",
+  "project": "crates.io/gitui",
+  "displayName": "gitui"
+}

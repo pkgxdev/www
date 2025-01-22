@@ -1,0 +1,13 @@
+{
+  "brief": "GPP, a generic preprocessor",
+  "description": "General-purpose preprocessor with customizable syntax",
+  "homepage": "https://logological.org/gpp",
+  "provides": [
+    "gpp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gpp",
+  "license": "LGPL-3.0-only",
+  "github": "https://github.com/logological/gpp",
+  "project": "logological.org/gpp",
+  "displayName": "gpp"
+}

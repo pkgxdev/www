@@ -1,0 +1,6 @@
+{
+  "description": "Official project repository for the Setuptools build system",
+  "homepage": "https://pypi.org/project/setuptools/",
+  "github": "https://github.com/pypa/setuptools",
+  "project": "pypa.io/setuptools"
+}

@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "which"
+  ],
+  "project": "gnu.org/which",
+  "displayName": "which"
+}

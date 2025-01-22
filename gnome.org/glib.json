@@ -1,0 +1,23 @@
+{
+  "description": "Core application library for C",
+  "homepage": "https://docs.gtk.org/glib/",
+  "provides": [
+    "gdbus",
+    "gdbus-codegen",
+    "gio",
+    "gio-querymodules",
+    "glib-compile-resources",
+    "glib-compile-schemas",
+    "glib-genmarshal",
+    "glib-gettextize",
+    "glib-mkenums",
+    "gobject-query",
+    "gresource",
+    "gsettings",
+    "gtester",
+    "gtester-report"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/glib",
+  "license": "LGPL-2.1-or-later",
+  "project": "gnome.org/glib"
+}

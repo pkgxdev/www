@@ -1,0 +1,18 @@
+{
+  "brief": "CMake enhanced Karypis METIS library ",
+  "description": "Programs that partition graphs and order matrices",
+  "homepage": "http://glaros.dtc.umn.edu/gkhome/views/metis",
+  "provides": [
+    "cmpfillin",
+    "gpmetis",
+    "graphchk",
+    "m2gmetis",
+    "mpmetis",
+    "ndmetis"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/metis",
+  "license": "Apache-2.0",
+  "github": "https://github.com/scivision/METIS",
+  "project": "glaros.dtc.umn.edu/metis",
+  "displayName": "cmpfillin"
+}

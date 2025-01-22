@@ -1,0 +1,13 @@
+{
+  "brief": "Python package management tool",
+  "description": "Python packaging and dependency management made easy",
+  "homepage": "https://python-poetry.org/",
+  "provides": [
+    "poetry"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/poetry",
+  "license": "MIT",
+  "github": "https://github.com/python-poetry/poetry",
+  "project": "python-poetry.org",
+  "displayName": "poetry"
+}

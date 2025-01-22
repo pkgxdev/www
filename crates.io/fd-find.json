@@ -1,0 +1,12 @@
+{
+  "brief": "Simple, fast and user-friendly alternative to find",
+  "description": "A simple, fast and user-friendly alternative to 'find'",
+  "provides": [
+    "fd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fd",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/sharkdp/fd",
+  "project": "crates.io/fd-find",
+  "displayName": "fd"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "A command-line DNS client.",
+  "homepage": "https://dns.lookup.dog/",
+  "provides": [
+    "dog"
+  ],
+  "github": "https://github.com/ogham/dog",
+  "project": "dns.lookup.dog",
+  "displayName": "dog"
+}

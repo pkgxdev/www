@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "sed"
+  ],
+  "project": "gnu.org/sed",
+  "displayName": "sed"
+}

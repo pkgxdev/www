@@ -1,0 +1,18 @@
+{
+  "description": "String tool",
+  "homepage": "https://wiki.freedesktop.org/www/Software/intltool",
+  "provides": [
+    "intltool-extract",
+    "intltool-merge",
+    "intltool-prepare",
+    "intltool-update",
+    "intltoolize",
+    "lwp-download",
+    "lwp-dump",
+    "lwp-mirror",
+    "lwp-request"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/intltool",
+  "license": "GPL-2.0-or-later",
+  "project": "freedesktop.org/intltool"
+}

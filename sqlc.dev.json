@@ -1,0 +1,13 @@
+{
+  "brief": "Generate type safe Go from SQL",
+  "description": "Generate type-safe code from SQL",
+  "homepage": "https://sqlc.dev/",
+  "provides": [
+    "sqlc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sqlc",
+  "license": "MIT",
+  "github": "https://github.com/sqlc-dev/sqlc",
+  "project": "sqlc.dev",
+  "displayName": "sqlc"
+}

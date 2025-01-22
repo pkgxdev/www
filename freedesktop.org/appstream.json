@@ -1,0 +1,12 @@
+{
+  "description": "Tools and libraries to work with AppStream metadata",
+  "homepage": "https://www.freedesktop.org/wiki/Distributions/AppStream/",
+  "provides": [
+    "appstreamcli"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/appstream",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/ximion/appstream",
+  "project": "freedesktop.org/appstream",
+  "displayName": "appstreamcli"
+}

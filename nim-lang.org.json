@@ -1,0 +1,20 @@
+{
+  "brief": "Statically typed compiled systems programming language",
+  "description": "Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).",
+  "homepage": "https://nim-lang.org/",
+  "provides": [
+    "nim",
+    "nim_dbg",
+    "testament",
+    "nimsuggest",
+    "nimgrep",
+    "nim-gdb",
+    "atlas",
+    "nimpretty",
+    "nimble"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nim",
+  "license": "MIT",
+  "github": "https://github.com/nim-lang/Nim",
+  "project": "nim-lang.org"
+}

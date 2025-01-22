@@ -1,0 +1,12 @@
+{
+  "brief": "Parse binary .xcresult bundles from Xcode builds and test runs",
+  "description": "Parse the binary xcresult bundle from Xcode builds and testruns",
+  "provides": [
+    "xcresultparser"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xcresultparser",
+  "license": "MIT",
+  "github": "https://github.com/a7ex/xcresultparser",
+  "project": "github.com/a7ex/xcresultparser",
+  "displayName": "xcresultparser"
+}

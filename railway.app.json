@@ -1,0 +1,13 @@
+{
+  "brief": "Railway CLI",
+  "description": "Develop and deploy code with zero configuration",
+  "homepage": "https://railway.app/",
+  "provides": [
+    "railway"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/railway",
+  "license": "MIT",
+  "github": "https://github.com/railwayapp/cli",
+  "project": "railway.app",
+  "displayName": "railway"
+}

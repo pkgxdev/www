@@ -1,0 +1,10 @@
+{
+  "description": "A simple application deployment framework built on Kubernetes",
+  "homepage": "https://docs.acorn.io/",
+  "provides": [
+    "acorn"
+  ],
+  "github": "https://github.com/acorn-io/runtime",
+  "project": "acorn.io/acorn-cli",
+  "displayName": "acorn"
+}

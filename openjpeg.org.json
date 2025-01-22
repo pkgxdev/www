@@ -1,0 +1,14 @@
+{
+  "brief": "Library for JPEG-2000 image manipulation",
+  "description": "Official repository of the OpenJPEG project",
+  "homepage": "https://www.openjpeg.org/",
+  "provides": [
+    "opj_compress",
+    "opj_decompress",
+    "opj_dump"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/openjpeg",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/uclouvain/openjpeg",
+  "project": "openjpeg.org"
+}

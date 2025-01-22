@@ -1,0 +1,12 @@
+{
+  "brief": "Fast and simple video downloader",
+  "description": "👾 Fast and simple video download library and CLI tool written in Go",
+  "provides": [
+    "lux"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lux",
+  "license": "MIT",
+  "github": "https://github.com/iawia002/lux",
+  "project": "github.com/iawia002/lux",
+  "displayName": "lux"
+}

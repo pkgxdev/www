@@ -1,0 +1,13 @@
+{
+  "brief": "A network diagnostic tool ",
+  "description": "Network diagnostic tool, inspired by mtr",
+  "homepage": "https://trippy.cli.rs/",
+  "provides": [
+    "trip"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/trippy",
+  "license": "Apache-2.0",
+  "github": "https://github.com/fujiapple852/trippy",
+  "project": "trippy.cli.rs",
+  "displayName": "trip"
+}

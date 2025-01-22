@@ -1,0 +1,13 @@
+{
+  "brief": "Manage your dotfiles across multiple diverse machines, securely",
+  "description": "Manage your dotfiles across multiple diverse machines, securely.",
+  "homepage": "https://chezmoi.io/",
+  "provides": [
+    "chezmoi"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/chezmoi",
+  "license": "MIT",
+  "github": "https://github.com/twpayne/chezmoi",
+  "project": "chezmoi.io",
+  "displayName": "chezmoi"
+}

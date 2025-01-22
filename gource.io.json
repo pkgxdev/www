@@ -1,0 +1,13 @@
+{
+  "brief": "Version Control Visualization Tool",
+  "description": "software version control visualization",
+  "homepage": "https://gource.io",
+  "provides": [
+    "gource"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gource",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/acaudwell/Gource",
+  "project": "gource.io",
+  "displayName": "gource"
+}

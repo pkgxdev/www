@@ -1,0 +1,13 @@
+{
+  "brief": "Powerful, enterprise-ready, open source web server with automatic HTTPS",
+  "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+  "homepage": "https://caddyserver.com/",
+  "provides": [
+    "caddy"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/caddy",
+  "license": "Apache-2.0",
+  "github": "https://github.com/caddyserver/caddy",
+  "project": "caddyserver.com",
+  "displayName": "caddy"
+}

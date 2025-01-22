@@ -1,0 +1,11 @@
+{
+  "description": "Convert bitmaps to vector graphics",
+  "homepage": "https://potrace.sourceforge.net/",
+  "provides": [
+    "potrace",
+    "mkbitmap"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/potrace",
+  "license": "GPL-2.0-or-later",
+  "project": "sourceforge.net/potrace"
+}

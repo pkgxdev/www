@@ -1,0 +1,5 @@
+{
+  "description": "C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp",
+  "github": "https://github.com/BLAKE2/libb2",
+  "project": "blake2.net/libb2"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Standalone database migration tool",
+  "description": "Standalone database migration tool which works for Postgres, MariaDB, MySQL, Sqlite and LibSQL(Turso).",
+  "provides": [
+    "geni"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/geni",
+  "license": "MIT",
+  "github": "https://github.com/emilpriver/geni",
+  "project": "priver.dev/geni",
+  "displayName": "geni"
+}

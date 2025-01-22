@@ -1,0 +1,13 @@
+{
+  "brief": "URI parsing library (strictly RFC 3986 compliant)",
+  "description": " :hocho: Strictly RFC 3986 compliant URI parsing and handling library written in C89; moved from SourceForge to GitHub",
+  "homepage": "https://uriparser.github.io/",
+  "provides": [
+    "uriparse"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/uriparser",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/uriparser/uriparser",
+  "project": "uriparser.github.io",
+  "displayName": "uriparse"
+}

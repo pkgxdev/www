@@ -1,0 +1,10 @@
+{
+  "provides": [
+    "bcommits",
+    "better-branch",
+    "better-commits",
+    "better-commits-init",
+    "git-bc"
+  ],
+  "project": "github.com/Everduin94/better-commits"
+}

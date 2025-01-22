@@ -1,0 +1,10 @@
+{
+  "description": "An old-school bash-like Unix shell written in Rust",
+  "homepage": "https://hugo.wang/cicada/",
+  "provides": [
+    "cicada"
+  ],
+  "github": "https://github.com/mitnk/cicada",
+  "project": "hugo.wang/cicada",
+  "displayName": "cicada"
+}

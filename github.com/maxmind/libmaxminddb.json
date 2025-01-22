@@ -1,0 +1,12 @@
+{
+  "description": "C library for the MaxMind DB file format",
+  "homepage": "https://maxmind.github.io/libmaxminddb/",
+  "provides": [
+    "mmdblookup"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libmaxminddb",
+  "license": "Apache-2.0",
+  "github": "https://github.com/maxmind/libmaxminddb",
+  "project": "github.com/maxmind/libmaxminddb",
+  "displayName": "mmdblookup"
+}

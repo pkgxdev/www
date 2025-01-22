@@ -1,0 +1,16 @@
+{
+  "brief": "Libraries and data formats for array-oriented scientific data",
+  "description": "Official GitHub repository for netCDF-C libraries and utilities.",
+  "homepage": "https://www.unidata.ucar.edu/software/netcdf/",
+  "provides": [
+    "nc-config",
+    "nccopy",
+    "ncdump",
+    "ncgen",
+    "ncgen3"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/netcdf",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/Unidata/netcdf-c",
+  "project": "unidata.ucar.edu/netcdf"
+}

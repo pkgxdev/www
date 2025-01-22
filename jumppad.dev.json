@@ -1,0 +1,10 @@
+{
+  "description": "Modern cloud native development environments",
+  "homepage": "https://jumppad.dev",
+  "provides": [
+    "jumppad"
+  ],
+  "github": "https://github.com/jumppad-labs/jumppad",
+  "project": "jumppad.dev",
+  "displayName": "jumppad"
+}

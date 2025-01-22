@@ -1,0 +1,12 @@
+{
+  "brief": "Tool for generating self-contained, type-safe test doubles in go",
+  "description": "A tool for generating self-contained, type-safe test doubles in go",
+  "provides": [
+    "counterfeiter"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/counterfeiter",
+  "license": "MIT",
+  "github": "https://github.com/maxbrunsfeld/counterfeiter",
+  "project": "github.com/maxbrunsfeld/counterfeiter",
+  "displayName": "counterfeiter"
+}

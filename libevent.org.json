@@ -1,0 +1,6 @@
+{
+  "description": "Event notification library",
+  "homepage": "https://libevent.org",
+  "github": "https://github.com/libevent/libevent",
+  "project": "libevent.org"
+}

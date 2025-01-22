@@ -1,0 +1,6 @@
+{
+  "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
+  "homepage": "http://llvm.org",
+  "github": "https://github.com/llvm/llvm-project",
+  "project": "libcxx.llvm.org"
+}

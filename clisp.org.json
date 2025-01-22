@@ -1,0 +1,11 @@
+{
+  "description": "GNU CLISP, a Common Lisp implementation",
+  "homepage": "https://clisp.sourceforge.io/",
+  "provides": [
+    "clisp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/clisp",
+  "license": "GPL-2.0-or-later",
+  "project": "clisp.org",
+  "displayName": "clisp"
+}

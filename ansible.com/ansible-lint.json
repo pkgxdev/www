@@ -1,0 +1,13 @@
+{
+  "brief": "Checks ansible playbooks for practices and behaviour",
+  "description": "ansible-lint checks playbooks for practices and behavior that could potentially be improved and can fix some of the most common ones for you",
+  "homepage": "https://ansible-lint.readthedocs.io/",
+  "provides": [
+    "ansible-lint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ansible-lint",
+  "license": "MIT AND GPL-3.0-or-later",
+  "github": "https://github.com/ansible/ansible-lint",
+  "project": "ansible.com/ansible-lint",
+  "displayName": "ansible-lint"
+}

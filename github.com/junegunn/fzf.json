@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line fuzzy finder written in Go",
+  "description": ":cherry_blossom: A command-line fuzzy finder",
+  "homepage": "https://junegunn.github.io/fzf/",
+  "provides": [
+    "fzf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fzf",
+  "license": "MIT",
+  "github": "https://github.com/junegunn/fzf",
+  "project": "github.com/junegunn/fzf",
+  "displayName": "fzf"
+}

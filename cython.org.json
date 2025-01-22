@@ -1,0 +1,13 @@
+{
+  "brief": "The most widely used Python to C compiler",
+  "description": "Compiler for writing C extensions for the Python language",
+  "homepage": "https://cython.org/",
+  "provides": [
+    "cython"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cython",
+  "license": "Apache-2.0",
+  "github": "https://github.com/cython/cython",
+  "project": "cython.org",
+  "displayName": "cython"
+}

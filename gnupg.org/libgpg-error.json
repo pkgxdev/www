@@ -1,0 +1,13 @@
+{
+  "description": "Common error values for all GnuPG components",
+  "homepage": "https://www.gnupg.org/related_software/libgpg-error/",
+  "provides": [
+    "gpg-error",
+    "gpg-error-config",
+    "gpgrt-config",
+    "yat2m"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libgpg-error",
+  "license": "LGPL-2.1-or-later",
+  "project": "gnupg.org/libgpg-error"
+}

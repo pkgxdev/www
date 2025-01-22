@@ -1,0 +1,11 @@
+{
+  "description": "Display user-friendly message boxes from shell scripts",
+  "homepage": "https://invisible-island.net/dialog/",
+  "provides": [
+    "dialog",
+    "dialog-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dialog",
+  "license": "LGPL-2.1-or-later",
+  "project": "invisible-island.net/dialog"
+}

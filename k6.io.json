@@ -1,0 +1,13 @@
+{
+  "brief": "Modern load testing tool, using Go and JavaScript",
+  "description": "A modern load testing tool, using Go and JavaScript - https://k6.io",
+  "homepage": "https://k6.io",
+  "provides": [
+    "k6"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/k6",
+  "license": "AGPL-3.0-or-later",
+  "github": "https://github.com/grafana/k6",
+  "project": "k6.io",
+  "displayName": "k6"
+}

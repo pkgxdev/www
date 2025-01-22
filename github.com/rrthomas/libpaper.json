@@ -1,0 +1,12 @@
+{
+  "brief": "Library for handling paper characteristics",
+  "description": "Library and command-line tools for configuring and getting information on paper sizes",
+  "provides": [
+    "paper"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libpaper",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/rrthomas/libpaper",
+  "project": "github.com/rrthomas/libpaper",
+  "displayName": "paper"
+}

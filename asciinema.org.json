@@ -1,0 +1,13 @@
+{
+  "brief": "Terminal session recorder 📹",
+  "description": "Record and share terminal sessions",
+  "homepage": "https://asciinema.org",
+  "provides": [
+    "asciinema"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/asciinema",
+  "license": "GPL-3.0-only",
+  "github": "https://github.com/asciinema/asciinema",
+  "project": "asciinema.org",
+  "displayName": "asciinema"
+}

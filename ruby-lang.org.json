@@ -1,0 +1,17 @@
+{
+  "brief": "The Ruby Programming Language",
+  "description": "Powerful, clean, object-oriented scripting language",
+  "homepage": "https://www.ruby-lang.org/",
+  "provides": [
+    "erb",
+    "irb",
+    "rake",
+    "rdoc",
+    "ri",
+    "ruby"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ruby",
+  "license": "Ruby",
+  "github": "https://github.com/ruby/ruby",
+  "project": "ruby-lang.org"
+}

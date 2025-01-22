@@ -1,0 +1,13 @@
+{
+  "brief": "Prompt theme engine for any shell",
+  "description": "The most customisable and low-latency cross platform/shell prompt renderer",
+  "homepage": "https://ohmyposh.dev",
+  "provides": [
+    "oh-my-posh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/oh-my-posh",
+  "license": "MIT",
+  "github": "https://github.com/JanDeDobbeleer/oh-my-posh",
+  "project": "ohmyposh.dev",
+  "displayName": "oh-my-posh"
+}

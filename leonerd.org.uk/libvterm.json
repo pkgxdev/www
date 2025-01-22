@@ -1,0 +1,12 @@
+{
+  "description": "C99 library which implements a VT220 or xterm terminal emulator",
+  "homepage": "https://www.leonerd.org.uk/code/libvterm/",
+  "provides": [
+    "unterm",
+    "vterm-ctrl",
+    "vterm-dump"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libvterm",
+  "license": "MIT",
+  "project": "leonerd.org.uk/libvterm"
+}

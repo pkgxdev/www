@@ -1,0 +1,26 @@
+{
+  "description": "Collection of tools for managing UNIX services",
+  "homepage": "https://cr.yp.to/daemontools.html",
+  "provides": [
+    "envdir",
+    "envuidgid",
+    "fghack",
+    "multilog",
+    "pgrphack",
+    "readproctitle",
+    "setlock",
+    "setuidgid",
+    "softlimit",
+    "supervise",
+    "svc",
+    "svok",
+    "svscan",
+    "svscanboot",
+    "svstat",
+    "tai64n",
+    "tai64nlocal"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/daemontools",
+  "license": "LicenseRef-Homebrew-public-domain",
+  "project": "cr.yp.to/daemontools"
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Java-based scripting language",
+  "homepage": "https://www.groovy-lang.org/",
+  "provides": [
+    "grape",
+    "grape_completion",
+    "groovy",
+    "groovyc",
+    "groovyc_completion",
+    "groovy_completion",
+    "groovyConsole",
+    "groovyConsole_completion",
+    "groovydoc",
+    "groovydoc_completion",
+    "groovysh",
+    "groovysh_completion",
+    "java2groovy",
+    "startGroovy"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/groovy",
+  "license": "Apache-2.0",
+  "project": "groovy-lang.org"
+}

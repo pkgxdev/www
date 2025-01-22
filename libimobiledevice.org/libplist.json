@@ -1,0 +1,13 @@
+{
+  "brief": "Library for Apple Binary- and XML-Property Lists",
+  "description": "A library to handle Apple Property List format in binary or XML",
+  "homepage": "https://www.libimobiledevice.org/",
+  "provides": [
+    "plistutil"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libplist",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/libimobiledevice/libplist",
+  "project": "libimobiledevice.org/libplist",
+  "displayName": "plistutil"
+}

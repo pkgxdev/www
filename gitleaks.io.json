@@ -1,0 +1,13 @@
+{
+  "brief": "Audit git repos for secrets",
+  "description": "Find secrets with Gitleaks 🔑",
+  "homepage": "https://gitleaks.io",
+  "provides": [
+    "gitleaks"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gitleaks",
+  "license": "MIT",
+  "github": "https://github.com/gitleaks/gitleaks",
+  "project": "gitleaks.io",
+  "displayName": "gitleaks"
+}

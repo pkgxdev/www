@@ -1,0 +1,12 @@
+{
+  "brief": "Command-line interface for Hetzner Cloud",
+  "description": "A command-line interface for Hetzner Cloud",
+  "provides": [
+    "hcloud"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hcloud",
+  "license": "MIT",
+  "github": "https://github.com/hetznercloud/cli",
+  "project": "hetzner.com/hcloud",
+  "displayName": "hcloud"
+}

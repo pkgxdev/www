@@ -1,0 +1,13 @@
+{
+  "brief": "Utility that provides fast incremental file transfer",
+  "description": "An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.",
+  "homepage": "https://rsync.samba.org/",
+  "provides": [
+    "rsync",
+    "rsync-ssl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rsync",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/WayneD/rsync",
+  "project": "rsync.samba.org"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Personal key value store",
+  "description": "A personal key value store 🛼",
+  "provides": [
+    "skate"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/skate",
+  "license": "MIT",
+  "github": "https://github.com/charmbracelet/skate",
+  "project": "charm.sh/skate",
+  "displayName": "skate"
+}

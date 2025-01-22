@@ -1,0 +1,13 @@
+{
+  "brief": "Utility that creates projects from templates and maintains the cruft afterwards",
+  "description": "Allows you to maintain all the necessary cruft for packaging and building projects separate from the code you intentionally write. Built on-top of, and fully compatible with, CookieCutter.",
+  "homepage": "https://cruft.github.io/cruft/",
+  "provides": [
+    "cruft"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cruft",
+  "license": "MIT",
+  "github": "https://github.com/cruft/cruft",
+  "project": "cruft.github.io",
+  "displayName": "cruft"
+}

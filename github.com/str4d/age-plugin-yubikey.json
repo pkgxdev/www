@@ -1,0 +1,12 @@
+{
+  "brief": "YubiKey plugin for age",
+  "description": "Plugin for encrypting files with age and PIV tokens such as YubiKeys",
+  "provides": [
+    "age-plugin-yubikey"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/age-plugin-yubikey",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/str4d/age-plugin-yubikey",
+  "project": "github.com/str4d/age-plugin-yubikey",
+  "displayName": "age-plugin-yubikey"
+}

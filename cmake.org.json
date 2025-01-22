@@ -1,0 +1,15 @@
+{
+  "brief": "Cross-platform make",
+  "description": "Mirror of CMake upstream repository",
+  "homepage": "https://www.cmake.org/",
+  "provides": [
+    "cmake",
+    "ccmake",
+    "cpack",
+    "ctest"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cmake",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/Kitware/CMake",
+  "project": "cmake.org"
+}

@@ -1,0 +1,15 @@
+{
+  "brief": "Unsupervised text tokenizer and detokenizer",
+  "description": "Unsupervised text tokenizer for Neural Network-based text generation.",
+  "provides": [
+    "spm_decode",
+    "spm_encode",
+    "spm_export_vocab",
+    "spm_normalize",
+    "spm_train"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sentencepiece",
+  "license": "Apache-2.0",
+  "github": "https://github.com/google/sentencepiece",
+  "project": "google.com/sentencepiece"
+}

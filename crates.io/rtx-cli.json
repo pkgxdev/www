@@ -1,0 +1,6 @@
+{
+  "description": "dev tools, env vars, task runner",
+  "homepage": "https://mise.jdx.dev",
+  "github": "https://github.com/jdx/mise",
+  "project": "crates.io/rtx-cli"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Helm-like configuration values loader with support for various sources",
+  "provides": [
+    "vals"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/vals",
+  "license": "Apache-2.0",
+  "github": "https://github.com/helmfile/vals",
+  "project": "github.com/helmfile/vals",
+  "displayName": "vals"
+}

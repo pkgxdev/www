@@ -1,0 +1,30 @@
+{
+  "description": "File format designed to store large amounts of data",
+  "homepage": "https://www.hdfgroup.org/solutions/hdf5/",
+  "provides": [
+    "h5c++",
+    "h5cc",
+    "h5clear",
+    "h5copy",
+    "h5debug",
+    "h5delete",
+    "h5diff",
+    "h5dump",
+    "h5fc",
+    "h5format_convert",
+    "h5import",
+    "h5jam",
+    "h5ls",
+    "h5mkgrp",
+    "h5perf_serial",
+    "h5redeploy",
+    "h5repack",
+    "h5repart",
+    "h5stat",
+    "h5unjam",
+    "h5watch"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hdf5",
+  "license": "BSD-3-Clause",
+  "project": "hdfgroup.org/HDF5"
+}

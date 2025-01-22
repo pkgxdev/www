@@ -1,0 +1,13 @@
+{
+  "brief": "Gphoto2 digital camera library",
+  "description": "The libgphoto2 camera access and control library.",
+  "homepage": "http://www.gphoto.org/proj/libgphoto2/",
+  "provides": [
+    "gphoto2-config",
+    "gphoto2-port-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libgphoto2",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/gphoto/libgphoto2",
+  "project": "gphoto.org/libgphoto2"
+}

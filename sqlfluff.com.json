@@ -1,0 +1,13 @@
+{
+  "brief": "SQL linter and auto-formatter for Humans",
+  "description": "A modular SQL linter and auto-formatter with support for multiple dialects and templated code.",
+  "homepage": "https://docs.sqlfluff.com/",
+  "provides": [
+    "sqlfluff"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sqlfluff",
+  "license": "MIT",
+  "github": "https://github.com/sqlfluff/sqlfluff",
+  "project": "sqlfluff.com",
+  "displayName": "sqlfluff"
+}

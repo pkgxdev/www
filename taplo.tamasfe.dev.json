@@ -1,0 +1,13 @@
+{
+  "brief": "TOML toolkit written in Rust",
+  "description": "A TOML toolkit written in Rust",
+  "homepage": "https://taplo.tamasfe.dev",
+  "provides": [
+    "taplo"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/taplo",
+  "license": "MIT",
+  "github": "https://github.com/tamasfe/taplo",
+  "project": "taplo.tamasfe.dev",
+  "displayName": "taplo"
+}

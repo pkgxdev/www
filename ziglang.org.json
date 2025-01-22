@@ -1,0 +1,13 @@
+{
+  "brief": "Programming language designed for robustness, optimality, and clarity",
+  "description": "General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.",
+  "homepage": "https://ziglang.org/",
+  "provides": [
+    "zig"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/zig",
+  "license": "MIT",
+  "github": "https://github.com/ziglang/zig",
+  "project": "ziglang.org",
+  "displayName": "zig"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Scans and monitors projects for security vulnerabilities",
+  "homepage": "https://snyk.io",
+  "provides": [
+    "snyk"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/snyk-cli",
+  "license": "Apache-2.0",
+  "project": "snyk.io",
+  "displayName": "snyk"
+}

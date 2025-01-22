@@ -1,0 +1,13 @@
+{
+  "brief": "Client library for huggingface.co hub",
+  "description": "The official Python client for the Huggingface Hub.",
+  "homepage": "https://huggingface.co/docs/huggingface_hub/index",
+  "provides": [
+    "huggingface-cli"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/huggingface-cli",
+  "license": "Apache-2.0",
+  "github": "https://github.com/huggingface/huggingface_hub",
+  "project": "huggingface.co",
+  "displayName": "huggingface-cli"
+}

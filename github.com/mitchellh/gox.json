@@ -1,0 +1,12 @@
+{
+  "brief": "Go cross compile tool",
+  "description": "A dead simple, no frills Go cross compile tool",
+  "provides": [
+    "gox"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gox",
+  "license": "MPL-2.0",
+  "github": "https://github.com/mitchellh/gox",
+  "project": "github.com/mitchellh/gox",
+  "displayName": "gox"
+}

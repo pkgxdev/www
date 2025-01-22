@@ -1,0 +1,13 @@
+{
+  "brief": "Clog is a colorized log tail utility",
+  "description": "Colorized pattern-matching log tail utility",
+  "homepage": "https://gothenburgbitfactory.org/clog/docs/",
+  "provides": [
+    "clog"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/clog",
+  "license": "MIT",
+  "github": "https://github.com/GothenburgBitFactory/clog",
+  "project": "clog-tool.github.io",
+  "displayName": "clog"
+}

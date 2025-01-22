@@ -1,0 +1,10 @@
+{
+  "description": "Rapidly build modern applications with advanced configuration management",
+  "homepage": "https://projen.io",
+  "provides": [
+    "projen"
+  ],
+  "github": "https://github.com/projen/projen",
+  "project": "projen.io",
+  "displayName": "projen"
+}

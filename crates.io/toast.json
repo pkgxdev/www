@@ -1,0 +1,13 @@
+{
+  "brief": "Lossy speech compression library",
+  "description": "Containerize your development and continuous integration environments. 🥂",
+  "homepage": "https://www.quut.com/gsm/",
+  "provides": [
+    "toast"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libgsm",
+  "license": "TU-Berlin-2.0",
+  "github": "https://github.com/stepchowfun/toast",
+  "project": "crates.io/toast",
+  "displayName": "toast"
+}

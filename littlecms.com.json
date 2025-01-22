@@ -1,0 +1,16 @@
+{
+  "brief": "Color management engine supporting ICC profiles",
+  "description": "A free, open source, CMM engine. It provides fast transforms between ICC profiles.",
+  "homepage": "https://www.littlecms.com/",
+  "provides": [
+    "jpgicc",
+    "linkicc",
+    "psicc",
+    "tificc",
+    "transicc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/little-cms2",
+  "license": "MIT",
+  "github": "https://github.com/mm2/Little-CMS",
+  "project": "littlecms.com"
+}

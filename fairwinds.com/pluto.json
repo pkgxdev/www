@@ -1,0 +1,13 @@
+{
+  "brief": "CLI tool to help discover deprecated apiVersions in Kubernetes",
+  "description": "A cli tool to help discover deprecated apiVersions in Kubernetes",
+  "homepage": "https://fairwinds.com",
+  "provides": [
+    "pluto"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pluto",
+  "license": "Apache-2.0",
+  "github": "https://github.com/FairwindsOps/pluto",
+  "project": "fairwinds.com/pluto",
+  "displayName": "pluto"
+}

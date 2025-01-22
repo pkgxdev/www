@@ -1,0 +1,24 @@
+{
+  "brief": "Cloud native development platform",
+  "description": "Pulumi - Infrastructure as Code in any programming language 🚀",
+  "homepage": "https://pulumi.io/",
+  "provides": [
+    "pulumi",
+    "pulumi-analyzer-policy",
+    "pulumi-analyzer-policy-python",
+    "pulumi-language-dotnet",
+    "pulumi-language-go",
+    "pulumi-language-java",
+    "pulumi-language-nodejs",
+    "pulumi-language-python",
+    "pulumi-language-python-exec",
+    "pulumi-language-yaml",
+    "pulumi-resource-pulumi-nodejs",
+    "pulumi-resource-pulumi-python",
+    "pulumi-watch"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pulumi",
+  "license": "Apache-2.0",
+  "github": "https://github.com/pulumi/pulumi",
+  "project": "pulumi.io"
+}

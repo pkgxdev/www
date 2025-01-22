@@ -1,0 +1,13 @@
+{
+  "brief": "Automatic git commit --fixup",
+  "description": "git commit --fixup, but automatic",
+  "homepage": "https://crates.io/crates/git-absorb",
+  "provides": [
+    "git-absorb"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-absorb",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/tummychow/git-absorb",
+  "project": "crates.io/git-absorb",
+  "displayName": "git-absorb"
+}

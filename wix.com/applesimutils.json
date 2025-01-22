@@ -1,0 +1,9 @@
+{
+  "description": "A collection of command-line utils for Apple simulators.",
+  "provides": [
+    "applesimutils"
+  ],
+  "github": "https://github.com/wix/AppleSimulatorUtils",
+  "project": "wix.com/applesimutils",
+  "displayName": "applesimutils"
+}

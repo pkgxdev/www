@@ -1,0 +1,6 @@
+{
+  "description": "Mirror only. Please do not send pull requests.",
+  "homepage": "http://www.webmproject.org/code/",
+  "github": "https://github.com/webmproject/libvpx",
+  "project": "webmproject.org/libvpx"
+}

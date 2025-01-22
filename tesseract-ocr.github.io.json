@@ -1,0 +1,11 @@
+{
+  "description": "OCR (Optical Character Recognition) engine",
+  "provides": [
+    "tesseract"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tesseract",
+  "license": "Apache-2.0",
+  "github": "https://github.com/tesseract-ocr/",
+  "project": "tesseract-ocr.github.io",
+  "displayName": "tesseract"
+}

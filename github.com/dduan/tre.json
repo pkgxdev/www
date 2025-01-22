@@ -1,0 +1,12 @@
+{
+  "brief": "Tree command, improved",
+  "description": "Tree command, improved.",
+  "provides": [
+    "tre"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tre-command",
+  "license": "MIT",
+  "github": "https://github.com/dduan/tre",
+  "project": "github.com/dduan/tre",
+  "displayName": "tre"
+}

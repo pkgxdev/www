@@ -1,0 +1,9 @@
+{
+  "description": "A CLI for cleaning up after .apps",
+  "provides": [
+    "zap"
+  ],
+  "github": "https://github.com/keith/zap",
+  "project": "github.com/keith/zap",
+  "displayName": "zap"
+}

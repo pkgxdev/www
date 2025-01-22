@@ -1,0 +1,9 @@
+{
+  "description": "a truly type-safe Go GraphQL client",
+  "provides": [
+    "genqlient"
+  ],
+  "github": "https://github.com/Khan/genqlient",
+  "project": "khanacademy.org/genqlient",
+  "displayName": "genqlient"
+}

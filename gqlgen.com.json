@@ -1,0 +1,10 @@
+{
+  "description": "go generate based graphql server library",
+  "homepage": "https://gqlgen.com",
+  "provides": [
+    "gqlgen"
+  ],
+  "github": "https://github.com/99designs/gqlgen",
+  "project": "gqlgen.com",
+  "displayName": "gqlgen"
+}

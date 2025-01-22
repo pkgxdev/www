@@ -1,0 +1,12 @@
+{
+  "brief": "Tool for glamorous shell scripts",
+  "description": "A tool for glamorous shell scripts 🎀",
+  "provides": [
+    "gum"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gum",
+  "license": "MIT",
+  "github": "https://github.com/charmbracelet/gum",
+  "project": "charm.sh/gum",
+  "displayName": "gum"
+}

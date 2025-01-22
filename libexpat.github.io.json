@@ -1,0 +1,13 @@
+{
+  "brief": "XML 1.0 parser",
+  "description": ":herb: Fast streaming XML parser written in C99 with >90% test coverage; moved from SourceForge to GitHub",
+  "homepage": "https://libexpat.github.io/",
+  "provides": [
+    "xmlwf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/expat",
+  "license": "MIT",
+  "github": "https://github.com/libexpat/libexpat",
+  "project": "libexpat.github.io",
+  "displayName": "xmlwf"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "OCI Registry As Storage",
+  "description": "OCI registry client - managing content like artifacts, images, packages",
+  "homepage": "https://oras.land",
+  "provides": [
+    "oras"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/oras",
+  "license": "Apache-2.0",
+  "github": "https://github.com/oras-project/oras",
+  "project": "oras.land",
+  "displayName": "oras"
+}

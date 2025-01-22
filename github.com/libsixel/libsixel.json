@@ -1,0 +1,14 @@
+{
+  "brief": "SIXEL encoder/decoder implementation",
+  "description": "Mirror of \"sixel\" original version (kmiya's sixel). The origin of libsixel.",
+  "homepage": "http://nanno.dip.jp/softlib/man/rlogin/#REGWIND",
+  "provides": [
+    "img2sixel",
+    "sixel2png",
+    "libsixel-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libsixel",
+  "license": "MIT",
+  "github": "https://github.com/saitoha/sixel",
+  "project": "github.com/libsixel/libsixel"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "A bootstrapping and management tool for k0s clusters.",
+  "provides": [
+    "k0sctl"
+  ],
+  "github": "https://github.com/k0sproject/k0sctl",
+  "project": "github.com/k0sproject/k0sctl",
+  "displayName": "k0sctl"
+}

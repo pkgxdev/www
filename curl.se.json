@@ -1,0 +1,14 @@
+{
+  "brief": "Get a file from an HTTP, HTTPS or FTP server",
+  "description": "A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features",
+  "homepage": "https://curl.se",
+  "provides": [
+    "curl",
+    "curl-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/curl",
+  "license": "curl",
+  "github": "https://github.com/curl/curl",
+  "project": "curl.se",
+  "displayName": "curl"
+}

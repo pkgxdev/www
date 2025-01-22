@@ -1,0 +1,12 @@
+{
+  "brief": "Convert images to computer generated art using Delaunay triangulation",
+  "description": "Convert images to computer generated art using delaunay triangulation.",
+  "provides": [
+    "triangle"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/triangle",
+  "license": "MIT",
+  "github": "https://github.com/esimov/triangle",
+  "project": "github.com/esimov/triangle",
+  "displayName": "triangle"
+}

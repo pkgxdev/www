@@ -1,0 +1,12 @@
+{
+  "brief": "Static type checker for Python",
+  "description": "Static Type Checker for Python",
+  "provides": [
+    "pyright"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pyright",
+  "license": "MIT",
+  "github": "https://github.com/microsoft/pyright",
+  "project": "microsoft.com/pyright",
+  "displayName": "pyright"
+}

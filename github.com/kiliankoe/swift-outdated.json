@@ -1,0 +1,12 @@
+{
+  "brief": "Check for outdated Swift package manager dependencies",
+  "description": "A swift subcommand for displaying when your dependencies (SwiftPM or Xcode) are out of date",
+  "provides": [
+    "swift-outdated"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/swift-outdated",
+  "license": "MIT",
+  "github": "https://github.com/kiliankoe/swift-outdated",
+  "project": "github.com/kiliankoe/swift-outdated",
+  "displayName": "swift-outdated"
+}

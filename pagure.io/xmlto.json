@@ -1,0 +1,11 @@
+{
+  "description": "Convert XML to another format (based on XSL or other tools)",
+  "homepage": "https://pagure.io/xmlto/",
+  "provides": [
+    "xmlif",
+    "xmlto"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xmlto",
+  "license": "GPL-2.0-or-later",
+  "project": "pagure.io/xmlto"
+}

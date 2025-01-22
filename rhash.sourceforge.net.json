@@ -1,0 +1,23 @@
+{
+  "brief": "Great utility for computing hash sums",
+  "description": "Utility for computing and verifying hash sums of files",
+  "homepage": "https://sourceforge.net/projects/rhash/",
+  "provides": [
+    "whirlpool-hash",
+    "tiger-hash",
+    "tth-hash",
+    "rhash",
+    "sfv-hash",
+    "magnet-link",
+    "has160-hash",
+    "gost12-256-hash",
+    "gost12-512-hash",
+    "edonr512-hash",
+    "edonr256-hash",
+    "ed2k-link"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rhash",
+  "license": "0BSD",
+  "github": "https://github.com/rhash/RHash",
+  "project": "rhash.sourceforge.net"
+}

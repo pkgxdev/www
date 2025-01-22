@@ -1,0 +1,13 @@
+{
+  "description": "File comparison utilities",
+  "homepage": "https://www.gnu.org/software/diffutils/",
+  "provides": [
+    "cmp",
+    "diff",
+    "diff3",
+    "sdiff"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/diffutils",
+  "license": "GPL-3.0-or-later",
+  "project": "gnu.org/diffutils"
+}

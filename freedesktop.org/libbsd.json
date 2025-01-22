@@ -1,0 +1,6 @@
+{
+  "description": "BSD compatibility library (mirror)",
+  "homepage": "https://libbsd.freedesktop.org/",
+  "github": "https://github.com/guillemj/libbsd",
+  "project": "freedesktop.org/libbsd"
+}

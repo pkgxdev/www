@@ -1,0 +1,9 @@
+{
+  "description": "scrape data  data from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place",
+  "provides": [
+    "google-maps-scraper"
+  ],
+  "github": "https://github.com/gosom/google-maps-scraper",
+  "project": "github.com/gosom/google-maps-scraper",
+  "displayName": "google-maps-scraper"
+}

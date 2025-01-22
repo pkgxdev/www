@@ -1,0 +1,12 @@
+{
+  "brief": "Super S3 command-line tool",
+  "description": "Super S3 command line tool",
+  "provides": [
+    "s4cmd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/s4cmd",
+  "license": "Apache-2.0",
+  "github": "https://github.com/bloomreach/s4cmd",
+  "project": "bloomreach.com/s4cmd",
+  "displayName": "s4cmd"
+}

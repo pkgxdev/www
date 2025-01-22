@@ -1,0 +1,12 @@
+{
+  "brief": "Create beautiful image of your source code",
+  "description": "Create beautiful image of your source code.",
+  "provides": [
+    "silicon"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/silicon",
+  "license": "MIT",
+  "github": "https://github.com/Aloxaf/silicon/",
+  "project": "crates.io/silicon",
+  "displayName": "silicon"
+}

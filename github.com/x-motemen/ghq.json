@@ -1,0 +1,11 @@
+{
+  "description": "Remote repository management made easy",
+  "provides": [
+    "ghq"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ghq",
+  "license": "MIT",
+  "github": "https://github.com/x-motemen/ghq",
+  "project": "github.com/x-motemen/ghq",
+  "displayName": "ghq"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Locally run an Assistant-Tuned Chat-Style LLM ",
+  "provides": [
+    "gpt4all"
+  ],
+  "github": "https://github.com/zanussbaum/gpt4all.cpp",
+  "project": "github.com/nomic-ai/gpt4all",
+  "displayName": "gpt4all"
+}

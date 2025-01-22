@@ -1,0 +1,13 @@
+{
+  "brief": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+  "description": "Cross-platform application to monitor your network traffic",
+  "homepage": "https://sniffnet.net",
+  "provides": [
+    "sniffnet"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sniffnet",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/GyulyVGC/sniffnet",
+  "project": "sniffnet.net",
+  "displayName": "sniffnet"
+}

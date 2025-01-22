@@ -1,0 +1,10 @@
+{
+  "description": "The easiest way to access your cloud.",
+  "homepage": "https://granted.dev",
+  "provides": [
+    "granted"
+  ],
+  "github": "https://github.com/common-fate/granted",
+  "project": "granted.dev",
+  "displayName": "granted"
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Create beautiful applications using Go",
+  "homepage": "https://wails.io",
+  "provides": [
+    "wails"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/wails",
+  "license": "MIT",
+  "github": "https://github.com/wailsapp/wails",
+  "project": "wails.io",
+  "displayName": "wails"
+}

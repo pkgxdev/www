@@ -1,0 +1,12 @@
+{
+  "brief": "Render markdown on the CLI",
+  "description": "Render markdown on the CLI, with pizzazz! 💅🏻",
+  "provides": [
+    "glow"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/glow",
+  "license": "MIT",
+  "github": "https://github.com/charmbracelet/glow",
+  "project": "charm.sh/glow",
+  "displayName": "glow"
+}

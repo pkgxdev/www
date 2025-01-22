@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line interface for Cabal and Hackage",
+  "description": "Official upstream development repository for Cabal and cabal-install",
+  "homepage": "https://www.haskell.org/cabal/",
+  "provides": [
+    "cabal"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cabal-install",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/haskell/cabal",
+  "project": "haskell.org/cabal",
+  "displayName": "cabal"
+}

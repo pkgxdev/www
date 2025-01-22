@@ -1,0 +1,22 @@
+{
+  "description": "GNU Pretty Good Privacy (PGP) package",
+  "homepage": "https://gnupg.org/",
+  "provides": [
+    "gpg",
+    "gpg-agent",
+    "gpg-connect-agent",
+    "gpg-wks-server",
+    "gpgconf",
+    "gpgparsemail",
+    "gpgscm",
+    "gpgsm",
+    "gpgsplit",
+    "gpgtar",
+    "gpgv",
+    "kbxutil",
+    "watchgnupg"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gnupg",
+  "license": "GPL-3.0-or-later",
+  "project": "gnupg.org"
+}

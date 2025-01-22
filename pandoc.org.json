@@ -1,0 +1,13 @@
+{
+  "brief": "Universal markup converter",
+  "description": "Swiss-army knife of markup format conversion",
+  "homepage": "https://pandoc.org/",
+  "provides": [
+    "pandoc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pandoc",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/jgm/pandoc",
+  "project": "pandoc.org",
+  "displayName": "pandoc"
+}

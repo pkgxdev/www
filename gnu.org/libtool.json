@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "libtool",
+    "libtoolize"
+  ],
+  "project": "gnu.org/libtool"
+}

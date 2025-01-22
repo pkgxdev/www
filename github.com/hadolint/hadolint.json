@@ -1,0 +1,12 @@
+{
+  "brief": "Smarter Dockerfile linter to validate best practices",
+  "description": "Dockerfile linter, validate inline bash, written in Haskell",
+  "provides": [
+    "hadolint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hadolint",
+  "license": "GPL-3.0-only",
+  "github": "https://github.com/hadolint/hadolint",
+  "project": "github.com/hadolint/hadolint",
+  "displayName": "hadolint"
+}

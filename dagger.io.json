@@ -1,0 +1,13 @@
+{
+  "brief": "Portable devkit for CI/CD pipelines",
+  "description": "An engine to run your pipelines in containers",
+  "homepage": "https://dagger.io",
+  "provides": [
+    "dagger"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dagger",
+  "license": "Apache-2.0",
+  "github": "https://github.com/dagger/dagger",
+  "project": "dagger.io",
+  "displayName": "dagger"
+}

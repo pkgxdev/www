@@ -1,0 +1,13 @@
+{
+  "brief": "Platform for building proxies to bypass network restrictions",
+  "description": "Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.",
+  "homepage": "https://xtls.github.io/",
+  "provides": [
+    "xray"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xray",
+  "license": "MPL-2.0 AND CC-BY-SA-4.0",
+  "github": "https://github.com/XTLS/Xray-core",
+  "project": "xtls.github.io",
+  "displayName": "xray"
+}

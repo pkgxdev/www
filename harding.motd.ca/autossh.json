@@ -1,0 +1,12 @@
+{
+  "description": "Automatically restart SSH sessions and tunnels",
+  "homepage": "https://www.harding.motd.ca/autossh/",
+  "provides": [
+    "autossh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/autossh",
+  "license": "BSD-1-Clause",
+  "github": "https://github.com/Autossh/autossh",
+  "project": "harding.motd.ca/autossh",
+  "displayName": "autossh"
+}

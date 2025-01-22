@@ -1,0 +1,10 @@
+{
+  "description": "Official implementation of the Pocket Network Protocol",
+  "homepage": "http://www.pokt.network",
+  "provides": [
+    "pocket"
+  ],
+  "github": "https://github.com/pokt-network/pocket-core",
+  "project": "pokt.network",
+  "displayName": "pocket"
+}

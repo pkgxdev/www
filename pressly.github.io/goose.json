@@ -1,0 +1,13 @@
+{
+  "brief": "Go Language's command-line interface for database migrations",
+  "description": "A database migration tool. Supports SQL migrations and Go functions. ",
+  "homepage": "https://pressly.github.io/goose/",
+  "provides": [
+    "goose"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/goose",
+  "license": "MIT",
+  "github": "https://github.com/pressly/goose",
+  "project": "pressly.github.io/goose",
+  "displayName": "goose"
+}

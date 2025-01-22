@@ -1,0 +1,10 @@
+{
+  "description": "🐘 linter for PostgreSQL, focused on migrations",
+  "homepage": "https://squawkhq.com",
+  "provides": [
+    "squawk"
+  ],
+  "github": "https://github.com/sbdchd/squawk",
+  "project": "squawkhq.com",
+  "displayName": "squawk"
+}

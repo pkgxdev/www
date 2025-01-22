@@ -1,0 +1,13 @@
+{
+  "brief": "CLI to manage emails",
+  "description": "CLI email client written in Rust",
+  "homepage": "https://pimalaya.org",
+  "provides": [
+    "himalaya"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/himalaya",
+  "license": "MIT",
+  "github": "https://github.com/pimalaya/himalaya",
+  "project": "pimalaya.org/himalaya",
+  "displayName": "himalaya"
+}

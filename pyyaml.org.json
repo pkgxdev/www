@@ -1,0 +1,6 @@
+{
+  "description": "Canonical source repository for LibYAML",
+  "homepage": "http://pyyaml.org/wiki/LibYAML",
+  "github": "https://github.com/yaml/libyaml",
+  "project": "pyyaml.org"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Dependency manager for Cocoa projects",
+  "description": "Create and modify Xcode projects from Ruby.",
+  "homepage": "https://cocoapods.org/",
+  "provides": [
+    "xcodeproj"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cocoapods",
+  "license": "MIT",
+  "github": "https://github.com/CocoaPods/Xcodeproj",
+  "project": "cocoapods.org/xcodeproj",
+  "displayName": "xcodeproj"
+}

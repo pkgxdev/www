@@ -1,0 +1,13 @@
+{
+  "brief": "Faster way to switch between clusters and namespaces in kubectl",
+  "description": "Tool that can switch between kubectl contexts easily and create aliases",
+  "homepage": "https://kubectx.dev",
+  "provides": [
+    "kubectx",
+    "kubens"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kubectx",
+  "license": "Apache-2.0",
+  "github": "https://github.com/ahmetb/kubectx",
+  "project": "kubectx.dev"
+}

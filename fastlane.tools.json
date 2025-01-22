@@ -1,0 +1,13 @@
+{
+  "brief": "Easiest way to build and release mobile apps",
+  "description": "🚀 The easiest way to automate building and releasing your iOS and Android apps",
+  "homepage": "https://fastlane.tools",
+  "provides": [
+    "fastlane"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fastlane",
+  "license": "MIT",
+  "github": "https://github.com/fastlane/fastlane",
+  "project": "fastlane.tools",
+  "displayName": "fastlane"
+}

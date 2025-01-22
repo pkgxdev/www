@@ -1,0 +1,10 @@
+{
+  "description": "A modern replacement for ‘ls’.",
+  "homepage": "https://the.exa.website/",
+  "provides": [
+    "exa"
+  ],
+  "github": "https://github.com/ogham/exa",
+  "project": "crates.io/exa",
+  "displayName": "exa"
+}

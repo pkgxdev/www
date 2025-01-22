@@ -1,0 +1,13 @@
+{
+  "brief": "Package manager for kubectl plugins",
+  "description": "📦 Find and install kubectl plugins",
+  "homepage": "https://sigs.k8s.io/krew/",
+  "provides": [
+    "kubectl-krew"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/krew",
+  "license": "Apache-2.0",
+  "github": "https://github.com/kubernetes-sigs/krew",
+  "project": "krew.sigs.k8s.io",
+  "displayName": "kubectl-krew"
+}

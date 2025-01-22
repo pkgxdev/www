@@ -1,0 +1,13 @@
+{
+  "brief": "Fast and simple Node.js version manager",
+  "description": "🚀 Fast and simple Node.js version manager, built in Rust",
+  "homepage": "https://fnm.vercel.app",
+  "provides": [
+    "fnm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fnm",
+  "license": "GPL-3.0-only",
+  "github": "https://github.com/Schniz/fnm",
+  "project": "crates.io/fnm",
+  "displayName": "fnm"
+}

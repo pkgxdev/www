@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "ed"
+  ],
+  "project": "gnu.org/ed",
+  "displayName": "ed"
+}

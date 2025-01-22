@@ -1,0 +1,13 @@
+{
+  "brief": "Fast, async, resource-friendly link checker",
+  "description": "⚡ Fast, async, stream-based link checker written in Rust. Finds broken URLs and mail addresses inside Markdown, HTML, reStructuredText, websites and more!",
+  "homepage": "https://lychee.cli.rs/",
+  "provides": [
+    "lychee"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lychee",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/lycheeverse/lychee",
+  "project": "lychee.cli.rs",
+  "displayName": "lychee"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Semantic Version Util",
+  "provides": [
+    "svu"
+  ],
+  "github": "https://github.com/caarlos0/svu",
+  "project": "github.com/caarlos0/svu",
+  "displayName": "svu"
+}

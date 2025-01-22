@@ -1,0 +1,12 @@
+{
+  "brief": "MarkdownLint Command Line Interface",
+  "description": "CLI for Node.js style checker and lint tool for Markdown files",
+  "provides": [
+    "markdownlint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/markdownlint-cli",
+  "license": "MIT",
+  "github": "https://github.com/igorshubovych/markdownlint-cli",
+  "project": "github.com/igorshubovych/markdownlint-cli",
+  "displayName": "markdownlint"
+}

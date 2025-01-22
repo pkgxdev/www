@@ -1,0 +1,12 @@
+{
+  "brief": "TUI Git client inspired by Magit",
+  "description": "A TUI Git client inspired by Magit",
+  "provides": [
+    "gitu"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gitu",
+  "license": "MIT",
+  "github": "https://github.com/altsem/gitu",
+  "project": "crates.io/gitu",
+  "displayName": "gitu"
+}

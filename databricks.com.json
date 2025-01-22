@@ -1,0 +1,9 @@
+{
+  "description": "Databricks CLI",
+  "provides": [
+    "databricks"
+  ],
+  "github": "https://github.com/databricks/cli",
+  "project": "databricks.com",
+  "displayName": "databricks"
+}

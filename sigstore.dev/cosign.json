@@ -1,0 +1,12 @@
+{
+  "brief": "Container Signing",
+  "description": "Code signing and transparency for containers and binaries",
+  "provides": [
+    "cosign"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cosign",
+  "license": "Apache-2.0",
+  "github": "https://github.com/sigstore/cosign",
+  "project": "sigstore.dev/cosign",
+  "displayName": "cosign"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "C++14 implementation of the TLS-1.3 standard",
+  "provides": [
+    "fizz"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fizz",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/facebookincubator/fizz",
+  "project": "github.com/facebookincubator/fizz",
+  "displayName": "fizz"
+}

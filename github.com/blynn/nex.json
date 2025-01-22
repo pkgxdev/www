@@ -1,0 +1,13 @@
+{
+  "brief": "Lexer for Go",
+  "description": "44BSD re-implementation of vi",
+  "homepage": "https://repo.or.cz/nvi.git",
+  "provides": [
+    "nex"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nvi",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/blynn/nex",
+  "project": "github.com/blynn/nex",
+  "displayName": "nex"
+}

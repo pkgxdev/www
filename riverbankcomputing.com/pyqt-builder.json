@@ -1,0 +1,13 @@
+{
+  "brief": "Tool to build PyQt",
+  "description": "The PyQt build system",
+  "homepage": "https://pyqt-builder.readthedocs.io/",
+  "provides": [
+    "pyqt-bundle"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pyqt-builder",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/Python-PyQt/PyQt-builder",
+  "project": "riverbankcomputing.com/pyqt-builder",
+  "displayName": "pyqt-bundle"
+}

@@ -1,0 +1,5 @@
+{
+  "description": "CBOR protocol implementation for C",
+  "github": "https://github.com/PJK/libcbor",
+  "project": "github.com/PJK/libcbor"
+}

@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "grep"
+  ],
+  "project": "gnu.org/grep",
+  "displayName": "grep"
+}

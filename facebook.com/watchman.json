@@ -1,0 +1,17 @@
+{
+  "brief": "Watch files and take action when they change",
+  "description": "Watches files and records, or triggers actions, when they change. ",
+  "homepage": "https://facebook.github.io/watchman/",
+  "provides": [
+    "watchman",
+    "watchman-diag",
+    "watchman-make",
+    "watchman-wait",
+    "watchman-replicate-subscription",
+    "watchmanctl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/watchman",
+  "license": "MIT",
+  "github": "https://github.com/facebook/watchman",
+  "project": "facebook.com/watchman"
+}

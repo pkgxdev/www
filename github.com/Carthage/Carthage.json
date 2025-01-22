@@ -1,0 +1,12 @@
+{
+  "brief": "Decentralized dependency manager for Cocoa",
+  "description": "A simple, decentralized dependency manager for Cocoa",
+  "provides": [
+    "carthage"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/carthage",
+  "license": "MIT",
+  "github": "https://github.com/Carthage/Carthage",
+  "project": "github.com/Carthage/Carthage",
+  "displayName": "carthage"
+}

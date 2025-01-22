@@ -1,0 +1,13 @@
+{
+  "brief": "Download YouTube videos from the command-line",
+  "description": "Command-line program to download videos from YouTube.com and other video sites",
+  "homepage": "https://ytdl-org.github.io/youtube-dl/",
+  "provides": [
+    "youtube-dl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/youtube-dl",
+  "license": "Unlicense",
+  "github": "https://github.com/ytdl-org/youtube-dl",
+  "project": "youtube-dl.org",
+  "displayName": "youtube-dl"
+}

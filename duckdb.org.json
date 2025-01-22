@@ -1,0 +1,13 @@
+{
+  "brief": "Embeddable SQL OLAP Database Management System",
+  "description": "DuckDB is an analytical in-process SQL database management system",
+  "homepage": "https://www.duckdb.org",
+  "provides": [
+    "duckdb"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/duckdb",
+  "license": "MIT",
+  "github": "https://github.com/duckdb/duckdb",
+  "project": "duckdb.org",
+  "displayName": "duckdb"
+}

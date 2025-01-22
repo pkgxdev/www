@@ -1,0 +1,13 @@
+{
+  "brief": "Erlang build tool",
+  "description": "Erlang build tool that makes it easy to compile and test Erlang applications and releases.",
+  "homepage": "https://rebar3.org",
+  "provides": [
+    "rebar3"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rebar3",
+  "license": "Apache-2.0",
+  "github": "https://github.com/erlang/rebar3",
+  "project": "rebar3.org",
+  "displayName": "rebar3"
+}

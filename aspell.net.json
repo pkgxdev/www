@@ -1,0 +1,18 @@
+{
+  "description": "Spell checker with better logic than ispell",
+  "homepage": "http://aspell.net/",
+  "provides": [
+    "aspell",
+    "aspell-import",
+    "precat",
+    "preunzip",
+    "prezip",
+    "prezip-bin",
+    "pspell-config",
+    "run-with-aspell",
+    "word-list-compress"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/aspell",
+  "license": "LGPL-2.1-only",
+  "project": "aspell.net"
+}

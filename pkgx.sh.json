@@ -1,0 +1,13 @@
+{
+  "brief": "Run Anything",
+  "description": "Standalone binary that can run anything",
+  "homepage": "https://pkgx.sh",
+  "provides": [
+    "pkgx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pkgx",
+  "license": "Apache-2.0",
+  "github": "https://github.com/pkgxdev/pkgx",
+  "project": "pkgx.sh",
+  "displayName": "pkgx"
+}

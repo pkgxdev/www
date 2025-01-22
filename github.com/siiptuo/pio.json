@@ -1,0 +1,13 @@
+{
+  "brief": "Your Gateway to Embedded Software Development Excellence",
+  "description": "Your Gateway to Embedded Software Development Excellence :alien:",
+  "homepage": "https://platformio.org/",
+  "provides": [
+    "pio"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/platformio",
+  "license": "Apache-2.0",
+  "github": "https://github.com/platformio/platformio-core",
+  "project": "github.com/siiptuo/pio",
+  "displayName": "pio"
+}

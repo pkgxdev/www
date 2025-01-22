@@ -1,0 +1,10 @@
+{
+  "description": "the package manager for JavaScript",
+  "homepage": "https://docs.npmjs.com/cli/",
+  "provides": [
+    "npm",
+    "npx"
+  ],
+  "github": "https://github.com/npm/cli",
+  "project": "npmjs.com"
+}

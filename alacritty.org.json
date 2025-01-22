@@ -1,0 +1,10 @@
+{
+  "description": "A cross-platform, OpenGL terminal emulator.",
+  "homepage": "https://alacritty.org",
+  "provides": [
+    "alacritty"
+  ],
+  "github": "https://github.com/alacritty/alacritty",
+  "project": "alacritty.org",
+  "displayName": "alacritty"
+}

@@ -1,0 +1,5 @@
+{
+  "description": "Use Rustls from any language",
+  "github": "https://github.com/rustls/rustls-ffi",
+  "project": "crates.io/rustls-ffi"
+}

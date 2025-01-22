@@ -1,0 +1,13 @@
+{
+  "brief": "A terminal workspace with batteries included",
+  "description": "Pluggable terminal workspace, with terminal multiplexer as the base feature",
+  "homepage": "https://zellij.dev",
+  "provides": [
+    "zellij"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/zellij",
+  "license": "MIT",
+  "github": "https://github.com/zellij-org/zellij",
+  "project": "crates.io/zellij",
+  "displayName": "zellij"
+}

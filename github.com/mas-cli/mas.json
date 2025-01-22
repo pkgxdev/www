@@ -1,0 +1,12 @@
+{
+  "brief": "Mac App Store command-line interface",
+  "description": ":package: Mac App Store command line interface",
+  "provides": [
+    "mas"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mas",
+  "license": "MIT",
+  "github": "https://github.com/mas-cli/mas",
+  "project": "github.com/mas-cli/mas",
+  "displayName": "mas"
+}

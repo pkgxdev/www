@@ -1,0 +1,12 @@
+{
+  "description": "Go support for Google's protocol buffers",
+  "homepage": "https://developers.google.com/protocol-buffers",
+  "provides": [
+    "protoc-gen-go"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/protoc-gen-go",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/protocolbuffers/protobuf-go",
+  "project": "google.com/protobuf-go",
+  "displayName": "protoc-gen-go"
+}

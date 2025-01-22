@@ -1,0 +1,13 @@
+{
+  "brief": "Modern Python package and dependency manager supporting the latest PEP standards",
+  "description": "A modern Python package and dependency manager supporting the latest PEP standards",
+  "homepage": "https://pdm.fming.dev",
+  "provides": [
+    "pdm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pdm",
+  "license": "MIT",
+  "github": "https://github.com/pdm-project/pdm",
+  "project": "pdm.fming.dev",
+  "displayName": "pdm"
+}

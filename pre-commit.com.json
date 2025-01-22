@@ -1,0 +1,13 @@
+{
+  "brief": "Framework for managing multi-language pre-commit hooks",
+  "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+  "homepage": "https://pre-commit.com/",
+  "provides": [
+    "pre-commit"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pre-commit",
+  "license": "MIT",
+  "github": "https://github.com/pre-commit/pre-commit",
+  "project": "pre-commit.com",
+  "displayName": "pre-commit"
+}

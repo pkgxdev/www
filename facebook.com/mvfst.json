@@ -1,0 +1,5 @@
+{
+  "description": "An implementation of the QUIC transport protocol.",
+  "github": "https://github.com/facebook/mvfst",
+  "project": "facebook.com/mvfst"
+}

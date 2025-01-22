@@ -1,0 +1,11 @@
+{
+  "provides": [
+    "gensquashfs",
+    "rdsquashfs",
+    "sqfs2tar",
+    "tar2sqfs",
+    "sqfsdiff"
+  ],
+  "project": "github.com/AgentD/squashfs-tools-ng",
+  "displayName": "gensquashfs"
+}

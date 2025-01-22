@@ -1,0 +1,13 @@
+{
+  "brief": "Firebase command-line tools",
+  "description": "The Firebase Command Line Tools",
+  "homepage": "https://firebase.google.com/docs/cli/",
+  "provides": [
+    "firebase"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/firebase-cli",
+  "license": "MIT",
+  "github": "https://github.com/firebase/firebase-tools",
+  "project": "google.com/firebase-tools",
+  "displayName": "firebase"
+}

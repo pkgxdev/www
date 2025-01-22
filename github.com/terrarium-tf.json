@@ -1,0 +1,9 @@
+{
+  "description": "terraform wrapper which transparent loads env files for stacks",
+  "provides": [
+    "terrarium"
+  ],
+  "github": "https://github.com/terrarium-tf/cli",
+  "project": "github.com/terrarium-tf",
+  "displayName": "terrarium"
+}

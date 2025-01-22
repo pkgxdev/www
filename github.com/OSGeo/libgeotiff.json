@@ -1,0 +1,13 @@
+{
+  "brief": "Library and tools for dealing with GeoTIFF",
+  "description": "Official repository of the libgeotiff project",
+  "provides": [
+    "applygeo",
+    "geotifcp",
+    "listgeo"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libgeotiff",
+  "license": "MIT",
+  "github": "https://github.com/OSGeo/libgeotiff",
+  "project": "github.com/OSGeo/libgeotiff"
+}

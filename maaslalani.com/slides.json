@@ -1,0 +1,12 @@
+{
+  "description": "Terminal based presentation tool",
+  "homepage": "http://maaslalani.com/slides/",
+  "provides": [
+    "slides"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/slides",
+  "license": "MIT",
+  "github": "https://github.com/maaslalani/slides",
+  "project": "maaslalani.com/slides",
+  "displayName": "slides"
+}

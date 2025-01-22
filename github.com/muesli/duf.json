@@ -1,0 +1,11 @@
+{
+  "description": "Disk Usage/Free Utility - a better 'df' alternative",
+  "provides": [
+    "duf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/duf",
+  "license": "MIT",
+  "github": "https://github.com/muesli/duf",
+  "project": "github.com/muesli/duf",
+  "displayName": "duf"
+}

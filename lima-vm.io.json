@@ -1,0 +1,18 @@
+{
+  "brief": "Linux virtual machines",
+  "description": "Linux virtual machines, with a focus on running containers",
+  "homepage": "https://lima-vm.io/",
+  "provides": [
+    "apptainer.lima",
+    "docker.lima",
+    "kubectl.lima",
+    "lima",
+    "limactl",
+    "nerdctl.lima",
+    "podman.lima"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lima",
+  "license": "Apache-2.0",
+  "github": "https://github.com/lima-vm/lima",
+  "project": "lima-vm.io"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Tool to enforce Swift style and conventions",
+  "description": "A tool to enforce Swift style and conventions.",
+  "homepage": "https://realm.github.io/SwiftLint",
+  "provides": [
+    "swiftlint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/swiftlint",
+  "license": "MIT",
+  "github": "https://github.com/realm/SwiftLint",
+  "project": "github.com/realm/SwiftLint",
+  "displayName": "swiftlint"
+}

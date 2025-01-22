@@ -1,0 +1,12 @@
+{
+  "description": "Modern, extensible Python project management",
+  "homepage": "https://hatch.pypa.io/latest/",
+  "provides": [
+    "hatch",
+    "hatchling"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hatch",
+  "license": "MIT",
+  "github": "https://github.com/pypa/hatch",
+  "project": "pypa.io/hatch"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Command-line invoice generator",
+  "description": "Command line invoice generator",
+  "provides": [
+    "invoice"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/invoice",
+  "license": "MIT",
+  "github": "https://github.com/maaslalani/invoice",
+  "project": "github.com/maaslalani/invoice",
+  "displayName": "invoice"
+}

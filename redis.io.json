@@ -1,0 +1,14 @@
+{
+  "brief": "Persistent key-value database, with built-in net interface",
+  "description": "Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.",
+  "homepage": "https://redis.io/",
+  "provides": [
+    "redis-server",
+    "redis-cli",
+    "redis-benchmark"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/redis",
+  "license": "BSD-3-Clause AND BSD-2-Clause AND BSL-1.0 AND MIT AND (CC0-1.0 OR BSD-2-Clause)",
+  "github": "https://github.com/redis/redis",
+  "project": "redis.io"
+}

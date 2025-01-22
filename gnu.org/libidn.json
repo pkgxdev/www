@@ -1,0 +1,11 @@
+{
+  "description": "International domain name library",
+  "homepage": "https://www.gnu.org/software/libidn/",
+  "provides": [
+    "idn"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libidn",
+  "license": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+  "project": "gnu.org/libidn",
+  "displayName": "idn"
+}

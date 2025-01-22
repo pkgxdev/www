@@ -1,0 +1,13 @@
+{
+  "brief": "Highly customizable changelog generator",
+  "description": "A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️ ",
+  "homepage": "https://git-cliff.org",
+  "provides": [
+    "git-cliff"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-cliff",
+  "license": "Apache-2.0 AND MIT",
+  "github": "https://github.com/orhun/git-cliff",
+  "project": "git-cliff.org",
+  "displayName": "git-cliff"
+}

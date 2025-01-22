@@ -1,0 +1,12 @@
+{
+  "brief": "HTTP load testing application written in Rust",
+  "description": "Drill is an HTTP load testing application written in Rust",
+  "provides": [
+    "drill",
+    "ldns-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/drill",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/fcsonline/drill",
+  "project": "nlnetlabs.nl/ldns"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Seed your development database with real data ⚡️",
+  "homepage": "https://www.replibyte.com",
+  "provides": [
+    "replibyte"
+  ],
+  "github": "https://github.com/Qovery/Replibyte",
+  "project": "replibyte.com",
+  "displayName": "replibyte"
+}

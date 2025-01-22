@@ -1,0 +1,12 @@
+{
+  "brief": "libsass command line driver",
+  "description": "Wrapper around libsass that helps to create command-line apps",
+  "provides": [
+    "sassc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sassc",
+  "license": "MIT",
+  "github": "https://github.com/sass/sassc",
+  "project": "sass-lang.com/sassc",
+  "displayName": "sassc"
+}

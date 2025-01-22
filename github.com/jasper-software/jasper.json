@@ -1,0 +1,13 @@
+{
+  "brief": "Library for manipulating JPEG-2000 images",
+  "description": "Official Repository for the JasPer Image Coding Toolkit",
+  "homepage": "https://ece.engr.uvic.ca/~frodo/jasper/",
+  "provides": [
+    "jasper"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jasper",
+  "license": "JasPer-2.0",
+  "github": "https://github.com/jasper-software/jasper",
+  "project": "github.com/jasper-software/jasper",
+  "displayName": "jasper"
+}

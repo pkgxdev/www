@@ -1,0 +1,5 @@
+{
+  "description": "Shared library for Watchman and Eden projects. ",
+  "github": "https://github.com/facebookexperimental/edencommon",
+  "project": "facebook.com/edencommon"
+}

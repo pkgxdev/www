@@ -1,0 +1,12 @@
+{
+  "description": "Fast linters runner for Go",
+  "homepage": "https://golangci-lint.run/",
+  "provides": [
+    "golangci-lint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/golangci-lint",
+  "license": "GPL-3.0-only",
+  "github": "https://github.com/golangci/golangci-lint",
+  "project": "golangci-lint.run",
+  "displayName": "golangci-lint"
+}

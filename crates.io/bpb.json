@@ -1,0 +1,9 @@
+{
+  "description": "boats's personal barricade",
+  "provides": [
+    "bpb"
+  ],
+  "github": "https://github.com/withoutboats/bpb",
+  "project": "crates.io/bpb",
+  "displayName": "bpb"
+}

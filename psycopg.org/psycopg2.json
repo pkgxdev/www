@@ -1,0 +1,6 @@
+{
+  "description": "PostgreSQL database adapter for the Python programming language",
+  "homepage": "https://www.psycopg.org/",
+  "github": "https://github.com/psycopg/psycopg2",
+  "project": "psycopg.org/psycopg2"
+}

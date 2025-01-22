@@ -1,0 +1,13 @@
+{
+  "brief": "View disk space usage and delete unwanted data, fast",
+  "description": "View disk space usage and delete unwanted data, fast.",
+  "homepage": "https://lib.rs/crates/dua-cli",
+  "provides": [
+    "dua"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dua-cli",
+  "license": "MIT",
+  "github": "https://github.com/Byron/dua-cli",
+  "project": "crates.io/dua",
+  "displayName": "dua"
+}

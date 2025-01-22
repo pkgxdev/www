@@ -1,0 +1,9 @@
+{
+  "description": "Locally run an Instruction-Tuned Chat-Style LLM ",
+  "provides": [
+    "alpaca.cpp"
+  ],
+  "github": "https://github.com/antimatter15/alpaca.cpp",
+  "project": "github.com/antimatter15/alpaca.cpp",
+  "displayName": "alpaca.cpp"
+}

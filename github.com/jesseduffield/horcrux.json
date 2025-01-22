@@ -1,0 +1,9 @@
+{
+  "description": "Split your file into encrypted fragments so that you don't need to remember a passcode",
+  "provides": [
+    "horcrux"
+  ],
+  "github": "https://github.com/jesseduffield/horcrux",
+  "project": "github.com/jesseduffield/horcrux",
+  "displayName": "horcrux"
+}

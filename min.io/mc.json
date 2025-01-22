@@ -1,0 +1,13 @@
+{
+  "brief": "Midnight Commander's repository",
+  "description": "Terminal-based visual file manager",
+  "homepage": "https://www.midnight-commander.org/",
+  "provides": [
+    "mc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/midnight-commander",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/MidnightCommander/mc",
+  "project": "min.io/mc",
+  "displayName": "mc"
+}

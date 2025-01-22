@@ -1,0 +1,13 @@
+{
+  "brief": "Open Source realtime backend in 1 file",
+  "description": "Open source backend for your next project in 1 file",
+  "homepage": "https://pocketbase.io/",
+  "provides": [
+    "pocketbase"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pocketbase",
+  "license": "MIT",
+  "github": "https://github.com/pocketbase/pocketbase",
+  "project": "pocketbase.io",
+  "displayName": "pocketbase"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Free (GNU) replacement for the Pico text editor",
+  "homepage": "https://www.nano-editor.org/",
+  "provides": [
+    "nano"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nano",
+  "license": "GPL-3.0-or-later",
+  "project": "nano-editor.org",
+  "displayName": "nano"
+}

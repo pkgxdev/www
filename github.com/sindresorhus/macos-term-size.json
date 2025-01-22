@@ -1,0 +1,11 @@
+{
+  "description": "Get the terminal window size on macOS",
+  "provides": [
+    "term-size"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/macos-term-size",
+  "license": "MIT",
+  "github": "https://github.com/sindresorhus/macos-term-size",
+  "project": "github.com/sindresorhus/macos-term-size",
+  "displayName": "term-size"
+}

@@ -1,0 +1,6 @@
+{
+  "description": "ZeroMQ core engine in C++, implements ZMTP/3.1",
+  "homepage": "https://www.zeromq.org",
+  "github": "https://github.com/zeromq/libzmq",
+  "project": "zeromq.org"
+}

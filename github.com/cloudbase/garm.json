@@ -1,0 +1,10 @@
+{
+  "description": "GitHub Actions Runner Manager",
+  "provides": [
+    "garm",
+    "garm-cli"
+  ],
+  "github": "https://github.com/cloudbase/garm",
+  "project": "github.com/cloudbase/garm",
+  "displayName": "garm"
+}

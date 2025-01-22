@@ -1,0 +1,14 @@
+{
+  "description": "Convert text between DOS, UNIX, and Mac formats",
+  "homepage": "https://waterlan.home.xs4all.nl/dos2unix.html",
+  "provides": [
+    "dos2unix",
+    "mac2unix",
+    "unix2dos",
+    "unix2mac"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dos2unix",
+  "license": "BSD-2-Clause",
+  "project": "waterlan.home.xs4all.nl/dos2unix",
+  "displayName": "dos2unix"
+}

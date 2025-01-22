@@ -1,0 +1,20 @@
+{
+  "brief": "Distributed revision control system",
+  "description": "Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.",
+  "homepage": "https://git-scm.com",
+  "provides": [
+    "git",
+    "git-cvsserver",
+    "git-receive-pack",
+    "git-shell",
+    "git-upload-archive",
+    "git-upload-pack",
+    "scalar",
+    "git-credential-osxkeychain"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git",
+  "license": "GPL-2.0-only",
+  "github": "https://github.com/git/git",
+  "project": "git-scm.org",
+  "displayName": "git"
+}

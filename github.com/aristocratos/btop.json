@@ -1,0 +1,12 @@
+{
+  "brief": "A monitor of resources",
+  "description": "Resource monitor. C++ version and continuation of bashtop and bpytop",
+  "provides": [
+    "btop"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/btop",
+  "license": "Apache-2.0",
+  "github": "https://github.com/aristocratos/btop",
+  "project": "github.com/aristocratos/btop",
+  "displayName": "btop"
+}

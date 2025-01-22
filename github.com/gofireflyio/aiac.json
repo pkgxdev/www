@@ -1,0 +1,9 @@
+{
+  "description": "Artificial Intelligence Infrastructure-as-Code Generator.",
+  "provides": [
+    "aiac"
+  ],
+  "github": "https://github.com/gofireflyio/aiac",
+  "project": "github.com/gofireflyio/aiac",
+  "displayName": "aiac"
+}

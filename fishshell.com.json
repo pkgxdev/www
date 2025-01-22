@@ -1,0 +1,14 @@
+{
+  "brief": "The user-friendly command line shell.",
+  "description": "User-friendly command-line shell for UNIX-like operating systems",
+  "homepage": "https://fishshell.com",
+  "provides": [
+    "fish",
+    "fish_indent",
+    "fish_key_reader"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fish",
+  "license": "GPL-2.0-only",
+  "github": "https://github.com/fish-shell/fish-shell",
+  "project": "fishshell.com"
+}

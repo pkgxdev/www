@@ -1,0 +1,12 @@
+{
+  "description": "CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM",
+  "homepage": "https://aws.amazon.com/serverless/sam/",
+  "provides": [
+    "sam"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/aws-sam-cli",
+  "license": "Apache-2.0",
+  "github": "https://github.com/aws/aws-sam-cli",
+  "project": "aws.amazon.com/sam",
+  "displayName": "sam"
+}

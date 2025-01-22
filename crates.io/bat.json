@@ -1,0 +1,12 @@
+{
+  "brief": "A cat(1) clone with wings.",
+  "description": "Clone of cat(1) with syntax highlighting and Git integration",
+  "provides": [
+    "bat"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bat",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/sharkdp/bat",
+  "project": "crates.io/bat",
+  "displayName": "bat"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "A tool for reverse engineering Android apk files",
+  "description": "Tool for reverse engineering 3rd party, closed, binary Android apps",
+  "homepage": "https://apktool.org/",
+  "provides": [
+    "apktool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/apktool",
+  "license": "Apache-2.0",
+  "github": "https://github.com/iBotPeaches/Apktool",
+  "project": "apktool.org",
+  "displayName": "apktool"
+}

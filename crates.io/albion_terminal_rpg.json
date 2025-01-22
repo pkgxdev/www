@@ -1,0 +1,9 @@
+{
+  "description": "A text-based RPG for the Terminal, written in Rust.",
+  "provides": [
+    "albionrpg"
+  ],
+  "github": "https://github.com/rmj1001/albion-rpg",
+  "project": "crates.io/albion_terminal_rpg",
+  "displayName": "albionrpg"
+}

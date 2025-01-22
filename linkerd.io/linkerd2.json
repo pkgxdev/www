@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line utility to interact with linkerd",
+  "description": "Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x.",
+  "homepage": "https://linkerd.io",
+  "provides": [
+    "linkerd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/linkerd",
+  "license": "Apache-2.0",
+  "github": "https://github.com/linkerd/linkerd2",
+  "project": "linkerd.io/linkerd2",
+  "displayName": "linkerd"
+}

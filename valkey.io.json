@@ -1,0 +1,14 @@
+{
+  "brief": "High-performance data structure server that primarily serves key/value workloads",
+  "description": "A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.",
+  "homepage": "https://valkey.io",
+  "provides": [
+    "valkey-server",
+    "valkey-cli",
+    "valkey-benchmark"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/valkey",
+  "license": "BSD-3-Clause AND BSD-2-Clause AND BSL-1.0 AND MIT AND (CC0-1.0 OR BSD-2-Clause)",
+  "github": "https://github.com/valkey-io/valkey",
+  "project": "valkey.io"
+}

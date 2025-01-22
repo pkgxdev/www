@@ -1,0 +1,13 @@
+{
+  "brief": "Netwide Assembler (NASM) is an 80x86 assembler",
+  "description": "A cross-platform x86 assembler with an Intel-like syntax",
+  "homepage": "https://www.nasm.us/",
+  "provides": [
+    "nasm",
+    "ndisasm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nasm",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/netwide-assembler/nasm",
+  "project": "nasm.us"
+}

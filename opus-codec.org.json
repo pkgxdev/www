@@ -1,0 +1,6 @@
+{
+  "description": "Modern audio compression for the internet.",
+  "homepage": "https://opus-codec.org/",
+  "github": "https://github.com/xiph/opus",
+  "project": "opus-codec.org"
+}

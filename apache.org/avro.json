@@ -1,0 +1,15 @@
+{
+  "brief": "Data serialization system",
+  "description": "Apache Avro is a data serialization system.",
+  "homepage": "https://avro.apache.org/",
+  "provides": [
+    "avroappend",
+    "avrocat",
+    "avromod",
+    "avropipe"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/avro-c",
+  "license": "Apache-2.0",
+  "github": "https://github.com/apache/avro",
+  "project": "apache.org/avro"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Check if an email address exists without sending any email, written in Rust. Comes with a ⚙️ HTTP backend.",
+  "homepage": "https://reacher.email",
+  "provides": [
+    "check_if_email_exists"
+  ],
+  "github": "https://github.com/reacherhq/check-if-email-exists",
+  "project": "reacher.email/check-if-email-exists-cli",
+  "displayName": "check_if_email_exists"
+}

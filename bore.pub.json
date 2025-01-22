@@ -1,0 +1,13 @@
+{
+  "brief": "🕳 bore is a simple CLI tool for making tunnels to localhost",
+  "description": "Modern, simple TCP tunnel in Rust that exposes local ports to a remote server",
+  "homepage": "http://bore.pub",
+  "provides": [
+    "bore"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bore-cli",
+  "license": "MIT",
+  "github": "https://github.com/ekzhang/bore",
+  "project": "bore.pub",
+  "displayName": "bore"
+}

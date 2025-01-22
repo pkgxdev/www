@@ -1,0 +1,10 @@
+{
+  "description": "The SDKMAN! Command Line Interface",
+  "homepage": "https://sdkman.io",
+  "provides": [
+    "sdkman-init.sh"
+  ],
+  "github": "https://github.com/sdkman/sdkman-cli",
+  "project": "sdkman.io",
+  "displayName": "sdkman-init.sh"
+}

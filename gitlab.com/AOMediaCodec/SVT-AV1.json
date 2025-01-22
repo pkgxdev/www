@@ -1,0 +1,11 @@
+{
+  "description": "AV1 encoder",
+  "homepage": "https://gitlab.com/AOMediaCodec/SVT-AV1",
+  "provides": [
+    "SvtAv1EncApp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/svt-av1",
+  "license": "BSD-3-Clause",
+  "project": "gitlab.com/AOMediaCodec/SVT-AV1",
+  "displayName": "SvtAv1EncApp"
+}

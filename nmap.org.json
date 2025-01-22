@@ -1,0 +1,12 @@
+{
+  "description": "Port scanning utility for large networks",
+  "homepage": "https://nmap.org/",
+  "provides": [
+    "nmap",
+    "ncat",
+    "nping"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nmap",
+  "license": "LicenseRef-Homebrew-cannot-represent",
+  "project": "nmap.org"
+}

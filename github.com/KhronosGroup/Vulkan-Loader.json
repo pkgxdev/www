@@ -1,0 +1,6 @@
+{
+  "description": "Vulkan Loader",
+  "homepage": "https://vulkan.lunarg.com/doc/sdk/latest/linux/LoaderInterfaceArchitecture.html",
+  "github": "https://github.com/KhronosGroup/Vulkan-Loader",
+  "project": "github.com/KhronosGroup/Vulkan-Loader"
+}

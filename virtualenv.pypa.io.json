@@ -1,0 +1,13 @@
+{
+  "brief": "Virtual Python Environment builder",
+  "description": "Tool for creating isolated virtual python environments",
+  "homepage": "https://virtualenv.pypa.io/",
+  "provides": [
+    "virtualenv"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/virtualenv",
+  "license": "MIT",
+  "github": "https://github.com/pypa/virtualenv",
+  "project": "virtualenv.pypa.io",
+  "displayName": "virtualenv"
+}

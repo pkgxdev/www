@@ -1,0 +1,13 @@
+{
+  "brief": "Text-mode interface for git",
+  "description": "Text interface for Git repositories",
+  "homepage": "https://jonas.github.io/tig/",
+  "provides": [
+    "tig"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tig",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/jonas/tig",
+  "project": "jonas.github.io/tig",
+  "displayName": "tig"
+}

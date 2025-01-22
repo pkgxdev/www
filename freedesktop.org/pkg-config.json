@@ -1,0 +1,12 @@
+{
+  "brief": "Package compiler and linker metadata toolkit",
+  "description": "package compiler and linker metadata toolkit",
+  "provides": [
+    "pkg-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pkgconf",
+  "license": "ISC",
+  "github": "https://github.com/pkgconf/pkgconf",
+  "project": "freedesktop.org/pkg-config",
+  "displayName": "pkg-config"
+}

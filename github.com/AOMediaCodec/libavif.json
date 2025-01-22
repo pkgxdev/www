@@ -1,0 +1,12 @@
+{
+  "brief": "Library for encoding and decoding .avif files",
+  "description": "libavif - Library for encoding and decoding .avif files",
+  "provides": [
+    "avifenc",
+    "avifdec"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libavif",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/AOMediaCodec/libavif",
+  "project": "github.com/AOMediaCodec/libavif"
+}

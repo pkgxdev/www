@@ -1,0 +1,11 @@
+{
+  "description": "Command-driven, interactive function plotting",
+  "homepage": "http://www.gnuplot.info/",
+  "provides": [
+    "gnuplot"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gnuplot",
+  "license": "gnuplot",
+  "project": "gnuplot.info",
+  "displayName": "gnuplot"
+}

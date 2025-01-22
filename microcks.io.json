@@ -1,0 +1,10 @@
+{
+  "description": "Simple CLI for interacting with Microcks test APIs",
+  "homepage": "https://microcks.io",
+  "provides": [
+    "microcks-cli"
+  ],
+  "github": "https://github.com/microcks/microcks-cli",
+  "project": "microcks.io",
+  "displayName": "microcks-cli"
+}

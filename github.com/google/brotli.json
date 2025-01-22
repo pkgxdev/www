@@ -1,0 +1,12 @@
+{
+  "brief": "Brotli compression format",
+  "description": "Generic-purpose lossless compression algorithm by Google",
+  "provides": [
+    "brotli"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/brotli",
+  "license": "MIT",
+  "github": "https://github.com/google/brotli",
+  "project": "github.com/google/brotli",
+  "displayName": "brotli"
+}

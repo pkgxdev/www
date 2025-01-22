@@ -1,0 +1,9 @@
+{
+  "description": "auto-unseal utility for Hashicorp Vault",
+  "provides": [
+    "vault-unseal"
+  ],
+  "github": "https://github.com/lrstanley/vault-unseal",
+  "project": "github.com/lrstanley/vault-unseal",
+  "displayName": "vault-unseal"
+}

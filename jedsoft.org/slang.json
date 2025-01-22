@@ -1,0 +1,11 @@
+{
+  "description": "Library for creating multi-platform software",
+  "homepage": "https://www.jedsoft.org/slang/",
+  "provides": [
+    "slsh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/s-lang",
+  "license": "GPL-2.0-or-later",
+  "project": "jedsoft.org/slang",
+  "displayName": "slsh"
+}

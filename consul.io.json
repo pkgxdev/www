@@ -1,0 +1,13 @@
+{
+  "brief": "Tool for service discovery, monitoring and configuration",
+  "description": "Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.",
+  "homepage": "https://www.consul.io",
+  "provides": [
+    "consul"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/consul",
+  "license": "MPL-2.0",
+  "github": "https://github.com/hashicorp/consul",
+  "project": "consul.io",
+  "displayName": "consul"
+}

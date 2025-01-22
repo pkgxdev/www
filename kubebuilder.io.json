@@ -1,0 +1,13 @@
+{
+  "brief": "SDK for building Kubernetes APIs using CRDs",
+  "description": "Kubebuilder - SDK for building Kubernetes APIs using CRDs",
+  "homepage": "http://book.kubebuilder.io",
+  "provides": [
+    "kubebuilder"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kubebuilder",
+  "license": "Apache-2.0",
+  "github": "https://github.com/kubernetes-sigs/kubebuilder",
+  "project": "kubebuilder.io",
+  "displayName": "kubebuilder"
+}

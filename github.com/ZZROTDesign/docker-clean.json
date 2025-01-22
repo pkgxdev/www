@@ -1,0 +1,12 @@
+{
+  "brief": "Clean Docker containers, images, networks, and volumes",
+  "description": "A script that cleans docker containers, images, volumes, and networks. ",
+  "provides": [
+    "docker-clean"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/docker-clean",
+  "license": "MIT",
+  "github": "https://github.com/ZZROTDesign/docker-clean",
+  "project": "github.com/ZZROTDesign/docker-clean",
+  "displayName": "docker-clean"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Extremely fast Python linter, written in Rust",
+  "description": "An extremely fast Python linter and code formatter, written in Rust.",
+  "homepage": "https://docs.astral.sh/ruff/",
+  "provides": [
+    "ruff"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ruff",
+  "license": "MIT",
+  "github": "https://github.com/astral-sh/ruff",
+  "project": "astral.sh/ruff",
+  "displayName": "ruff"
+}

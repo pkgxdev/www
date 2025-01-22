@@ -1,0 +1,11 @@
+{
+  "description": "Interpreter for the Dhall language",
+  "homepage": "https://dhall-lang.org/",
+  "provides": [
+    "dhall"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dhall",
+  "license": "BSD-3-Clause",
+  "project": "dhall-lang.org",
+  "displayName": "dhall"
+}

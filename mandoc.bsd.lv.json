@@ -1,0 +1,15 @@
+{
+  "description": "UNIX manpage compiler toolset",
+  "homepage": "https://mandoc.bsd.lv/",
+  "provides": [
+    "bsdapropos",
+    "bsdman",
+    "bsdsoelim",
+    "bsdwhatis",
+    "demandoc",
+    "mandoc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mandoc",
+  "license": "ISC",
+  "project": "mandoc.bsd.lv"
+}

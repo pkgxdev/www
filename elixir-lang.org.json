@@ -1,0 +1,15 @@
+{
+  "brief": "Functional metaprogramming aware language built on Erlang VM",
+  "description": "Elixir is a dynamic, functional language for building scalable and maintainable applications",
+  "homepage": "https://elixir-lang.org/",
+  "provides": [
+    "elixir",
+    "elixirc",
+    "iex",
+    "mix"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/elixir",
+  "license": "Apache-2.0",
+  "github": "https://github.com/elixir-lang/elixir",
+  "project": "elixir-lang.org"
+}

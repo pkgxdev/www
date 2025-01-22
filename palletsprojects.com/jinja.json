@@ -1,0 +1,6 @@
+{
+  "description": "A very fast and expressive template engine.",
+  "homepage": "https://jinja.palletsprojects.com",
+  "github": "https://github.com/pallets/jinja",
+  "project": "palletsprojects.com/jinja"
+}

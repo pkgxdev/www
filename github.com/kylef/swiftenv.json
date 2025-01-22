@@ -1,0 +1,10 @@
+{
+  "description": "Swift Version Manager",
+  "homepage": "https://swiftenv.fuller.li/",
+  "provides": [
+    "swiftenv"
+  ],
+  "github": "https://github.com/kylef/swiftenv",
+  "project": "github.com/kylef/swiftenv",
+  "displayName": "swiftenv"
+}

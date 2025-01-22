@@ -1,0 +1,11 @@
+{
+  "description": "Friendly and fast tool for sending HTTP requests",
+  "provides": [
+    "xh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xh",
+  "license": "MIT",
+  "github": "https://github.com/ducaale/xh",
+  "project": "crates.io/xh",
+  "displayName": "xh"
+}

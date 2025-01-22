@@ -1,0 +1,13 @@
+{
+  "brief": "Thin wrapper around the `aws` command-line interface for use with LocalStack",
+  "description": "💲  \"awslocal\" - Thin wrapper around the \"aws\" command line interface for use with LocalStack",
+  "homepage": "https://www.localstack.cloud/",
+  "provides": [
+    "awslocal"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/awscli-local",
+  "license": "Apache-2.0",
+  "github": "https://github.com/localstack/awscli-local",
+  "project": "localstack.cloud/awscli-local",
+  "displayName": "awslocal"
+}

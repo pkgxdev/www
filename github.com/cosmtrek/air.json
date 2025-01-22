@@ -1,0 +1,9 @@
+{
+  "description": "☁️ Live reload for Go apps",
+  "provides": [
+    "air"
+  ],
+  "github": "https://github.com/cosmtrek/air",
+  "project": "github.com/cosmtrek/air",
+  "displayName": "air"
+}

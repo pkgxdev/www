@@ -1,0 +1,10 @@
+{
+  "description": "Set up and run your CI locally or in any CI Provider in a consistent way https://backdropbuild.com/builds/v4/fluentci",
+  "homepage": "https://fluentci.io",
+  "provides": [
+    "fluentci"
+  ],
+  "github": "https://github.com/fluentci-io/fluentci",
+  "project": "fluentci.io",
+  "displayName": "fluentci"
+}

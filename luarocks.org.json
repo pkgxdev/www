@@ -1,0 +1,13 @@
+{
+  "brief": "Package manager for the Lua programming language",
+  "description": "LuaRocks is the package manager for the Lua programming language.",
+  "homepage": "https://luarocks.org/",
+  "provides": [
+    "luarocks",
+    "luarocks-admin"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/luarocks",
+  "license": "MIT",
+  "github": "https://github.com/luarocks/luarocks",
+  "project": "luarocks.org"
+}

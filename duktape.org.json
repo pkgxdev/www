@@ -1,0 +1,13 @@
+{
+  "brief": "Embeddable Javascript engine with compact footprint",
+  "description": "Duktape - embeddable Javascript engine with a focus on portability and compact footprint",
+  "homepage": "https://duktape.org",
+  "provides": [
+    "duk"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/duktape",
+  "license": "MIT",
+  "github": "https://github.com/svaarala/duktape",
+  "project": "duktape.org",
+  "displayName": "duk"
+}

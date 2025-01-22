@@ -1,0 +1,5 @@
+{
+  "description": "Wangle is a framework providing a set of common client/server abstractions for building services in a consistent, modular, and composable way.",
+  "github": "https://github.com/facebook/wangle",
+  "project": "facebook.com/wangle"
+}

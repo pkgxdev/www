@@ -1,0 +1,14 @@
+{
+  "brief": "Read-only mirror of https://gitlab.gnome.org/GNOME/libgsf",
+  "description": "I/O abstraction library for dealing with structured file formats",
+  "homepage": "https://gitlab.gnome.org/GNOME/libgsf",
+  "provides": [
+    "gsf",
+    "gsf-office-thumbnailer",
+    "gsf-vba-dump"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libgsf",
+  "license": "LGPL-2.1-only",
+  "github": "https://github.com/GNOME/libgsf",
+  "project": "gnome.org/libgsf"
+}

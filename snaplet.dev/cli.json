@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "snaplet"
+  ],
+  "project": "snaplet.dev/cli",
+  "displayName": "snaplet"
+}

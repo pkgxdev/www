@@ -1,0 +1,17 @@
+{
+  "description": "Shell command parallelization utility",
+  "homepage": "https://savannah.gnu.org/projects/parallel/",
+  "provides": [
+    "env_parallel",
+    "niceload",
+    "parallel",
+    "parcat",
+    "parset",
+    "parsort",
+    "sem",
+    "sql"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/parallel",
+  "license": "GPL-3.0-or-later",
+  "project": "gnu.org/parallel"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Define your dev environment as code. For microservice apps on Kubernetes",
+  "description": "Define your dev environment as code. For microservice apps on Kubernetes.",
+  "homepage": "https://tilt.dev/",
+  "provides": [
+    "tilt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tilt",
+  "license": "Apache-2.0",
+  "github": "https://github.com/tilt-dev/tilt",
+  "project": "tilt.dev",
+  "displayName": "tilt"
+}

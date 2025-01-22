@@ -1,0 +1,13 @@
+{
+  "brief": "Friendly and expressive shell",
+  "description": "Powerful scripting language & versatile interactive shell",
+  "homepage": "https://elv.sh/",
+  "provides": [
+    "elvish"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/elvish",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/elves/elvish",
+  "project": "elv.sh",
+  "displayName": "elvish"
+}

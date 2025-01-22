@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line Interface for Scaleway",
+  "description": "Command Line Interface for Scaleway",
+  "homepage": "https://www.scaleway.com/en/cli/",
+  "provides": [
+    "scw"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/scw",
+  "license": "Apache-2.0",
+  "github": "https://github.com/scaleway/scaleway-cli",
+  "project": "scaleway.com",
+  "displayName": "scw"
+}

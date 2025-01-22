@@ -1,0 +1,13 @@
+{
+  "brief": "🤖 Just a command runner",
+  "description": "Handy way to save and run project-specific commands",
+  "homepage": "https://just.systems",
+  "provides": [
+    "just"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/just",
+  "license": "CC0-1.0",
+  "github": "https://github.com/casey/just",
+  "project": "just.systems",
+  "displayName": "just"
+}

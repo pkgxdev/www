@@ -1,0 +1,9 @@
+{
+  "description": "A Gradio web UI for Large Language Models with support for multiple inference backends.",
+  "provides": [
+    "text-generation-webui"
+  ],
+  "github": "https://github.com/oobabooga/text-generation-webui",
+  "project": "github.com/oobabooga/text-generation-webui",
+  "displayName": "text-generation-webui"
+}

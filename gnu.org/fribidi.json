@@ -1,0 +1,12 @@
+{
+  "brief": "GNU FriBidi",
+  "description": "Implementation of the Unicode BiDi algorithm",
+  "provides": [
+    "fribidi"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fribidi",
+  "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+  "github": "https://github.com/fribidi/fribidi",
+  "project": "gnu.org/fribidi",
+  "displayName": "fribidi"
+}

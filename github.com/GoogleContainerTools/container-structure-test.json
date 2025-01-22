@@ -1,0 +1,12 @@
+{
+  "brief": "Validate the structure of your container images",
+  "description": "validate the structure of your container images",
+  "provides": [
+    "container-structure-test"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/container-structure-test",
+  "license": "Apache-2.0",
+  "github": "https://github.com/GoogleContainerTools/container-structure-test",
+  "project": "github.com/GoogleContainerTools/container-structure-test",
+  "displayName": "container-structure-test"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Terraform Pull Request Automation",
+  "description": "Terraform Pull Request Automation tool",
+  "homepage": "https://www.runatlantis.io/",
+  "provides": [
+    "atlantis"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/atlantis",
+  "license": "Apache-2.0",
+  "github": "https://github.com/runatlantis/atlantis",
+  "project": "runatlantis.io",
+  "displayName": "atlantis"
+}

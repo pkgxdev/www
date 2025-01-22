@@ -1,0 +1,14 @@
+{
+  "description": "Generate introspection data for GObject libraries",
+  "homepage": "https://gi.readthedocs.io/en/latest/",
+  "provides": [
+    "g-ir-annotation-tool",
+    "g-ir-compiler",
+    "g-ir-generate",
+    "g-ir-inspect",
+    "g-ir-scanner"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gobject-introspection",
+  "license": "GPL-2.0-or-later AND LGPL-2.0-or-later AND MIT",
+  "project": "gnome.org/gobject-introspection"
+}

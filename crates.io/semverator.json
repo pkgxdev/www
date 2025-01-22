@@ -1,0 +1,8 @@
+{
+  "provides": [
+    "semverator"
+  ],
+  "github": "https://github.com/jhheider/semverator",
+  "project": "crates.io/semverator",
+  "displayName": "semverator"
+}

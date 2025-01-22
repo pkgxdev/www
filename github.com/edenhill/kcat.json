@@ -1,0 +1,12 @@
+{
+  "brief": "Generic command-line non-JVM Apache Kafka producer and consumer",
+  "description": "Generic command line non-JVM Apache Kafka producer and consumer",
+  "provides": [
+    "kcat"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kcat",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/edenhill/kcat",
+  "project": "github.com/edenhill/kcat",
+  "displayName": "kcat"
+}

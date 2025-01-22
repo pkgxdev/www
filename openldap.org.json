@@ -1,0 +1,19 @@
+{
+  "description": "Open source suite of directory software",
+  "homepage": "https://www.openldap.org/software/",
+  "provides": [
+    "ldapcompare",
+    "ldapdelete",
+    "ldapexop",
+    "ldapmodify",
+    "ldapmodrdn",
+    "ldappasswd",
+    "ldapsearch",
+    "ldapurl",
+    "ldapvc",
+    "ldapwhoami"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/openldap",
+  "license": "OLDAP-2.8",
+  "project": "openldap.org"
+}

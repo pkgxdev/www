@@ -1,0 +1,13 @@
+{
+  "brief": "Power of curl, ease of use of httpie",
+  "description": "The power of curl, the ease of use of httpie.",
+  "homepage": "https://rs.github.io/curlie",
+  "provides": [
+    "curlie"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/curlie",
+  "license": "MIT",
+  "github": "https://github.com/rs/curlie",
+  "project": "curlie.io",
+  "displayName": "curlie"
+}

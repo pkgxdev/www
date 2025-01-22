@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line tool for DigitalOcean",
+  "description": "The official command line interface for the DigitalOcean API.",
+  "homepage": "https://docs.digitalocean.com/reference/doctl/",
+  "provides": [
+    "doctl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/doctl",
+  "license": "Apache-2.0",
+  "github": "https://github.com/digitalocean/doctl",
+  "project": "digitalocean.com/doctl",
+  "displayName": "doctl"
+}

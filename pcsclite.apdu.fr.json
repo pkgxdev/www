@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "pcscd"
+  ],
+  "project": "pcsclite.apdu.fr",
+  "displayName": "pcscd"
+}

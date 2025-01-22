@@ -1,0 +1,13 @@
+{
+  "brief": "Code surgeon for precise text and code transplantation",
+  "description": "A grep-like tool which understands source code syntax and allows for manipulation in addition to search",
+  "homepage": "https://crates.io/crates/srgn/",
+  "provides": [
+    "srgn"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/srgn",
+  "license": "MIT",
+  "github": "https://github.com/alexpovel/srgn",
+  "project": "crates.io/srgn",
+  "displayName": "srgn"
+}

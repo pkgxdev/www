@@ -1,0 +1,13 @@
+{
+  "brief": "Ruby version manager",
+  "description": "Manage your app's Ruby environment",
+  "homepage": "https://rbenv.org",
+  "provides": [
+    "rbenv"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rbenv",
+  "license": "MIT",
+  "github": "https://github.com/rbenv/rbenv",
+  "project": "github.com/rbenv/rbenv",
+  "displayName": "rbenv"
+}

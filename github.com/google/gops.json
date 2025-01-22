@@ -1,0 +1,12 @@
+{
+  "brief": "Tool to list and diagnose Go processes currently running on your system",
+  "description": "A tool to list and diagnose Go processes currently running on your system",
+  "provides": [
+    "gops"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gops",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/google/gops",
+  "project": "github.com/google/gops",
+  "displayName": "gops"
+}

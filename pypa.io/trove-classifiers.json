@@ -1,0 +1,6 @@
+{
+  "description": "Canonical source for classifiers on PyPI.",
+  "homepage": "https://pypi.org/p/trove-classifiers/",
+  "github": "https://github.com/pypa/trove-classifiers",
+  "project": "pypa.io/trove-classifiers"
+}

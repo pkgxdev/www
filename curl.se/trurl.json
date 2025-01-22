@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line tool for URL parsing and manipulation",
+  "description": "a command line tool for URL parsing and manipulation.",
+  "homepage": "https://curl.se/trurl/",
+  "provides": [
+    "trurl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/trurl",
+  "license": "curl",
+  "github": "https://github.com/curl/trurl",
+  "project": "curl.se/trurl",
+  "displayName": "trurl"
+}

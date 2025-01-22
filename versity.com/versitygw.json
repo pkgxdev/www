@@ -1,0 +1,13 @@
+{
+  "brief": "Versity S3 Gateway",
+  "description": "versity s3 gateway",
+  "homepage": "https://www.versity.com/products/versitygw/",
+  "provides": [
+    "versitygw"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/versitygw",
+  "license": "Apache-2.0",
+  "github": "https://github.com/versity/versitygw",
+  "project": "versity.com/versitygw",
+  "displayName": "versitygw"
+}

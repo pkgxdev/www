@@ -1,0 +1,13 @@
+{
+  "brief": "Volta: JS Toolchains as Code. ⚡",
+  "description": "JavaScript toolchain manager for reproducible environments",
+  "homepage": "https://volta.sh",
+  "provides": [
+    "volta"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/volta",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/volta-cli/volta",
+  "project": "volta.sh",
+  "displayName": "volta"
+}

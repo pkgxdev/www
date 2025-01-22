@@ -1,0 +1,10 @@
+{
+  "description": "A Ruby static code analyzer and formatter, based on the community Ruby style guide.",
+  "homepage": "https://docs.rubocop.org",
+  "provides": [
+    "rubocop"
+  ],
+  "github": "https://github.com/rubocop/rubocop",
+  "project": "rubocop.org",
+  "displayName": "rubocop"
+}

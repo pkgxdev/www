@@ -1,0 +1,11 @@
+{
+  "description": "SOcket CAT: netcat on steroids",
+  "homepage": "http://www.dest-unreach.org/socat/",
+  "provides": [
+    "socat"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/socat",
+  "license": "GPL-2.0-only",
+  "project": "dest-unreach.org/socat",
+  "displayName": "socat"
+}

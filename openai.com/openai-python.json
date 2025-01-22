@@ -1,0 +1,10 @@
+{
+  "description": "The official Python library for the OpenAI API",
+  "homepage": "https://pypi.org/project/openai/",
+  "provides": [
+    "openai"
+  ],
+  "github": "https://github.com/openai/openai-python",
+  "project": "openai.com/openai-python",
+  "displayName": "openai"
+}

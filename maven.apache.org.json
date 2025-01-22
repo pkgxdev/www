@@ -1,0 +1,14 @@
+{
+  "brief": "Apache Maven core",
+  "description": "Java-based project management",
+  "homepage": "https://maven.apache.org/",
+  "provides": [
+    "mvn",
+    "mvnDebug",
+    "mvnyjp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/maven",
+  "license": "Apache-2.0",
+  "github": "https://github.com/apache/maven",
+  "project": "maven.apache.org"
+}

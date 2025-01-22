@@ -1,0 +1,10 @@
+{
+  "description": "Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources",
+  "homepage": "https://terratag.io",
+  "provides": [
+    "terratag"
+  ],
+  "github": "https://github.com/env0/terratag",
+  "project": "terratag.io",
+  "displayName": "terratag"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "A new network stack based on gVisor",
+  "provides": [
+    "gvproxy",
+    "qemu-wrapper"
+  ],
+  "github": "https://github.com/containers/gvisor-tap-vsock",
+  "project": "github.com/containers/gvisor-tap-vsock"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "AVIF image creator in pure Rust",
+  "homepage": "https://lib.rs/cavif",
+  "provides": [
+    "cavif"
+  ],
+  "github": "https://github.com/kornelski/cavif-rs",
+  "project": "crates.io/cavif",
+  "displayName": "cavif"
+}

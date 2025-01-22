@@ -1,0 +1,9 @@
+{
+  "description": "Manage multiple git repositories",
+  "provides": [
+    "gitopolis"
+  ],
+  "github": "https://github.com/rustworkshop/gitopolis",
+  "project": "crates.io/gitopolis",
+  "displayName": "gitopolis"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit",
+  "description": "concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit",
+  "homepage": "https://github.com/moby/moby/issues/34227",
+  "provides": [
+    "buildctl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/buildkit",
+  "license": "Apache-2.0",
+  "github": "https://github.com/moby/buildkit",
+  "project": "github.com/moby/buildkit",
+  "displayName": "buildctl"
+}

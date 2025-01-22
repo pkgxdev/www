@@ -1,0 +1,9 @@
+{
+  "description": "Tool to generate terraform import statements to simplify state migrations from one terraform code base to another",
+  "provides": [
+    "tf-import-gen"
+  ],
+  "github": "https://github.com/kishaningithub/tf-import-gen",
+  "project": "github.com/kishaningithub/tf-import-gen",
+  "displayName": "tf-import-gen"
+}

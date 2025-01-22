@@ -1,0 +1,12 @@
+{
+  "description": "Little helper to run CNCF's k3s in Docker",
+  "homepage": "https://k3d.io",
+  "provides": [
+    "k3d"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/k3d",
+  "license": "MIT",
+  "github": "https://github.com/k3d-io/k3d",
+  "project": "k3d.io",
+  "displayName": "k3d"
+}

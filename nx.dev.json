@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "nx"
+  ],
+  "project": "nx.dev",
+  "displayName": "nx"
+}

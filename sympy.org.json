@@ -1,0 +1,6 @@
+{
+  "description": "A computer algebra system written in pure Python",
+  "homepage": "https://sympy.org/",
+  "github": "https://github.com/sympy/sympy",
+  "project": "sympy.org"
+}

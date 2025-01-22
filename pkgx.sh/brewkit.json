@@ -1,0 +1,12 @@
+{
+  "brief": "Terminal EPUB Reader",
+  "description": "Terminal Epub reader",
+  "provides": [
+    "bk"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bk",
+  "license": "MIT",
+  "github": "https://github.com/aeosynth/bk",
+  "project": "pkgx.sh/brewkit",
+  "displayName": "bk"
+}

@@ -1,0 +1,24 @@
+{
+  "description": "High performance key/value database",
+  "homepage": "https://www.oracle.com/database/technologies/related/berkeleydb.html",
+  "provides": [
+    "db_verify",
+    "db_upgrade",
+    "db_tuner",
+    "db_replicate",
+    "db_stat",
+    "db_recover",
+    "db_load",
+    "db_log_verify",
+    "db_printlog",
+    "db_dump",
+    "db_hotbackup",
+    "db_deadlock",
+    "db_checkpoint",
+    "db_convert",
+    "db_archive"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/berkeley-db",
+  "license": "AGPL-3.0-only",
+  "project": "oracle.com/berkeley-db"
+}

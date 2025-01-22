@@ -1,0 +1,12 @@
+{
+  "brief": "AI on the command-line",
+  "description": "AI on the command line",
+  "provides": [
+    "mods"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mods",
+  "license": "MIT",
+  "github": "https://github.com/charmbracelet/mods",
+  "project": "charm.sh/mods",
+  "displayName": "mods"
+}

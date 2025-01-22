@@ -1,0 +1,13 @@
+{
+  "brief": "Use CircleCI from the command line",
+  "description": "Enables you to reproduce the CircleCI environment locally",
+  "homepage": "https://circleci.com/docs/2.0/local-cli/",
+  "provides": [
+    "circleci"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/circleci",
+  "license": "MIT",
+  "github": "https://github.com/CircleCI-Public/circleci-cli",
+  "project": "circleci.com",
+  "displayName": "circleci"
+}

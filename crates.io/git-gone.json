@@ -1,0 +1,10 @@
+{
+  "description": "Cleanup stale Git branches of pull requests",
+  "homepage": "https://crates.io/crates/git-gone",
+  "provides": [
+    "git-gone"
+  ],
+  "github": "https://github.com/swsnr/git-gone",
+  "project": "crates.io/git-gone",
+  "displayName": "git-gone"
+}

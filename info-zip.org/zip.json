@@ -1,0 +1,13 @@
+{
+  "description": "Compression and file packaging/archive utility",
+  "homepage": "https://infozip.sourceforge.net/Zip.html",
+  "provides": [
+    "zip",
+    "zipcloak",
+    "zipnote",
+    "zipsplit"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/zip",
+  "license": "Info-ZIP",
+  "project": "info-zip.org/zip"
+}

@@ -1,0 +1,18 @@
+{
+  "description": "Open source RabbitMQ: core server and tier 1 (built-in) plugins",
+  "homepage": "https://www.rabbitmq.com/",
+  "provides": [
+    "rabbitmqctl",
+    "rabbitmq-defaults",
+    "rabbitmq-diagnostics",
+    "rabbitmq-env",
+    "rabbitmq-plugins",
+    "rabbitmq-queues",
+    "rabbitmq-server",
+    "rabbitmq-streams",
+    "rabbitmq-upgrade",
+    "vmware-rabbitmq"
+  ],
+  "github": "https://github.com/rabbitmq/rabbitmq-server",
+  "project": "rabbitmq.com"
+}

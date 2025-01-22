@@ -1,0 +1,13 @@
+{
+  "brief": "Generic syntax highlighter",
+  "description": "Pygments is a generic syntax highlighter written in Python",
+  "homepage": "https://pygments.org/",
+  "provides": [
+    "pygmentize"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pygments",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/pygments/pygments",
+  "project": "pygments.org",
+  "displayName": "pygmentize"
+}

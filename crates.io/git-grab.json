@@ -1,0 +1,12 @@
+{
+  "brief": "Clone a git repository into a standard location organised by domain and path",
+  "description": "Clone a git repository into a standard location organised by domain and path.",
+  "provides": [
+    "git-grab"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-grab",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/wezm/git-grab",
+  "project": "crates.io/git-grab",
+  "displayName": "git-grab"
+}

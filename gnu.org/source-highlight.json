@@ -1,0 +1,12 @@
+{
+  "description": "Source-code syntax highlighter",
+  "homepage": "https://www.gnu.org/software/src-highlite/",
+  "provides": [
+    "check-regexp",
+    "source-highlight",
+    "source-highlight-settings"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/source-highlight",
+  "license": "GPL-3.0-or-later",
+  "project": "gnu.org/source-highlight"
+}

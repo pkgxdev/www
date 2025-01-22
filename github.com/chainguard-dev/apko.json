@@ -1,0 +1,12 @@
+{
+  "description": "Build OCI images from APK packages directly without Dockerfile",
+  "homepage": "https://apko.dev",
+  "provides": [
+    "apko"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/apko",
+  "license": "Apache-2.0",
+  "github": "https://github.com/chainguard-dev/apko",
+  "project": "github.com/chainguard-dev/apko",
+  "displayName": "apko"
+}

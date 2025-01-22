@@ -1,0 +1,13 @@
+{
+  "brief": "Prettier is an opinionated code formatter.",
+  "description": "Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML",
+  "homepage": "https://prettier.io/",
+  "provides": [
+    "prettier"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/prettier",
+  "license": "MIT",
+  "github": "https://github.com/prettier/prettier",
+  "project": "prettier.io",
+  "displayName": "prettier"
+}

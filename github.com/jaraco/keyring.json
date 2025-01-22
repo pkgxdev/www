@@ -1,0 +1,11 @@
+{
+  "description": "Easy way to access the system keyring service from python",
+  "provides": [
+    "keyring"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/keyring",
+  "license": "MIT",
+  "github": "https://github.com/jaraco/keyring",
+  "project": "github.com/jaraco/keyring",
+  "displayName": "keyring"
+}

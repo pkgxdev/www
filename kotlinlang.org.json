@@ -1,0 +1,16 @@
+{
+  "brief": "The Kotlin Programming Language. ",
+  "description": "Statically typed programming language for the JVM",
+  "homepage": "https://kotlinlang.org/",
+  "provides": [
+    "kapt",
+    "kotlin",
+    "kotlinc",
+    "kotlinc-js",
+    "kotlinc-jvm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kotlin",
+  "license": "Apache-2.0",
+  "github": "https://github.com/JetBrains/kotlin",
+  "project": "kotlinlang.org"
+}

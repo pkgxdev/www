@@ -1,0 +1,12 @@
+{
+  "brief": "Export iMessage data + run iMessage Diagnostics",
+  "description": "Command-line tool to export and inspect local iMessage database",
+  "provides": [
+    "imessage-exporter"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/imessage-exporter",
+  "license": "GPL-3.0-only",
+  "github": "https://github.com/ReagentX/imessage-exporter",
+  "project": "crates.io/imessage-exporter",
+  "displayName": "imessage-exporter"
+}

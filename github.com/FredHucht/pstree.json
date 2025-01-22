@@ -1,0 +1,12 @@
+{
+  "brief": "Show ps output as a tree",
+  "description": "pstree shows the process listing as a tree",
+  "provides": [
+    "pstree"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pstree",
+  "license": "GPL-3.0-only",
+  "github": "https://github.com/FredHucht/pstree",
+  "project": "github.com/FredHucht/pstree",
+  "displayName": "pstree"
+}

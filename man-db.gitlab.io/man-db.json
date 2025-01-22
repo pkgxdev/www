@@ -1,0 +1,18 @@
+{
+  "description": "Unix documentation system",
+  "homepage": "https://www.nongnu.org/man-db/",
+  "provides": [
+    "apropos",
+    "catman",
+    "lexgrog",
+    "man",
+    "mandb",
+    "manpath",
+    "man-recode",
+    "whatis"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/man-db",
+  "license": "GPL-2.0-or-later",
+  "project": "man-db.gitlab.io/man-db",
+  "displayName": "apropos"
+}

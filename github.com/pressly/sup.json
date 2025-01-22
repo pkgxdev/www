@@ -1,0 +1,10 @@
+{
+  "description": "Super simple deployment tool - think of it like 'make' for a network of servers",
+  "homepage": "https://pressly.github.io/sup",
+  "provides": [
+    "sup"
+  ],
+  "github": "https://github.com/pressly/sup",
+  "project": "github.com/pressly/sup",
+  "displayName": "sup"
+}

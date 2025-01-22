@@ -1,0 +1,15 @@
+{
+  "brief": "OpenType text shaping engine",
+  "description": "HarfBuzz text shaping engine",
+  "homepage": "http://harfbuzz.github.io/",
+  "provides": [
+    "hb-ot-shape-closure",
+    "hb-shape",
+    "hb-subset",
+    "hb-view"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/harfbuzz",
+  "license": "MIT",
+  "github": "https://github.com/harfbuzz/harfbuzz",
+  "project": "harfbuzz.org"
+}

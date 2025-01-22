@@ -1,0 +1,13 @@
+{
+  "brief": "Official doxygen git repository",
+  "description": "Generate documentation for several programming languages",
+  "homepage": "https://www.doxygen.nl/",
+  "provides": [
+    "doxygen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/doxygen",
+  "license": "GPL-2.0-only",
+  "github": "https://github.com/doxygen/doxygen",
+  "project": "doxygen.nl",
+  "displayName": "doxygen"
+}

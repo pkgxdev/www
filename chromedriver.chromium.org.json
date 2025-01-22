@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "chromedriver"
+  ],
+  "project": "chromedriver.chromium.org",
+  "displayName": "chromedriver"
+}

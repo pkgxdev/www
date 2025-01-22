@@ -1,0 +1,10 @@
+{
+  "description": "Configuration profiles manager and scheduler for restic backup",
+  "homepage": "https://creativeprojects.github.io/resticprofile/",
+  "provides": [
+    "resticprofile"
+  ],
+  "github": "https://github.com/creativeprojects/resticprofile",
+  "project": "creativeprojects.github.io/resticprofile",
+  "displayName": "resticprofile"
+}

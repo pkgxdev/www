@@ -1,0 +1,11 @@
+{
+  "description": "Image processing tools collection",
+  "homepage": "http://www.graphicsmagick.org/",
+  "provides": [
+    "gm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/graphicsmagick",
+  "license": "MIT",
+  "project": "graphicsmagick.org",
+  "displayName": "gm"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Geometry Engine",
+  "description": "Geometry Engine, Open Source",
+  "homepage": "https://libgeos.org/",
+  "provides": [
+    "geos-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/geos",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/libgeos/geos",
+  "project": "libgeos.org",
+  "displayName": "geos-config"
+}

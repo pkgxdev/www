@@ -1,0 +1,11 @@
+{
+  "description": "Update version constraints in your Terraform configurations",
+  "provides": [
+    "tfupdate"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tfupdate",
+  "license": "MIT",
+  "github": "https://github.com/minamijoyo/tfupdate",
+  "project": "github.com/minamijoyo/tfupdate",
+  "displayName": "tfupdate"
+}

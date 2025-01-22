@@ -1,0 +1,10 @@
+{
+  "description": "The open-source AIOps and alert management platform",
+  "homepage": "https://keephq.dev",
+  "provides": [
+    "keep"
+  ],
+  "github": "https://github.com/keephq/keep",
+  "project": "keephq.dev",
+  "displayName": "keep"
+}

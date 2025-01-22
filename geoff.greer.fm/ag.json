@@ -1,0 +1,13 @@
+{
+  "brief": "Code-search similar to ack",
+  "description": "A code-searching tool similar to ack, but faster.",
+  "homepage": "http://geoff.greer.fm/ag/",
+  "provides": [
+    "ag"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/the_silver_searcher",
+  "license": "Apache-2.0",
+  "github": "https://github.com/ggreer/the_silver_searcher",
+  "project": "geoff.greer.fm/ag",
+  "displayName": "ag"
+}

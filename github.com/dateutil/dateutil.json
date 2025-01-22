@@ -1,0 +1,5 @@
+{
+  "description": "Useful extensions to the standard Python datetime features",
+  "github": "https://github.com/dateutil/dateutil",
+  "project": "github.com/dateutil/dateutil"
+}

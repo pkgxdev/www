@@ -1,0 +1,18 @@
+{
+  "description": "Message bus system, providing inter-application communication",
+  "homepage": "https://wiki.freedesktop.org/www/Software/dbus",
+  "provides": [
+    "dbus-cleanup-sockets",
+    "dbus-daemon",
+    "dbus-launch",
+    "dbus-monitor",
+    "dbus-run-session",
+    "dbus-send",
+    "dbus-test-tool",
+    "dbus-update-activation-environment",
+    "dbus-uuidgen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dbus",
+  "license": "AFL-2.1 OR GPL-2.0-or-later",
+  "project": "freedesktop.org/dbus"
+}

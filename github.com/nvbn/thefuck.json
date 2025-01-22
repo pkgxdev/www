@@ -1,0 +1,12 @@
+{
+  "brief": "Programmatically correct mistyped console commands",
+  "description": "Magnificent app which corrects your previous console command.",
+  "provides": [
+    "thefuck"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/thefuck",
+  "license": "MIT",
+  "github": "https://github.com/nvbn/thefuck",
+  "project": "github.com/nvbn/thefuck",
+  "displayName": "thefuck"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Modern diagram scripting language that turns text to diagrams",
+  "description": "D2 is a modern diagram scripting language that turns text to diagrams.",
+  "homepage": "https://d2lang.com/",
+  "provides": [
+    "d2"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/d2",
+  "license": "MPL-2.0",
+  "github": "https://github.com/terrastruct/d2",
+  "project": "d2lang.com",
+  "displayName": "d2"
+}

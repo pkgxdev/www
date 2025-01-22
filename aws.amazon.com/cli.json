@@ -1,0 +1,13 @@
+{
+  "brief": "Official Amazon AWS command-line interface",
+  "description": "Universal Command Line Interface for Amazon Web Services",
+  "homepage": "https://aws.amazon.com/cli/",
+  "provides": [
+    "aws"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/awscli",
+  "license": "Apache-2.0",
+  "github": "https://github.com/aws/aws-cli",
+  "project": "aws.amazon.com/cli",
+  "displayName": "aws"
+}

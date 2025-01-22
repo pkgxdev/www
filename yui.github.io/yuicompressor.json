@@ -1,0 +1,13 @@
+{
+  "brief": "YUI Compressor",
+  "description": "Yahoo! JavaScript and CSS compressor",
+  "homepage": "https://yui.github.io/yuicompressor/",
+  "provides": [
+    "yuicompressor"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/yuicompressor",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/yui/yuicompressor",
+  "project": "yui.github.io/yuicompressor",
+  "displayName": "yuicompressor"
+}

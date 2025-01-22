@@ -1,0 +1,12 @@
+{
+  "brief": "Tail multiple Kubernetes pods & their containers",
+  "description": "⎈ Multi pod and container log tailing for Kubernetes -- Friendly fork of https://github.com/wercker/stern",
+  "provides": [
+    "stern"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/stern",
+  "license": "Apache-2.0",
+  "github": "https://github.com/stern/stern",
+  "project": "github.com/stern/stern",
+  "displayName": "stern"
+}

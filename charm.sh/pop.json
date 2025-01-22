@@ -1,0 +1,12 @@
+{
+  "brief": "Send emails from your terminal",
+  "description": "Send emails from your terminal 📬",
+  "provides": [
+    "pop"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pop",
+  "license": "MIT",
+  "github": "https://github.com/charmbracelet/pop",
+  "project": "charm.sh/pop",
+  "displayName": "pop"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Perceptual video quality assessment based on multi-method fusion",
+  "description": "Perceptual video quality assessment based on multi-method fusion.",
+  "provides": [
+    "vmaf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libvmaf",
+  "license": "BSD-2-Clause-Patent",
+  "github": "https://github.com/Netflix/vmaf",
+  "project": "netflix.com/vmaf",
+  "displayName": "vmaf"
+}

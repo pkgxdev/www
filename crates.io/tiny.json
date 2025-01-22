@@ -1,0 +1,12 @@
+{
+  "brief": "Terminal IRC client",
+  "description": "A terminal IRC client ",
+  "provides": [
+    "tiny"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tiny",
+  "license": "MIT",
+  "github": "https://github.com/osa1/tiny",
+  "project": "crates.io/tiny",
+  "displayName": "tiny"
+}

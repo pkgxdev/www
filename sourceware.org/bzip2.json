@@ -1,0 +1,22 @@
+{
+  "brief": "Freely available high-quality data compressor",
+  "description": "Clone of https://gitlab.com/federicomenaquintero/bzip2",
+  "homepage": "https://sourceware.org/bzip2/",
+  "provides": [
+    "bunzip2",
+    "bzcat",
+    "bzcmp",
+    "bzdiff",
+    "bzgrep",
+    "bzegrep",
+    "bzfgrep",
+    "bzip2",
+    "bzip2recover",
+    "bzmore",
+    "bzless"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bzip2",
+  "license": "bzip2-1.0.6",
+  "github": "https://github.com/libarchive/bzip2",
+  "project": "sourceware.org/bzip2"
+}

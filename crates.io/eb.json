@@ -1,0 +1,13 @@
+{
+  "brief": "♻️ Run commands with exponential backoff 📈",
+  "description": "Client for Amazon Elastic Beanstalk web service",
+  "homepage": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html",
+  "provides": [
+    "eb"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/aws-elasticbeanstalk",
+  "license": "Apache-2.0",
+  "github": "https://github.com/rye/eb",
+  "project": "crates.io/eb",
+  "displayName": "eb"
+}

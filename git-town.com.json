@@ -1,0 +1,13 @@
+{
+  "brief": "Git branches made easy",
+  "description": "High-level command-line interface for Git",
+  "homepage": "https://www.git-town.com/",
+  "provides": [
+    "git-town"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-town",
+  "license": "MIT",
+  "github": "https://github.com/git-town/git-town",
+  "project": "git-town.com",
+  "displayName": "git-town"
+}

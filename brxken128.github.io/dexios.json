@@ -1,0 +1,10 @@
+{
+  "description": "A secure file encryption utility, written in Rust.",
+  "homepage": "https://brxken128.github.io/dexios/",
+  "provides": [
+    "dexios"
+  ],
+  "github": "https://github.com/brxken128/dexios",
+  "project": "brxken128.github.io/dexios",
+  "displayName": "dexios"
+}

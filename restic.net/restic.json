@@ -1,0 +1,13 @@
+{
+  "brief": "Fast, secure, efficient backup program",
+  "description": "Fast, efficient and secure backup program",
+  "homepage": "https://restic.net/",
+  "provides": [
+    "restic"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/restic",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/restic/restic",
+  "project": "restic.net/restic",
+  "displayName": "restic"
+}

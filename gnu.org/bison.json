@@ -1,0 +1,13 @@
+{
+  "brief": "GNU Bison",
+  "description": "Parser generator",
+  "homepage": "https://www.gnu.org/software/bison/",
+  "provides": [
+    "bison",
+    "yacc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bison",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/akimd/bison",
+  "project": "gnu.org/bison"
+}

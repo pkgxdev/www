@@ -1,0 +1,17 @@
+{
+  "description": "C/C++ function library for exporting 2-D vector graphics",
+  "homepage": "https://www.gnu.org/software/plotutils/",
+  "provides": [
+    "double",
+    "graph",
+    "ode",
+    "pic2plot",
+    "plot",
+    "plotfont",
+    "spline",
+    "tek2plot"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/plotutils",
+  "license": "GPL-3.0-or-later",
+  "project": "gnu.org/plotutils"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "CLI tool for formatting SQL",
+  "description": "Sleek is a CLI tool for formatting SQL. It helps you maintain a consistent style across your SQL code, enhancing readability and productivity.",
+  "provides": [
+    "sleek"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sleek",
+  "license": "MIT",
+  "github": "https://github.com/nrempel/sleek",
+  "project": "crates.io/sleek",
+  "displayName": "sleek"
+}

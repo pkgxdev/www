@@ -1,0 +1,13 @@
+{
+  "brief": "Simple, correct PEP 517 build frontend",
+  "description": "A simple, correct Python build frontend",
+  "homepage": "https://build.pypa.io",
+  "provides": [
+    "pyproject-build"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/python-build",
+  "license": "MIT",
+  "github": "https://github.com/pypa/build",
+  "project": "github.com/pypa/build",
+  "displayName": "pyproject-build"
+}

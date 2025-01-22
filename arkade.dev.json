@@ -1,0 +1,13 @@
+{
+  "brief": "Open Source Kubernetes Marketplace",
+  "description": "Open Source Marketplace For Developer Tools",
+  "homepage": "https://blog.alexellis.io/kubernetes-marketplace-two-year-update/",
+  "provides": [
+    "arkade"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/arkade",
+  "license": "MIT",
+  "github": "https://github.com/alexellis/arkade",
+  "project": "arkade.dev",
+  "displayName": "arkade"
+}

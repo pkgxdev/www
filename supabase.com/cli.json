@@ -1,0 +1,10 @@
+{
+  "description": "Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.",
+  "homepage": "https://supabase.com/docs/reference/cli/about",
+  "provides": [
+    "supabase"
+  ],
+  "github": "https://github.com/supabase/cli",
+  "project": "supabase.com/cli",
+  "displayName": "supabase"
+}

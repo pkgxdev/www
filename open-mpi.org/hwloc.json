@@ -1,0 +1,21 @@
+{
+  "brief": "Hardware locality (hwloc)",
+  "description": "Portable abstraction of the hierarchical topology of modern architectures",
+  "homepage": "https://www.open-mpi.org/projects/hwloc/",
+  "provides": [
+    "hwloc-annotate",
+    "hwloc-bind",
+    "hwloc-calc",
+    "hwloc-compress-dir",
+    "hwloc-diff",
+    "hwloc-distrib",
+    "hwloc-info",
+    "hwloc-patch",
+    "hwloc-ps",
+    "lstopo-no-graphics"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hwloc",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/open-mpi/hwloc",
+  "project": "open-mpi.org/hwloc"
+}

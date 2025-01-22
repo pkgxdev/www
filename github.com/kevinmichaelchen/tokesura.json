@@ -1,0 +1,9 @@
+{
+  "description": "CLI and Library for working with Hasura JWTs",
+  "provides": [
+    "tokesura"
+  ],
+  "github": "https://github.com/kevinmichaelchen/tokesura",
+  "project": "github.com/kevinmichaelchen/tokesura",
+  "displayName": "tokesura"
+}

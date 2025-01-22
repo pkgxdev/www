@@ -1,0 +1,13 @@
+{
+  "brief": "GIF image/animation creator/editor",
+  "description": "Create, manipulate, and optimize GIF images and animations",
+  "homepage": "https://www.lcdf.org/gifsicle/",
+  "provides": [
+    "gifsicle"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gifsicle",
+  "license": "GPL-2.0-only",
+  "github": "https://github.com/kohler/gifsicle",
+  "project": "lcdf.org/gifsicle",
+  "displayName": "gifsicle"
+}

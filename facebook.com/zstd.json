@@ -1,0 +1,18 @@
+{
+  "brief": "Zstandard is a real-time compression algorithm",
+  "description": "Zstandard - Fast real-time compression algorithm",
+  "homepage": "https://facebook.github.io/zstd/",
+  "provides": [
+    "pzstd",
+    "unzstd",
+    "zstd",
+    "zstdcat",
+    "zstdgrep",
+    "zstdless",
+    "zstdmt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/zstd",
+  "license": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+  "github": "https://github.com/facebook/zstd",
+  "project": "facebook.com/zstd"
+}

@@ -1,0 +1,6 @@
+{
+  "description": "Python client library for Modal",
+  "homepage": "https://modal.com/docs",
+  "github": "https://github.com/modal-labs/modal-client",
+  "project": "modal.com"
+}

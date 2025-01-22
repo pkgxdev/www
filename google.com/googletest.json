@@ -1,0 +1,6 @@
+{
+  "description": "GoogleTest - Google Testing and Mocking Framework",
+  "homepage": "https://google.github.io/googletest/",
+  "github": "https://github.com/google/googletest",
+  "project": "google.com/googletest"
+}

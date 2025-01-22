@@ -1,0 +1,9 @@
+{
+  "description": "Music Player TUI written in Rust",
+  "provides": [
+    "termusic",
+    "termusic-server"
+  ],
+  "github": "https://github.com/tramhao/termusic",
+  "project": "crates.io/termusic"
+}

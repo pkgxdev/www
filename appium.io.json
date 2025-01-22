@@ -1,0 +1,13 @@
+{
+  "brief": "Automation for Apps",
+  "description": "Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol",
+  "homepage": "https://appium.io/",
+  "provides": [
+    "appium"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/appium",
+  "license": "Apache-2.0",
+  "github": "https://github.com/appium/appium",
+  "project": "appium.io",
+  "displayName": "appium"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "SMART hard drive monitoring",
+  "homepage": "https://www.smartmontools.org/",
+  "provides": [
+    "smartctl",
+    "smartd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/smartmontools",
+  "license": "GPL-2.0-or-later",
+  "project": "smartmontools.org"
+}

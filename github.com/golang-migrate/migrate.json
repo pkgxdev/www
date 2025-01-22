@@ -1,0 +1,12 @@
+{
+  "brief": "Database migrations CLI tool",
+  "description": "Database migrations. CLI and Golang library.",
+  "provides": [
+    "migrate"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/golang-migrate",
+  "license": "MIT",
+  "github": "https://github.com/golang-migrate/migrate",
+  "project": "github.com/golang-migrate/migrate",
+  "displayName": "migrate"
+}

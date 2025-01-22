@@ -1,0 +1,14 @@
+{
+  "description": "Unbound is a validating, recursive, and caching DNS resolver.",
+  "homepage": "https://nlnetlabs.nl/unbound",
+  "provides": [
+    "unbound",
+    "unbound-anchor",
+    "unbound-checkconf",
+    "unbound-control",
+    "unbound-control-setup",
+    "unbound-host"
+  ],
+  "github": "https://github.com/NLnetLabs/unbound",
+  "project": "unbound.net"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "The Symfony CLI tool",
+  "homepage": "https://symfony.com/download",
+  "provides": [
+    "symfony"
+  ],
+  "github": "https://github.com/symfony-cli/symfony-cli",
+  "project": "symfony.com",
+  "displayName": "symfony"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Customization of kubernetes YAML configurations",
+  "description": "Template-free customization of Kubernetes YAML manifests",
+  "provides": [
+    "kustomize"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kustomize",
+  "license": "Apache-2.0",
+  "github": "https://github.com/kubernetes-sigs/kustomize",
+  "project": "kubernetes.io/kustomize",
+  "displayName": "kustomize"
+}

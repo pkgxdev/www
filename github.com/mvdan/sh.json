@@ -1,0 +1,13 @@
+{
+  "brief": "R7RS Scheme implementation, developed to be a handy script interpreter",
+  "description": "A shell parser, formatter, and interpreter with bash support; includes shfmt",
+  "homepage": "https://practical-scheme.net/gauche/",
+  "provides": [
+    "gosh",
+    "shfmt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gauche",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/mvdan/sh",
+  "project": "github.com/mvdan/sh"
+}

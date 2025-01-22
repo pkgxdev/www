@@ -1,0 +1,14 @@
+{
+  "description": "Compiler for the GObject type system",
+  "homepage": "https://wiki.gnome.org/Projects/Vala",
+  "provides": [
+    "vala",
+    "valac",
+    "valadoc",
+    "vala-gen-introspect",
+    "vapigen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/vala",
+  "license": "LGPL-2.1-or-later",
+  "project": "gnome.org/vala"
+}

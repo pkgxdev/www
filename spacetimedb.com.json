@@ -1,0 +1,10 @@
+{
+  "description": "Multiplayer at the speed of light",
+  "homepage": "https://spacetimedb.com",
+  "provides": [
+    "spacetime"
+  ],
+  "github": "https://github.com/clockworklabs/SpacetimeDB",
+  "project": "spacetimedb.com",
+  "displayName": "spacetime"
+}

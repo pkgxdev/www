@@ -1,0 +1,12 @@
+{
+  "brief": "Linter for YAML files",
+  "description": "A linter for YAML files.",
+  "provides": [
+    "yamllint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/yamllint",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/adrienverge/yamllint",
+  "project": "github.com/adrienverge/yamllint",
+  "displayName": "yamllint"
+}

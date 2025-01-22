@@ -1,0 +1,13 @@
+{
+  "brief": "Automated changelog tool for preparing releases",
+  "description": "Automated changelog tool for preparing releases with lots of customization options",
+  "homepage": "https://changie.dev/",
+  "provides": [
+    "changie"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/changie",
+  "license": "MIT",
+  "github": "https://github.com/miniscruff/changie",
+  "project": "changie.dev",
+  "displayName": "changie"
+}

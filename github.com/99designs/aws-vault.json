@@ -1,0 +1,12 @@
+{
+  "brief": "Securely store and access AWS credentials in development environments",
+  "description": "A vault for securely storing and accessing AWS credentials in development environments",
+  "provides": [
+    "aws-vault"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/aws-vault",
+  "license": "MIT",
+  "github": "https://github.com/99designs/aws-vault",
+  "project": "github.com/99designs/aws-vault",
+  "displayName": "aws-vault"
+}

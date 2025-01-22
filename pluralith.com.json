@@ -1,0 +1,10 @@
+{
+  "description": "A tool for Terraform state visualisation and automated generation of infrastructure documentation",
+  "homepage": "https://www.pluralith.com",
+  "provides": [
+    "pluralith"
+  ],
+  "github": "https://github.com/Pluralith/pluralith-cli",
+  "project": "pluralith.com",
+  "displayName": "pluralith"
+}

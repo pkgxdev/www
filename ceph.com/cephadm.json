@@ -1,0 +1,10 @@
+{
+  "description": "Ceph is a distributed object, block, and file storage platform ",
+  "homepage": "https://ceph.io",
+  "provides": [
+    "cephadm"
+  ],
+  "github": "https://github.com/ceph/ceph",
+  "project": "ceph.com/cephadm",
+  "displayName": "cephadm"
+}

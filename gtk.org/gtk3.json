@@ -1,0 +1,20 @@
+{
+  "description": "Toolkit for creating graphical user interfaces",
+  "homepage": "https://gtk.org/",
+  "provides": [
+    "gtk-builder-tool",
+    "gtk-encode-symbolic-svg",
+    "gtk-launch",
+    "gtk-query-immodules-3.0",
+    "gtk-query-settings",
+    "gtk-update-icon-cache",
+    "gtk3-demo",
+    "gtk3-demo-application",
+    "gtk3-icon-browser",
+    "gtk3-widget-factory"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gtk+3",
+  "license": "LGPL-2.0-or-later",
+  "project": "gtk.org/gtk3",
+  "displayName": "gtk-builder-tool"
+}

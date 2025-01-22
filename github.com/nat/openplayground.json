@@ -1,0 +1,9 @@
+{
+  "description": "An LLM playground you can run on your laptop",
+  "provides": [
+    "openplayground"
+  ],
+  "github": "https://github.com/nat/openplayground",
+  "project": "github.com/nat/openplayground",
+  "displayName": "openplayground"
+}

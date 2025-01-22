@@ -1,0 +1,9 @@
+{
+  "description": "Terminal stock ticker with live updates and position tracking",
+  "provides": [
+    "ticker"
+  ],
+  "github": "https://github.com/achannarasappa/ticker",
+  "project": "github.com/achannarasappa/ticker",
+  "displayName": "ticker"
+}

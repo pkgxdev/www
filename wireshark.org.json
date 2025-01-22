@@ -1,0 +1,22 @@
+{
+  "description": "Network analyzer and capture tool - without graphical user interface",
+  "homepage": "https://www.wireshark.org",
+  "provides": [
+    "capinfos",
+    "captype",
+    "dumpcap",
+    "editcap",
+    "idl2wrs",
+    "mergecap",
+    "mmdbresolve",
+    "randpkt",
+    "rawshark",
+    "reordercap",
+    "sharkd",
+    "text2pcap",
+    "tshark"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/wireshark",
+  "license": "GPL-2.0-or-later",
+  "project": "wireshark.org"
+}

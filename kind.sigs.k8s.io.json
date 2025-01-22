@@ -1,0 +1,13 @@
+{
+  "brief": "Run local Kubernetes cluster in Docker",
+  "description": "Kubernetes IN Docker - local clusters for testing Kubernetes",
+  "homepage": "https://kind.sigs.k8s.io/",
+  "provides": [
+    "kind"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kind",
+  "license": "Apache-2.0",
+  "github": "https://github.com/kubernetes-sigs/kind",
+  "project": "kind.sigs.k8s.io",
+  "displayName": "kind"
+}

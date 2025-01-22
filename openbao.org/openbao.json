@@ -1,0 +1,13 @@
+{
+  "brief": "Implementation of BLAKE3 verified streaming",
+  "description": "an implementation of BLAKE3 verified streaming",
+  "provides": [
+    "bao",
+    "bao-setup"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bao",
+  "license": "Apache-2.0 OR CC0-1.0",
+  "github": "https://github.com/oconnor663/bao",
+  "project": "openbao.org/openbao",
+  "displayName": "bao"
+}

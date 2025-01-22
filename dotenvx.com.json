@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "dotenvx"
+  ],
+  "project": "dotenvx.com",
+  "displayName": "dotenvx"
+}

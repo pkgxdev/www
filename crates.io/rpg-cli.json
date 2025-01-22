@@ -1,0 +1,12 @@
+{
+  "description": "Your filesystem as a dungeon!",
+  "homepage": "https://olano.dev/blog/deconstructing-the-role-playing-videogame/",
+  "provides": [
+    "rpg-cli"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rpg-cli",
+  "license": "MIT",
+  "github": "https://github.com/facundoolano/rpg-cli",
+  "project": "crates.io/rpg-cli",
+  "displayName": "rpg-cli"
+}

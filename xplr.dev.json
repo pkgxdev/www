@@ -1,0 +1,13 @@
+{
+  "brief": "Hackable, minimal, fast TUI file explorer",
+  "description": "A hackable, minimal, fast TUI file explorer",
+  "homepage": "https://xplr.dev",
+  "provides": [
+    "xplr"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xplr",
+  "license": "MIT",
+  "github": "https://github.com/sayanarijit/xplr",
+  "project": "xplr.dev",
+  "displayName": "xplr"
+}

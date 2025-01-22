@@ -1,0 +1,13 @@
+{
+  "brief": "a Hassle-Free Python Experience",
+  "description": "Experimental Package Management Solution for Python",
+  "homepage": "https://rye-up.com/",
+  "provides": [
+    "rye"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rye",
+  "license": "MIT",
+  "github": "https://github.com/astral-sh/rye",
+  "project": "rye.astral.sh",
+  "displayName": "rye"
+}

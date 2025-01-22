@@ -1,0 +1,16 @@
+{
+  "brief": "Configuration editing tool and API",
+  "description": "A configuration editing tool and API",
+  "homepage": "https://augeas.net/",
+  "provides": [
+    "augmatch",
+    "augparse",
+    "augprint",
+    "augtool",
+    "fadot"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/augeas",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/hercules-team/augeas",
+  "project": "augeas.net"
+}

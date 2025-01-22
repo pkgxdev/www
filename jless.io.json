@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line pager for JSON data",
+  "description": "jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data.",
+  "homepage": "https://jless.io/",
+  "provides": [
+    "jless"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jless",
+  "license": "MIT",
+  "github": "https://github.com/PaulJuliusMartinez/jless",
+  "project": "jless.io",
+  "displayName": "jless"
+}

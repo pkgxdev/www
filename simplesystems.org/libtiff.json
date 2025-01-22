@@ -1,0 +1,14 @@
+{
+  "description": "TIFF library and utilities",
+  "homepage": "https://libtiff.gitlab.io/libtiff/",
+  "provides": [
+    "tiffcp",
+    "tiffdump",
+    "tiffinfo",
+    "tiffset",
+    "tiffsplit"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libtiff",
+  "license": "libtiff",
+  "project": "simplesystems.org/libtiff"
+}

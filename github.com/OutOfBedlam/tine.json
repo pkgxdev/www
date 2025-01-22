@@ -1,0 +1,10 @@
+{
+  "description": "TINE a data pipeline runner.",
+  "homepage": "https://tine.thingsme.xyz",
+  "provides": [
+    "tine"
+  ],
+  "github": "https://github.com/OutOfBedlam/tine",
+  "project": "github.com/OutOfBedlam/tine",
+  "displayName": "tine"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Vulnerability scanner for container images and filesystems",
+  "description": "A vulnerability scanner for container images and filesystems",
+  "provides": [
+    "grype"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/grype",
+  "license": "Apache-2.0",
+  "github": "https://github.com/anchore/grype",
+  "project": "github.com/anchore/grype",
+  "displayName": "grype"
+}

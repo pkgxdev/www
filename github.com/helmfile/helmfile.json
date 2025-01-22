@@ -1,0 +1,13 @@
+{
+  "brief": "Deploy Kubernetes Helm Charts",
+  "description": "Declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases. Generate all-in-one manifests for use with ArgoCD.",
+  "homepage": "https://helmfile.readthedocs.io",
+  "provides": [
+    "helmfile"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/helmfile",
+  "license": "MIT",
+  "github": "https://github.com/helmfile/helmfile",
+  "project": "github.com/helmfile/helmfile",
+  "displayName": "helmfile"
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Bash Automated Testing System",
+  "homepage": "https://bats-core.readthedocs.io/",
+  "provides": [
+    "bats"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bats-core",
+  "license": "MIT",
+  "github": "https://github.com/bats-core/bats-core",
+  "project": "github.com/bats-core/bats-core",
+  "displayName": "bats"
+}

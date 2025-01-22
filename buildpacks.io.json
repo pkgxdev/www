@@ -1,0 +1,10 @@
+{
+  "description": "CLI for building apps using Cloud Native Buildpacks",
+  "homepage": "https://buildpacks.io",
+  "provides": [
+    "pack"
+  ],
+  "github": "https://github.com/buildpacks/pack",
+  "project": "buildpacks.io",
+  "displayName": "pack"
+}

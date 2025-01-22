@@ -1,0 +1,13 @@
+{
+  "brief": "Fully featured SFTP server with optional HTTP/S, FTP/S and WebDAV support",
+  "description": "Full-featured and highly configurable SFTP, HTTP/S, FTP/S and WebDAV server - S3, Google Cloud Storage, Azure Blob",
+  "homepage": "https://sftpgo.com",
+  "provides": [
+    "sftpgo"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sftpgo",
+  "license": "AGPL-3.0-only",
+  "github": "https://github.com/drakkan/sftpgo",
+  "project": "sftpgo.com",
+  "displayName": "sftpgo"
+}

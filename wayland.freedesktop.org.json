@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "wayland-scanner"
+  ],
+  "project": "wayland.freedesktop.org",
+  "displayName": "wayland-scanner"
+}

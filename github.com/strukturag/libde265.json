@@ -1,0 +1,17 @@
+{
+  "brief": "Open h.265 video codec implementation",
+  "description": "Open h.265 video codec implementation.",
+  "provides": [
+    "acceleration_speed",
+    "bjoentegaard",
+    "block-rate-estim",
+    "gen-enc-table",
+    "rd-curves",
+    "tests",
+    "yuv-distortion"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libde265",
+  "license": "LGPL-3.0-or-later",
+  "github": "https://github.com/strukturag/libde265",
+  "project": "github.com/strukturag/libde265"
+}

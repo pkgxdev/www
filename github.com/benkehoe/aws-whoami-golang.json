@@ -1,0 +1,9 @@
+{
+  "description": "A tool to show what AWS account and identity you're using.",
+  "provides": [
+    "aws-whoami"
+  ],
+  "github": "https://github.com/benkehoe/aws-whoami-golang",
+  "project": "github.com/benkehoe/aws-whoami-golang",
+  "displayName": "aws-whoami"
+}

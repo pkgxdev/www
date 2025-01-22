@@ -1,0 +1,12 @@
+{
+  "brief": "AWS CloudWatch logs for Humans™",
+  "description": "Simple command-line tool to read AWS CloudWatch logs",
+  "provides": [
+    "awslogs"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/awslogs",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/jorgebastida/awslogs",
+  "project": "github.com/jorgebastida/awslogs",
+  "displayName": "awslogs"
+}

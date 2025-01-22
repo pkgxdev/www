@@ -1,0 +1,10 @@
+{
+  "description": "Protects your Pants from the elements.",
+  "homepage": "https://www.pantsbuild.org/docs/installation",
+  "provides": [
+    "pants"
+  ],
+  "github": "https://github.com/pantsbuild/scie-pants",
+  "project": "pantsbuild.org/scie-pants",
+  "displayName": "pants"
+}

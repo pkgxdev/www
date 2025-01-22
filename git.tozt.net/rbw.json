@@ -1,0 +1,13 @@
+{
+  "brief": "unofficial bitwarden cli",
+  "description": "Unofficial Bitwarden CLI client",
+  "homepage": "https://git.tozt.net/rbw",
+  "provides": [
+    "rbw"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rbw",
+  "license": "MIT",
+  "github": "https://github.com/doy/rbw",
+  "project": "git.tozt.net/rbw",
+  "displayName": "rbw"
+}

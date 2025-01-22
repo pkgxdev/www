@@ -1,0 +1,13 @@
+{
+  "description": "C routines to compute the Discrete Fourier Transform",
+  "homepage": "https://fftw.org",
+  "provides": [
+    "fftw-wisdom",
+    "fftw-wisdom-to-conf",
+    "fftwf-wisdom",
+    "fftwl-wisdom"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fftw",
+  "license": "GPL-2.0-or-later AND BSD-2-Clause",
+  "project": "fftw.org"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "OpenShift command-line interface tools",
+  "description": "The OpenShift Command Line, part of OKD",
+  "homepage": "https://www.openshift.com/",
+  "provides": [
+    "oc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/openshift-cli",
+  "license": "Apache-2.0",
+  "github": "https://github.com/openshift/oc",
+  "project": "openshift.com",
+  "displayName": "oc"
+}

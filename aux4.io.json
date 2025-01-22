@@ -1,0 +1,10 @@
+{
+  "description": "elevate your imagination",
+  "homepage": "https://aux4.io",
+  "provides": [
+    "aux4"
+  ],
+  "github": "https://github.com/aux4/aux4",
+  "project": "aux4.io",
+  "displayName": "aux4"
+}

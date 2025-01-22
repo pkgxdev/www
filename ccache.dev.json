@@ -1,0 +1,13 @@
+{
+  "brief": "ccache – a fast compiler cache",
+  "description": "Object-file caching compiler wrapper",
+  "homepage": "https://ccache.dev/",
+  "provides": [
+    "ccache"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ccache",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/ccache/ccache",
+  "project": "ccache.dev",
+  "displayName": "ccache"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "A command line utility to work with Sentry.",
+  "description": "Command-line utility to interact with Sentry",
+  "homepage": "https://docs.sentry.io/cli/",
+  "provides": [
+    "sentry-cli"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sentry-cli",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/getsentry/sentry-cli",
+  "project": "sentry.io",
+  "displayName": "sentry-cli"
+}

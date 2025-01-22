@@ -1,0 +1,12 @@
+{
+  "brief": "Command-line tool to generate, analyze, convert and manipulate colors",
+  "description": "A command-line tool to generate, analyze, convert and manipulate colors",
+  "provides": [
+    "pastel"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pastel",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/sharkdp/pastel",
+  "project": "crates.io/pastel",
+  "displayName": "pastel"
+}

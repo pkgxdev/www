@@ -1,0 +1,10 @@
+{
+  "description": "Implementation of the Cedar Policy Language",
+  "homepage": "https://www.cedarpolicy.com",
+  "provides": [
+    "cedar"
+  ],
+  "github": "https://github.com/cedar-policy/cedar",
+  "project": "cedarpolicy.com/cli",
+  "displayName": "cedar"
+}

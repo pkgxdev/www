@@ -1,0 +1,10 @@
+{
+  "description": "open source, cloud-native, graph-based asset inventory",
+  "homepage": "https://cnquery.io",
+  "provides": [
+    "cnquery"
+  ],
+  "github": "https://github.com/mondoohq/cnquery",
+  "project": "cnquery.io",
+  "displayName": "cnquery"
+}

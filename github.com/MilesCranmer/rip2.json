@@ -1,0 +1,12 @@
+{
+  "brief": "Safe and ergonomic alternative to rm",
+  "description": " A safe and ergonomic alternative to rm",
+  "provides": [
+    "rip"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rip2",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/MilesCranmer/rip2",
+  "project": "github.com/MilesCranmer/rip2",
+  "displayName": "rip"
+}

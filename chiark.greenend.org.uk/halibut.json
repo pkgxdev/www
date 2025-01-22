@@ -1,0 +1,11 @@
+{
+  "description": "Yet another free document preparation system",
+  "homepage": "https://www.chiark.greenend.org.uk/~sgtatham/halibut/",
+  "provides": [
+    "halibut"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/halibut",
+  "license": "MIT AND APAFML",
+  "project": "chiark.greenend.org.uk/halibut",
+  "displayName": "halibut"
+}

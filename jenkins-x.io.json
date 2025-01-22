@@ -1,0 +1,10 @@
+{
+  "description": "Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton",
+  "homepage": "https://jenkins-x.io/",
+  "provides": [
+    "jx"
+  ],
+  "github": "https://github.com/jenkins-x/jx",
+  "project": "jenkins-x.io",
+  "displayName": "jx"
+}

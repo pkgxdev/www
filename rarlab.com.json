@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "unrar"
+  ],
+  "project": "rarlab.com",
+  "displayName": "unrar"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Pluggable and configurable code formatting platform written in Rust",
+  "description": "Pluggable and configurable code formatting platform written in Rust.",
+  "homepage": "https://dprint.dev/",
+  "provides": [
+    "dprint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dprint",
+  "license": "MIT",
+  "github": "https://github.com/dprint/dprint",
+  "project": "dprint.dev",
+  "displayName": "dprint"
+}

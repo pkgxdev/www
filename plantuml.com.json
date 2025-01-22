@@ -1,0 +1,13 @@
+{
+  "brief": "Draw UML diagrams",
+  "description": "Generate diagrams from textual description",
+  "homepage": "https://plantuml.com/",
+  "provides": [
+    "plantuml"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/plantuml",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/plantuml/plantuml",
+  "project": "plantuml.com",
+  "displayName": "plantuml"
+}

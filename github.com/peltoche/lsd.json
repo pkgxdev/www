@@ -1,0 +1,12 @@
+{
+  "brief": "The next gen ls command",
+  "description": "Clone of ls with colorful output, file type icons, and more",
+  "provides": [
+    "lsd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lsd",
+  "license": "Apache-2.0",
+  "github": "https://github.com/lsd-rs/lsd",
+  "project": "github.com/peltoche/lsd",
+  "displayName": "lsd"
+}

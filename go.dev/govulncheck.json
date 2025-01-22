@@ -1,0 +1,12 @@
+{
+  "brief": "Database client and tools for the Go vulnerability database",
+  "description": "[mirror] the database client and tools for the Go vulnerability database",
+  "provides": [
+    "govulncheck"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/govulncheck",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/golang/vuln",
+  "project": "go.dev/govulncheck",
+  "displayName": "govulncheck"
+}

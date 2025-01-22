@@ -1,0 +1,13 @@
+{
+  "brief": "A mock code autogenerator for Go",
+  "description": "Mock code autogenerator for Golang",
+  "homepage": "https://vektra.github.io/mockery/",
+  "provides": [
+    "mockery"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mockery",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/vektra/mockery",
+  "project": "vektra.github.io/mockery",
+  "displayName": "mockery"
+}

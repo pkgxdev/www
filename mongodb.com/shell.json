@@ -1,0 +1,13 @@
+{
+  "brief": "The MongoDB Shell",
+  "description": "MongoDB Shell to connect, configure, query, and work with your MongoDB database",
+  "homepage": "https://www.mongodb.com/try/download/shell",
+  "provides": [
+    "mongosh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mongosh",
+  "license": "Apache-2.0",
+  "github": "https://github.com/mongodb-js/mongosh",
+  "project": "mongodb.com/shell",
+  "displayName": "mongosh"
+}

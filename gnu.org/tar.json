@@ -1,0 +1,11 @@
+{
+  "description": "Multi-format archive and compression library",
+  "homepage": "https://www.libarchive.org",
+  "provides": [
+    "tar"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libarchive",
+  "license": "BSD-2-Clause",
+  "project": "gnu.org/tar",
+  "displayName": "tar"
+}

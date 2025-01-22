@@ -1,0 +1,11 @@
+{
+  "description": "Julia installer and version multiplexer",
+  "provides": [
+    "juliaup"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/juliaup",
+  "license": "MIT",
+  "github": "https://github.com/JuliaLang/juliaup",
+  "project": "julialang.org/juliaup",
+  "displayName": "juliaup"
+}

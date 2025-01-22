@@ -1,0 +1,9 @@
+{
+  "description": "Generate images of code and terminal output 📸",
+  "provides": [
+    "freeze"
+  ],
+  "github": "https://github.com/charmbracelet/freeze",
+  "project": "charm.sh/freeze",
+  "displayName": "freeze"
+}

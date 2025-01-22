@@ -1,0 +1,9 @@
+{
+  "description": "Organize Your macOS Launchpad Apps",
+  "provides": [
+    "lporg"
+  ],
+  "github": "https://github.com/blacktop/lporg",
+  "project": "github.com/blacktop/lporg",
+  "displayName": "lporg"
+}

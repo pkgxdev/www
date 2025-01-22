@@ -1,0 +1,14 @@
+{
+  "description": "Linux networking base tools",
+  "homepage": "https://sourceforge.net/projects/net-tools/",
+  "provides": [
+    "hostname",
+    "ifconfig",
+    "netstat",
+    "route"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/net-tools",
+  "license": "GPL-2.0-or-later",
+  "project": "sourceforge.net/net-tools",
+  "displayName": "hostname"
+}

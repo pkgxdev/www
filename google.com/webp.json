@@ -1,0 +1,18 @@
+{
+  "brief": "Image format providing lossless and lossy compression for web images",
+  "description": "Mirror only. Please do not send pull requests. See https://chromium.googlesource.com/webm/libwebp/+/HEAD/CONTRIBUTING.md.",
+  "homepage": "https://developers.google.com/speed/webp/",
+  "provides": [
+    "cwebp",
+    "dwebp",
+    "gif2webp",
+    "img2webp",
+    "vwebp",
+    "webpinfo",
+    "webpmux"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/webp",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/webmproject/libwebp",
+  "project": "google.com/webp"
+}

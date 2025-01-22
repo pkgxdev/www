@@ -1,0 +1,6 @@
+{
+  "description": "Vulkan header files and API registry",
+  "homepage": "https://www.vulkan.org/",
+  "github": "https://github.com/KhronosGroup/Vulkan-Headers",
+  "project": "github.com/KhronosGroup/Vulkan-Headers"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "A fast diff tool for comparing csv files",
+  "homepage": "https://aswinkarthik.github.io/csvdiff/",
+  "provides": [
+    "csvdiff"
+  ],
+  "github": "https://github.com/aswinkarthik/csvdiff",
+  "project": "github.com/aswinkarthik/csvdiff",
+  "displayName": "csvdiff"
+}

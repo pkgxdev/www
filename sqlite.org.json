@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line interface for SQLite",
+  "description": "Official Git mirror of the SQLite source tree",
+  "homepage": "https://sqlite.org/index.html",
+  "provides": [
+    "sqlite3"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sqlite",
+  "license": "blessing",
+  "github": "https://github.com/sqlite/sqlite",
+  "project": "sqlite.org",
+  "displayName": "sqlite3"
+}

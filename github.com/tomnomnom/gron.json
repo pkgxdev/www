@@ -1,0 +1,12 @@
+{
+  "brief": "Make JSON greppable",
+  "description": "Make JSON greppable!",
+  "provides": [
+    "gron"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gron",
+  "license": "MIT",
+  "github": "https://github.com/tomnomnom/gron",
+  "project": "github.com/tomnomnom/gron",
+  "displayName": "gron"
+}

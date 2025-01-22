@@ -1,0 +1,11 @@
+{
+  "description": "Install NodeJS versions",
+  "provides": [
+    "node-build"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/node-build",
+  "license": "MIT",
+  "github": "https://github.com/nodenv/node-build",
+  "project": "github.com/nodenv/node-build",
+  "displayName": "node-build"
+}

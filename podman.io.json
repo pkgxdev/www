@@ -1,0 +1,14 @@
+{
+  "brief": "Tool for managing OCI containers and pods",
+  "description": "Podman: A tool for managing OCI containers and pods.",
+  "homepage": "https://podman.io/",
+  "provides": [
+    "podman",
+    "podman-remote",
+    "podman-mac-helper"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/podman",
+  "license": "Apache-2.0 AND GPL-3.0-or-later",
+  "github": "https://github.com/containers/podman",
+  "project": "podman.io"
+}

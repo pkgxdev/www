@@ -1,0 +1,5 @@
+{
+  "description": "Avro Serialization/Deserialization C/C++ library with Confluent schema-registry support",
+  "github": "https://github.com/confluentinc/libserdes",
+  "project": "github.com/confluentinc/libserdes"
+}

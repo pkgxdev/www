@@ -1,0 +1,13 @@
+{
+  "brief": "🎥 Command line video player",
+  "description": "Media player based on MPlayer and mplayer2",
+  "homepage": "https://mpv.io",
+  "provides": [
+    "mpv"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mpv",
+  "license": "LicenseRef-Homebrew-cannot-represent",
+  "github": "https://github.com/mpv-player/mpv",
+  "project": "mpv.io",
+  "displayName": "mpv"
+}

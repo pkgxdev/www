@@ -1,0 +1,13 @@
+{
+  "brief": "Build automation tool for the container era",
+  "description": "Super simple build framework with fast, repeatable builds and an instantly familiar syntax – like Dockerfile and Makefile had a baby.",
+  "homepage": "https://earthly.dev/",
+  "provides": [
+    "earthly"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/earthly",
+  "license": "MPL-2.0",
+  "github": "https://github.com/earthly/earthly",
+  "project": "earthly.dev/earthly",
+  "displayName": "earthly"
+}

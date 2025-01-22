@@ -1,0 +1,12 @@
+{
+  "brief": "Reattach process (e.g., tmux) to background",
+  "description": "Notes and workarounds for accessing the Mac OS X pasteboard in tmux sessions. Note: The pu branch (“Proposed Updates”) may be rewound without notice.",
+  "provides": [
+    "reattach-to-user-namespace"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/reattach-to-user-namespace",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard",
+  "project": "github.com/ChrisJohnsen/tmux-MacOSX-pasteboard",
+  "displayName": "reattach-to-user-namespace"
+}

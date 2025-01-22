@@ -1,0 +1,9 @@
+{
+  "description": "CLI tool that reduces bandwidth usage when transmitting sparse files.",
+  "provides": [
+    "sparsecat"
+  ],
+  "github": "https://github.com/svenwiltink/sparsecat",
+  "project": "github.com/svenwiltink/sparsecat",
+  "displayName": "sparsecat"
+}

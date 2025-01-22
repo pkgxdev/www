@@ -1,0 +1,13 @@
+{
+  "brief": "Anti-bikeshedding Kotlin linter with built-in formatter",
+  "description": "An anti-bikeshedding Kotlin linter with built-in formatter",
+  "homepage": "https://ktlint.github.io/",
+  "provides": [
+    "ktlint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ktlint",
+  "license": "MIT",
+  "github": "https://github.com/pinterest/ktlint",
+  "project": "ktlint.github.io",
+  "displayName": "ktlint"
+}

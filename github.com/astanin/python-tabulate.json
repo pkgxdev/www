@@ -1,0 +1,13 @@
+{
+  "brief": "Pretty-print tabular data in Python",
+  "description": "Pretty-print tabular data in Python, a library and a command-line utility. Repository migrated from bitbucket.org/astanin/python-tabulate.",
+  "homepage": "https://pypi.org/project/tabulate/",
+  "provides": [
+    "tabulate"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/python-tabulate",
+  "license": "MIT",
+  "github": "https://github.com/astanin/python-tabulate",
+  "project": "github.com/astanin/python-tabulate",
+  "displayName": "tabulate"
+}

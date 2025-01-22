@@ -1,0 +1,9 @@
+{
+  "description": "Command line tool to manage your Gnome Shell extensions",
+  "provides": [
+    "gnome-extensions-cli",
+    "gext"
+  ],
+  "github": "https://github.com/essembeh/gnome-extensions-cli",
+  "project": "github.com/essembeh/gnome-extensions-cli"
+}

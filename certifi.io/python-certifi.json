@@ -1,0 +1,5 @@
+{
+  "description": "(Python Distribution) A carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts.",
+  "github": "https://github.com/certifi/python-certifi",
+  "project": "certifi.io/python-certifi"
+}

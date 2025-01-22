@@ -1,0 +1,13 @@
+{
+  "brief": "Use SQL to instantly query your cloud services",
+  "description": "Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required.",
+  "homepage": "https://steampipe.io/",
+  "provides": [
+    "steampipe"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/steampipe",
+  "license": "AGPL-3.0-only",
+  "github": "https://github.com/turbot/steampipe",
+  "project": "steampipe.io",
+  "displayName": "steampipe"
+}

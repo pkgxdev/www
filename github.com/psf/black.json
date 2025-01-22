@@ -1,0 +1,13 @@
+{
+  "brief": "Python code formatter",
+  "description": "The uncompromising Python code formatter",
+  "homepage": "https://black.readthedocs.io/en/stable/",
+  "provides": [
+    "black",
+    "blackd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/black",
+  "license": "MIT",
+  "github": "https://github.com/psf/black",
+  "project": "github.com/psf/black"
+}

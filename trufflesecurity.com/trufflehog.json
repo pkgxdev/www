@@ -1,0 +1,13 @@
+{
+  "brief": "Find and verify credentials",
+  "description": "Find, verify, and analyze leaked credentials",
+  "homepage": "https://trufflesecurity.com/",
+  "provides": [
+    "trufflehog"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/trufflehog",
+  "license": "AGPL-3.0-only",
+  "github": "https://github.com/trufflesecurity/trufflehog",
+  "project": "trufflesecurity.com/trufflehog",
+  "displayName": "trufflehog"
+}

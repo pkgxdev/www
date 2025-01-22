@@ -1,0 +1,12 @@
+{
+  "brief": "Your CLI home video recorder",
+  "description": "Your CLI home video recorder 📼",
+  "provides": [
+    "vhs"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/vhs",
+  "license": "MIT",
+  "github": "https://github.com/charmbracelet/vhs",
+  "project": "charm.sh/vhs",
+  "displayName": "vhs"
+}

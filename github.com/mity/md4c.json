@@ -1,0 +1,12 @@
+{
+  "brief": "C Markdown parser. Fast. SAX-like interface",
+  "description": "C Markdown parser. Fast. SAX-like interface. Compliant to CommonMark specification.",
+  "provides": [
+    "md2html"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/md4c",
+  "license": "MIT",
+  "github": "https://github.com/mity/md4c",
+  "project": "github.com/mity/md4c",
+  "displayName": "md2html"
+}

@@ -1,0 +1,6 @@
+{
+  "description": "Palette quantization library that powers pngquant and other PNG optimizers",
+  "homepage": "https://pngquant.org/lib",
+  "github": "https://github.com/ImageOptim/libimagequant",
+  "project": "pngquant.org/lib"
+}

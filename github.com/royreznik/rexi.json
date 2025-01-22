@@ -1,0 +1,9 @@
+{
+  "description": "Terminal UI for Regex Testing",
+  "provides": [
+    "rexi"
+  ],
+  "github": "https://github.com/royreznik/rexi",
+  "project": "github.com/royreznik/rexi",
+  "displayName": "rexi"
+}

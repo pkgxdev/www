@@ -1,0 +1,9 @@
+{
+  "provides": [
+    "capsh",
+    "getcap",
+    "getpcaps",
+    "setcap"
+  ],
+  "project": "google.com/fullycapable"
+}

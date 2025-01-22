@@ -1,0 +1,9 @@
+{
+  "description": "pakku is a declarative approach to your system package managers.",
+  "provides": [
+    "pakku"
+  ],
+  "github": "https://github.com/mycrEEpy/pakku",
+  "project": "github.com/mycreepy/pakku",
+  "displayName": "pakku"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "X.Org Applications: xauth",
+  "homepage": "https://www.x.org/",
+  "provides": [
+    "xauth"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xauth",
+  "license": "MIT-open-group",
+  "project": "x.org/xauth",
+  "displayName": "xauth"
+}

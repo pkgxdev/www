@@ -1,0 +1,13 @@
+{
+  "brief": "Statically typed language for the Erlang VM",
+  "description": "⭐️ A friendly language for building type-safe, scalable systems!",
+  "homepage": "https://gleam.run",
+  "provides": [
+    "gleam"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gleam",
+  "license": "Apache-2.0",
+  "github": "https://github.com/gleam-lang/gleam",
+  "project": "gleam.run",
+  "displayName": "gleam"
+}

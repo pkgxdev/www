@@ -1,0 +1,9 @@
+{
+  "description": "DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/",
+  "provides": [
+    "zarf"
+  ],
+  "github": "https://github.com/defenseunicorns/zarf",
+  "project": "zarf.dev",
+  "displayName": "zarf"
+}

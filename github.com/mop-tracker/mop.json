@@ -1,0 +1,9 @@
+{
+  "description": "Stock market tracker for hackers.",
+  "provides": [
+    "mop"
+  ],
+  "github": "https://github.com/mop-tracker/mop",
+  "project": "github.com/mop-tracker/mop",
+  "displayName": "mop"
+}

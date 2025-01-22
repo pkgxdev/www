@@ -1,0 +1,9 @@
+{
+  "description": "Random name generator for Rust",
+  "provides": [
+    "names"
+  ],
+  "github": "https://github.com/fnichol/names",
+  "project": "crates.io/names",
+  "displayName": "names"
+}

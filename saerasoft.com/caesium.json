@@ -1,0 +1,10 @@
+{
+  "description": "Caesium Command Line Tools - Lossy/lossless image compression tool ",
+  "homepage": "http://saerasoft.com/caesium",
+  "provides": [
+    "caesiumclt"
+  ],
+  "github": "https://github.com/Lymphatus/caesium-clt",
+  "project": "saerasoft.com/caesium",
+  "displayName": "caesiumclt"
+}

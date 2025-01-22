@@ -1,0 +1,11 @@
+{
+  "description": "UNIX shell (command interpreter)",
+  "homepage": "https://www.zsh.org/",
+  "provides": [
+    "zsh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/zsh",
+  "license": "MIT-Modern-Variant AND GPL-2.0-only AND GPL-2.0-or-later AND ISC",
+  "project": "zsh.sourceforge.io",
+  "displayName": "zsh"
+}

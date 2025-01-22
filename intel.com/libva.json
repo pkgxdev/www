@@ -1,0 +1,6 @@
+{
+  "description": "Libva is an implementation for VA-API (Video Acceleration API)",
+  "homepage": "http://intel.github.io/libva/",
+  "github": "https://github.com/intel/libva",
+  "project": "intel.com/libva"
+}

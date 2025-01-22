@@ -1,0 +1,13 @@
+{
+  "brief": "Creates fully functional virtual k8s cluster inside host k8s cluster's namespace",
+  "description": "vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a namespace of the underlying k8s cluster. It's cheaper than creating separate full-blown clusters and it offers better multi-tenancy and isolation than regular namespaces.",
+  "homepage": "https://www.vcluster.com",
+  "provides": [
+    "vcluster"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/vcluster",
+  "license": "Apache-2.0",
+  "github": "https://github.com/loft-sh/vcluster",
+  "project": "vcluster.com",
+  "displayName": "vcluster"
+}

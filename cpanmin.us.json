@@ -1,0 +1,13 @@
+{
+  "brief": "Get, unpack, build, and install modules from CPAN",
+  "description": "cpanminus - get, unpack, build and install modules from CPAN ",
+  "homepage": "http://cpanmin.us",
+  "provides": [
+    "cpanm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cpanminus",
+  "license": "Artistic-1.0-Perl OR GPL-1.0-or-later",
+  "github": "https://github.com/miyagawa/cpanminus",
+  "project": "cpanmin.us",
+  "displayName": "cpanm"
+}

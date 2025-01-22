@@ -1,0 +1,11 @@
+{
+  "description": "Converts markdown into roff (man pages)",
+  "provides": [
+    "go-md2man"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/go-md2man",
+  "license": "MIT",
+  "github": "https://github.com/cpuguy83/go-md2man",
+  "project": "github.com/cpuguy83/go-md2man",
+  "displayName": "go-md2man"
+}

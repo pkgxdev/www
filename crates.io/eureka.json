@@ -1,0 +1,12 @@
+{
+  "brief": "CLI tool to input and store your ideas without leaving the terminal",
+  "description": "💡 CLI tool to input and store your ideas without leaving the terminal",
+  "provides": [
+    "eureka"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/eureka",
+  "license": "MIT",
+  "github": "https://github.com/simeg/eureka",
+  "project": "crates.io/eureka",
+  "displayName": "eureka"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Feature-rich command-line audio/video downloader",
+  "description": "A feature-rich command-line audio/video downloader",
+  "homepage": "https://discord.gg/H5MNcFW63r",
+  "provides": [
+    "yt-dlp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/yt-dlp",
+  "license": "Unlicense",
+  "github": "https://github.com/yt-dlp/yt-dlp",
+  "project": "yt-dlp.org",
+  "displayName": "yt-dlp"
+}

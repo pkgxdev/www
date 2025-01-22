@@ -1,0 +1,6 @@
+{
+  "description": "Safely add untrusted strings to HTML/XML markup.",
+  "homepage": "https://markupsafe.palletsprojects.com",
+  "github": "https://github.com/pallets/markupsafe",
+  "project": "markupsafe.palletsprojects.com"
+}

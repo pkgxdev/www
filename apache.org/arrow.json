@@ -1,0 +1,14 @@
+{
+  "brief": "Columnar in-memory analytics layer designed to accelerate big data",
+  "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics",
+  "homepage": "https://arrow.apache.org/",
+  "provides": [
+    "parquet-dump-schema",
+    "parquet-reader",
+    "parquet-scan"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/apache-arrow",
+  "license": "Apache-2.0",
+  "github": "https://github.com/apache/arrow",
+  "project": "apache.org/arrow"
+}

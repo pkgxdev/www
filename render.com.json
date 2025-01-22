@@ -1,0 +1,13 @@
+{
+  "brief": "The Official Render CLI",
+  "description": "Command-line interface for Render",
+  "homepage": "https://render.com/docs/cli",
+  "provides": [
+    "render"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/render",
+  "license": "Apache-2.0",
+  "github": "https://github.com/render-oss/cli",
+  "project": "render.com",
+  "displayName": "render"
+}

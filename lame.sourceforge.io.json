@@ -1,0 +1,11 @@
+{
+  "description": "High quality MPEG Audio Layer III (MP3) encoder",
+  "homepage": "https://lame.sourceforge.io/",
+  "provides": [
+    "lame"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lame",
+  "license": "LGPL-2.0-or-later",
+  "project": "lame.sourceforge.io",
+  "displayName": "lame"
+}

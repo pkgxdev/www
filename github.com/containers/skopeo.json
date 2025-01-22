@@ -1,0 +1,12 @@
+{
+  "brief": "Work with remote images registries",
+  "description": "Work with remote images registries - retrieving information, images, signing content",
+  "provides": [
+    "skopeo"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/skopeo",
+  "license": "Apache-2.0",
+  "github": "https://github.com/containers/skopeo",
+  "project": "github.com/containers/skopeo",
+  "displayName": "skopeo"
+}

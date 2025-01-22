@@ -1,0 +1,9 @@
+{
+  "description": "CommonMark + GFM compatible Markdown parser and renderer",
+  "provides": [
+    "comrak"
+  ],
+  "github": "https://github.com/kivikakk/comrak",
+  "project": "crates.io/comrak",
+  "displayName": "comrak"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Command-line csv viewer",
+  "description": "Command line csv viewer",
+  "provides": [
+    "csvlens"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/csvlens",
+  "license": "MIT",
+  "github": "https://github.com/YS-L/csvlens",
+  "project": "github.com/YS-L/csvlens",
+  "displayName": "csvlens"
+}

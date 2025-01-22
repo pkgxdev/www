@@ -1,0 +1,12 @@
+{
+  "brief": "Network, Service & Security Observability for Kubernetes using eBPF",
+  "description": "Hubble - Network, Service & Security Observability for Kubernetes using eBPF",
+  "provides": [
+    "hubble"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hubble",
+  "license": "Apache-2.0",
+  "github": "https://github.com/cilium/hubble",
+  "project": "cilium.io/hubble",
+  "displayName": "hubble"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "The Go implementation of Connect: Protobuf RPC that works.",
+  "homepage": "https://connectrpc.com",
+  "provides": [
+    "protoc-gen-connect-go"
+  ],
+  "github": "https://github.com/connectrpc/connect-go",
+  "project": "connectrpc.org/protoc-gen-connect-go",
+  "displayName": "protoc-gen-connect-go"
+}

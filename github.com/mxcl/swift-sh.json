@@ -1,0 +1,12 @@
+{
+  "brief": "Scripting with easy zero-conf dependency imports",
+  "description": "Easily script with third-party Swift dependencies.",
+  "provides": [
+    "swift-sh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/swift-sh",
+  "license": "Unlicense",
+  "github": "https://github.com/mxcl/swift-sh",
+  "project": "github.com/mxcl/swift-sh",
+  "displayName": "swift-sh"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Universal command-line interface for SQL databases",
+  "provides": [
+    "usql"
+  ],
+  "github": "https://github.com/xo/usql",
+  "project": "github.com/xo/usql",
+  "displayName": "usql"
+}

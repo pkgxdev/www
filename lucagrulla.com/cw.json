@@ -1,0 +1,10 @@
+{
+  "description": "The best way to tail AWS CloudWatch Logs from your terminal",
+  "homepage": "https://www.lucagrulla.com/cw",
+  "provides": [
+    "cw"
+  ],
+  "github": "https://github.com/lucagrulla/cw",
+  "project": "lucagrulla.com/cw",
+  "displayName": "cw"
+}

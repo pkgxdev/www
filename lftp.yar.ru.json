@@ -1,0 +1,13 @@
+{
+  "brief": "Sophisticated file transfer program",
+  "description": "sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)",
+  "homepage": "https://lftp.yar.ru/",
+  "provides": [
+    "lftp",
+    "lftpget"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lftp",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/lavv17/lftp",
+  "project": "lftp.yar.ru"
+}

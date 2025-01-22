@@ -1,0 +1,15 @@
+{
+  "description": "Library and utilities for processing GIFs",
+  "homepage": "https://giflib.sourceforge.net/",
+  "provides": [
+    "gif2rgb",
+    "gifbuild",
+    "gifclrmp",
+    "giffix",
+    "giftext",
+    "giftool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/giflib",
+  "license": "MIT",
+  "project": "giflib.sourceforge.io"
+}

@@ -1,0 +1,5 @@
+{
+  "description": "Epoxy is a library for handling OpenGL function pointer management for you",
+  "github": "https://github.com/anholt/libepoxy",
+  "project": "github.com/anholt/libepoxy"
+}

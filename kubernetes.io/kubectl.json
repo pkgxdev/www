@@ -1,0 +1,13 @@
+{
+  "brief": "Kubernetes command-line interface",
+  "description": "Production-Grade Container Scheduling and Management",
+  "homepage": "https://kubernetes.io/docs/reference/kubectl/",
+  "provides": [
+    "kubectl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kubernetes-cli",
+  "license": "Apache-2.0",
+  "github": "https://github.com/kubernetes/kubernetes",
+  "project": "kubernetes.io/kubectl",
+  "displayName": "kubectl"
+}

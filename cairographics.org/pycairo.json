@@ -1,0 +1,6 @@
+{
+  "description": "Python bindings for cairo",
+  "homepage": "https://pycairo.readthedocs.io",
+  "github": "https://github.com/pygobject/pycairo",
+  "project": "cairographics.org/pycairo"
+}

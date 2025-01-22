@@ -1,0 +1,12 @@
+{
+  "brief": "Terminal disk space navigator 🔭",
+  "description": "Terminal visual disk space navigator",
+  "provides": [
+    "diskonaut"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/diskonaut",
+  "license": "MIT",
+  "github": "https://github.com/imsnif/diskonaut",
+  "project": "crates.io/diskonaut",
+  "displayName": "diskonaut"
+}

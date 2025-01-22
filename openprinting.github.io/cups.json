@@ -1,0 +1,14 @@
+{
+  "brief": "OpenPrinting CUPS Sources",
+  "description": "Common UNIX Printing System",
+  "homepage": "https://openprinting.github.io/cups",
+  "provides": [
+    "cups-config",
+    "ippeveprinter",
+    "ipptool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cups",
+  "license": "Apache-2.0",
+  "github": "https://github.com/OpenPrinting/cups",
+  "project": "openprinting.github.io/cups"
+}

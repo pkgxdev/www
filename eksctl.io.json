@@ -1,0 +1,13 @@
+{
+  "brief": "The official CLI for Amazon EKS",
+  "description": "Simple command-line tool for creating clusters on Amazon EKS",
+  "homepage": "https://eksctl.io",
+  "provides": [
+    "eksctl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/eksctl",
+  "license": "Apache-2.0",
+  "github": "https://github.com/eksctl-io/eksctl",
+  "project": "eksctl.io",
+  "displayName": "eksctl"
+}

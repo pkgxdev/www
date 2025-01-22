@@ -1,0 +1,13 @@
+{
+  "brief": "Run Kubernetes locally",
+  "description": "Run a Kubernetes cluster locally",
+  "homepage": "https://minikube.sigs.k8s.io/",
+  "provides": [
+    "minikube"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/minikube",
+  "license": "Apache-2.0",
+  "github": "https://github.com/kubernetes/minikube",
+  "project": "kubernetes.io/minikube",
+  "displayName": "minikube"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Share end-to-end encrypted secrets with others via a one-time URL",
+  "description": "🔐 Share end-to-end encrypted secrets with others via a one-time URL",
+  "homepage": "https://ots.sniptt.com",
+  "provides": [
+    "ots"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ots",
+  "license": "Apache-2.0",
+  "github": "https://github.com/sniptt-official/ots",
+  "project": "ots.sniptt.com",
+  "displayName": "ots"
+}

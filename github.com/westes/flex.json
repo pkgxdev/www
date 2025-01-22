@@ -1,0 +1,12 @@
+{
+  "brief": "Fast Lexical Analyzer, generates Scanners (tokenizers)",
+  "description": "The Fast Lexical Analyzer - scanner generator for lexing in C and C++",
+  "provides": [
+    "flex",
+    "flex++"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/flex",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/westes/flex",
+  "project": "github.com/westes/flex"
+}

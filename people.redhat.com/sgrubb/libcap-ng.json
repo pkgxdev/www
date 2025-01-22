@@ -1,0 +1,16 @@
+{
+  "brief": "Library for Linux that makes using posix capabilities easy",
+  "description": "Libcap-ng is a library for Linux that makes using posix capabilities easy.",
+  "homepage": "https://people.redhat.com/sgrubb/libcap-ng/",
+  "provides": [
+    "captest",
+    "filecap",
+    "netcap",
+    "pscap"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libcap-ng",
+  "license": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+  "github": "https://github.com/stevegrubb/libcap-ng",
+  "project": "people.redhat.com/sgrubb/libcap-ng",
+  "displayName": "captest"
+}

@@ -1,0 +1,5 @@
+{
+  "description": "Khronos OpenCL-Headers",
+  "github": "https://github.com/KhronosGroup/OpenCL-Headers",
+  "project": "khronos.org/opencl-headers"
+}

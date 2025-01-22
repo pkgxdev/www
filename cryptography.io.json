@@ -1,0 +1,6 @@
+{
+  "description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.",
+  "homepage": "https://cryptography.io",
+  "github": "https://github.com/pyca/cryptography",
+  "project": "cryptography.io"
+}

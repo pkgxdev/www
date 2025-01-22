@@ -1,0 +1,12 @@
+{
+  "brief": "Small utility that generates Go code from any file",
+  "description": "A small utility which generates Go code from any file. Useful for embedding binary data in a Go program.",
+  "provides": [
+    "go-bindata"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/go-bindata",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/kevinburke/go-bindata",
+  "project": "github.com/kevinburke/go-bindata",
+  "displayName": "go-bindata"
+}

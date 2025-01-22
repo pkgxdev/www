@@ -1,0 +1,10 @@
+{
+  "description": "Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.",
+  "homepage": "https://tinygo.org",
+  "provides": [
+    "tinygo"
+  ],
+  "github": "https://github.com/tinygo-org/tinygo",
+  "project": "tinygo.org",
+  "displayName": "tinygo"
+}

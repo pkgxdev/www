@@ -1,0 +1,9 @@
+{
+  "description": "A CLI spelling corrector for when you're unsure",
+  "provides": [
+    "dym"
+  ],
+  "github": "https://github.com/hisbaan/didyoumean",
+  "project": "crates.io/didyoumean",
+  "displayName": "dym"
+}

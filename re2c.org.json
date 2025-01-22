@@ -1,0 +1,13 @@
+{
+  "brief": "Generate C-based recognizers from regular expressions",
+  "description": "Lexer generator for C, C++, D, Go, Haskell, Java, JS, OCaml, Python, Rust, V and Zig.",
+  "homepage": "https://re2c.org",
+  "provides": [
+    "re2c"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/re2c",
+  "license": "LicenseRef-Homebrew-public-domain",
+  "github": "https://github.com/skvadrik/re2c",
+  "project": "re2c.org",
+  "displayName": "re2c"
+}

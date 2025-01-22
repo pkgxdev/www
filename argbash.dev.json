@@ -1,0 +1,10 @@
+{
+  "description": "Bash argument parsing code generator",
+  "provides": [
+    "argbash",
+    "argbash-init",
+    "argbash-1to2"
+  ],
+  "github": "https://github.com/matejak/argbash",
+  "project": "argbash.dev"
+}

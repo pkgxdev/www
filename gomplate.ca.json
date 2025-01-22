@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line Golang template processor",
+  "description": "A flexible commandline tool for template rendering. Supports lots of local and remote datasources.",
+  "homepage": "https://gomplate.ca/",
+  "provides": [
+    "gomplate"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gomplate",
+  "license": "MIT",
+  "github": "https://github.com/hairyhenderson/gomplate",
+  "project": "gomplate.ca",
+  "displayName": "gomplate"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Kubernetes object analysis recommendations for improved reliability and security",
+  "description": "Kubernetes object analysis with recommendations for improved reliability and security. kube-score actively prevents downtime and bugs in your Kubernetes YAML and Charts. Static code analysis for Kubernetes.",
+  "homepage": "https://kube-score.com",
+  "provides": [
+    "kube-score"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kube-score",
+  "license": "MIT",
+  "github": "https://github.com/zegl/kube-score",
+  "project": "github.com/zegl/kube-score",
+  "displayName": "kube-score"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "The MongoDB Database",
+  "homepage": "https://www.mongodb.com/",
+  "provides": [
+    "install_compass",
+    "mongod",
+    "mongos"
+  ],
+  "github": "https://github.com/mongodb/mongo",
+  "project": "mongodb.com"
+}

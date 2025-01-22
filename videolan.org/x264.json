@@ -1,0 +1,11 @@
+{
+  "description": "H.264/AVC encoder",
+  "homepage": "https://www.videolan.org/developers/x264.html",
+  "provides": [
+    "x264"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/x264",
+  "license": "GPL-2.0-only",
+  "project": "videolan.org/x264",
+  "displayName": "x264"
+}

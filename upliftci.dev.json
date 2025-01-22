@@ -1,0 +1,10 @@
+{
+  "description": "Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.",
+  "homepage": "https://upliftci.dev",
+  "provides": [
+    "uplift"
+  ],
+  "github": "https://github.com/gembaadvantage/uplift",
+  "project": "upliftci.dev",
+  "displayName": "uplift"
+}

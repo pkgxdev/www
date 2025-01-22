@@ -1,0 +1,20 @@
+{
+  "brief": "Official FreeTDS repository",
+  "description": "Libraries to talk to Microsoft SQL Server and Sybase databases",
+  "homepage": "https://www.freetds.org/",
+  "provides": [
+    "bsqldb",
+    "bsqlodbc",
+    "datacopy",
+    "defncopy",
+    "fisql",
+    "freebcp",
+    "osql",
+    "tdspool",
+    "tsql"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/freetds",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/FreeTDS/freetds",
+  "project": "freetds.org"
+}

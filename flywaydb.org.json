@@ -1,0 +1,11 @@
+{
+  "description": "Database version control to control migrations",
+  "homepage": "https://flywaydb.org/",
+  "provides": [
+    "flyway"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/flyway",
+  "license": "Apache-2.0",
+  "project": "flywaydb.org",
+  "displayName": "flyway"
+}

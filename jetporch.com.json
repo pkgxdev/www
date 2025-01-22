@@ -1,0 +1,9 @@
+{
+  "description": "Read-only mirror: see https://www.jetporch.com/community/sourcehut",
+  "provides": [
+    "jetp"
+  ],
+  "github": "https://github.com/jetporch/jetporch",
+  "project": "jetporch.com",
+  "displayName": "jetp"
+}

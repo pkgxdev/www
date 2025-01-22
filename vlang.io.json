@@ -1,0 +1,12 @@
+{
+  "brief": "Z for vim",
+  "description": "z for vim",
+  "provides": [
+    "v"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/v",
+  "license": "WTFPL",
+  "github": "https://github.com/rupa/v",
+  "project": "vlang.io",
+  "displayName": "v"
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Go implementation of configuration language for defining JSON data",
+  "homepage": "https://jsonnet.org/",
+  "provides": [
+    "jsonnet",
+    "jsonnetfmt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/go-jsonnet",
+  "license": "Apache-2.0",
+  "github": "https://github.com/google/go-jsonnet",
+  "project": "jsonnet.org"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Tool for creating identical machine images for multiple platforms",
+  "description": "Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.",
+  "homepage": "https://packer.io",
+  "provides": [
+    "packer"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/packer",
+  "license": "MPL-2.0",
+  "github": "https://github.com/hashicorp/packer",
+  "project": "packer.io",
+  "displayName": "packer"
+}

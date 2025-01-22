@@ -1,0 +1,11 @@
+{
+  "description": "High-velocity, monorepo-scale workflow for Git",
+  "provides": [
+    "git-branchless"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-branchless",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/arxanas/git-branchless",
+  "project": "crates.io/git-branchless",
+  "displayName": "git-branchless"
+}

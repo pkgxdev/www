@@ -1,0 +1,6 @@
+{
+  "description": "Cross-platform asynchronous I/O",
+  "homepage": "https://libuv.org/",
+  "github": "https://github.com/libuv/libuv",
+  "project": "libuv.org"
+}

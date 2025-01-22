@@ -1,0 +1,12 @@
+{
+  "brief": "Command-line tool to kill processes listening on a specific port",
+  "description": "A command-line tool to easily kill processes running on a specified port.",
+  "provides": [
+    "killport"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/killport",
+  "license": "MIT",
+  "github": "https://github.com/jkfran/killport",
+  "project": "crates.io/killport",
+  "displayName": "killport"
+}

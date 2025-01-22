@@ -1,0 +1,18 @@
+{
+  "brief": "Package for scientific computing with Python",
+  "description": "The fundamental package for scientific computing with Python.",
+  "homepage": "https://www.numpy.org/",
+  "provides": [
+    "f2py",
+    "jsondiff",
+    "jsonpatch",
+    "jsonpointer",
+    "langchain-server",
+    "langsmith",
+    "normalizer"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/numpy",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/numpy/numpy",
+  "project": "langchain.com"
+}

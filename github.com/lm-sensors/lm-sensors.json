@@ -1,0 +1,13 @@
+{
+  "brief": "lm-sensors repository",
+  "description": "Tools for monitoring the temperatures, voltages, and fans",
+  "homepage": "https://hwmon.wiki.kernel.org/",
+  "provides": [
+    "sensors"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lm-sensors",
+  "license": "GPL-2.0-or-later OR LGPL-2.1-or-later",
+  "github": "https://github.com/lm-sensors/lm-sensors",
+  "project": "github.com/lm-sensors/lm-sensors",
+  "displayName": "sensors"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Display directories as trees (with optional color/HTML output)",
+  "homepage": "https://oldmanprogrammer.net/source.php?dir=projects/tree",
+  "provides": [
+    "tree"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tree",
+  "license": "GPL-2.0-or-later",
+  "project": "gitlab.com/OldManProgrammer/unix-tree",
+  "displayName": "tree"
+}

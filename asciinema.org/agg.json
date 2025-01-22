@@ -1,0 +1,13 @@
+{
+  "brief": "asciinema gif generator",
+  "description": "Asciicast to GIF converter",
+  "homepage": "https://docs.asciinema.org/manual/agg/",
+  "provides": [
+    "agg"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/agg",
+  "license": "Apache-2.0",
+  "github": "https://github.com/asciinema/agg",
+  "project": "asciinema.org/agg",
+  "displayName": "agg"
+}

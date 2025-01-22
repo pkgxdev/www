@@ -1,0 +1,5 @@
+{
+  "description": "Utility library for gitignore style pattern matching of file paths.",
+  "github": "https://github.com/cpburnz/python-pathspec",
+  "project": "github.com/cpburnz/python-pathspec"
+}

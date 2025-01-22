@@ -1,0 +1,9 @@
+{
+  "description": "A fast CPU miner for Kaspa",
+  "provides": [
+    "kaspa-miner"
+  ],
+  "github": "https://github.com/elichai/kaspa-miner",
+  "project": "crates.io/kaspa-miner",
+  "displayName": "kaspa-miner"
+}

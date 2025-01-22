@@ -1,0 +1,12 @@
+{
+  "description": "Utilities to create and convert Web Open Font File (WOFF) files",
+  "provides": [
+    "woff2_info",
+    "woff2_decompress",
+    "woff2_compress"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/woff2",
+  "license": "MIT",
+  "github": "https://github.com/google/woff2",
+  "project": "google.com/woff2"
+}

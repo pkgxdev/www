@@ -1,0 +1,5 @@
+{
+  "description": "A library with common code used by libraries and tools around the libimobiledevice project",
+  "github": "https://github.com/libimobiledevice/libimobiledevice-glue",
+  "project": "libimobiledevice.org/libimobiledevice-glue"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Modern, performance focused unix commands",
+  "provides": [
+    "cpz"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fuc",
+  "license": "Apache-2.0",
+  "github": "https://github.com/supercilex/fuc",
+  "project": "crates.io/cpz",
+  "displayName": "cpz"
+}

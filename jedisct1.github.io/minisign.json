@@ -1,0 +1,13 @@
+{
+  "brief": "Sign files & verify signatures. Works with signify in OpenBSD",
+  "description": "A dead simple tool to sign files and verify digital signatures.",
+  "homepage": "https://jedisct1.github.io/minisign/",
+  "provides": [
+    "minisign"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/minisign",
+  "license": "ISC",
+  "github": "https://github.com/jedisct1/minisign",
+  "project": "jedisct1.github.io/minisign",
+  "displayName": "minisign"
+}

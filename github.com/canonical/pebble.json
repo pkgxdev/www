@@ -1,0 +1,10 @@
+{
+  "description": "Pebble is a lightweight Linux service manager with layered configuration and an HTTP API.",
+  "homepage": "https://canonical-pebble.readthedocs-hosted.com/",
+  "provides": [
+    "pebble"
+  ],
+  "github": "https://github.com/canonical/pebble",
+  "project": "github.com/canonical/pebble",
+  "displayName": "pebble"
+}

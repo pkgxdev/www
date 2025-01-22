@@ -1,0 +1,6 @@
+{
+  "description": "A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input",
+  "homepage": "https://www.glfw.org",
+  "github": "https://github.com/glfw/glfw",
+  "project": "glfw.org"
+}

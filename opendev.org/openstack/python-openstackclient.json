@@ -1,0 +1,11 @@
+{
+  "description": "Command-line client for OpenStack",
+  "homepage": "https://openstack.org",
+  "provides": [
+    "openstack",
+    "openstack-inventory"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/openstackclient",
+  "license": "Apache-2.0",
+  "project": "opendev.org/openstack/python-openstackclient"
+}

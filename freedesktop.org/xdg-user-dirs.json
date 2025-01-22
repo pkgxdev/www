@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "xdg-user-dir",
+    "xdg-user-dirs-update"
+  ],
+  "project": "freedesktop.org/xdg-user-dirs"
+}

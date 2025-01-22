@@ -1,0 +1,12 @@
+{
+  "brief": "Ruby environment tool",
+  "description": "Changes the current Ruby",
+  "provides": [
+    "chruby-exec"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/chruby",
+  "license": "MIT",
+  "github": "https://github.com/postmodern/chruby",
+  "project": "github.com/postmodern/chruby",
+  "displayName": "chruby-exec"
+}

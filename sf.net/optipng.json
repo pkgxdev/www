@@ -1,0 +1,11 @@
+{
+  "description": "PNG file optimizer",
+  "homepage": "https://optipng.sourceforge.net/",
+  "provides": [
+    "optipng"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/optipng",
+  "license": "Zlib",
+  "project": "sf.net/optipng",
+  "displayName": "optipng"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Pinniped is the easy, secure way to log in to your Kubernetes clusters.",
+  "homepage": "https://pinniped.dev",
+  "provides": [
+    "pinniped"
+  ],
+  "github": "https://github.com/vmware-tanzu/pinniped",
+  "project": "pinniped.dev",
+  "displayName": "pinniped"
+}

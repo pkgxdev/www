@@ -1,0 +1,13 @@
+{
+  "brief": "Interactive computing in Python",
+  "description": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.",
+  "homepage": "https://ipython.org/",
+  "provides": [
+    "ipython",
+    "ipython3"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ipython",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/ipython/ipython",
+  "project": "ipython.org"
+}

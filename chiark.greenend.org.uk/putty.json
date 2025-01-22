@@ -1,0 +1,15 @@
+{
+  "description": "Implementation of Telnet and SSH",
+  "homepage": "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
+  "provides": [
+    "pageant",
+    "plink",
+    "pscp",
+    "psftp",
+    "psusan",
+    "puttygen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/putty",
+  "license": "MIT",
+  "project": "chiark.greenend.org.uk/putty"
+}

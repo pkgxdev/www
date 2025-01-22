@@ -1,0 +1,12 @@
+{
+  "brief": "Search tool like grep and The Silver Searcher",
+  "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
+  "provides": [
+    "rg"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ripgrep",
+  "license": "Unlicense",
+  "github": "https://github.com/BurntSushi/ripgrep",
+  "project": "crates.io/ripgrep",
+  "displayName": "rg"
+}

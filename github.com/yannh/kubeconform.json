@@ -1,0 +1,12 @@
+{
+  "brief": "FAST Kubernetes manifests validator, with support for Custom Resources!",
+  "description": "A FAST Kubernetes manifests validator, with support for Custom Resources!",
+  "provides": [
+    "kubeconform"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kubeconform",
+  "license": "Apache-2.0",
+  "github": "https://github.com/yannh/kubeconform",
+  "project": "github.com/yannh/kubeconform",
+  "displayName": "kubeconform"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Integration tests for command-line applications in .txtar format",
+  "provides": [
+    "testscript"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/testscript",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/rogpeppe/go-internal/tree/master/cmd/testscript",
+  "project": "go.dev/testscript",
+  "displayName": "testscript"
+}

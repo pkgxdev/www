@@ -1,0 +1,11 @@
+{
+  "description": "Provides audio and MIDI functionality to the Linux operating system",
+  "homepage": "https://www.alsa-project.org/",
+  "provides": [
+    "aserver"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/alsa-lib",
+  "license": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+  "project": "alsa-project.org/alsa-lib",
+  "displayName": "aserver"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "GNU File, Shell, and Text utilities",
+  "description": "Fast disk usage analyzer with console interface written in Go",
+  "homepage": "https://www.gnu.org/software/coreutils/",
+  "provides": [
+    "gdu"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/coreutils",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/dundee/gdu",
+  "project": "github.com/dundee/gdu",
+  "displayName": "gdu"
+}

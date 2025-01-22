@@ -1,0 +1,13 @@
+{
+  "brief": "Interactive terminal based UI application for tracking cryptocurrencies",
+  "description": "A fast and lightweight interactive terminal based UI application for tracking cryptocurrencies 🚀",
+  "homepage": "https://cointop.sh",
+  "provides": [
+    "cointop"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cointop",
+  "license": "Apache-2.0",
+  "github": "https://github.com/cointop-sh/cointop",
+  "project": "cointop.sh",
+  "displayName": "cointop"
+}

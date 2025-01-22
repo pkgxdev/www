@@ -1,0 +1,6 @@
+{
+  "description": "Speex audio processing library - THIS IS A MIRROR, DEVELOPMENT HAPPENS AT https://gitlab.xiph.org/xiph/speexdsp",
+  "homepage": "https://speex.org",
+  "github": "https://github.com/xiph/speexdsp",
+  "project": "github.com/xiph/speexdsp"
+}

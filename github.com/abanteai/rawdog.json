@@ -1,0 +1,13 @@
+{
+  "brief": "CLI tool to generate and run code with llms",
+  "description": "Generate and auto-execute Python scripts in the cli",
+  "homepage": "https://mentat.ai",
+  "provides": [
+    "rawdog"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rawdog",
+  "license": "Apache-2.0",
+  "github": "https://github.com/AbanteAI/rawdog",
+  "project": "github.com/abanteai/rawdog",
+  "displayName": "rawdog"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Something like puppet, for the localhost only.",
+  "provides": [
+    "marionette"
+  ],
+  "github": "https://github.com/skx/marionette",
+  "project": "github.com/skx/marionette",
+  "displayName": "marionette"
+}

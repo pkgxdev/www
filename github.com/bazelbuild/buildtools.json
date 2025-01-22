@@ -1,0 +1,12 @@
+{
+  "brief": "A bazel BUILD file formatter and editor",
+  "description": "Format bazel BUILD files with a standard convention",
+  "provides": [
+    "buildifier"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/buildifier",
+  "license": "Apache-2.0",
+  "github": "https://github.com/bazelbuild/buildtools",
+  "project": "github.com/bazelbuild/buildtools",
+  "displayName": "buildifier"
+}

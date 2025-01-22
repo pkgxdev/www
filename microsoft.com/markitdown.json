@@ -1,0 +1,9 @@
+{
+  "description": "Python tool for converting files and office documents to Markdown.",
+  "provides": [
+    "markitdown"
+  ],
+  "github": "https://github.com/microsoft/markitdown",
+  "project": "microsoft.com/markitdown",
+  "displayName": "markitdown"
+}

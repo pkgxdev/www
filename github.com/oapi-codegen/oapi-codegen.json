@@ -1,0 +1,9 @@
+{
+  "description": "Generate Go client and server boilerplate from OpenAPI 3 specifications",
+  "provides": [
+    "oapi-codegen"
+  ],
+  "github": "https://github.com/oapi-codegen/oapi-codegen",
+  "project": "github.com/oapi-codegen/oapi-codegen",
+  "displayName": "oapi-codegen"
+}

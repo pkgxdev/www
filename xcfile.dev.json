@@ -1,0 +1,13 @@
+{
+  "brief": "Markdown defined task runner",
+  "description": "Markdown defined task runner.",
+  "homepage": "https://xcfile.dev/",
+  "provides": [
+    "xc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xc",
+  "license": "MIT",
+  "github": "https://github.com/joerdav/xc",
+  "project": "xcfile.dev",
+  "displayName": "xc"
+}

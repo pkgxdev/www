@@ -1,0 +1,12 @@
+{
+  "brief": "A Python and Command-Line Interface to Archive.org",
+  "description": "Python wrapper for the various Internet Archive APIs",
+  "provides": [
+    "ia"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/internetarchive",
+  "license": "AGPL-3.0-or-later",
+  "github": "https://github.com/jjjake/internetarchive",
+  "project": "github.com/jjjake/internetarchive",
+  "displayName": "ia"
+}

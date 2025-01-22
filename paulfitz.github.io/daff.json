@@ -1,0 +1,10 @@
+{
+  "description": "align and compare tables",
+  "homepage": "https://paulfitz.github.io/daff",
+  "provides": [
+    "daff"
+  ],
+  "github": "https://github.com/paulfitz/daff",
+  "project": "paulfitz.github.io/daff",
+  "displayName": "daff"
+}

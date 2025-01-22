@@ -1,0 +1,6 @@
+{
+  "description": "Light-weight, simple and fast XML parser for C++ with XPath support",
+  "homepage": "http://pugixml.org/",
+  "github": "https://github.com/zeux/pugixml",
+  "project": "pugixml.org"
+}

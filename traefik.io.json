@@ -1,0 +1,13 @@
+{
+  "brief": "Modern reverse proxy",
+  "description": "The Cloud Native Application Proxy",
+  "homepage": "https://traefik.io/",
+  "provides": [
+    "traefik"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/traefik",
+  "license": "MIT",
+  "github": "https://github.com/traefik/traefik",
+  "project": "traefik.io",
+  "displayName": "traefik"
+}

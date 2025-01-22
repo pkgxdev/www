@@ -1,0 +1,15 @@
+{
+  "brief": "Library for manipulating PNG images",
+  "description": "LIBPNG: Portable Network Graphics support, official libpng repository",
+  "homepage": "http://www.libpng.org/pub/png/libpng.html",
+  "provides": [
+    "libpng-config",
+    "libpng16-config",
+    "png-fix-itxt",
+    "pngfix"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libpng",
+  "license": "libpng-2.0",
+  "github": "https://github.com/glennrp/libpng",
+  "project": "libpng.org"
+}

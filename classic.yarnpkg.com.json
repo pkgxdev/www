@@ -1,0 +1,13 @@
+{
+  "brief": "Framework for distributed processing of large data sets",
+  "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
+  "homepage": "https://hadoop.apache.org/",
+  "provides": [
+    "yarn",
+    "yarnpkg"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hadoop",
+  "license": "Apache-2.0",
+  "github": "https://github.com/yarnpkg/yarn",
+  "project": "classic.yarnpkg.com"
+}

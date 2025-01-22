@@ -1,0 +1,5 @@
+{
+  "description": "Fast and exact implementation of the C++ from_chars functions for number types: 4x to 10x faster than strtod, part of GCC 12, Chromium, Redis and WebKit/Safari",
+  "github": "https://github.com/fastfloat/fast_float",
+  "project": "github.com/fastfloat/fast_float"
+}

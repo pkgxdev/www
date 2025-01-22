@@ -1,0 +1,14 @@
+{
+  "brief": "User-friendly cURL replacement (command-line HTTP client)",
+  "description": "🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.",
+  "homepage": "https://httpie.io/",
+  "provides": [
+    "http",
+    "httpie",
+    "https"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/httpie",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/httpie/cli",
+  "project": "httpie.io"
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Framework for layout and rendering of i18n text",
+  "homepage": "https://www.gtk.org/docs/architecture/pango",
+  "provides": [
+    "pango-list",
+    "pango-segmentation",
+    "pango-view"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pango",
+  "license": "LGPL-2.0-or-later",
+  "project": "gnome.org/pango"
+}

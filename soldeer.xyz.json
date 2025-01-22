@@ -1,0 +1,10 @@
+{
+  "description": "Solidity Package Manager written in rust and integrated into Foundry (forge soldeer ...)",
+  "homepage": "https://soldeer.xyz",
+  "provides": [
+    "soldeer"
+  ],
+  "github": "https://github.com/mario-eth/soldeer",
+  "project": "soldeer.xyz",
+  "displayName": "soldeer"
+}

@@ -1,0 +1,18 @@
+{
+  "description": "GNU triangulated surface library",
+  "homepage": "https://gts.sourceforge.net/",
+  "provides": [
+    "delaunay",
+    "gts2dxf",
+    "gts2oogl",
+    "gts2stl",
+    "gtscheck",
+    "gtscompare",
+    "gtstemplate",
+    "stl2gts",
+    "transform"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gts",
+  "license": "LGPL-2.0-or-later",
+  "project": "gts.sourceforge.net"
+}

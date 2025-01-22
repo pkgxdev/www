@@ -1,0 +1,19 @@
+{
+  "brief": "High dynamic-range image file format",
+  "description": "The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.",
+  "homepage": "https://www.openexr.com/",
+  "provides": [
+    "exr2aces",
+    "exrenvmap",
+    "exrheader",
+    "exrmakepreview",
+    "exrmaketiled",
+    "exrmultipart",
+    "exrmultiview",
+    "exrstdattr"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/openexr",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/AcademySoftwareFoundation/openexr",
+  "project": "openexr.com"
+}

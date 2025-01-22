@@ -1,0 +1,12 @@
+{
+  "brief": "Use AWS IAM credentials to authenticate to Kubernetes",
+  "description": "A tool to use AWS IAM credentials to authenticate to a Kubernetes cluster",
+  "provides": [
+    "aws-iam-authenticator"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/aws-iam-authenticator",
+  "license": "Apache-2.0",
+  "github": "https://github.com/kubernetes-sigs/aws-iam-authenticator",
+  "project": "github.com/kubernetes-sigs/aws-iam-authenticator",
+  "displayName": "aws-iam-authenticator"
+}

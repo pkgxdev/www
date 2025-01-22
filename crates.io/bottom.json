@@ -1,0 +1,13 @@
+{
+  "brief": "Yet another cross-platform graphical process/system monitor",
+  "description": "Yet another cross-platform graphical process/system monitor.",
+  "homepage": "https://clementtsang.github.io/bottom/",
+  "provides": [
+    "btm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bottom",
+  "license": "MIT",
+  "github": "https://github.com/ClementTsang/bottom",
+  "project": "crates.io/bottom",
+  "displayName": "btm"
+}

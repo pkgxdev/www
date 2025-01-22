@@ -1,0 +1,12 @@
+{
+  "brief": "Linter/analyzer for Makefiles",
+  "description": "experimental linter/analyzer for Makefiles",
+  "provides": [
+    "checkmake"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/checkmake",
+  "license": "MIT",
+  "github": "https://github.com/mrtazz/checkmake",
+  "project": "github.com/mrtazz/checkmake",
+  "displayName": "checkmake"
+}

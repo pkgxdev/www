@@ -1,0 +1,13 @@
+{
+  "brief": "JSON parser and validator with a CLI",
+  "description": "A JSON parser and validator with a CLI.",
+  "homepage": "http://zaach.github.com/jsonlint/",
+  "provides": [
+    "jsonlint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jsonlint",
+  "license": "MIT",
+  "github": "https://github.com/zaach/jsonlint",
+  "project": "github.com/zaach/jsonlint",
+  "displayName": "jsonlint"
+}

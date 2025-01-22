@@ -1,0 +1,13 @@
+{
+  "brief": "Nonsense activity generator",
+  "description": "🌀 A nonsense activity generator",
+  "homepage": "https://svenstaro.github.io/genact/",
+  "provides": [
+    "genact"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/genact",
+  "license": "MIT",
+  "github": "https://github.com/svenstaro/genact",
+  "project": "svenstaro.github.io/genact",
+  "displayName": "genact"
+}

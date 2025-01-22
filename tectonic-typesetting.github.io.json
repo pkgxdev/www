@@ -1,0 +1,13 @@
+{
+  "brief": "Modernized, complete, self-contained TeX/LaTeX engine",
+  "description": "A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.",
+  "homepage": "https://tectonic-typesetting.github.io/",
+  "provides": [
+    "tectonic"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tectonic",
+  "license": "MIT",
+  "github": "https://github.com/tectonic-typesetting/tectonic",
+  "project": "tectonic-typesetting.github.io",
+  "displayName": "tectonic"
+}

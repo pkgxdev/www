@@ -1,0 +1,13 @@
+{
+  "brief": "CLI tool to make git changes across many repos",
+  "description": "A CLI tool to make git changes across many repos, especially useful with Microservices.",
+  "homepage": "https://medium.com/always-a-student/mo-repos-mo-problems-how-we-make-changes-across-many-git-repositories-293ad7d418f0",
+  "provides": [
+    "mp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/microplane",
+  "license": "Apache-2.0",
+  "github": "https://github.com/Clever/microplane",
+  "project": "github.com/clever/microplane",
+  "displayName": "mp"
+}

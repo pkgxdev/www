@@ -1,0 +1,12 @@
+{
+  "description": "Access large language models from the command-line",
+  "homepage": "https://llm.datasette.io/",
+  "provides": [
+    "llm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/llm",
+  "license": "Apache-2.0",
+  "github": "https://github.com/simonw/llm",
+  "project": "llm.datasette.io",
+  "displayName": "llm"
+}

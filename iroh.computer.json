@@ -1,0 +1,10 @@
+{
+  "description": "peer-2-peer that just works",
+  "homepage": "https://iroh.computer",
+  "provides": [
+    "iroh"
+  ],
+  "github": "https://github.com/n0-computer/iroh",
+  "project": "iroh.computer",
+  "displayName": "iroh"
+}

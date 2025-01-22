@@ -1,0 +1,13 @@
+{
+  "brief": "Securely send things from one computer to another",
+  "description": "Easily and securely send things from one computer to another :crocodile: :package:",
+  "homepage": "https://schollz.com/software/croc6",
+  "provides": [
+    "croc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/croc",
+  "license": "MIT",
+  "github": "https://github.com/schollz/croc",
+  "project": "schollz.com/croc",
+  "displayName": "croc"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Send macOS User Notifications from the command-line",
+  "description": "Send User Notifications on macOS from the command-line.",
+  "provides": [
+    "terminal-notifier"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/terminal-notifier",
+  "license": "MIT",
+  "github": "https://github.com/julienXX/terminal-notifier",
+  "project": "github.com/julienXX/terminal-notifier",
+  "displayName": "terminal-notifier"
+}

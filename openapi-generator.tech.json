@@ -1,0 +1,13 @@
+{
+  "brief": "Generate clients, server & docs from an OpenAPI spec (v2, v3)",
+  "description": "OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, documentation and configuration automatically given an OpenAPI Spec (v2, v3)",
+  "homepage": "https://openapi-generator.tech/",
+  "provides": [
+    "openapi-generator"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/openapi-generator",
+  "license": "Apache-2.0",
+  "github": "https://github.com/OpenAPITools/openapi-generator",
+  "project": "openapi-generator.tech",
+  "displayName": "openapi-generator"
+}

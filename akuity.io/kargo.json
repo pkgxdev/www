@@ -1,0 +1,10 @@
+{
+  "description": "Application lifecycle orchestration",
+  "homepage": "https://kargo.akuity.io/",
+  "provides": [
+    "kargo"
+  ],
+  "github": "https://github.com/akuity/kargo",
+  "project": "akuity.io/kargo",
+  "displayName": "kargo"
+}

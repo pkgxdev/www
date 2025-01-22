@@ -1,0 +1,13 @@
+{
+  "brief": "Launch process with environment variables from Consul and Vault",
+  "description": "Launch a subprocess with environment variables using data from @HashiCorp Consul and Vault.",
+  "homepage": "https://www.hashicorp.com/",
+  "provides": [
+    "envconsul"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/envconsul",
+  "license": "MPL-2.0",
+  "github": "https://github.com/hashicorp/envconsul",
+  "project": "hashicorp.com/envconsul",
+  "displayName": "envconsul"
+}

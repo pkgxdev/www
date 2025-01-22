@@ -1,0 +1,6 @@
+{
+  "description": "BSD Mesage Digest library (mirror)",
+  "homepage": "https://www.hadrons.org/software/libmd/",
+  "github": "https://github.com/guillemj/libmd",
+  "project": "hadrons.org/libmd"
+}

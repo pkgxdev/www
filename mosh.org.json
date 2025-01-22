@@ -1,0 +1,13 @@
+{
+  "brief": "Mobile Shell",
+  "description": "Remote terminal application",
+  "homepage": "https://mosh.org",
+  "provides": [
+    "mosh-client",
+    "mosh-server"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mosh",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/mobile-shell/mosh",
+  "project": "mosh.org"
+}

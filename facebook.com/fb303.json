@@ -1,0 +1,5 @@
+{
+  "description": "fb303 is a core set of thrift functions that provide a common mechanism for querying stats and other information from a service.",
+  "github": "https://github.com/facebook/fb303",
+  "project": "facebook.com/fb303"
+}

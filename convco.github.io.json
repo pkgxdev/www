@@ -1,0 +1,12 @@
+{
+  "description": "Conventional commits, changelog, versioning, validation",
+  "homepage": "https://convco.github.io",
+  "provides": [
+    "convco"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/convco",
+  "license": "MIT",
+  "github": "https://github.com/convco/convco",
+  "project": "convco.github.io",
+  "displayName": "convco"
+}

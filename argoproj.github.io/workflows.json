@@ -1,0 +1,13 @@
+{
+  "brief": "Workflow Engine for Kubernetes",
+  "description": "Get stuff done with container-native workflows for Kubernetes",
+  "homepage": "https://argoproj.io",
+  "provides": [
+    "argo"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/argo",
+  "license": "Apache-2.0",
+  "github": "https://github.com/argoproj/argo-workflows",
+  "project": "argoproj.github.io/workflows",
+  "displayName": "argo"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Weather Companion for the Terminal",
+  "description": "🌞 🦀 🌙 Weather companion for the terminal. Rust app. ",
+  "homepage": "https://crates.io/crates/wthrr",
+  "provides": [
+    "wthrr"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/wthrr",
+  "license": "MIT",
+  "github": "https://github.com/ttytm/wthrr-the-weathercrab",
+  "project": "crates.io/wthrr",
+  "displayName": "wthrr"
+}

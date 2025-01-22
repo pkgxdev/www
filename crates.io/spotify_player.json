@@ -1,0 +1,12 @@
+{
+  "brief": "Command driven spotify player",
+  "description": "A Spotify player in the terminal with full feature parity",
+  "provides": [
+    "spotify_player"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/spotify_player",
+  "license": "MIT",
+  "github": "https://github.com/aome510/spotify-player",
+  "project": "crates.io/spotify_player",
+  "displayName": "spotify_player"
+}

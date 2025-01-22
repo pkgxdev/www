@@ -1,0 +1,13 @@
+{
+  "brief": "C XSLT library for GNOME",
+  "description": "Read-only mirror of https://gitlab.gnome.org/GNOME/libxslt",
+  "homepage": "http://xmlsoft.org/XSLT/",
+  "provides": [
+    "xslt-config",
+    "xsltproc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libxslt",
+  "license": "X11",
+  "github": "https://github.com/GNOME/libxslt",
+  "project": "gnome.org/libxslt"
+}

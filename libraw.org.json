@@ -1,0 +1,20 @@
+{
+  "description": "Library for reading RAW files from digital photo cameras",
+  "homepage": "https://www.libraw.org/",
+  "provides": [
+    "4channels",
+    "dcraw_emu",
+    "dcraw_half",
+    "half_mt",
+    "mem_image",
+    "multirender_test",
+    "postprocessing_benchmark",
+    "raw-identify",
+    "rawtextdump",
+    "simple_dcraw",
+    "unprocessed_raw"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libraw",
+  "license": "LGPL-2.1-only OR CDDL-1.0",
+  "project": "libraw.org"
+}

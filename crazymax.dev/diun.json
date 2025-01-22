@@ -1,0 +1,10 @@
+{
+  "description": "Receive notifications when an image is updated on a Docker registry",
+  "homepage": "https://crazymax.dev/diun/",
+  "provides": [
+    "diun"
+  ],
+  "github": "https://github.com/crazy-max/diun",
+  "project": "crazymax.dev/diun",
+  "displayName": "diun"
+}

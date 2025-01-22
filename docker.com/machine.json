@@ -1,0 +1,11 @@
+{
+  "description": "Create Docker hosts locally and on cloud providers",
+  "homepage": "https://docs.gitlab.com/runner/executors/docker_machine.html",
+  "provides": [
+    "docker-machine"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/docker-machine",
+  "license": "Apache-2.0",
+  "project": "docker.com/machine",
+  "displayName": "docker-machine"
+}

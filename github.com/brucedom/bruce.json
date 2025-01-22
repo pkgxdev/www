@@ -1,0 +1,9 @@
+{
+  "description": "bruce client repository.",
+  "provides": [
+    "bruce"
+  ],
+  "github": "https://github.com/brucedom/bruce",
+  "project": "github.com/brucedom/bruce",
+  "displayName": "bruce"
+}

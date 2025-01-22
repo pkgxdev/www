@@ -1,0 +1,13 @@
+{
+  "brief": "Cost estimates for Terraform",
+  "description": "Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left!",
+  "homepage": "https://www.infracost.io/docs/",
+  "provides": [
+    "infracost"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/infracost",
+  "license": "Apache-2.0",
+  "github": "https://github.com/infracost/infracost",
+  "project": "infracost.io",
+  "displayName": "infracost"
+}

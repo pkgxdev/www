@@ -1,0 +1,13 @@
+{
+  "brief": "Fast static site generator in a single binary with everything built-in",
+  "description": "A fast static site generator in a single binary with everything built-in. https://www.getzola.org",
+  "homepage": "https://www.getzola.org/",
+  "provides": [
+    "zola"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/zola",
+  "license": "MIT",
+  "github": "https://github.com/getzola/zola",
+  "project": "getzola.org",
+  "displayName": "zola"
+}

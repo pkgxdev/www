@@ -1,0 +1,9 @@
+{
+  "description": "mscp: transfer files over multiple SSH (SFTP) connections",
+  "provides": [
+    "mscp"
+  ],
+  "github": "https://github.com/upa/mscp",
+  "project": "github.com/upa/mscp",
+  "displayName": "mscp"
+}

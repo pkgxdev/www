@@ -1,0 +1,12 @@
+{
+  "description": "Simplified packaging of Python modules",
+  "homepage": "https://flit.pypa.io/",
+  "provides": [
+    "flit"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/flit",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/pypa/flit",
+  "project": "flit.pypa.io",
+  "displayName": "flit"
+}

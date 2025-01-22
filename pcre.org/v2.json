@@ -1,0 +1,14 @@
+{
+  "brief": "PCRE2 development is based here.",
+  "description": "Perl compatible regular expressions library with a new API",
+  "homepage": "https://www.pcre.org/",
+  "provides": [
+    "pcre2-config",
+    "pcre2grep",
+    "pcre2test"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pcre2",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/PCRE2Project/pcre2",
+  "project": "pcre.org/v2"
+}

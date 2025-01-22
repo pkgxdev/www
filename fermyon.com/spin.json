@@ -1,0 +1,13 @@
+{
+  "brief": "Efficient verification tool of multi-threaded software",
+  "description": "Spin is the open source developer tool for building and running serverless applications powered by WebAssembly.",
+  "homepage": "https://spinroot.com/spin/whatispin.html",
+  "provides": [
+    "spin"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/spin",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/fermyon/spin",
+  "project": "fermyon.com/spin",
+  "displayName": "spin"
+}

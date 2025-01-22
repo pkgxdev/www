@@ -1,0 +1,12 @@
+{
+  "brief": "n³ The unorthodox terminal file manager",
+  "description": "Tiny, lightning fast, feature-packed file manager",
+  "provides": [
+    "nnn"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nnn",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/jarun/nnn",
+  "project": "github.com/jarun/nnn",
+  "displayName": "nnn"
+}

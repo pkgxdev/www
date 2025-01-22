@@ -1,0 +1,21 @@
+{
+  "description": "GNU binary tools for native development",
+  "homepage": "https://www.gnu.org/software/binutils/binutils.html",
+  "provides": [
+    "addr2line",
+    "ar",
+    "c++filt",
+    "elfedit",
+    "nm",
+    "objcopy",
+    "objdump",
+    "ranlib",
+    "readelf",
+    "size",
+    "strings",
+    "strip"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/binutils",
+  "license": "GPL-2.0-or-later AND GPL-3.0-or-later AND LGPL-2.0-or-later AND LGPL-3.0-only",
+  "project": "gnu.org/binutils"
+}

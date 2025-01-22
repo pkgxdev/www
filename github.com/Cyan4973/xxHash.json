@@ -1,0 +1,14 @@
+{
+  "description": "Extremely fast non-cryptographic hash algorithm",
+  "homepage": "https://xxhash.com",
+  "provides": [
+    "xxhsum",
+    "xxh32sum",
+    "xxh64sum",
+    "xxh128sum"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xxhash",
+  "license": "BSD-2-Clause AND GPL-2.0-or-later",
+  "github": "https://github.com/Cyan4973/xxHash",
+  "project": "github.com/Cyan4973/xxHash"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "mash up millions of open source packages into monstrously powerful scripts",
+  "homepage": "https://mash.pkgx.sh",
+  "provides": [
+    "mash"
+  ],
+  "github": "https://github.com/pkgxdev/mash",
+  "project": "pkgx.sh/mash",
+  "displayName": "mash"
+}

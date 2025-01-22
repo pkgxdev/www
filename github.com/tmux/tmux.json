@@ -1,0 +1,13 @@
+{
+  "brief": "tmux source code",
+  "description": "Terminal multiplexer",
+  "homepage": "https://tmux.github.io/",
+  "provides": [
+    "tmux"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tmux",
+  "license": "ISC",
+  "github": "https://github.com/tmux/tmux",
+  "project": "github.com/tmux/tmux",
+  "displayName": "tmux"
+}

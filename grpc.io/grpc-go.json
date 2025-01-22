@@ -1,0 +1,13 @@
+{
+  "brief": "Protoc plugin that generates code for gRPC-Go clients",
+  "description": "The Go language implementation of gRPC. HTTP/2 based RPC",
+  "homepage": "https://grpc.io",
+  "provides": [
+    "protoc-gen-go-grpc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/protoc-gen-go-grpc",
+  "license": "Apache-2.0",
+  "github": "https://github.com/grpc/grpc-go",
+  "project": "grpc.io/grpc-go",
+  "displayName": "protoc-gen-go-grpc"
+}

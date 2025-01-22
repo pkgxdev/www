@@ -1,0 +1,13 @@
+{
+  "brief": "👁‍🗨 Rare and exotic sats",
+  "description": "Index, block explorer, and command-line wallet",
+  "homepage": "https://ordinals.com/",
+  "provides": [
+    "ord"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ord",
+  "license": "CC0-1.0",
+  "github": "https://github.com/ordinals/ord",
+  "project": "ordinals.com",
+  "displayName": "ord"
+}

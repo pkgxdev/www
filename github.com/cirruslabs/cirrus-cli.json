@@ -1,0 +1,9 @@
+{
+  "description": "CLI for executing Cirrus tasks locally and in any CI",
+  "provides": [
+    "cirrus"
+  ],
+  "github": "https://github.com/cirruslabs/cirrus-cli",
+  "project": "github.com/cirruslabs/cirrus-cli",
+  "displayName": "cirrus"
+}

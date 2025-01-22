@@ -1,0 +1,16 @@
+{
+  "brief": "GD Graphics Library",
+  "description": "Graphics library to dynamically manipulate images",
+  "homepage": "https://libgd.github.io/",
+  "provides": [
+    "bdftogd",
+    "gd2copypal",
+    "gd2togif",
+    "gdcmpgif",
+    "giftogd2"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gd",
+  "license": "GD",
+  "github": "https://github.com/libgd/libgd",
+  "project": "libgd.github.io"
+}

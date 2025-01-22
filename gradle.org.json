@@ -1,0 +1,11 @@
+{
+  "description": "Open-source build automation tool based on the Groovy and Kotlin DSL",
+  "homepage": "https://www.gradle.org/",
+  "provides": [
+    "gradle"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gradle",
+  "license": "Apache-2.0",
+  "project": "gradle.org",
+  "displayName": "gradle"
+}

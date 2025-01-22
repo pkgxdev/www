@@ -1,0 +1,5 @@
+{
+  "description": "Library for SRTP (Secure Realtime Transport Protocol) ",
+  "github": "https://github.com/cisco/libsrtp",
+  "project": "cisco.com/libsrtp"
+}

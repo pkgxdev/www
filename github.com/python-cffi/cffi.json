@@ -1,0 +1,6 @@
+{
+  "description": "A Foreign Function Interface package for calling C libraries from Python.",
+  "homepage": "https://cffi.readthedocs.io/en/latest/",
+  "github": "https://github.com/python-cffi/cffi",
+  "project": "github.com/python-cffi/cffi"
+}

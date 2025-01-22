@@ -1,0 +1,12 @@
+{
+  "brief": "CLI to retrieve AWS credentials from Okta",
+  "description": "A CLI that utilizes Okta IdP via SAML to acquire temporary AWS credentials",
+  "provides": [
+    "gimme-aws-creds"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gimme-aws-creds",
+  "license": "Apache-2.0",
+  "github": "https://github.com/Nike-Inc/gimme-aws-creds",
+  "project": "nike.com/gimme-aws-creds",
+  "displayName": "gimme-aws-creds"
+}

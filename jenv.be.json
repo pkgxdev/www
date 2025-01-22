@@ -1,0 +1,10 @@
+{
+  "description": "Manage your Java environment ",
+  "homepage": "http://www.jenv.be",
+  "provides": [
+    "jenv"
+  ],
+  "github": "https://github.com/jenv/jenv",
+  "project": "jenv.be",
+  "displayName": "jenv"
+}

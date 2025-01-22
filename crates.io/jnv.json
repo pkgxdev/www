@@ -1,0 +1,11 @@
+{
+  "description": "Interactive JSON filter using jq",
+  "provides": [
+    "jnv"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jnv",
+  "license": "MIT",
+  "github": "https://github.com/ynqa/jnv",
+  "project": "crates.io/jnv",
+  "displayName": "jnv"
+}

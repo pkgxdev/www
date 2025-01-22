@@ -1,0 +1,14 @@
+{
+  "description": "Library to Access SMI MIB Information",
+  "homepage": "https://www.ibr.cs.tu-bs.de/projects/libsmi/",
+  "provides": [
+    "smidiff",
+    "smidump",
+    "smilint",
+    "smiquery",
+    "smixlate"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libsmi",
+  "license": "TCL AND BSD-3-Clause AND Beerware",
+  "project": "ibr.cs.tu-bs.de/libsmi"
+}

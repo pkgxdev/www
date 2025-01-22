@@ -1,0 +1,13 @@
+{
+  "brief": "Web and API based SMTP testing",
+  "description": "An email and SMTP testing tool with API for developers",
+  "homepage": "https://mailpit.axllent.org/",
+  "provides": [
+    "mailpit"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mailpit",
+  "license": "MIT",
+  "github": "https://github.com/axllent/mailpit",
+  "project": "github.com/axllent/mailpit",
+  "displayName": "mailpit"
+}

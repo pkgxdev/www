@@ -1,0 +1,13 @@
+{
+  "brief": "Multi-platform, multi-architecture disassembly framework",
+  "description": "Capstone disassembly/disassembler framework for ARM, ARM64 (ARMv8), Alpha, BPF, Ethereum VM, HPPA, LoongArch, M68K, M680X, Mips, MOS65XX, PPC, RISC-V(rv32G/rv64G), SH, Sparc, SystemZ, TMS320C64X, TriCore, Webassembly, XCore and X86.",
+  "homepage": "https://www.capstone-engine.org/",
+  "provides": [
+    "cstool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/capstone",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/capstone-engine/capstone",
+  "project": "capstone-engine.org",
+  "displayName": "cstool"
+}

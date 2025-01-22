@@ -1,0 +1,13 @@
+{
+  "brief": "The official command line client for Cloud Foundry",
+  "description": "Filter to replace numeric timestamps with a formatted date time",
+  "homepage": "https://ee.lbl.gov/",
+  "provides": [
+    "cf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cf",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/cloudfoundry/cli",
+  "project": "cloudfoundry.org/cf-cli",
+  "displayName": "cf"
+}

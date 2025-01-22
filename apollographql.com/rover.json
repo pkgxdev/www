@@ -1,0 +1,13 @@
+{
+  "brief": "The CLI for Apollo GraphOS",
+  "description": "CLI for managing and maintaining data graphs with Apollo Studio",
+  "homepage": "https://www.apollographql.com/docs/rover/",
+  "provides": [
+    "rover"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rover",
+  "license": "MIT",
+  "github": "https://github.com/apollographql/rover",
+  "project": "apollographql.com/rover",
+  "displayName": "rover"
+}

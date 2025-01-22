@@ -1,0 +1,13 @@
+{
+  "brief": "Distributed, Highly Available, Datacenter-Aware Scheduler",
+  "description": "Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.",
+  "homepage": "https://www.nomadproject.io",
+  "provides": [
+    "nomad"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nomad",
+  "license": "MPL-2.0",
+  "github": "https://github.com/hashicorp/nomad",
+  "project": "nomadproject.io",
+  "displayName": "nomad"
+}

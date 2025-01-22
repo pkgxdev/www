@@ -1,0 +1,15 @@
+{
+  "brief": "Hybrid lossless audio compression",
+  "description": "WavPack encode/decode library, command-line programs, and several plugins",
+  "homepage": "https://www.wavpack.com/",
+  "provides": [
+    "wavpack",
+    "wvunpack",
+    "wvtag",
+    "wvgain"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/wavpack",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/dbry/WavPack",
+  "project": "wavpack.com"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "CLI csv pretty printer",
+  "description": "📺(tv) Tidy Viewer is a cross-platform CLI csv pretty printer that uses column styling to maximize viewer enjoyment.",
+  "provides": [
+    "tidy-viewer"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tidy-viewer",
+  "license": "Unlicense",
+  "github": "https://github.com/alexhallam/tv",
+  "project": "crates.io/tidy-viewer",
+  "displayName": "tidy-viewer"
+}

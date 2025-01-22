@@ -1,0 +1,11 @@
+{
+  "description": "Upgrade all the things",
+  "provides": [
+    "topgrade"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/topgrade",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/topgrade-rs/topgrade",
+  "project": "crates.io/topgrade",
+  "displayName": "topgrade"
+}

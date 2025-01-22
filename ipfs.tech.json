@@ -1,0 +1,13 @@
+{
+  "brief": "An IPFS implementation in Go",
+  "description": "Peer-to-peer hypermedia protocol",
+  "homepage": "https://ipfs.tech/",
+  "provides": [
+    "ipfs"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ipfs",
+  "license": "MIT AND (MIT OR Apache-2.0)",
+  "github": "https://github.com/ipfs/kubo",
+  "project": "ipfs.tech",
+  "displayName": "ipfs"
+}

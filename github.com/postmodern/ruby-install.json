@@ -1,0 +1,12 @@
+{
+  "brief": "Installs Ruby, JRuby, TruffleRuby, or mruby",
+  "description": "Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby",
+  "provides": [
+    "ruby-install"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ruby-install",
+  "license": "MIT",
+  "github": "https://github.com/postmodern/ruby-install",
+  "project": "github.com/postmodern/ruby-install",
+  "displayName": "ruby-install"
+}

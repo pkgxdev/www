@@ -1,0 +1,10 @@
+{
+  "description": "Query git repositories with SQL. Generate reports, perform status checks, analyze codebases. 🔍 📊",
+  "homepage": "https://mergestat.com/",
+  "provides": [
+    "mergestat"
+  ],
+  "github": "https://github.com/mergestat/mergestat-lite",
+  "project": "mergestat.com/mergestat-lite",
+  "displayName": "mergestat"
+}

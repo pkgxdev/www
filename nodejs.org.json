@@ -1,0 +1,13 @@
+{
+  "brief": "Node.js JavaScript runtime ✨🐢🚀✨",
+  "description": "Platform built on V8 to build network applications",
+  "homepage": "https://nodejs.org/",
+  "provides": [
+    "node"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/node",
+  "license": "MIT",
+  "github": "https://github.com/nodejs/node",
+  "project": "nodejs.org",
+  "displayName": "node"
+}

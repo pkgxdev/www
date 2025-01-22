@@ -1,0 +1,13 @@
+{
+  "brief": "Python dependency management tool",
+  "description": " Python Development Workflow for Humans.",
+  "homepage": "https://pipenv.pypa.io",
+  "provides": [
+    "pipenv"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pipenv",
+  "license": "MIT",
+  "github": "https://github.com/pypa/pipenv",
+  "project": "pipenv.pypa.io",
+  "displayName": "pipenv"
+}

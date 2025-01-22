@@ -1,0 +1,12 @@
+{
+  "brief": "Python Language Server for the Language Server Protocol",
+  "description": "Fork of the python-language-server project, maintained by the Spyder IDE team and the community",
+  "provides": [
+    "pylsp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/python-lsp-server",
+  "license": "MIT",
+  "github": "https://github.com/python-lsp/python-lsp-server",
+  "project": "github.com/python-lsp/python-lsp-server",
+  "displayName": "pylsp"
+}

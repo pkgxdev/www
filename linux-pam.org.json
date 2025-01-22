@@ -1,0 +1,12 @@
+{
+  "description": "Linux PAM (Pluggable Authentication Modules for Linux) project",
+  "provides": [
+    "faillock",
+    "mkhomedir_helper",
+    "pam_namespace_helper",
+    "pam_timestamp_check",
+    "unix_chkpwd"
+  ],
+  "github": "https://github.com/linux-pam/linux-pam",
+  "project": "linux-pam.org"
+}

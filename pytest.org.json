@@ -1,0 +1,13 @@
+{
+  "brief": "Simple powerful testing with Python",
+  "description": "The pytest framework makes it easy to write small tests, yet scales to support complex functional testing",
+  "homepage": "https://docs.pytest.org/en/latest/",
+  "provides": [
+    "pytest"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pytest",
+  "license": "MIT",
+  "github": "https://github.com/pytest-dev/pytest",
+  "project": "pytest.org",
+  "displayName": "pytest"
+}

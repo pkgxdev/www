@@ -1,0 +1,13 @@
+{
+  "brief": "Automatically generates Rust FFI bindings to C (and some C++) libraries",
+  "description": "Automatically generates Rust FFI bindings to C (and some C++) libraries.",
+  "homepage": "https://rust-lang.github.io/rust-bindgen/",
+  "provides": [
+    "bindgen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bindgen",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/rust-lang/rust-bindgen",
+  "project": "rust-lang.org/rust-bindgen",
+  "displayName": "bindgen"
+}

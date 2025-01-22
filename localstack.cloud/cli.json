@@ -1,0 +1,13 @@
+{
+  "brief": "Fully functional local AWS cloud stack",
+  "description": "The LocalStack CLI packaged using pyinstaller",
+  "homepage": "https://localstack.cloud/",
+  "provides": [
+    "localstack"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/localstack",
+  "license": "Apache-2.0",
+  "github": "https://github.com/localstack/localstack-cli",
+  "project": "localstack.cloud/cli",
+  "displayName": "localstack"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "The fastest and safest AV1 encoder.",
+  "description": "Fastest and safest AV1 video encoder",
+  "provides": [
+    "rav1e"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rav1e",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/xiph/rav1e",
+  "project": "github.com/xiph/rav1e",
+  "displayName": "rav1e"
+}

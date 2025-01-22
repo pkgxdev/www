@@ -1,0 +1,12 @@
+{
+  "brief": "Docker and OCI Registry Client in Go and tooling using those libraries",
+  "description": "Docker and OCI Registry Client in Go and tooling using those libraries.",
+  "provides": [
+    "regsync"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/regclient",
+  "license": "Apache-2.0",
+  "github": "https://github.com/regclient/regclient",
+  "project": "github.com/regclient/regclient/regsync",
+  "displayName": "regsync"
+}

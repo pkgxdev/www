@@ -1,0 +1,18 @@
+{
+  "brief": "Bitcoin Core integration/staging tree",
+  "description": "Decentralized, peer to peer payment network",
+  "homepage": "https://bitcoincore.org/",
+  "provides": [
+    "bench_bitcoin",
+    "elements-cli",
+    "elements-tx",
+    "elements-util",
+    "elements-wallet",
+    "elementsd",
+    "test_bitcoin"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bitcoin",
+  "license": "MIT AND BSD-3-Clause AND BSL-1.0 AND Sleepycat",
+  "github": "https://github.com/bitcoin/bitcoin",
+  "project": "elementsproject.org"
+}

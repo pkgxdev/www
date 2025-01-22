@@ -1,0 +1,5 @@
+{
+  "description": "Library for collision detection between two convex shapes",
+  "github": "https://github.com/danfis/libccd",
+  "project": "github.com/danfis/libccd"
+}

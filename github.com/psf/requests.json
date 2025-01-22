@@ -1,0 +1,6 @@
+{
+  "description": "A simple, yet elegant, HTTP library.",
+  "homepage": "https://requests.readthedocs.io/en/latest/",
+  "github": "https://github.com/psf/requests",
+  "project": "github.com/psf/requests"
+}

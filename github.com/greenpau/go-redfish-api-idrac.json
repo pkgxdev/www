@@ -1,0 +1,9 @@
+{
+  "description": "iDRAC Redfish API client library written in Go.",
+  "provides": [
+    "go-redfish-api-idrac-client"
+  ],
+  "github": "https://github.com/greenpau/go-redfish-api-idrac",
+  "project": "github.com/greenpau/go-redfish-api-idrac",
+  "displayName": "go-redfish-api-idrac-client"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "A simple directory sanitizer, written in rust.",
+  "provides": [
+    "sanitize"
+  ],
+  "github": "https://github.com/jhheider/sanitize",
+  "project": "crates.io/sanitize",
+  "displayName": "sanitize"
+}

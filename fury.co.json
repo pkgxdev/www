@@ -1,0 +1,10 @@
+{
+  "description": "Gemfury CLI",
+  "homepage": "https://fury.co/guide/cli",
+  "provides": [
+    "fury"
+  ],
+  "github": "https://github.com/gemfury/cli",
+  "project": "fury.co",
+  "displayName": "fury"
+}

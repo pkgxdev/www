@@ -1,0 +1,13 @@
+{
+  "brief": "License list generator of all your dependencies for iOS applications",
+  "description": "A license list generator of all your dependencies for iOS applications",
+  "homepage": "https://www.slideshare.net/mono0926/licenseplist-a-license-list-generator-of-all-your-dependencies-for-ios-applications",
+  "provides": [
+    "license-plist"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/licenseplist",
+  "license": "MIT",
+  "github": "https://github.com/mono0926/LicensePList",
+  "project": "github.com/mono0926/LicensePlist",
+  "displayName": "license-plist"
+}

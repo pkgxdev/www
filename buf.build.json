@@ -1,0 +1,13 @@
+{
+  "brief": "New way of working with Protocol Buffers",
+  "description": "The best way of working with Protocol Buffers.",
+  "homepage": "https://buf.build",
+  "provides": [
+    "buf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/buf",
+  "license": "Apache-2.0",
+  "github": "https://github.com/bufbuild/buf",
+  "project": "buf.build",
+  "displayName": "buf"
+}

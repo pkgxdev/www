@@ -1,0 +1,9 @@
+{
+  "description": "Garm external provider for OpenStack",
+  "provides": [
+    "garm-provider-openstack"
+  ],
+  "github": "https://github.com/cloudbase/garm-provider-openstack",
+  "project": "github.com/cloudbase/garm-provider-openstack",
+  "displayName": "garm-provider-openstack"
+}

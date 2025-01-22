@@ -1,0 +1,12 @@
+{
+  "brief": "Get/set bluetooth power and discoverable state",
+  "description": "CLI for bluetooth on OSX: power, discoverable state, list, inquire devices, connect, info, …",
+  "provides": [
+    "blueutil"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/blueutil",
+  "license": "MIT",
+  "github": "https://github.com/toy/blueutil",
+  "project": "github.com/toy/blueutil",
+  "displayName": "blueutil"
+}

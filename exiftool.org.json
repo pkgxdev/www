@@ -1,0 +1,11 @@
+{
+  "description": "Perl lib for reading and writing EXIF metadata",
+  "homepage": "https://exiftool.org",
+  "provides": [
+    "exiftool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/exiftool",
+  "license": "Artistic-1.0-Perl OR GPL-1.0-or-later",
+  "project": "exiftool.org",
+  "displayName": "exiftool"
+}

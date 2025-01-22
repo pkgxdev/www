@@ -1,0 +1,10 @@
+{
+  "description": "Open Source, Google Zanzibar-inspired database for scalably storing and querying fine-grained authorization data",
+  "homepage": "https://authzed.com/docs",
+  "provides": [
+    "spicedb"
+  ],
+  "github": "https://github.com/authzed/spicedb",
+  "project": "authzed.com/spicedb",
+  "displayName": "spicedb"
+}

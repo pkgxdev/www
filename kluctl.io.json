@@ -1,0 +1,10 @@
+{
+  "description": "The missing glue to put together large Kubernetes deployments, composed of multiple smaller parts (Helm/Kustomize/...)  in a manageable and unified way.",
+  "homepage": "https://kluctl.io",
+  "provides": [
+    "kluctl"
+  ],
+  "github": "https://github.com/kluctl/kluctl",
+  "project": "kluctl.io",
+  "displayName": "kluctl"
+}

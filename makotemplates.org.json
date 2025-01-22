@@ -1,0 +1,10 @@
+{
+  "description": "Mako Templates for Python",
+  "homepage": "https://www.makotemplates.org",
+  "provides": [
+    "mako-render"
+  ],
+  "github": "https://github.com/sqlalchemy/mako",
+  "project": "makotemplates.org",
+  "displayName": "mako-render"
+}

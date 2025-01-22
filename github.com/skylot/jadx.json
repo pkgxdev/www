@@ -1,0 +1,11 @@
+{
+  "description": "Dex to Java decompiler",
+  "provides": [
+    "jadx",
+    "jadx-gui"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jadx",
+  "license": "Apache-2.0",
+  "github": "https://github.com/skylot/jadx",
+  "project": "github.com/skylot/jadx"
+}

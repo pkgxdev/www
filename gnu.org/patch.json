@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "patch"
+  ],
+  "project": "gnu.org/patch",
+  "displayName": "patch"
+}

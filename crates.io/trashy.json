@@ -1,0 +1,11 @@
+{
+  "description": "Move files and folders to the trash",
+  "provides": [
+    "trash"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/macos-trash",
+  "license": "MIT",
+  "github": "https://github.com/sindresorhus/macos-trash",
+  "project": "crates.io/trashy",
+  "displayName": "trash"
+}

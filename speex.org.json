@@ -1,0 +1,11 @@
+{
+  "description": "Audio codec designed for speech",
+  "homepage": "https://speex.org/",
+  "provides": [
+    "speexdec"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/speex",
+  "license": "BSD-3-Clause",
+  "project": "speex.org",
+  "displayName": "speexdec"
+}

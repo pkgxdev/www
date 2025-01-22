@@ -1,0 +1,11 @@
+{
+  "description": "Fuzzy Finder in rust!",
+  "provides": [
+    "sk"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sk",
+  "license": "MIT",
+  "github": "https://github.com/lotabout/skim",
+  "project": "crates.io/skim",
+  "displayName": "sk"
+}

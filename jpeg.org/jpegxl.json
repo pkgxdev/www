@@ -1,0 +1,14 @@
+{
+  "brief": "New file format for still image compression",
+  "description": "JPEG XL image format reference implementation",
+  "homepage": "https://jpeg.org/jpegxl/index.html",
+  "provides": [
+    "cjxl",
+    "djxl",
+    "jxlinfo"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jpeg-xl",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/libjxl/libjxl",
+  "project": "jpeg.org/jpegxl"
+}

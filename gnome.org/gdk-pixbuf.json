@@ -1,0 +1,13 @@
+{
+  "description": "Toolkit for image loading and pixel buffer manipulation",
+  "homepage": "https://gtk.org",
+  "provides": [
+    "gdk-pixbuf-csource",
+    "gdk-pixbuf-pixdata",
+    "gdk-pixbuf-query-loaders",
+    "gdk-pixbuf-thumbnailer"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gdk-pixbuf",
+  "license": "LGPL-2.1-or-later",
+  "project": "gnome.org/gdk-pixbuf"
+}

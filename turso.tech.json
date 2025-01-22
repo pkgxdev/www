@@ -1,0 +1,10 @@
+{
+  "description": "Command line interface to Turso.",
+  "homepage": "https://turso.tech",
+  "provides": [
+    "turso"
+  ],
+  "github": "https://github.com/tursodatabase/turso-cli",
+  "project": "turso.tech",
+  "displayName": "turso"
+}

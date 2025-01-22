@@ -1,0 +1,14 @@
+{
+  "brief": "Apptainer: Application containers for Linux",
+  "description": "Application container and unprivileged sandbox platform for Linux",
+  "homepage": "https://apptainer.org/",
+  "provides": [
+    "apptainer",
+    "run-singularity",
+    "singularity"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/apptainer",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/apptainer/apptainer",
+  "project": "apptainer.org"
+}

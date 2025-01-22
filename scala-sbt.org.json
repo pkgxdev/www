@@ -1,0 +1,13 @@
+{
+  "brief": "Build tool for Scala projects",
+  "description": "sbt, the interactive build tool",
+  "homepage": "https://www.scala-sbt.org/",
+  "provides": [
+    "sbt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sbt",
+  "license": "Apache-2.0",
+  "github": "https://github.com/sbt/sbt",
+  "project": "scala-sbt.org",
+  "displayName": "sbt"
+}

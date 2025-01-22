@@ -1,0 +1,13 @@
+{
+  "brief": "Ranger-like terminal file manager written in Rust",
+  "description": "ranger-like terminal file manager written in Rust",
+  "homepage": "https://crates.io/crates/joshuto",
+  "provides": [
+    "joshuto"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/joshuto",
+  "license": "LGPL-3.0-or-later",
+  "github": "https://github.com/kamiyaa/joshuto",
+  "project": "crates.io/joshuto",
+  "displayName": "joshuto"
+}

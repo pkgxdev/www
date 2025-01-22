@@ -1,0 +1,13 @@
+{
+  "brief": "Xcanner for end-of-life software in container images, filesystems, and SBOMs",
+  "description": "A scanner for end-of-life (EOL) software and dependencies in container images, filesystems, and SBOMs",
+  "homepage": "https://www.xeol.io/",
+  "provides": [
+    "xeol"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xeol",
+  "license": "Apache-2.0",
+  "github": "https://github.com/xeol-io/xeol",
+  "project": "github.com/xeol-io/xeol",
+  "displayName": "xeol"
+}

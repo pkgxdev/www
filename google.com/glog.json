@@ -1,0 +1,6 @@
+{
+  "description": "C++ implementation of the Google logging module",
+  "homepage": "http://google.github.io/glog/",
+  "github": "https://github.com/google/glog",
+  "project": "google.com/glog"
+}

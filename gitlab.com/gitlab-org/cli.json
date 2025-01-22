@@ -1,0 +1,11 @@
+{
+  "description": "Open-source GitLab command-line tool",
+  "homepage": "https://gitlab.com/gitlab-org/cli",
+  "provides": [
+    "glab"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/glab",
+  "license": "MIT",
+  "project": "gitlab.com/gitlab-org/cli",
+  "displayName": "glab"
+}

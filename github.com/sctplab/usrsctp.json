@@ -1,0 +1,5 @@
+{
+  "description": "A portable SCTP userland stack",
+  "github": "https://github.com/sctplab/usrsctp",
+  "project": "github.com/sctplab/usrsctp"
+}

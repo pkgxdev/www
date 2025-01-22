@@ -1,0 +1,14 @@
+{
+  "brief": "Toolkit for defining and handling authorizations",
+  "description": "polkit (formerly PolicyKit) is a toolkit for defining and handling authorizations. It is used for allowing unprivileged processes to speak to privileged processes.",
+  "provides": [
+    "pkaction",
+    "pkcheck",
+    "pkexec",
+    "pkttyagent"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/polkit",
+  "license": "LGPL-2.0-or-later",
+  "github": "https://github.com/polkit-org/polkit",
+  "project": "freedesktop.org/polkit"
+}

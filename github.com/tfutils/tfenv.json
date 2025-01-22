@@ -1,0 +1,9 @@
+{
+  "description": "Terraform version manager",
+  "provides": [
+    "tfenv"
+  ],
+  "github": "https://github.com/tfutils/tfenv",
+  "project": "github.com/tfutils/tfenv",
+  "displayName": "tfenv"
+}

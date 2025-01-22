@@ -1,0 +1,13 @@
+{
+  "brief": "Download with resuming and segmented downloading",
+  "description": "aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.",
+  "homepage": "https://aria2.github.io/",
+  "provides": [
+    "aria2c"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/aria2",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/aria2/aria2",
+  "project": "aria2.github.io",
+  "displayName": "aria2c"
+}

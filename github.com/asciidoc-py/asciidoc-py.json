@@ -1,0 +1,13 @@
+{
+  "brief": "Legacy python processor for AsciiDoc",
+  "description": "Formatter/translator for text files to numerous formats",
+  "homepage": "https://asciidoc-py.github.io/",
+  "provides": [
+    "asciidoc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/asciidoc",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/asciidoc-py/asciidoc-py",
+  "project": "github.com/asciidoc-py/asciidoc-py",
+  "displayName": "asciidoc"
+}

@@ -1,0 +1,18 @@
+{
+  "description": "Official documentation format of the GNU project",
+  "homepage": "https://www.gnu.org/software/texinfo/",
+  "provides": [
+    "info",
+    "install-info",
+    "makeinfo",
+    "pdftexi2dvi",
+    "pod2texi",
+    "texi2any",
+    "texi2dvi",
+    "texi2pdf",
+    "texindex"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/texinfo",
+  "license": "GPL-3.0-or-later",
+  "project": "gnu.org/texinfo"
+}

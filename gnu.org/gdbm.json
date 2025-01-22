@@ -1,0 +1,12 @@
+{
+  "description": "GNU database manager",
+  "homepage": "https://www.gnu.org.ua/software/gdbm/",
+  "provides": [
+    "gdbm_dump",
+    "gdbm_load",
+    "gdbmtool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gdbm",
+  "license": "GPL-3.0-or-later",
+  "project": "gnu.org/gdbm"
+}

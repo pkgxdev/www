@@ -1,0 +1,12 @@
+{
+  "brief": "Little beautifier tool for xcodebuild",
+  "description": "A little beautifier tool for xcodebuild",
+  "provides": [
+    "xcbeautify"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xcbeautify",
+  "license": "MIT",
+  "github": "https://github.com/cpisciotta/xcbeautify",
+  "project": "tuist.io/xcbeautify",
+  "displayName": "xcbeautify"
+}

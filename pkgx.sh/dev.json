@@ -1,0 +1,9 @@
+{
+  "description": "isolated `dev` environments",
+  "provides": [
+    "dev"
+  ],
+  "github": "https://github.com/pkgxdev/dev",
+  "project": "pkgx.sh/dev",
+  "displayName": "dev"
+}

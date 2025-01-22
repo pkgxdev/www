@@ -1,0 +1,13 @@
+{
+  "brief": "Your favorite rust -> wasm workflow tool!",
+  "description": "📦✨ your favorite rust -> wasm workflow tool!",
+  "homepage": "https://rustwasm.github.io/wasm-pack/",
+  "provides": [
+    "wasm-pack"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/wasm-pack",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/rustwasm/wasm-pack",
+  "project": "crates.io/wasm-pack",
+  "displayName": "wasm-pack"
+}

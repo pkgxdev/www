@@ -1,0 +1,14 @@
+{
+  "brief": "Mirror of https://git.ffmpeg.org/ffmpeg.git",
+  "description": "Play, record, convert, and stream audio and video",
+  "homepage": "https://ffmpeg.org/",
+  "provides": [
+    "ffmpeg",
+    "ffplay",
+    "ffprobe"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ffmpeg",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/FFmpeg/FFmpeg",
+  "project": "ffmpeg.org"
+}

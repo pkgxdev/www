@@ -1,0 +1,12 @@
+{
+  "brief": "A package manager that installs and runs executable Swift packages",
+  "description": "Dependency manager that installs and runs Swift command-line tool packages",
+  "provides": [
+    "mint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mint",
+  "license": "MIT",
+  "github": "https://github.com/yonaskolb/Mint",
+  "project": "github.com/yonaskolb/Mint",
+  "displayName": "mint"
+}

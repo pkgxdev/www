@@ -1,0 +1,10 @@
+{
+  "description": "An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.",
+  "homepage": "https://mitmproxy.org",
+  "provides": [
+    "mitmproxy"
+  ],
+  "github": "https://github.com/mitmproxy/mitmproxy",
+  "project": "mitmproxy.org",
+  "displayName": "mitmproxy"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Create modern online books from Markdown files",
+  "description": "Create book from markdown files. Like Gitbook but implemented in Rust",
+  "homepage": "https://rust-lang.github.io/mdBook/",
+  "provides": [
+    "mdbook"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mdbook",
+  "license": "MPL-2.0",
+  "github": "https://github.com/rust-lang/mdBook",
+  "project": "rust-lang.github.io/mdBook",
+  "displayName": "mdbook"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Database agnostic SQL exporter for Prometheus",
+  "provides": [
+    "sql_exporter"
+  ],
+  "github": "https://github.com/free/sql_exporter",
+  "project": "github.com/justwatchcom/sql_exporter",
+  "displayName": "sql_exporter"
+}

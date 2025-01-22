@@ -1,0 +1,9 @@
+{
+  "description": "Command-line tool to guide your template commit messages anywhere, anytime",
+  "provides": [
+    "commit"
+  ],
+  "github": "https://github.com/alt-art/commit",
+  "project": "github.com/alt-art/commit",
+  "displayName": "commit"
+}

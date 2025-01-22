@@ -1,0 +1,5 @@
+{
+  "description": "A fast compressor/decompressor",
+  "github": "https://github.com/google/snappy",
+  "project": "google.github.io/snappy"
+}

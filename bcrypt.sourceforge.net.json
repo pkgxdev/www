@@ -1,0 +1,11 @@
+{
+  "description": "Cross platform file encryption utility using blowfish",
+  "homepage": "https://bcrypt.sourceforge.net/",
+  "provides": [
+    "bcrypt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bcrypt",
+  "license": "BSD-3-Clause",
+  "project": "bcrypt.sourceforge.net",
+  "displayName": "bcrypt"
+}

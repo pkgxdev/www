@@ -1,0 +1,12 @@
+{
+  "brief": "Human friendly `go test` runner",
+  "description": "'go test' runner with output optimized for humans, JUnit XML for CI integration, and a summary of the test results.",
+  "provides": [
+    "gotestsum"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gotestsum",
+  "license": "Apache-2.0",
+  "github": "https://github.com/gotestyourself/gotestsum",
+  "project": "github.com/gotestyourself/gotestsum",
+  "displayName": "gotestsum"
+}

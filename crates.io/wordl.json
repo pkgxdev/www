@@ -1,0 +1,9 @@
+{
+  "description": "Terminal wordle. Web like GUI with Keyboard hints, guess reveal animations etc.",
+  "provides": [
+    "wordl"
+  ],
+  "github": "https://github.com/palerdot/wordl-rs",
+  "project": "crates.io/wordl",
+  "displayName": "wordl"
+}

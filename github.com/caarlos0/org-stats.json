@@ -1,0 +1,9 @@
+{
+  "description": "Get the contributor stats summary from all repos of any given organization",
+  "provides": [
+    "org-stats"
+  ],
+  "github": "https://github.com/caarlos0/org-stats",
+  "project": "github.com/caarlos0/org-stats",
+  "displayName": "org-stats"
+}

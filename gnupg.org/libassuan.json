@@ -1,0 +1,11 @@
+{
+  "description": "Assuan IPC Library",
+  "homepage": "https://www.gnupg.org/related_software/libassuan/",
+  "provides": [
+    "libassuan-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libassuan",
+  "license": "LGPL-2.1-or-later AND GPL-3.0-or-later AND FSFULLR",
+  "project": "gnupg.org/libassuan",
+  "displayName": "libassuan-config"
+}

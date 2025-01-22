@@ -1,0 +1,13 @@
+{
+  "brief": "Syntax-highlighting pager for git and diff output",
+  "description": "A syntax-highlighting pager for git, diff, grep, and blame output",
+  "homepage": "https://dandavison.github.io/delta/",
+  "provides": [
+    "delta"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-delta",
+  "license": "MIT",
+  "github": "https://github.com/dandavison/delta",
+  "project": "crates.io/git-delta",
+  "displayName": "delta"
+}

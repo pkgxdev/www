@@ -1,0 +1,10 @@
+{
+  "description": "Truly universal encoding detector in pure Python",
+  "homepage": "https://charset-normalizer.readthedocs.io/en/latest/",
+  "provides": [
+    "normalizer"
+  ],
+  "github": "https://github.com/Ousret/charset_normalizer",
+  "project": "github.com/Ousret/charset_normalizer",
+  "displayName": "normalizer"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Lazier way to manage everything docker",
+  "description": "The lazier way to manage everything docker",
+  "provides": [
+    "lazydocker"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lazydocker",
+  "license": "MIT",
+  "github": "https://github.com/jesseduffield/lazydocker",
+  "project": "github.com/jesseduffield/lazydocker",
+  "displayName": "lazydocker"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Git extension for versioning large files",
+  "provides": [
+    "git-lfs"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-lfs",
+  "license": "MIT",
+  "github": "https://git-lfs.github.com/",
+  "project": "git-lfs.com",
+  "displayName": "git-lfs"
+}

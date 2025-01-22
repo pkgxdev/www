@@ -1,0 +1,13 @@
+{
+  "brief": "Conventional Commits toolbox",
+  "description": "The Conventional Commits toolbox",
+  "homepage": "https://docs.cocogitto.io/",
+  "provides": [
+    "cog"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cocogitto",
+  "license": "MIT",
+  "github": "https://github.com/cocogitto/cocogitto",
+  "project": "cocogitto.io",
+  "displayName": "cog"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Run your GitHub Actions locally",
+  "description": "Run your GitHub Actions locally 🚀",
+  "homepage": "https://nektosact.com",
+  "provides": [
+    "act"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/act",
+  "license": "MIT",
+  "github": "https://github.com/nektos/act",
+  "project": "github.com/nektos/act",
+  "displayName": "act"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Good-lookin' diffs with diff-highlight and more",
+  "description": "Good-lookin' diffs. Actually… nah… The best-lookin' diffs. :tada:",
+  "provides": [
+    "diff-so-fancy"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/diff-so-fancy",
+  "license": "MIT",
+  "github": "https://github.com/so-fancy/diff-so-fancy",
+  "project": "github.com/so-fancy/diff-so-fancy",
+  "displayName": "diff-so-fancy"
+}

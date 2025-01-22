@@ -1,0 +1,12 @@
+{
+  "brief": "High performance csv viewer for cli",
+  "description": "📠 Pretty and fast csv viewer for cli with cjk/emoji support.",
+  "provides": [
+    "csview"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/csview",
+  "license": "MIT OR Apache-2.0",
+  "github": "https://github.com/wfxr/csview",
+  "project": "crates.io/csview",
+  "displayName": "csview"
+}

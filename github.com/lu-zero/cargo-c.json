@@ -1,0 +1,14 @@
+{
+  "brief": "build and install C-compatible libraries",
+  "description": "Helper program to build and install c-like libraries",
+  "provides": [
+    "cargo-capi",
+    "cargo-cbuild",
+    "cargo-cinstall",
+    "cargo-ctest"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cargo-c",
+  "license": "MIT",
+  "github": "https://github.com/lu-zero/cargo-c",
+  "project": "github.com/lu-zero/cargo-c"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Command line tool for inspecting Parquet files",
+  "provides": [
+    "pqrs"
+  ],
+  "github": "https://github.com/manojkarthick/pqrs",
+  "project": "crates.io/pqrs",
+  "displayName": "pqrs"
+}

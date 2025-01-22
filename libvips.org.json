@@ -1,0 +1,16 @@
+{
+  "brief": "Image processing library",
+  "description": "A fast image processing library with low memory needs.",
+  "homepage": "https://libvips.github.io/libvips/",
+  "provides": [
+    "vips",
+    "vipsedit",
+    "vipsheader",
+    "vipsprofile",
+    "vipsthumbnail"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/vips",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/libvips/libvips",
+  "project": "libvips.org"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Tool to build charms and publish them on Charmhub",
+  "description": "Collaborate, build and publish charmed operators for Kubernetes, Linux and Windows.",
+  "homepage": "https://charmhub.io",
+  "provides": [
+    "charmcraft"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/charmcraft",
+  "license": "Apache-2.0",
+  "github": "https://github.com/canonical/charmcraft",
+  "project": "github.com/canonical/charmcraft",
+  "displayName": "charmcraft"
+}

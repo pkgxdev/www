@@ -1,0 +1,10 @@
+{
+  "description": "A media packaging and development framework for VOD and Live DASH and HLS applications, supporting Common Encryption for Widevine and other DRM Systems.",
+  "homepage": "https://shaka-project.github.io/shaka-packager/",
+  "provides": [
+    "packager",
+    "mpd_generator"
+  ],
+  "github": "https://github.com/shaka-project/shaka-packager",
+  "project": "github.com/shaka-project/shaka-packager"
+}

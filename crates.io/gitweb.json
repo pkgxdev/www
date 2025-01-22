@@ -1,0 +1,9 @@
+{
+  "description": "🌲 Open the current remote repository in your browser",
+  "provides": [
+    "gitweb"
+  ],
+  "github": "https://github.com/yoannfleurydev/gitweb",
+  "project": "crates.io/gitweb",
+  "displayName": "gitweb"
+}

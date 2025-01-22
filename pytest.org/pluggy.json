@@ -1,0 +1,6 @@
+{
+  "description": "A minimalist production ready plugin system",
+  "homepage": "https://pluggy.readthedocs.io/en/latest/",
+  "github": "https://github.com/pytest-dev/pluggy",
+  "project": "pytest.org/pluggy"
+}

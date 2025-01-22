@@ -1,0 +1,6 @@
+{
+  "description": "Core utilities for Python packages",
+  "homepage": "https://packaging.pypa.io/",
+  "github": "https://github.com/pypa/packaging",
+  "project": "pypa.io/packaging"
+}

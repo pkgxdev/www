@@ -1,0 +1,13 @@
+{
+  "brief": "Generic template rendering and notifications with Consul",
+  "description": "Template rendering, notifier, and supervisor for @HashiCorp Consul and Vault data.",
+  "homepage": "https://www.hashicorp.com/",
+  "provides": [
+    "consul-template"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/consul-template",
+  "license": "MPL-2.0",
+  "github": "https://github.com/hashicorp/consul-template",
+  "project": "hashicorp.com/consul-template",
+  "displayName": "consul-template"
+}

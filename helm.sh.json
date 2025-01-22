@@ -1,0 +1,13 @@
+{
+  "brief": "Kubernetes package manager",
+  "description": "The Kubernetes Package Manager",
+  "homepage": "https://helm.sh/",
+  "provides": [
+    "helm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/helm",
+  "license": "Apache-2.0",
+  "github": "https://github.com/helm/helm",
+  "project": "helm.sh",
+  "displayName": "helm"
+}

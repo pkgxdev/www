@@ -1,0 +1,12 @@
+{
+  "brief": "Easily create and use cli based on bash script",
+  "description": "A Bash CLI framework, also a Bash command runner.",
+  "provides": [
+    "argc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/argc",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/sigoden/argc",
+  "project": "crates.io/argc",
+  "displayName": "argc"
+}

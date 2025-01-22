@@ -1,0 +1,12 @@
+{
+  "brief": "Get strong typed, autocompleted resources like images, fonts and segues",
+  "description": "Strong typed, autocompleted resources like images, fonts and segues in Swift projects",
+  "provides": [
+    "rswift"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rswift",
+  "license": "MIT",
+  "github": "https://github.com/mac-cain13/R.swift",
+  "project": "github.com/mac-cain13/R.swift",
+  "displayName": "rswift"
+}

@@ -1,0 +1,15 @@
+{
+  "brief": "LCOV",
+  "description": "Graphical front-end for GCC's coverage testing tool (gcov)",
+  "provides": [
+    "lcov",
+    "geninfo",
+    "genhtml",
+    "gendesc",
+    "genpng"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lcov",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/linux-test-project/lcov",
+  "project": "github.com/linux-test-project/lcov"
+}

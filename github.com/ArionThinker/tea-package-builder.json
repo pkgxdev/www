@@ -1,0 +1,9 @@
+{
+  "description": "Tea Package Builder is a tool that helps create packages for Tea.xyz quickly and conveniently",
+  "provides": [
+    "tea-package-builder"
+  ],
+  "github": "https://github.com/ArionThinker/tea-package-builder",
+  "project": "github.com/ArionThinker/tea-package-builder",
+  "displayName": "tea-package-builder"
+}

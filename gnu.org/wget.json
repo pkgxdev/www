@@ -1,0 +1,11 @@
+{
+  "description": "Internet file retriever",
+  "homepage": "https://www.gnu.org/software/wget/",
+  "provides": [
+    "wget"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/wget",
+  "license": "GPL-3.0-or-later",
+  "project": "gnu.org/wget",
+  "displayName": "wget"
+}

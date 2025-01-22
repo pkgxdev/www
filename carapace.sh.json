@@ -1,0 +1,13 @@
+{
+  "brief": "A multi-shell completion binary.",
+  "description": "Multi-shell multi-command argument completer",
+  "homepage": "https://carapace.sh",
+  "provides": [
+    "carapace"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/carapace",
+  "license": "MIT",
+  "github": "https://github.com/carapace-sh/carapace-bin",
+  "project": "carapace.sh",
+  "displayName": "carapace"
+}

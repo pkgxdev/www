@@ -1,0 +1,12 @@
+{
+  "description": "Colorize your kubectl output",
+  "homepage": "https://kubecolor.github.io/",
+  "provides": [
+    "kubecolor"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kubecolor",
+  "license": "MIT",
+  "github": "https://github.com/kubecolor/kubecolor",
+  "project": "github.com/kubecolor/kubecolor",
+  "displayName": "kubecolor"
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Apache HTTP server",
+  "homepage": "https://httpd.apache.org/",
+  "provides": [
+    "ab",
+    "apachectl",
+    "checkgid",
+    "fcgistarter",
+    "htcacheclean",
+    "htdbm",
+    "htdigest",
+    "htpasswd",
+    "httpd",
+    "httxt2dbm",
+    "logresolve",
+    "rotatelogs",
+    "suexec"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/httpd",
+  "license": "Apache-2.0",
+  "project": "apache.org/httpd"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Rainbows and unicorns!",
+  "description": "Rainbows and unicorns in your console!",
+  "provides": [
+    "lolcat"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lolcat",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/busyloop/lolcat",
+  "project": "github.com/jaseg/lolcat",
+  "displayName": "lolcat"
+}

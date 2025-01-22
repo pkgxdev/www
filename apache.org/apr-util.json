@@ -1,0 +1,9 @@
+{
+  "description": "Mirror of Apache Portable Runtime util",
+  "provides": [
+    "apu-{{ version.major }}-config"
+  ],
+  "github": "https://github.com/apache/apr-util",
+  "project": "apache.org/apr-util",
+  "displayName": "apu-{{ version.major }}-config"
+}

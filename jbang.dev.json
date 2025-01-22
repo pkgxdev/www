@@ -1,0 +1,13 @@
+{
+  "brief": "Tool to create, edit and run self-contained source-only Java programs",
+  "description": "Unleash the power of Java - JBang Lets Students, Educators and Professional Developers create, edit and run self-contained source-only Java programs with unprecedented ease.",
+  "homepage": "https://jbang.dev/",
+  "provides": [
+    "jbang"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jbang",
+  "license": "MIT",
+  "github": "https://github.com/jbangdev/jbang",
+  "project": "jbang.dev",
+  "displayName": "jbang"
+}

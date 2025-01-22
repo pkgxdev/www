@@ -1,0 +1,13 @@
+{
+  "brief": "A smarter cd command. Supports all major shells.",
+  "description": "Shell extension to navigate your filesystem faster",
+  "homepage": "https://crates.io/crates/zoxide",
+  "provides": [
+    "zoxide"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/zoxide",
+  "license": "MIT",
+  "github": "https://github.com/ajeetdsouza/zoxide",
+  "project": "crates.io/zoxide",
+  "displayName": "zoxide"
+}

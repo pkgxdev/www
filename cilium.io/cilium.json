@@ -1,0 +1,12 @@
+{
+  "description": "CLI to install, manage & troubleshoot Kubernetes clusters running Cilium",
+  "homepage": "https://cilium.io",
+  "provides": [
+    "cilium"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cilium-cli",
+  "license": "Apache-2.0",
+  "github": "https://github.com/cilium/cilium-cli",
+  "project": "cilium.io/cilium",
+  "displayName": "cilium"
+}

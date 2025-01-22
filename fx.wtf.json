@@ -1,0 +1,13 @@
+{
+  "brief": "Terminal JSON viewer",
+  "description": "Terminal JSON viewer & processor",
+  "homepage": "https://fx.wtf",
+  "provides": [
+    "fx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fx",
+  "license": "MIT",
+  "github": "https://github.com/antonmedv/fx",
+  "project": "fx.wtf",
+  "displayName": "fx"
+}

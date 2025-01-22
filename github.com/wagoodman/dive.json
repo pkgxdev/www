@@ -1,0 +1,12 @@
+{
+  "brief": "Tool for exploring each layer in a docker image",
+  "description": "A tool for exploring each layer in a docker image",
+  "provides": [
+    "dive"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dive",
+  "license": "MIT",
+  "github": "https://github.com/wagoodman/dive",
+  "project": "github.com/wagoodman/dive",
+  "displayName": "dive"
+}

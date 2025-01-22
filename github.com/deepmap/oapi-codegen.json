@@ -1,0 +1,5 @@
+{
+  "description": "Generate Go client and server boilerplate from OpenAPI 3 specifications",
+  "github": "https://github.com/oapi-codegen/oapi-codegen",
+  "project": "github.com/deepmap/oapi-codegen"
+}

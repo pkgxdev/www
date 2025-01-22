@@ -1,0 +1,13 @@
+{
+  "brief": "SDK for building Kubernetes applications",
+  "description": "SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding.",
+  "homepage": "https://sdk.operatorframework.io/",
+  "provides": [
+    "operator-sdk"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/operator-sdk",
+  "license": "Apache-2.0",
+  "github": "https://github.com/operator-framework/operator-sdk",
+  "project": "operatorframework.io/operator-sdk",
+  "displayName": "operator-sdk"
+}

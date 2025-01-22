@@ -1,0 +1,13 @@
+{
+  "brief": "Tiny personal calendar",
+  "description": "Timezones from the command line",
+  "homepage": "https://www.lightandmatter.com/when/when.html",
+  "provides": [
+    "when"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/when",
+  "license": "GPL-2.0-only",
+  "github": "https://github.com/mitsuhiko/when",
+  "project": "github.com/mitsuhiko/when",
+  "displayName": "when"
+}

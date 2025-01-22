@@ -1,0 +1,19 @@
+{
+  "brief": "Documentation translation maintenance tool",
+  "description": "Maintain the translations of your documentation with ease  (PO for anything)",
+  "homepage": "https://po4a.org",
+  "provides": [
+    "msguntypot",
+    "po4a",
+    "po4a-display-man",
+    "po4a-display-pod",
+    "po4a-gettextize",
+    "po4a-normalize",
+    "po4a-updatepo",
+    "podselect"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/po4a",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/mquinson/po4a",
+  "project": "po4a.org"
+}

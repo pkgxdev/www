@@ -1,0 +1,13 @@
+{
+  "brief": "Yet another Japanese morphological analyzer",
+  "description": "Yet another part-of-speech and morphological analyzer",
+  "homepage": "https://taku910.github.io/mecab/",
+  "provides": [
+    "mecab",
+    "mecab-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mecab",
+  "license": "GPL-2.0-only OR LGPL-2.1-only OR BSD-3-Clause",
+  "github": "https://github.com/taku910/mecab",
+  "project": "taku910.github.io/mecab"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Powerful wavelet image compressor",
+  "homepage": "https://sourceforge.net/projects/epsilon-project/",
+  "provides": [
+    "epsilon"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/epsilon",
+  "license": "BSD-3-Clause AND (GPL-3.0-or-later OR LGPL-3.0-or-later)",
+  "project": "epsilon-project.sourceforge.io",
+  "displayName": "epsilon"
+}

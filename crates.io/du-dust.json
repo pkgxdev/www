@@ -1,0 +1,12 @@
+{
+  "brief": "More intuitive version of du in rust",
+  "description": "A more intuitive version of du in rust",
+  "provides": [
+    "dust"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dust",
+  "license": "Apache-2.0",
+  "github": "https://github.com/bootandy/dust",
+  "project": "crates.io/du-dust",
+  "displayName": "dust"
+}

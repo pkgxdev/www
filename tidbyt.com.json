@@ -1,0 +1,10 @@
+{
+  "description": "Build apps for pixel-based displays ✨",
+  "homepage": "https://tidbyt.com",
+  "provides": [
+    "pixlet"
+  ],
+  "github": "https://github.com/tidbyt/pixlet",
+  "project": "tidbyt.com",
+  "displayName": "pixlet"
+}

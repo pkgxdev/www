@@ -1,0 +1,13 @@
+{
+  "brief": "Fast Cross-Platform Package Manager",
+  "description": "The Fast Cross-Platform Package Manager",
+  "homepage": "https://mamba.readthedocs.io",
+  "provides": [
+    "micromamba"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/micromamba",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/mamba-org/mamba",
+  "project": "github.com/mamba-org/micro",
+  "displayName": "micromamba"
+}

@@ -1,0 +1,14 @@
+{
+  "brief": "Tab completion for Python argparse",
+  "description": "Python and tab completion, better together.",
+  "homepage": "https://kislyuk.github.io/argcomplete/",
+  "provides": [
+    "activate-global-python-argcomplete",
+    "register-python-argcomplete",
+    "python-argcomplete-check-easy-install-script"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/python-argcomplete",
+  "license": "Apache-2.0",
+  "github": "https://github.com/kislyuk/argcomplete",
+  "project": "kislyuk.github.io/argcomplete"
+}

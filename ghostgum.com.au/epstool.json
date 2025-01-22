@@ -1,0 +1,11 @@
+{
+  "description": "Edit preview images and fix bounding boxes in EPS files",
+  "homepage": "http://www.ghostgum.com.au/software/epstool.htm",
+  "provides": [
+    "epstool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/epstool",
+  "license": "GPL-2.0-only",
+  "project": "ghostgum.com.au/epstool",
+  "displayName": "epstool"
+}

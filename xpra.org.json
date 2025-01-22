@@ -1,0 +1,10 @@
+{
+  "description": "Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows.",
+  "homepage": "https://xpra.org/",
+  "provides": [
+    "xpra"
+  ],
+  "github": "https://github.com/Xpra-org/xpra",
+  "project": "xpra.org",
+  "displayName": "xpra"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Statically typed programming language for scientific computations",
+  "description": "A statically typed programming language for scientific computations with first class support for physical dimensions and units",
+  "homepage": "https://numbat.dev",
+  "provides": [
+    "numbat"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/numbat",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/sharkdp/numbat",
+  "project": "numbat.dev",
+  "displayName": "numbat"
+}

@@ -1,0 +1,6 @@
+{
+  "description": "The lxml XML toolkit for Python",
+  "homepage": "https://lxml.de/",
+  "github": "https://github.com/lxml/lxml",
+  "project": "lxml.de"
+}

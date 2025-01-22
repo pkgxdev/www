@@ -1,0 +1,13 @@
+{
+  "brief": "Pandoc filter for cross-references",
+  "description": "Pandoc filter for numbering and cross-referencing",
+  "homepage": "https://lierdakil.github.io/pandoc-crossref/",
+  "provides": [
+    "pandoc-crossref"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pandoc-crossref",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/lierdakil/pandoc-crossref",
+  "project": "pandoc.org/crossref",
+  "displayName": "pandoc-crossref"
+}

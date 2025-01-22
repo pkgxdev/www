@@ -1,0 +1,9 @@
+{
+  "description": "Tidy up stale git branches.",
+  "provides": [
+    "git-tidy"
+  ],
+  "github": "https://github.com/drewwyatt/git-tidy",
+  "project": "crates.io/git-tidy",
+  "displayName": "git-tidy"
+}

@@ -1,0 +1,14 @@
+{
+  "description": "Extraction utility for .zip compressed archives",
+  "homepage": "https://infozip.sourceforge.net/UnZip.html",
+  "provides": [
+    "funzip",
+    "unzip",
+    "unzipsfx",
+    "zipgrep",
+    "zipinfo"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/unzip",
+  "license": "Info-ZIP",
+  "project": "info-zip.org/unzip"
+}

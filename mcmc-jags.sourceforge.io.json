@@ -1,0 +1,11 @@
+{
+  "description": "Just Another Gibbs Sampler for Bayesian MCMC simulation",
+  "homepage": "https://mcmc-jags.sourceforge.io",
+  "provides": [
+    "jags"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jags",
+  "license": "GPL-2.0-only",
+  "project": "mcmc-jags.sourceforge.io",
+  "displayName": "jags"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Golang alternative of sponge tool",
+  "provides": [
+    "go-sponge"
+  ],
+  "github": "https://github.com/LOQ9/go-sponge",
+  "project": "github.com/loq9/go-sponge",
+  "displayName": "go-sponge"
+}

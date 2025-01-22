@@ -1,0 +1,12 @@
+{
+  "brief": "Password hashing library and CLI utility",
+  "description": "The password hash Argon2, winner of PHC ",
+  "provides": [
+    "argon2"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/argon2",
+  "license": "Apache-2.0",
+  "github": "https://github.com/P-H-C/phc-winner-argon2",
+  "project": "github.com/P-H-C/phc-winner-argon2",
+  "displayName": "argon2"
+}

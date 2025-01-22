@@ -1,0 +1,11 @@
+{
+  "description": "Passphrase entry dialog utilizing the Assuan protocol",
+  "homepage": "https://www.gnupg.org/related_software/pinentry/",
+  "provides": [
+    "pinentry",
+    "pinentry-tty"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pinentry",
+  "license": "GPL-2.0-only",
+  "project": "gnupg.org/pinentry"
+}

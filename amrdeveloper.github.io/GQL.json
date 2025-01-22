@@ -1,0 +1,12 @@
+{
+  "brief": "Git query language",
+  "description": "💊 A git query language",
+  "provides": [
+    "gitql"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gitql",
+  "license": "MIT",
+  "github": "https://github.com/filhodanuvem/gitql",
+  "project": "amrdeveloper.github.io/GQL",
+  "displayName": "gitql"
+}

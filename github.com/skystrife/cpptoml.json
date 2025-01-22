@@ -1,0 +1,5 @@
+{
+  "description": "cpptoml is a header-only library for parsing TOML",
+  "github": "https://github.com/skystrife/cpptoml",
+  "project": "github.com/skystrife/cpptoml"
+}

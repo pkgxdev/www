@@ -1,0 +1,14 @@
+{
+  "brief": "Compressed read-only file system for Linux",
+  "description": "tools to create and extract Squashfs filesystems",
+  "provides": [
+    "mksquashfs",
+    "unsquashfs",
+    "sqfscat",
+    "sqfstar"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/squashfs",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/plougher/squashfs-tools",
+  "project": "github.com/plougher/squashfs-tools"
+}

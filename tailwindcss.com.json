@@ -1,0 +1,13 @@
+{
+  "brief": "Utility-first CSS framework",
+  "description": "A utility-first CSS framework for rapid UI development.",
+  "homepage": "https://tailwindcss.com",
+  "provides": [
+    "tailwindcss"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tailwindcss",
+  "license": "MIT",
+  "github": "https://github.com/tailwindlabs/tailwindcss",
+  "project": "tailwindcss.com",
+  "displayName": "tailwindcss"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Modern and intuitive terminal-based text editor",
+  "description": "A modern and intuitive terminal-based text editor",
+  "homepage": "https://micro-editor.github.io",
+  "provides": [
+    "micro"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/micro",
+  "license": "MIT",
+  "github": "https://github.com/zyedidia/micro",
+  "project": "micro-editor.github.io",
+  "displayName": "micro"
+}

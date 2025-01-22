@@ -1,0 +1,5 @@
+{
+  "description": "LAPACK development repository",
+  "github": "https://github.com/Reference-LAPACK/lapack",
+  "project": "netlib.org/lapack"
+}

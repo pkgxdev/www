@@ -1,0 +1,13 @@
+{
+  "brief": "Kubernetes CLI To Manage Your Clusters In Style!",
+  "description": "🐶 Kubernetes CLI To Manage Your Clusters In Style!",
+  "homepage": "https://k9scli.io/",
+  "provides": [
+    "k9s"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/k9s",
+  "license": "Apache-2.0",
+  "github": "https://github.com/derailed/k9s",
+  "project": "k9scli.io",
+  "displayName": "k9s"
+}

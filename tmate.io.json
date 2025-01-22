@@ -1,0 +1,13 @@
+{
+  "brief": "Instant terminal sharing",
+  "description": "Instant Terminal Sharing",
+  "homepage": "https://tmate.io/",
+  "provides": [
+    "tmate"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tmate",
+  "license": "ISC",
+  "github": "https://github.com/tmate-io/tmate",
+  "project": "tmate.io",
+  "displayName": "tmate"
+}

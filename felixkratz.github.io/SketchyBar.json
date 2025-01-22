@@ -1,0 +1,10 @@
+{
+  "description": "A highly customizable macOS status bar replacement",
+  "homepage": "https://felixkratz.github.io/SketchyBar/",
+  "provides": [
+    "sketchybar"
+  ],
+  "github": "https://github.com/FelixKratz/SketchyBar",
+  "project": "felixkratz.github.io/SketchyBar",
+  "displayName": "sketchybar"
+}

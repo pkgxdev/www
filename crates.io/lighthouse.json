@@ -1,0 +1,13 @@
+{
+  "brief": "Rust Ethereum 2.0 Client",
+  "description": "Ethereum consensus client in Rust",
+  "homepage": "https://lighthouse.sigmaprime.io/",
+  "provides": [
+    "lighthouse"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lighthouse",
+  "license": "Apache-2.0",
+  "github": "https://github.com/sigp/lighthouse",
+  "project": "crates.io/lighthouse",
+  "displayName": "lighthouse"
+}

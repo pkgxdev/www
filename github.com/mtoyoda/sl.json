@@ -1,0 +1,13 @@
+{
+  "brief": "Source control client",
+  "description": "A Scalable, User-Friendly Source Control System.",
+  "homepage": "https://sapling-scm.com",
+  "provides": [
+    "sl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sapling",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/facebook/sapling",
+  "project": "github.com/mtoyoda/sl",
+  "displayName": "sl"
+}

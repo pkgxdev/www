@@ -1,0 +1,12 @@
+{
+  "brief": "Install and debug iPhone apps from the command-line",
+  "description": "Install and debug iPhone apps from the command line, without using Xcode",
+  "provides": [
+    "ios-deploy"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ios-deploy",
+  "license": "GPL-3.0-or-later AND BSD-3-Clause",
+  "github": "https://github.com/ios-control/ios-deploy",
+  "project": "github.com/ios-control/ios-deploy",
+  "displayName": "ios-deploy"
+}

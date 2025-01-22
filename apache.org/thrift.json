@@ -1,0 +1,13 @@
+{
+  "brief": "Apache Thrift",
+  "description": "Framework for scalable cross-language services development",
+  "homepage": "https://thrift.apache.org/",
+  "provides": [
+    "thrift"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/thrift",
+  "license": "Apache-2.0",
+  "github": "https://github.com/apache/thrift",
+  "project": "apache.org/thrift",
+  "displayName": "thrift"
+}

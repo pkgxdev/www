@@ -1,0 +1,9 @@
+{
+  "description": "Very simple CLI for many GraphQL schemas in the cloud. Provides autocompletion for GraphQL queries",
+  "provides": [
+    "gql"
+  ],
+  "github": "https://github.com/graphql-editor/gql",
+  "project": "graphqleditor.com/gql",
+  "displayName": "gql"
+}

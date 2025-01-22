@@ -1,0 +1,20 @@
+{
+  "description": "Text processing system for reStructuredText",
+  "homepage": "https://docutils.sourceforge.io",
+  "provides": [
+    "docutils",
+    "rst2html",
+    "rst2html4",
+    "rst2html5",
+    "rst2latex",
+    "rst2man",
+    "rst2odt",
+    "rst2pseudoxml",
+    "rst2s5",
+    "rst2xetex",
+    "rst2xml"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/docutils",
+  "license": "LicenseRef-Homebrew-public-domain AND BSD-2-Clause AND GPL-3.0-or-later AND Python-2.0",
+  "project": "docutils.org"
+}

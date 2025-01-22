@@ -1,0 +1,11 @@
+{
+  "description": "Unit testing framework for C++",
+  "homepage": "https://wiki.freedesktop.org/www/Software/cppunit/",
+  "provides": [
+    "cppunit-config",
+    "DllPlugInTester"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cppunit",
+  "license": "LGPL-2.1-only",
+  "project": "freedesktop.org/cppunit"
+}

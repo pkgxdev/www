@@ -1,0 +1,9 @@
+{
+  "description": "Kaspa full-node reference implementation and related libraries in the Rust programming language",
+  "provides": [
+    "kaspad",
+    "kaspa-cli"
+  ],
+  "github": "https://github.com/kaspanet/rusty-kaspa",
+  "project": "github.com/kaspanet/rusty-kaspa"
+}

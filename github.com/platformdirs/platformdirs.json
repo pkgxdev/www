@@ -1,0 +1,6 @@
+{
+  "description": "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\".",
+  "homepage": "https://platformdirs.readthedocs.io",
+  "github": "https://github.com/platformdirs/platformdirs",
+  "project": "github.com/platformdirs/platformdirs"
+}

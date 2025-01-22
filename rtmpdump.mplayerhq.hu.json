@@ -1,0 +1,14 @@
+{
+  "description": "Tool for downloading RTMP streaming media",
+  "homepage": "https://rtmpdump.mplayerhq.hu/",
+  "provides": [
+    "rtmpdump",
+    "rtmpgw",
+    "rtmpsrv",
+    "rtmpsuck"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rtmpdump",
+  "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+  "project": "rtmpdump.mplayerhq.hu",
+  "displayName": "rtmpdump"
+}

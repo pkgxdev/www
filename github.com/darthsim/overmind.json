@@ -1,0 +1,11 @@
+{
+  "description": "Process manager for Procfile-based applications and tmux",
+  "provides": [
+    "overmind"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/overmind",
+  "license": "MIT",
+  "github": "https://github.com/DarthSim/overmind",
+  "project": "github.com/darthsim/overmind",
+  "displayName": "overmind"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Open Source Development Platform for building robust type-safe distributed systems with declarative infrastructure",
+  "homepage": "https://encore.dev",
+  "provides": [
+    "encore",
+    "git-remote-encore"
+  ],
+  "github": "https://github.com/encoredev/encore",
+  "project": "encore.dev"
+}

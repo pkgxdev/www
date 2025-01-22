@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "ld.musl-clang",
+    "musl-clang"
+  ],
+  "project": "musl.libc.org"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Tool for writing better scripts",
+  "description": "A tool for writing better scripts",
+  "homepage": "https://google.github.io/zx/",
+  "provides": [
+    "zx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/zx",
+  "license": "Apache-2.0",
+  "github": "https://github.com/google/zx",
+  "project": "google.com/zx",
+  "displayName": "zx"
+}

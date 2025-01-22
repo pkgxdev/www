@@ -1,0 +1,13 @@
+{
+  "brief": "Simple, powerful, pipelined SQL replacement",
+  "description": "PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement",
+  "homepage": "https://prql-lang.org",
+  "provides": [
+    "prql-compiler",
+    "prqlc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/prqlc",
+  "license": "Apache-2.0",
+  "github": "https://github.com/prql/prql",
+  "project": "prql-lang.org"
+}

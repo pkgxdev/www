@@ -1,0 +1,13 @@
+{
+  "brief": "Rust toolchain installer",
+  "description": "The Rust toolchain installer",
+  "homepage": "https://rust-lang.github.io/rustup/",
+  "provides": [
+    "rustup",
+    "rustup-init"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rustup",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/rust-lang/rustup",
+  "project": "rust-lang.org/rustup"
+}

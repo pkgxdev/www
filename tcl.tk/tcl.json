@@ -1,0 +1,12 @@
+{
+  "description": "Analyze how space is allocated inside an SQLite file",
+  "homepage": "https://www.sqlite.org/",
+  "provides": [
+    "sqlite3_analyzer",
+    "tclsh{{version.major}}.{{version.minor}}",
+    "tclsh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sqlite-analyzer",
+  "license": "blessing",
+  "project": "tcl.tk/tcl"
+}

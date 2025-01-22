@@ -1,0 +1,13 @@
+{
+  "brief": "Manage your GnuPG keys with ease!",
+  "description": "Manage your GnuPG keys with ease! 🔐",
+  "homepage": "https://blog.orhun.dev/introducing-gpg-tui/",
+  "provides": [
+    "gpg-tui"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gpg-tui",
+  "license": "MIT",
+  "github": "https://github.com/orhun/gpg-tui",
+  "project": "orhun.dev/gpg-tui",
+  "displayName": "gpg-tui"
+}

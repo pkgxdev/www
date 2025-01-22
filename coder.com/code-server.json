@@ -1,0 +1,13 @@
+{
+  "brief": "VS Code in the browser",
+  "description": "Access VS Code through the browser",
+  "homepage": "https://coder.com",
+  "provides": [
+    "code-server"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/code-server",
+  "license": "MIT",
+  "github": "https://github.com/coder/code-server",
+  "project": "coder.com/code-server",
+  "displayName": "code-server"
+}

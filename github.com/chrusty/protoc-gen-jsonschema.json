@@ -1,0 +1,9 @@
+{
+  "description": "Protobuf to JSON-Schema compiler",
+  "provides": [
+    "protoc-gen-jsonschema"
+  ],
+  "github": "https://github.com/chrusty/protoc-gen-jsonschema",
+  "project": "github.com/chrusty/protoc-gen-jsonschema",
+  "displayName": "protoc-gen-jsonschema"
+}

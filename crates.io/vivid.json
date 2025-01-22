@@ -1,0 +1,12 @@
+{
+  "brief": "A themeable LS_COLORS generator with a rich filetype datebase",
+  "description": "Generator for LS_COLORS with support for multiple color themes",
+  "provides": [
+    "vivid"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/vivid",
+  "license": "MIT OR Apache-2.0",
+  "github": "https://github.com/sharkdp/vivid",
+  "project": "crates.io/vivid",
+  "displayName": "vivid"
+}

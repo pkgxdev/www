@@ -1,0 +1,13 @@
+{
+  "brief": "Secure runtime for JavaScript and TypeScript",
+  "description": "A modern runtime for JavaScript and TypeScript.",
+  "homepage": "https://deno.com/",
+  "provides": [
+    "deno"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/deno",
+  "license": "MIT",
+  "github": "https://github.com/denoland/deno",
+  "project": "deno.land",
+  "displayName": "deno"
+}

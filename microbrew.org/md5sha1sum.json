@@ -1,0 +1,12 @@
+{
+  "description": "Hash utilities",
+  "homepage": "http://microbrew.org/tools/md5sha1sum/",
+  "provides": [
+    "md5sum",
+    "sha1sum",
+    "ripemd160sum"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/md5sha1sum",
+  "license": "GPL-2.0-or-later",
+  "project": "microbrew.org/md5sha1sum"
+}

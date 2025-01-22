@@ -1,0 +1,12 @@
+{
+  "brief": "Write licenses to stdout",
+  "description": "write licenses to stdout",
+  "provides": [
+    "licensor"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/licensor",
+  "license": "MIT",
+  "github": "https://github.com/raftario/licensor",
+  "project": "crates.io/licensor",
+  "displayName": "licensor"
+}

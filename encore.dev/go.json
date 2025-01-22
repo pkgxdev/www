@@ -1,0 +1,10 @@
+{
+  "description": "Encore's rolling fork of Go with added automatic tracing & instrumentation",
+  "homepage": "https://encore.dev",
+  "provides": [
+    "encore-go"
+  ],
+  "github": "https://github.com/encoredev/go",
+  "project": "encore.dev/go",
+  "displayName": "encore-go"
+}

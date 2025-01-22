@@ -1,0 +1,13 @@
+{
+  "brief": "Stricter gofmt",
+  "description": "A stricter gofmt",
+  "homepage": "https://pkg.go.dev/mvdan.cc/gofumpt",
+  "provides": [
+    "gofumpt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gofumpt",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/mvdan/gofumpt",
+  "project": "github.com/mvdan/gofumpt",
+  "displayName": "gofumpt"
+}

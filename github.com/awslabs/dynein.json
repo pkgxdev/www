@@ -1,0 +1,12 @@
+{
+  "brief": "DynamoDB CLI",
+  "description": "DynamoDB CLI written in Rust.",
+  "provides": [
+    "dy"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dynein",
+  "license": "Apache-2.0",
+  "github": "https://github.com/awslabs/dynein",
+  "project": "github.com/awslabs/dynein",
+  "displayName": "dy"
+}

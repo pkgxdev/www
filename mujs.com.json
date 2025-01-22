@@ -1,0 +1,13 @@
+{
+  "brief": "Embeddable Javascript interpreter",
+  "description": "An embeddable Javascript interpreter in C.",
+  "homepage": "https://www.mujs.com/",
+  "provides": [
+    "mujs",
+    "mujs-pp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mujs",
+  "license": "ISC",
+  "github": "https://github.com/ccxvii/mujs",
+  "project": "mujs.com"
+}

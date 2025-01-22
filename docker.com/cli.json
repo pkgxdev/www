@@ -1,0 +1,13 @@
+{
+  "brief": "The Docker CLI",
+  "description": "Pack, ship and run any application as a lightweight container",
+  "homepage": "https://www.docker.com/",
+  "provides": [
+    "docker"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/docker",
+  "license": "Apache-2.0",
+  "github": "https://github.com/docker/cli",
+  "project": "docker.com/cli",
+  "displayName": "docker"
+}

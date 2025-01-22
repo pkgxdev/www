@@ -1,0 +1,11 @@
+{
+  "description": "Powerful, lightweight programming language",
+  "homepage": "https://www.lua.org/",
+  "provides": [
+    "lua",
+    "luac"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lua",
+  "license": "MIT",
+  "project": "lua.org"
+}

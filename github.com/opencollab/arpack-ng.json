@@ -1,0 +1,5 @@
+{
+  "description": "Collection of Fortran77 subroutines designed to solve large scale eigenvalue problems.",
+  "github": "https://github.com/opencollab/arpack-ng",
+  "project": "github.com/opencollab/arpack-ng"
+}

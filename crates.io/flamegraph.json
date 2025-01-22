@@ -1,0 +1,12 @@
+{
+  "brief": "Easy flamegraphs for Rust projects and everything else",
+  "description": "Easy flamegraphs for Rust projects and everything else, without Perl or pipes <3",
+  "provides": [
+    "flamegraph",
+    "cargo-flamegraph"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cargo-flamegraph",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/flamegraph-rs/flamegraph",
+  "project": "crates.io/flamegraph"
+}

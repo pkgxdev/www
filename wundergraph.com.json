@@ -1,0 +1,10 @@
+{
+  "description": "WunderGraph is a Backend for Frontend Framework to optimize frontend, fullstack and backend developer workflows through API Composition.",
+  "homepage": "https://wundergraph.com",
+  "provides": [
+    "wunderctl"
+  ],
+  "github": "https://github.com/wundergraph/wundergraph",
+  "project": "wundergraph.com",
+  "displayName": "wunderctl"
+}

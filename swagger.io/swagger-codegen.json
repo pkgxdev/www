@@ -1,0 +1,13 @@
+{
+  "brief": "Generate clients, server stubs, and docs from an OpenAPI spec",
+  "description": "swagger-codegen contains a template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI / Swagger definition.",
+  "homepage": "https://swagger.io/tools/swagger-codegen/",
+  "provides": [
+    "swagger-codegen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/swagger-codegen",
+  "license": "Apache-2.0",
+  "github": "https://github.com/swagger-api/swagger-codegen",
+  "project": "swagger.io/swagger-codegen",
+  "displayName": "swagger-codegen"
+}

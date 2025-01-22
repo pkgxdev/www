@@ -1,0 +1,10 @@
+{
+  "description": "Terminal tool to get you the best crates for your rust projects, curated by blessed.rs ",
+  "homepage": "https://crates.io/crates/get-blessed",
+  "provides": [
+    "get-blessed"
+  ],
+  "github": "https://github.com/josueBarretogit/get_blessed_rs",
+  "project": "crates.io/get-blessed",
+  "displayName": "get-blessed"
+}

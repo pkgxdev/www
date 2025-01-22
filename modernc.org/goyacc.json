@@ -1,0 +1,11 @@
+{
+  "description": "Parser Generator for Go",
+  "homepage": "https://pkg.go.dev/modernc.org/goyacc",
+  "provides": [
+    "goyacc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/goyacc",
+  "license": "BSD-3-Clause",
+  "project": "modernc.org/goyacc",
+  "displayName": "goyacc"
+}

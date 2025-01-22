@@ -1,0 +1,13 @@
+{
+  "description": "Cryptographic library based on the code from GnuPG",
+  "homepage": "https://gnupg.org/related_software/libgcrypt/",
+  "provides": [
+    "dumpsexp",
+    "hmac256",
+    "libgcrypt-config",
+    "mpicalc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libgcrypt",
+  "license": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+  "project": "gnupg.org/libgcrypt"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Manage local application configuration files using templates",
+  "description": "Manage local application configuration files using templates and data from etcd or consul",
+  "provides": [
+    "confd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/confd",
+  "license": "MIT",
+  "github": "https://github.com/kelseyhightower/confd",
+  "project": "github.com/abtreece/confd",
+  "displayName": "confd"
+}

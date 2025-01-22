@@ -1,0 +1,13 @@
+{
+  "brief": "Simple, modern, secure file encryption",
+  "description": "A simple, secure and modern file encryption tool (and Rust library) with small explicit keys, no config options, and UNIX-style composability.",
+  "homepage": "https://str4d.xyz/rage",
+  "provides": [
+    "rage",
+    "rage-keygen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rage",
+  "license": "MIT OR Apache-2.0",
+  "github": "https://github.com/str4d/rage",
+  "project": "crates.io/rage"
+}

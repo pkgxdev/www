@@ -1,0 +1,13 @@
+{
+  "brief": "Cryptographic & SSL/TLS library",
+  "description": "An open source, portable, easy to use, readable and flexible TLS library, and reference implementation of the PSA Cryptography API. Releases are on a varying cadence, typically around 3 - 6 months between releases.",
+  "homepage": "https://tls.mbed.org/",
+  "provides": [
+    "generic_sum"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mbedtls",
+  "license": "Apache-2.0",
+  "github": "https://github.com/Mbed-TLS/mbedtls",
+  "project": "github.com/Mbed-TLS/mbedtls",
+  "displayName": "generic_sum"
+}

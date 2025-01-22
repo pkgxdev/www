@@ -1,0 +1,13 @@
+{
+  "brief": "Wrapper to colorize and simplify ping's output",
+  "description": "`prettyping` is a wrapper around the standard `ping` tool, making the output prettier, more colorful, more compact, and easier to read.",
+  "homepage": "https://denilsonsa.github.io/prettyping/",
+  "provides": [
+    "prettyping"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/prettyping",
+  "license": "MIT",
+  "github": "https://github.com/denilsonsa/prettyping",
+  "project": "denilson.sa.nom.br/prettyping",
+  "displayName": "prettyping"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Tools to ease Gerrit code review",
+  "description": "Tools to make working with Gerrit code review easier",
+  "provides": [
+    "git-review"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gerrit-tools",
+  "license": "Apache-2.0",
+  "github": "https://github.com/indirect/gerrit-tools",
+  "project": "opendev.org/git-review",
+  "displayName": "git-review"
+}

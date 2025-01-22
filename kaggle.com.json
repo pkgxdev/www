@@ -1,0 +1,9 @@
+{
+  "description": "Official Kaggle API",
+  "provides": [
+    "kaggle"
+  ],
+  "github": "https://github.com/Kaggle/kaggle-api",
+  "project": "kaggle.com",
+  "displayName": "kaggle"
+}

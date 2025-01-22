@@ -1,0 +1,5 @@
+{
+  "description": "A library for parsing, editing, and saving EXIF data",
+  "github": "https://github.com/libexif/libexif",
+  "project": "libexif.github.io"
+}

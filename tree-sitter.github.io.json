@@ -1,0 +1,13 @@
+{
+  "brief": "An incremental parsing system for programming tools",
+  "description": "Parser generator tool and incremental parsing library",
+  "homepage": "https://tree-sitter.github.io/",
+  "provides": [
+    "tree-sitter"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tree-sitter",
+  "license": "MIT",
+  "github": "https://github.com/tree-sitter/tree-sitter",
+  "project": "tree-sitter.github.io",
+  "displayName": "tree-sitter"
+}

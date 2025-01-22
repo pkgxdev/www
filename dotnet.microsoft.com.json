@@ -1,0 +1,13 @@
+{
+  "brief": ".NET Core",
+  "description": "Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET SDK from source",
+  "homepage": "https://dotnet.microsoft.com/",
+  "provides": [
+    "dotnet"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dotnet",
+  "license": "MIT",
+  "github": "https://github.com/dotnet/dotnet",
+  "project": "dotnet.microsoft.com",
+  "displayName": "dotnet"
+}

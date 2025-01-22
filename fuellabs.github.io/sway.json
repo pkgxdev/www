@@ -1,0 +1,10 @@
+{
+  "description": "🌴 Empowering everyone to build reliable and efficient smart contracts.",
+  "homepage": "https://docs.fuel.network/docs/sway/",
+  "provides": [
+    "forc"
+  ],
+  "github": "https://github.com/FuelLabs/sway",
+  "project": "fuellabs.github.io/sway",
+  "displayName": "forc"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Unified developer tools for JavaScript, TypeScript, and the web",
+  "homepage": "https://docs.rome.tools/",
+  "provides": [
+    "rome"
+  ],
+  "github": "https://github.com/rome/tools",
+  "project": "rome.tools",
+  "displayName": "rome"
+}

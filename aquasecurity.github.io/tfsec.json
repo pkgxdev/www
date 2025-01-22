@@ -1,0 +1,13 @@
+{
+  "brief": "Tfsec is now part of Trivy",
+  "description": "Static analysis security scanner for your terraform code",
+  "homepage": "https://aquasecurity.github.io/tfsec/latest/",
+  "provides": [
+    "tfsec"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tfsec",
+  "license": "MIT",
+  "github": "https://github.com/aquasecurity/tfsec",
+  "project": "aquasecurity.github.io/tfsec",
+  "displayName": "tfsec"
+}

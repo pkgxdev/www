@@ -1,0 +1,13 @@
+{
+  "brief": "🧵 CLI tool for directly patching container images!",
+  "description": "Tool to directly patch container images given the vulnerability scanning results",
+  "homepage": "https://project-copacetic.github.io/copacetic/",
+  "provides": [
+    "copa"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/copa",
+  "license": "Apache-2.0",
+  "github": "https://github.com/project-copacetic/copacetic",
+  "project": "project-copacetic.github.io",
+  "displayName": "copa"
+}

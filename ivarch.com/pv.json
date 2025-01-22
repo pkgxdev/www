@@ -1,0 +1,11 @@
+{
+  "description": "Monitor data's progress through a pipe",
+  "homepage": "https://www.ivarch.com/programs/pv.shtml",
+  "provides": [
+    "pv"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pv",
+  "license": "Artistic-2.0",
+  "project": "ivarch.com/pv",
+  "displayName": "pv"
+}

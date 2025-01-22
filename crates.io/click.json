@@ -1,0 +1,12 @@
+{
+  "brief": "Command-line interactive controller for Kubernetes",
+  "description": "The \"Command Line Interactive Controller for Kubernetes\"",
+  "provides": [
+    "click"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/click",
+  "license": "Apache-2.0",
+  "github": "https://github.com/databricks/click",
+  "project": "crates.io/click",
+  "displayName": "click"
+}

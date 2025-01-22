@@ -1,0 +1,13 @@
+{
+  "brief": "QR Code generation",
+  "description": "A fast and compact QR Code encoding library",
+  "homepage": "https://fukuchi.org/works/qrencode/index.html.en",
+  "provides": [
+    "qrencode"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/qrencode",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/fukuchi/libqrencode",
+  "project": "fukuchi.org/qrencode",
+  "displayName": "qrencode"
+}

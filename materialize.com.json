@@ -1,0 +1,10 @@
+{
+  "description": "The Cloud Operational Data Store: use SQL to transform, deliver, and act on fast-changing data.",
+  "homepage": "https://materialize.com",
+  "provides": [
+    "mz"
+  ],
+  "github": "https://github.com/MaterializeInc/materialize",
+  "project": "materialize.com",
+  "displayName": "mz"
+}

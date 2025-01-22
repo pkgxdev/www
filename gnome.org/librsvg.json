@@ -1,0 +1,13 @@
+{
+  "brief": "Library to render SVG files using Cairo",
+  "description": "Read-only mirror of https://gitlab.gnome.org/GNOME/librsvg",
+  "homepage": "https://wiki.gnome.org/Projects/LibRsvg",
+  "provides": [
+    "rsvg-convert"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/librsvg",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/GNOME/librsvg",
+  "project": "gnome.org/librsvg",
+  "displayName": "rsvg-convert"
+}

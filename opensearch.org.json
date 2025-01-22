@@ -1,0 +1,16 @@
+{
+  "brief": "Open source distributed and RESTful search engine",
+  "description": "🔎 Open source distributed and RESTful search engine.",
+  "homepage": "https://opensearch.org/docs/latest/opensearch/index/",
+  "provides": [
+    "opensearch",
+    "opensearch-keystore",
+    "opensearch-plugin",
+    "opensearch-shard"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/opensearch",
+  "license": "Apache-2.0",
+  "github": "https://github.com/opensearch-project/OpenSearch",
+  "project": "opensearch.org",
+  "displayName": "opensearch"
+}

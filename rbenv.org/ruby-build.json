@@ -1,0 +1,13 @@
+{
+  "brief": "Install various Ruby versions and implementations",
+  "description": "A tool to download, compile, and install Ruby on Unix-like systems.",
+  "homepage": "https://rbenv.org/man/ruby-build.1",
+  "provides": [
+    "ruby-build"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ruby-build",
+  "license": "MIT",
+  "github": "https://github.com/rbenv/ruby-build",
+  "project": "rbenv.org/ruby-build",
+  "displayName": "ruby-build"
+}

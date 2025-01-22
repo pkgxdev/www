@@ -1,0 +1,9 @@
+{
+  "description": "Update outdated Go dependencies interactively",
+  "provides": [
+    "go-mod-upgrade"
+  ],
+  "github": "https://github.com/oligot/go-mod-upgrade",
+  "project": "github.com/oligot/go-mod-upgrade",
+  "displayName": "go-mod-upgrade"
+}

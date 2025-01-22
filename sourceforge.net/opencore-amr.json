@@ -1,0 +1,11 @@
+{
+  "description": "Standalone library of the Fraunhofer FDK AAC code from Android",
+  "homepage": "https://sourceforge.net/projects/opencore-amr/",
+  "provides": [
+    "aac-enc"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fdk-aac",
+  "license": "Apache-2.0",
+  "project": "sourceforge.net/opencore-amr",
+  "displayName": "aac-enc"
+}

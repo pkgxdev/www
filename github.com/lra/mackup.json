@@ -1,0 +1,12 @@
+{
+  "brief": "Keep your Mac's application settings in sync",
+  "description": "Keep your application settings in sync (OS X/Linux)",
+  "provides": [
+    "mackup"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mackup",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/lra/mackup",
+  "project": "github.com/lra/mackup",
+  "displayName": "mackup"
+}

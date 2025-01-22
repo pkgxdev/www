@@ -1,0 +1,11 @@
+{
+  "description": "Rucio - Scientific Data Management",
+  "homepage": "http://rucio.cern.ch",
+  "provides": [
+    "rucio",
+    "rucio-admin"
+  ],
+  "github": "https://github.com/rucio/rucio",
+  "project": "rucio.cern.ch/rucio-client",
+  "displayName": "rucio"
+}

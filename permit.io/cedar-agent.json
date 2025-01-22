@@ -1,0 +1,9 @@
+{
+  "description": "Cedar-agent is the easiest way to deploy and run Cedar",
+  "provides": [
+    "cedar-agent"
+  ],
+  "github": "https://github.com/permitio/cedar-agent",
+  "project": "permit.io/cedar-agent",
+  "displayName": "cedar-agent"
+}

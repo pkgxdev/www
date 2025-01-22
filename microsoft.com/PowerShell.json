@@ -1,0 +1,10 @@
+{
+  "description": "PowerShell for every system!",
+  "homepage": "https://microsoft.com/PowerShell",
+  "provides": [
+    "pwsh"
+  ],
+  "github": "https://github.com/PowerShell/PowerShell",
+  "project": "microsoft.com/PowerShell",
+  "displayName": "pwsh"
+}

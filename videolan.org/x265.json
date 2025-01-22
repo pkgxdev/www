@@ -1,0 +1,11 @@
+{
+  "description": "H.265/HEVC encoder",
+  "homepage": "https://bitbucket.org/multicoreware/x265_git",
+  "provides": [
+    "x265"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/x265",
+  "license": "GPL-2.0-only",
+  "project": "videolan.org/x265",
+  "displayName": "x265"
+}

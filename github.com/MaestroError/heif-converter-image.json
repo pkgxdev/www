@@ -1,0 +1,9 @@
+{
+  "description": "heif-converter is a versatile command-line application, along with a Docker image, that offers an easy and efficient way to convert HEIC (and AVIF) images to other common formats like JPEG and PNG, and vice versa. It leverages the go-libheif module, a GoLang wrapper for the libheif library.",
+  "provides": [
+    "heif-converter"
+  ],
+  "github": "https://github.com/MaestroError/heif-converter-image",
+  "project": "github.com/MaestroError/heif-converter-image",
+  "displayName": "heif-converter"
+}

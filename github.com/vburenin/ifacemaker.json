@@ -1,0 +1,12 @@
+{
+  "brief": "Generate interfaces from structure methods",
+  "description": "Generate interfaces from structure methods.",
+  "provides": [
+    "ifacemaker"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ifacemaker",
+  "license": "Apache-2.0",
+  "github": "https://github.com/vburenin/ifacemaker",
+  "project": "github.com/vburenin/ifacemaker",
+  "displayName": "ifacemaker"
+}

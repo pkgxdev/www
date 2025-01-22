@@ -1,0 +1,12 @@
+{
+  "brief": "🏳️‍🌈 🏳️‍⚧️ Neofetch with LGBTQ+ pride flags!",
+  "description": "Fast, highly customisable system info script with LGBTQ+ pride flags",
+  "provides": [
+    "hyfetch"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hyfetch",
+  "license": "MIT",
+  "github": "https://github.com/hykilpikonna/hyfetch",
+  "project": "github.com/hykilpikonna/hyfetch",
+  "displayName": "hyfetch"
+}

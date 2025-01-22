@@ -1,0 +1,13 @@
+{
+  "brief": "Meta-programming for Swift, stop writing boilerplate code",
+  "description": "Meta-programming for Swift, stop writing boilerplate code.",
+  "homepage": "http://merowing.info",
+  "provides": [
+    "sourcery"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sourcery",
+  "license": "MIT",
+  "github": "https://github.com/krzysztofzablocki/Sourcery",
+  "project": "github.com/krzysztofzablocki/Sourcery",
+  "displayName": "sourcery"
+}

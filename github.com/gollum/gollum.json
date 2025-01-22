@@ -1,0 +1,13 @@
+{
+  "brief": "Go n:m message multiplexer",
+  "description": "An n:m message multiplexer written in Go",
+  "homepage": "https://gollum.readthedocs.io/en/latest/",
+  "provides": [
+    "gollum"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gollum",
+  "license": "Apache-2.0",
+  "github": "https://github.com/trivago/gollum",
+  "project": "github.com/gollum/gollum",
+  "displayName": "gollum"
+}

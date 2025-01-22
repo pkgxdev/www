@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "openvpn"
+  ],
+  "project": "openvpn.net",
+  "displayName": "openvpn"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Library to communicate with iOS devices natively",
+  "description": "A cross-platform protocol library to communicate with iOS devices",
+  "homepage": "https://www.libimobiledevice.org/",
+  "provides": [
+    "idevicedate"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libimobiledevice",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/libimobiledevice/libimobiledevice",
+  "project": "libimobiledevice.org",
+  "displayName": "idevicedate"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Enable transparent encryption/decryption of files in a git repo",
+  "homepage": "https://www.agwa.name/projects/git-crypt/",
+  "provides": [
+    "git-crypt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-crypt",
+  "license": "GPL-3.0-or-later",
+  "project": "agwa.name/git-crypt",
+  "displayName": "git-crypt"
+}

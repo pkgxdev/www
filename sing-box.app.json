@@ -1,0 +1,13 @@
+{
+  "brief": "Universal proxy platform",
+  "description": "The universal proxy platform",
+  "homepage": "https://sing-box.sagernet.org",
+  "provides": [
+    "sing-box"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sing-box",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/SagerNet/sing-box",
+  "project": "sing-box.app",
+  "displayName": "sing-box"
+}

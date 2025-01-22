@@ -1,0 +1,13 @@
+{
+  "brief": "Toolchain of the web",
+  "description": "A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP.",
+  "homepage": "https://biomejs.dev/",
+  "provides": [
+    "biome"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/biome",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/biomejs/biome",
+  "project": "biomejs.dev",
+  "displayName": "biome"
+}

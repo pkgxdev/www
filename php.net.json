@@ -1,0 +1,19 @@
+{
+  "brief": "The PHP Interpreter",
+  "description": "General-purpose scripting language",
+  "homepage": "https://www.php.net/",
+  "provides": [
+    "pear",
+    "pecl",
+    "phar",
+    "php",
+    "php-cgi",
+    "php-config",
+    "phpdbg",
+    "phpize"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/php",
+  "license": "PHP-3.01",
+  "github": "https://github.com/php/php-src",
+  "project": "php.net"
+}

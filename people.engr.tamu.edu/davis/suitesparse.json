@@ -1,0 +1,14 @@
+{
+  "brief": "Web server build on top of Libmongoose embedded library",
+  "description": "The official SuiteSparse library: a suite of sparse matrix algorithms authored or co-authored by Tim Davis, Texas A&M University.",
+  "homepage": "https://mongoose.ws/",
+  "provides": [
+    "mongoose",
+    "suitesparse_mongoose"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mongoose",
+  "license": "GPL-2.0-only",
+  "github": "https://github.com/DrTimothyAldenDavis/SuiteSparse",
+  "project": "people.engr.tamu.edu/davis/suitesparse",
+  "displayName": "mongoose"
+}

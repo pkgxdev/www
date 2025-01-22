@@ -1,0 +1,13 @@
+{
+  "brief": "Utility to determine file types",
+  "description": "Read-only mirror of file CVS repository, updated every half hour. NOTE: do not make pull requests here, nor comment any commits, submit them usual way to bug tracker or to the mailing list. Maintainer(s) are not tracking  this git mirror.",
+  "homepage": "https://darwinsys.com/file/",
+  "provides": [
+    "file"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/file-formula",
+  "license": "BSD-2-Clause-Darwin",
+  "github": "https://github.com/file/file",
+  "project": "darwinsys.com/file",
+  "displayName": "file"
+}

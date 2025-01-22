@@ -1,0 +1,13 @@
+{
+  "brief": "Consistent delivery tool for Kubernetes",
+  "description": "A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.",
+  "homepage": "https://werf.io/",
+  "provides": [
+    "werf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/werf",
+  "license": "Apache-2.0",
+  "github": "https://github.com/werf/werf",
+  "project": "werf.io",
+  "displayName": "werf"
+}

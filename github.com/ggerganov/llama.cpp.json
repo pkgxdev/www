@@ -1,0 +1,13 @@
+{
+  "description": "LLM inference in C/C++",
+  "provides": [
+    "llama-cli",
+    "llama.cpp",
+    "convert.py"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/llama.cpp",
+  "license": "MIT",
+  "github": "https://github.com/ggerganov/llama.cpp",
+  "project": "github.com/ggerganov/llama.cpp",
+  "displayName": "llama-cli"
+}

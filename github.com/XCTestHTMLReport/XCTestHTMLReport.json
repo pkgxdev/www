@@ -1,0 +1,11 @@
+{
+  "description": "Xcode-like HTML report for Unit and UI Tests",
+  "provides": [
+    "xchtmlreport"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xctesthtmlreport",
+  "license": "MIT",
+  "github": "https://github.com/XCTestHTMLReport/XCTestHTMLReport",
+  "project": "github.com/XCTestHTMLReport/XCTestHTMLReport",
+  "displayName": "xchtmlreport"
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Fast, collaborative live terminal sharing over the web",
+  "homepage": "https://sshx.io",
+  "provides": [
+    "sshx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sshx",
+  "license": "MIT",
+  "github": "https://github.com/ekzhang/sshx",
+  "project": "sshx.io",
+  "displayName": "sshx"
+}

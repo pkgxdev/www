@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "dnsmasq"
+  ],
+  "project": "thekelleys.org.uk/dnsmasq",
+  "displayName": "dnsmasq"
+}

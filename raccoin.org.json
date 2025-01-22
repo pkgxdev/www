@@ -1,0 +1,10 @@
+{
+  "description": "Crypto Portfolio and Tax Reporting Tool",
+  "homepage": "https://raccoin.org/",
+  "provides": [
+    "raccoin"
+  ],
+  "github": "https://github.com/bjorn/raccoin",
+  "project": "raccoin.org",
+  "displayName": "raccoin"
+}

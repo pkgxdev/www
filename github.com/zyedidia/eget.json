@@ -1,0 +1,12 @@
+{
+  "brief": "Easily install prebuilt binaries from GitHub",
+  "description": "Easily install prebuilt binaries from GitHub.",
+  "provides": [
+    "eget"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/eget",
+  "license": "MIT",
+  "github": "https://github.com/zyedidia/eget",
+  "project": "github.com/zyedidia/eget",
+  "displayName": "eget"
+}

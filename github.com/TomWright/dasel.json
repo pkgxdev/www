@@ -1,0 +1,13 @@
+{
+  "brief": "JSON, YAML, TOML, XML, and CSV query and modification tool",
+  "description": "Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package.",
+  "homepage": "https://daseldocs.tomwright.me",
+  "provides": [
+    "dasel"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dasel",
+  "license": "MIT",
+  "github": "https://github.com/TomWright/dasel",
+  "project": "github.com/TomWright/dasel",
+  "displayName": "dasel"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Build Caddy with plugins",
+  "provides": [
+    "xcaddy"
+  ],
+  "github": "https://github.com/caddyserver/xcaddy",
+  "project": "github.com/caddyserver/xcaddy",
+  "displayName": "xcaddy"
+}

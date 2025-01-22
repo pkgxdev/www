@@ -1,0 +1,13 @@
+{
+  "brief": "Fast and powerful Git hooks manager for any type of projects",
+  "description": "Fast and powerful Git hooks manager for any type of projects.",
+  "homepage": "http://lefthook.dev/",
+  "provides": [
+    "lefthook"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lefthook",
+  "license": "MIT",
+  "github": "https://github.com/evilmartians/lefthook",
+  "project": "github.com/evilmartians/lefthook",
+  "displayName": "lefthook"
+}

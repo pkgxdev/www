@@ -1,0 +1,12 @@
+{
+  "description": "Perl compatible regular expressions library",
+  "homepage": "https://www.pcre.org/",
+  "provides": [
+    "pcre-config",
+    "pcregrep",
+    "pcretest"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pcre",
+  "license": "BSD-3-Clause",
+  "project": "pcre.org"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Library for querying compressed XML metadata",
+  "description": "A library to help create and query binary XML blobs",
+  "provides": [
+    "xb-tool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libxmlb",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/hughsie/libxmlb",
+  "project": "github.com/hughsie/libxmlb",
+  "displayName": "xb-tool"
+}

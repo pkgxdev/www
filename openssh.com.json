@@ -1,0 +1,18 @@
+{
+  "description": "OpenBSD freely-licensed SSH connectivity tools",
+  "homepage": "https://www.openssh.com/",
+  "provides": [
+    "scp",
+    "sftp",
+    "slogin",
+    "ssh",
+    "ssh-add",
+    "ssh-agent",
+    "ssh-keygen",
+    "ssh-keyscan",
+    "sshd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/openssh",
+  "license": "SSH-OpenSSH",
+  "project": "openssh.com"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Let's Encrypt client and ACME library",
+  "description": "Let's Encrypt/ACME client and library written in Go",
+  "homepage": "https://go-acme.github.io/lego/",
+  "provides": [
+    "lego"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lego",
+  "license": "MIT",
+  "github": "https://github.com/go-acme/lego",
+  "project": "github.com/go-acme/lego",
+  "displayName": "lego"
+}

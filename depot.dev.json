@@ -1,0 +1,10 @@
+{
+  "description": "🖥️ Depot CLI, build your Docker images in the cloud",
+  "homepage": "https://depot.dev",
+  "provides": [
+    "depot"
+  ],
+  "github": "https://github.com/depot/cli",
+  "project": "depot.dev",
+  "displayName": "depot"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "XML command-line utilities",
+  "homepage": "https://xmlstar.sourceforge.net/",
+  "provides": [
+    "xml",
+    "xmlstarlet"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xmlstarlet",
+  "license": "MIT",
+  "project": "sourceforge.net/xmlstar"
+}

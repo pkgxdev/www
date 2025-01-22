@@ -1,0 +1,13 @@
+{
+  "brief": "background code checker",
+  "description": "Background rust code check",
+  "homepage": "https://dystroy.org/bacon/",
+  "provides": [
+    "bacon"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bacon",
+  "license": "AGPL-3.0-or-later",
+  "github": "https://github.com/Canop/bacon",
+  "project": "dystroy.org/bacon",
+  "displayName": "bacon"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Fastest way to build, submit, and update iOS and Android apps",
+  "homepage": "https://docs.expo.dev/eas/",
+  "provides": [
+    "eas"
+  ],
+  "github": "https://github.com/expo/eas-cli",
+  "project": "expo.dev/eas-cli",
+  "displayName": "eas"
+}

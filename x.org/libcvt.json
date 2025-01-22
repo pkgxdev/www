@@ -1,0 +1,11 @@
+{
+  "description": "VESA CVT standard timing modelines generator",
+  "homepage": "https://www.x.org",
+  "provides": [
+    "cvt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libxcvt",
+  "license": "MIT",
+  "project": "x.org/libcvt",
+  "displayName": "cvt"
+}

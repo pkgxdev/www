@@ -1,0 +1,15 @@
+{
+  "brief": "The Sphinx documentation generator",
+  "description": "Tool to create intelligent and beautiful documentation",
+  "homepage": "https://www.sphinx-doc.org/",
+  "provides": [
+    "sphinx-apidoc",
+    "sphinx-autogen",
+    "sphinx-build",
+    "sphinx-quickstart"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sphinx-doc",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/sphinx-doc/sphinx",
+  "project": "sphinx-doc.org"
+}

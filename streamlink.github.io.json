@@ -1,0 +1,13 @@
+{
+  "brief": "CLI for extracting streams from various websites to a video player",
+  "description": "Streamlink is a CLI utility which pipes video streams from various services into a video player",
+  "homepage": "https://streamlink.github.io/",
+  "provides": [
+    "streamlink"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/streamlink",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/streamlink/streamlink",
+  "project": "streamlink.github.io",
+  "displayName": "streamlink"
+}

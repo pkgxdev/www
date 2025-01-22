@@ -1,0 +1,15 @@
+{
+  "brief": "Official repo for par2cmdline and libpar2",
+  "description": "Parchive: Parity Archive Volume Set for data recovery",
+  "homepage": "http://parchive.sourceforge.net",
+  "provides": [
+    "par2",
+    "par2create",
+    "par2verify",
+    "par2repair"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/par2",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/Parchive/par2cmdline",
+  "project": "github.com/Parchive/par2cmdline"
+}

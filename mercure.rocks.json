@@ -1,0 +1,10 @@
+{
+  "description": "🪽 An open, easy, fast, reliable and battery-efficient solution for real-time communications",
+  "homepage": "https://mercure.rocks",
+  "provides": [
+    "mercure"
+  ],
+  "github": "https://github.com/dunglas/mercure",
+  "project": "mercure.rocks",
+  "displayName": "mercure"
+}

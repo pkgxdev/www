@@ -1,0 +1,9 @@
+{
+  "description": "A Linux script management CLI written in Rust",
+  "provides": [
+    "pier"
+  ],
+  "github": "https://github.com/pier-cli/pier",
+  "project": "crates.io/pier",
+  "displayName": "pier"
+}

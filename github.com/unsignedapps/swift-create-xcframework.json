@@ -1,0 +1,9 @@
+{
+  "description": "A simple Command Line Tool to create XCFrameworks by wrapping xcodebuild.",
+  "provides": [
+    "swift-create-xcframework"
+  ],
+  "github": "https://github.com/unsignedapps/swift-create-xcframework",
+  "project": "github.com/unsignedapps/swift-create-xcframework",
+  "displayName": "swift-create-xcframework"
+}

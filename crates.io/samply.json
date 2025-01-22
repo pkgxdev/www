@@ -1,0 +1,9 @@
+{
+  "description": "Command-line sampling profiler for macOS and Linux",
+  "provides": [
+    "samply"
+  ],
+  "github": "https://github.com/mstange/samply",
+  "project": "crates.io/samply",
+  "displayName": "samply"
+}

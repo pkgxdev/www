@@ -1,0 +1,13 @@
+{
+  "brief": "Library to load and enumerate PKCS#11 modules",
+  "description": "Provides a way to load and enumerate PKCS#11 modules.",
+  "homepage": "https://p11-glue.freedesktop.org",
+  "provides": [
+    "p11-kit",
+    "trust"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/p11-kit",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/p11-glue/p11-kit",
+  "project": "freedesktop.org/p11-kit"
+}

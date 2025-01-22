@@ -1,0 +1,11 @@
+{
+  "description": "Tool for browsing source code",
+  "homepage": "https://cscope.sourceforge.net/",
+  "provides": [
+    "cscope",
+    "ocs"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cscope",
+  "license": "BSD-3-Clause",
+  "project": "cscope.sourceforge.io"
+}

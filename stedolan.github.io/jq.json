@@ -1,0 +1,13 @@
+{
+  "brief": "Command-line JSON processor",
+  "description": "Lightweight and flexible command-line JSON processor",
+  "homepage": "https://jqlang.github.io/jq/",
+  "provides": [
+    "jq"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/jq",
+  "license": "MIT",
+  "github": "https://github.com/jqlang/jq",
+  "project": "stedolan.github.io/jq",
+  "displayName": "jq"
+}

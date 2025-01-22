@@ -1,0 +1,13 @@
+{
+  "brief": "View and edit files in hexadecimal or ASCII",
+  "description": "View and edit files in hexadecimal or in ASCII",
+  "homepage": "https://rigaux.org/hexedit.html",
+  "provides": [
+    "hexedit"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hexedit",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/pixel/hexedit",
+  "project": "rigaux.org/hexedit",
+  "displayName": "hexedit"
+}

@@ -1,0 +1,6 @@
+{
+  "description": "The atomic_ops project (Atomic memory update operations portable implementation)",
+  "homepage": "https://github.com/ivmai/libatomic_ops/wiki/Download",
+  "github": "https://github.com/ivmai/libatomic_ops",
+  "project": "github.com/ivmai/libatomic_ops"
+}

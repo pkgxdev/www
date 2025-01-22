@@ -1,0 +1,10 @@
+{
+  "description": "The Open Source Dev Environment Manager.",
+  "homepage": "https://daytona.io",
+  "provides": [
+    "daytona"
+  ],
+  "github": "https://github.com/daytonaio/daytona",
+  "project": "daytona.io",
+  "displayName": "daytona"
+}

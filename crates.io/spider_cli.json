@@ -1,0 +1,10 @@
+{
+  "description": "A web crawler and scraper for Rust",
+  "homepage": "https://spider.cloud",
+  "provides": [
+    "spider"
+  ],
+  "github": "https://github.com/spider-rs/spider",
+  "project": "crates.io/spider_cli",
+  "displayName": "spider"
+}

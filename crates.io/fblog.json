@@ -1,0 +1,12 @@
+{
+  "brief": "Small command-line JSON log viewer",
+  "description": "Small command-line JSON Log viewer",
+  "provides": [
+    "fblog"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fblog",
+  "license": "WTFPL",
+  "github": "https://github.com/brocode/fblog",
+  "project": "crates.io/fblog",
+  "displayName": "fblog"
+}

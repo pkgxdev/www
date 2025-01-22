@@ -1,0 +1,12 @@
+{
+  "description": "Find files with SQL-like queries",
+  "homepage": "https://fselect.rocks",
+  "provides": [
+    "fselect"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fselect",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/jhspetersson/fselect",
+  "project": "crates.io/fselect",
+  "displayName": "fselect"
+}

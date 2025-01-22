@@ -1,0 +1,12 @@
+{
+  "description": "Yet Another Dotfiles Manager",
+  "homepage": "https://yadm.io/",
+  "provides": [
+    "yadm"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/yadm",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/yadm-dev/yadm",
+  "project": "yadm.io",
+  "displayName": "yadm"
+}

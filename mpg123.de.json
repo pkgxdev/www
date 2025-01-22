@@ -1,0 +1,11 @@
+{
+  "description": "MP3 player for Linux and UNIX",
+  "homepage": "https://www.mpg123.de/",
+  "provides": [
+    "mpg123"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mpg123",
+  "license": "LGPL-2.1-only",
+  "project": "mpg123.de",
+  "displayName": "mpg123"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "The Python programming language",
+  "homepage": "https://www.python.org",
+  "provides": [
+    "python",
+    "python{{ version.major }}",
+    "python{{ version.marketing }}"
+  ],
+  "github": "https://github.com/python/cpython",
+  "project": "python.org"
+}

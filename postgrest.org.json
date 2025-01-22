@@ -1,0 +1,13 @@
+{
+  "brief": "REST API for any Postgres database",
+  "description": "Serves a fully RESTful API from any existing PostgreSQL database",
+  "homepage": "https://postgrest.org",
+  "provides": [
+    "postgrest"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/postgrest",
+  "license": "MIT",
+  "github": "https://github.com/PostgREST/postgrest",
+  "project": "postgrest.org",
+  "displayName": "postgrest"
+}

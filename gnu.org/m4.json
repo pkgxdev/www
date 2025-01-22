@@ -1,0 +1,13 @@
+{
+  "brief": "Macro processing language",
+  "description": "GNU M4. Mirror of git://git.savannah.gnu.org/m4.git ",
+  "homepage": "https://www.gnu.org/software/m4/",
+  "provides": [
+    "m4"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/m4",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/autotools-mirror/m4",
+  "project": "gnu.org/m4",
+  "displayName": "m4"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "A modern alternative to ls",
+  "description": "Modern, maintained replacement for ls",
+  "homepage": "https://eza.rocks",
+  "provides": [
+    "eza"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/eza",
+  "license": "EUPL-1.2",
+  "github": "https://github.com/eza-community/eza",
+  "project": "crates.io/eza",
+  "displayName": "eza"
+}

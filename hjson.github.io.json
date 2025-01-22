@@ -1,0 +1,10 @@
+{
+  "description": "Hjson for Rust",
+  "homepage": "https://hjson.github.io/",
+  "provides": [
+    "hjson"
+  ],
+  "github": "https://github.com/hjson/hjson-rust",
+  "project": "hjson.github.io",
+  "displayName": "hjson"
+}

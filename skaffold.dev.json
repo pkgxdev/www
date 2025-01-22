@@ -1,0 +1,12 @@
+{
+  "description": "Easy and Repeatable Kubernetes Development",
+  "homepage": "https://skaffold.dev/",
+  "provides": [
+    "skaffold"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/skaffold",
+  "license": "Apache-2.0",
+  "github": "https://github.com/GoogleContainerTools/skaffold",
+  "project": "skaffold.dev",
+  "displayName": "skaffold"
+}

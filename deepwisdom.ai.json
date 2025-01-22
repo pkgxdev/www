@@ -1,0 +1,10 @@
+{
+  "description": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
+  "homepage": "https://deepwisdom.ai/",
+  "provides": [
+    "metagpt"
+  ],
+  "github": "https://github.com/geekan/MetaGPT",
+  "project": "deepwisdom.ai",
+  "displayName": "metagpt"
+}

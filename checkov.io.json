@@ -1,0 +1,13 @@
+{
+  "brief": "Prevent cloud misconfigurations during build-time for IaC tools",
+  "description": "Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages with Checkov by Bridgecrew.",
+  "homepage": "https://www.checkov.io/",
+  "provides": [
+    "checkov"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/checkov",
+  "license": "Apache-2.0",
+  "github": "https://github.com/bridgecrewio/checkov",
+  "project": "checkov.io",
+  "displayName": "checkov"
+}

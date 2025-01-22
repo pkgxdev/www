@@ -1,0 +1,9 @@
+{
+  "description": "The database client every command line junkie deserves.",
+  "provides": [
+    "dblab"
+  ],
+  "github": "https://github.com/danvergara/dblab",
+  "project": "dblab.danvergara.com",
+  "displayName": "dblab"
+}

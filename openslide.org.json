@@ -1,0 +1,14 @@
+{
+  "brief": "C library for reading virtual slide images",
+  "description": "C library to read whole-slide images (a.k.a. virtual slides)",
+  "homepage": "https://openslide.org/",
+  "provides": [
+    "openslide-quickhash1sum",
+    "openslide-show-properties",
+    "openslide-write-png"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/openslide",
+  "license": "LGPL-2.1-only",
+  "github": "https://github.com/openslide/openslide",
+  "project": "openslide.org"
+}

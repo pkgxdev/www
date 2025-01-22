@@ -1,0 +1,13 @@
+{
+  "brief": "OpenAI alternative",
+  "description": ":robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference",
+  "homepage": "https://localai.io",
+  "provides": [
+    "local-ai"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/localai",
+  "license": "MIT",
+  "github": "https://github.com/mudler/LocalAI",
+  "project": "localai.io",
+  "displayName": "local-ai"
+}

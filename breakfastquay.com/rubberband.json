@@ -1,0 +1,11 @@
+{
+  "description": "Audio time stretcher tool and library",
+  "homepage": "https://breakfastquay.com/rubberband/",
+  "provides": [
+    "rubberband"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rubberband",
+  "license": "GPL-2.0-or-later",
+  "project": "breakfastquay.com/rubberband",
+  "displayName": "rubberband"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "pls is a prettier and powerful ls(1) for the pros.",
+  "homepage": "https://pls.cli.rs/",
+  "provides": [
+    "pls"
+  ],
+  "github": "https://github.com/pls-rs/pls",
+  "project": "dhruvkb.dev/pls",
+  "displayName": "pls"
+}

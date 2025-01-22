@@ -1,0 +1,13 @@
+{
+  "brief": "Utility that creates projects from templates",
+  "description": "A cross-platform command-line utility that creates projects from cookiecutters (project templates), e.g. Python package projects, C projects.",
+  "homepage": "https://pypi.org/project/cookiecutter/",
+  "provides": [
+    "cookiecutter"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cookiecutter",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/cookiecutter/cookiecutter",
+  "project": "github.com/cookiecutter/cookiecutter",
+  "displayName": "cookiecutter"
+}

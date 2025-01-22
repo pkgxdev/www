@@ -1,0 +1,13 @@
+{
+  "brief": "Keyboard handling library",
+  "description": "keymap handling library for toolkits and window systems",
+  "homepage": "https://xkbcommon.org/",
+  "provides": [
+    "xkbcli"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libxkbcommon",
+  "license": "MIT",
+  "github": "https://github.com/xkbcommon/libxkbcommon",
+  "project": "xkbcommon.org",
+  "displayName": "xkbcli"
+}

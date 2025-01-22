@@ -1,0 +1,10 @@
+{
+  "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+  "homepage": "https://bun.sh",
+  "provides": [
+    "bun",
+    "bunx"
+  ],
+  "github": "https://github.com/oven-sh/bun",
+  "project": "bun.sh"
+}

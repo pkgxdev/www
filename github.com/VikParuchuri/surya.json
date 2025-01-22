@@ -1,0 +1,10 @@
+{
+  "description": "OCR, layout analysis, reading order, table recognition in 90+ languages",
+  "homepage": "https://www.datalab.to",
+  "provides": [
+    "surya_detect"
+  ],
+  "github": "https://github.com/VikParuchuri/surya",
+  "project": "github.com/VikParuchuri/surya",
+  "displayName": "surya_detect"
+}

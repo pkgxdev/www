@@ -1,0 +1,12 @@
+{
+  "brief": "Simple timetracker for the command-line",
+  "description": "A simple timetracker for the command line. It saves a log of all tracked activities as a plaintext file and allows you to create flexible reports.",
+  "provides": [
+    "bartib"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/bartib",
+  "license": "GPL-3.0-only",
+  "github": "https://github.com/nikolassv/bartib",
+  "project": "crates.io/bartib",
+  "displayName": "bartib"
+}

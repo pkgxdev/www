@@ -1,0 +1,13 @@
+{
+  "brief": "Markup-based typesetting system",
+  "description": "A new markup-based typesetting system that is powerful and easy to learn.",
+  "homepage": "https://typst.app/",
+  "provides": [
+    "typst"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/typst",
+  "license": "Apache-2.0",
+  "github": "https://github.com/typst/typst",
+  "project": "typst.app",
+  "displayName": "typst"
+}

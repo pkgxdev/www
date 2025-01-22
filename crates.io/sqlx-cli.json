@@ -1,0 +1,12 @@
+{
+  "brief": "Command-line utility for SQLx, the Rust SQL toolkit",
+  "description": "🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite.",
+  "provides": [
+    "cargo-sqlx",
+    "sqlx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/sqlx-cli",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/launchbadge/sqlx",
+  "project": "crates.io/sqlx-cli"
+}

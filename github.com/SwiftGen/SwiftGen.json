@@ -1,0 +1,12 @@
+{
+  "brief": "Swift code generator for assets, storyboards, Localizable.strings, etc.",
+  "description": "The Swift code generator for your assets, storyboards, Localizable.strings, … — Get rid of all String-based APIs!",
+  "provides": [
+    "swiftgen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/swiftgen",
+  "license": "MIT",
+  "github": "https://github.com/SwiftGen/SwiftGen",
+  "project": "github.com/SwiftGen/SwiftGen",
+  "displayName": "swiftgen"
+}

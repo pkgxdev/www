@@ -1,0 +1,5 @@
+{
+  "description": "This library contains the public client interface for NIS(YP) and NIS+ in a IPv6 ready version",
+  "github": "https://github.com/thkukuk/libnsl",
+  "project": "github.com/thkukuk/libnsl"
+}

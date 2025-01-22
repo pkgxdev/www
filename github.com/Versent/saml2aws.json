@@ -1,0 +1,12 @@
+{
+  "brief": "Login and retrieve AWS temporary credentials using a SAML IDP",
+  "description": "CLI tool which enables you to login and retrieve AWS temporary credentials using a SAML IDP",
+  "provides": [
+    "saml2aws"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/saml2aws",
+  "license": "MIT",
+  "github": "https://github.com/Versent/saml2aws",
+  "project": "github.com/Versent/saml2aws",
+  "displayName": "saml2aws"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "A command line tool for managing financial investment portfolios.",
+  "homepage": "https://crates.io/crates/portfolio_rs",
+  "provides": [
+    "portfolio_rs"
+  ],
+  "github": "https://github.com/MarkusZoppelt/portfolio_rs",
+  "project": "crates.io/portfolio_rs",
+  "displayName": "portfolio_rs"
+}

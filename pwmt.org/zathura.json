@@ -1,0 +1,10 @@
+{
+  "description": "Document viewer",
+  "homepage": "https://pwmt.org/projects/zathura",
+  "provides": [
+    "zathura"
+  ],
+  "github": "https://github.com/pwmt/zathura",
+  "project": "pwmt.org/zathura",
+  "displayName": "zathura"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Slightly more awesome Standard Unix Password Manager for Teams",
+  "description": "The slightly more awesome standard unix password manager for teams",
+  "homepage": "https://www.gopass.pw/",
+  "provides": [
+    "gopass"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gopass",
+  "license": "MIT",
+  "github": "https://github.com/gopasspw/gopass",
+  "project": "github.com/gopasspw/gopass",
+  "displayName": "gopass"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Filter out duplicates on the command line. Replacement for `sort | uniq` optimized for speed (10x faster) when sorting is not needed.",
+  "provides": [
+    "huniq"
+  ],
+  "github": "https://github.com/koraa/huniq",
+  "project": "crates.io/huniq",
+  "displayName": "huniq"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Rename multiple files",
+  "description": "Perl-powered file rename script with many helpful built-ins",
+  "homepage": "http://plasmasturm.org/code/rename",
+  "provides": [
+    "rename"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/rename",
+  "license": "Artistic-1.0-Perl OR GPL-1.0-or-later",
+  "github": "https://github.com/ap/rename",
+  "project": "plasmasturm.org/rename",
+  "displayName": "rename"
+}

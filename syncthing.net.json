@@ -1,0 +1,13 @@
+{
+  "brief": "Open Source Continuous File Synchronization",
+  "description": "Open source continuous file synchronization application",
+  "homepage": "https://syncthing.net/",
+  "provides": [
+    "syncthing"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/syncthing",
+  "license": "MPL-2.0",
+  "github": "https://github.com/syncthing/syncthing",
+  "project": "syncthing.net",
+  "displayName": "syncthing"
+}

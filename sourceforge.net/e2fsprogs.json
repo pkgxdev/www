@@ -1,0 +1,14 @@
+{
+  "description": "Utilities for the ext2, ext3, and ext4 file systems",
+  "homepage": "https://e2fsprogs.sourceforge.net/",
+  "provides": [
+    "chattr",
+    "compile_et",
+    "lsattr",
+    "mk_cmds",
+    "uuidgen"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/e2fsprogs",
+  "license": "GPL-2.0-or-later AND LGPL-2.0-or-later AND LGPL-2.0-only AND BSD-3-Clause AND MIT",
+  "project": "sourceforge.net/e2fsprogs"
+}

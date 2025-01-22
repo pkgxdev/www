@@ -1,0 +1,12 @@
+{
+  "brief": "CLI for generating a Software Bill of Materials from container images",
+  "description": "CLI tool and library for generating a Software Bill of Materials from container images and filesystems",
+  "provides": [
+    "syft"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/syft",
+  "license": "Apache-2.0",
+  "github": "https://github.com/anchore/syft",
+  "project": "anchore.com/syft",
+  "displayName": "syft"
+}

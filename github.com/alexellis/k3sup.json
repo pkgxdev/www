@@ -1,0 +1,13 @@
+{
+  "brief": "bootstrap K3s over SSH in < 60s 🚀",
+  "description": "Utility to create k3s clusters on any local or remote VM",
+  "homepage": "https://k3sup.dev",
+  "provides": [
+    "k3sup"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/k3sup",
+  "license": "MIT",
+  "github": "https://github.com/alexellis/k3sup",
+  "project": "github.com/alexellis/k3sup",
+  "displayName": "k3sup"
+}

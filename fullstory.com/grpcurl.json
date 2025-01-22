@@ -1,0 +1,12 @@
+{
+  "brief": "Like cURL, but for gRPC",
+  "description": "Like cURL, but for gRPC: Command-line tool for interacting with gRPC servers",
+  "provides": [
+    "grpcurl"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/grpcurl",
+  "license": "MIT",
+  "github": "https://github.com/fullstorydev/grpcurl",
+  "project": "fullstory.com/grpcurl",
+  "displayName": "grpcurl"
+}

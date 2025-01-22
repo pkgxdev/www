@@ -1,0 +1,12 @@
+{
+  "brief": "Fast CSV toolkit written in Rust",
+  "description": "A fast CSV command line toolkit written in Rust.",
+  "provides": [
+    "xsv"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/xsv",
+  "license": "MIT OR Unlicense",
+  "github": "https://github.com/BurntSushi/xsv",
+  "project": "github.com/burntsushi/xsv",
+  "displayName": "xsv"
+}

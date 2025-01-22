@@ -1,0 +1,9 @@
+{
+  "description": "A version number manager",
+  "provides": [
+    "versio"
+  ],
+  "github": "https://github.com/chaaz/versio",
+  "project": "crates.io/versio",
+  "displayName": "versio"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Text processor and publishing toolchain for AsciiDoc",
+  "description": ":gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.",
+  "homepage": "https://asciidoctor.org/",
+  "provides": [
+    "asciidoctor"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/asciidoctor",
+  "license": "MIT",
+  "github": "https://github.com/asciidoctor/asciidoctor",
+  "project": "asciidoctor.org",
+  "displayName": "asciidoctor"
+}

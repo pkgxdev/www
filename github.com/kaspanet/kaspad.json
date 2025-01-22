@@ -1,0 +1,12 @@
+{
+  "description": "Kaspad was the reference full node Kaspa implementation written in Go (golang), now rewritten in Rust: https://github.com/kaspanet/rusty-kaspa",
+  "provides": [
+    "genkeypair",
+    "kaspactl",
+    "kaspad",
+    "kaspaminer",
+    "kaspawallet"
+  ],
+  "github": "https://github.com/kaspanet/kaspad",
+  "project": "github.com/kaspanet/kaspad"
+}

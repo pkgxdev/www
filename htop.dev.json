@@ -1,0 +1,13 @@
+{
+  "brief": "htop - an interactive process viewer",
+  "description": "Improved top (interactive process viewer)",
+  "homepage": "https://htop.dev/",
+  "provides": [
+    "htop"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/htop",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/htop-dev/htop",
+  "project": "htop.dev",
+  "displayName": "htop"
+}

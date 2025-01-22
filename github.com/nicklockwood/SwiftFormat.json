@@ -1,0 +1,12 @@
+{
+  "brief": "Formatting tool for reformatting Swift code",
+  "description": "A command-line tool and Xcode Extension for formatting Swift code",
+  "provides": [
+    "swiftformat"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/swiftformat",
+  "license": "MIT",
+  "github": "https://github.com/nicklockwood/SwiftFormat",
+  "project": "github.com/nicklockwood/SwiftFormat",
+  "displayName": "swiftformat"
+}

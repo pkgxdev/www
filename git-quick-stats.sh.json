@@ -1,0 +1,13 @@
+{
+  "brief": "Simple and efficient way to access statistics in git",
+  "description": "▁▅▆▃▅ Git quick statistics is a simple and efficient way to access various statistics in git repository.",
+  "homepage": "https://git-quick-stats.sh/",
+  "provides": [
+    "git-quick-stats"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/git-quick-stats",
+  "license": "MIT",
+  "github": "https://github.com/arzzen/git-quick-stats",
+  "project": "git-quick-stats.sh",
+  "displayName": "git-quick-stats"
+}

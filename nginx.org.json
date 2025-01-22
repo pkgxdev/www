@@ -1,0 +1,13 @@
+{
+  "brief": "The official NGINX Open Source repository.",
+  "description": "HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server",
+  "homepage": "https://nginx.org/",
+  "provides": [
+    "nginx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nginx",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/nginx/nginx",
+  "project": "nginx.org",
+  "displayName": "nginx"
+}

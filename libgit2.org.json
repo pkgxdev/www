@@ -1,0 +1,11 @@
+{
+  "description": "C library of Git core methods that is re-entrant and linkable",
+  "provides": [
+    "git2"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libgit2",
+  "license": "GPL-2.0-only WITH GCC-exception-2.0",
+  "github": "https://libgit2.github.com/",
+  "project": "libgit2.org",
+  "displayName": "git2"
+}

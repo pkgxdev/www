@@ -1,0 +1,10 @@
+{
+  "description": "A scalable, distributed, collaborative, document-graph database, for the realtime web",
+  "homepage": "https://surrealdb.com",
+  "provides": [
+    "surreal"
+  ],
+  "github": "https://github.com/surrealdb/surrealdb",
+  "project": "surrealdb.com",
+  "displayName": "surreal"
+}

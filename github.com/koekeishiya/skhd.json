@@ -1,0 +1,9 @@
+{
+  "description": " Simple hotkey daemon for macOS",
+  "provides": [
+    "skhd"
+  ],
+  "github": "https://github.com/koekeishiya/skhd",
+  "project": "github.com/koekeishiya/skhd",
+  "displayName": "skhd"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Automate Kubernetes Configuration Editing",
+  "homepage": "https://kpt.dev",
+  "provides": [
+    "kpt"
+  ],
+  "github": "https://github.com/kptdev/kpt",
+  "project": "kpt.dev",
+  "displayName": "kpt"
+}

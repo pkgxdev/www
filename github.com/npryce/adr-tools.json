@@ -1,0 +1,12 @@
+{
+  "brief": "CLI tool for working with Architecture Decision Records",
+  "description": "Command-line tools for working with Architecture Decision Records",
+  "provides": [
+    "adr"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/adr-tools",
+  "license": "CC-BY-4.0",
+  "github": "https://github.com/npryce/adr-tools",
+  "project": "github.com/npryce/adr-tools",
+  "displayName": "adr"
+}

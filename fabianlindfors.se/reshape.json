@@ -1,0 +1,12 @@
+{
+  "brief": "Easy-to-use, zero-downtime schema migration tool for Postgres",
+  "description": "An easy-to-use, zero-downtime schema migration tool for Postgres",
+  "provides": [
+    "reshape"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/reshape",
+  "license": "MIT",
+  "github": "https://github.com/fabianlindfors/reshape",
+  "project": "fabianlindfors.se/reshape",
+  "displayName": "reshape"
+}

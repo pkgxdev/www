@@ -1,0 +1,13 @@
+{
+  "brief": "Very fast implementation of tldr in Rust",
+  "description": "A very fast implementation of tldr in Rust.",
+  "homepage": "https://tealdeer-rs.github.io/tealdeer/",
+  "provides": [
+    "tldr"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tealdeer",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/dbrgn/tealdeer",
+  "project": "tldr.sh",
+  "displayName": "tldr"
+}

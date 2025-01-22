@@ -1,0 +1,8 @@
+{
+  "provides": [
+    "vfkit"
+  ],
+  "github": "https://github.com/crc-org/vfkit",
+  "project": "github.com/crc-org/vfkit",
+  "displayName": "vfkit"
+}

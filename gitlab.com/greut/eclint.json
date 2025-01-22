@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "eclint"
+  ],
+  "project": "gitlab.com/greut/eclint",
+  "displayName": "eclint"
+}

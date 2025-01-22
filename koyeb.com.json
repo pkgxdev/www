@@ -1,0 +1,9 @@
+{
+  "description": "Koyeb cli",
+  "provides": [
+    "koyeb"
+  ],
+  "github": "https://github.com/koyeb/koyeb-cli",
+  "project": "koyeb.com",
+  "displayName": "koyeb"
+}

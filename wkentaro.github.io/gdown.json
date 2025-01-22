@@ -1,0 +1,9 @@
+{
+  "description": "Google Drive Public File Downloader when Curl/Wget Fails",
+  "provides": [
+    "gdown"
+  ],
+  "github": "https://github.com/wkentaro/gdown",
+  "project": "wkentaro.github.io/gdown",
+  "displayName": "gdown"
+}

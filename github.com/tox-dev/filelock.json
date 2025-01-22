@@ -1,0 +1,6 @@
+{
+  "description": "A platform-independent file lock for Python.",
+  "homepage": "https://py-filelock.readthedocs.io",
+  "github": "https://github.com/tox-dev/filelock",
+  "project": "github.com/tox-dev/filelock"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Minimal, fast alternative to 'du -sh'",
+  "description": "A minimal, fast alternative to 'du -sh'",
+  "provides": [
+    "diskus"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/diskus",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/sharkdp/diskus",
+  "project": "crates.io/diskus",
+  "displayName": "diskus"
+}

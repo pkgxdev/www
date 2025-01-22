@@ -1,0 +1,10 @@
+{
+  "description": "high-performance graph database for real-time use cases",
+  "homepage": "https://dgraph.io/docs",
+  "provides": [
+    "dgraph"
+  ],
+  "github": "https://github.com/dgraph-io/dgraph",
+  "project": "dgraph.io",
+  "displayName": "dgraph"
+}

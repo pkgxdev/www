@@ -1,0 +1,13 @@
+{
+  "brief": "Cloud Development Kit for Terraform",
+  "description": "Define infrastructure resources using programming constructs and provision them using HashiCorp Terraform",
+  "homepage": "https://www.terraform.io/cdktf",
+  "provides": [
+    "cdktf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cdktf",
+  "license": "MPL-2.0",
+  "github": "https://github.com/hashicorp/terraform-cdk",
+  "project": "terraform.io/cdk",
+  "displayName": "cdktf"
+}

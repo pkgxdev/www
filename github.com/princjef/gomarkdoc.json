@@ -1,0 +1,9 @@
+{
+  "description": "Generate markdown documentation for Go (golang) code",
+  "provides": [
+    "gomarkdoc"
+  ],
+  "github": "https://github.com/princjef/gomarkdoc",
+  "project": "github.com/princjef/gomarkdoc",
+  "displayName": "gomarkdoc"
+}

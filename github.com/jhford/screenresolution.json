@@ -1,0 +1,12 @@
+{
+  "brief": "Get, set, and list display resolution",
+  "description": "Command line utility for getting, setting and listing display resolution on Mac OS X 10.6+",
+  "provides": [
+    "screenresolution"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/screenresolution",
+  "license": "GPL-2.0-only",
+  "github": "https://github.com/jhford/screenresolution",
+  "project": "github.com/jhford/screenresolution",
+  "displayName": "screenresolution"
+}

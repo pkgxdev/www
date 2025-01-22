@@ -1,0 +1,6 @@
+{
+  "description": "the SSH library",
+  "homepage": "https://libssh2.org/",
+  "github": "https://github.com/libssh2/libssh2",
+  "project": "libssh2.org"
+}

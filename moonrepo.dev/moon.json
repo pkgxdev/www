@@ -1,0 +1,13 @@
+{
+  "brief": "Task runner and repo management tool for the web ecosystem, written in Rust",
+  "description": "A build system and monorepo management tool for the web ecosystem, written in Rust.",
+  "homepage": "https://moonrepo.dev/moon",
+  "provides": [
+    "moon"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/moon",
+  "license": "MIT",
+  "github": "https://github.com/moonrepo/moon",
+  "project": "moonrepo.dev/moon",
+  "displayName": "moon"
+}

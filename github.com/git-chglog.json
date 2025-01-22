@@ -1,0 +1,10 @@
+{
+  "description": "CHANGELOG generator implemented in Go (Golang).",
+  "homepage": "https://godoc.org/github.com/git-chglog/git-chglog",
+  "provides": [
+    "git-chglog"
+  ],
+  "github": "https://github.com/git-chglog/git-chglog",
+  "project": "github.com/git-chglog",
+  "displayName": "git-chglog"
+}

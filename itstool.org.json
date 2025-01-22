@@ -1,0 +1,13 @@
+{
+  "brief": "Make XML documents translatable through PO files",
+  "description": "Translate XML with PO files using W3C Internationalization Tag Set rules",
+  "homepage": "https://itstool.org/",
+  "provides": [
+    "itstool"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/itstool",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/itstool/itstool",
+  "project": "itstool.org",
+  "displayName": "itstool"
+}

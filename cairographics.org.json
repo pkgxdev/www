@@ -1,0 +1,11 @@
+{
+  "description": "Vector graphics library with cross-device output support",
+  "homepage": "https://cairographics.org/",
+  "provides": [
+    "cairo-trace"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cairo",
+  "license": "LGPL-2.1-only OR MPL-1.1",
+  "project": "cairographics.org",
+  "displayName": "cairo-trace"
+}

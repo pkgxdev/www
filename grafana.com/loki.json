@@ -1,0 +1,13 @@
+{
+  "brief": "Like Prometheus, but for logs.",
+  "description": "Horizontally-scalable, highly-available log aggregation system",
+  "homepage": "https://grafana.com/loki",
+  "provides": [
+    "loki"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/loki",
+  "license": "AGPL-3.0-only",
+  "github": "https://github.com/grafana/loki",
+  "project": "grafana.com/loki",
+  "displayName": "loki"
+}

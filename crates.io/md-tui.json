@@ -1,0 +1,12 @@
+{
+  "brief": "Command-line markdown todo list manager",
+  "description": "Command line markdown todo list manager ",
+  "provides": [
+    "mdt",
+    "md-tui"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mdt",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/basilioss/mdt",
+  "project": "crates.io/md-tui"
+}

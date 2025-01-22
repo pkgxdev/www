@@ -1,0 +1,12 @@
+{
+  "brief": "Control Golang package import order and make it always deterministic",
+  "description": "GCI, a tool that control golang package import order and make it always deterministic.",
+  "provides": [
+    "gci"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gci",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/daixiang0/gci",
+  "project": "github.com/daixiang0/gci",
+  "displayName": "gci"
+}

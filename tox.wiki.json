@@ -1,0 +1,13 @@
+{
+  "brief": "Generic Python virtualenv management and test command-line tool",
+  "description": "Command line driven CI frontend and development task automation tool.",
+  "homepage": "https://tox.wiki/en/latest/",
+  "provides": [
+    "tox"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tox",
+  "license": "MIT",
+  "github": "https://github.com/tox-dev/tox",
+  "project": "tox.wiki",
+  "displayName": "tox"
+}

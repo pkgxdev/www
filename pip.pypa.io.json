@@ -1,0 +1,13 @@
+{
+  "description": "The Python package installer",
+  "homepage": "https://pip.pypa.io/",
+  "provides": [
+    "pip",
+    "pip3.8",
+    "pip3.9",
+    "pip3.10",
+    "pip3.11"
+  ],
+  "github": "https://github.com/pypa/pip",
+  "project": "pip.pypa.io"
+}

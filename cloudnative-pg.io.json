@@ -1,0 +1,13 @@
+{
+  "brief": "CloudNativePG plugin for kubectl",
+  "description": "CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases within Kubernetes environments, covering the entire operational lifecycle from initial deployment to ongoing maintenance",
+  "homepage": "https://cloudnative-pg.io/",
+  "provides": [
+    "kubectl-cnpg"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/kubectl-cnpg",
+  "license": "Apache-2.0",
+  "github": "https://github.com/cloudnative-pg/cloudnative-pg",
+  "project": "cloudnative-pg.io",
+  "displayName": "kubectl-cnpg"
+}

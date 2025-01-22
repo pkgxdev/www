@@ -1,0 +1,9 @@
+{
+  "description": "Command line license text generator.",
+  "provides": [
+    "license"
+  ],
+  "github": "https://github.com/nishanths/license",
+  "project": "github.com/nishanths/license",
+  "displayName": "license"
+}

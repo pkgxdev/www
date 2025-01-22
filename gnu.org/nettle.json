@@ -1,0 +1,16 @@
+{
+  "brief": "Low-level cryptographic library",
+  "description": "A mirror of the nettle repository",
+  "homepage": "https://www.lysator.liu.se/~nisse/nettle/",
+  "provides": [
+    "nettle-hash",
+    "nettle-lfib-stream",
+    "nettle-pbkdf2",
+    "pkcs1-conv",
+    "sexp-conv"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nettle",
+  "license": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+  "github": "https://github.com/gnutls/nettle",
+  "project": "gnu.org/nettle"
+}

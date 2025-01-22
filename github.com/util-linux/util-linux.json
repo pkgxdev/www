@@ -1,0 +1,31 @@
+{
+  "description": "Collection of Linux utilities",
+  "homepage": "http://en.wikipedia.org/wiki/Util-linux",
+  "provides": [
+    "cal",
+    "colcrt",
+    "colrm",
+    "column",
+    "flock",
+    "getopt",
+    "hardlink",
+    "hexdump",
+    "isosize",
+    "logger",
+    "look",
+    "mcookie",
+    "mesg",
+    "namei",
+    "rename",
+    "renice",
+    "rev",
+    "scriptreplay",
+    "setsid",
+    "wall",
+    "whereis"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/util-linux",
+  "license": "BSD-3-Clause AND BSD-4-Clause-UC AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-or-later AND LGPL-2.1-or-later AND LicenseRef-Homebrew-public-domain",
+  "github": "https://github.com/util-linux/util-linux",
+  "project": "github.com/util-linux/util-linux"
+}

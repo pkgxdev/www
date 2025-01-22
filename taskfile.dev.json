@@ -1,0 +1,13 @@
+{
+  "brief": "A task runner / simpler Make alternative written in Go",
+  "description": "Task is a task runner/build tool that aims to be simpler and easier to use",
+  "homepage": "https://taskfile.dev/",
+  "provides": [
+    "task"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/go-task",
+  "license": "MIT",
+  "github": "https://github.com/go-task/task",
+  "project": "taskfile.dev",
+  "displayName": "task"
+}

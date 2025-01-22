@@ -1,0 +1,13 @@
+{
+  "brief": "Lightning-fast linter for .env files written in Rust",
+  "description": "⚡️Lightning-fast linter for .env files. Written in Rust 🦀",
+  "homepage": "https://dotenv-linter.github.io",
+  "provides": [
+    "dotenv-linter"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/dotenv-linter",
+  "license": "MIT",
+  "github": "https://github.com/dotenv-linter/dotenv-linter",
+  "project": "dotenv-linter.github.io",
+  "displayName": "dotenv-linter"
+}

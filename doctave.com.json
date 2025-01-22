@@ -1,0 +1,10 @@
+{
+  "description": "A batteries-included developer documentation site generator",
+  "homepage": "https://cli.doctave.com",
+  "provides": [
+    "doctave"
+  ],
+  "github": "https://github.com/Doctave/doctave",
+  "project": "doctave.com",
+  "displayName": "doctave"
+}

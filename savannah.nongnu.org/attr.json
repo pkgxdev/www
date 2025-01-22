@@ -1,0 +1,13 @@
+{
+  "description": "Manipulate filesystem extended attributes",
+  "homepage": "https://savannah.nongnu.org/projects/attr",
+  "provides": [
+    "attr",
+    "getfattr",
+    "setfattr"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/attr",
+  "license": "GPL-2.0-or-later",
+  "project": "savannah.nongnu.org/attr",
+  "displayName": "attr"
+}

@@ -1,0 +1,13 @@
+{
+  "brief": "Dynamic programming language",
+  "description": "Pike is a tool for determining the permissions or policy required for IAC code",
+  "homepage": "https://pike.lysator.liu.se/",
+  "provides": [
+    "pike"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pike",
+  "license": "GPL-2.0-only OR LGPL-2.1-only OR MPL-1.1",
+  "github": "https://github.com/JamesWoolfenden/pike",
+  "project": "github.com/jameswoolfenden/pike",
+  "displayName": "pike"
+}

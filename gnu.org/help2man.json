@@ -1,0 +1,11 @@
+{
+  "description": "Automatically generate simple man pages",
+  "homepage": "https://www.gnu.org/software/help2man/",
+  "provides": [
+    "help2man"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/help2man",
+  "license": "GPL-3.0-or-later",
+  "project": "gnu.org/help2man",
+  "displayName": "help2man"
+}

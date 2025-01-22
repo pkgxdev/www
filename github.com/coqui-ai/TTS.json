@@ -1,0 +1,13 @@
+{
+  "brief": "Library for manipulating fonts",
+  "description": "A library to manipulate font files from Python.",
+  "provides": [
+    "tts",
+    "tts-server",
+    "ttx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fonttools",
+  "license": "MIT",
+  "github": "https://github.com/fonttools/fonttools",
+  "project": "github.com/coqui-ai/TTS"
+}

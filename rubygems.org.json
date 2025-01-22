@@ -1,0 +1,14 @@
+{
+  "brief": "The Ruby Programming Language",
+  "description": "Powerful, clean, object-oriented scripting language",
+  "homepage": "https://www.ruby-lang.org/",
+  "provides": [
+    "bundle",
+    "bundler",
+    "gem"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ruby",
+  "license": "Ruby",
+  "github": "https://github.com/ruby/ruby",
+  "project": "rubygems.org"
+}

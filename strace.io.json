@@ -1,0 +1,13 @@
+{
+  "brief": "Diagnostic, instructional, and debugging tool for the Linux kernel",
+  "description": "strace is a diagnostic, debugging and instructional userspace utility for Linux",
+  "homepage": "https://strace.io/",
+  "provides": [
+    "strace"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/strace",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/strace/strace",
+  "project": "strace.io",
+  "displayName": "strace"
+}

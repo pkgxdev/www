@@ -1,0 +1,13 @@
+{
+  "brief": "Fulltext search engine and column store",
+  "description": "An embeddable fulltext search engine. Groonga is the successor project to Senna.",
+  "homepage": "https://groonga.org/",
+  "provides": [
+    "groonga",
+    "groonga-suggest-create-dataset"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/groonga",
+  "license": "LGPL-2.1-or-later",
+  "github": "https://github.com/groonga/groonga",
+  "project": "groonga.org"
+}

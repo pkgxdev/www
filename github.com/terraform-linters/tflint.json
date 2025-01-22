@@ -1,0 +1,12 @@
+{
+  "brief": "Linter for Terraform files",
+  "description": "A Pluggable Terraform Linter",
+  "provides": [
+    "tflint"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tflint",
+  "license": "MPL-2.0",
+  "github": "https://github.com/terraform-linters/tflint",
+  "project": "github.com/terraform-linters/tflint",
+  "displayName": "tflint"
+}

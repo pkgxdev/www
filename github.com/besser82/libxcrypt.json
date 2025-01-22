@@ -1,0 +1,5 @@
+{
+  "description": "Extended crypt library for descrypt, md5crypt, bcrypt, and others",
+  "github": "https://github.com/besser82/libxcrypt",
+  "project": "github.com/besser82/libxcrypt"
+}

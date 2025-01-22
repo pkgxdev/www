@@ -1,0 +1,9 @@
+{
+  "description": "A terminal API Client that comes in handy. // Lightweight alternative to postman",
+  "provides": [
+    "hac"
+  ],
+  "github": "https://github.com/wllfaria/hac",
+  "project": "crates.io/hac-client",
+  "displayName": "hac"
+}

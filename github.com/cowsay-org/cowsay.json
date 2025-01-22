@@ -1,0 +1,13 @@
+{
+  "brief": "Apjanke's fork of the classic cowsay project",
+  "description": "apjanke's fork of the classic cowsay project",
+  "homepage": "https://cowsay.diamonds",
+  "provides": [
+    "cowsay"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/cowsay",
+  "license": "GPL-3.0-only",
+  "github": "https://github.com/cowsay-org/cowsay",
+  "project": "github.com/cowsay-org/cowsay",
+  "displayName": "cowsay"
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Package management made easy",
+  "homepage": "https://pixi.sh",
+  "provides": [
+    "pixi"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pixi",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/prefix-dev/pixi",
+  "project": "prefix.dev",
+  "displayName": "pixi"
+}

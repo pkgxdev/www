@@ -1,0 +1,12 @@
+{
+  "brief": "CLI tool to insert spacers when command output stops",
+  "description": "Small command-line utility for adding spacers to command output",
+  "provides": [
+    "spacer"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/spacer",
+  "license": "MIT",
+  "github": "https://github.com/samwho/spacer",
+  "project": "github.com/samwho/spacer",
+  "displayName": "spacer"
+}

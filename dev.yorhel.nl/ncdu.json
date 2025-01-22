@@ -1,0 +1,11 @@
+{
+  "description": "NCurses Disk Usage",
+  "homepage": "https://dev.yorhel.nl/ncdu",
+  "provides": [
+    "ncdu"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ncdu",
+  "license": "MIT",
+  "project": "dev.yorhel.nl/ncdu",
+  "displayName": "ncdu"
+}

@@ -1,0 +1,10 @@
+{
+  "description": "A CLI tool to interact  with Passbolt, a Open source Password Manager for Teams ",
+  "homepage": "https://passbolt.com",
+  "provides": [
+    "passbolt"
+  ],
+  "github": "https://github.com/passbolt/go-passbolt-cli",
+  "project": "github.com/passbolt/go-passbolt-cli",
+  "displayName": "passbolt"
+}

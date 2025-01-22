@@ -1,0 +1,13 @@
+{
+  "brief": "Smart font renderer for non-Roman scripts",
+  "description": "Graphite is a \"smart font\" system developed specifically to handle the complexities of lesser-known languages of the world.",
+  "homepage": "https://graphite.sil.org/",
+  "provides": [
+    "gr2fonttest"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/graphite2",
+  "license": "GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1+",
+  "github": "https://github.com/silnrsi/graphite",
+  "project": "graphite.sil.org",
+  "displayName": "gr2fonttest"
+}

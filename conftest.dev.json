@@ -1,0 +1,13 @@
+{
+  "brief": "Test your configuration files using Open Policy Agent",
+  "description": "Write tests against structured configuration data using the Open Policy Agent Rego query language",
+  "homepage": "https://www.conftest.dev/",
+  "provides": [
+    "conftest"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/conftest",
+  "license": "Apache-2.0",
+  "github": "https://github.com/open-policy-agent/conftest",
+  "project": "conftest.dev",
+  "displayName": "conftest"
+}

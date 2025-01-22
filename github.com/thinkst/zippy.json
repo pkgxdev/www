@@ -1,0 +1,9 @@
+{
+  "description": "Detect AI-generated text [relatively] quickly via compression ratios",
+  "provides": [
+    "zippy"
+  ],
+  "github": "https://github.com/thinkst/zippy",
+  "project": "github.com/thinkst/zippy",
+  "displayName": "zippy"
+}

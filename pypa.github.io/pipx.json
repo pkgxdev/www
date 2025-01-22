@@ -1,0 +1,13 @@
+{
+  "brief": "Install and Run Python Applications in Isolated Environments",
+  "description": "Execute binaries from Python packages in isolated environments",
+  "homepage": "https://pipx.pypa.io",
+  "provides": [
+    "pipx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pipx",
+  "license": "MIT",
+  "github": "https://github.com/pypa/pipx",
+  "project": "pypa.github.io/pipx",
+  "displayName": "pipx"
+}

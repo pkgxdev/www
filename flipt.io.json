@@ -1,0 +1,10 @@
+{
+  "description": "Enterprise-ready, GitOps enabled, CloudNative feature management solution",
+  "homepage": "https://flipt.io",
+  "provides": [
+    "flipt"
+  ],
+  "github": "https://github.com/flipt-io/flipt",
+  "project": "flipt.io",
+  "displayName": "flipt"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "Modify dynamic ELF executables",
+  "description": "A small utility to modify the dynamic linker and RPATH of ELF executables",
+  "provides": [
+    "patchelf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/patchelf",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/NixOS/patchelf",
+  "project": "nixos.org/patchelf",
+  "displayName": "patchelf"
+}

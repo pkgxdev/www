@@ -1,0 +1,13 @@
+{
+  "brief": "USB multiplexor library for iOS devices",
+  "description": "A client library to multiplex connections from and to iOS devices",
+  "homepage": "https://www.libimobiledevice.org/",
+  "provides": [
+    "iproxy",
+    "inetcat"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libusbmuxd",
+  "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+  "github": "https://github.com/libimobiledevice/libusbmuxd",
+  "project": "libimobiledevice.org/libusbmuxd"
+}

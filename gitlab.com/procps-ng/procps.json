@@ -1,0 +1,22 @@
+{
+  "description": "Utilities for browsing procfs",
+  "homepage": "https://gitlab.com/procps-ng/procps",
+  "provides": [
+    "free",
+    "pgrep",
+    "pidof",
+    "pkill",
+    "pmap",
+    "ps",
+    "pwdx",
+    "slabtop",
+    "sysctl",
+    "tload",
+    "top",
+    "vmstat",
+    "w"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/procps",
+  "license": "GPL-2.0-or-later",
+  "project": "gitlab.com/procps-ng/procps"
+}

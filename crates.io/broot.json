@@ -1,0 +1,13 @@
+{
+  "brief": "New way to see and navigate directory trees",
+  "description": "A new way to see and navigate directory trees : https://dystroy.org/broot",
+  "homepage": "https://dystroy.org/broot/",
+  "provides": [
+    "broot"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/broot",
+  "license": "MIT",
+  "github": "https://github.com/Canop/broot",
+  "project": "crates.io/broot",
+  "displayName": "broot"
+}

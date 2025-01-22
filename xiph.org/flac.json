@@ -1,0 +1,13 @@
+{
+  "brief": "Free lossless audio codec",
+  "description": "Free Lossless Audio Codec",
+  "homepage": "https://xiph.org/flac/",
+  "provides": [
+    "flac"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/flac",
+  "license": "BSD-3-Clause AND GPL-2.0-or-later AND ISC AND LGPL-2.0-or-later AND LGPL-2.1-or-later AND LicenseRef-Homebrew-public-domain AND (GPL-2.0-or-later OR LGPL-2.1-or-later)",
+  "github": "https://github.com/xiph/flac",
+  "project": "xiph.org/flac",
+  "displayName": "flac"
+}

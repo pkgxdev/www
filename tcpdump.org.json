@@ -1,0 +1,13 @@
+{
+  "brief": "Portable library for network traffic capture",
+  "description": "the LIBpcap interface to various kernel packet capture mechanism",
+  "homepage": "https://www.tcpdump.org/",
+  "provides": [
+    "pcap-config"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libpcap",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/the-tcpdump-group/libpcap",
+  "project": "tcpdump.org",
+  "displayName": "pcap-config"
+}

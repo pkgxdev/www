@@ -1,0 +1,10 @@
+{
+  "description": "Wait4X allows you to wait for a port or a service to enter the requested state.",
+  "homepage": "https://wait4x.dev",
+  "provides": [
+    "wait4x"
+  ],
+  "github": "https://github.com/atkrad/wait4x",
+  "project": "wait4x.dev",
+  "displayName": "wait4x"
+}

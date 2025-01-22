@@ -1,0 +1,12 @@
+{
+  "brief": "Facebook's branch of Apache Thrift, including a new C++ server",
+  "description": "Facebook's branch of Apache Thrift, including a new C++ server.",
+  "provides": [
+    "thrift1"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/fbthrift",
+  "license": "Apache-2.0",
+  "github": "https://github.com/facebook/fbthrift",
+  "project": "facebook.com/fbthrift",
+  "displayName": "thrift1"
+}

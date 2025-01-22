@@ -1,0 +1,13 @@
+{
+  "brief": "a small build system with a focus on speed",
+  "description": "Small build system for use with gyp or CMake",
+  "homepage": "https://ninja-build.org/",
+  "provides": [
+    "ninja"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ninja",
+  "license": "Apache-2.0",
+  "github": "https://github.com/ninja-build/ninja",
+  "project": "ninja-build.org",
+  "displayName": "ninja"
+}

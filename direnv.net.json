@@ -1,0 +1,13 @@
+{
+  "brief": "unclutter your .profile",
+  "description": "Load/unload environment variables based on $PWD",
+  "homepage": "https://direnv.net/",
+  "provides": [
+    "direnv"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/direnv",
+  "license": "MIT",
+  "github": "https://github.com/direnv/direnv",
+  "project": "direnv.net",
+  "displayName": "direnv"
+}

@@ -1,0 +1,14 @@
+{
+  "brief": "Optional static typing for Python",
+  "description": "Experimental optional static type checker for Python",
+  "homepage": "https://www.mypy-lang.org/",
+  "provides": [
+    "mypy",
+    "mypyc",
+    "dmypy"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mypy",
+  "license": "MIT",
+  "github": "https://github.com/python/mypy",
+  "project": "mypy-lang.org"
+}

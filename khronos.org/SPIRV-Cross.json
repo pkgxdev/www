@@ -1,0 +1,12 @@
+{
+  "brief": "Performing reflection and disassembling SPIR-V",
+  "description": "SPIRV-Cross is a practical tool and library for performing reflection on SPIR-V and disassembling SPIR-V back to high level languages.",
+  "provides": [
+    "spirv-cross"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/spirv-cross",
+  "license": "Apache-2.0 AND MIT AND CC-BY-4.0 AND MIT-Khronos-old",
+  "github": "https://github.com/KhronosGroup/SPIRV-Cross",
+  "project": "khronos.org/SPIRV-Cross",
+  "displayName": "spirv-cross"
+}

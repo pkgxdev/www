@@ -1,0 +1,13 @@
+{
+  "brief": "AWS Cloud Development Kit - framework for defining AWS infra as code",
+  "description": "The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code",
+  "homepage": "https://aws.amazon.com/cdk",
+  "provides": [
+    "cdk"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/aws-cdk",
+  "license": "Apache-2.0",
+  "github": "https://github.com/aws/aws-cdk",
+  "project": "aws.amazon.com/cdk",
+  "displayName": "cdk"
+}

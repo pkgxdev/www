@@ -1,0 +1,12 @@
+{
+  "brief": "Language-agnostic \"shebang interpreter\" to write scripts in compiled languages",
+  "description": "A language-agnostic \"shebang interpreter\" that enables you to write scripts in compiled languages.",
+  "provides": [
+    "scriptisto"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/scriptisto",
+  "license": "Apache-2.0",
+  "github": "https://github.com/igor-petruk/scriptisto",
+  "project": "github.com/igor-petruk/scriptisto",
+  "displayName": "scriptisto"
+}

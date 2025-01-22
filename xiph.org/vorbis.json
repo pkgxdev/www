@@ -1,0 +1,5 @@
+{
+  "description": "Reference implementation of the Ogg Vorbis audio format.",
+  "github": "https://github.com/xiph/vorbis",
+  "project": "xiph.org/vorbis"
+}

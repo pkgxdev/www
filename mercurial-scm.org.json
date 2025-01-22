@@ -1,0 +1,11 @@
+{
+  "description": "Scalable distributed version control system",
+  "homepage": "https://mercurial-scm.org/",
+  "provides": [
+    "hg",
+    "chg"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mercurial",
+  "license": "GPL-2.0-or-later",
+  "project": "mercurial-scm.org"
+}

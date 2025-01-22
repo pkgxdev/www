@@ -1,0 +1,5 @@
+{
+  "description": "MessagePack implementation for C and C++ / msgpack.org[C/C++]",
+  "github": "https://github.com/msgpack/msgpack-c",
+  "project": "msgpack.org"
+}

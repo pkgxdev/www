@@ -1,0 +1,11 @@
+{
+  "description": "Run multiple commands in parallel",
+  "provides": [
+    "mprocs"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mprocs",
+  "license": "MIT",
+  "github": "https://github.com/pvolok/mprocs",
+  "project": "crates.io/mprocs",
+  "displayName": "mprocs"
+}

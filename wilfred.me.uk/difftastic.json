@@ -1,0 +1,13 @@
+{
+  "brief": "Diff that understands syntax",
+  "description": "a structural diff that understands syntax 🟥🟩",
+  "homepage": "https://difftastic.wilfred.me.uk/",
+  "provides": [
+    "difft"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/difftastic",
+  "license": "MIT",
+  "github": "https://github.com/Wilfred/difftastic",
+  "project": "wilfred.me.uk/difftastic",
+  "displayName": "difft"
+}

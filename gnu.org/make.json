@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "make"
+  ],
+  "project": "gnu.org/make",
+  "displayName": "make"
+}

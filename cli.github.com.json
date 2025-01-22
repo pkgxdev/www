@@ -1,0 +1,11 @@
+{
+  "description": "GitHub command-line tool",
+  "provides": [
+    "gh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/gh",
+  "license": "MIT",
+  "github": "https://cli.github.com/",
+  "project": "cli.github.com",
+  "displayName": "gh"
+}

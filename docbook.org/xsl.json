@@ -1,0 +1,12 @@
+{
+  "brief": "XSLT 1.0 Stylesheets for DocBook",
+  "description": "XML vocabulary to create presentation-neutral documents",
+  "provides": [
+    "dbtoepub"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/docbook-xsl",
+  "license": "MIT",
+  "github": "https://github.com/docbook/xslt10-stylesheets",
+  "project": "docbook.org/xsl",
+  "displayName": "dbtoepub"
+}

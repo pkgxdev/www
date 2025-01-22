@@ -1,0 +1,13 @@
+{
+  "brief": "Autoformat shell script source code",
+  "description": "A shell parser, formatter, and interpreter with bash support; includes shfmt",
+  "homepage": "https://pkg.go.dev/mvdan.cc/sh/v3",
+  "provides": [
+    "shfmt"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/shfmt",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/mvdan/sh",
+  "project": "mvdan.cc/sh",
+  "displayName": "shfmt"
+}

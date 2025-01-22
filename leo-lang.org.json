@@ -1,0 +1,10 @@
+{
+  "description": "🦁 The Leo Programming Language. A Programming Language for Formally Verified, Zero-Knowledge Applications",
+  "homepage": "https://leo-lang.org/",
+  "provides": [
+    "leo"
+  ],
+  "github": "https://github.com/AleoHQ/leo",
+  "project": "leo-lang.org",
+  "displayName": "leo"
+}

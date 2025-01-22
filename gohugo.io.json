@@ -1,0 +1,13 @@
+{
+  "brief": "Configurable static site generator",
+  "description": "The world’s fastest framework for building websites.",
+  "homepage": "https://gohugo.io/",
+  "provides": [
+    "hugo"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/hugo",
+  "license": "Apache-2.0",
+  "github": "https://github.com/gohugoio/hugo",
+  "project": "gohugo.io",
+  "displayName": "hugo"
+}

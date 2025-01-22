@@ -1,0 +1,9 @@
+{
+  "description": "🦕 stego is a steganographic swiss army knife.",
+  "provides": [
+    "stego"
+  ],
+  "github": "https://github.com/ajmwagar/stego",
+  "project": "crates.io/stego",
+  "displayName": "stego"
+}

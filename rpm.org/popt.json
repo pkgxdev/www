@@ -1,0 +1,6 @@
+{
+  "description": "C library for parsing command line parameters",
+  "homepage": "http://ftp.rpm.org/popt/",
+  "github": "https://github.com/rpm-software-management/popt",
+  "project": "rpm.org/popt"
+}
