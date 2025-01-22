@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from '@mui/material/styles';
-import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import Grid from '@mui/material/Grid2';
 import { Box, Button, Card, CardContent, CssBaseline, Dialog, DialogTitle, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
 import HeroTypography from './components/HeroTypography';
 import * as ReactDOM from 'react-dom/client';
@@ -45,7 +45,7 @@ function Body() {
     <Download />
 
     <Grid container spacing={4}>
-      <Grid xs={12} md={6}>
+      <Grid size={{xs: 12, md: 6}}>
         <Card>
           <CardContent>
             <Typography variant="h6" component="div">
@@ -57,7 +57,7 @@ function Body() {
           </CardContent>
         </Card>
       </Grid>
-      <Grid xs={12} md={6}>
+      <Grid size={{xs: 12, md: 6}}>
         <Card sx={{height: '100%'}}>
           <CardContent>
             <Typography variant="h6" component="div">

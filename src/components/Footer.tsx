@@ -1,4 +1,4 @@
-import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import Grid from '@mui/material/Grid2';
 import { Link, LinkProps, Typography, useTheme, useMediaQuery, Box, Button, Stack } from "@mui/material";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowOutwardIcon from '@mui/icons-material/CallMade';
@@ -40,11 +40,11 @@ export default function Footer() {
     </Stack>
 
     <Grid container spacing={2} columns={isxs ? 12 : 11} width='100%'>
-      <Grid xs={12} md={5}>
+      <Grid size={{xs: 12, md: 5}}>
         <img src={logo} height={18} />
         {!isxs && c}
       </Grid>
-      <Grid xs={4} md={2}>
+      <Grid size={{xs: 4, md: 2}}>
         <Typography variant="h5" fontWeight='bold' fontSize={14}>
           Product
         </Typography>
@@ -56,7 +56,7 @@ export default function Footer() {
           <Li><Link href='https://pkgx.dev/pkgs/' {...link_props}>pkgs</Link></Li>
         </ul>
       </Grid>
-      <Grid xs={4} md={2}>
+      <Grid size={{xs: 4, md: 2}}>
         <Typography variant="h5" fontWeight='bold' fontSize={14}>
           Company
         </Typography>
@@ -68,7 +68,7 @@ export default function Footer() {
           <Li><Link href='mailto:hi@pkgx.dev' {...link_props}>Contact{icon}</Link></Li>
         </ul>
       </Grid>
-      <Grid xs={4} md={2}>
+      <Grid size={{xs: 4, md: 2}}>
         <Typography variant="h5" fontWeight='bold' fontSize={14}>
           Community
         </Typography>
@@ -79,7 +79,7 @@ export default function Footer() {
           <Li><Link href='https://web.libera.chat/?channel=#pkgx' {...link_props}>irc:#pkgx{icon}</Link></Li>
         </ul>
       </Grid>
-      {isxs && <Grid xs={12}>
+      {isxs && <Grid size={12}>
         {c}
       </Grid>}
     </Grid>

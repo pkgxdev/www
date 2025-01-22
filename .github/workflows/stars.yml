@@ -53,6 +53,7 @@ jobs:
 
           if [ "$(cat ./stars.json)" != "$(cat ./remote)" ]; then
             aws s3 cp ./stars.json s3://www.pkgx.sh/stars.json
+            aws s3 cp ./stars.json s3://www.pkgx.dev/stars.json
             aws cloudfront \
               create-invalidation \
               --distribution-id E8ZRC36XS5K65 \
