@@ -11,13 +11,24 @@ interface Package {
 }
 
 export async function getKettleRemoteMetadata() {
-  const headers = { Authorization: 'public' }
-  const rsp = await fetch(`https://app.pkgx.dev/v1/packages/`, {headers})
-  const foo = await rsp.json() as {project: string, short_description: string}[]
-  return foo.reduce((acc, {project, short_description, description}) => {
-    acc[project] = short_description
-    return acc
-  }, {} as Record<string, string>)
+  const map: Record<string, string> = {};
+
+  const walk = async (dir: string) => {
+    for await (const d of Deno.readDir(dir)) {
+      const entry = `${dir}/${d.name}`;
+      if (d.isDirectory) {
+        await walk(entry);
+      } else if (d.isFile && entry.endsWith('.json')) {
+        const json = JSON.parse(Deno.readTextFileSync(entry));
+        const project = entry.slice(12, -5);
+        map[project] = json.brief || json.description;
+      }
+    }
+  };
+
+  await walk('../gh-pages');
+
+  return map;
 }
 
 const descriptions = await getKettleRemoteMetadata();
@@ -87,6 +98,7 @@ async function get_name(path: string, project: string): Promise<string | undefin
 }
 
 import { parse_pkgs_node } from "https://deno.land/x/libpkgx@v0.15.1/src/hooks/usePantry.ts"
+import { dirname } from "node:path";
 
 async function get_labels(path: string) {
   const txt = await Deno.readTextFileSync(path)

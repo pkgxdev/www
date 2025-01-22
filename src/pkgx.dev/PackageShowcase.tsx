@@ -53,6 +53,7 @@ interface Package {
   project?: string;
   birthtime?: string;
   description?: string;
+  brief?: string;
   labels?: string[];
   isLoader?: boolean;
 }
@@ -78,7 +79,7 @@ function useLoadItems() {
   }
 }
 
-function PkgCard({project, description, name, labels, isLoader}: Package) {
+function PkgCard({project, description, brief, name, labels, isLoader}: Package) {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -117,7 +118,7 @@ function PkgCard({project, description, name, labels, isLoader}: Package) {
               </Typography>
             </div>
             <Typography variant='caption' component="h3" style={text_style}>
-              {description}
+              {brief || description}
             </Typography>
           </CardContent>
         )}
