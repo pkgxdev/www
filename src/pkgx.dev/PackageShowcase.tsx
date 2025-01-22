@@ -117,7 +117,7 @@ function PkgCard({project, description, brief, name, labels, isLoader}: Package)
                 {name || get_pkg_name(project!)}
               </Typography>
             </div>
-            <Typography variant='caption' component="h3" style={text_style}>
+            <Typography noWrap={false} variant='caption' component="h3">
               {brief || description}
             </Typography>
           </CardContent>
