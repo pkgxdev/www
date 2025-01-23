@@ -108,7 +108,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
 
   return <Stack direction={{xs: "column", md: "row"}} spacing={4}>
     <Card sx={{height: 'fit-content', minWidth: 375}}>
-      <img style={{display: 'block'}} src={/*imgsrc*/ undefined} width={375} height={375} />
+      <img style={{display: 'block'}} src={imgsrc} width={375} height={375} />
     </Card>
     <Stack spacing={2}>
       <Box>
