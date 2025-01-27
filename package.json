@@ -20,7 +20,7 @@
     "mui-markdown": "^1.1.9",
     "react": "latest",
     "react-dom": "latest",
-    "react-infinite-scroll-hook": "^4.1.1",
+    "react-infinite-scroll-hook": "^5.0.1",
     "react-instantsearch": "^7.3.0",
     "react-instantsearch-dom": "^6.40.4",
     "react-router-dom": "^6.18.0",
