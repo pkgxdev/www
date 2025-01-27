@@ -124,7 +124,7 @@ function FeedItemBox(item: FeedItem) {
   const theme = useTheme();
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
-  const { url, title, image, description, type } = item
+  const { url, title, description, type, image } = item
   const text_style: CSSProperties = {whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden'}
 
   const color = (() => {

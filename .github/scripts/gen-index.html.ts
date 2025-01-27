@@ -20,7 +20,7 @@ for (const pkg of pkgs) {
   let txt = Deno.readTextFileSync('./out/index.html');
   txt = replace(txt, 'title', title);
   txt = replace(txt, 'description', pkg.description);
-  txt = replace(txt, 'image',  `https://gui.tea.xyz/prod/${pkg.project}/1024x1024.webp`);
+  txt = replace(txt, 'image',  `https://pkgx.dev/pkgs/${pkg.project}.thumb.webp`);
   txt = replace(txt, 'url', `https://pkgx.dev/pkgs/${pkg.project}/`);
 
   txt = txt.replace(/<title>.*<\/title>/, `<title>${title}</title>`);

@@ -24,7 +24,7 @@ for (const pkg of JSON.parse(Deno.readTextFileSync(pkgsJson))) {
       title: name ?? project,
       description,
       time: new Date(birthtime),
-      image: `https://gui.tea.xyz/prod/${project}/512x512.webp`,
+      image: `https://pkgx.dev/pkgs/${project}.thumb.webp`,
       url: `https://pkgx.dev/pkgs/${project}/`
     })
   }

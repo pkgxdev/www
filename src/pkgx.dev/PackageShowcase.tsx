@@ -99,7 +99,7 @@ function PkgCard({project, description, brief, name, labels, isLoader}: Package)
           <CardMedia
             height={mediaHeight}
             component={Box}
-            image={`https://gui.tea.xyz/prod/${project}/512x512.webp`}
+            image={`/pkgs/${project}.webp`}
             textAlign="right"
           >
             {chips}

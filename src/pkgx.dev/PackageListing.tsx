@@ -87,7 +87,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
   }, [project])
 
   const description = useAsync(async () => {
-    const rsp = await fetch(`https://pkgxdev.github.io/www/${project}.json`)
+    const rsp = await fetch(`/pkgs/${project}.json`)
     if (rsp.ok) {
       return await rsp.json() as { description: string, homepage: string, github: string }
     } else {
@@ -104,7 +104,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
     }
   </>
 
-  const imgsrc = `https://gui.tea.xyz/prod/${project}/1024x1024.webp`
+  const imgsrc = `/pkgs/${project}.webp`
 
   return <Stack direction={{xs: "column", md: "row"}} spacing={4}>
     <Card sx={{height: 'fit-content', minWidth: 375}}>

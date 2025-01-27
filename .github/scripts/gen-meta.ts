@@ -6,10 +6,15 @@
 //TODO do the github figure out -> description + homepage first as brew provides lookup should be a last resort I think eg. xcodeproj
 //TODO use gems, pypi, crates etc. to get better homepage, description, etc.
 
-import { fromFileUrl, dirname, join } from "jsr:@std/path@^1.0.8";
-import { ensureDirSync, exists } from "jsr:@std/fs"
-import { existsSync } from "node:fs";
 import usePantry from "https://deno.land/x/libpkgx@v0.20.3/src/hooks/usePantry.ts";
+import { fromFileUrl, dirname, join } from "jsr:@std/path@^1.0.8";
+import { parseArgs } from "jsr:@std/cli@^1.0.11/parse-args";
+import { ensureDirSync, exists } from "jsr:@std/fs";
+import { existsSync } from "node:fs";
+
+const args = parseArgs(Deno.args, {
+  boolean: ['all']
+});
 
 const kv = await Deno.openKv();
 
@@ -61,16 +66,25 @@ for (const obj of json) {
 console.error('writing');
 
 for await (const { project } of usePantry().ls()) {
+  const fn = join(out, `${project}.json`);
+
+  if (existsSync(fn) && !args.all) {
+    continue;
+  }
+
+  console.log("processing", project);
+
   const pantry_entry = await usePantry().project(project)
 
   const provides = await pantry_entry.provides();
   let { homepage, description, brew_url, license, github } = await assign(project, provides) ?? {};
 
+  const yaml = await pantry_entry.yaml();
+  const displayName = yaml?.['display-name'] || provides.length == 1 ? provides[0] : undefined;
+
   let gh_description: string | undefined = undefined;
 
   if (!github) {
-    const yaml = await pantry_entry.yaml()
-
     if (yaml?.versions?.github) {
       const foo = yaml.versions.github.split('/', 2).join('/');
       github = `https://github.com/${foo}`;
@@ -123,13 +137,12 @@ for await (const { project } of usePantry().ls()) {
   }
 
   let json: any = {
-    brief, description, homepage, provides, brew_url, license, github
+    brief, description, homepage, provides, brew_url, license, github, project, displayName
   }
   if (provides.length == 0) {
     delete json['provides'];
   }
   if (Object.values(json).length) {
-    const fn = join(out, `${project}.json`);
     ensureDirSync(dirname(fn));
     const str = JSON.stringify(json, null, 2);
     if (str != "{}") {
