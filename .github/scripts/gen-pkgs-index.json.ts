@@ -29,7 +29,7 @@ export async function getKettleRemoteMetadata() {
     }
   };
 
-  await walk('../gh-pages');
+  await walk('../public/pkgs');
 
   return map;
 }
