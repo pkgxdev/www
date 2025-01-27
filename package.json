@@ -14,7 +14,7 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
-    "algoliasearch": "^4.20.0",
+    "algoliasearch": "^5.20.0",
     "is-what": "^4.1.16",
     "libpkgx": "^0.15.1",
     "mui-markdown": "^1.1.9",
