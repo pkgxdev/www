@@ -1,4 +1,4 @@
-#!/usr/bin/env -S pkgx +python@3.11 uv run --script
+#!/usr/bin/env -S pkgx +python@3.11 +cwebp uv run --script
 
 # /// script
 # dependencies = [
@@ -90,6 +90,9 @@ def gen_img(root, json_file):
 
         with open(f"{out_file}.json", "wt") as f:
             f.write(json.dumps(payload, indent=2))
+
+        os.system(f"cwebp -q 35 -resize 560 560 {out_file} -o {os.path.splitext(out_file)[0]}.thumb.webp")
+        os.system(f"cwebp {out_file} -o {os.path.splitext(out_file)[0]}.webp")
 
         console.print(f"Done {out_file}", style="bold green")
 

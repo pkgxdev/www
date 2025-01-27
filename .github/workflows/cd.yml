@@ -6,6 +6,7 @@ on:
     paths:
       - src/**
       - package.json
+      - index.html
   workflow_dispatch:
 
 concurrency:

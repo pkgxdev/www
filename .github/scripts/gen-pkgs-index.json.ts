@@ -18,10 +18,9 @@ export async function getKettleRemoteMetadata() {
       const entry = `${dir}/${d.name}`;
       if (d.isDirectory) {
         await walk(entry);
-      } else if (d.isFile && entry.endsWith('.json')) {
+      } else if (d.isFile && entry.endsWith('.json') && entry != '../public/pkgs/index.json') {
         const json = JSON.parse(Deno.readTextFileSync(entry));
-        const project = entry.slice(12, -5);
-        map[project] = {
+        map[json.project] = {
           description: json.brief || json.description,
           name: json.displayName
         }

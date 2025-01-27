@@ -25,7 +25,8 @@ for (const pkg of pkgs) {
 
   txt = txt.replace(/<title>.*<\/title>/, `<title>${title}</title>`);
 
-  txt = txt.replace('<meta name="twitter:card" content="summary_large_image" />', '<meta name="twitter:card" content="summary" />');
+  // we want a small image, but many things (eg. Slack) then display NO image
+  //txt = txt.replace('<meta name="twitter:card" content="summary_large_image" />', '<meta name="twitter:card" content="summary" />');
 
   Deno.writeTextFileSync(`./public/pkgs/${pkg.project}/index.html`, txt);
 
@@ -33,5 +34,10 @@ for (const pkg of pkgs) {
 }
 
 function replace(txt: string, attr: string, value: string) {
-  return txt.replace(new RegExp(`<meta property="og:${attr}" content=".*" />`), `<meta property="og:${attr}" content="${value}" />`);
+  for (const type of ['og', 'twitter']) {
+    txt = txt.replace(
+      new RegExp(`<meta property="${type}:${attr}" content=".*" />`),
+      `<meta property="${type}:${attr}" content="${value}" />`);
+  }
+  return txt;
 }
