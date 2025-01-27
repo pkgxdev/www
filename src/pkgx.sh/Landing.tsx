@@ -87,7 +87,7 @@ export function RunAnything() {
           <Card>
             <CardContent>
               <Typography variant="h5">
-                Whatever you want to run<br/><i>Just type it</i>
+                Whatever You Want To Run<br/><i>Just Type It</i>
               </Typography>
               <Typography my={1.5} color="text.secondary">
                 <code>pkgx</code> can <i>optionally</i> integrate with your shell giving it <b>pkging powers</b>.
@@ -115,10 +115,10 @@ export function RunAnything() {
           <Card sx={{mt: 2}}>
             <CardContent>
               <Typography variant="h5">
-                Or Just Install Stuff
+                Or Just Install Stuff With <code>pkgm</code> 
               </Typography>
               <Terminal width='100%' mb={2} mt={2}>
-                <Prompt/> <Orange>pkgx</Orange> install gh<br/>
+                <Prompt/> <Orange>pkgm</Orange> install gh<br/>
                 installed ~/.local/bin/gh<br/>
               </Terminal>
               <Alert severity="info">
