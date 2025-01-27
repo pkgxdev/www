@@ -16,7 +16,7 @@
     "@mui/material": "latest",
     "algoliasearch": "^4.20.0",
     "is-what": "^4.1.16",
-    "libpkgx": "^0.15.1",
+    "libpkgx": "^0.18.1",
     "mui-markdown": "^1.1.9",
     "react": "latest",
     "react-dom": "latest",
