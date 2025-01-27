@@ -11,7 +11,7 @@ interface Package {
 }
 
 export async function getKettleRemoteMetadata() {
-  const map: Record<string, string> = {};
+  const map: Record<string, {description: string, name: string}> = {};
 
   const walk = async (dir: string) => {
     for await (const d of Deno.readDir(dir)) {
@@ -21,7 +21,10 @@ export async function getKettleRemoteMetadata() {
       } else if (d.isFile && entry.endsWith('.json')) {
         const json = JSON.parse(Deno.readTextFileSync(entry));
         const project = entry.slice(12, -5);
-        map[project] = json.brief || json.description;
+        map[project] = {
+          description: json.brief || json.description,
+          name: json.displayName
+        }
       }
     }
   };
@@ -31,7 +34,7 @@ export async function getKettleRemoteMetadata() {
   return map;
 }
 
-const descriptions = await getKettleRemoteMetadata();
+const metadata = await getKettleRemoteMetadata();
 
 async function getPackageYmlCreationDates(): Promise<Package[]> {
   const cmdString = "git log --pretty=format:'%H %aI' --name-only --diff-filter=ACMR -- 'projects/**/package.yml'";
@@ -44,7 +47,6 @@ async function getPackageYmlCreationDates(): Promise<Package[]> {
   await process.status();
   process.close();
 
-  const projects = new Set();
   const lines = output.trim().split('\n');
   const rv: Record<string, Package> = {}
   let currentCommitDate: string | null = null;
@@ -62,9 +64,9 @@ async function getPackageYmlCreationDates(): Promise<Package[]> {
       }
 
       const birthtime = new Date(currentCommitDate!)
-      const name = await get_name(line, project)
+      const name = await metadata[project]?.name
 
-      let description: string | undefined = descriptions[project]?.trim()
+      let description: string | undefined = metadata[project]?.description?.trim()
       if (!description) description = undefined
 
       let labels: string[] | undefined = [...await get_labels(line)]
@@ -87,18 +89,7 @@ console.log(JSON.stringify(pkgs));
 
 //////////////////////////////////////////////////////
 import { parse } from "https://deno.land/std@0.204.0/yaml/mod.ts";
-import get_provides from "./utils/get-provides.ts";
-import get_pkg_name from "./utils/get-name.ts";
-
-async function get_name(path: string, project: string): Promise<string | undefined> {
-  const txt = await Deno.readTextFileSync(path)
-  const yml = await parse(txt) as Record<string, any>
-  const provides = get_provides(yml)
-  return get_pkg_name({ project, display_name: yml['display-name'], provides })
-}
-
 import { parse_pkgs_node } from "https://deno.land/x/libpkgx@v0.15.1/src/hooks/usePantry.ts"
-import { dirname } from "node:path";
 
 async function get_labels(path: string) {
   const txt = await Deno.readTextFileSync(path)

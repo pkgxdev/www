@@ -45,15 +45,12 @@ jobs:
 
       - name: write ./total-stars.json
         run: |
-          set -x
-
           echo '${{ steps.fetch.outputs.result }}' > stars.json
 
           aws s3 cp s3://www.pkgx.dev/stars.json ./remote
 
           if [ "$(cat ./stars.json)" != "$(cat ./remote)" ]; then
             aws s3 cp ./stars.json s3://www.pkgx.sh/stars.json
-            aws s3 cp ./stars.json s3://www.pkgx.dev/stars.json
             aws cloudfront \
               create-invalidation \
               --distribution-id E8ZRC36XS5K65 \

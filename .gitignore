@@ -1,4 +1,5 @@
 node_modules
 /dist
-/out
+/public/pkgs/
 /deno.lock
+/cache

@@ -100,9 +100,7 @@ def gen_img(root, json_file):
 url = "http://127.0.0.1:7860/sdapi/v1/txt2img"
 console = Console()
 
-for root, dirs, files in os.walk("./out/"):
-    if root.startswith("./out/.git"):
-        continue
+for root, dirs, files in os.walk("./public/pkgs/"):
     for file in files:
-        if file.endswith(".json") and not file.endswith(".png.json"):
+        if file.endswith(".json") and not file.endswith(".png.json") and not file.endswith("cache.json") and not file.endswith("-manifests.json"):
             gen_img(root, file);

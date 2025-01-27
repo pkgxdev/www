@@ -51,16 +51,16 @@ jobs:
           aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
-      - run: aws s3 sync s3://www.pkgx.dev/pkgs/ ./out
-      - run: aws s3 cp s3://www.pkgx.dev/index.html ./out/index.html
+      - run: aws s3 sync s3://www.pkgx.dev/pkgs/ ./public/pkgs --exclude "*" --include "*.json"
+      - run: aws s3 cp s3://www.pkgx.dev/index.html ./public/index.html
 
-      - run: ../.github/scripts/gen-pkgs-index.json.ts > ../out/index.json
+      - run: ../.github/scripts/gen-pkgs-index.json.ts > ../public/pkgs/index.json
         working-directory: pantry
 
       - run: .github/scripts/gen-index.html.ts
 
       - run: aws s3 sync
-              out/ s3://www.pkgx.dev/pkgs/
+              public/pkgs/ s3://www.pkgx.dev/pkgs/
               --metadata-directive REPLACE
               --cache-control no-cache,must-revalidate
 
@@ -72,7 +72,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: pkg-index
-          path: out/index.json
+          path: public/pkgs/index.json
 
   root-indexer:
     needs: indexer
@@ -148,9 +148,3 @@ jobs:
             --header "X-Algolia-API-Key: ${{ secrets.ALGOLIA_ADMIN_KEY }}" \
             --data-binary "@$JSON_FILE" \
             "https://${ALGOLIA_APP_ID}.algolia.net/1/indexes/pkgs/batch"
-
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: algolia
-          path: ./algolia.json

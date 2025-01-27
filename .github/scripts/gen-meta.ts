@@ -1,4 +1,4 @@
-#!/usr/bin/env -S pkgx deno^2 run --allow-net --allow-write=./out --allow-read --unstable-kv --allow-env --allow-run
+#!/usr/bin/env -S pkgx deno^2 run --allow-net --allow-write=public/pkgs,cache --allow-read --unstable-kv --allow-env --allow-run
 
 //TODO if no homepage at the end check of it all check the project name for a 200 HEAD request
 //TODO if no github check if project name is a github
@@ -9,8 +9,9 @@
 import usePantry from "https://deno.land/x/libpkgx@v0.20.3/src/hooks/usePantry.ts";
 import { fromFileUrl, dirname, join } from "jsr:@std/path@^1.0.8";
 import { parseArgs } from "jsr:@std/cli@^1.0.11/parse-args";
-import { ensureDirSync, exists } from "jsr:@std/fs";
+import { ensureDirSync } from "jsr:@std/fs";
 import { existsSync } from "node:fs";
+import { Path } from "https://deno.land/x/libpkgx@v0.20.3/mod.ts";
 
 const args = parseArgs(Deno.args, {
   boolean: ['all']
@@ -18,7 +19,8 @@ const args = parseArgs(Deno.args, {
 
 const kv = await Deno.openKv();
 
-const out = join(dirname(fromFileUrl(import.meta.url)), '../../out');
+const root = join(dirname(dirname(dirname(fromFileUrl(import.meta.url)))));
+const out = join(root, 'public/pkgs');
 ensureDirSync(out);
 
 const json = await get_formula_json();
@@ -65,7 +67,7 @@ for (const obj of json) {
 
 console.error('writing');
 
-for await (const { project } of usePantry().ls()) {
+for await (const { project } of desired_pantry_entries()) {
   const fn = join(out, `${project}.json`);
 
   if (existsSync(fn) && !args.all) {
@@ -75,11 +77,11 @@ for await (const { project } of usePantry().ls()) {
   console.log("processing", project);
 
   const pantry_entry = await usePantry().project(project)
-
-  const provides = await pantry_entry.provides();
-  let { homepage, description, brew_url, license, github } = await assign(project, provides) ?? {};
-
   const yaml = await pantry_entry.yaml();
+  const provides = await pantry_entry.provides();
+  let { homepage, description, brew_url, license, github } = await assign(yaml, provides) ?? {};
+
+
   const displayName = yaml?.['display-name'] || provides.length == 1 ? provides[0] : undefined;
 
   let gh_description: string | undefined = undefined;
@@ -151,7 +153,7 @@ for await (const { project } of usePantry().ls()) {
   }
 }
 
-async function assign(project: string, provides: string[]) {
+async function assign(pantry_yaml: any, provides: string[]) {
   for (const provide of provides) {
     const bar = await kv.get(['provides', `bin/${provide}`])
     const baz = (bar.value as { ff: string[] } | null)?.ff;
@@ -162,15 +164,18 @@ async function assign(project: string, provides: string[]) {
     if (baz.length > 1) {
       console.error("warning: multiple formulae provide", provide, baz);
     }
-    return (await kv.get(["formula", baz[0]])).value as any;
+    const brew_data = (await kv.get(["formula", baz[0]])).value as any;
+
+    // compare simularity of brew_data to pantry data to prevent false matches
+
   }
 }
 
 async function get_formula_json() {
   const headers: Record<string, string> = {};
   try {
-    if (existsSync(join(out, '.git/formula.json'))) {
-      headers["If-None-Match"] = Deno.readTextFileSync(join(out, '.git/formula.json.ETAG'));
+    if (existsSync(join(root, './cache/_formula.json'))) {
+      headers["If-None-Match"] = Deno.readTextFileSync(join(root, './cache/_formula.json.ETAG'));
     }
   } catch {}
 
@@ -178,7 +183,7 @@ async function get_formula_json() {
   const rsp = await fetch("https://formulae.brew.sh/api/formula.json", {headers});
 
   if (rsp.status == 304) {
-    const data = Deno.readFileSync(join(out, ".git/formula.json"));
+    const data = Deno.readFileSync(join(root, "./cache/_formula.json"));
     const str = new TextDecoder().decode(data);
     return JSON.parse(str);
   }
@@ -193,8 +198,8 @@ async function get_formula_json() {
   const json = await rsp.json();
 
   if (etag) {
-    Deno.writeTextFileSync(join(out, '.git/formula.json.ETAG'), etag);
-    Deno.writeTextFileSync(join(out, '.git/formula.json'), JSON.stringify(json));
+    Deno.writeTextFileSync(join(root, './cache/_formula.json.ETAG'), etag);
+    Deno.writeTextFileSync(join(root, './cache/_formula.json'), JSON.stringify(json));
   }
 
   return json
@@ -204,8 +209,8 @@ async function get_manifest({name, versions: {stable}, revision, bottle: {stable
   const version = typeof stable == 'string' ? stable : {stable}
 
   //TODO check age is less than 3 hours, then do ETAG check
-  if (existsSync(join(out, `.git/${name}-manifests.json`))) {
-    const data = Deno.readFileSync(join(out, `.git/${name}-manifests.json`));
+  if (existsSync(join(root, `./cache/${name}-manifests.json`))) {
+    const data = Deno.readFileSync(join(root, `./cache/${name}-manifests.json`));
     const str = new TextDecoder().decode(data);
     return { ...JSON.parse(str), version };
   }
@@ -223,8 +228,8 @@ async function get_manifest({name, versions: {stable}, revision, bottle: {stable
     "Accept": "application/vnd.oci.image.index.v1+json"
   };
   try {
-    if (existsSync(join(out, 'formula.json'))) {
-      headers["If-None-Match"] = Deno.readTextFileSync(join(out, `.git/${name}-manifests.json.ETAG`));
+    if (existsSync(join(root, `./cache/${name}-manifests.json`))) {
+      headers["If-None-Match"] = Deno.readTextFileSync(join(root, `./cache/${name}-manifests.json.ETAG`));
     }
   } catch {}
 
@@ -232,7 +237,7 @@ async function get_manifest({name, versions: {stable}, revision, bottle: {stable
   const rsp = await fetch(url, { headers });
 
   if (rsp.status == 304) {
-    const data = Deno.readFileSync(join(out, `.git/${name}-manifests.json`));
+    const data = Deno.readFileSync(join(root, `./cache/${name}-manifests.json`));
     const str = new TextDecoder().decode(data);
     return { ...JSON.parse(str), version };
   }
@@ -253,8 +258,8 @@ async function get_manifest({name, versions: {stable}, revision, bottle: {stable
   const json = await rsp.json();
 
   if (etag) {
-    Deno.writeTextFileSync(join(out, `.git/${name}-manifests.json.ETAG`), etag);
-    Deno.writeTextFileSync(join(out, `.git/${name}-manifests.json`), JSON.stringify(json));
+    Deno.writeTextFileSync(join(root, `./cache/${name}-manifests.json.ETAG`), etag);
+    Deno.writeTextFileSync(join(root, `./cache/${name}-manifests.json`), JSON.stringify(json));
   }
 
   // we have no github auth so we can only request 20 times a second at most
@@ -265,7 +270,7 @@ async function get_manifest({name, versions: {stable}, revision, bottle: {stable
 
 function try_github(head: { url: string } | null, homepage: string) {
   let rv = get();
-  if (rv?.endsWith('.git')) {
+  if (rv?.endsWith('./cache')) {
     rv = rv.slice(0, -4);
   }
   return rv;
@@ -307,5 +312,22 @@ async function get_github_JSON_values(github: string): Promise<{ description?: s
   if (success) {
     const output = new TextDecoder().decode((await cmd.output()).stdout).trim();
     return JSON.parse(output);
+  }
+}
+
+async function* desired_pantry_entries(): AsyncGenerator<{project: string, path: Path}> {
+  if (args._.length) {
+    return {
+      async next() {
+        const project = `${args._.shift()}`;
+        if (project) {
+          return { done: false, value: { project, path: usePantry().prefix.join(project, 'package.yml') } };
+        } else {
+          return { done: true, value: undefined };
+        }
+      }
+    }
+  } else {
+    return usePantry().ls()
   }
 }
