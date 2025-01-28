@@ -8,5 +8,6 @@
   "brew_url": "https://formulae.brew.sh/formula/quictls",
   "license": "Apache-2.0",
   "github": "https://github.com/quictls/openssl",
-  "project": "openssl.org"
+  "project": "openssl.org",
+  "displayName": "OpenSSL"
 }

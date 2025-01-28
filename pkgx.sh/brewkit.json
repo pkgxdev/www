@@ -1,5 +1,5 @@
 {
-  "description": "build infra & `$ pkg build`",
+  "description": "build infra & `$ bk build`",
   "provides": [
     "bk"
   ],

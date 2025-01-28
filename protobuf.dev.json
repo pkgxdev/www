@@ -1,5 +1,6 @@
 {
-  "description": "Protocol buffers (Google's data interchange format)",
+  "brief": "Protocol buffers (Google's data interchange format)",
+  "description": "Protocol Buffers - Google's data interchange format",
   "homepage": "https://protobuf.dev/",
   "provides": [
     "protoc"
@@ -8,5 +9,5 @@
   "license": "BSD-3-Clause",
   "github": "https://github.com/protocolbuffers/protobuf",
   "project": "protobuf.dev",
-  "displayName": "protoc"
+  "displayName": "Protocol Buffers"
 }
