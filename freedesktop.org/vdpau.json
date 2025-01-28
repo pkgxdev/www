@@ -1,3 +1,4 @@
 {
-  "project": "freedesktop.org/vdpau"
+  "project": "freedesktop.org/vdpau",
+  "displayName": "vdpau"
 }

@@ -7,5 +7,5 @@
   "brew_url": "https://formulae.brew.sh/formula/goyacc",
   "license": "BSD-3-Clause",
   "project": "modernc.org/goyacc",
-  "displayName": "goyacc"
+  "displayName": "modernc.org/goyacc"
 }

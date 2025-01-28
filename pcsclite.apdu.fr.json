@@ -3,5 +3,5 @@
     "pcscd"
   ],
   "project": "pcsclite.apdu.fr",
-  "displayName": "pcscd"
+  "displayName": "pcsc-lite"
 }

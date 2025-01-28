@@ -1,5 +1,6 @@
 {
   "description": "PortAudio is a cross-platform, open-source C language library for real-time audio input and output.",
   "github": "https://github.com/PortAudio/portaudio",
-  "project": "portaudio.com"
+  "project": "portaudio.com",
+  "displayName": "PortAudio"
 }

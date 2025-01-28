@@ -9,5 +9,5 @@
   "license": "BSD-2-Clause",
   "github": "https://github.com/Yubico/yubikey-manager",
   "project": "developers.yubico.com/yubikey-manager",
-  "displayName": "ykman"
+  "displayName": "yubikey-manager"
 }

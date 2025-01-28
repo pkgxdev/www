@@ -7,5 +7,5 @@
   "brew_url": "https://formulae.brew.sh/formula/libmatio",
   "license": "BSD-2-Clause",
   "project": "matio.sourceforge.io",
-  "displayName": "matdump"
+  "displayName": "libmatio"
 }

@@ -1,3 +1,4 @@
 {
-  "project": "sourceware.org/dm"
+  "project": "sourceware.org/dm",
+  "displayName": "device-mapper"
 }

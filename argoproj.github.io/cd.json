@@ -8,5 +8,5 @@
   "license": "Apache-2.0",
   "github": "https://github.com/argoproj/cd",
   "project": "argoproj.github.io/cd",
-  "displayName": "argocd"
+  "displayName": "argo-cd"
 }

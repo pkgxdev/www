@@ -1,5 +1,6 @@
 {
   "description": "Netlink Library Suite",
   "github": "https://github.com/thom311/libnl",
-  "project": "github.com/thom311/libnl"
+  "project": "github.com/thom311/libnl",
+  "displayName": "libnl"
 }

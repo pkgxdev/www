@@ -7,5 +7,5 @@
   "brew_url": "https://formulae.brew.sh/formula/libusb-compat",
   "license": "LGPL-2.1-or-later AND (LGPL-2.1-or-later OR BSD-3-Clause)",
   "project": "libusb.info/compat",
-  "displayName": "libusb-config"
+  "displayName": "libusb-compat"
 }

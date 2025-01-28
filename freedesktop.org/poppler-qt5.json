@@ -19,5 +19,5 @@
   "brew_url": "https://formulae.brew.sh/formula/poppler-qt5",
   "license": "GPL-2.0-only",
   "project": "freedesktop.org/poppler-qt5",
-  "displayName": "pdfattach"
+  "displayName": "poppler-qt5"
 }

@@ -9,5 +9,5 @@
   "license": "MPL-2.0",
   "github": "https://github.com/hashicorp/terraform-cdk",
   "project": "terraform.io/cdk",
-  "displayName": "cdktf"
+  "displayName": "terraform-cdk"
 }

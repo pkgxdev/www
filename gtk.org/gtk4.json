@@ -17,5 +17,5 @@
   "brew_url": "https://formulae.brew.sh/formula/gtk4",
   "license": "LGPL-2.1-or-later",
   "project": "gtk.org/gtk4",
-  "displayName": "gtk4-builder-tool"
+  "displayName": "gtk4"
 }

@@ -2,5 +2,6 @@
   "description": "Python composable command line interface toolkit",
   "homepage": "https://click.palletsprojects.com",
   "github": "https://github.com/pallets/click",
-  "project": "palletsprojects.com/click"
+  "project": "palletsprojects.com/click",
+  "displayName": "python-click"
 }

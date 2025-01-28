@@ -1,6 +1,5 @@
 {
-  "brief": "Protocol buffers (Google's data interchange format)",
-  "description": "Protocol Buffers - Google's data interchange format",
+  "description": "Protocol buffers (Google's data interchange format)",
   "homepage": "https://protobuf.dev/",
   "provides": [
     "protoc"

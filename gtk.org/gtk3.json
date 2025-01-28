@@ -16,5 +16,5 @@
   "brew_url": "https://formulae.brew.sh/formula/gtk+3",
   "license": "LGPL-2.0-or-later",
   "project": "gtk.org/gtk3",
-  "displayName": "gtk-builder-tool"
+  "displayName": "gtk3"
 }

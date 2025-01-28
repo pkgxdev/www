@@ -2,5 +2,6 @@
   "description": "Run Anything",
   "homepage": "https://pkgx.sh",
   "github": "https://github.com/teaxyz/cli",
-  "project": "tea.xyz"
+  "project": "tea.xyz",
+  "displayName": "tea/cli"
 }

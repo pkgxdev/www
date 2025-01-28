@@ -1,4 +1,5 @@
 {
   "github": "https://github.com/cyrusimap/cyrus-sasl",
-  "project": "cyrusimap.org/cyrus-sasl"
+  "project": "cyrusimap.org/cyrus-sasl",
+  "displayName": "cyrus-sasl"
 }

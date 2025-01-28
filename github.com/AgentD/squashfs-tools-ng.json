@@ -7,5 +7,5 @@
     "sqfsdiff"
   ],
   "project": "github.com/AgentD/squashfs-tools-ng",
-  "displayName": "gensquashfs"
+  "displayName": "squashfs-tools-ng"
 }

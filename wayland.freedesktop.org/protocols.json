@@ -1,3 +1,4 @@
 {
-  "project": "wayland.freedesktop.org/protocols"
+  "project": "wayland.freedesktop.org/protocols",
+  "displayName": "wayland-protocols"
 }

@@ -8,5 +8,5 @@
   "license": "MIT",
   "github": "https://github.com/docbook/xslt10-stylesheets",
   "project": "docbook.org/xsl",
-  "displayName": "dbtoepub"
+  "displayName": "docbook-xsl"
 }

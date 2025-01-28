@@ -9,5 +9,5 @@
   "license": "Apache-2.0",
   "github": "https://github.com/moby/buildkit",
   "project": "github.com/moby/buildkit",
-  "displayName": "buildctl"
+  "displayName": "buildkit"
 }

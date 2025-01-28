@@ -8,5 +8,5 @@
   "license": "LGPL-2.1-only",
   "github": "https://github.com/seccomp/libseccomp",
   "project": "github.com/seccomp/libseccomp",
-  "displayName": "scmp_sys_resolver"
+  "displayName": "libseccomp"
 }

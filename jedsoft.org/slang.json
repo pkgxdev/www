@@ -7,5 +7,5 @@
   "brew_url": "https://formulae.brew.sh/formula/s-lang",
   "license": "GPL-2.0-or-later",
   "project": "jedsoft.org/slang",
-  "displayName": "slsh"
+  "displayName": "s-lang"
 }

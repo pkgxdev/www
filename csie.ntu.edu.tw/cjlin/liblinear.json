@@ -10,5 +10,5 @@
   "license": "BSD-3-Clause",
   "github": "https://github.com/cjlin1/liblinear",
   "project": "csie.ntu.edu.tw/cjlin/liblinear",
-  "displayName": "predict"
+  "displayName": "liblinear"
 }

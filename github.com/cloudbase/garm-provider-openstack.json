@@ -5,5 +5,5 @@
   ],
   "github": "https://github.com/cloudbase/garm-provider-openstack",
   "project": "github.com/cloudbase/garm-provider-openstack",
-  "displayName": "garm-provider-openstack"
+  "displayName": "cloudbase/garm-provider-openstack"
 }

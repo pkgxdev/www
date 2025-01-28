@@ -2,5 +2,6 @@
   "description": "Internet-scale Neural Networks",
   "homepage": "https://www.bittensor.com/",
   "github": "https://github.com/opentensor/bittensor",
-  "project": "bittensor.com"
+  "project": "bittensor.com",
+  "displayName": "Bittensor"
 }

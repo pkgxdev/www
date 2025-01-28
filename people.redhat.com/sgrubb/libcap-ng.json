@@ -12,5 +12,5 @@
   "license": "LGPL-2.1-or-later AND GPL-2.0-or-later",
   "github": "https://github.com/stevegrubb/libcap-ng",
   "project": "people.redhat.com/sgrubb/libcap-ng",
-  "displayName": "captest"
+  "displayName": "libcap-ng"
 }

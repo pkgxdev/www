@@ -5,5 +5,5 @@
   ],
   "github": "https://github.com/greenpau/go-redfish-api-idrac",
   "project": "github.com/greenpau/go-redfish-api-idrac",
-  "displayName": "go-redfish-api-idrac-client"
+  "displayName": "go-redfish-api-idrac"
 }

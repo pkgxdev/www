@@ -1,3 +1,4 @@
 {
-  "project": "dri.freedesktop.org"
+  "project": "dri.freedesktop.org",
+  "displayName": "libdrm"
 }

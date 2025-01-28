@@ -1,5 +1,6 @@
 {
   "description": "Minimalistic C client for Redis >= 1.2",
   "github": "https://github.com/redis/hiredis",
-  "project": "github.com/redis/hiredis"
+  "project": "github.com/redis/hiredis",
+  "displayName": "hiredis"
 }

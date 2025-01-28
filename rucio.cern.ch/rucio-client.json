@@ -7,5 +7,5 @@
   ],
   "github": "https://github.com/rucio/rucio",
   "project": "rucio.cern.ch/rucio-client",
-  "displayName": "rucio"
+  "displayName": "rucio-client"
 }

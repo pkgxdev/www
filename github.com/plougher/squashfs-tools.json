@@ -11,5 +11,5 @@
   "license": "GPL-2.0-or-later",
   "github": "https://github.com/plougher/squashfs-tools",
   "project": "github.com/plougher/squashfs-tools",
-  "displayName": "mksquashfs"
+  "displayName": "SquashFS-Tools"
 }

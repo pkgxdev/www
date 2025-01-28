@@ -14,5 +14,5 @@
   "license": "Apache-2.0",
   "github": "https://github.com/scivision/METIS",
   "project": "glaros.dtc.umn.edu/metis",
-  "displayName": "cmpfillin"
+  "displayName": "metis"
 }
