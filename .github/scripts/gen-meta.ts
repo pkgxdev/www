@@ -152,6 +152,12 @@ for await (const { project } of desired_pantry_entries()) {
     homepage = undefined;
   }
 
+  switch (project) {
+  case 'github.com/brucedom/bruce':
+    description = 'Basic Runtime for Uniform Compute Environments';
+    // ^^ the github description is not useful
+  }
+
   let json: any = {
     brief, description, homepage, provides, brew_url, license, github, project, displayName
   }

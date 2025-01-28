@@ -1,18 +1,21 @@
 import Grid from '@mui/material/Grid2';
-import { useTheme, ButtonBase, Paper, Stack, Typography, useMediaQuery, Alert, Card, CardActionArea, CardMedia, Box, Chip, CardContent, Skeleton } from '@mui/material';
+import { useTheme, Stack, Typography, useMediaQuery, Alert, Card, CardActionArea, CardMedia, Box, Chip, CardContent, Skeleton } from '@mui/material';
 import useInfiniteScroll from 'react-infinite-scroll-hook';
 import HeroTypography from '../components/HeroTypography';
-import pkgxsh_txt from "../assets/pkgxsh.text.svg";
-import ossapp_txt from "../assets/ossapp.text.svg";
 import { useState, CSSProperties } from 'react';
-import mash_txt from "../assets/mash.text.svg";
-import pkgxsh from "../assets/pkgxsh.svg";
-import ossapp from "../assets/ossapp.svg";
 import FeedItem from '../utils/FeedItem';
-import mash from "../assets/mash.svg";
 import { useAsync } from 'react-use';
+import img_pkgx from "../assets/pkgx.webp";
+import img_mash from "../assets/mash.webp";
+import img_teaBASE from "../assets/teaBASE.webp";
+import img_unpkg from "../assets/unpkg.webp";
+import img_pkgm from "../assets/pkgm.webp";
+import img_dev from "../assets/dev.webp";
 
 export default function HomeFeed() {
+  const theme = useTheme();
+  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+
   return <>
     <Stack textAlign='center'>
       <Typography variant='overline'>We are Crafters of Fine</Typography>
@@ -21,45 +24,96 @@ export default function HomeFeed() {
       </HeroTypography>
     </Stack>
 
-    <Grid container spacing={{xs: 1, md: 2}} textAlign='center'>
-      <Grid size={{xs: 12, md: 4}}>
-        <ButtonBase href='https://pkgx.sh'>
-          <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
-            <Stack direction='column' spacing={2}>
-              <img src={pkgxsh} height='33px' />
-              <img src={pkgxsh_txt} height='34px' />
-              <Typography variant='subtitle1' style={{marginTop: 5}}>
-                Blazingly Fast Package Runner
+    <Grid container spacing={{xs: 1, md: 2}}>
+      <Grid size={{xs: 6, md: 4}}>
+        <Card raised={true}>
+          <CardActionArea href='https://github.com/pkgxdev/pkgx'>
+            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_pkgx} />
+            <CardContent sx={isxs ? {p: 0.75} : undefined}>
+              <Typography variant='overline' component="h2">
+                pkgx
               </Typography>
-            </Stack>
-          </Paper>
-        </ButtonBase>
+              <Typography variant='caption' component="h3">
+                Fast, small, package runner
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
       </Grid>
-      <Grid size={{xs: 12, md: 4}}>
-        <ButtonBase href='https://mash.pkgx.sh'>
-          <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
-            <Stack direction='column' spacing={2}>
-              <img src={mash} height='33px' />
-              <img src={mash_txt} height='17px' style={{marginTop: 23}} />
-              <Typography variant='subtitle1' style={{marginTop: 12}}>
-                The Package Manager for Scripts
+      <Grid size={{xs: 6, md: 4}}>
+        <Card raised={true}>
+          <CardActionArea href='https://github.com/pkgxdev/mash'>
+            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_mash} />
+            <CardContent sx={isxs ? {p: 0.75} : undefined}>
+              <Typography variant='overline' component="h2">
+                mash
               </Typography>
-            </Stack>
-          </Paper>
-        </ButtonBase>
+              <Typography variant='caption' component="h3">
+                The package manager for scripts
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
       </Grid>
-      <Grid size={{xs: 12, md: 4}}>
-        <ButtonBase href='https://pkgx.app'>
-          <Paper variant='outlined' sx={{p: 4, width: '348px', height: '183px', py: '34px'}}>
-            <Stack direction='column' spacing={2}>
-              <img src={ossapp} height='33px' />
-              <img src={ossapp_txt} height='19px' style={{marginTop: 23}} />
-              <Typography variant='subtitle1' style={{marginTop: 13}}>
-                The Open Source App Store
+      <Grid size={{xs: 6, md: 4}}>
+        <Card raised={true}>
+          <CardActionArea href='https://github.com/pkgxdev/dev'>
+            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_dev} />
+            <CardContent sx={isxs ? {p: 0.75} : undefined}>
+              <Typography variant='overline' component="h2">
+                dev
               </Typography>
-            </Stack>
-          </Paper>
-        </ButtonBase>
+              <Typography variant='caption' component="h3">
+                Isolated, reproducible development environments
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+      <Grid size={{xs: 6, md: 4}}>
+        <Card raised={true}>
+          <CardActionArea href='https://github.com/pkgxdev/pkgm'>
+            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_pkgm} />
+            <CardContent sx={isxs ? {p: 0.75} : undefined}>
+              <Typography variant='overline' component="h2">
+                pkgm
+              </Typography>
+              <Typography variant='caption' component="h3">
+                Install <code>pkgx</code> packages to <code>/usr/local</code>
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+      <Grid size={{xs: 6, md: 4}}>
+        <Card raised={true}>
+          <CardActionArea href='https://github.com/pkgxdev/unpkg'>
+            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_unpkg} />
+            <CardContent sx={isxs ? {p: 0.75} : undefined}>
+              <Typography variant='overline' component="h2">
+                unpkg
+              </Typography>
+              <Typography variant='caption' component="h3">
+                Packaging the unpackagable in sandboxes
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+      <Grid size={{xs: 6, md: 4}}>
+        <Card raised={true}>
+          <CardActionArea href='https://github.com/teaxyz/teaBASE'>
+            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_teaBASE} />
+            <CardContent sx={isxs ? {p: 0.75} : undefined}>
+              <Typography variant='overline' component="h2">
+                teaBASE
+              </Typography>
+              <Typography variant='caption' component="h3">
+                The Developer Cockpit
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
       </Grid>
     </Grid>
 

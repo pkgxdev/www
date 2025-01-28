@@ -17,6 +17,7 @@ import base64
 import random
 import json
 import os
+import re
 
 def gen_img(root, json_file):
     out_file = os.path.join(root, f"{os.path.splitext(json_file)[0]}.png")
@@ -59,14 +60,16 @@ def gen_img(root, json_file):
 
         seed = random.randint(0, 2**32 - 1)
 
-        prompt = textwrap.dedent(f"""
+        prompt = f"""
         Create an abstract oil painting that represents:
         {description.strip()}
         Use an expressive explosion of {colors}—with and hyper-detailed textures.
         Highlight the artwork with gleaming golden accents that radiate light amidst a brilliance of harmony.
         Incorporate ethereal elements like {imagery} to symbolize the peaceful blending of these forces.
         Ensure a perfect composition with intricate pearl filigree, capturing a serene and radiant ambiance
-        """).strip()
+        """
+
+        prompt = re.sub(r'\s+', ' ', prompt).strip()
 
         payload = {
             "prompt": prompt,
