@@ -1,5 +1,4 @@
 {
-  "brief": "Geo-scale, next-generation sharing platform built on top of OpenZiti",
   "description": "Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti.",
   "homepage": "https://zrok.io",
   "provides": [
@@ -7,8 +6,6 @@
     "copyto",
     "pastefrom"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/zrok",
-  "license": "Apache-2.0 AND BSD-3-Clause AND MIT",
   "github": "https://github.com/openziti/zrok",
   "project": "zrok.io",
   "displayName": "zrok"

@@ -1,12 +1,11 @@
 {
-  "brief": "Google's own build tool",
+  "brief": "User-friendly launcher for Bazel",
   "description": "A user-friendly launcher for Bazel.",
-  "homepage": "https://bazel.build/",
   "provides": [
     "bazel",
     "bazelisk"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/bazel",
+  "brew_url": "https://formulae.brew.sh/formula/bazelisk",
   "license": "Apache-2.0",
   "github": "https://github.com/bazelbuild/bazelisk",
   "project": "github.com/bazelbuild/bazelisk"

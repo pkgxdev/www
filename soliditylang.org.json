@@ -1,12 +1,13 @@
 {
-  "brief": "Manage multiple Solidity compiler versions",
-  "description": "Manage and switch between Solidity compiler versions",
+  "brief": "Contract-oriented programming language",
+  "description": "Solidity, the Smart Contract Programming Language",
+  "homepage": "https://soliditylang.org",
   "provides": [
     "solc",
     "yul-phaser"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/solc-select",
-  "license": "AGPL-3.0-only",
-  "github": "https://github.com/crytic/solc-select",
+  "brew_url": "https://formulae.brew.sh/formula/solidity",
+  "license": "GPL-3.0-or-later AND MIT AND BSD-3-Clause AND Apache-2.0 AND CC0-1.0",
+  "github": "https://github.com/ethereum/solidity",
   "project": "soliditylang.org"
 }

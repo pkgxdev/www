@@ -1,7 +1,6 @@
 {
-  "brief": "JVM-based programming language",
   "description": "The Scala 3 compiler, also known as Dotty.",
-  "homepage": "https://www.scala-lang.org/",
+  "homepage": "https://dotty.epfl.ch",
   "provides": [
     "scalac",
     "scala",
@@ -9,8 +8,6 @@
     "sbtn",
     "amm"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/scala",
-  "license": "Apache-2.0",
   "github": "https://github.com/scala/scala3",
   "project": "scala-lang.org"
 }

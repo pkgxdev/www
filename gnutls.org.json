@@ -1,6 +1,4 @@
 {
-  "description": "GNU Transport Layer Security (TLS) Library",
-  "homepage": "https://gnutls.org/",
   "provides": [
     "certtool",
     "danetool",
@@ -11,7 +9,5 @@
     "p11tool",
     "psktool"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/gnutls",
-  "license": "LGPL-2.1-or-later AND GPL-3.0-only",
   "project": "gnutls.org"
 }

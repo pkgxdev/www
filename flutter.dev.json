@@ -1,13 +1,10 @@
 {
-  "brief": "Dart Language SDK, including the VM, dart2js, core libraries, and more",
   "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
-  "homepage": "https://dart.dev",
+  "homepage": "https://flutter.dev",
   "provides": [
     "flutter",
     "dart"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/dart-sdk",
-  "license": "BSD-3-Clause",
   "github": "https://github.com/flutter/flutter",
   "project": "flutter.dev"
 }

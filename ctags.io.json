@@ -1,12 +1,9 @@
 {
-  "brief": "Reimplementation of ctags(1)",
   "description": "A maintained ctags implementation",
-  "homepage": "https://ctags.sourceforge.net/",
+  "homepage": "https://ctags.io",
   "provides": [
     "ctags"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/ctags",
-  "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
   "github": "https://github.com/universal-ctags/ctags",
   "project": "ctags.io",
   "displayName": "ctags"

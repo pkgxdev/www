@@ -1,11 +1,7 @@
 {
-  "description": "GNU C Library",
-  "homepage": "https://www.gnu.org/software/libc/",
   "provides": [
     "iconv"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/glibc",
-  "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
   "project": "gnu.org/libiconv",
   "displayName": "iconv"
 }

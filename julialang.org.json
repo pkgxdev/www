@@ -1,12 +1,9 @@
 {
-  "brief": "The Julia Programming Language",
-  "description": "Fast, Dynamic Programming Language",
+  "description": "The Julia Programming Language",
   "homepage": "https://julialang.org/",
   "provides": [
     "julia"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/julia",
-  "license": "MIT AND BSD-3-Clause AND Apache-2.0 AND BSL-1.0",
   "github": "https://github.com/JuliaLang/julia",
   "project": "julialang.org",
   "displayName": "julia"

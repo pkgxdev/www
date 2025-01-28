@@ -1,13 +1,10 @@
 {
-  "brief": "Vim-fork focused on extensibility and usability",
-  "description": "Ambitious Vim-fork focused on extensibility and agility",
-  "homepage": "https://neovim.io/",
+  "description": "🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.",
+  "homepage": "https://www.lunarvim.org",
   "provides": [
     "lvim",
     "nvim"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/neovim",
-  "license": "Apache-2.0",
-  "github": "https://github.com/neovim/neovim",
+  "github": "https://github.com/LunarVim/LunarVim",
   "project": "lunarvim.org"
 }

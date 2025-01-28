@@ -1,13 +1,9 @@
 {
-  "brief": "Source control client",
-  "description": "A Scalable, User-Friendly Source Control System.",
-  "homepage": "https://sapling-scm.com",
+  "description": "SL(1): Cure your bad habit of mistyping",
   "provides": [
     "sl"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/sapling",
-  "license": "GPL-2.0-or-later",
-  "github": "https://github.com/facebook/sapling",
+  "github": "https://github.com/mtoyoda/sl",
   "project": "github.com/mtoyoda/sl",
   "displayName": "sl"
 }

@@ -1,12 +1,9 @@
 {
-  "brief": "Database toolkit",
   "description": "Manage your database schema as code",
-  "homepage": "https://atlasgo.io/",
+  "homepage": "https://atlasgo.io",
   "provides": [
     "atlas"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/atlas",
-  "license": "Apache-2.0",
   "github": "https://github.com/ariga/atlas",
   "project": "atlasgo.io",
   "displayName": "atlas"

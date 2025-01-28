@@ -1,13 +1,11 @@
 {
-  "brief": "Library for manipulating fonts",
-  "description": "A library to manipulate font files from Python.",
+  "description": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production",
+  "homepage": "http://coqui.ai",
   "provides": [
     "tts",
     "tts-server",
     "ttx"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/fonttools",
-  "license": "MIT",
-  "github": "https://github.com/fonttools/fonttools",
+  "github": "https://github.com/coqui-ai/TTS",
   "project": "github.com/coqui-ai/TTS"
 }

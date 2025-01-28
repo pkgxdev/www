@@ -4,8 +4,6 @@
     "gitsign",
     "gitsign-credential-cache"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/gitsign",
-  "license": "Apache-2.0",
   "github": "https://github.com/sigstore/gitsign",
   "project": "sigstore.dev/gitsign"
 }

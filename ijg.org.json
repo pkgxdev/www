@@ -1,6 +1,4 @@
 {
-  "description": "Image manipulation library",
-  "homepage": "https://www.ijg.org/",
   "provides": [
     "cjpeg",
     "djpeg",
@@ -8,7 +6,5 @@
     "rdjpgcom",
     "wrjpgcom"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/jpeg",
-  "license": "IJG",
   "project": "ijg.org"
 }

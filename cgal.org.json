@@ -1,14 +1,11 @@
 {
-  "brief": "Computational Geometry Algorithms Library",
   "description": "The public CGAL repository, see the README below",
-  "homepage": "https://www.cgal.org/",
+  "homepage": "https://github.com/CGAL/cgal#readme",
   "provides": [
     "cgal_create_CMakeLists",
     "cgal_create_cmake_script",
     "cgal_make_macosx_app"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/cgal",
-  "license": "GPL-3.0-or-later",
   "github": "https://github.com/CGAL/cgal",
   "project": "cgal.org"
 }

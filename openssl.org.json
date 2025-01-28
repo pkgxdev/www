@@ -1,13 +1,12 @@
 {
-  "brief": "Version of the SSL/TLS protocol forked from OpenSSL",
-  "description": "LibreSSL Portable itself. This includes the build scaffold and compatibility layer that builds portable LibreSSL from the OpenBSD source code. Pull requests or patches sent to tech@openbsd.org are welcome.",
-  "homepage": "https://www.libressl.org/",
+  "description": "TLS/SSL and crypto library with QUIC APIs",
+  "homepage": "https://quictls.github.io/openssl",
   "provides": [
     "openssl",
     "c_rehash"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/libressl",
-  "license": "OpenSSL",
-  "github": "https://github.com/libressl/portable",
+  "brew_url": "https://formulae.brew.sh/formula/quictls",
+  "license": "Apache-2.0",
+  "github": "https://github.com/quictls/openssl",
   "project": "openssl.org"
 }

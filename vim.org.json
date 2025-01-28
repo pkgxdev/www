@@ -1,13 +1,10 @@
 {
-  "brief": "GUI for vim, made for macOS",
-  "description": "Vim - the text editor - for macOS",
-  "homepage": "https://macvim.org",
+  "description": "The official Vim repository",
+  "homepage": "https://www.vim.org",
   "provides": [
     "vim",
     "vi"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/macvim",
-  "license": "Vim",
-  "github": "https://github.com/macvim-dev/macvim",
+  "github": "https://github.com/vim/vim",
   "project": "vim.org"
 }

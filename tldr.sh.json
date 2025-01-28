@@ -1,13 +1,9 @@
 {
-  "brief": "Very fast implementation of tldr in Rust",
-  "description": "A very fast implementation of tldr in Rust.",
-  "homepage": "https://tealdeer-rs.github.io/tealdeer/",
+  "description": "C command-line client for tldr pages 📚",
   "provides": [
     "tldr"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/tealdeer",
-  "license": "Apache-2.0 OR MIT",
-  "github": "https://github.com/dbrgn/tealdeer",
+  "github": "https://github.com/tldr-pages/tldr-c-client",
   "project": "tldr.sh",
   "displayName": "tldr"
 }

@@ -6,7 +6,7 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/cfn-lint",
   "license": "MIT-0",
-  "github": "https://github.com/aws-cloudformation/cfn-lint/",
+  "github": "https://github.com/aws-cloudformation/cfn-lint",
   "project": "github.com/aws-cloudformation/cfn-lint",
   "displayName": "cfn-lint"
 }

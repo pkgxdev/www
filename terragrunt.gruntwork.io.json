@@ -1,13 +1,10 @@
 {
-  "brief": "OpenTofu / Terraform / Terragrunt / Atmos version manager",
-  "description": "OpenTofu / Terraform / Terragrunt and Atmos version manager",
-  "homepage": "https://tofuutils.github.io/tenv/",
+  "description": "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.",
+  "homepage": "https://terragrunt.gruntwork.io/",
   "provides": [
     "terragrunt"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/tenv",
-  "license": "Apache-2.0",
-  "github": "https://github.com/tofuutils/tenv",
+  "github": "https://github.com/gruntwork-io/terragrunt",
   "project": "terragrunt.gruntwork.io",
   "displayName": "terragrunt"
 }

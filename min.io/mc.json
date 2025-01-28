@@ -1,13 +1,10 @@
 {
-  "brief": "Midnight Commander's repository",
-  "description": "Terminal-based visual file manager",
-  "homepage": "https://www.midnight-commander.org/",
+  "description": "Unix like utilities for object store",
+  "homepage": "https://min.io/download",
   "provides": [
     "mc"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/midnight-commander",
-  "license": "GPL-3.0-or-later",
-  "github": "https://github.com/MidnightCommander/mc",
+  "github": "https://github.com/minio/mc",
   "project": "min.io/mc",
   "displayName": "mc"
 }

@@ -1,11 +1,7 @@
 {
-  "description": "Utilities for browsing procfs",
-  "homepage": "https://gitlab.com/procps-ng/procps",
   "provides": [
     "watch"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/procps",
-  "license": "GPL-2.0-or-later",
   "project": "gitlab.com/procps-ng/watch",
   "displayName": "watch"
 }

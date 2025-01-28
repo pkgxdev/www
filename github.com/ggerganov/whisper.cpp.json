@@ -4,8 +4,6 @@
     "whisper.cpp",
     "whisper-cli"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/whisper-cpp",
-  "license": "MIT",
   "github": "https://github.com/ggerganov/whisper.cpp",
   "project": "github.com/ggerganov/whisper.cpp"
 }

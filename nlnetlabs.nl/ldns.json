@@ -1,12 +1,13 @@
 {
-  "brief": "HTTP load testing application written in Rust",
-  "description": "Drill is an HTTP load testing application written in Rust",
+  "brief": "DNS library written in C",
+  "description": "LDNS is a DNS library that facilitates DNS tool programming",
+  "homepage": "https://nlnetlabs.nl/projects/ldns/",
   "provides": [
     "drill",
     "ldns-config"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/drill",
-  "license": "GPL-3.0-or-later",
-  "github": "https://github.com/fcsonline/drill",
+  "brew_url": "https://formulae.brew.sh/formula/ldns",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/NLnetLabs/ldns",
   "project": "nlnetlabs.nl/ldns"
 }

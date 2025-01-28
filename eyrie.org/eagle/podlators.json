@@ -1,14 +1,8 @@
 {
-  "brief": "🐪 The Perl programming language",
-  "description": "Highly capable, feature-rich programming language",
-  "homepage": "https://www.perl.org/",
   "provides": [
     "pod2man",
     "pod2text"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/perl",
-  "license": "Artistic-1.0-Perl OR GPL-1.0-or-later",
-  "github": "https://github.com/perl/perl5",
   "project": "eyrie.org/eagle/podlators",
   "displayName": "pod2man"
 }

@@ -1,13 +1,10 @@
 {
-  "brief": "Safe, concurrent, practical language",
-  "description": "Empowering everyone to build reliable and efficient software.",
-  "homepage": "https://www.rust-lang.org/",
+  "description": "The Rust package manager",
+  "homepage": "https://doc.rust-lang.org/cargo",
   "provides": [
     "cargo"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/rust",
-  "license": "Apache-2.0 OR MIT",
-  "github": "https://github.com/rust-lang/rust",
+  "github": "https://github.com/rust-lang/cargo",
   "project": "rust-lang.org/cargo",
   "displayName": "cargo"
 }

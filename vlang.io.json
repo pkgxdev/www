@@ -1,12 +1,9 @@
 {
-  "brief": "Z for vim",
-  "description": "z for vim",
+  "description": "Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io",
   "provides": [
     "v"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/v",
-  "license": "WTFPL",
-  "github": "https://github.com/rupa/v",
+  "github": "https://github.com/vlang/v",
   "project": "vlang.io",
   "displayName": "v"
 }

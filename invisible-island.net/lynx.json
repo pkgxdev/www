@@ -1,0 +1,11 @@
+{
+  "description": "Text-based web browser",
+  "homepage": "https://invisible-island.net/lynx/",
+  "provides": [
+    "lynx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lynx",
+  "license": "GPL-2.0-only",
+  "project": "invisible-island.net/lynx",
+  "displayName": "lynx"
+}

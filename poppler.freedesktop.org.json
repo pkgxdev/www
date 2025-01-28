@@ -1,6 +1,4 @@
 {
-  "description": "PDF rendering library (based on the xpdf-3.0 code base)",
-  "homepage": "https://poppler.freedesktop.org/",
   "provides": [
     "pdfattach",
     "pdfdetach",
@@ -15,7 +13,5 @@
     "pdftotext",
     "pdfunite"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/poppler",
-  "license": "GPL-2.0-only",
   "project": "poppler.freedesktop.org"
 }

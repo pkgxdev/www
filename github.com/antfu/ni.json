@@ -1,7 +1,5 @@
 {
-  "brief": "A new type of shell",
-  "description": "Modern shell for the GitHub era",
-  "homepage": "https://www.nushell.sh",
+  "description": "💡 Use the right package manager",
   "provides": [
     "na",
     "nci",
@@ -11,8 +9,6 @@
     "nu",
     "nun"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/nushell",
-  "license": "MIT",
-  "github": "https://github.com/nushell/nushell",
+  "github": "https://github.com/antfu/ni",
   "project": "github.com/antfu/ni"
 }

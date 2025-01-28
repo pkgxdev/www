@@ -6,7 +6,7 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/scc",
   "license": "MIT OR Unlicense",
-  "github": "https://github.com/boyter/scc/",
+  "github": "https://github.com/boyter/scc",
   "project": "github.com/boyter/scc",
   "displayName": "scc"
 }

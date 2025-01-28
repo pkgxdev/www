@@ -1,12 +1,9 @@
 {
-  "brief": "Object oriented, portable programming language",
   "description": "Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit.",
-  "homepage": "https://fantom.org/",
+  "homepage": "https://fluxcd.io",
   "provides": [
     "flux"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/fantom",
-  "license": "AFL-3.0",
   "github": "https://github.com/fluxcd/flux2",
   "project": "fluxcd.io/flux2",
   "displayName": "flux"

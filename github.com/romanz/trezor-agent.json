@@ -1,6 +1,5 @@
 {
-  "brief": "Hardware-based SSH/GPG/age agent",
-  "description": "Keepkey Hardware-based SSH/GPG agent",
+  "description": "Hardware-based SSH/GPG/age agent",
   "provides": [
     "jade-agent",
     "jade-gpg",
@@ -20,8 +19,6 @@
     "trezor-signify",
     "trezorctl"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/keepkey-agent",
-  "license": "LGPL-3.0-only",
   "github": "https://github.com/romanz/trezor-agent",
   "project": "github.com/romanz/trezor-agent"
 }

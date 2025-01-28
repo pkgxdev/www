@@ -1,15 +1,9 @@
 {
-  "brief": "One true awk",
-  "description": "Text processing scripting language",
-  "homepage": "https://www.cs.princeton.edu/~bwk/btl.mirror/",
   "provides": [
     "awk",
     "gawk",
     "gawk-{{version}}",
     "gawkbug"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/awk",
-  "license": "SMLNJ",
-  "github": "https://github.com/onetrueawk/awk",
   "project": "gnu.org/gawk"
 }

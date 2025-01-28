@@ -6,7 +6,7 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/oniguruma",
   "license": "BSD-2-Clause",
-  "github": "https://github.com/kkos/oniguruma/",
+  "github": "https://github.com/kkos/oniguruma",
   "project": "github.com/kkos/oniguruma",
   "displayName": "onig-config"
 }

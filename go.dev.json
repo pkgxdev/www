@@ -1,13 +1,10 @@
 {
-  "brief": "The Go programming language",
-  "description": "Open source programming language to build simple/reliable/efficient software",
-  "homepage": "https://go.dev/",
+  "description": "The Go programming language",
+  "homepage": "https://go.dev",
   "provides": [
     "go",
     "gofmt"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/go",
-  "license": "BSD-3-Clause",
   "github": "https://github.com/golang/go",
   "project": "go.dev"
 }

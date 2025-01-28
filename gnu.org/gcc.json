@@ -1,6 +1,4 @@
 {
-  "description": "GNU binary tools for native development",
-  "homepage": "https://www.gnu.org/software/binutils/binutils.html",
   "provides": [
     "ar",
     "cc",
@@ -20,8 +18,6 @@
     "nm",
     "ranlib"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/binutils",
-  "license": "GPL-2.0-or-later AND GPL-3.0-or-later AND LGPL-2.0-or-later AND LGPL-3.0-only",
   "github": "https://github.com/gcc-mirror/gcc",
   "project": "gnu.org/gcc"
 }

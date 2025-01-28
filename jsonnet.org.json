@@ -1,12 +1,10 @@
 {
-  "description": "Go implementation of configuration language for defining JSON data",
-  "homepage": "https://jsonnet.org/",
+  "description": "Jsonnet - The data templating language",
+  "homepage": "http://jsonnet.org",
   "provides": [
     "jsonnet",
     "jsonnetfmt"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/go-jsonnet",
-  "license": "Apache-2.0",
-  "github": "https://github.com/google/go-jsonnet",
+  "github": "https://github.com/google/jsonnet",
   "project": "jsonnet.org"
 }

@@ -1,11 +1,8 @@
 {
-  "brief": "HTTP load testing application written in Rust",
   "description": "Drill is an HTTP load testing application written in Rust",
   "provides": [
     "drill"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/drill",
-  "license": "GPL-3.0-or-later",
   "github": "https://github.com/fcsonline/drill",
   "project": "crates.io/drill",
   "displayName": "drill"

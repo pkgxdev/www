@@ -1,7 +1,7 @@
 {
-  "brief": "Suite of language analyzers",
-  "description": "The most popular spellchecking library.",
-  "homepage": "https://nlp.lsi.upc.edu/freeling/",
+  "brief": "The most popular spellchecking library.",
+  "description": "Spell checker and morphological analyzer",
+  "homepage": "https://hunspell.github.io",
   "provides": [
     "analyze",
     "chmorph",
@@ -11,8 +11,8 @@
     "munch",
     "unmunch"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/freeling",
-  "license": "AGPL-3.0-only",
+  "brew_url": "https://formulae.brew.sh/formula/hunspell",
+  "license": "MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later",
   "github": "https://github.com/hunspell/hunspell",
   "project": "hunspell.github.io",
   "displayName": "analyze"

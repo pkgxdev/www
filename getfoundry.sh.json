@@ -1,15 +1,12 @@
 {
-  "brief": "Tools to help set up and configure a project",
   "description": "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.",
-  "homepage": "https://forge.jboss.org/",
+  "homepage": "https://getfoundry.sh",
   "provides": [
     "forge",
     "anvil",
     "cast",
     "chisel"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/jboss-forge",
-  "license": "EPL-1.0",
   "github": "https://github.com/foundry-rs/foundry",
   "project": "getfoundry.sh"
 }

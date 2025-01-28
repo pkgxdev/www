@@ -1,13 +1,9 @@
 {
-  "brief": "General purpose fuzzy finder TUI",
-  "description": "The revolution will (not) be televised 📺",
-  "homepage": "https://crates.io/crates/television",
+  "description": "Format json into table view",
   "provides": [
     "tv"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/television",
-  "license": "MIT",
-  "github": "https://github.com/alexpasmantier/television",
+  "github": "https://github.com/uzimaru0000/tv",
   "project": "crates.io/tv-cli",
   "displayName": "tv"
 }

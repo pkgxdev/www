@@ -1,7 +1,6 @@
 {
-  "brief": "Drop-in replacement for MySQL",
   "description": "MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.",
-  "homepage": "https://mariadb.org/",
+  "homepage": "http://www.mysql.com/",
   "provides": [
     "mysql_client_test",
     "my_print_defaults",
@@ -35,8 +34,6 @@
     "mysqltest_safe_process",
     "mysqlxtest"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/mariadb",
-  "license": "GPL-2.0-only",
   "github": "https://github.com/mysql/mysql-server",
   "project": "mysql.com"
 }

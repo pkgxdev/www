@@ -1,12 +1,9 @@
 {
-  "brief": "the opposite of roff",
-  "description": "Builds manuals - the opposite of roff",
-  "homepage": "https://rtomayko.github.io/ronn/",
+  "description": "the opposite of roff",
+  "homepage": "http://rtomayko.github.com/ronn/",
   "provides": [
     "ronn"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/ronn",
-  "license": "MIT",
   "github": "https://github.com/rtomayko/ronn",
   "project": "rtomayko.github.io/ronn",
   "displayName": "ronn"

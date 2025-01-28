@@ -1,11 +1,13 @@
 {
-  "description": "Integration tests for command-line applications in .txtar format",
+  "brief": "Integration tests for command-line applications in .txtar format",
+  "description": "Selected Go-internal packages factored out from the standard library",
+  "homepage": "https://github.com/rogpeppe/go-internal/tree/master/cmd/testscript",
   "provides": [
     "testscript"
   ],
   "brew_url": "https://formulae.brew.sh/formula/testscript",
   "license": "BSD-3-Clause",
-  "github": "https://github.com/rogpeppe/go-internal/tree/master/cmd/testscript",
+  "github": "https://github.com/rogpeppe/go-internal",
   "project": "go.dev/testscript",
   "displayName": "testscript"
 }

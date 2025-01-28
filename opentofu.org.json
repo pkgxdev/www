@@ -1,12 +1,9 @@
 {
-  "brief": "Drop-in replacement for Terraform. Infrastructure as Code Tool",
   "description": "OpenTofu lets you declaratively manage your cloud infrastructure.",
-  "homepage": "https://opentofu.org/",
+  "homepage": "https://opentofu.org",
   "provides": [
     "tofu"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/opentofu",
-  "license": "MPL-2.0",
   "github": "https://github.com/opentofu/opentofu",
   "project": "opentofu.org",
   "displayName": "tofu"

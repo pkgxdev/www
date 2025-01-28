@@ -1,13 +1,10 @@
 {
-  "brief": "CLI wrapper for basic network utilities on macOS - ip command",
   "description": "CLI wrapper for basic network utilites on Mac OS X inspired with iproute2 on Linux systems - ip command.",
   "provides": [
     "bridge",
     "ip",
     "iproute2mac.py"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/iproute2mac",
-  "license": "MIT",
   "github": "https://github.com/brona/iproute2mac",
   "project": "github.com/brona/iproute2mac"
 }

@@ -1,7 +1,5 @@
 {
-  "brief": "Improved JPEG encoder.",
-  "description": "Image manipulation library",
-  "homepage": "https://www.ijg.org/",
+  "description": "Improved JPEG encoder.",
   "provides": [
     "cjpeg",
     "djpeg",
@@ -10,8 +8,6 @@
     "tjbench",
     "wrjpgcom"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/jpeg",
-  "license": "IJG",
   "github": "https://github.com/mozilla/mozjpeg",
   "project": "mozilla.org/mozjpeg"
 }

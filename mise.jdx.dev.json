@@ -1,13 +1,10 @@
 {
-  "brief": "dev tools, env vars, task runner",
-  "description": "Polyglot runtime manager (asdf rust clone)",
-  "homepage": "https://mise.jdx.dev/",
+  "description": "dev tools, env vars, task runner",
+  "homepage": "https://mise.jdx.dev",
   "provides": [
     "rtx",
     "mise"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/mise",
-  "license": "MIT",
   "github": "https://github.com/jdx/mise",
   "project": "mise.jdx.dev",
   "displayName": "rtx"

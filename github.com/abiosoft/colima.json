@@ -1,11 +1,12 @@
 {
-  "description": "Container runtimes on MacOS (and Linux) with minimal setup",
+  "brief": "Container runtimes on MacOS (and Linux) with minimal setup",
+  "description": "Container runtimes on macOS (and Linux) with minimal setup",
   "provides": [
     "colima"
   ],
   "brew_url": "https://formulae.brew.sh/formula/colima",
   "license": "MIT",
-  "github": "https://github.com/abiosoft/colima/blob/main/README.md",
+  "github": "https://github.com/abiosoft/colima",
   "project": "github.com/abiosoft/colima",
   "displayName": "colima"
 }

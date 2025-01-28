@@ -1,12 +1,9 @@
 {
-  "brief": "Terminal EPUB Reader",
-  "description": "Terminal Epub reader",
+  "description": "build infra & `$ pkg build`",
   "provides": [
     "bk"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/bk",
-  "license": "MIT",
-  "github": "https://github.com/aeosynth/bk",
+  "github": "https://github.com/pkgxdev/brewkit",
   "project": "pkgx.sh/brewkit",
   "displayName": "bk"
 }

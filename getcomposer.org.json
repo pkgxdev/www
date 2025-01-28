@@ -5,8 +5,6 @@
     "composer",
     "composer.phar"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/composer",
-  "license": "MIT",
   "github": "https://github.com/composer/composer",
   "project": "getcomposer.org"
 }

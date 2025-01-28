@@ -1,11 +1,13 @@
 {
-  "description": "OCR (Optical Character Recognition) engine",
+  "brief": "OCR (Optical Character Recognition) engine",
+  "description": "Tesseract Open Source OCR Engine (main repository)",
+  "homepage": "https://github.com/tesseract-ocr/",
   "provides": [
     "tesseract"
   ],
   "brew_url": "https://formulae.brew.sh/formula/tesseract",
   "license": "Apache-2.0",
-  "github": "https://github.com/tesseract-ocr/",
+  "github": "https://github.com/tesseract-ocr/tesseract",
   "project": "tesseract-ocr.github.io",
   "displayName": "tesseract"
 }

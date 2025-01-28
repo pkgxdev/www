@@ -1,12 +1,9 @@
 {
-  "brief": "Command-line markdown todo list manager",
-  "description": "Command line markdown todo list manager ",
+  "description": "Markdown renderer in the terminal",
   "provides": [
     "mdt",
     "md-tui"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/mdt",
-  "license": "GPL-3.0-or-later",
-  "github": "https://github.com/basilioss/mdt",
+  "github": "https://github.com/henriklovhaug/md-tui",
   "project": "crates.io/md-tui"
 }

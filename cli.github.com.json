@@ -1,11 +1,13 @@
 {
-  "description": "GitHub command-line tool",
+  "brief": "GitHub command-line tool",
+  "description": "GitHub’s official command line tool",
+  "homepage": "https://cli.github.com/",
   "provides": [
     "gh"
   ],
   "brew_url": "https://formulae.brew.sh/formula/gh",
   "license": "MIT",
-  "github": "https://cli.github.com/",
+  "github": "https://github.com/cli/cli",
   "project": "cli.github.com",
   "displayName": "gh"
 }

@@ -1,7 +1,6 @@
 {
-  "brief": "Glorious Glasgow Haskell Compilation System",
   "description": "Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).",
-  "homepage": "https://haskell.org/ghc/",
+  "homepage": "http://www.haskell.org/ghc/",
   "provides": [
     "ghc",
     "ghc-{{version.marketing}}",
@@ -32,8 +31,6 @@
     "runhaskell-{{version.marketing}}",
     "runhaskell-{{version}}"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/ghc",
-  "license": "BSD-3-Clause AND MIT AND (LGPL-3.0-or-later OR GPL-2.0-or-later)",
   "github": "https://github.com/ghc/ghc",
   "project": "haskell.org"
 }

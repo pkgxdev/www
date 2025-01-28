@@ -1,13 +1,10 @@
 {
-  "brief": "Command-line YAML and XML processor that wraps jq",
-  "description": "Command-line YAML, XML, TOML processor - jq wrapper for YAML/XML/TOML documents",
-  "homepage": "https://kislyuk.github.io/yq/",
+  "description": "yq is a portable command-line YAML, JSON, XML, CSV, TOML  and properties processor",
+  "homepage": "https://mikefarah.gitbook.io/yq/",
   "provides": [
     "yq"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/python-yq",
-  "license": "Apache-2.0",
-  "github": "https://github.com/kislyuk/yq",
+  "github": "https://github.com/mikefarah/yq",
   "project": "github.com/mikefarah/yq",
   "displayName": "yq"
 }

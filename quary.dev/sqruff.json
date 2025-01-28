@@ -1,11 +1,10 @@
 {
-  "description": "Command-line benchmark tool",
+  "description": "Fast SQL formatter/linter",
+  "homepage": "https://playground.quary.dev/?secondary=Format",
   "provides": [
     "bench",
     "sqruff"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/bench",
-  "license": "BSD-3-Clause",
-  "github": "https://github.com/Gabriella439/bench",
+  "github": "https://github.com/quarylabs/sqruff",
   "project": "quary.dev/sqruff"
 }

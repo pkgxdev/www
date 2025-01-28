@@ -6,7 +6,7 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/silicon",
   "license": "MIT",
-  "github": "https://github.com/Aloxaf/silicon/",
+  "github": "https://github.com/Aloxaf/silicon",
   "project": "crates.io/silicon",
   "displayName": "silicon"
 }

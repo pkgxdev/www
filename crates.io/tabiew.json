@@ -1,11 +1,8 @@
 {
-  "brief": "TUI to view and query tabular files (CSV,TSV, Parquet, etc.)",
   "description": "A lightweight TUI application to view and query tabular data files, such as CSV, TSV, and parquet.",
   "provides": [
     "tw"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/tabiew",
-  "license": "MIT",
   "github": "https://github.com/shshemi/tabiew",
   "project": "crates.io/tabiew",
   "displayName": "tw"

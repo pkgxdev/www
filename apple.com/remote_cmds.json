@@ -1,11 +1,8 @@
 {
-  "description": "GNU utilities for networking",
-  "homepage": "https://www.gnu.org/software/inetutils/",
+  "homepage": "https://opensource.apple.com/releases",
   "provides": [
     "telnet"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/inetutils",
-  "license": "GPL-3.0-or-later",
   "github": "https://github.com/apple-oss-distributions/remote_cmds",
   "project": "apple.com/remote_cmds",
   "displayName": "telnet"

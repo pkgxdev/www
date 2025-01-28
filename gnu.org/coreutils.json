@@ -1,7 +1,4 @@
 {
-  "brief": "BLAKE2 b2sum reference binary",
-  "description": "BLAKE2 official implementations",
-  "homepage": "https://blake2.net",
   "provides": [
     "[",
     "b2sum",
@@ -109,8 +106,5 @@
     "whoami",
     "yes"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/b2sum",
-  "license": "CC0-1.0 OR OpenSSL OR Apache-2.0",
-  "github": "https://github.com/BLAKE2/BLAKE2",
   "project": "gnu.org/coreutils"
 }

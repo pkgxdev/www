@@ -1,7 +1,6 @@
 {
-  "brief": "JupyterLab computational environment.",
-  "description": "Interactive environments for writing and running code",
-  "homepage": "https://jupyter.org/",
+  "description": "JupyterLab computational environment.",
+  "homepage": "https://jupyterlab.readthedocs.io/",
   "provides": [
     "jlpm",
     "jupyter",
@@ -28,8 +27,6 @@
     "jupyter-troubleshoot",
     "jupyter-trust"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/jupyterlab",
-  "license": "BSD-3-Clause AND MIT",
   "github": "https://github.com/jupyterlab/jupyterlab",
   "project": "jupyter.org"
 }

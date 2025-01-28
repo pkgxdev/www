@@ -1,13 +1,10 @@
 {
-  "brief": "Scanner CLI for SonarQube (Server, Cloud)",
-  "description": "Launcher to analyze a project with SonarQube",
-  "homepage": "https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/",
+  "description": "Scanner CLI for SonarQube (Server, Cloud)",
+  "homepage": "http://redirect.sonarsource.com/doc/install-configure-scanner.html",
   "provides": [
     "sonar-scanner",
     "sonar-scanner-debug"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/sonar-scanner",
-  "license": "LGPL-3.0-or-later",
   "github": "https://github.com/SonarSource/sonar-scanner-cli",
   "project": "sonarqube.org/sonarscanner"
 }

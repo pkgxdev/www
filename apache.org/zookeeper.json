@@ -1,6 +1,4 @@
 {
-  "description": "Centralized server for distributed coordination of services",
-  "homepage": "https://zookeeper.apache.org/",
   "provides": [
     "zkCleanup",
     "zkCli",
@@ -12,7 +10,5 @@
     "zkSnapShotToolkit",
     "zkTxnLogToolkit"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/zookeeper",
-  "license": "Apache-2.0",
   "project": "apache.org/zookeeper"
 }

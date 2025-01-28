@@ -5,8 +5,6 @@
     "hatch",
     "hatchling"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/hatch",
-  "license": "MIT",
   "github": "https://github.com/pypa/hatch",
   "project": "pypa.io/hatch"
 }

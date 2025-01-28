@@ -1,12 +1,9 @@
 {
-  "brief": "Project documentation with Markdown",
   "description": "Project documentation with Markdown.",
-  "homepage": "https://www.mkdocs.org/",
+  "homepage": "https://www.mkdocs.org",
   "provides": [
     "mkdocs"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/mkdocs",
-  "license": "BSD-2-Clause",
   "github": "https://github.com/mkdocs/mkdocs",
   "project": "mkdocs.org",
   "displayName": "mkdocs"

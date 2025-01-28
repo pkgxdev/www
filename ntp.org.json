@@ -1,6 +1,4 @@
 {
-  "description": "Network Time Protocol (NTP) Distribution",
-  "homepage": "https://www.ntp.org",
   "provides": [
     "ntpq",
     "sntp",
@@ -13,7 +11,5 @@
     "ntptrace",
     "update-leap"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/ntp",
-  "license": "BSD-2-Clause AND NTP",
   "project": "ntp.org"
 }

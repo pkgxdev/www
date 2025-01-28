@@ -6,7 +6,7 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/duti",
   "license": "LicenseRef-Homebrew-public-domain",
-  "github": "https://github.com/moretension/duti/",
+  "github": "https://github.com/moretension/duti",
   "project": "github.com/moretension/duti",
   "displayName": "duti"
 }

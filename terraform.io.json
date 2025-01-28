@@ -1,13 +1,10 @@
 {
-  "brief": "OpenTofu / Terraform / Terragrunt / Atmos version manager",
-  "description": "OpenTofu / Terraform / Terragrunt and Atmos version manager",
-  "homepage": "https://tofuutils.github.io/tenv/",
+  "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
+  "homepage": "https://www.terraform.io",
   "provides": [
     "terraform"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/tenv",
-  "license": "Apache-2.0",
-  "github": "https://github.com/tofuutils/tenv",
+  "github": "https://github.com/hashicorp/terraform",
   "project": "terraform.io",
   "displayName": "terraform"
 }

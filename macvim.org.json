@@ -1,5 +1,4 @@
 {
-  "brief": "GUI for vim, made for macOS",
   "description": "Vim - the text editor - for macOS",
   "homepage": "https://macvim.org",
   "provides": [
@@ -16,8 +15,6 @@
     "vimdiff",
     "vimtutor"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/macvim",
-  "license": "Vim",
   "github": "https://github.com/macvim-dev/macvim",
   "project": "macvim.org"
 }

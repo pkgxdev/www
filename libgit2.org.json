@@ -1,11 +1,13 @@
 {
-  "description": "C library of Git core methods that is re-entrant and linkable",
+  "brief": "C library of Git core methods that is re-entrant and linkable",
+  "description": "A cross-platform, linkable library implementation of Git that you can use in your application.",
+  "homepage": "https://libgit2.github.com/",
   "provides": [
     "git2"
   ],
   "brew_url": "https://formulae.brew.sh/formula/libgit2",
   "license": "GPL-2.0-only WITH GCC-exception-2.0",
-  "github": "https://libgit2.github.com/",
+  "github": "https://github.com/libgit2/libgit2",
   "project": "libgit2.org",
   "displayName": "git2"
 }

@@ -1,11 +1,7 @@
 {
-  "description": "Arbitrary precision numeric processing language",
-  "homepage": "https://www.gnu.org/software/bc/",
   "provides": [
     "bc",
     "dc"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/bc",
-  "license": "GPL-3.0-or-later",
   "project": "gnu.org/bc"
 }

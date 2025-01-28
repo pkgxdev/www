@@ -1,13 +1,10 @@
 {
-  "brief": "Command-line interface for Cyberduck (a multi-protocol file transfer tool)",
-  "description": "Cyberduck is a libre FTP, SFTP, WebDAV, Amazon S3, Backblaze B2, Microsoft Azure & OneDrive and OpenStack Swift file transfer client for Mac and Windows.",
-  "homepage": "https://duck.sh/",
+  "description": "Simple, extendable and embeddable scripting language.",
+  "homepage": "https://sagiegurari.github.io/duckscript",
   "provides": [
     "duck"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/duck",
-  "license": "GPL-3.0-only",
-  "github": "https://github.com/iterate-ch/cyberduck",
+  "github": "https://github.com/sagiegurari/duckscript",
   "project": "sagiegurari.github.io/duckscript",
   "displayName": "duck"
 }

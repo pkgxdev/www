@@ -1,12 +1,9 @@
 {
-  "brief": "Documentation that simply works",
-  "description": "Project documentation with Markdown",
-  "homepage": "https://www.mkdocs.org/",
+  "description": "Documentation that simply works",
+  "homepage": "https://squidfunk.github.io/mkdocs-material/",
   "provides": [
     "mkdocs"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/mkdocs",
-  "license": "BSD-2-Clause",
   "github": "https://github.com/squidfunk/mkdocs-material",
   "project": "github.com/squidfunk/mkdocs-material",
   "displayName": "mkdocs"

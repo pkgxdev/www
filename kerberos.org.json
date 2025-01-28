@@ -1,7 +1,5 @@
 {
-  "brief": "mirror of MIT krb5 repository",
-  "description": "Utilities for the ext2, ext3, and ext4 file systems",
-  "homepage": "https://e2fsprogs.sourceforge.net/",
+  "description": "mirror of MIT krb5 repository",
   "provides": [
     "compile_et",
     "gss-client",
@@ -31,8 +29,6 @@
     "sserver",
     "uuserver"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/e2fsprogs",
-  "license": "GPL-2.0-or-later AND LGPL-2.0-or-later AND LGPL-2.0-only AND BSD-3-Clause AND MIT",
   "github": "https://github.com/krb5/krb5",
   "project": "kerberos.org"
 }
