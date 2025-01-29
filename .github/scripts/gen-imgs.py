@@ -1,4 +1,4 @@
-#!/usr/bin/env -S pkgx +python@3.11 +cwebp uv run --script
+#!/usr/bin/env -S pkgx +python@3.11 +cwebp uv run
 
 # /// script
 # dependencies = [

@@ -91,10 +91,10 @@ export default function HomeFeed() {
             <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_unpkg} />
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
               <Typography variant='overline' component="h2">
-                unpkg
+                pkgo
               </Typography>
               <Typography variant='caption' component="h3">
-                Packaging the unpackagable in sandboxes
+                Package…GO! Run typically unpackagable OSS in sandboxes
               </Typography>
             </CardContent>
           </CardActionArea>
