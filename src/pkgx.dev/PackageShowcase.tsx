@@ -89,7 +89,7 @@ function PkgCard({project, description, brief, name, labels, isLoader}: Package)
     <Chip sx={{m: isxs ? 0.5 : 1, color: 'background.default', fontVariant: 'small-caps'}}
       label={label} color='secondary' variant="filled" size='small' key={label} />
   )
-  const mediaHeight = isxs ? 150 : 300;
+  const mediaHeight = isxs ? 150 : undefined;
   return (
     <Card>
       <CardActionArea href={`/pkgs/${project}/`}>
@@ -98,6 +98,7 @@ function PkgCard({project, description, brief, name, labels, isLoader}: Package)
         ) : (
           <CardMedia
             height={mediaHeight}
+            sx={{aspectRatio: isxs ? undefined : '1/1'}}
             component={Box}
             image={`/pkgs/${project}.webp`}
             textAlign="right"

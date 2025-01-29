@@ -76,7 +76,7 @@ def gen_img(root, json_file):
             "steps": 20,
             "width": 768,
             "height": 768,
-            "negative_prompt": "text, pearls, artist signature, negativeXL_D",
+            "negative_prompt": "text, pearls, artist signature, negativeXL_D, border",
             "sd_model_checkpoint": "wildcardxXLTURBO_wildcardxXLTURBOV10.safetensors [276d222ef0]",
             "seed": seed
         }

@@ -207,7 +207,8 @@ function FeedItemBox(item: FeedItem) {
     >
       <CardActionArea href={url}>
         <CardMedia
-          height={isxs ? 150 : 300}
+          height={isxs ? 150 : undefined}
+          sx={{aspectRatio: isxs ? undefined : '1/1'}}
           component={Box}
           image={image}
           textAlign='right'
