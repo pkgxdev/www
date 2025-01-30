@@ -16,6 +16,7 @@ import textwrap
 import base64
 import random
 import json
+import time
 import os
 import re
 
@@ -36,12 +37,12 @@ def gen_img(root, json_file):
             description = f"{metadata['displayName']}: {description}"
 
         color_suggestions = [
-        "black, white, orange, beige, and pink",
-        "Charcoal Gray, Off-White, Olive Green, Burnt Sienna, and Blush Pink",
-        "Midnight Blue, Pearl White, Crimson Red, Champagne, and Pale Peach",
-        "Forest Green, Ivory, Coral Orange, Sand Beige, and Dusty Rose",
-        "Espresso Brown, Creamy White, Golden Yellow, Taupe, and Mauve",
-        "Jet Black, Soft Gray, Teal, Warm Amber, and Powder Pink",
+            "black, white, orange, beige, and pink",
+            "Charcoal Gray, Off-White, Olive Green, Burnt Sienna, and Blush Pink",
+            "Pearl White, Crimson Red, Champagne, and Pale Peach",
+            "Forest Green, Ivory, Coral Orange, Sand Beige, and Dusty Rose",
+            "Espresso Brown, Creamy White, Golden Yellow, Taupe, and Mauve",
+            "Jet Black, Soft Gray, Teal, Warm Amber, and Powder Pink",
         ]
 
         # pick random entry from colors
@@ -53,7 +54,17 @@ def gen_img(root, json_file):
             ["forests", "lakes", "wildlife", "sunlight"],
             ["clouds", "storms", "rainbows", "snow"],
             ["deserts", "cacti", "sand dunes", "sunsets"],
-            ["stars", "moon", "galaxies", "nebulae"]
+            ["stars", "moons", "galaxies", "nebulae"],
+            ["oceans", "waves", "tides", "coral reefs"],
+            ["volcanoes", "lava", "ash", "craters"],
+            ["glaciers", "icebergs", "frost", "polar lights"],
+            ["caves", "stalactites", "stalagmites", "echoes"],
+            ["prairies", "grasslands", "buffalo", "sunrises"],
+            ["jungles", "vines", "canopies", "tropical birds"],
+            ["cliffs", "canyons", "gorges", "waterfalls"],
+            ["auroras", "meteors", "comets", "cosmic dust"],
+            ["reefs", "atolls", "tropica" "fish", "sea turtles"],
+            ["twilight", "dawn", "dusk", "moonlight"],
         ]
 
         imagery = ", ".join(random.choice(imagery_suggestions))
@@ -61,8 +72,8 @@ def gen_img(root, json_file):
         seed = random.randint(0, 2**32 - 1)
 
         prompt = f"""
-        Create an abstract oil painting that represents:
-        {description.strip()}
+        Create an abstract oil painting that features or represents:
+        {description.strip()}.
         Use an expressive explosion of {colors}—with and hyper-detailed textures.
         Highlight the artwork with gleaming golden accents that radiate light amidst a brilliance of harmony.
         Incorporate ethereal elements like {imagery} to symbolize the peaceful blending of these forces.
@@ -84,8 +95,13 @@ def gen_img(root, json_file):
         console.print(f"{prompt}", style="bold yellow")
         console.print(f"Seed: {seed}", style="bold red")
 
+        start = time.perf_counter()
+
         response = requests.post(url, json=payload)
         r = response.json()
+
+        end = time.perf_counter()
+        print(f"Execution time: {end - start:.6f} seconds")
 
         image = base64.b64decode(r['images'][0])
         with open(out_file, "wb") as f:
@@ -98,9 +114,6 @@ def gen_img(root, json_file):
         os.system(f"cwebp {out_file} -o {os.path.splitext(out_file)[0]}.webp")
 
         console.print(f"Done {out_file}", style="bold green")
-
-        # out_file = os.path.join(os.getcwd(), out_file)
-        # os.system(f"osascript -e 'tell application \"Finder\" to reveal POSIX file \"{out_file}\"'")
 
 
 url = "http://127.0.0.1:7860/sdapi/v1/txt2img"
