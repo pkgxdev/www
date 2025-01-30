@@ -1,0 +1,10 @@
+{
+  "description": "Autonomous agents for everyone",
+  "homepage": "https://elizaOS.github.io/eliza/",
+  "provides": [
+    "eliza"
+  ],
+  "github": "https://github.com/elizaOS/eliza",
+  "project": "elizaOS.github.io",
+  "displayName": "elizaOS"
+}
