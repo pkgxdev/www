@@ -6,7 +6,7 @@ import { isArray, isPlainObject, isString } from 'is-what';
 import Terminal from '../components/Terminal';
 import get_pkg_name from '../utils/pkg-name';
 import { useAsync } from 'react-use';
-import * as yaml from 'yaml';
+import yaml from 'yaml';
 
 function dirname(path: string | undefined) {
   path ??= ''
@@ -89,9 +89,9 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
   const description = useAsync(async () => {
     const rsp = await fetch(`/pkgs/${project}.json`)
     if (rsp.ok) {
-      return await rsp.json() as { description: string, homepage: string, github: string }
+      return await rsp.json() as { description: string, homepage: string, github: string, displayName: string, provides: string[] }
     } else {
-      return { description: null, homepage: null, github: null }
+      return { description: null, homepage: null, github: null, displayName: null, provides: null }
     }
   }, [project])
 
@@ -142,17 +142,21 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
   </Stack>
 
   function title() {
-    if (loading) {
+    if (description.loading) {
       return get_pkg_name(project)
-    } else if (value['display-name']) {
-      return <>{value['display-name']} <Typography component='span' variant='h5' color='textSecondary'>({get_pkg_name(project)})</Typography></>
+    } else if (description.value?.displayName) {
+      return <>{description.value?.displayName} <Typography component='span' variant='h5' color='textSecondary'>({get_pkg_name(project)})</Typography></>
     } else {
       return get_pkg_name(project)
     }
   }
 
   function codeblock() {
-    return `sh <(curl https://pkgx.sh) +${project} -- $SHELL -i`
+    if (description.value?.provides?.length != 1) {
+      return `sh <(curl https://pkgx.sh) +${project} -- $SHELL -i`
+    } else {
+      return `sh <(curl https://pkgx.sh) ${description.value!.provides[0]}`
+    }
   }
 
   function description_body() {
@@ -168,10 +172,10 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
   }
 
   function metadata() {
-    if (loading) {
+    if (description.loading) {
       return <Skeleton animation="wave" />
-    } else if (error) {
-      return <Alert severity="error">{error.message}</Alert>
+    } else if (description.error) {
+      return <Alert severity="error">{description.error.message}</Alert>
     } else {
       return <Stack spacing={2}>
         <Box>
@@ -189,7 +193,7 @@ function Package({ project, dirs }: { project: string, dirs: string[] }) {
       </Stack>
 
       function programs() {
-        const provides: string[] = get_provides(value)
+        const provides: string[] = description.value?.provides ?? []
         if (!isArray(provides)) {
           return <Alert severity="error">Unexpected error</Alert>
         } else if (provides.length) {
