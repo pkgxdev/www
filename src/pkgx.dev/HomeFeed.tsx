@@ -42,21 +42,6 @@ export default function HomeFeed() {
       </Grid>
       <Grid size={{xs: 6, md: 4}}>
         <Card raised={true}>
-          <CardActionArea href='https://github.com/pkgxdev/mash'>
-            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_mash} />
-            <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='overline' component="h2">
-                mash
-              </Typography>
-              <Typography variant='caption' component="h3">
-                The package manager for scripts
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-      <Grid size={{xs: 6, md: 4}}>
-        <Card raised={true}>
           <CardActionArea href='https://github.com/pkgxdev/dev'>
             <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_dev} />
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
@@ -87,7 +72,22 @@ export default function HomeFeed() {
       </Grid>
       <Grid size={{xs: 6, md: 4}}>
         <Card raised={true}>
-          <CardActionArea href='https://github.com/pkgxdev/unpkg'>
+          <CardActionArea href='https://github.com/pkgxdev/mash'>
+            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_mash} />
+            <CardContent sx={isxs ? {p: 0.75} : undefined}>
+              <Typography variant='overline' component="h2">
+                mash
+              </Typography>
+              <Typography variant='caption' component="h3">
+                The package manager for scripts
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+      <Grid size={{xs: 6, md: 4}}>
+        <Card raised={true}>
+          <CardActionArea href='https://github.com/pkgxdev/pkgo'>
             <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_unpkg} />
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
               <Typography variant='overline' component="h2">
