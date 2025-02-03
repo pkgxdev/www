@@ -1,0 +1,12 @@
+{
+  "brief": "Parallel S3 and local filesystem execution tool",
+  "description": "Parallel S3 and local filesystem execution tool.",
+  "provides": [
+    "s5cmd"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/s5cmd",
+  "license": "MIT",
+  "github": "https://github.com/peak/s5cmd",
+  "project": "github.com/peak/s5cmd",
+  "displayName": "s5cmd"
+}
