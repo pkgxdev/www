@@ -8,5 +8,6 @@
   "brew_url": "https://formulae.brew.sh/formula/pnpm",
   "license": "MIT",
   "github": "https://github.com/pnpm/pnpm",
-  "project": "pnpm.io"
+  "project": "pnpm.io",
+  "displayName": "pnp"
 }

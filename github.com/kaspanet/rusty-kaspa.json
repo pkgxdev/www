@@ -5,5 +5,6 @@
     "kaspa-cli"
   ],
   "github": "https://github.com/kaspanet/rusty-kaspa",
-  "project": "github.com/kaspanet/rusty-kaspa"
+  "project": "github.com/kaspanet/rusty-kaspa",
+  "displayName": "kaspa"
 }

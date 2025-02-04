@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/openjpeg",
   "license": "BSD-2-Clause",
   "github": "https://github.com/uclouvain/openjpeg",
-  "project": "openjpeg.org"
+  "project": "openjpeg.org",
+  "displayName": "opj"
 }

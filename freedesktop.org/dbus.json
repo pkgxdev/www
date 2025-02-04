@@ -14,5 +14,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/dbus",
   "license": "AFL-2.1 OR GPL-2.0-or-later",
-  "project": "freedesktop.org/dbus"
+  "project": "freedesktop.org/dbus",
+  "displayName": "dbus"
 }

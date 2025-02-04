@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/groonga",
   "license": "LGPL-2.1-or-later",
   "github": "https://github.com/groonga/groonga",
-  "project": "groonga.org"
+  "project": "groonga.org",
+  "displayName": "groonga"
 }

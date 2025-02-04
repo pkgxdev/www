@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/libheif",
   "license": "LGPL-3.0-only",
   "github": "https://github.com/strukturag/libheif",
-  "project": "github.com/strukturag/libheif"
+  "project": "github.com/strukturag/libheif",
+  "displayName": "heif"
 }

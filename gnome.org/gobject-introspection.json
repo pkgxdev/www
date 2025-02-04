@@ -10,5 +10,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/gobject-introspection",
   "license": "GPL-2.0-or-later AND LGPL-2.0-or-later AND MIT",
-  "project": "gnome.org/gobject-introspection"
+  "project": "gnome.org/gobject-introspection",
+  "displayName": "g-ir"
 }

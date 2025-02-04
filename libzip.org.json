@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/libzip",
   "license": "BSD-3-Clause",
   "github": "https://github.com/nih-at/libzip",
-  "project": "libzip.org"
+  "project": "libzip.org",
+  "displayName": "zip"
 }

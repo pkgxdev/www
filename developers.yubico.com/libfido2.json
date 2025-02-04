@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/libfido2",
   "license": "BSD-2-Clause",
   "github": "https://github.com/Yubico/libfido2",
-  "project": "developers.yubico.com/libfido2"
+  "project": "developers.yubico.com/libfido2",
+  "displayName": "fido2"
 }

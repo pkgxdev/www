@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/maven",
   "license": "Apache-2.0",
   "github": "https://github.com/apache/maven",
-  "project": "maven.apache.org"
+  "project": "maven.apache.org",
+  "displayName": "mvn"
 }

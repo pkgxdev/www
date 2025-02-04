@@ -7,5 +7,6 @@
     "cgal_make_macosx_app"
   ],
   "github": "https://github.com/CGAL/cgal",
-  "project": "cgal.org"
+  "project": "cgal.org",
+  "displayName": "cgal"
 }

@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/cargo-c",
   "license": "MIT",
   "github": "https://github.com/lu-zero/cargo-c",
-  "project": "github.com/lu-zero/cargo-c"
+  "project": "github.com/lu-zero/cargo-c",
+  "displayName": "cargo-c"
 }

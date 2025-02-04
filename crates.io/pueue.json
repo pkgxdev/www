@@ -8,5 +8,6 @@
   "brew_url": "https://formulae.brew.sh/formula/pueue",
   "license": "MIT",
   "github": "https://github.com/Nukesor/pueue",
-  "project": "crates.io/pueue"
+  "project": "crates.io/pueue",
+  "displayName": "pueue"
 }

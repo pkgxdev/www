@@ -9,5 +9,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/fftw",
   "license": "GPL-2.0-or-later AND BSD-2-Clause",
-  "project": "fftw.org"
+  "project": "fftw.org",
+  "displayName": "fftw"
 }

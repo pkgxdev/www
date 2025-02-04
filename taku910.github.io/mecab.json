@@ -3,5 +3,6 @@
     "mecab",
     "mecab-config"
   ],
-  "project": "taku910.github.io/mecab"
+  "project": "taku910.github.io/mecab",
+  "displayName": "mecab"
 }

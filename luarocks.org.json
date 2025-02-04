@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/luarocks",
   "license": "MIT",
   "github": "https://github.com/luarocks/luarocks",
-  "project": "luarocks.org"
+  "project": "luarocks.org",
+  "displayName": "luarocks"
 }

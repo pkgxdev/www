@@ -6,5 +6,6 @@
     "dartaotruntime"
   ],
   "github": "https://github.com/dart-lang/sdk",
-  "project": "dart.dev"
+  "project": "dart.dev",
+  "displayName": "dart"
 }

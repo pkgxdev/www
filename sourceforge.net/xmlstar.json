@@ -7,5 +7,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/xmlstarlet",
   "license": "MIT",
-  "project": "sourceforge.net/xmlstar"
+  "project": "sourceforge.net/xmlstar",
+  "displayName": "XMLStarlet"
 }

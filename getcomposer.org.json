@@ -6,5 +6,6 @@
     "composer.phar"
   ],
   "github": "https://github.com/composer/composer",
-  "project": "getcomposer.org"
+  "project": "getcomposer.org",
+  "displayName": "composer"
 }

@@ -7,5 +7,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/orc",
   "license": "BSD-2-Clause AND BSD-3-Clause",
-  "project": "gstreamer.freedesktop.org/orc"
+  "project": "gstreamer.freedesktop.org/orc",
+  "displayName": "orc"
 }

@@ -12,5 +12,6 @@
   "brew_url": "https://formulae.brew.sh/formula/vips",
   "license": "LGPL-2.1-or-later",
   "github": "https://github.com/libvips/libvips",
-  "project": "libvips.org"
+  "project": "libvips.org",
+  "displayName": "vips"
 }

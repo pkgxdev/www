@@ -7,5 +7,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/aom",
   "license": "BSD-2-Clause",
-  "project": "aomedia.googlesource.com/aom"
+  "project": "aomedia.googlesource.com/aom",
+  "displayName": "aom"
 }

@@ -15,5 +15,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/openldap",
   "license": "OLDAP-2.8",
-  "project": "openldap.org"
+  "project": "openldap.org",
+  "displayName": "ldap"
 }

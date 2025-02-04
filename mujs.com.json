@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/mujs",
   "license": "ISC",
   "github": "https://github.com/ccxvii/mujs",
-  "project": "mujs.com"
+  "project": "mujs.com",
+  "displayName": "mujs"
 }

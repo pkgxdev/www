@@ -15,5 +15,6 @@
   "brew_url": "https://formulae.brew.sh/formula/spirv-tools",
   "license": "Apache-2.0",
   "github": "https://github.com/KhronosGroup/SPIRV-Tools",
-  "project": "khronos.org/SPIRV-Tools"
+  "project": "khronos.org/SPIRV-Tools",
+  "displayName": "spirv"
 }

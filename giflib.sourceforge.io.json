@@ -11,5 +11,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/giflib",
   "license": "MIT",
-  "project": "giflib.sourceforge.io"
+  "project": "giflib.sourceforge.io",
+  "displayName": "gif"
 }

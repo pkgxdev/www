@@ -7,5 +7,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/pinentry",
   "license": "GPL-2.0-only",
-  "project": "gnupg.org/pinentry"
+  "project": "gnupg.org/pinentry",
+  "displayName": "pinentry"
 }

@@ -8,5 +8,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/gdbm",
   "license": "GPL-3.0-or-later",
-  "project": "gnu.org/gdbm"
+  "project": "gnu.org/gdbm",
+  "displayName": "gdbm"
 }

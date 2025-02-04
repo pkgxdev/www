@@ -9,5 +9,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/zip",
   "license": "Info-ZIP",
-  "project": "info-zip.org/zip"
+  "project": "info-zip.org/zip",
+  "displayName": "zip"
 }

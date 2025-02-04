@@ -39,5 +39,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/qemu",
   "license": "GPL-2.0-only",
-  "project": "qemu.org"
+  "project": "qemu.org",
+  "displayName": "qemu"
 }

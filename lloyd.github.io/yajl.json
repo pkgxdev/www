@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/yajl",
   "license": "ISC",
   "github": "https://github.com/lloyd/yajl",
-  "project": "lloyd.github.io/yajl"
+  "project": "lloyd.github.io/yajl",
+  "displayName": "json"
 }

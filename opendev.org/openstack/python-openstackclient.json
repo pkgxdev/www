@@ -3,5 +3,6 @@
     "openstack",
     "openstack-inventory"
   ],
-  "project": "opendev.org/openstack/python-openstackclient"
+  "project": "opendev.org/openstack/python-openstackclient",
+  "displayName": "openstack"
 }

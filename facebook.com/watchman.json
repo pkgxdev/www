@@ -13,5 +13,6 @@
   "brew_url": "https://formulae.brew.sh/formula/watchman",
   "license": "MIT",
   "github": "https://github.com/facebook/watchman",
-  "project": "facebook.com/watchman"
+  "project": "facebook.com/watchman",
+  "displayName": "watchman"
 }

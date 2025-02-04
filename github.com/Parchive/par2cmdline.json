@@ -11,5 +11,6 @@
   "brew_url": "https://formulae.brew.sh/formula/par2",
   "license": "GPL-2.0-or-later",
   "github": "https://github.com/Parchive/par2cmdline",
-  "project": "github.com/Parchive/par2cmdline"
+  "project": "github.com/Parchive/par2cmdline",
+  "displayName": "par2"
 }

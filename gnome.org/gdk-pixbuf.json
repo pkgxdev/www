@@ -9,5 +9,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/gdk-pixbuf",
   "license": "LGPL-2.1-or-later",
-  "project": "gnome.org/gdk-pixbuf"
+  "project": "gnome.org/gdk-pixbuf",
+  "displayName": "gdk-pixbuf"
 }

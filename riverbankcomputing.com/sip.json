@@ -13,5 +13,6 @@
   "brew_url": "https://formulae.brew.sh/formula/sip",
   "license": "BSD-2-Clause",
   "github": "https://github.com/Python-SIP/sip",
-  "project": "riverbankcomputing.com/sip"
+  "project": "riverbankcomputing.com/sip",
+  "displayName": "sip"
 }

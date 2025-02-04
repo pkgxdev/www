@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/rustup",
   "license": "Apache-2.0 OR MIT",
   "github": "https://github.com/rust-lang/rustup",
-  "project": "rust-lang.org/rustup"
+  "project": "rust-lang.org/rustup",
+  "displayName": "rustup"
 }

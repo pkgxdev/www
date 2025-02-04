@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/podman",
   "license": "Apache-2.0 AND GPL-3.0-or-later",
   "github": "https://github.com/containers/podman",
-  "project": "podman.io"
+  "project": "podman.io",
+  "displayName": "podman"
 }

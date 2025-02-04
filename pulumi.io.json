@@ -20,5 +20,6 @@
   "brew_url": "https://formulae.brew.sh/formula/pulumi",
   "license": "Apache-2.0",
   "github": "https://github.com/pulumi/pulumi",
-  "project": "pulumi.io"
+  "project": "pulumi.io",
+  "displayName": "pulumi"
 }

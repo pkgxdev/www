@@ -7,5 +7,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/xmlto",
   "license": "GPL-2.0-or-later",
-  "project": "pagure.io/xmlto"
+  "project": "pagure.io/xmlto",
+  "displayName": "xml"
 }

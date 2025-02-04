@@ -8,5 +8,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/pcre",
   "license": "BSD-3-Clause",
-  "project": "pcre.org"
+  "project": "pcre.org",
+  "displayName": "pcre"
 }

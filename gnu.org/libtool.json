@@ -3,5 +3,6 @@
     "libtool",
     "libtoolize"
   ],
-  "project": "gnu.org/libtool"
+  "project": "gnu.org/libtool",
+  "displayName": "libtool"
 }

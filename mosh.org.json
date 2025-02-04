@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/mosh",
   "license": "GPL-3.0-or-later",
   "github": "https://github.com/mobile-shell/mosh",
-  "project": "mosh.org"
+  "project": "mosh.org",
+  "displayName": "mosh"
 }

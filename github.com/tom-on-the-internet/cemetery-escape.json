@@ -1,4 +1,5 @@
 {
+  "description": "A game in the terminal. Ghosts chase you. You find the key and escape.",
   "provides": [
     "cemetery-escape"
   ],

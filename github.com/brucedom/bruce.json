@@ -1,5 +1,5 @@
 {
-  "description": "bruce client repository.",
+  "description": "Basic Runtime for Uniform Compute Environments",
   "provides": [
     "bruce"
   ],

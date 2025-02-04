@@ -9,5 +9,6 @@
     "pip3.11"
   ],
   "github": "https://github.com/pypa/pip",
-  "project": "pip.pypa.io"
+  "project": "pip.pypa.io",
+  "displayName": "pip"
 }

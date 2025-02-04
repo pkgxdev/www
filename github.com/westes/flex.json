@@ -8,5 +8,6 @@
   "brew_url": "https://formulae.brew.sh/formula/flex",
   "license": "BSD-2-Clause",
   "github": "https://github.com/westes/flex",
-  "project": "github.com/westes/flex"
+  "project": "github.com/westes/flex",
+  "displayName": "flex"
 }

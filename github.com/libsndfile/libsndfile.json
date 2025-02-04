@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/libsndfile",
   "license": "LGPL-2.1-or-later",
   "github": "https://github.com/libsndfile/libsndfile",
-  "project": "github.com/libsndfile/libsndfile"
+  "project": "github.com/libsndfile/libsndfile",
+  "displayName": "sndfile"
 }

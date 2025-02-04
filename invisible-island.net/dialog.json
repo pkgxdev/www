@@ -7,5 +7,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/dialog",
   "license": "LGPL-2.1-or-later",
-  "project": "invisible-island.net/dialog"
+  "project": "invisible-island.net/dialog",
+  "displayName": "dialog"
 }

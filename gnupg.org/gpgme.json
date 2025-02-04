@@ -8,5 +8,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/gpgme",
   "license": "LGPL-2.1-or-later",
-  "project": "gnupg.org/gpgme"
+  "project": "gnupg.org/gpgme",
+  "displayName": "gpgme"
 }

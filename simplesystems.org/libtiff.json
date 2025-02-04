@@ -10,5 +10,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/libtiff",
   "license": "libtiff",
-  "project": "simplesystems.org/libtiff"
+  "project": "simplesystems.org/libtiff",
+  "displayName": "tiff"
 }

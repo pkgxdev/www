@@ -6,5 +6,6 @@
     "prqlc"
   ],
   "github": "https://github.com/PRQL/prql",
-  "project": "prql-lang.org"
+  "project": "prql-lang.org",
+  "displayName": "prql"
 }

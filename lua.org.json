@@ -7,5 +7,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/lua",
   "license": "MIT",
-  "project": "lua.org"
+  "project": "lua.org",
+  "displayName": "lua"
 }

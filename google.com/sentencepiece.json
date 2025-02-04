@@ -11,5 +11,6 @@
   "brew_url": "https://formulae.brew.sh/formula/sentencepiece",
   "license": "Apache-2.0",
   "github": "https://github.com/google/sentencepiece",
-  "project": "google.com/sentencepiece"
+  "project": "google.com/sentencepiece",
+  "displayName": "spm"
 }

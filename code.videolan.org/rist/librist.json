@@ -9,5 +9,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/librist",
   "license": "BSD-2-Clause",
-  "project": "code.videolan.org/rist/librist"
+  "project": "code.videolan.org/rist/librist",
+  "displayName": "rist"
 }

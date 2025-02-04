@@ -8,5 +8,6 @@
   "brew_url": "https://formulae.brew.sh/formula/woff2",
   "license": "MIT",
   "github": "https://github.com/google/woff2",
-  "project": "google.com/woff2"
+  "project": "google.com/woff2",
+  "displayName": "woff2"
 }

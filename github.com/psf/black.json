@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/black",
   "license": "MIT",
   "github": "https://github.com/psf/black",
-  "project": "github.com/psf/black"
+  "project": "github.com/psf/black",
+  "displayName": "black"
 }

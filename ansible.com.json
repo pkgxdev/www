@@ -15,5 +15,6 @@
     "ansible-vault"
   ],
   "github": "https://github.com/ansible/ansible",
-  "project": "ansible.com"
+  "project": "ansible.com",
+  "displayName": "ansible"
 }

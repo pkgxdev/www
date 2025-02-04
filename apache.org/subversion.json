@@ -18,5 +18,6 @@
   "brew_url": "https://formulae.brew.sh/formula/subversion",
   "license": "Apache-2.0",
   "github": "https://github.com/apache/subversion",
-  "project": "apache.org/subversion"
+  "project": "apache.org/subversion",
+  "displayName": "svn"
 }

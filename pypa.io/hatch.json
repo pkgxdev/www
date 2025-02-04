@@ -6,5 +6,6 @@
     "hatchling"
   ],
   "github": "https://github.com/pypa/hatch",
-  "project": "pypa.io/hatch"
+  "project": "pypa.io/hatch",
+  "displayName": "hatch"
 }

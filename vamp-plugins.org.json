@@ -7,5 +7,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/vamp-plugin-sdk",
   "license": "X11 AND BSD-3-Clause",
-  "project": "vamp-plugins.org"
+  "project": "vamp-plugins.org",
+  "displayName": "vamp"
 }

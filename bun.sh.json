@@ -6,5 +6,6 @@
     "bunx"
   ],
   "github": "https://github.com/oven-sh/bun",
-  "project": "bun.sh"
+  "project": "bun.sh",
+  "displayName": "bun"
 }

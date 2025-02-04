@@ -8,5 +8,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/libtasn1",
   "license": "LGPL-2.1-or-later",
-  "project": "gnu.org/libtasn1"
+  "project": "gnu.org/libtasn1",
+  "displayName": "asn1"
 }

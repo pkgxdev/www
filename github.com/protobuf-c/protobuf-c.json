@@ -8,5 +8,6 @@
   "brew_url": "https://formulae.brew.sh/formula/protobuf-c",
   "license": "BSD-2-Clause",
   "github": "https://github.com/protobuf-c/protobuf-c",
-  "project": "github.com/protobuf-c/protobuf-c"
+  "project": "github.com/protobuf-c/protobuf-c",
+  "displayName": "protoc"
 }

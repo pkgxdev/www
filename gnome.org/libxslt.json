@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/libxslt",
   "license": "X11",
   "github": "https://github.com/GNOME/libxslt",
-  "project": "gnome.org/libxslt"
+  "project": "gnome.org/libxslt",
+  "displayName": "xslt"
 }

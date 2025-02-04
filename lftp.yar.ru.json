@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/lftp",
   "license": "GPL-3.0-or-later",
   "github": "https://github.com/lavv17/lftp",
-  "project": "lftp.yar.ru"
+  "project": "lftp.yar.ru",
+  "displayName": "lftp"
 }

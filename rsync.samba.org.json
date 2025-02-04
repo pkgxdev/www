@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/rsync",
   "license": "GPL-3.0-or-later",
   "github": "https://github.com/WayneD/rsync",
-  "project": "rsync.samba.org"
+  "project": "rsync.samba.org",
+  "displayName": "rsync"
 }

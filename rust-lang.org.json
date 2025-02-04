@@ -1,7 +1,7 @@
 {
-  "brief": "Rust toolchain installer",
-  "description": "The Rust toolchain installer",
-  "homepage": "https://rust-lang.github.io/rustup/",
+  "brief": "Safe, concurrent, practical language",
+  "description": "Empowering everyone to build reliable and efficient software.",
+  "homepage": "https://www.rust-lang.org/",
   "provides": [
     "cargo-clippy",
     "cargo-fmt",
@@ -14,9 +14,9 @@
     "rustdoc",
     "rustfmt"
   ],
-  "brew_url": "https://formulae.brew.sh/formula/rustup",
+  "brew_url": "https://formulae.brew.sh/formula/rust",
   "license": "Apache-2.0 OR MIT",
-  "github": "https://github.com/rust-lang/rustup",
+  "github": "https://github.com/rust-lang/rust",
   "project": "rust-lang.org",
   "displayName": "rust"
 }

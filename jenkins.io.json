@@ -7,5 +7,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/jenkins-lts",
   "license": "MIT",
-  "project": "jenkins.io"
+  "project": "jenkins.io",
+  "displayName": "jenkins-lts"
 }

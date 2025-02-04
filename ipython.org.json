@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/ipython",
   "license": "BSD-3-Clause",
   "github": "https://github.com/ipython/ipython",
-  "project": "ipython.org"
+  "project": "ipython.org",
+  "displayName": "ipython"
 }

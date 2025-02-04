@@ -12,5 +12,6 @@
   "brew_url": "https://formulae.brew.sh/formula/bitcoin",
   "license": "MIT AND BSD-3-Clause AND BSL-1.0 AND Sleepycat",
   "github": "https://github.com/bitcoin/bitcoin",
-  "project": "bitcoin.org"
+  "project": "bitcoin.org",
+  "displayName": "bitcoin"
 }

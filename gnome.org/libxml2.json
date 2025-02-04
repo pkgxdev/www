@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/libxml2",
   "license": "MIT",
   "github": "https://github.com/GNOME/libxml2",
-  "project": "gnome.org/libxml2"
+  "project": "gnome.org/libxml2",
+  "displayName": "xml"
 }

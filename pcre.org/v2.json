@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/pcre2",
   "license": "BSD-3-Clause",
   "github": "https://github.com/PCRE2Project/pcre2",
-  "project": "pcre.org/v2"
+  "project": "pcre.org/v2",
+  "displayName": "pcre2"
 }

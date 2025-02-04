@@ -6,5 +6,6 @@
     "sonar-scanner-debug"
   ],
   "github": "https://github.com/SonarSource/sonar-scanner-cli",
-  "project": "sonarqube.org/sonarscanner"
+  "project": "sonarqube.org/sonarscanner",
+  "displayName": "sonar-scanner"
 }

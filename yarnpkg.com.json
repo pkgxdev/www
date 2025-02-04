@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/yarn",
   "license": "BSD-2-Clause",
   "github": "https://github.com/yarnpkg/berry",
-  "project": "yarnpkg.com"
+  "project": "yarnpkg.com",
+  "displayName": "yarn"
 }

@@ -8,5 +8,6 @@
   "brew_url": "https://formulae.brew.sh/formula/blink",
   "license": "ISC",
   "github": "https://github.com/jart/blink",
-  "project": "github.com/jart/blink"
+  "project": "github.com/jart/blink",
+  "displayName": "blink"
 }

@@ -6,5 +6,6 @@
     "jsonnetfmt"
   ],
   "github": "https://github.com/google/jsonnet",
-  "project": "jsonnet.org"
+  "project": "jsonnet.org",
+  "displayName": "jsonnet"
 }

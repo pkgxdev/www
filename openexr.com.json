@@ -15,5 +15,6 @@
   "brew_url": "https://formulae.brew.sh/formula/openexr",
   "license": "BSD-3-Clause",
   "github": "https://github.com/AcademySoftwareFoundation/openexr",
-  "project": "openexr.com"
+  "project": "openexr.com",
+  "displayName": "exr"
 }

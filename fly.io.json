@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/flyctl",
   "license": "Apache-2.0",
   "github": "https://github.com/superfly/flyctl",
-  "project": "fly.io"
+  "project": "fly.io",
+  "displayName": "fly"
 }

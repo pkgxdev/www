@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/openslide",
   "license": "LGPL-2.1-only",
   "github": "https://github.com/openslide/openslide",
-  "project": "openslide.org"
+  "project": "openslide.org",
+  "displayName": "openslide"
 }

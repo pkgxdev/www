@@ -6,5 +6,6 @@
     "argbash-1to2"
   ],
   "github": "https://github.com/matejak/argbash",
-  "project": "argbash.dev"
+  "project": "argbash.dev",
+  "displayName": "argbash"
 }

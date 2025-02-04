@@ -6,5 +6,6 @@
     "luajit-{{version.marketing}}."
   ],
   "github": "https://github.com/LuaJIT/LuaJIT",
-  "project": "luajit.org"
+  "project": "luajit.org",
+  "displayName": "luajit"
 }

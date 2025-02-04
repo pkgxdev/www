@@ -8,5 +8,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/pango",
   "license": "LGPL-2.0-or-later",
-  "project": "gnome.org/pango"
+  "project": "gnome.org/pango",
+  "displayName": "pango"
 }

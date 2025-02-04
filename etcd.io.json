@@ -9,5 +9,6 @@
   "brew_url": "https://formulae.brew.sh/formula/etcd",
   "license": "Apache-2.0",
   "github": "https://github.com/etcd-io/etcd",
-  "project": "etcd.io"
+  "project": "etcd.io",
+  "displayName": "etcd"
 }

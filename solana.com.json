@@ -17,5 +17,6 @@
   "brew_url": "https://formulae.brew.sh/formula/solana",
   "license": "Apache-2.0",
   "github": "https://github.com/solana-labs/solana",
-  "project": "solana.com"
+  "project": "solana.com",
+  "displayName": "solana"
 }

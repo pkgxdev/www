@@ -10,5 +10,6 @@
   ],
   "brew_url": "https://formulae.brew.sh/formula/libsmi",
   "license": "TCL AND BSD-3-Clause AND Beerware",
-  "project": "ibr.cs.tu-bs.de/libsmi"
+  "project": "ibr.cs.tu-bs.de/libsmi",
+  "displayName": "smi"
 }

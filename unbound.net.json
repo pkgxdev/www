@@ -10,5 +10,6 @@
     "unbound-host"
   ],
   "github": "https://github.com/NLnetLabs/unbound",
-  "project": "unbound.net"
+  "project": "unbound.net",
+  "displayName": "unbound"
 }

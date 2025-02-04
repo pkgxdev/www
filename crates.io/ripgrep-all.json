@@ -10,5 +10,6 @@
   "brew_url": "https://formulae.brew.sh/formula/ripgrep-all",
   "license": "AGPL-3.0-or-later",
   "github": "https://github.com/phiresky/ripgrep-all",
-  "project": "crates.io/ripgrep-all"
+  "project": "crates.io/ripgrep-all",
+  "displayName": "rga"
 }

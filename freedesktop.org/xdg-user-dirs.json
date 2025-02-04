@@ -3,5 +3,6 @@
     "xdg-user-dir",
     "xdg-user-dirs-update"
   ],
-  "project": "freedesktop.org/xdg-user-dirs"
+  "project": "freedesktop.org/xdg-user-dirs",
+  "displayName": "xdg-user-dir"
 }

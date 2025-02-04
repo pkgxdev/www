@@ -7,5 +7,6 @@
     "redis-benchmark"
   ],
   "github": "https://github.com/redis/redis",
-  "project": "redis.io"
+  "project": "redis.io",
+  "displayName": "redis"
 }

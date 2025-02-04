@@ -8,5 +8,6 @@
   "brew_url": "https://formulae.brew.sh/formula/libavif",
   "license": "BSD-2-Clause",
   "github": "https://github.com/AOMediaCodec/libavif",
-  "project": "github.com/AOMediaCodec/libavif"
+  "project": "github.com/AOMediaCodec/libavif",
+  "displayName": "avif"
 }

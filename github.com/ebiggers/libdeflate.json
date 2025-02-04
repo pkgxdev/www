@@ -8,5 +8,6 @@
   "brew_url": "https://formulae.brew.sh/formula/libdeflate",
   "license": "MIT",
   "github": "https://github.com/ebiggers/libdeflate",
-  "project": "github.com/ebiggers/libdeflate"
+  "project": "github.com/ebiggers/libdeflate",
+  "displayName": "libdeflate"
 }
