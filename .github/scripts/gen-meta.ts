@@ -80,7 +80,7 @@ for await (const { project } of desired_pantry_entries()) {
   const provides = await pantry_entry.provides();
   let { homepage, description, brew_url, license, github } = await assign(yaml, provides, project) ?? {};
 
-  const displayName = yaml?.['display-name'] || (provides.length == 1 ? provides[0] : undefined);
+  const displayName = yaml?.['display-name'] || get_display_name(provides, project);
 
   let gh_description: string | undefined = undefined;
 
@@ -190,6 +190,12 @@ async function assign(pantry_yaml: any, provides: string[], project: string) {
     case 'pkgx.sh/brewkit':
       // programs list preceisely matches the wrong thing
       return;
+    case 'rust-lang.org/rustup':
+      return 'rustup';
+    case 'rust-lang.org':
+      return 'rust';
+    case 'rust-lang.org/rustup-init':
+      return;  // package we shouldn’t have and I dunno why we do
     }
 
     const map: Record<string, string[]> = {}
@@ -431,10 +437,51 @@ async function* desired_pantry_entries(): AsyncGenerator<{project: string, path:
       project = `${project}`;
       yield { project, path: usePantry().prefix.join(project, 'package.yml') };
     }
-  } else {
+  } else for await (const entry of usePantry().ls()) {
+    yield entry;
+  }
+}
 
-    for await (const entry of usePantry().ls()) {
-      yield entry;
+function get_display_name(provides: string[], project: string) {
+  switch (project) {
+  case 'sourceforge.net/xmlstar':
+    return 'XMLStarlet';
+  case 'apache.org/arrow':
+  case 'oracle.com/berkeley-db':
+  case 'classic.yarnpkg.com':
+  case 'httpie.io':
+  case 'libarchive.org':
+  case 'poppler.freedesktop.org':
+  case 'smartmontools.org':
+    return;
+  }
+
+  if (provides.length == 0) {
+    return;
+  } else if (provides.length == 1) {
+    return provides[0];
+  } else {
+    return common_prefix(provides);
+  }
+
+  function common_prefix(strings: string[]): string | undefined {
+    let prefix = strings[0];
+    for (const str of strings) {
+      while (str.indexOf(prefix) !== 0) {
+        prefix = prefix.slice(0, -1);
+        if (prefix === "") return undefined;
+      }
+    }
+    if (prefix.endsWith('-') || prefix.endsWith('_')) {
+      prefix = prefix.slice(0, -1);
+    }
+    switch (prefix) {
+    case 'libdeflate-g':
+      // provides libdeflate-gunzip and libdeflate-gzip
+      return 'libdeflate';
+    }
+    if (prefix.length > 2) {
+      return prefix
     }
   }
 }
