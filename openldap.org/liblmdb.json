@@ -1,0 +1,14 @@
+{
+  "description": "Lightning memory-mapped database: key-value data store",
+  "homepage": "https://www.symas.com/symas-embedded-database-lmdb",
+  "provides": [
+    "mdb_copy",
+    "mdb_dump",
+    "mdb_load",
+    "mdb_stat"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/lmdb",
+  "license": "OLDAP-2.8",
+  "project": "openldap.org/liblmdb",
+  "displayName": "liblmdb"
+}
