@@ -95,18 +95,13 @@ def get_painting_feature(name, description):
     if description:
         prompt += f" which is described as “{description}”"
 
-    prompt += f"""
-I am generating images to represent different open source packages.
-I need a theme. It should at most be two or three words.
-This is an image being generated as part of over 10 million other packages so the theme should try to be unique and clearly linked to the package in question.
-If the package name contains a suitable word use it, eg. if the package is called foocat, then say cat.
-If the package name could be interpreted for a painting use it, eg. if the package is called supercat, then say SUPER CAT, eg. if the package is called trimonkey say THREE MONKEYS.
-If the package name is a play on words extract the meaning, eg. if the package is called wompbat because it is a library for womp, return WOMBAT.
-Do not go conceptual with eg. code or syntax since there are 10 million images and most of them are related to code, syntax and other technological themes.
-If the package description contains a word that evokes something, then use it, eg “foo is bridge to bar” then say BRIDGE.
-Be metaphorical, eg. if the package is a database and no other theme comes to mind, suggest shelves or boxes.
-I trust you. Use your judgement. You’re very smart and capable.
-The painting either features the theme or conceptualizes it. In both cases it must be something that can be painted.
+    prompt += f""".
+From that name and description extract some language that can be featured in the image.
+Eg. if the description is “foo is a bridge to bar” then output BRIDGE.
+Keep it physical. If the description is "foo is a dynamic runtime bridge to bar” then output BRIDGE, not DYNAMIC RUNTIME BRIDGE.
+Remember I need to paint this!
+If the name is a play on words then find the play on words. Eg “deno” is a play on dino ie. a dinosaur.
+If you know the logo for a project and the logo is a good theme, then say that. Eg. “deno”’s logo is a dinosaur.
 I need the output as JSON "{{theme: ""}}.
 I am feeding the output to a script, so if you don’t output json in the above form my script will break.
 Thank you sir.
@@ -186,8 +181,8 @@ Now pick from following list of imagery options to best fit that theme and color
 ```
 
 If none fit and you are inspired please provide your own imagery or adapt the options.
-I need the output as JSON "{{imagery: ""}}.
-Output the complete list item of imagery items, not just parts.
+I need the output as JSON "{{imagery: "FOO, BAR, BAZ, ETC"}}.
+Output the complete list item of imagery items, not just selected items.
 I am feeding the output to a script, so if you don’t output json in the above form my script will break.
 Thank you sir.
 """

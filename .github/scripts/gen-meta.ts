@@ -156,6 +156,10 @@ for await (const { project } of desired_pantry_entries()) {
   case 'github.com/brucedom/bruce':
     description = 'Basic Runtime for Uniform Compute Environments';
     // ^^ the github description is not useful
+    break;
+  case 'liburcu.org':
+    brief = 'Userspace RCU (read-copy-update) library.'
+    description = 'liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data synchronization library provides read-side access which scales linearly with the number of cores.'
   }
 
   let json: any = {
