@@ -1,0 +1,13 @@
+{
+  "brief": "A modern Prolog implementation written mostly in Rust.",
+  "description": "Modern ISO Prolog implementation written mostly in Rust",
+  "homepage": "https://www.scryer.pl",
+  "provides": [
+    "scryer-prolog"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/scryer-prolog",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/mthom/scryer-prolog",
+  "project": "scryer.pl",
+  "displayName": "Scryer Prolog"
+}
