@@ -1,0 +1,10 @@
+{
+  "provides": [
+    "capsh",
+    "getcap",
+    "getpcaps",
+    "setcap"
+  ],
+  "project": "kernel.org/libcap",
+  "displayName": "libcap"
+}
