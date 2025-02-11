@@ -65,6 +65,7 @@ export default function Footer() {
           <Li><Link href='https://pkgx.dev/privacy-policy' {...link_props}>Privacy Policy</Link></Li>
           <Li><Link href='https://pkgx.dev/terms-of-use' {...link_props}>Terms of Use</Link></Li>
           <Li><Link href='https://blog.pkgx.dev' {...link_props}>Blog</Link></Li>
+          <Li><Link href='https://drive.google.com/drive/folders/18PMUnaTr2AKpcCGxErK2k7Gok50CKB2y?usp=sharing' {...link_props}>Press Kit</Link></Li>
           <Li><Link href='mailto:hi@pkgx.dev' {...link_props}>Contact{icon}</Link></Li>
         </ul>
       </Grid>
