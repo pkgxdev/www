@@ -6,7 +6,7 @@ import backgroundPattern from "../assets/pkgx-bg-pattern-right.svg"; // Full-Pag
 // Social Proof Data
 const socialProofData = [
   { number: "1,212,925", label: "Total Blocks" },
-  { number: "2.17", label: "Daily Transactions" },
+  { number: "2.17M", label: "Daily Transactions" },
   { number: "72,160,103", label: "Total Transactions" },
   { number: "81,122,220", label: "Wallet Addresses" },
 ];
