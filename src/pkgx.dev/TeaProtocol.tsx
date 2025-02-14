@@ -3,14 +3,6 @@ import { Container, Grid, Typography, Button, Box, Link, Stack } from "@mui/mate
 import teaImage from "../../public/imgs/tea-icon.svg"; // Hero Image
 import backgroundPattern from "../assets/pkgx-bg-pattern-right.svg"; // Full-Page Background Image
 
-// Social Proof Data
-const socialProofData = [
-  { number: "1,212,925", label: "Total Blocks" },
-  { number: "2.17M", label: "Daily Transactions" },
-  { number: "72,160,103", label: "Total Transactions" },
-  { number: "81,122,220", label: "Wallet Addresses" },
-];
-
 // Feature Section Data
 const features = [
   { title: "A New Brew: The Journey From Homebrew to tea", description: "Homebrew changed how developers managed software. Now, tea is evolving the model for the open-source era—not just packaging software but packaging incentives. By leveraging smart contracts, tokenized rewards, and a global dependency tree, tea ensures that contributions are recognized, ranked, and rewarded across the entire open-source stack." },
@@ -19,7 +11,48 @@ const features = [
   { title: "Open Source Should Be Rewarding. Now It Is.", description: "For too long, open source has been powered by passion, not paychecks. tea is changing the economics of open source, ensuring that every maintainer, contributor, and developer gets their fair share. Whether through staking, governance, or direct rewards, tea.xyz is about sustaining open source for the long run—so you can keep building, innovating, and, of course, sipping the tea." }
 ];
 
+interface TeaStats {
+  totalBlocks: string;
+  dailyTransactions: string;
+  totalTransactions: string;
+  walletAddresses: string;
+}
+
 const TeaProtocol = () => {
+  const [stats, setStats] = React.useState<TeaStats | null>(null);
+
+  React.useEffect(() => {
+    const fetchTeaStats = async () => {
+      // lambda proxy to bypass CORS
+      const response = await fetch(`https://yo2fkzmf2rh33u2b3bi3xhtqyi0toyqz.lambda-url.us-east-1.on.aws/?url=/stats`);
+      console.log(response);
+      const data = await response.json();
+      console.log(data);
+
+      setStats({
+        totalBlocks: parseInt(data.total_blocks).toLocaleString(),
+        dailyTransactions: `${(parseInt(data.transactions_today) / 1000000).toFixed(2)}M`,
+        totalTransactions: parseInt(data.total_transactions).toLocaleString(),
+        walletAddresses: parseInt(data.total_addresses).toLocaleString()
+      });
+    };
+
+    fetchTeaStats();
+  }, []);
+
+  // Social Proof Data
+  const socialProofData = stats ? [
+    { number: stats.totalBlocks, label: "Total Blocks" },
+    { number: stats.dailyTransactions, label: "Daily Transactions" },
+    { number: stats.totalTransactions, label: "Total Transactions" },
+    { number: stats.walletAddresses, label: "Wallet Addresses" },
+  ] : [
+    { number: "1,212,925", label: "Total Blocks" },
+    { number: "2.17M", label: "Daily Transactions" },
+    { number: "72,160,103", label: "Total Transactions" },
+    { number: "81,122,220", label: "Wallet Addresses" },
+  ];
+
   return (
     <Box
       sx={{
