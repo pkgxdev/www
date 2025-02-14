@@ -8,20 +8,19 @@
 
 export const handler = async (event) => {
   const targetUrl = event.queryStringParameters?.url;
-  
+
   const response = await fetch('https://assam.tea.xyz/api/v2' + targetUrl, {
     headers: {
       'Origin': 'https://assam.tea.xyz',
       'Accept': 'application/json'
     }
   });
-  
+
   const data = await response.json();
-  
+
   return {
     statusCode: 200,
     headers: {
-      'Access-Control-Allow-Origin': 'https://pkgx.dev',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(data)

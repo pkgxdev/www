@@ -25,9 +25,7 @@ const TeaProtocol = () => {
     const fetchTeaStats = async () => {
       // lambda proxy to bypass CORS
       const response = await fetch(`https://yo2fkzmf2rh33u2b3bi3xhtqyi0toyqz.lambda-url.us-east-1.on.aws/?url=/stats`);
-      console.log(response);
       const data = await response.json();
-      console.log(data);
 
       setStats({
         totalBlocks: parseInt(data.total_blocks).toLocaleString(),
