@@ -16,6 +16,8 @@ import theme from './utils/theme';
 import React, {  } from "react";
 import './assets/main.css';
 import Discord from './components/Discord';
+import TeaProtocol from './pkgx.dev/TeaProtocol';
+
 
 const searchClient = algoliasearch('UUTLHX01W7', '819a841ca219754c38918b8bcbbbfea7');
 
@@ -32,6 +34,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
             <Route path='/terms-of-use' element={<TermsOfUse/>} />
             <Route path='/pkgs' element={<PackageShowcase />} />
             <Route path='/pkgs/*' element={<PackageListing/>} />
+            <Route path='/tea-protocol' element={<TeaProtocol />} />
           </Routes>
           <Footer/>
         </Stack>
