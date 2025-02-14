@@ -102,6 +102,8 @@ Keep it physical. If the description is "foo is a dynamic runtime bridge to bar�
 Remember I need to paint this!
 If the name is a play on words then find the play on words. Eg “deno” is a play on dino ie. a dinosaur.
 If you know the logo for a project and the logo is a good theme, then say that. Eg. “deno”’s logo is a dinosaur.
+If the name contains a word I can paint, use it! Eg. from `libcap` you can say `cap`.
+Don’t be generic. I have ten million open source packages. eg. don’t pick `lib` or `code` or `syntax`, but eg. database is ok.
 I need the output as JSON "{{theme: ""}}.
 I am feeding the output to a script, so if you don’t output json in the above form my script will break.
 Thank you sir.
