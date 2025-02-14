@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography, Button, Box, Link, Stack } from "@mui/material";
-import teaImage from "/src/assets/tea-icon.svg"; // Hero Image
-import backgroundPattern from "/src/assets/pkgx-bg-pattern-right.svg"; // Full-Page Background Image
+import teaImage from "../../public/imgs/tea-icon.svg"; // Hero Image
+import backgroundPattern from "../assets/pkgx-bg-pattern-right.svg"; // Full-Page Background Image
 
 // Social Proof Data
 const socialProofData = [
@@ -35,17 +35,17 @@ const TeaProtocol = () => {
       {/* Hero Section */}
 <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
   <Grid container spacing={4} alignItems="center">
-    
+
     {/* Left Column - Text Content */}
     <Grid item xs={12} md={6}>
-      <Typography 
+      <Typography
         sx={{ fontSize: "14px", fontWeight: 500, textTransform: "uppercase", color: "#F26212", mb: 1 }}
       >
         From the creator of homebrew
       </Typography>
-      <Typography 
-        variant="h1" 
-        gutterBottom 
+      <Typography
+        variant="h1"
+        gutterBottom
         sx={{ fontWeight: 800, fontSize: "48px", lineHeight: "58px", color: "#EDF2EF" }}
       >
         Something New is Brewing:  <span style={{ color: "#F26212" }}>The Future of Open Source is On-Chain</span>
@@ -59,10 +59,10 @@ const TeaProtocol = () => {
       <Typography variant="body1" paragraph sx={{ color: "#EDF2EF", mb: 3 }}>
         As a proud part of the <strong>Optimism ecosystem</strong>, we are incredibly excited about the future of Ethereum—especially with the <strong>Pectra upgrades</strong> unlocking new frontiers for Layer-2 scalability and application design. tea is built to <strong>welcome the next wave of hundreds of thousands of open-source developers</strong> and finally deliver the <strong>scaling promises of blockchain</strong> to the people who build the internet’s foundation. If you’ve ever contributed to open source, it’s time to claim your seat at the table—and <strong>sip the tea</strong>.
       </Typography>
-      <Button 
-          variant="contained" 
-          color="primary" 
-          size="large" 
+      <Button
+          variant="contained"
+          color="primary"
+          size="large"
           href="https://tea.xyz"
           sx={{ textTransform: "none" }}
         >
@@ -74,7 +74,7 @@ const TeaProtocol = () => {
     <Grid item xs={12} md={6} sx={{ display: { xs: "none", md: "block" } }}>
       <Box
         component="img"
-        src="/src/assets/tea-icon.svg"
+        src="/imgs/tea-icon.svg"
         alt="Tea Protocol Homepage"
         sx={{
           width: "100%",
@@ -91,9 +91,9 @@ const TeaProtocol = () => {
       {/* Metrics Section */}
       <Container maxWidth="lg" sx={{ textAlign: "center", py: { xs: 6, md: 10 } }}>
         <Box sx={{ maxWidth: "700px", mx: "auto" }}>
-          <Typography 
-            variant="h2" 
-            gutterBottom 
+          <Typography
+            variant="h2"
+            gutterBottom
             sx={{ fontWeight: 800, fontSize: "32px", lineHeight: "42px", color: "#EDF2EF" }}
           >
             Everyone's <span style={{ color: "#F26212" }}>sipping the tea</span>.
@@ -121,17 +121,17 @@ const TeaProtocol = () => {
       {/* Feature Section */}
       <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
         <Grid container spacing={4} alignItems="center">
-          
+
           {/* Left Side */}
           <Grid item xs={12} md={4}>
-            <Typography 
-              variant="h2" 
+            <Typography
+              variant="h2"
               sx={{ fontWeight: 800, fontSize: "32px", lineHeight: "42px", color: "#EDF2EF", mb: 2 }}
             >
               There's something brewing for <span style={{ color: "#F26212" }}>everyone</span>.
             </Typography>
             <Typography variant="body1" paragraph sx={{ color: "#EDF2EF" }}>
-              There are plenty of ways for developers and speculators alike to participate in tea's testnet. This is just any web3 project; tea is the network for developers, and they're changing the way the world interacts with open source software. 
+              There are plenty of ways for developers and speculators alike to participate in tea's testnet. This is just any web3 project; tea is the network for developers, and they're changing the way the world interacts with open source software.
             </Typography>
           </Grid>
 
@@ -157,24 +157,24 @@ const TeaProtocol = () => {
 {/* Final Call-to-Action Section */}
 <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
   <Grid container spacing={4} alignItems="center">
-    
+
     {/* Left Column - Text & Buttons */}
     <Grid item xs={12} md={6}>
-      <Typography 
-        variant="h2" 
+      <Typography
+        variant="h2"
         gutterBottom
         sx={{ fontWeight: 800, fontSize: "32px", lineHeight: "42px", color: "#EDF2EF" }}
       >
         Ready to <span style={{ color: "#F26212" }}>Get Started</span>?
       </Typography>
       <Typography variant="body1" paragraph sx={{ color: "#EDF2EF" }}>
-        Join the tea party and start making your mark on the testnet. The open source revolution is here and you can be a part of it. We, here at PKGX, are super proud of the work we've done on tea, and we can't wait to hear your feedback. 
+        Join the tea party and start making your mark on the testnet. The open source revolution is here and you can be a part of it. We, here at PKGX, are super proud of the work we've done on tea, and we can't wait to hear your feedback.
       </Typography>
       <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-        <Button 
-          variant="contained" 
-          color="primary" 
-          size="large" 
+        <Button
+          variant="contained"
+          color="primary"
+          size="large"
           href="https://tea.xyz"
           sx={{ textTransform: "none" }}
         >
@@ -187,7 +187,7 @@ const TeaProtocol = () => {
     <Grid item xs={12} md={6}>
         <Box
             component="img"
-            src="/src/assets/pkgx-3d-glyphs.png"
+            src="/imgs/pkgx-3d-glyphs.png"
             alt="PKGX 3D Glyphs"
             sx={{
             width: "100%",
