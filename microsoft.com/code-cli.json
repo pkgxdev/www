@@ -1,0 +1,13 @@
+{
+  "brief": "Visual Studio Code",
+  "description": "Command-line interface built-in Visual Studio Code",
+  "homepage": "https://code.visualstudio.com",
+  "provides": [
+    "code"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/code-cli",
+  "license": "MIT",
+  "github": "https://github.com/microsoft/vscode",
+  "project": "microsoft.com/code-cli",
+  "displayName": "vscode cli"
+}
