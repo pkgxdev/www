@@ -1,0 +1,12 @@
+{
+  "brief": "All-in-one AI-Powered CLI Chat & Copilot",
+  "description": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.",
+  "provides": [
+    "aichat"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/aichat",
+  "license": "Apache-2.0 OR MIT",
+  "github": "https://github.com/sigoden/aichat",
+  "project": "crates.io/aichat",
+  "displayName": "aichat"
+}

@@ -1,0 +1,12 @@
+{
+  "brief": "The simple but flexible text editor",
+  "description": "Independent Rust text editor that runs in your terminal",
+  "provides": [
+    "ox"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ox",
+  "license": "GPL-2.0-only",
+  "github": "https://github.com/curlpipe/ox",
+  "project": "crates.io/ox",
+  "displayName": "ox"
+}

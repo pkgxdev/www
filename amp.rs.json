@@ -1,0 +1,13 @@
+{
+  "brief": "Text editor for your terminal",
+  "description": "A complete text editor for your terminal.",
+  "homepage": "https://amp.rs",
+  "provides": [
+    "amp"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/amp",
+  "license": "GPL-3.0-or-later",
+  "github": "https://github.com/jmacdonald/amp",
+  "project": "amp.rs",
+  "displayName": "amp"
+}

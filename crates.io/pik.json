@@ -1,0 +1,10 @@
+{
+  "description": "Process Interactive Kill",
+  "homepage": "https://crates.io/crates/pik",
+  "provides": [
+    "pik"
+  ],
+  "github": "https://github.com/jacek-kurlit/pik",
+  "project": "crates.io/pik",
+  "displayName": "pik"
+}
