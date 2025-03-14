@@ -1,0 +1,11 @@
+{
+  "description": "Enhanced, fully compatible version of the Berkeley C shell",
+  "homepage": "https://www.tcsh.org/",
+  "provides": [
+    "csh",
+    "tcsh"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/tcsh",
+  "license": "BSD-3-Clause",
+  "project": "tcsh.org"
+}

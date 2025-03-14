@@ -1,0 +1,9 @@
+{
+  "description": "Install `pkgx` packages to `/usr/local`",
+  "provides": [
+    "pkgm"
+  ],
+  "github": "https://github.com/pkgxdev/pkgm",
+  "project": "pkgx.sh/pkgm",
+  "displayName": "pkgm"
+}

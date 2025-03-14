@@ -1,0 +1,9 @@
+{
+  "description": "Analyze GitHub stars",
+  "provides": [
+    "stargazers"
+  ],
+  "github": "https://github.com/spencerkimball/stargazers",
+  "project": "github.com/spencerkimball/stargazers",
+  "displayName": "stargazers"
+}

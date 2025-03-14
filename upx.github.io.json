@@ -1,0 +1,13 @@
+{
+  "brief": "Compress/expand executable files",
+  "description": "UPX - the Ultimate Packer for eXecutables",
+  "homepage": "https://upx.github.io/",
+  "provides": [
+    "upx"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/upx",
+  "license": "GPL-2.0-or-later",
+  "github": "https://github.com/upx/upx",
+  "project": "upx.github.io",
+  "displayName": "upx"
+}
