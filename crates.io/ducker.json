@@ -1,0 +1,13 @@
+{
+  "brief": "Slightly quackers Docker TUI based on k9s",
+  "description": "A slightly quackers Docker TUI based on k9s 🦆",
+  "homepage": "https://crates.io/crates/ducker",
+  "provides": [
+    "ducker"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/ducker",
+  "license": "MIT",
+  "github": "https://github.com/robertpsoane/ducker",
+  "project": "crates.io/ducker",
+  "displayName": "ducker"
+}

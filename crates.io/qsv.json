@@ -1,0 +1,13 @@
+{
+  "brief": "Blazing-fast Data-Wrangling toolkit",
+  "description": "Ultra-fast CSV data-wrangling toolkit",
+  "homepage": "https://qsv.dathere.com",
+  "provides": [
+    "qsv"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/qsv",
+  "license": "MIT OR Unlicense",
+  "github": "https://github.com/dathere/qsv",
+  "project": "crates.io/qsv",
+  "displayName": "qsv"
+}
