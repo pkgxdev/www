@@ -138,7 +138,7 @@ const TeaProtocol = () => {
                   width: "100%"
                 }}
               >
-                <Box component="img" src="/imgs/placeholder.png" alt="Visual Placeholder" sx={{ width: "80%", maxWidth: "300px" }} />
+                <Box component="img" src="/src/assets/tea-3d-logo.png" alt="tea logo" sx={{ width: "80%", maxWidth: "300px" }} />
               </Box>
             </Grid>
           </Grid>
@@ -168,7 +168,7 @@ const TeaProtocol = () => {
         <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={4}>
-              <Box component="img" src="/imgs/placeholder.png" alt="Feature Placeholder" sx={{ width: "100%", aspectRatio: "1 / 1", borderRadius: "8px", mb: 3 }} />
+              <Box component="img" src="/src/assets/tea-glitch.png" alt="tea glitch image" sx={{ width: "100%", aspectRatio: "1 / 1", borderRadius: "8px", mb: 3 }} />
               <Typography variant="h2" sx={{ fontWeight: 800, fontSize: "32px", lineHeight: "42px", color: "#EDF2EF", mb: 2 }}>
                 There's something brewing for <span style={{ color: "#F26212" }}>everyone</span>.
               </Typography>
