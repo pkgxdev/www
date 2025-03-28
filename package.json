@@ -33,6 +33,7 @@
     "@types/node": "^20.6.2",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/react-helmet": "^6.1.11",
     "@types/showdown": "^2.0.3",
     "@vitejs/plugin-react": "latest",
     "typescript": "latest",
