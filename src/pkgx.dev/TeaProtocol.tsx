@@ -82,12 +82,12 @@ const TeaProtocol = () => {
   return (
     <>
       <Helmet>
-        <title>Tea Protocol - The Future of Open Source</title>
-        <meta property="og:title" content="Tea Protocol - The Future of Open Source" />
-        <meta property="og:description" content="An Optimism-based network revolutionizing open-source incentives with tea.xyz." />
-        <meta property="og:image" content="https://yourdomain.com/imgs/og-tea-protocol.png" />
+        <title>Tea Protocol - Something New is Brewing</title>
+        <meta property="og:title" content="Tea Protocol - Something New is Brewing" />
+        <meta property="og:description" content="Get rewards for open-source contributions" />
+        <meta property="og:image" content="https://cdn.prod.website-files.com/650d0534262efafa72b3ccab/651a34689cfb3be975d1d0aa_tea_og_01.jpg" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/tea-protocol" />
+        <meta property="og:url" content="https://pkgx.dev/tea" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
