@@ -110,7 +110,7 @@ const TeaProtocol = () => {
             </Typography>
             <Box textAlign={{ xs: "center", md: "left" }}>
               <Button variant="contained" size="large" href="https://tea.xyz" sx={{ textTransform: "none", fontSize: "1.2rem", backgroundColor: "#74FAD1", color: "#0A0711", px: 4, py: 2 }}>
-                Learn More
+                Learn more about tea
               </Button>
             </Box>
           </Grid>
@@ -189,7 +189,7 @@ const TeaProtocol = () => {
             </Typography>
             <Stack direction={{ xs: "column", sm: "row" }} spacing={2} justifyContent="center">
               <Button variant="contained" size="large" href="https://tea.xyz" sx={{ textTransform: "none", fontSize: "1.2rem", backgroundColor: "#74FAD1", color: "#0A0711", px: 4, py: 2 }}>
-                Learn More
+                Learn more about tea
               </Button>
             </Stack>
           </Grid>
