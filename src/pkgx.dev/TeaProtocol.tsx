@@ -7,23 +7,13 @@ import {
   Box,
   Stack
 } from "@mui/material";
-import teaImage from "../../public/imgs/tea-icon.svg";
 import backgroundPattern from "../assets/pkgx-bg-pattern-right.svg";
 
-interface TeaStats {
-  totalBlocks: string;
-  dailyTransactions: string;
-  totalTransactions: string;
-  walletAddresses: string;
-  isLive?: boolean;
-}
-
-const fallbackStats: TeaStats = {
+const fallbackStats = {
   totalBlocks: "3.055M",
   dailyTransactions: "2.17M",
   totalTransactions: "90.155M",
-  walletAddresses: "349.601M",
-  isLive: false
+  walletAddresses: "349.601M"
 };
 
 const features = [
@@ -50,54 +40,43 @@ const features = [
 ];
 
 const TeaProtocol = () => {
-  const [stats, setStats] = React.useState<TeaStats>(fallbackStats);
+  const [stats, setStats] = React.useState(fallbackStats);
 
   React.useEffect(() => {
-    const fetchTeaStats = async () => {
+    const fetchStats = async () => {
       try {
-        const formatNumber = (val: string | number) =>
-          parseInt(val.toString(), 10).toLocaleString();
+        const format = (val) => parseInt(val).toLocaleString();
 
-        const fetchStat = async (url: string) => {
+        const fetchJSON = async (url) => {
           const res = await fetch(url);
-          if (!res.ok) {
-            throw new Error(`(${res.status}) ${await res.text()}`);
-          }
+          if (!res.ok) throw new Error("Request failed");
           return res.json();
         };
 
-        const [blockData, txsData, addrData] = await Promise.all([
-          fetchStat("https://assam.tea.xyz/api?module=proxy&action=eth_blockNumber"),
-          fetchStat("https://assam.tea.xyz/api?module=stats&action=txsCount"),
-          fetchStat("https://assam.tea.xyz/api?module=stats&action=addressCount")
+        const [blocksRes, txsRes, walletsRes] = await Promise.all([
+          fetchJSON("https://assam.tea.xyz/api?module=proxy&action=eth_blockNumber"),
+          fetchJSON("https://assam.tea.xyz/api?module=stats&action=txsCount"),
+          fetchJSON("https://assam.tea.xyz/api?module=stats&action=addressCount")
         ]);
 
-        const totalBlocks = formatNumber(parseInt(blockData.result, 16));
-        const totalTransactions = formatNumber(txsData.result);
-        const walletAddresses = formatNumber(addrData.result);
+        const totalBlocks = format(parseInt(blocksRes.result, 16));
+        const totalTransactions = format(txsRes.result);
+        const walletAddresses = format(walletsRes.result);
 
         setStats({
           totalBlocks,
           totalTransactions,
           walletAddresses,
-          dailyTransactions: fallbackStats.dailyTransactions,
-          isLive: true
+          dailyTransactions: fallbackStats.dailyTransactions
         });
       } catch (err) {
-        console.warn("Error fetching tea metrics:", err);
+        console.warn("Using fallback stats due to error:", err);
         setStats(fallbackStats);
       }
     };
 
-    fetchTeaStats();
+    fetchStats();
   }, []);
-
-  const socialProofData = [
-    { number: stats.totalBlocks, label: "Total Blocks" },
-    { number: stats.dailyTransactions, label: "Daily Transactions" },
-    { number: stats.totalTransactions, label: "Total Transactions" },
-    { number: stats.walletAddresses, label: "Wallet Addresses" }
-  ];
 
   return (
     <Box
@@ -112,7 +91,7 @@ const TeaProtocol = () => {
     >
       {/* Hero Section */}
       <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
-        <Grid container columnSpacing={{ md: 6 }} rowSpacing={4} alignItems="stretch" direction={{ xs: 'column-reverse', md: 'row' }}>
+        <Grid container spacing={{ xs: 4, md: 8 }} alignItems="stretch" direction={{ xs: 'column-reverse', md: 'row' }}>
           <Grid item xs={12} md={6} textAlign={{ xs: "center", md: "left" }} display="flex" flexDirection="column" justifyContent="center">
             <Typography sx={{ fontSize: "14px", fontWeight: 500, textTransform: "uppercase", color: "#F26212", mb: 1 }}>
               From the creator of homebrew
@@ -135,20 +114,20 @@ const TeaProtocol = () => {
               </Button>
             </Box>
           </Grid>
-          <Grid
-            item
-            xs={12}
-            md={6}
-            sx={{
-              backgroundColor: "#11111C",
-              borderRadius: "8px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              height: { xs: "300px", md: "auto" }
-            }}
-          >
-            <Box component="img" src="/imgs/placeholder.png" alt="Visual Placeholder" sx={{ width: "80%", maxWidth: "300px" }} />
+          <Grid item xs={12} md={6}>
+            <Box
+              sx={{
+                backgroundColor: "#11111C",
+                borderRadius: "8px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: { xs: "300px", md: "100%" },
+                width: "100%"
+              }}
+            >
+              <Box component="img" src="/imgs/placeholder.png" alt="Visual Placeholder" sx={{ width: "80%", maxWidth: "300px" }} />
+            </Box>
           </Grid>
         </Grid>
       </Container>
@@ -164,10 +143,10 @@ const TeaProtocol = () => {
           </Typography>
         </Box>
         <Grid container spacing={4} justifyContent="center">
-          {socialProofData.map((item, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
-              <Typography sx={{ fontWeight: "bold", fontSize: "32px", color: "#EDF2EF" }}>{item.number}</Typography>
-              <Typography variant="body1" sx={{ color: "#EDF2EF" }}>{item.label}</Typography>
+          {Object.entries(stats).map(([key, value]) => (
+            <Grid item xs={12} sm={6} md={3} key={key}>
+              <Typography sx={{ fontWeight: "bold", fontSize: "32px", color: "#EDF2EF" }}>{value}</Typography>
+              <Typography variant="body1" sx={{ color: "#EDF2EF" }}>{key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}</Typography>
             </Grid>
           ))}
         </Grid>
@@ -198,7 +177,7 @@ const TeaProtocol = () => {
         </Grid>
       </Container>
 
-      {/* Final Call-to-Action Section */}
+      {/* Final CTA */}
       <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
         <Grid container spacing={4} alignItems="center">
           <Grid item xs={12} md={6} textAlign="center">
