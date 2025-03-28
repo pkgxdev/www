@@ -46,9 +46,9 @@ const TeaProtocol = () => {
   React.useEffect(() => {
     const fetchStats = async () => {
       try {
-        const format = (val) => parseInt(val).toLocaleString();
+        const format = (val: string | number) => parseInt(val.toString()).toLocaleString();
 
-        const fetchJSON = async (url) => {
+        const fetchJSON = async (url: string) => {
           const res = await fetch(url);
           if (!res.ok) throw new Error("Request failed");
           return res.json();
