@@ -9,12 +9,23 @@ import {
 } from "@mui/material";
 import { Helmet } from "react-helmet";
 import backgroundPattern from "../assets/pkgx-bg-pattern-right.svg";
+import tea3dLogo from "../assets/tea-3d-logo.png";
+import teaGlitch from "../assets/tea-glitch.png";
 
 const fallbackStats = {
-  totalBlocks: "3.055M",
-  dailyTransactions: "2.17M",
-  totalTransactions: "90.155M",
-  walletAddresses: "349.601M"
+  assam: {
+    totalBlocks: "3.055M",
+    dailyTransactions: "2.17M",
+    totalTransactions: "90.155M",
+    walletAddresses: "349.601M"
+  },
+  sepolia: {
+    totalBlocks: "303.2k",
+    dailyTransactions: "329.2k",
+    totalTransactions: "661.8k",
+    walletAddresses: "687.8k",
+    kycAttestations: "30.5k"
+  }
 };
 
 const features = [
@@ -41,42 +52,40 @@ const features = [
 ];
 
 const TeaProtocol = () => {
-  const [stats, setStats] = React.useState(fallbackStats);
+  const [assamStats, setAssamStats] = React.useState(fallbackStats['assam']);
+  const [sepoliaStats, setSepoliaStats] = React.useState(fallbackStats['sepolia']);
 
   React.useEffect(() => {
     const fetchStats = async () => {
-      try {
-        const format = (val: string | number) => parseInt(val.toString()).toLocaleString();
+      // lambda proxy to bypass CORS
+      const response = await fetch(`https://yo2fkzmf2rh33u2b3bi3xhtqyi0toyqz.lambda-url.us-east-1.on.aws/?url=/stats&network=assam`);
+      const data = await response.json();
 
-        const fetchJSON = async (url: string) => {
-          const res = await fetch(url);
-          if (!res.ok) throw new Error("Request failed");
-          return res.json();
-        };
+      setAssamStats({
+        totalBlocks: parseInt(data.total_blocks).toLocaleString(),
+        dailyTransactions: `${(parseInt(data.transactions_today) / 1000000).toFixed(2)}M`,
+        totalTransactions: parseInt(data.total_transactions).toLocaleString(),
+        walletAddresses: parseInt(data.total_addresses).toLocaleString()
+      });
 
-        const [blocksRes, txsRes, walletsRes] = await Promise.all([
-          fetchJSON("https://assam.tea.xyz/api?module=proxy&action=eth_blockNumber"),
-          fetchJSON("https://assam.tea.xyz/api?module=stats&action=txsCount"),
-          fetchJSON("https://assam.tea.xyz/api?module=stats&action=addressCount")
-        ]);
+      const response2 = await fetch(`https://yo2fkzmf2rh33u2b3bi3xhtqyi0toyqz.lambda-url.us-east-1.on.aws/?url=/stats&network=sepolia`);
+      const data2 = await response2.json();
 
-        const totalBlocks = format(parseInt(blocksRes.result, 16));
-        const totalTransactions = format(txsRes.result);
-        const walletAddresses = format(walletsRes.result);
-
-        setStats({
-          totalBlocks,
-          totalTransactions,
-          walletAddresses,
-          dailyTransactions: fallbackStats.dailyTransactions
-        });
-      } catch (err) {
-        console.warn("Using fallback stats due to error:", err);
-        setStats(fallbackStats);
-      }
+      setSepoliaStats({
+        totalBlocks: parseInt(data2.total_blocks).toLocaleString(),
+        dailyTransactions: `${(parseInt(data2.transactions_today) / 1000000).toFixed(2)}M`,
+        totalTransactions: parseInt(data2.total_transactions).toLocaleString(),
+        walletAddresses: parseInt(data2.total_addresses).toLocaleString(),
+        kycAttestations: "30.5k"
+      });
     };
 
-    fetchStats();
+    fetchStats().catch((error) => {
+      console.error("Error fetching stats:", error);
+      setAssamStats(fallbackStats['assam']);
+      setSepoliaStats(fallbackStats['sepolia']);
+    });
+
   }, []);
 
   return (
@@ -101,6 +110,45 @@ const TeaProtocol = () => {
           width: "100%"
         }}
       >
+
+        {/* Metrics Section */}
+        <Container maxWidth="lg" sx={{ textAlign: "center", py: { xs: 6, md: 10 } }}>
+          <Box sx={{ maxWidth: "700px", mx: "auto" }}>
+            <Typography variant="h2" gutterBottom sx={{ fontWeight: 800, fontSize: "32px", lineHeight: "42px", color: "#EDF2EF" }}>
+              Everyone's <span style={{ color: "#F26212" }}>sipping the tea</span>.
+            </Typography>
+            <Typography variant="body1" paragraph sx={{ color: "#EDF2EF" }}>
+              tea Protocol is trusted by hundreds of thousands of developers, contributors, and organizations worldwide. See the impact we've made in the open-source community.
+            </Typography>
+          </Box>
+          <Box>
+            <Typography variant="h3" gutterBottom sx={{ fontWeight: 800, fontSize: "24px", lineHeight: "32px", color: "#EDF2EF" }}>
+              Sepolia Network Stats
+            </Typography>
+            <Grid container spacing={4} justifyContent="center">
+              {Object.entries(sepoliaStats).map(([key, value]) => (
+                <Grid item xs={12} sm={6} md={2} key={key}>
+                  <Typography sx={{ fontWeight: "bold", fontSize: "32px", color: "#EDF2EF" }}>{value}</Typography>
+                  <Typography variant="body1" sx={{ color: "#EDF2EF" }}>{key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}</Typography>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+          <Box>
+            <Typography variant="h3" gutterBottom sx={{ fontWeight: 800, fontSize: "24px", lineHeight: "32px", color: "#EDF2EF" }}>
+              Assam Network Stats (deprecated)
+            </Typography>
+            <Grid container spacing={4} justifyContent="center">
+              {Object.entries(assamStats).map(([key, value]) => (
+                <Grid item xs={12} sm={6} md={2} key={key}>
+                  <Typography sx={{ fontWeight: "bold", fontSize: "32px", color: "#EDF2EF" }}>{value}</Typography>
+                  <Typography variant="body1" sx={{ color: "#EDF2EF" }}>{key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}</Typography>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Container>
+
         {/* Hero Section */}
         <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
           <Grid container spacing={{ xs: 4, md: 8 }} alignItems="stretch" direction={{ xs: 'column-reverse', md: 'row' }}>
@@ -138,29 +186,9 @@ const TeaProtocol = () => {
                   width: "100%"
                 }}
               >
-                <Box component="img" src="/src/assets/tea-3d-logo.png" alt="tea logo" sx={{ width: "80%", maxWidth: "300px" }} />
+                <Box component="img" src={tea3dLogo} alt="tea logo" sx={{ width: "80%", maxWidth: "300px" }} />
               </Box>
             </Grid>
-          </Grid>
-        </Container>
-
-        {/* Metrics Section */}
-        <Container maxWidth="lg" sx={{ textAlign: "center", py: { xs: 6, md: 10 } }}>
-          <Box sx={{ maxWidth: "700px", mx: "auto" }}>
-            <Typography variant="h2" gutterBottom sx={{ fontWeight: 800, fontSize: "32px", lineHeight: "42px", color: "#EDF2EF" }}>
-              Everyone's <span style={{ color: "#F26212" }}>sipping the tea</span>.
-            </Typography>
-            <Typography variant="body1" paragraph sx={{ color: "#EDF2EF" }}>
-              tea Protocol is trusted by hundreds of thousands of developers, contributors, and organizations worldwide. See the impact we've made in the open-source community.
-            </Typography>
-          </Box>
-          <Grid container spacing={4} justifyContent="center">
-            {Object.entries(stats).map(([key, value]) => (
-              <Grid item xs={12} sm={6} md={3} key={key}>
-                <Typography sx={{ fontWeight: "bold", fontSize: "32px", color: "#EDF2EF" }}>{value}</Typography>
-                <Typography variant="body1" sx={{ color: "#EDF2EF" }}>{key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}</Typography>
-              </Grid>
-            ))}
           </Grid>
         </Container>
 
@@ -168,7 +196,7 @@ const TeaProtocol = () => {
         <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={4}>
-              <Box component="img" src="/src/assets/tea-glitch.png" alt="tea glitch image" sx={{ width: "100%", aspectRatio: "1 / 1", borderRadius: "8px", mb: 3 }} />
+              <Box component="img" src={teaGlitch} alt="tea glitch image" sx={{ width: "100%", aspectRatio: "1 / 1", borderRadius: "8px", mb: 3 }} />
               <Typography variant="h2" sx={{ fontWeight: 800, fontSize: "32px", lineHeight: "42px", color: "#EDF2EF", mb: 2 }}>
                 There's something brewing for <span style={{ color: "#F26212" }}>everyone</span>.
               </Typography>
