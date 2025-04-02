@@ -71,12 +71,15 @@ const TeaProtocol = () => {
       const response2 = await fetch(`https://yo2fkzmf2rh33u2b3bi3xhtqyi0toyqz.lambda-url.us-east-1.on.aws/?url=/stats&network=sepolia`);
       const data2 = await response2.json();
 
+      const response3 = await fetch('https://api.app.sepolia.tea.xyz/kycCount');
+      const data3 = await response3.json();
+
       setSepoliaStats({
         totalBlocks: parseInt(data2.total_blocks).toLocaleString(),
         dailyTransactions: `${(parseInt(data2.transactions_today) / 1000000).toFixed(2)}M`,
         totalTransactions: parseInt(data2.total_transactions).toLocaleString(),
         walletAddresses: parseInt(data2.total_addresses).toLocaleString(),
-        kycAttestations: "30.5k"
+        kycAttestations: parseInt(data3.kycCount).toLocaleString()
       });
     };
 
