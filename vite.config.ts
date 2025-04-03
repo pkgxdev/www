@@ -17,6 +17,9 @@ const htmlPlugin = () => {
       ).replace(
         /<meta name="description" content="(.*?)" \/>/,
         `<meta name="description" content="${description()}" />`
+      ).replace(
+        /<script><\/script>/,
+        scripts()
       )
     },
   }
@@ -51,5 +54,31 @@ function description() {
     return 'Mash up millions of Open Source packages into monstrously powerful scripts'
   case 'pkgx.app':
     return 'OPEN SOURCE IS A TREASURE TROVE. What jewel will you discover today?'
+  }
+}
+
+function scripts() {
+  switch (process.env.VITE_HOST) {
+  case 'pkgx.dev':
+    return `<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1632217704843931');
+    fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1632217704843931&ev=PageView&noscript=1" />
+</noscript>`;
+  default: return '';
   }
 }
