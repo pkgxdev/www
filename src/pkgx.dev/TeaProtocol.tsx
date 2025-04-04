@@ -71,7 +71,7 @@ const TeaProtocol = () => {
       const response2 = await fetch(`https://yo2fkzmf2rh33u2b3bi3xhtqyi0toyqz.lambda-url.us-east-1.on.aws/?url=/stats&network=sepolia`);
       const data2 = await response2.json();
 
-      const response3 = await fetch('https://api.app.sepolia.tea.xyz/kycCount');
+      const response3 = await fetch('https://api.sepolia.app.tea.xyz/kycCount');
       const data3 = await response3.json();
 
       setSepoliaStats({
