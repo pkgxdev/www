@@ -1,0 +1,9 @@
+{
+  "description": "Simple and easy to use \"script runner\" written in Rust.",
+  "provides": [
+    "bake"
+  ],
+  "github": "https://github.com/ali77gh/bake-rs",
+  "project": "crates.io/bake-rs",
+  "displayName": "bake"
+}
