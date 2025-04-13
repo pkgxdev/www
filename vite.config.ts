@@ -34,12 +34,15 @@ export default defineConfig({
 function title() {
   switch (process.env.VITE_HOST) {
   case 'pkgx.sh':
+  case 'www.pkgx.sh':
     return 'Run Anything'
   case 'pkgx.dev':
+  case 'www.pkgx.dev':
     return 'pkgx, inc.'
   case 'mash.pkgx.sh':
     return 'mash — The Package Manager for Scripts'
   case 'pkgx.app':
+  case 'www.pkgx.app':
     return 'The App Store for Open Source'
   }
 }
@@ -47,12 +50,15 @@ function title() {
 function description() {
   switch (process.env.VITE_HOST) {
   case 'pkgx.sh':
+  case 'www.pkgx.sh':
     return 'pkgx is a blazingly fast, standalone, cross‐platform binary that runs anything'
   case 'pkgx.dev':
+  case 'www.pkgx.dev':
     return 'Crafters of fine Open Source products'
   case 'mash.pkgx.sh':
     return 'Mash up millions of Open Source packages into monstrously powerful scripts'
   case 'pkgx.app':
+  case 'www.pkgx.app':
     return 'OPEN SOURCE IS A TREASURE TROVE. What jewel will you discover today?'
   }
 }
@@ -60,6 +66,7 @@ function description() {
 function scripts() {
   switch (process.env.VITE_HOST) {
   case 'pkgx.dev':
+  case 'www.pkgx.dev':
     return `<script>
     !function (f, b, e, v, n, t, s) {
         if (f.fbq) return; n = f.fbq = function () {
