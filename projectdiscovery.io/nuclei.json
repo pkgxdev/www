@@ -1,0 +1,13 @@
+{
+  "brief": "HTTP/DNS scanner configurable via YAML templates",
+  "description": "Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.",
+  "homepage": "https://nuclei.projectdiscovery.io/",
+  "provides": [
+    "nuclei"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/nuclei",
+  "license": "MIT",
+  "github": "https://github.com/projectdiscovery/nuclei",
+  "project": "projectdiscovery.io/nuclei",
+  "displayName": "nuclei"
+}
