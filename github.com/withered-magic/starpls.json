@@ -1,0 +1,9 @@
+{
+  "description": "An LSP implementation for Starlark, the configuration language used by Bazel and Buck2.",
+  "provides": [
+    "starpls"
+  ],
+  "github": "https://github.com/withered-magic/starpls",
+  "project": "github.com/withered-magic/starpls",
+  "displayName": "starpls"
+}
