@@ -55,7 +55,7 @@ for (const script of JSON.parse(Deno.readTextFileSync(scripthubJson)).scripts) {
   if (description) rv.push({
     type: 'script',
     time: new Date(birthtime),
-    description,
+    description: description.split(". ")?.[0] ?? description,
     title: fullname,
     image: avatar,
     url
