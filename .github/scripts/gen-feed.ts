@@ -31,6 +31,7 @@ for (const pkg of JSON.parse(Deno.readTextFileSync(pkgsJson))) {
 }
 
 import { extract } from "https://deno.land/std@0.206.0/front_matter/any.ts";
+import { describe } from "node:test";
 
 for (const {name, isFile} of Deno.readDirSync(`./blog/content`)) {
   if (!isFile || !name.endsWith(".md")) continue
@@ -50,13 +51,13 @@ for (const {name, isFile} of Deno.readDirSync(`./blog/content`)) {
 }
 
 for (const script of JSON.parse(Deno.readTextFileSync(scripthubJson)).scripts) {
-  const { fullname, description, birthtime, avatar } = script
+  const { cmd, fullname, description, birthtime, avatar } = script
   const url = `https://mash.pkgx.sh/${fullname}`
   if (description) rv.push({
-    type: 'script',
+    type: 'mash',
     time: new Date(birthtime),
-    description: description.split(". ")?.[0] ?? description,
-    title: fullname,
+    description: demarkdown(description),
+    title: cmd,
     image: avatar,
     url
   })
@@ -65,3 +66,11 @@ for (const script of JSON.parse(Deno.readTextFileSync(scripthubJson)).scripts) {
 rv.sort((a, b) => b.time.getTime() - a.time.getTime())
 
 console.log(JSON.stringify(rv))
+
+function demarkdown(input: string): string {
+  let sentences = input.split('.').filter(x => x);
+  if (sentences.length > 1) {
+    input = sentences[0] + '.'
+  }
+  return input.replaceAll(/\[([^\]]+?)\]\(([^\)]+?)\)/g, '$1');
+}

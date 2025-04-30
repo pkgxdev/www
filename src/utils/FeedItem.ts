@@ -1,6 +1,6 @@
 
 type FeedItem = {
-  type: 'blog' | 'pkg' |'script' | 'highlight'
+  type: 'blog' | 'pkg' |'mash' | 'highlight'
   url: string,
   title: string,
   time: Date,

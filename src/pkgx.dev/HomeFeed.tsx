@@ -17,7 +17,7 @@ export default function HomeFeed() {
   const isxs = useMediaQuery(theme.breakpoints.down('md'));
 
   return <>
-    <Stack textAlign='center'>
+    <Stack textAlign='center' sx={{pb: 6}}>
       <Typography variant='overline'>We are Crafters of Fine</Typography>
       <HeroTypography>
         Open Source
@@ -26,60 +26,56 @@ export default function HomeFeed() {
 
     <Grid container spacing={{xs: 1, md: 2}}>
       <Grid size={{xs: 6, md: 4}}>
-        <Card raised={true}>
-          <CardActionArea href='https://github.com/pkgxdev/pkgx'>
-            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_pkgx} />
+        <Card raised={true} sx={{ height: '100%' }}>
+          <CardActionArea href='https://github.com/pkgxdev/pkgx' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='overline' component="h2">
+              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', textTransform: 'uppercase'}}>
                 pkgx
               </Typography>
-              <Typography variant='caption' component="h3">
-                Fast, small, package runner
+              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
+                Fast, small, package runner.
               </Typography>
             </CardContent>
           </CardActionArea>
         </Card>
       </Grid>
       <Grid size={{xs: 6, md: 4}}>
-        <Card raised={true}>
-          <CardActionArea href='https://github.com/pkgxdev/dev'>
-            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_dev} />
+        <Card raised={true} sx={{ height: '100%' }}>
+          <CardActionArea href='https://github.com/pkgxdev/pkgm' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='overline' component="h2">
-                dev
-              </Typography>
-              <Typography variant='caption' component="h3">
-                Isolated, reproducible development environments
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-      <Grid size={{xs: 6, md: 4}}>
-        <Card raised={true}>
-          <CardActionArea href='https://github.com/pkgxdev/pkgm'>
-            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_pkgm} />
-            <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='overline' component="h2">
+              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', textTransform: 'uppercase'}}>
                 pkgm
               </Typography>
-              <Typography variant='caption' component="h3">
-                Install <code>pkgx</code> packages to <code>/usr/local</code>
+              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
+                Install <code>pkgx</code> packages to <code>/usr/local</code>.
               </Typography>
             </CardContent>
           </CardActionArea>
         </Card>
       </Grid>
       <Grid size={{xs: 6, md: 4}}>
-        <Card raised={true}>
-          <CardActionArea href='https://github.com/pkgxdev/mash'>
-            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_mash} />
+        <Card raised={true} sx={{ height: '100%' }}>
+          <CardActionArea href='https://github.com/pkgxdev/dev' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='overline' component="h2">
+            <Typography variant='h3' component="h2" style={{fontFamily: 'shader', textTransform: 'uppercase'}}>
+                dev
+              </Typography>
+              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
+                Isolated, reproducible development environments.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+      <Grid size={{xs: 6, md: 4}}>
+        <Card raised={true} sx={{ height: '100%' }}>
+          <CardActionArea href='https://github.com/pkgxdev/mash' sx={{ height: '100%' }}>
+            <CardContent sx={isxs ? {p: 0.75} : undefined}>
+              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', textTransform: 'uppercase'}}>
                 mash
               </Typography>
-              <Typography variant='caption' component="h3">
-                The package manager for scripts
+              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
+                The package manager for scripts.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -87,14 +83,27 @@ export default function HomeFeed() {
       </Grid>
       <Grid size={{xs: 6, md: 4}}>
         <Card raised={true}>
-          <CardActionArea href='https://github.com/pkgxdev/pkgo'>
-            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_unpkg} />
+          <CardActionArea href='https://github.com/pkgxdev/pkgo' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='overline' component="h2">
+              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', textTransform: 'uppercase'}}>
                 pkgo
               </Typography>
-              <Typography variant='caption' component="h3">
-                Package…GO! Run typically unpackagable OSS in sandboxes
+              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
+                Package…GO! Run typically unpackagable OSS in sandboxes.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+      <Grid size={{xs: 6, md: 4}}>
+        <Card raised={true} sx={{ height: '100%' }}>
+          <CardActionArea href='https://github.com/pkgxdev/mcp' sx={{ height: '100%' }}>
+            <CardContent sx={isxs ? {p: 0.75} : undefined}>
+              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', fontVariant: 'small-caps'}}>
+                pkgxMCP
+              </Typography>
+              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
+                Can your LLM run anything? Now it can.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -102,14 +111,13 @@ export default function HomeFeed() {
       </Grid>
       <Grid size={{xs: 6, md: 4}}>
         <Card raised={true}>
-          <CardActionArea href='https://github.com/teaxyz/teaBASE'>
-            <CardMedia sx={{aspectRatio: '1/1'}} component={Box} image={img_teaBASE} />
+          <CardActionArea href='https://github.com/teaxyz/teaBASE' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='overline' component="h2">
+              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', fontVariant: 'small-caps'}}>
                 teaBASE
               </Typography>
-              <Typography variant='caption' component="h3">
-                The Developer Cockpit
+              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
+                The Developer Cockpit.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -184,7 +192,7 @@ function FeedItemBox(item: FeedItem) {
   const color = (() => {
     switch (type) {
       case 'blog': return 'secondary'
-      case 'script': return 'primary'
+      case 'mash': return 'primary'
     }
   })()
 
@@ -203,9 +211,9 @@ function FeedItemBox(item: FeedItem) {
     <Card
       variant={color ? 'outlined' : undefined}
       raised={!!color}
-      sx={{ borderColor, borderWidth }}
+      sx={{ borderColor, borderWidth, height: '100%' }}
     >
-      <CardActionArea href={url}>
+      <CardActionArea href={url} sx={{ height: '100%' }}>
         <CardMedia
           height={isxs ? 150 : undefined}
           sx={{aspectRatio: isxs ? undefined : '1/1'}}
