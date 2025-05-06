@@ -78,11 +78,12 @@ function SearchResults() {
   }
 
   function fu(input: any) {
+    console.error(input);
     const {project, displayName, brief} = input
     const tertiary = displayName != project ? project : undefined;
     return <ListItem key={project} disableGutters disablePadding dense>
       <ListItemButton href={`/pkgs/${project}/`} dense>
-        <ListItemText primary={displayName} secondary={brief || tertiary} />
+        <ListItemText primary={displayName || project} secondary={brief || tertiary} />
       </ListItemButton>
     </ListItem>
   }
