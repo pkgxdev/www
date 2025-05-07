@@ -1,0 +1,9 @@
+{
+  "description": "Terminal-based markdown note manager.",
+  "provides": [
+    "rucola"
+  ],
+  "github": "https://github.com/Linus-Mussmaecher/rucola",
+  "project": "crates.io/rucola-notes",
+  "displayName": "rucola"
+}
