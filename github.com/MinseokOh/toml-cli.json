@@ -1,0 +1,9 @@
+{
+  "description": "A simple CLI for editing and querying TOML files.",
+  "provides": [
+    "toml-cli"
+  ],
+  "github": "https://github.com/MinseokOh/toml-cli",
+  "project": "github.com/MinseokOh/toml-cli",
+  "displayName": "toml-cli"
+}
