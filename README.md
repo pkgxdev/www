@@ -37,11 +37,15 @@ on the CloudFront Distribution.
 ### sync
 
 ```sh
-cd public/pkgs && AWS_PROFILE=tea \
+cd public/pkgs
+AWS_PROFILE=tea \
   aws s3 sync \
     . \
     s3://www.pkgx.dev/pkgs \
   --exclude=.DS_Store \
   --exclude=\*/.DS_Store \
   --exclude=.git/\*
+git add .
+git commit -m 'add pkgs'
+git push
 ```

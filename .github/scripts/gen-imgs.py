@@ -33,25 +33,9 @@ def gen_img(root, json_file):
     with open(os.path.join(root, json_file), 'r') as f:
         metadata = json.load(f)
 
-        output = get_painting_feature(metadata.get('displayName'), metadata.get('description'))
-        feature = output.get('theme')
-        imagery = output.get('imagery')
-        colors = output.get('colors')
-
-        if isinstance(imagery, list):
-            imagery = ", ".join(imagery)
-        if isinstance(colors, list):
-            colors = ", ".join(colors)
+        prompt = get_painting_feature(metadata.get('displayName'), metadata.get('description'), metadata.get('homepage') or metadata.get('project'))
 
         seed = random.randint(0, 2**32 - 1)
-
-        prompt = f"""
-        Create an abstract oil painting that features or represents: {feature}.
-        Use an expressive explosion of {colors} and hyper-detailed textures.
-        Highlight the artwork with gleaming golden accents that radiate light amidst a brilliance of harmony.
-        Incorporate ethereal elements like {imagery} to symbolize the peaceful blending of these forces.
-        Ensure a perfect composition with intricate pearl filigree, capturing a serene and radiant ambiance.
-        """
 
         prompt = re.sub(r'\s+', ' ', prompt).strip()
 
@@ -88,125 +72,55 @@ def gen_img(root, json_file):
 
         console.print(f"Done {out_file}", style="bold green")
 
-def get_painting_feature(name, description):
-    prompt = "I am making a painting about an open source package"
-    if name:
-        prompt += f" called “{name}”"
-    if description:
-        prompt += f" which is described as “{description}”"
-
-    prompt += f""".
-From that name and description extract some language that can be featured in the image.
-Eg. if the description is “foo is a bridge to bar” then output BRIDGE.
-Keep it physical. If the description is "foo is a dynamic runtime bridge to bar” then output BRIDGE, not DYNAMIC RUNTIME BRIDGE.
-Remember I need to paint this!
-If the name is a play on words then find the play on words. Eg “deno” is a play on dino ie. a dinosaur.
-If you know the logo for a project and the logo is a good theme, then say that. Eg. “deno”’s logo is a dinosaur.
-If the name contains a word I can paint, use it! Eg. from `libcap` you can say `cap`.
-Don’t be generic. I have ten million open source packages. eg. don’t pick `lib` or `code` or `syntax`, but eg. database is ok.
-I need the output as JSON "{{theme: ""}}.
-I am feeding the output to a script, so if you don’t output json in the above form my script will break.
-Thank you sir.
-"""
-    prompt = re.sub(r'\s+', ' ', prompt).strip()
-
-    print(prompt)
-
-    proc = subprocess.run(['pkgx', 'ollama', 'run', 'deepseek-r1', f"Instruct: {prompt}\nOutput: "], capture_output=True, text=True)
-    result = proc.stdout
-
-    console.print(result, style="yellow")
-
-    result = result[result.index("</think>") + len("</think>"):].strip()
-
-    output = {}
-
-    match = re.search(r'{\s*"?theme"?:(.*?)}', result, re.DOTALL)
-    if match:
-        output['theme'] = match.group(1)
-    else:
-        # sometimes it just outputs the theme. Often with surrounding description, but whatever
-        output['theme'] = re.sub(r'\s+', ' ', result).strip()
-
+def get_painting_feature(name, description, homepage):
     prompt = f"""
-I am making an abstract landscape oil painting with the theme "{output['theme']}".
-I need an appropriate color palette. Pick one of these:
+I need an image prompt for an open source package so I can display it on https://pkgx.dev/pkgs/
 
-```markdown
+The package is {name}: {description}
+
+The package homepage is {homepage} (feel free to go there and read it for more context).
+
+An example prompt I have used is:
+
+```
+Create an abstract oil painting that features: krampus
+Use an expressive explosion of Charcoal Gray, Off-White, Olive Green, Burnt Sienna, and Blush Pink with and hyper-detailed textures. Highlight the artwork with gleaming golden accents that radiate light amidst a brilliance of harmony.
+Incorporate ethereal elements like clouds, storms, rainbows, snow to symbolize the peaceful blending of these forces.
+Ensure a perfect composition with intricate pearl filigree, capturing a serene and radiant ambiance
+```
+
+The package was krampus, a Command-line tool to kill one or more processes by port number.
+Extract a good object or theme to paint. Figure out colors and scenary. Maintain the fantastical oil-painting style.
+
+Many packages are pretty abstract. If so, figure out some object to represent that the painting should feature.
+Don’t list the entire package description in the prompt as the image generator will not be able to handle it.
+
+Avoid clock imagery unless the package is literally called “clock” or its purpose is time related.
+
+End the prompt with `Ensure a perfect composition with intricate pearl filigree, capturing a serene and radiant ambiance` because it causes the image generator to stick to the style I want.
+
+Pick complementary color palettes like:
+
 - black, white, orange, beige, and pink
 - Charcoal Gray, Off-White, Olive Green, Burnt Sienna, and Blush Pink
 - Pearl White, Crimson Red, Champagne, and Pale Peach
 - Forest Green, Ivory, Coral Orange, Sand Beige, and Dusty Rose
 - Espresso Brown, Creamy White, Golden Yellow, Taupe, and Mauve
 - Jet Black, Soft Gray, Teal, Warm Amber, and Powder Pink
-```
 
-If a theme requires it, adapt the color palette (ideally minimally), eg. if the theme is “Ruby” then add the color ruby!
-I need the output as JSON "{{colors: ""}}.
-Output the complete list item of colors, not just parts.
-I am feeding the output to a script, so if you don’t output json in the above form my script will break.
-Thank you sir.
+The above color palettes are just examples. You can pick any color palette you want (in the same vein).
+
+Please only output the prompt as I am feeding this output directly to Stable Diffusion Web-UI.
 """
+
     print(prompt)
 
-    prompt = f"Instruct: {prompt}\nOutput: "
-
-    proc = subprocess.run(['pkgx', 'ollama', 'run', 'deepseek-r1', prompt], capture_output=True, text=True)
+    proc = subprocess.run(['pkgx', 'llm', 'prompt', f"Instruct: {prompt}\nOutput: "], capture_output=True, text=True)
     result = proc.stdout
 
-    console.print(result, style="blue")
+    console.print(result, style="yellow")
 
-    result = result[result.index("</think>") + len("</think>"):].strip()
-
-    match = re.search(r'{\s*"?colors"?:(.*?)}', result, re.DOTALL)
-    if match:
-        output['colors'] = match.group(1)
-    else:
-        # sometimes it just outputs the theme. Often with surrounding description, but whatever
-        output['colors'] = re.sub(r'\s+', ' ', result).strip()
-
-    prompt = f"""
-I have a theme: {output['theme']} and colors: {output['colors']}.
-Now pick from following list of imagery options to best fit that theme and color selection:
-
-```markdown
-- oceans, waves, tides, coral reefs
-- volcanoes, lava, ash, craters
-- glaciers, icebergs, frost, polar lights
-- caves, stalactites, stalagmites, echoes
-- prairies, grasslands, sunrises
-- jungles, vines, canopies
-- cliffs, canyons, gorges, waterfalls
-- auroras, meteors, comets, cosmic dust, moons, planetscape
-- reefs, atolls, tropica
-- twilight, dawn, dusk, moonlight
-```
-
-If none fit and you are inspired please provide your own imagery or adapt the options.
-I need the output as JSON "{{imagery: "FOO, BAR, BAZ, ETC"}}.
-Output the complete list item of imagery items, not just selected items.
-I am feeding the output to a script, so if you don’t output json in the above form my script will break.
-Thank you sir.
-"""
-    print(prompt)
-
-    prompt = f"Instruct: {prompt}\nOutput: "
-
-    proc = subprocess.run(['pkgx', 'ollama', 'run', 'deepseek-r1', prompt], capture_output=True, text=True)
-    result = proc.stdout
-
-    console.print(result, style="green")
-
-    result = result[result.index("</think>") + len("</think>"):].strip()
-
-    match = re.search(r'{\s*"?imagery"?:(.*?)}', result, re.DOTALL)
-    if match:
-        output['imagery'] = match.group(1)
-    else:
-        # sometimes it just outputs the theme. Often with surrounding description, but whatever
-        output['imagery'] = re.sub(r'\s+', ' ', result).strip()
-
-    return output
+    return result
 
 url = "http://127.0.0.1:7860/sdapi/v1/txt2img"
 console = Console()
