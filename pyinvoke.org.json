@@ -1,0 +1,13 @@
+{
+  "brief": "Pythonic task management & command execution",
+  "description": "Pythonic task management & command execution.",
+  "homepage": "https://www.pyinvoke.org/",
+  "provides": [
+    "invoke"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/pyinvoke",
+  "license": "BSD-2-Clause",
+  "github": "https://github.com/pyinvoke/invoke",
+  "project": "pyinvoke.org",
+  "displayName": "invoke"
+}
