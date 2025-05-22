@@ -1,0 +1,9 @@
+{
+  "description": "Simple CLI tool to migrate from Rye to Uv",
+  "provides": [
+    "rye-uv"
+  ],
+  "github": "https://github.com/lucianosrp/rye-uv",
+  "project": "github.com/lucianosrp/rye-uv",
+  "displayName": "rye-uv"
+}

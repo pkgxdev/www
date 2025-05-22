@@ -1,0 +1,13 @@
+{
+  "brief": "Open source test framework for acceptance testing",
+  "description": "Generic automation framework for acceptance testing and RPA",
+  "homepage": "https://robotframework.org/",
+  "provides": [
+    "robot"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/robot-framework",
+  "license": "Apache-2.0",
+  "github": "https://github.com/robotframework/robotframework",
+  "project": "robotframework.org",
+  "displayName": "robot"
+}

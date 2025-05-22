@@ -1,0 +1,13 @@
+{
+  "brief": "Disaster recovery for Kubernetes resources and persistent volumes",
+  "description": "Backup and migrate Kubernetes applications and their persistent volumes",
+  "homepage": "https://velero.io/",
+  "provides": [
+    "velero"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/velero",
+  "license": "Apache-2.0",
+  "github": "https://github.com/vmware-tanzu/velero",
+  "project": "velero.io",
+  "displayName": "velero"
+}

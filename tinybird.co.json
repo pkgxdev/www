@@ -1,0 +1,7 @@
+{
+  "provides": [
+    "tb"
+  ],
+  "project": "tinybird.co",
+  "displayName": "tb"
+}
