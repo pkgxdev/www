@@ -44,7 +44,7 @@ def gen_img(root, json_file):
             "steps": 20,
             "width": 768,
             "height": 768,
-            "negative_prompt": "text, pearls, artist signature, negativeXL_D, border",
+            "negative_prompt": "text, pearls, artist signature, negativeXL_D, border, watermark",
             "sd_model_checkpoint": "wildcardxXLTURBO_wildcardxXLTURBOV10.safetensors [276d222ef0]",
             "seed": seed
         }
@@ -73,10 +73,15 @@ def gen_img(root, json_file):
         console.print(f"Done {out_file}", style="bold green")
 
 def get_painting_feature(name, description, homepage):
+    if description:
+        description = "It is described as " + description + ". If the package is for Python incorporate snakes, if for Ruby incorporate rubies, if for Rust incorporate rusty metal, etc."
+    else:
+        description = ""
+
     prompt = f"""
 I need an image prompt for an open source package so I can display it on https://pkgx.dev/pkgs/
 
-The package is {name}: {description}
+The package is called {name}. If this can be painted, please feature it prominently! {description}
 
 The package homepage is {homepage} (feel free to go there and read it for more context).
 
@@ -90,7 +95,7 @@ Ensure a perfect composition with intricate pearl filigree, capturing a serene a
 ```
 
 The package was krampus, a Command-line tool to kill one or more processes by port number.
-Extract a good object or theme to paint. Figure out colors and scenary. Maintain the fantastical oil-painting style.
+Extract a good object to paint. Figure out colors and scenary. Maintain the fantastical oil-painting style.
 
 Many packages are pretty abstract. If so, figure out some object to represent that the painting should feature.
 Don’t list the entire package description in the prompt as the image generator will not be able to handle it.
@@ -109,6 +114,10 @@ Pick complementary color palettes like:
 - Jet Black, Soft Gray, Teal, Warm Amber, and Powder Pink
 
 The above color palettes are just examples. You can pick any color palette you want (in the same vein).
+
+I want to again emphasize that if the package name ({name}) can be painted, please feature it prominently in the painting. If not, extract a good object to paint.
+
+Figure out colors and scenary. Maintain the fantastical oil-painting style.
 
 Please only output the prompt as I am feeding this output directly to Stable Diffusion Web-UI.
 """
