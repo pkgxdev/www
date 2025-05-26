@@ -1,0 +1,10 @@
+{
+  "description": "A lightweight LDAP server for development, home use, or CI",
+  "provides": [
+    "glauth",
+    "glauth-setup"
+  ],
+  "github": "https://github.com/glauth/glauth",
+  "project": "github.com/glauth/glauth",
+  "displayName": "glauth"
+}

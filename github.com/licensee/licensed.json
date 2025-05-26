@@ -1,0 +1,12 @@
+{
+  "brief": "Cache and verify the licenses of dependencies",
+  "description": "A Ruby gem to cache and verify the licenses of dependencies",
+  "provides": [
+    "licensed"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/licensed",
+  "license": "MIT",
+  "github": "https://github.com/github/licensed",
+  "project": "github.com/licensee/licensed",
+  "displayName": "licensed"
+}
