@@ -1,0 +1,10 @@
+{
+  "description": "A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers.",
+  "homepage": "https://rioterm.com",
+  "provides": [
+    "rio"
+  ],
+  "github": "https://github.com/raphamorim/rio",
+  "project": "rioterm.com",
+  "displayName": "rio"
+}

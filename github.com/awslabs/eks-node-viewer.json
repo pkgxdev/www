@@ -1,0 +1,9 @@
+{
+  "description": "EKS Node Viewer",
+  "provides": [
+    "eks-node-viewer"
+  ],
+  "github": "https://github.com/awslabs/eks-node-viewer",
+  "project": "github.com/awslabs/eks-node-viewer",
+  "displayName": "eks-node-viewer"
+}

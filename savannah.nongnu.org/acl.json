@@ -1,0 +1,9 @@
+{
+  "provides": [
+    "chacl",
+    "getfacl",
+    "setfacl"
+  ],
+  "project": "savannah.nongnu.org/acl",
+  "displayName": "acl"
+}

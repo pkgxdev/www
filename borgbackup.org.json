@@ -1,0 +1,14 @@
+{
+  "brief": "Deduplicating archiver with compression and authenticated encryption",
+  "description": "Deduplicating archiver with compression and authenticated encryption.",
+  "homepage": "https://www.borgbackup.org/",
+  "provides": [
+    "borg",
+    "borgfs"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/borgbackup",
+  "license": "BSD-3-Clause",
+  "github": "https://github.com/borgbackup/borg",
+  "project": "borgbackup.org",
+  "displayName": "borg"
+}

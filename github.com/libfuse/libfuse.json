@@ -1,0 +1,12 @@
+{
+  "brief": "Reference implementation of the Linux FUSE interface",
+  "description": "The reference implementation of the Linux FUSE (Filesystem in Userspace) interface",
+  "provides": [
+    "fusermount3"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/libfuse",
+  "license": "LGPL-2.1-only OR GPL-2.0-only",
+  "github": "https://github.com/libfuse/libfuse",
+  "project": "github.com/libfuse/libfuse",
+  "displayName": "fusermount3"
+}

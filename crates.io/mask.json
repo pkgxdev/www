@@ -1,0 +1,12 @@
+{
+  "brief": "CLI task runner defined by a simple markdown file",
+  "description": "🎭 A CLI task runner defined by a simple markdown file",
+  "provides": [
+    "mask"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mask",
+  "license": "MIT",
+  "github": "https://github.com/jakedeichert/mask",
+  "project": "crates.io/mask",
+  "displayName": "mask"
+}

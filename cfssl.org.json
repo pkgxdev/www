@@ -1,0 +1,16 @@
+{
+  "description": "CFSSL: Cloudflare's PKI and TLS toolkit",
+  "homepage": "https://cfssl.org/",
+  "provides": [
+    "cfssl",
+    "cfssl-bundle",
+    "cfssl-certinfo",
+    "cfssl-newkey",
+    "cfssl-scan",
+    "cfssljson",
+    "mkbundle",
+    "multirootca"
+  ],
+  "github": "https://github.com/cloudflare/cfssl",
+  "project": "cfssl.org"
+}
