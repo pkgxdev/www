@@ -1,0 +1,10 @@
+{
+  "description": "'JS Make' - parallel task runner for the frontend ecosystem with a JS extension system.",
+  "homepage": "https://chompbuild.com",
+  "provides": [
+    "chomp"
+  ],
+  "github": "https://github.com/guybedford/chomp",
+  "project": "chompbuild.com",
+  "displayName": "chomp"
+}
