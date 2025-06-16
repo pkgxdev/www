@@ -41,7 +41,8 @@ export default function Search() {
       label="Search"
       size='small'
       onFocus={() => setopen(true)}
-      onBlur={() => setopen(false)}
+      // disabled as prevented clicks on the input in some cases
+      // onBlur={(e) => setopen(false)}
       onChange={e => {
         set_has_text(!!e.target.value);
         refine(e.target.value);
@@ -78,7 +79,6 @@ function SearchResults() {
   }
 
   function fu(input: any) {
-    console.error(input);
     const {project, displayName, brief} = input
     const tertiary = displayName != project ? project : undefined;
     return <ListItem key={project} disableGutters disablePadding dense>
