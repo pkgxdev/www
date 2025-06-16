@@ -1,0 +1,11 @@
+{
+  "description": "Syntax-aware git merge driver",
+  "homepage": "https://mergiraf.org",
+  "provides": [
+    "mergiraf"
+  ],
+  "brew_url": "https://formulae.brew.sh/formula/mergiraf",
+  "license": "GPL-3.0-only",
+  "project": "mergiraf.org",
+  "displayName": "mergiraf"
+}
