@@ -44,7 +44,7 @@ def gen_img(root, json_file):
             "steps": 20,
             "width": 768,
             "height": 768,
-            "negative_prompt": "text, pearls, artist signature, negativeXL_D, border, watermark",
+            "negative_prompt": "pearls, artist signature, negativeXL_D, border, watermark",
             "sd_model_checkpoint": "wildcardxXLTURBO_wildcardxXLTURBOV10.safetensors [276d222ef0]",
             "seed": seed
         }
@@ -74,7 +74,7 @@ def gen_img(root, json_file):
 
 def get_painting_feature(name, description, homepage):
     if description:
-        description = "It is described as " + description + ". If the package is for Python incorporate snakes, if for Ruby incorporate rubies, if for Rust incorporate rusty metal, etc."
+        description = "It is described as " + description + ". If the package is for Python (subtly) incorporate snakes, if for Ruby (subtly) incorporate rubies, if for Rust (subtly) incorporate rusty metal, etc."
     else:
         description = ""
 
@@ -89,7 +89,8 @@ An example prompt I have used is:
 
 ```
 Create an abstract oil painting that features: krampus
-Use an expressive explosion of Charcoal Gray, Off-White, Olive Green, Burnt Sienna, and Blush Pink with and hyper-detailed textures. Highlight the artwork with gleaming golden accents that radiate light amidst a brilliance of harmony.
+Use an expressive explosion of Charcoal Gray, Off-White, Olive Green, Burnt Sienna, and Blush Pink with and hyper-detailed textures.
+Highlight the artwork with gleaming golden accents that radiate light amidst a brilliance of harmony.
 Incorporate ethereal elements like clouds, storms, rainbows, snow to symbolize the peaceful blending of these forces.
 Ensure a perfect composition with intricate pearl filigree, capturing a serene and radiant ambiance
 ```
@@ -102,9 +103,10 @@ Don’t list the entire package description in the prompt as the image generator
 
 Avoid clock imagery unless the package is literally called “clock” or its purpose is time related.
 
-End the prompt with `Ensure a perfect composition with intricate pearl filigree, capturing a serene and radiant ambiance` because it causes the image generator to stick to the style I want.
+End the prompt with `Ensure a perfect composition with intricate pearl filigree, capturing a serene and
+radiant ambiance` because it causes the image generator to stick to the style I want.
 
-Pick complementary color palettes like:
+Pick complementary color palettes, here are some examples:
 
 - black, white, orange, beige, and pink
 - Charcoal Gray, Off-White, Olive Green, Burnt Sienna, and Blush Pink
