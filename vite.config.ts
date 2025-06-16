@@ -60,7 +60,8 @@ function description() {
 function scripts() {
   switch (process.env.VITE_HOST) {
   case 'pkgx.dev':
-    return `<script>
+    return `<!-- meta pixel -->
+<script>
     !function (f, b, e, v, n, t, s) {
         if (f.fbq) return; n = f.fbq = function () {
             n.callMethod ?
@@ -78,7 +79,16 @@ function scripts() {
 <noscript>
     <img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=1632217704843931&ev=PageView&noscript=1" />
-</noscript>`;
+</noscript>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FHTCBX27VL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FHTCBX27VL');
+</script>`;
   default: return '';
   }
 }
