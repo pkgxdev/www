@@ -25,7 +25,7 @@ export default function HomeFeed() {
     </Stack>
 
     <Grid container spacing={{xs: 1, md: 2}}>
-      <Grid size={{xs: 6, md: 4}}>
+      <Grid size={{xs: 12, sm: 6, md: 4}}>
         <Card raised={true} sx={{ height: '100%' }}>
           <CardActionArea href='https://github.com/pkgxdev/pkgx' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
@@ -39,7 +39,7 @@ export default function HomeFeed() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid size={{xs: 6, md: 4}}>
+      <Grid size={{xs: 12, sm: 6, md: 4}}>
         <Card raised={true} sx={{ height: '100%' }}>
           <CardActionArea href='https://github.com/pkgxdev/pkgm' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
@@ -53,7 +53,7 @@ export default function HomeFeed() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid size={{xs: 6, md: 4}}>
+      <Grid size={{xs: 12, sm: 6, md: 4}}>
         <Card raised={true} sx={{ height: '100%' }}>
           <CardActionArea href='https://github.com/pkgxdev/dev' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
@@ -67,7 +67,7 @@ export default function HomeFeed() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid size={{xs: 6, md: 4}}>
+      <Grid size={{xs: 12, sm: 6, md: 4}}>
         <Card raised={true} sx={{ height: '100%' }}>
           <CardActionArea href='https://github.com/pkgxdev/mash' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
@@ -81,7 +81,7 @@ export default function HomeFeed() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid size={{xs: 6, md: 4}}>
+      <Grid size={{xs: 12, sm: 6, md: 4}}>
         <Card raised={true}>
           <CardActionArea href='https://github.com/pkgxdev/pkgo' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
@@ -95,7 +95,7 @@ export default function HomeFeed() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid size={{xs: 6, md: 4}}>
+      <Grid size={{xs: 12, sm: 6, md: 4}}>
         <Card raised={true} sx={{ height: '100%' }}>
           <CardActionArea href='https://github.com/pkgxdev/mcp' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
@@ -109,7 +109,7 @@ export default function HomeFeed() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid size={{xs: 6, md: 4}}>
+      <Grid size={{xs: 12, sm: 6, md: 4}}>
         <Card raised={true}>
           <CardActionArea href='https://github.com/teaxyz/teaBASE' sx={{ height: '100%' }}>
             <CardContent sx={isxs ? {p: 0.75} : undefined}>
