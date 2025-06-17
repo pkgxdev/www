@@ -45,7 +45,9 @@ export default function Search() {
       // onBlur={(e) => setopen(false)}
       onChange={e => {
         set_has_text(!!e.target.value);
-        refine(e.target.value);
+        if (!!e.target.value) {
+          refine(e.target.value);
+        }
       }}
       inputRef={inputRef}
       InputProps={isxs ? undefined : {
