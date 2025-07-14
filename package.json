@@ -30,7 +30,7 @@
     "yaml": "^2.3.3"
   },
   "devDependencies": {
-    "@types/node": "^20.6.2",
+    "@types/node": "^24.0.13",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/react-helmet": "^6.1.11",
