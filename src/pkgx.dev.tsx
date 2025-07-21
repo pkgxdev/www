@@ -19,7 +19,7 @@ import Discord from './components/Discord';
 import TeaProtocol from './pkgx.dev/TeaProtocol';
 
 
-const searchClient = algoliasearch('UUTLHX01W7', '819a841ca219754c38918b8bcbbbfea7');
+const searchClient = algoliasearch('UUTLHX01W7', '__819a841ca219754c38918b8bcbbbfea7');
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
