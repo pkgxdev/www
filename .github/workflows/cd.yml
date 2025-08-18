@@ -39,7 +39,7 @@ jobs:
           cfid: E1H6XLDEJ08BJK
           s3id: hub.pkgx.sh
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -117,7 +117,7 @@ jobs:
           aws-access-key-id: ${{ secrets.WWW_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: pkgxdev/setup@v4
       - run: pkgx hugo
       - run: pkgx hugo deploy
