@@ -23,7 +23,7 @@ jobs:
 
       - name: compute total stars
         id: fetch
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             let totalStars = 0;
