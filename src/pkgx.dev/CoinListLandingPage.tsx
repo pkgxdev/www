@@ -30,17 +30,9 @@ export default function TeaLandingPage() {
   const [email, setEmail] = useState("");
   const [formEmail, setFormEmail] = useState("");
   const [isDeveloper, setIsDeveloper] = useState(false);
-  const [recaptchaToken, setRecaptchaToken] = useState<string | null>("dummy-token"); // Simplified for demo
   const [formError, setFormError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showThankYou, setShowThankYou] = useState(false);
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    alert(`Thanks! We'll keep you posted at ${email}.`);
-    setEmail("");
-  };
 
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -78,7 +70,6 @@ export default function TeaLandingPage() {
       formData.append('or', 'a62f1522a75f4801557d059720d472e2');
       formData.append('email', formEmail);
       formData.append('field[5]', isDeveloper ? 'Yes' : 'No');
-      formData.append('g-recaptcha-response', recaptchaToken || '');
 
       const response = await fetch('https://teaxyz.activehosted.com/proc.php', {
         method: 'POST',
