@@ -272,11 +272,11 @@ export default function TeaLandingPage() {
         </Box>
 
         {/* Backed by Builders */}
-        <Container sx={{ py: { xs: 2, md: 2 } }}>
+        <Container sx={{ py: { xs: 5, md: 5 }, textAlign: 'center' }}>
           <Typography variant="h4" fontWeight={800} gutterBottom>
             Backed by Builders & Trusted Platforms
           </Typography>
-          <Typography color="text.secondary" paragraph maxWidth={900}>
+          <Typography color="text.secondary" paragraph maxWidth={700} textAlign="start" sx={{ mx: 'auto' }}>
             tea was built by <strong>PKGX</strong>, trusted across the developer ecosystem. The tea association ensures transparent, community-driven governance. With <strong>CoinList</strong>, you're participating through one of the most secure, compliant token sale platforms in crypto.
           </Typography>
           
