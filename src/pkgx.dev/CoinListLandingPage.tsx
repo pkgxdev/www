@@ -7,6 +7,10 @@ import DiamondIcon from "@mui/icons-material/Diamond";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import { useEffect, useMemo, useState } from "react";
 import { Helmet } from "react-helmet";
+import partnersImg from "../assets/partners.png";
+import tractionImg from "../assets/traction.svg";
+import techImg from "../assets/tech.png";
+import teaLogoImg from "../assets/tea-3d-logo.png";
 
 function useCountdown(target: Date) {
   const [now, setNow] = useState<Date>(() => new Date());
@@ -111,12 +115,35 @@ export default function TeaLandingPage() {
         background: "radial-gradient(1200px 600px at 20% -10%, rgba(124,58,237,.25), transparent 55%), radial-gradient(1200px 600px at 120% 10%, rgba(14,165,233,.25), transparent 55%), linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0))",
       }}>
         {/* Hero */}
-        <Container sx={{ pt: { xs: 10, md: 14 }, pb: { xs: 8, md: 12 } }}>
-          <Stack spacing={4} alignItems="flex-start">
-            <Chip label="Early Access" color="secondary" variant="outlined" sx={{ fontWeight: 700 }} />
-            <Typography variant="h2" component="h1" sx={{ fontWeight: 800, letterSpacing: -0.5 }}>
-              tea is now live on CoinList
-            </Typography>
+        <Container sx={{ pt: { xs: 2, md: 2 }, pb: { xs: 8, md: 12 } }}>
+          <Stack spacing={8} alignItems="flex-center">
+            <Chip label="Early Access" color="secondary" variant="outlined" sx={{ fontWeight: 700, width: 150 }} />
+            <Stack spacing={4} alignItems="center">
+              <img 
+                src={teaLogoImg} 
+                alt="tea" 
+                style={{ 
+                  height: 'auto', 
+                  width: '100%',
+                  maxWidth: '70%',
+                }} 
+              />
+              <Typography 
+                variant="h2" 
+                component="h1" 
+                sx={{ 
+                  fontWeight: 800, 
+                  letterSpacing: -0.5,
+                  fontSize: {
+                    xs: '2rem',    // 32px on mobile
+                    sm: '2.5rem',  // 40px on small screens
+                    md: '3.75rem'  // 60px on medium+ screens (h2 default)
+                  }
+                }}
+              >
+                now available on CoinList
+              </Typography>
+            </Stack>
             <Typography variant="h6" color="text.secondary" maxWidth={800}>
               Be part of the future of open source. PKGX built tea, and now you can join the movement by participating in the official CoinList sale.
             </Typography>
@@ -131,15 +158,78 @@ export default function TeaLandingPage() {
             </Stack>
 
             <Stack direction="row" spacing={3} divider={<Box sx={{ width: 1, height: 1, opacity: 0 }} />}>
-              <Typography variant="subtitle1" color="text.secondary">
-                Sale ends in: {t.days}d {t.hours}h {t.minutes}m {t.seconds}s
-              </Typography>
+              <Box sx={{ 
+                background: "linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(74, 222, 128, 0.05))",
+                border: "1px solid rgba(34, 197, 94, 0.2)",
+                borderRadius: 2,
+                px: 3,
+                py: 2,
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 2
+              }}>
+                <Typography variant="body2" sx={{ 
+                  color: "rgb(34, 197, 94)", 
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: 0.5,
+                  fontSize: "0.75rem"
+                }}>
+                  Sale ends in
+                </Typography>
+                <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
+                  {[
+                    { value: t.days, label: "d" },
+                    { value: t.hours, label: "h" },
+                    { value: t.minutes, label: "m" },
+                    { value: t.seconds, label: "s" }
+                  ].map((item, index) => (
+                    <Box key={item.label} sx={{ display: "flex", alignItems: "center" }}>
+                      <Box sx={{
+                        background: "rgba(34, 197, 94, 0.1)",
+                        border: "1px solid rgba(34, 197, 94, 0.3)",
+                        borderRadius: 1,
+                        px: 1.5,
+                        py: 0.5,
+                        minWidth: "40px",
+                        textAlign: "center"
+                      }}>
+                        <Typography variant="body1" sx={{ 
+                          fontWeight: 700,
+                          color: "rgb(34, 197, 94)",
+                          fontFamily: "monospace",
+                          fontSize: "1rem"
+                        }}>
+                          {item.value.toString().padStart(2, '0')}
+                        </Typography>
+                      </Box>
+                      <Typography variant="caption" sx={{ 
+                        color: "rgb(34, 197, 94)", 
+                        fontWeight: 500,
+                        ml: 0.5,
+                        fontSize: "0.7rem"
+                      }}>
+                        {item.label}
+                      </Typography>
+                      {index < 3 && (
+                        <Typography sx={{ 
+                          color: "rgba(34, 197, 94, 0.5)", 
+                          mx: 0.5,
+                          fontWeight: 600
+                        }}>
+                          :
+                        </Typography>
+                      )}
+                    </Box>
+                  ))}
+                </Box>
+              </Box>
             </Stack>
           </Stack>
         </Container>
 
         {/* Why tea */}
-        <Container sx={{ py: { xs: 8, md: 12 } }}>
+        <Container sx={{ py: { xs: 1, md: 1 } }}>
           <Grid container spacing={4}>
             <Grid item xs={12} md={6}>
               <Typography variant="h4" gutterBottom fontWeight={800}>Why tea?</Typography>
@@ -160,8 +250,11 @@ export default function TeaLandingPage() {
                   <Typography>Built to scale with the next generation of software and AI</Typography>
                 </Stack>
               </Stack>
+              <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center' }}>
+                <img src={techImg} alt="Technology Stack" style={{ maxWidth: '100%', height: 'auto' }} />
+              </Box>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} sx={{ display: 'flex' }}>
               <Card sx={{ height: "100%", background: "linear-gradient(180deg, rgba(124,58,237,.12), rgba(14,165,233,.08))", border: "1px solid rgba(255,255,255,.06)" }}>
                 <CardContent>
                   <Typography variant="h5" gutterBottom fontWeight={800}>The CoinList Sale: Your Early Access</Typography>
@@ -202,18 +295,26 @@ export default function TeaLandingPage() {
           </Grid>
         </Container>
 
+        <Box sx={{ mt: 1, display: 'flex', justifyContent: 'center' }}>
+          <img src={tractionImg} alt="Traction" style={{ maxWidth: '60%', height: 'auto' }} />
+        </Box>
+
         {/* Backed by Builders */}
-        <Container sx={{ py: { xs: 8, md: 10 } }}>
+        <Container sx={{ py: { xs: 5, md: 5 }, textAlign: 'center' }}>
           <Typography variant="h4" fontWeight={800} gutterBottom>
             Backed by Builders & Trusted Platforms
           </Typography>
-          <Typography color="text.secondary" paragraph maxWidth={900}>
+          <Typography color="text.secondary" paragraph maxWidth={700} textAlign="start" sx={{ mx: 'auto' }}>
             tea was built by <strong>PKGX</strong>, trusted across the developer ecosystem. The tea association ensures transparent, community-driven governance. With <strong>CoinList</strong>, you're participating through one of the most secure, compliant token sale platforms in crypto.
           </Typography>
+          
+          <Box sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}>
+            <img src={partnersImg} alt="Partners" style={{ maxWidth: '80%', height: 'auto' }} />
+          </Box>
         </Container>
 
         {/* Don't Miss Out */}
-        <Container id="signup" sx={{ py: { xs: 8, md: 12 } }}>
+        <Container id="signup" sx={{ py: { xs: 3, md: 3 } }}>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={7}>
               <Typography variant="h4" fontWeight={800} gutterBottom>
@@ -222,9 +323,73 @@ export default function TeaLandingPage() {
               <Typography color="text.secondary" paragraph>
                 This is your chance to support the future of open source — and to be early.
               </Typography>
-              <Typography variant="subtitle1" sx={{ mt: 1 }}>
-                Sale ends in: {t.days}d {t.hours}h {t.minutes}m {t.seconds}s
-              </Typography>
+              <Box sx={{ 
+                background: "linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(74, 222, 128, 0.05))",
+                border: "1px solid rgba(34, 197, 94, 0.2)",
+                borderRadius: 2,
+                px: 3,
+                py: 2,
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 2,
+                mt: 2
+              }}>
+                <Typography variant="body2" sx={{ 
+                  color: "rgb(34, 197, 94)", 
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: 0.5,
+                  fontSize: "0.75rem"
+                }}>
+                  Sale ends in
+                </Typography>
+                <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
+                  {[
+                    { value: t.days, label: "d" },
+                    { value: t.hours, label: "h" },
+                    { value: t.minutes, label: "m" },
+                    { value: t.seconds, label: "s" }
+                  ].map((item, index) => (
+                    <Box key={item.label} sx={{ display: "flex", alignItems: "center" }}>
+                      <Box sx={{
+                        background: "rgba(34, 197, 94, 0.1)",
+                        border: "1px solid rgba(34, 197, 94, 0.3)",
+                        borderRadius: 1,
+                        px: 1.5,
+                        py: 0.5,
+                        minWidth: "40px",
+                        textAlign: "center"
+                      }}>
+                        <Typography variant="body1" sx={{ 
+                          fontWeight: 700,
+                          color: "rgb(34, 197, 94)",
+                          fontFamily: "monospace",
+                          fontSize: "1rem"
+                        }}>
+                          {item.value.toString().padStart(2, '0')}
+                        </Typography>
+                      </Box>
+                      <Typography variant="caption" sx={{ 
+                        color: "rgb(34, 197, 94)", 
+                        fontWeight: 500,
+                        ml: 0.5,
+                        fontSize: "0.7rem"
+                      }}>
+                        {item.label}
+                      </Typography>
+                      {index < 3 && (
+                        <Typography sx={{ 
+                          color: "rgba(34, 197, 94, 0.5)", 
+                          mx: 0.5,
+                          fontWeight: 600
+                        }}>
+                          :
+                        </Typography>
+                      )}
+                    </Box>
+                  ))}
+                </Box>
+              </Box>
               <Button sx={{ mt: 2 }} variant="text" color="primary" endIcon={<LaunchIcon />} href="https://coinlist.co" target="_blank" rel="noreferrer noopener">
                 Join the CoinList Sale Now
               </Button>
@@ -343,19 +508,6 @@ export default function TeaLandingPage() {
             </Grid>
           </Grid>
         </Container>
-
-        {/* Footer */}
-        <Box sx={{ py: 6, borderTop: "1px solid rgba(255,255,255,.06)" }}>
-          <Container>
-            <Stack direction={{ xs: "column", sm: "row" }} spacing={2} alignItems={{ xs: "flex-start", sm: "center" }} justifyContent="space-between">
-              <Typography color="text.secondary">© {new Date().getFullYear()} tea — All rights reserved.</Typography>
-              <Stack direction="row" spacing={2}>
-                <Button size="small" color="inherit" href="#">Terms</Button>
-                <Button size="small" color="inherit" href="#">Privacy</Button>
-              </Stack>
-            </Stack>
-          </Container>
-        </Box>
       </Box>
     </>
   );
