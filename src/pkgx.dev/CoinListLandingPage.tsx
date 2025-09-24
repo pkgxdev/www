@@ -9,6 +9,8 @@ import { useEffect, useMemo, useState } from "react";
 import { Helmet } from "react-helmet";
 import partnersImg from "../assets/partners.png";
 import tractionImg from "../assets/traction.svg";
+import techImg from "../assets/tech.png";
+import teaLogoImg from "../assets/tea-3d-logo.png";
 
 function useCountdown(target: Date) {
   const [now, setNow] = useState<Date>(() => new Date());
@@ -116,6 +118,9 @@ export default function TeaLandingPage() {
         <Container sx={{ pt: { xs: 2, md: 2 }, pb: { xs: 8, md: 12 } }}>
           <Stack spacing={4} alignItems="flex-start">
             <Chip label="Early Access" color="secondary" variant="outlined" sx={{ fontWeight: 700 }} />
+            <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', mb: 2, pb: 8}}>
+              <img src={teaLogoImg} alt="tea 3D Logo" style={{ maxWidth: '200px', height: 'auto' }} />
+            </Box>
             <Typography variant="h2" component="h1" sx={{ fontWeight: 800, letterSpacing: -0.5 }}>
               tea is now live on CoinList
             </Typography>
@@ -225,8 +230,11 @@ export default function TeaLandingPage() {
                   <Typography>Built to scale with the next generation of software and AI</Typography>
                 </Stack>
               </Stack>
+              <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center' }}>
+                <img src={techImg} alt="Technology Stack" style={{ maxWidth: '100%', height: 'auto' }} />
+              </Box>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} sx={{ display: 'flex' }}>
               <Card sx={{ height: "100%", background: "linear-gradient(180deg, rgba(124,58,237,.12), rgba(14,165,233,.08))", border: "1px solid rgba(255,255,255,.06)" }}>
                 <CardContent>
                   <Typography variant="h5" gutterBottom fontWeight={800}>The CoinList Sale: Your Early Access</Typography>
