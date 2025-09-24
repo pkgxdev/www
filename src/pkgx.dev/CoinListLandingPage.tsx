@@ -116,14 +116,34 @@ export default function TeaLandingPage() {
       }}>
         {/* Hero */}
         <Container sx={{ pt: { xs: 2, md: 2 }, pb: { xs: 8, md: 12 } }}>
-          <Stack spacing={4} alignItems="flex-start">
-            <Chip label="Early Access" color="secondary" variant="outlined" sx={{ fontWeight: 700 }} />
-            <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', mb: 2, pb: 8}}>
-              <img src={teaLogoImg} alt="tea 3D Logo" style={{ maxWidth: '200px', height: 'auto' }} />
-            </Box>
-            <Typography variant="h2" component="h1" sx={{ fontWeight: 800, letterSpacing: -0.5 }}>
-              tea is now live on CoinList
-            </Typography>
+          <Stack spacing={8} alignItems="flex-center">
+            <Chip label="Early Access" color="secondary" variant="outlined" sx={{ fontWeight: 700, width: 150 }} />
+            <Stack spacing={4} alignItems="center">
+              <img 
+                src={teaLogoImg} 
+                alt="tea" 
+                style={{ 
+                  height: 'auto', 
+                  width: '100%',
+                  maxWidth: '70%',
+                }} 
+              />
+              <Typography 
+                variant="h2" 
+                component="h1" 
+                sx={{ 
+                  fontWeight: 800, 
+                  letterSpacing: -0.5,
+                  fontSize: {
+                    xs: '2rem',    // 32px on mobile
+                    sm: '2.5rem',  // 40px on small screens
+                    md: '3.75rem'  // 60px on medium+ screens (h2 default)
+                  }
+                }}
+              >
+                now available on CoinList
+              </Typography>
+            </Stack>
             <Typography variant="h6" color="text.secondary" maxWidth={800}>
               Be part of the future of open source. PKGX built tea, and now you can join the movement by participating in the official CoinList sale.
             </Typography>
