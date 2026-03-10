@@ -8,6 +8,7 @@ import FeedItem from "../utils/FeedItem";
 import { useAsync } from "react-use";
 import { cn } from "../utils/cn";
 import { ArrowUpRight, Terminal as TerminalIcon, Package, Zap, Code2, Globe, Shield, Cpu } from "lucide-react";
+import TerminalDemo from "../components/TerminalDemo";
 
 export default function HomeFeed() {
   const isxs = useIsMobile();
@@ -92,19 +93,9 @@ export default function HomeFeed() {
               <ArrowUpRight className="w-5 h-5 text-[rgba(237,242,239,0.3)] group-hover:text-[#4156E1] transition-colors shrink-0 mt-2" />
             </div>
 
-            {/* Terminal demo */}
-            <div className="mt-6 rounded-lg border border-[rgba(149,178,184,0.15)] bg-[#070C14] p-4 font-mono text-sm overflow-x-auto">
-              <div className="flex items-center gap-2 mb-3 select-none">
-                <div className="w-3 h-3 rounded-full bg-[rgb(255,95,86)]" />
-                <div className="w-3 h-3 rounded-full bg-[rgb(255,189,46)]" />
-                <div className="w-3 h-3 rounded-full bg-[rgb(39,201,63)]" />
-              </div>
-              <div className="space-y-1 text-[rgba(237,242,239,0.8)]">
-                <p><span className="text-[rgba(237,242,239,0.4)]">$</span> <span className="text-[#4156E1]">pkgx</span> node@22 -- node -e "console.log(<span className="text-[#74FAD1]">'Hello, World!'</span>)"</p>
-                <p className="text-[#74FAD1]">Hello, World!</p>
-                <p className="mt-2"><span className="text-[rgba(237,242,239,0.4)]">$</span> <span className="text-[#4156E1]">pkgx</span> python@3.12 -- python -c "print(<span className="text-[#74FAD1]">'No install needed'</span>)"</p>
-                <p className="text-[#74FAD1]">No install needed</p>
-              </div>
+            {/* Interactive terminal demo */}
+            <div className="mt-6">
+              <TerminalDemo />
             </div>
           </div>
         </a>
