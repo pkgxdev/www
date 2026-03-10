@@ -19,9 +19,16 @@ import "./assets/app.css";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <Router>
+      {/* Skip to content link (accessibility) */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-[#4156E1] focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm"
+      >
+        Skip to content
+      </a>
       <div className="flex flex-col px-2 md:px-6 max-w-6xl min-h-screen mx-auto">
         <MyMasthead />
-        <main className="flex-1">
+        <main id="main-content" className="flex-1" role="main">
           <Routes>
             <Route path="/" element={<HomeFeed />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

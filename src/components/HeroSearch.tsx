@@ -106,7 +106,7 @@ export default function HeroSearch() {
         <div className="absolute -inset-0.5 bg-gradient-to-r from-[#4156E1] via-[#74FAD1] to-[#F26212] rounded-2xl opacity-0 group-focus-within:opacity-30 blur-md transition-opacity duration-500" />
         <input
           ref={inputRef}
-          type="search"
+          type="search" role="searchbox" aria-label="Search packages"
           placeholder="Search 13,000+ packages..."
           value={query}
           onFocus={() => setopen(true)}

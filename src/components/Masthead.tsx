@@ -20,7 +20,9 @@ export default function Masthead({
   }, []);
 
   return (
-    <div
+    <nav
+      role="navigation"
+      aria-label="Main navigation"
       className={cn(
         "sticky top-0 z-50 flex items-center gap-3 -mx-2 md:-mx-4 px-4 md:px-6 py-3 transition-all duration-300",
         scrolled
@@ -28,7 +30,7 @@ export default function Masthead({
           : "bg-transparent border-b border-transparent"
       )}
     >
-      <a href="https://pkgx.dev" className="no-underline">
+      <a href="https://pkgx.dev" className="no-underline" aria-label="pkgx home">
         <img
           src={logo}
           alt="pkgx"
@@ -40,6 +42,6 @@ export default function Masthead({
       <div className="flex items-center gap-2">
         {children}
       </div>
-    </div>
+    </nav>
   );
 }
