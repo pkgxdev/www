@@ -3,8 +3,6 @@ import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-route
 import PackageShowcase from './pkgx.dev/PackageShowcase';
 import PackageListing from './pkgx.dev/PackageListing';
 import PrivacyPolicy from './pkgx.dev/PrivacyPolicy';
-import { InstantSearch } from 'react-instantsearch';
-import algoliasearch from 'algoliasearch/lite';
 import TermsOfUse from './pkgx.dev/TermsOfUse';
 import * as ReactDOM from 'react-dom/client';
 import Masthead from './components/Masthead';
@@ -19,8 +17,6 @@ import Discord from './components/Discord';
 import TeaProtocol from './pkgx.dev/TeaProtocol';
 import CoinListLandingPage from './pkgx.dev/CoinListLandingPage';
 
-
-const searchClient = algoliasearch('UUTLHX01W7', '__819a841ca219754c38918b8bcbbbfea7');
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -53,9 +49,7 @@ function MyMasthead() {
   let gh = `https://github.com/pkgxdev/`
   if (pathname.startsWith('/pkgs')) gh += 'pantry/'
 
-  const search = <InstantSearch searchClient={searchClient} indexName="pkgs">
-    <Search />
-  </InstantSearch>
+  const search = <Search />;
 
   const stuff = <>
     <Button href='/pkgs/' color='inherit'>pkgs</Button>
