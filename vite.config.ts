@@ -29,6 +29,32 @@ const htmlPlugin = () => {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [tailwindcss(), react(), htmlPlugin()],
+  optimizeDeps: {
+    // Pre-include ALL deps to prevent second-pass discovery race condition
+    // This eliminates the "chunk-REFQX4J5.js missing" error
+    include: [
+      'react',
+      'react-dom',
+      'react-dom/client',
+      'react/jsx-runtime',
+      'react/jsx-dev-runtime',
+      'react-router-dom',
+      'react-helmet',
+      'react-infinite-scroll-hook',
+      'react-use',
+      'lucide-react',
+      '@aws-sdk/client-s3',
+      'is-what',
+      'yaml',
+      'clsx',
+      'tailwind-merge',
+      'showdown',
+    ],
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+  },
 });
 
 
