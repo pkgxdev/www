@@ -3,6 +3,7 @@ import { useParams, Link as RouterLink } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { isArray, isPlainObject } from "is-what";
 import InstallSnippets from "../components/PackageDetail/InstallSnippets";
+import QualityBadges, { MaintenanceStatus } from "../components/PackageCard/QualityBadges";
 import VersionHistory from "../components/PackageDetail/VersionHistory";
 import DependencyGraph from "../components/PackageDetail/DependencyGraph";
 import get_pkg_name from "../utils/pkg-name";
@@ -146,6 +147,11 @@ function Package({ project, dirs }: { project: string; dirs: string[] }) {
       <div className="space-y-4 flex-1">
         <div>
           <h2 className="text-3xl mb-2">{title()}</h2>
+          <QualityBadges
+            github={description.value?.github ?? undefined}
+            hasReadme={true}
+          />
+          <MaintenanceStatus github={description.value?.github ?? undefined} />
           {description_body()}
           <README project={project} />
           <div className="flex flex-wrap gap-2 mt-6">
