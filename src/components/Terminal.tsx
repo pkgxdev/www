@@ -1,47 +1,62 @@
-import { useMediaQuery, Box, Card, Typography, useTheme } from "@mui/material";
+import { useIsMobile } from "../utils/useIsMobile";
+import { cn } from "../utils/cn";
 
-export default function Terminal({ children, width, mb, mt }: { children: React.ReactNode, width?: string, mb?: number, mt?: number }) {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+export default function Terminal({
+  children,
+  width,
+  mb,
+  mt,
+}: {
+  children: React.ReactNode;
+  width?: string;
+  mb?: number;
+  mt?: number;
+}) {
+  const isxs = useIsMobile();
+  const hasStoplights = width === undefined;
 
-  const stoplights = width === undefined ? true : undefined
-  const sx = {p: isxs ? 2 : 4} as any
-  if (stoplights) sx.pt = 6
-
-  return <Box
-    sx={{
-      fontFamily: 'monospace',
-      width: width ?? '100%',
-      typography: 'code',
-      whiteSpace: 'pre',
-      overflowX: 'auto',
-      display: 'block',
-      mx: 'auto',
-      mb: mb ?? 4,
-      mt: mt ?? 4,
-      overflow: 'visible',
-      fontSize: isxs ? 14 : undefined
-  }}>
-    <Card variant="outlined" sx={sx} data-terminal={stoplights}>
-      {children}
-    </Card>
-  </Box>
+  return (
+    <div
+      className={cn(
+        "font-mono whitespace-pre overflow-x-auto block mx-auto overflow-visible",
+        isxs ? "text-sm" : ""
+      )}
+      style={{
+        width: width ?? "100%",
+        marginBottom: mb !== undefined ? `${mb * 8}px` : "32px",
+        marginTop: mt !== undefined ? `${mt * 8}px` : "32px",
+      }}
+    >
+      <div
+        className={cn(
+          "rounded-lg border border-[rgba(149,178,184,0.3)]",
+          isxs ? "p-2" : "p-4",
+          hasStoplights && "pt-6"
+        )}
+        data-terminal={hasStoplights || undefined}
+      >
+        {children}
+      </div>
+    </div>
+  );
 }
 
 export function Dim({ children }: { children: React.ReactNode }) {
-  return <span style={{opacity: 0.6}}>{children}</span>
+  return <span className="opacity-60">{children}</span>;
 }
 
 export function Purple({ children }: { children: React.ReactNode }) {
-  return <Typography component="span" color='primary' fontFamily='inherit'>{children}</Typography>
+  return (
+    <span className="text-[#4156E1] font-[inherit]">{children}</span>
+  );
 }
 
-export function Orange({children}: {children: React.ReactNode}) {
-  return <Typography component='span' color='secondary' fontFamily='inherit'>
-    {children}
-  </Typography>
+export function Orange({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="text-[#F26212] font-[inherit]">{children}</span>
+  );
 }
 
 export function Prompt() {
-  return <Dim>$</Dim>
+  return <Dim>$</Dim>;
 }

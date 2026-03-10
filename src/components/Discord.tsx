@@ -1,10 +1,13 @@
 import discord from "../assets/wordmarks/discord.svg";
-import { IconButton, Box } from "@mui/material";
 
 export default function Discord() {
-  //FIXME hardcoding the size sucks
-
-  return <IconButton href='https://discord.gg/rNwNUY83XS'>
-    <Box component='img' src={discord} height={20} width={20} />
-  </IconButton>
+  return (
+    <a
+      href="https://discord.gg/rNwNUY83XS"
+      className="inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-white/10 transition-colors"
+      aria-label="Join Discord"
+    >
+      <img src={discord} alt="Discord" className="h-5 w-5" />
+    </a>
+  );
 }

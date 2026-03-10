@@ -1,51 +1,153 @@
-import Grid from '@mui/material/Grid2';
-import { Alert, Box, Card, CardActionArea, CardContent, CardMedia, Chip, Skeleton, Typography, useMediaQuery, useTheme } from "@mui/material";
-import useInfiniteScroll from 'react-infinite-scroll-hook';
-import { CSSProperties, useState } from "react";
+import useInfiniteScroll from "react-infinite-scroll-hook";
+import { CSSProperties, useMemo, useState } from "react";
+import { useIsMobile } from "../utils/useIsMobile";
 import get_pkg_name from "../utils/pkg-name";
 import { useAsync } from "react-use";
+import { cn } from "../utils/cn";
+
+const CATEGORIES: Record<string, { label: string; match: (pkg: Package) => boolean }> = {
+  all: { label: "All", match: () => true },
+  node: { label: "Node.js", match: (p) => p.labels?.includes("node") ?? false },
+  python: { label: "Python", match: (p) => p.labels?.includes("python") ?? false },
+  rust: { label: "Rust", match: (p) => p.labels?.includes("rust") ?? false },
+  go: { label: "Go", match: (p) => p.labels?.includes("go") ?? false },
+  ruby: { label: "Ruby", match: (p) => p.labels?.includes("ruby") ?? false },
+};
+
+type SortOption = "newest" | "oldest" | "alphabetical";
 
 export default function Showcase() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const isxs = useIsMobile();
+  const [category, setCategory] = useState("all");
+  const [sortBy, setSortBy] = useState<SortOption>("newest");
+  const [filterText, setFilterText] = useState("");
 
-  const { loading, items, hasNextPage, error, loadMore, total } = useLoadItems();
+  const { loading, allItems, error } = useLoadAllItems();
+
+  const processedItems = useMemo(() => {
+    let items = [...allItems];
+
+    if (category !== "all" && CATEGORIES[category]) {
+      items = items.filter(CATEGORIES[category].match);
+    }
+
+    if (filterText.trim()) {
+      const q = filterText.toLowerCase().trim();
+      items = items.filter((pkg) => {
+        const project = pkg.project?.toLowerCase() || "";
+        const name = (pkg.name || "").toLowerCase();
+        const desc = (pkg.description || pkg.brief || "").toLowerCase();
+        return project.includes(q) || name.includes(q) || desc.includes(q);
+      });
+    }
+
+    switch (sortBy) {
+      case "newest":
+        items.sort((a, b) => new Date(b.birthtime || 0).getTime() - new Date(a.birthtime || 0).getTime());
+        break;
+      case "oldest":
+        items.sort((a, b) => new Date(a.birthtime || 0).getTime() - new Date(b.birthtime || 0).getTime());
+        break;
+      case "alphabetical":
+        items.sort((a, b) => (a.name || a.project || "").localeCompare(b.name || b.project || ""));
+        break;
+    }
+
+    return items;
+  }, [allItems, category, sortBy, filterText]);
+
+  const [visibleCount, setVisibleCount] = useState(25);
+  const visibleItems = processedItems.slice(0, visibleCount);
+  const hasNextPage = visibleCount < processedItems.length;
 
   const [sentryRef] = useInfiniteScroll({
     loading,
     hasNextPage,
-    onLoadMore: loadMore,
-    // When there is an error, we stop infinite loading.
-    // It can be reactivated by setting "error" state as undefined.
+    onLoadMore: () => setVisibleCount((c) => Math.min(c + 25, processedItems.length)),
     disabled: !!error,
-    // `rootMargin` is passed to `IntersectionObserver`.
-    // We can use it to trigger 'onLoadMore' when the sentry comes near to become
-    // visible, instead of becoming fully visible on the screen.
-    rootMargin: '0px 0px 800px 0px',
-    delayInMs: 0
+    rootMargin: "0px 0px 800px 0px",
+    delayInMs: 0,
   });
 
-  const count = total && <Typography
-    display='inline' color='text.secondary' variant='h6'
-  >{new Intl.NumberFormat().format(total)}</Typography>
+  useMemo(() => {
+    setVisibleCount(25);
+  }, [category, sortBy, filterText]);
 
-  return <>
-    <Typography variant='h4' component='h1' textAlign={isxs ? "center" : undefined}>
-      Available Packages {count}
-    </Typography>
-    <Grid container spacing={isxs ? 1 : 2}>
-      {items.map(item => <Grid size={{xs: 6, md: 3}} key={item.project}>
-        <PkgCard {...item} />
-      </Grid>)}
-      {(loading || hasNextPage) &&
-          Array.from({ length: isxs ? 2 : 4 }).map((_, index) => (
-            <Grid size={{xs: 6, md: 3}} key={index}  ref={index === 0 ? sentryRef : null}>
-              <PkgCard isLoader />
-            </Grid>
+  return (
+    <>
+      <h1 className={cn("text-xl", isxs && "text-center")}>
+        Available Packages{" "}
+        <span className="text-[rgba(237,242,239,0.7)] text-lg">
+          {new Intl.NumberFormat().format(processedItems.length)}
+        </span>
+      </h1>
+
+      {/* Filter Controls */}
+      <div className={cn("flex gap-2 mb-4", isxs ? "flex-col" : "flex-row items-center")}>
+        <input
+          type="text"
+          placeholder="Filter packages"
+          value={filterText}
+          onChange={(e) => setFilterText(e.target.value)}
+          className="bg-transparent border border-[rgba(149,178,184,0.3)] rounded px-3 py-1.5 text-sm text-[#EDF2EF] placeholder:text-[rgba(237,242,239,0.5)] focus:outline-none focus:border-[#4156E1] min-w-[200px]"
+        />
+
+        <div className="flex flex-wrap gap-0">
+          {Object.entries(CATEGORIES).map(([key, { label }]) => (
+            <button
+              key={key}
+              onClick={() => setCategory(key)}
+              className={cn(
+                "px-3 py-1.5 text-sm border border-[rgba(149,178,184,0.3)] transition-colors first:rounded-l last:rounded-r -ml-px first:ml-0",
+                category === key
+                  ? "bg-[#4156E1] border-[#4156E1] text-white"
+                  : "bg-transparent text-[#EDF2EF] hover:bg-white/5"
+              )}
+            >
+              {label}
+            </button>
           ))}
-      {error && <Grid size={12}><Alert severity='error'>{error.message}</Alert></Grid>}
-    </Grid>
-  </>
+        </div>
+
+        <select
+          value={sortBy}
+          onChange={(e) => setSortBy(e.target.value as SortOption)}
+          className="bg-[#161B22] border border-[rgba(149,178,184,0.3)] rounded px-3 py-1.5 text-sm text-[#EDF2EF] focus:outline-none focus:border-[#4156E1] min-w-[140px]"
+        >
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="alphabetical">A to Z</option>
+        </select>
+      </div>
+
+      {/* Package Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2">
+        {visibleItems.map((item) => (
+          <PkgCard key={item.project} {...item} />
+        ))}
+        {(loading || hasNextPage) &&
+          Array.from({ length: isxs ? 2 : 4 }).map((_, index) => (
+            <div key={`loader-${index}`} ref={index === 0 ? sentryRef : null}>
+              <PkgCard isLoader />
+            </div>
+          ))}
+        {error && (
+          <div className="col-span-full">
+            <div className="bg-red-900/30 border border-red-500/30 rounded p-3 text-red-300">
+              {error.message}
+            </div>
+          </div>
+        )}
+        {!loading && processedItems.length === 0 && !error && (
+          <div className="col-span-full">
+            <p className="text-[rgba(237,242,239,0.7)] text-center py-4">
+              No packages match your filters. Try adjusting your search or category.
+            </p>
+          </div>
+        )}
+      </div>
+    </>
+  );
 }
 
 interface Package {
@@ -58,72 +160,61 @@ interface Package {
   isLoader?: boolean;
 }
 
-function useLoadItems() {
-  const [index, setIndex] = useState(0);
-
-  const async = useAsync(async () => {
-    const rsp = await fetch('https://pkgx.dev/pkgs/index.json')
-    if (!rsp.ok) throw new Error(rsp.statusText)
-    const data = await rsp.json() as Package[]
-    setIndex(Math.min(data.length, 25))
-    return data
+function useLoadAllItems() {
+  const async_result = useAsync(async () => {
+    const rsp = await fetch("https://pkgx.dev/pkgs/index.json");
+    if (!rsp.ok) throw new Error(rsp.statusText);
+    return (await rsp.json()) as Package[];
   });
 
   return {
-    loading: async.loading,
-    items: (async.value ?? []).slice(0, index),
-    hasNextPage: async.value ? index < async.value.length : false,
-    error: async.error,
-    loadMore: () => setIndex(index => Math.min(index + 25, async.value?.length ?? 0)),
-    total: async.value?.length
-  }
+    loading: async_result.loading,
+    allItems: async_result.value ?? [],
+    error: async_result.error,
+  };
 }
 
-function PkgCard({project, description, brief, name, labels, isLoader}: Package) {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+function PkgCard({ project, description, brief, name, labels, isLoader }: Package) {
+  const isxs = useIsMobile();
 
-  const text_style: CSSProperties = {whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden'}
+  const chips = (labels ?? []).map((label) => (
+    <span
+      key={label}
+      className="bg-[#F26212] text-[#0D1117] text-xs px-2 py-0.5 rounded-full font-medium inline-block"
+      style={{ fontVariant: "small-caps" }}
+    >
+      {label}
+    </span>
+  ));
 
-  const chips = (labels ?? []).map(label =>
-    <Chip sx={{m: isxs ? 0.5 : 1, color: 'background.default', fontVariant: 'small-caps'}}
-      label={label} color='secondary' variant="filled" size='small' key={label} />
-  )
-  const mediaHeight = isxs ? 150 : undefined;
   return (
-    <Card>
-      <CardActionArea href={`/pkgs/${project}/`}>
-        {isLoader ? (
-          <Skeleton sx={{ height: mediaHeight }} animation="wave" variant="rectangular" />
-        ) : (
-          <CardMedia
-            height={mediaHeight}
-            sx={{aspectRatio: isxs ? undefined : '1/1'}}
-            component={Box}
-            image={`/pkgs/${project}.webp`}
-            textAlign="right"
-          >
-            {chips}
-          </CardMedia>
-        )}
-        {isLoader ? (
-          <CardContent sx={isxs ? {p: 0.75} : undefined}>
-            <Skeleton animation="wave" height={10} style={{ marginBottom: 6 }} />
-            <Skeleton animation="wave" height={10} width="80%" />
-          </CardContent>
-        ) : (
-          <CardContent sx={isxs ? {p: 0.75} : undefined}>
-            <div>
-              <Typography variant='overline' component="h2" style={text_style}>
-                {name || get_pkg_name(project!)}
-              </Typography>
-            </div>
-            <Typography noWrap={false} variant='caption' component="h3">
-              {brief || description}
-            </Typography>
-          </CardContent>
-        )}
-      </CardActionArea>
-    </Card>
-  )
+    <a
+      href={project ? `/pkgs/${project}/` : "#"}
+      className="block rounded-lg border border-[rgba(149,178,184,0.3)] bg-[#0D1117] hover:border-[rgba(149,178,184,0.5)] transition-all no-underline h-full"
+    >
+      {isLoader ? (
+        <div className={cn("bg-white/5 animate-pulse", isxs ? "h-[150px]" : "aspect-square")} />
+      ) : (
+        <div
+          className={cn("bg-cover bg-center text-right relative", isxs ? "h-[150px]" : "aspect-square")}
+          style={{ backgroundImage: `url(/pkgs/${project}.webp)` }}
+        >
+          <div className={cn("flex flex-wrap justify-end gap-1", isxs ? "p-1" : "p-2")}>{chips}</div>
+        </div>
+      )}
+      {isLoader ? (
+        <div className={cn("p-2", isxs && "p-1")}>
+          <div className="h-3 bg-white/10 rounded mb-1.5 animate-pulse" />
+          <div className="h-3 bg-white/10 rounded w-4/5 animate-pulse" />
+        </div>
+      ) : (
+        <div className={cn("p-2", isxs && "p-1")}>
+          <h3 className="text-xs uppercase tracking-wider truncate">
+            {name || get_pkg_name(project!)}
+          </h3>
+          <p className="text-xs text-[rgba(237,242,239,0.7)]">{brief || description}</p>
+        </div>
+      )}
+    </a>
+  );
 }

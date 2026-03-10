@@ -1,57 +1,29 @@
-import { Box, Tooltip, useTheme, useMediaQuery } from "@mui/material";
+import { useIsMobile } from "../utils/useIsMobile";
 
-/**
- * HomebrewBadge — lightweight badge indicating pkgx's Homebrew heritage.
- * Uses a styled Box instead of MUI Chip to minimize bundle impact.
- *
- * Accessibility: focusable, tooltip, role="status", aria-label.
- * Responsive: smaller text on mobile.
- */
 export default function HomebrewBadge() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down("md"));
+  const isxs = useIsMobile();
 
   return (
-    <Tooltip
+    <span
+      role="status"
+      aria-label="pkgx is from the creator of Homebrew"
+      tabIndex={0}
       title="Max Howell created Homebrew, the package manager for macOS"
-      arrow
-      placement="bottom"
-      enterTouchDelay={0}
+      className={`
+        inline-flex items-center gap-1.5
+        border border-[rgba(149,178,184,0.3)] rounded-2xl
+        ${isxs ? "px-1.5" : "px-2"} py-0.5
+        text-[rgba(237,242,239,0.7)] ${isxs ? "text-[11px]" : "text-[13px]"}
+        font-normal tracking-wide cursor-default
+        transition-all duration-200
+        hover:border-[#4156E1] hover:text-[#EDF2EF]
+        focus-visible:outline-2 focus-visible:outline-[#4156E1] focus-visible:outline-offset-2
+      `}
     >
-      <Box
-        component="span"
-        role="status"
-        aria-label="pkgx is from the creator of Homebrew"
-        tabIndex={0}
-        sx={{
-          display: "inline-flex",
-          alignItems: "center",
-          gap: 0.75,
-          border: "1px solid rgba(149, 178, 184, 0.3)",
-          borderRadius: "16px",
-          px: isxs ? 1.5 : 2,
-          py: 0.5,
-          color: "text.secondary",
-          fontSize: isxs ? 11 : 13,
-          fontWeight: 400,
-          letterSpacing: 0.3,
-          cursor: "default",
-          transition: "border-color 0.2s ease, color 0.2s ease",
-          "&:hover": {
-            borderColor: "primary.main",
-            color: "text.primary",
-          },
-          "&:focus-visible": {
-            outline: `2px solid ${theme.palette.primary.main}`,
-            outlineOffset: 2,
-          },
-        }}
-      >
-        <span role="img" aria-hidden="true" style={{ fontSize: isxs ? 14 : 16, lineHeight: 1 }}>
-          🍺
-        </span>
-        {isxs ? "By Homebrew's creator" : "From the creator of Homebrew"}
-      </Box>
-    </Tooltip>
+      <span role="img" aria-hidden="true" className={`${isxs ? "text-sm" : "text-base"} leading-none`}>
+        🍺
+      </span>
+      {isxs ? "By Homebrew's creator" : "From the creator of Homebrew"}
+    </span>
   );
 }
