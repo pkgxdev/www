@@ -2,45 +2,40 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { useIsMobile } from "../utils/useIsMobile";
 import tea from "../assets/wordmarks/tea.svg";
 import logo from "../assets/pkgx.svg";
+import { cn } from "../utils/cn";
 
 export default function Footer() {
   const year = new Date().getFullYear();
   const isxs = useIsMobile();
 
-  const linkClass = "text-[rgba(237,242,239,0.7)] hover:text-[#EDF2EF] no-underline transition-colors text-sm";
+  const linkClass = "text-[rgba(237,242,239,0.5)] hover:text-[#EDF2EF] no-underline transition-colors text-sm";
 
   const copyright = (
-    <p className="text-[rgba(237,242,239,0.7)] text-sm mt-2">
+    <p className="text-[rgba(237,242,239,0.4)] text-xs mt-4">
       &copy;{year} PKGX INC. All Rights Reserved.
     </p>
   );
 
   return (
-    <div className="flex flex-col items-center gap-8">
-      {/* Tea Partnership Banner */}
-      <div className={`flex ${isxs ? "flex-col" : "flex-row"} items-center gap-${isxs ? "2" : "3"} mt-16`}>
-        <img src={tea} alt="tea" className="h-5" />
-        <p>pkgx is a core contributor to the tea protocol</p>
-        <a
-          href="https://tea.xyz"
-          className="inline-flex items-center gap-2 border border-current rounded px-3 py-1 text-sm hover:bg-white/5 transition-colors no-underline"
-        >
-          Learn More <ArrowRight className="w-4 h-4" />
-        </a>
-      </div>
+    <footer className="mt-16 -mx-2 md:-mx-4 px-4 md:px-6">
+      {/* Top border gradient */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[rgba(149,178,184,0.15)] to-transparent mb-12" />
 
       {/* Footer Grid */}
-      <div className={`grid ${isxs ? "grid-cols-1" : "grid-cols-11"} gap-4 w-full`}>
+      <div className={cn("grid gap-8 w-full", isxs ? "grid-cols-1" : "grid-cols-12")}>
         {/* Logo Column */}
         <div className={isxs ? "col-span-1" : "col-span-5"}>
-          <img src={logo} alt="pkgx" className="h-[18px]" />
+          <img src={logo} alt="pkgx" className="h-[18px] opacity-70" />
+          <p className="text-sm text-[rgba(237,242,239,0.4)] mt-3 max-w-xs leading-relaxed">
+            The blazingly fast, cross-platform package runner from the creator of Homebrew.
+          </p>
           {!isxs && copyright}
         </div>
 
         {/* Product */}
         <div className={isxs ? "col-span-1" : "col-span-2"}>
-          <h5 className="font-bold text-sm">Product</h5>
-          <ul className="list-none p-0 m-0 mt-2 space-y-0.5 text-sm">
+          <h5 className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3">Product</h5>
+          <ul className="list-none p-0 m-0 space-y-2">
             <li><a href="https://pkgx.sh" className={linkClass}>pkgx</a></li>
             <li><a href="https://pkgx.app" className={linkClass}>oss.app</a></li>
             <li><a href="https://mash.pkgx.sh" className={linkClass}>mash</a></li>
@@ -51,8 +46,8 @@ export default function Footer() {
 
         {/* Company */}
         <div className={isxs ? "col-span-1" : "col-span-2"}>
-          <h5 className="font-bold text-sm">Company</h5>
-          <ul className="list-none p-0 m-0 mt-2 space-y-0.5 text-sm">
+          <h5 className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3">Company</h5>
+          <ul className="list-none p-0 m-0 space-y-2">
             <li><a href="https://pkgx.dev" className={linkClass}>Home</a></li>
             <li><a href="https://pkgx.dev/privacy-policy" className={linkClass}>Privacy Policy</a></li>
             <li><a href="https://pkgx.dev/terms-of-use" className={linkClass}>Terms of Use</a></li>
@@ -71,9 +66,9 @@ export default function Footer() {
         </div>
 
         {/* Community */}
-        <div className={isxs ? "col-span-1" : "col-span-2"}>
-          <h5 className="font-bold text-sm">Community</h5>
-          <ul className="list-none p-0 m-0 mt-2 space-y-0.5 text-sm">
+        <div className={isxs ? "col-span-1" : "col-span-3"}>
+          <h5 className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3">Community</h5>
+          <ul className="list-none p-0 m-0 space-y-2">
             <li>
               <a href="https://github.com/pkgxdev" className={linkClass}>
                 GitHub<ArrowUpRight className="w-3 h-3 inline ml-0.5 translate-y-[1px]" />
@@ -95,10 +90,27 @@ export default function Footer() {
               </a>
             </li>
           </ul>
+
+          {/* tea partnership */}
+          <div className="mt-6 pt-4 border-t border-[rgba(149,178,184,0.08)]">
+            <div className="flex items-center gap-2 mb-2">
+              <img src={tea} alt="tea" className="h-4 opacity-60" />
+              <span className="text-xs text-[rgba(237,242,239,0.4)]">Core contributor</span>
+            </div>
+            <a
+              href="https://tea.xyz"
+              className="inline-flex items-center gap-1.5 text-xs text-[rgba(237,242,239,0.5)] hover:text-[#74FAD1] transition-colors no-underline"
+            >
+              Learn More <ArrowRight className="w-3 h-3" />
+            </a>
+          </div>
         </div>
 
-        {isxs && <div className="col-span-1">{copyright}</div>}
+        {isxs && <div className="col-span-1 pb-4">{copyright}</div>}
       </div>
-    </div>
+
+      {/* Bottom spacer */}
+      <div className="h-8" />
+    </footer>
   );
 }

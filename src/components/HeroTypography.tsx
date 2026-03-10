@@ -8,10 +8,11 @@ export default function HeroTypography({
   return (
     <h1
       className={cn(
-        "text-gradient text-center font-light uppercase text-[40px] md:text-[80px]",
-        "font-[shader,Roboto,sans-serif]",
+        "text-gradient text-center font-light uppercase text-[48px] md:text-[88px]",
+        "leading-[0.95] tracking-tight",
         className
       )}
+      style={{ fontFamily: "shader, Roboto, sans-serif" }}
       {...props}
     >
       {children}

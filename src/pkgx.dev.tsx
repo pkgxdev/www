@@ -19,17 +19,19 @@ import "./assets/app.css";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <Router>
-      <div className="flex flex-col p-2 md:p-4 max-w-5xl min-h-screen mx-auto space-y-4">
+      <div className="flex flex-col px-2 md:px-6 max-w-6xl min-h-screen mx-auto">
         <MyMasthead />
-        <Routes>
-          <Route path="/" element={<HomeFeed />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-use" element={<TermsOfUse />} />
-          <Route path="/pkgs" element={<PackageShowcase />} />
-          <Route path="/pkgs/*" element={<PackageListing />} />
-          <Route path="/tea" element={<TeaProtocol />} />
-          <Route path="/coinlist" element={<CoinListLandingPage />} />
-        </Routes>
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<HomeFeed />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-use" element={<TermsOfUse />} />
+            <Route path="/pkgs" element={<PackageShowcase />} />
+            <Route path="/pkgs/*" element={<PackageListing />} />
+            <Route path="/tea" element={<TeaProtocol />} />
+            <Route path="/coinlist" element={<CoinListLandingPage />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>
@@ -40,7 +42,7 @@ function MyMasthead() {
   const isxs = useIsMobile();
   const { pathname } = useLocation();
 
-  let gh = `https://github.com/pkgxdev/`;
+  let gh = "https://github.com/pkgxdev/";
   if (pathname.startsWith("/pkgs")) gh += "pantry/";
 
   const search = <Search />;
@@ -49,7 +51,7 @@ function MyMasthead() {
     <>
       <a
         href="/pkgs/"
-        className="px-2 py-1 text-[#EDF2EF] hover:bg-white/10 rounded transition-colors text-sm no-underline"
+        className="px-3 py-1.5 text-[rgba(237,242,239,0.6)] hover:text-[#EDF2EF] hover:bg-white/[0.05] rounded-lg transition-all text-sm no-underline"
       >
         pkgs
       </a>
