@@ -1,8 +1,10 @@
 import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3";
 import { useParams, Link as RouterLink } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { isArray, isPlainObject, isString } from "is-what";
-import Terminal from "../components/Terminal";
+import { isArray, isPlainObject } from "is-what";
+import InstallSnippets from "../components/PackageDetail/InstallSnippets";
+import VersionHistory from "../components/PackageDetail/VersionHistory";
+import DependencyGraph from "../components/PackageDetail/DependencyGraph";
 import get_pkg_name from "../utils/pkg-name";
 import { useIsMobile } from "../utils/useIsMobile";
 import { useAsync } from "react-use";
@@ -159,14 +161,19 @@ function Package({ project, dirs }: { project: string; dirs: string[] }) {
           </div>
         </div>
 
-        <Terminal>{codeblock()}</Terminal>
+        <InstallSnippets project={project} provides={description.value?.provides ?? undefined} />
 
         <div>{metadata()}</div>
 
-        <div>
-          <h3 className="text-lg font-semibold">Versions</h3>
-          <Versions project={project} />
-        </div>
+        {value && (
+          <DependencyGraph
+            dependencies={value?.dependencies ?? {}}
+            companions={value?.companions ?? {}}
+            project={project}
+          />
+        )}
+
+        <VersionsSection project={project} />
 
         {dirs.length > 0 && (
           <div>
@@ -357,12 +364,12 @@ function README({ project }: { project: string }) {
   }
 }
 
-function Versions({ project }: { project: string }) {
+function VersionsSection({ project }: { project: string }) {
   const state = useAsync(async () => {
     let rsp = await fetch(`https://dist.pkgx.dev/${project}/darwin/aarch64/versions.txt`);
     if (!rsp.ok) rsp = await fetch(`https://dist.pkgx.dev/${project}/linux/x86-64/versions.txt`);
     const txt = await rsp.text();
-    const versions = txt.split("\n");
+    const versions = txt.split("\n").filter(v => v.trim());
     return versions.sort().reverse();
   }, [project]);
 
@@ -382,32 +389,7 @@ function Versions({ project }: { project: string }) {
     );
   } else {
     return (
-      <>
-        <ul>
-          {state.value!.map((version) => (
-            <li key={version}>{version}</li>
-          ))}
-        </ul>
-        <p className="text-sm text-[rgba(237,242,239,0.7)]">
-          If you need a version we don't have{" "}
-          <a
-            href={`https://github.com/pkgxdev/pantry/issues/new?title=version+request:+${project}`}
-            className="text-[#4156E1] hover:underline"
-          >
-            request it here
-          </a>
-          .
-        </p>
-        <p className="text-sm text-[rgba(237,242,239,0.7)]">
-          View package listing in{" "}
-          <a
-            href={`https://dist.pkgx.dev/?prefix=${project}`}
-            className="text-[#4156E1] hover:underline"
-          >
-            1999 Mode
-          </a>
-        </p>
-      </>
+      <VersionHistory versions={state.value!} project={project} />
     );
   }
 }
