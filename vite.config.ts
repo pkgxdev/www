@@ -1,8 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
-import viteImagemin from 'vite-plugin-imagemin';
-
 const htmlPlugin = () => {
   return {
     name: 'html-transform',
@@ -32,19 +30,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react(),
-    htmlPlugin(),
-    viteImagemin({
-      gifsicle: { optimizationLevel: 7, interlaced: false },
-      optipng: { optimizationLevel: 7 },
-      mozjpeg: { quality: 85 },
-      svgo: {
-        plugins: [
-          { name: 'removeViewBox', active: false },
-          { name: 'removeEmptyAttrs', active: false }
-        ]
-      },
-      webp: { quality: 85 }
-    })
+    htmlPlugin()
   ],
   optimizeDeps: {
     // Pre-include ALL deps to prevent second-pass discovery race condition

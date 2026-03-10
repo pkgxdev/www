@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.438.0",
-    "algoliasearch": "^4.20.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "is-what": "^4.1.16",
@@ -20,8 +19,6 @@
     "react-dom": "latest",
     "react-helmet": "^6.1.0",
     "react-infinite-scroll-hook": "^4.1.1",
-    "react-instantsearch": "^7.3.0",
-    "react-instantsearch-dom": "^6.40.4",
     "react-router-dom": "^6.18.0",
     "react-use": "^17.4.0",
     "showdown": "^2.1.0",
@@ -39,8 +36,7 @@
     "sharp": "^0.34.5",
     "tailwindcss": "^4.2.1",
     "typescript": "latest",
-    "vite": "latest",
-    "vite-plugin-imagemin": "^0.6.1"
+    "vite": "latest"
   },
   "pkgx": "deno^1.35 node^20"
 }
