@@ -1,8 +1,6 @@
-import MuiMarkdown from "mui-markdown";
-import md from './privacy-policy.md?raw';
+import Markdown from "../components/Markdown";
+import md from "./privacy-policy.md?raw";
 
 export default function PrivacyPolicy() {
-  return <MuiMarkdown>
-    {md}
-  </MuiMarkdown>
+  return <Markdown txt={md} />;
 }

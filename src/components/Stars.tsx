@@ -1,13 +1,8 @@
-import { Stack, IconButton, Box, Tooltip, Typography, useTheme, useMediaQuery } from "@mui/material";
 import { useAsync } from "react-use";
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useIsMobile } from "../utils/useIsMobile";
 import github from "../assets/wordmarks/github.svg";
 
-/**
- * Animated star counter that counts from 0 to the actual value.
- * Uses requestAnimationFrame for smooth 60fps animation.
- * Respects prefers-reduced-motion: skips animation and shows final value instantly.
- */
 function useAnimatedCounter(target: number | undefined, durationMs = 1600): string {
   const [display, setDisplay] = useState<string>("");
   const prefersReducedMotion = useRef(false);
@@ -28,7 +23,6 @@ function useAnimatedCounter(target: number | undefined, durationMs = 1600): stri
       return;
     }
 
-    // Respect reduced motion preference
     if (prefersReducedMotion.current) {
       setDisplay(formatNumber(target));
       return;
@@ -36,17 +30,13 @@ function useAnimatedCounter(target: number | undefined, durationMs = 1600): stri
 
     let rafId: number;
     let startTime: number | null = null;
-    const startValue = 0;
 
     const animate = (timestamp: number) => {
       if (startTime === null) startTime = timestamp;
       const elapsed = timestamp - startTime;
       const progress = Math.min(elapsed / durationMs, 1);
-
-      // Ease-out cubic for satisfying deceleration
       const eased = 1 - Math.pow(1 - progress, 3);
-      const current = Math.round(startValue + (target - startValue) * eased);
-
+      const current = Math.round(target * eased);
       setDisplay(formatNumber(current));
 
       if (progress < 1) {
@@ -55,23 +45,24 @@ function useAnimatedCounter(target: number | undefined, durationMs = 1600): stri
     };
 
     rafId = requestAnimationFrame(animate);
-
-    return () => {
-      if (rafId) cancelAnimationFrame(rafId);
-    };
+    return () => { if (rafId) cancelAnimationFrame(rafId); };
   }, [target, durationMs, formatNumber]);
 
   return display;
 }
 
-export default function Stars({ href, hideCountIfMobile }: { href?: string; hideCountIfMobile?: boolean }) {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down("md"));
+export default function Stars({
+  href,
+  hideCountIfMobile,
+}: {
+  href?: string;
+  hideCountIfMobile?: boolean;
+}) {
+  const isxs = useIsMobile();
 
   const { value: stars } = useAsync(async () => {
     const response = await fetch("/stars.json");
     const data = await response.json();
-    // Handle both number and string formats
     const raw = typeof data === "object" && data !== null ? (data.total ?? data.stars ?? data) : data;
     return typeof raw === "string" ? parseInt(raw.replace(/,/g, ""), 10) : Number(raw);
   }, []);
@@ -80,32 +71,24 @@ export default function Stars({ href, hideCountIfMobile }: { href?: string; hide
   const shouldHide = hideCountIfMobile && isxs;
 
   return (
-    <Stack spacing={0} direction="row" alignItems="center">
-      <IconButton
+    <div className="flex items-center">
+      <a
         href={href || "https://github.com/pkgxdev/pkgx"}
+        className="inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-white/10 transition-colors"
         aria-label="View pkgx on GitHub"
       >
-        <Box component="img" src={github} alt="GitHub" />
-      </IconButton>
+        <img src={github} alt="GitHub" />
+      </a>
       {!shouldHide && (
-        <Tooltip title="Total Org. Stars" arrow placement="right" enterTouchDelay={0}>
-          <Typography
-            color="text.secondary"
-            fontSize={13}
-            component="span"
-            aria-live="polite"
-            aria-label={stars ? `${stars.toLocaleString("en-US")} GitHub stars` : "Loading stars"}
-            sx={{
-              minWidth: 44,
-              overflow: "clip",
-              fontVariantNumeric: "tabular-nums",
-              fontFeatureSettings: '"tnum"',
-            }}
-          >
-            {animatedStars || "\u00A0"}
-          </Typography>
-        </Tooltip>
+        <span
+          className="text-[rgba(237,242,239,0.7)] text-[13px] min-w-[44px] overflow-clip tabular-nums"
+          title="Total Org. Stars"
+          aria-live="polite"
+          aria-label={stars ? `${stars.toLocaleString("en-US")} GitHub stars` : "Loading stars"}
+        >
+          {animatedStars || "\u00A0"}
+        </span>
       )}
-    </Stack>
+    </div>
   );
 }

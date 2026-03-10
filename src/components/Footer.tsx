@@ -1,92 +1,116 @@
-import Grid from '@mui/material/Grid2';
-import { Link, LinkProps, Typography, useTheme, useMediaQuery, Box, Button, Stack } from "@mui/material";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ArrowOutwardIcon from '@mui/icons-material/CallMade';
+import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { useIsMobile } from "../utils/useIsMobile";
 import tea from "../assets/wordmarks/tea.svg";
 import logo from "../assets/pkgx.svg";
-
+import { cn } from "../utils/cn";
 
 export default function Footer() {
-  const year = new Date().getFullYear()
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const year = new Date().getFullYear();
+  const isxs = useIsMobile();
 
-  const ul_style = {
-    listStyleType: 'none',
-    paddingLeft: 0,
-    marginLeft: 0,
-    fontSize: 14,
-    marginTop: 10
-  }
-  const link_props: LinkProps = {
-    color: 'text.secondary',
-    underline: 'none',
-  }
-  const c = <Typography variant="subtitle1" color='text.secondary' fontSize={14} mt={0.75}>
-    ©{year} PKGX INC. All Rights Reserved.
-  </Typography>;
+  const linkClass = "text-[rgba(237,242,239,0.5)] hover:text-[#EDF2EF] no-underline transition-colors text-sm";
 
-  const icon = <ArrowOutwardIcon fontSize="inherit" style={{transform: 'translateY(3px)'}} />
+  const copyright = (
+    <p className="text-[rgba(237,242,239,0.4)] text-xs mt-4">
+      &copy;{year} PKGX INC. All Rights Reserved.
+    </p>
+  );
 
-  return <Stack spacing={8} sx={{alignItems: 'center'}}>
-    <Stack direction={isxs ? 'column' : 'row'} spacing={isxs ? 2: 3} alignItems='center' sx={{"&&": {mt: 16}}}>
-      <Box component='img' src={tea} height='20px' />
-      <Typography>
-        pkgx is a core contributor to the tea protocol
-      </Typography>
-      <Button variant='outlined' color='inherit' href='https://tea.xyz' size='small' endIcon={<ArrowForwardIcon />}>
-        Learn More
-      </Button>
-    </Stack>
+  return (
+    <footer className="mt-16 -mx-2 md:-mx-4 px-4 md:px-6">
+      {/* Top border gradient */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[rgba(149,178,184,0.15)] to-transparent mb-12" />
 
-    <Grid container spacing={2} columns={isxs ? 12 : 11} width='100%'>
-      <Grid size={{xs: 12, md: 5}}>
-        <img src={logo} height={18} />
-        {!isxs && c}
-      </Grid>
-      <Grid size={{xs: 4, md: 2}}>
-        <Typography variant="h5" fontWeight='bold' fontSize={14}>
-          Product
-        </Typography>
-        <ul style={ul_style}>
-          <Li><Link href='https://pkgx.sh' {...link_props}>pkgx</Link></Li>
-          <Li><Link href='https://pkgx.app' {...link_props}>oss.app</Link></Li>
-          <Li><Link href='https://mash.pkgx.sh' {...link_props}>mash</Link></Li>
-          <Li><Link href='https://docs.pkgx.sh' {...link_props}>docs</Link></Li>
-          <Li><Link href='https://pkgx.dev/pkgs/' {...link_props}>pkgs</Link></Li>
-        </ul>
-      </Grid>
-      <Grid size={{xs: 4, md: 2}}>
-        <Typography variant="h5" fontWeight='bold' fontSize={14}>
-          Company
-        </Typography>
-        <ul style={ul_style}>
-          <Li><Link href='https://pkgx.dev' {...link_props}>Home</Link></Li>
-          <Li><Link href='https://pkgx.dev/privacy-policy' {...link_props}>Privacy Policy</Link></Li>
-          <Li><Link href='https://pkgx.dev/terms-of-use' {...link_props}>Terms of Use</Link></Li>
-          <Li><Link href='https://blog.pkgx.dev' {...link_props}>Blog</Link></Li>
-          <Li><Link href='https://drive.google.com/drive/folders/18PMUnaTr2AKpcCGxErK2k7Gok50CKB2y?usp=sharing' {...link_props}>Press Kit</Link></Li>
-          <Li><Link href='mailto:hi@pkgx.dev' {...link_props}>Contact{icon}</Link></Li>
-        </ul>
-      </Grid>
-      <Grid size={{xs: 4, md: 2}}>
-        <Typography variant="h5" fontWeight='bold' fontSize={14}>
-          Community
-        </Typography>
-        <ul style={ul_style}>
-          <Li><Link href='https://github.com/pkgxdev' {...link_props}>GitHub{icon}</Link></Li>
-          <Li><Link href='https://x.com/pkgxdev' {...link_props}>𝕏{icon}</Link></Li>
-          <Li><Link href='https://discord.gg/rNwNUY83XS' {...link_props}>Discord{icon}</Link></Li>
-          <Li><Link href='https://web.libera.chat/?channel=#pkgx' {...link_props}>irc:#pkgx{icon}</Link></Li>
-        </ul>
-      </Grid>
-      {isxs && <Grid size={12}>
-        {c}
-      </Grid>}
-    </Grid>
-  </Stack>
-}
+      {/* Footer Grid */}
+      <div className={cn("grid gap-8 w-full", isxs ? "grid-cols-1" : "grid-cols-12")}>
+        {/* Logo Column */}
+        <div className={isxs ? "col-span-1" : "col-span-5"}>
+          <img src={logo} alt="pkgx" className="h-[18px] opacity-70" />
+          <p className="text-sm text-[rgba(237,242,239,0.4)] mt-3 max-w-xs leading-relaxed">
+            The blazingly fast, cross-platform package runner from the creator of Homebrew.
+          </p>
+          {!isxs && copyright}
+        </div>
 
-function Li({ children }: { children: React.ReactNode }) {
-  return <li style={{marginBottom: 2}}>{children}</li>
+        {/* Product */}
+        <div className={isxs ? "col-span-1" : "col-span-2"}>
+          <div className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3" role="heading" aria-level={2}>Product</div>
+          <ul className="list-none p-0 m-0 space-y-2">
+            <li><a href="https://pkgx.sh" className={linkClass}>pkgx</a></li>
+            <li><a href="https://pkgx.app" className={linkClass}>oss.app</a></li>
+            <li><a href="https://mash.pkgx.sh" className={linkClass}>mash</a></li>
+            <li><a href="https://docs.pkgx.sh" className={linkClass}>docs</a></li>
+            <li><a href="https://pkgx.dev/pkgs/" className={linkClass}>pkgs</a></li>
+          </ul>
+        </div>
+
+        {/* Company */}
+        <div className={isxs ? "col-span-1" : "col-span-2"}>
+          <div className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3" role="heading" aria-level={2}>Company</div>
+          <ul className="list-none p-0 m-0 space-y-2">
+            <li><a href="https://pkgx.dev" className={linkClass}>Home</a></li>
+            <li><a href="https://pkgx.dev/privacy-policy" className={linkClass}>Privacy Policy</a></li>
+            <li><a href="https://pkgx.dev/terms-of-use" className={linkClass}>Terms of Use</a></li>
+            <li><a href="https://blog.pkgx.dev" className={linkClass}>Blog</a></li>
+            <li>
+              <a href="https://drive.google.com/drive/folders/18PMUnaTr2AKpcCGxErK2k7Gok50CKB2y?usp=sharing" className={linkClass}>
+                Press Kit
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hi@pkgx.dev" className={linkClass}>
+                Contact<ArrowUpRight className="w-3 h-3 inline ml-0.5 translate-y-[1px]" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Community */}
+        <div className={isxs ? "col-span-1" : "col-span-3"}>
+          <div className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3" role="heading" aria-level={2}>Community</div>
+          <ul className="list-none p-0 m-0 space-y-2">
+            <li>
+              <a href="https://github.com/pkgxdev" className={linkClass}>
+                GitHub<ArrowUpRight className="w-3 h-3 inline ml-0.5 translate-y-[1px]" />
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/pkgxdev" className={linkClass}>
+                𝕏<ArrowUpRight className="w-3 h-3 inline ml-0.5 translate-y-[1px]" />
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.gg/rNwNUY83XS" className={linkClass}>
+                Discord<ArrowUpRight className="w-3 h-3 inline ml-0.5 translate-y-[1px]" />
+              </a>
+            </li>
+            <li>
+              <a href="https://web.libera.chat/?channel=#pkgx" className={linkClass}>
+                irc:#pkgx<ArrowUpRight className="w-3 h-3 inline ml-0.5 translate-y-[1px]" />
+              </a>
+            </li>
+          </ul>
+
+          {/* tea partnership */}
+          <div className="mt-6 pt-4 border-t border-[rgba(149,178,184,0.08)]">
+            <div className="flex items-center gap-2 mb-2">
+              <img src={tea} alt="tea" className="h-4 opacity-60" />
+              <span className="text-xs text-[rgba(237,242,239,0.4)]">Core contributor</span>
+            </div>
+            <a
+              href="https://tea.xyz"
+              className="inline-flex items-center gap-1.5 text-xs text-[rgba(237,242,239,0.5)] hover:text-[#74FAD1] transition-colors no-underline"
+            >
+              Learn More <ArrowRight className="w-3 h-3" />
+            </a>
+          </div>
+        </div>
+
+        {isxs && <div className="col-span-1 pb-4">{copyright}</div>}
+      </div>
+
+      {/* Bottom spacer */}
+      <div className="h-8" />
+    </footer>
+  );
 }

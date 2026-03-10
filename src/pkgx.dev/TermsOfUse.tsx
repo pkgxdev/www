@@ -1,11 +1,6 @@
-import MuiMarkdown from "mui-markdown";
-import md from './terms-of-use.md?raw';
-import Masthead from "../components/Masthead";
-import { Stack } from "@mui/material";
-import Footer from "../components/Footer";
+import Markdown from "../components/Markdown";
+import md from "./terms-of-use.md?raw";
 
 export default function TermsOfUse() {
-  return <MuiMarkdown>
-    {md}
-  </MuiMarkdown>
+  return <Markdown txt={md} />;
 }

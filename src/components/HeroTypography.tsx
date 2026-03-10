@@ -1,16 +1,21 @@
-import { Typography, styled } from "@mui/material";
+import { cn } from "../utils/cn";
 
-const StyledTypography = styled(Typography)(({ theme }) => ({
-  textAlign: "center",
-  fontWeight: 300,
-  textTransform: 'uppercase',
-  fontSize: 80,
-  fontFamily: 'shader, Roboto, sans-serif',
-  [theme.breakpoints.down("md")]: {
-    fontSize: 40,
-  },
-}));
-
-export default function HeroTypography({ children, ...props }: React.ComponentProps<typeof Typography>) {
-  return <StyledTypography className='text-gradient' variant='h1' {...props}>{children}</StyledTypography>
+export default function HeroTypography({
+  children,
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLHeadingElement>) {
+  return (
+    <h1
+      className={cn(
+        "text-gradient text-center font-light uppercase text-[48px] md:text-[88px]",
+        "leading-[0.95] tracking-tight",
+        className
+      )}
+      style={{ fontFamily: "shader, Roboto, sans-serif" }}
+      {...props}
+    >
+      {children}
+    </h1>
+  );
 }

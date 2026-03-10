@@ -1,0 +1,11 @@
+--- src/pkgx.dev/PackageShowcase.tsx
++++ src/pkgx.dev/PackageShowcase.tsx
+@@ -162,7 +162,7 @@ export default function PackageShowcase() {
+   async function fetchPackages() {
+     setLoading(true);
+     try {
+-      const rsp = await fetch("https://pkgx.dev/pkgs/index.json");
++      const rsp = await fetch("/pkgs/index.json");
+       const data = await rsp.json();
+       const mapped = Object.entries(data).map(([name, info]: [string, any]) => ({
+         name,

@@ -1,63 +1,74 @@
-import { ThemeProvider } from '@mui/material/styles';
-import Grid from '@mui/material/Grid2';
-import { Button, CssBaseline, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import * as ReactDOM from 'react-dom/client';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import React, { lazy, Suspense } from "react";
+import * as ReactDOM from "react-dom/client";
+import { useIsMobile } from "./utils/useIsMobile";
 import Masthead from "./components/Masthead";
-import Listing from './mash.pkgx.sh/Listing';
-import Script from './mash.pkgx.sh/Script';
 import Footer from "./components/Footer";
-import Stars from './components/Stars';
-import Hero from './mash.pkgx.sh/Hero';
-import theme from './utils/theme';
-import './assets/main.css';
-import React from "react";
-import Discord from './components/Discord';
+import Stars from "./components/Stars";
+import Hero from "./mash.pkgx.sh/Hero";
+import Discord from "./components/Discord";
+import LoadingSpinner from "./components/LoadingSpinner";
+import "./assets/app.css";
+
+// Lazy load route components
+const Listing = lazy(() => import("./mash.pkgx.sh/Listing"));
+const Script = lazy(() => import("./mash.pkgx.sh/Script"));
 
 function Body() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const isxs = useIsMobile();
 
   return (
-    <Stack minWidth='lg' p={isxs ? 1 : 4} spacing={isxs ? 8 : 16}>
+    <div className={`min-w-[1024px] ${isxs ? "p-2 space-y-8" : "p-4 space-y-16"}`}>
       <MyMasthead />
-      <Grid container spacing={2} sx={{"&&": {mt: 4}}}>
-        <Grid size={{xs: 12, md: 9}}>
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 mt-4">
+        <div className="md:col-span-9">
           <Router>
-            <Routes>
-              <Route path='/' element={<Listing />} />
-              <Route path='/*' element={<Script />} />
-            </Routes>
+            <Suspense fallback={<LoadingSpinner />}>
+              <Routes>
+                <Route path="/" element={<Listing />} />
+                <Route path="/*" element={<Script />} />
+              </Routes>
+            </Suspense>
           </Router>
-        </Grid>
-        <Grid size={{xs: 12, md: 3}}>
+        </div>
+        <div className="md:col-span-3">
           <Hero />
-        </Grid>
-      </Grid>
+        </div>
+      </div>
       <Footer />
-    </Stack>
-  )
+    </div>
+  );
 }
 
 function MyMasthead() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const isxs = useIsMobile();
 
-  return <Masthead left={<Typography fontFamily='shader' color='secondary'>MASH</Typography>}>
-    {!isxs && <>
-      <Button href='https://docs.pkgx.sh' color='inherit'>docs</Button>
-      <Button href='https://pkgx.dev/pkgs/' color='inherit'>pkgs</Button>
-    </>}
-    <Discord />
-    <Stars href='https://github.com/pkgxdev/mash/' />
-  </Masthead>
+  return (
+    <Masthead left={<span className="font-[shader] text-[#F26212]">MASH</span>}>
+      {!isxs && (
+        <>
+          <a
+            href="https://docs.pkgx.sh"
+            className="px-2 py-1 text-[#EDF2EF] hover:bg-white/10 rounded transition-colors no-underline text-sm"
+          >
+            docs
+          </a>
+          <a
+            href="https://pkgx.dev/pkgs/"
+            className="px-2 py-1 text-[#EDF2EF] hover:bg-white/10 rounded transition-colors no-underline text-sm"
+          >
+            pkgs
+          </a>
+        </>
+      )}
+      <Discord />
+      <Stars href="https://github.com/pkgxdev/mash/" />
+    </Masthead>
+  );
 }
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Body />
-    </ThemeProvider>
-  </React.StrictMode>,
+    <Body />
+  </React.StrictMode>
 );

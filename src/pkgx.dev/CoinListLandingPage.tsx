@@ -1,16 +1,12 @@
-import { Box, Button, Card, CardContent, Chip, Container, FormControlLabel, Grid, Stack, Switch, TextField, Typography, Alert } from "@mui/material";
-import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-import LaunchIcon from "@mui/icons-material/Launch";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import DiamondIcon from "@mui/icons-material/Diamond";
-import VerifiedIcon from "@mui/icons-material/Verified";
+import { ArrowUpRight, ExternalLink, Calendar, CheckCircle, Diamond, ShieldCheck } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Helmet } from "react-helmet";
-import partnersImg from "../assets/partners.png";
+import { useIsMobile } from "../utils/useIsMobile";
+import { cn } from "../utils/cn";
+import partnersImg from "../assets/partners.webp";
 import tractionImg from "../assets/traction.svg";
-import techImg from "../assets/tech.png";
-import teaLogoImg from "../assets/tea-3d-logo.png";
+import techImg from "../assets/tech.webp";
+import teaLogoImg from "../assets/tea-3d-logo.webp";
 
 function useCountdown(target: Date) {
   const [now, setNow] = useState<Date>(() => new Date());
@@ -26,74 +22,62 @@ function useCountdown(target: Date) {
   return { days, hours, minutes, seconds };
 }
 
-export default function TeaLandingPage() {
+function CountdownDisplay({ t }: { t: ReturnType<typeof useCountdown> }) {
+  return (
+    <div className="inline-flex items-center gap-2 bg-[rgba(34,197,94,0.1)] border border-[rgba(34,197,94,0.2)] rounded-lg px-3 py-2">
+      <span className="text-[rgb(34,197,94)] font-semibold uppercase tracking-wide text-xs">Sale ends in</span>
+      <div className="flex gap-1 items-center">
+        {[
+          { value: t.days, label: "d" },
+          { value: t.hours, label: "h" },
+          { value: t.minutes, label: "m" },
+          { value: t.seconds, label: "s" },
+        ].map((item, index) => (
+          <div key={item.label} className="flex items-center">
+            <div className="bg-[rgba(34,197,94,0.1)] border border-[rgba(34,197,94,0.3)] rounded px-1.5 py-0.5 min-w-[40px] text-center">
+              <span className="font-bold text-[rgb(34,197,94)] font-mono">{item.value.toString().padStart(2, "0")}</span>
+            </div>
+            <span className="text-[rgb(34,197,94)] font-medium ml-0.5 text-[0.7rem]">{item.label}</span>
+            {index < 3 && <span className="text-[rgba(34,197,94,0.5)] mx-0.5 font-semibold">:</span>}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
-  // End date: October 2nd, 2025, 1 PM EST (UTC-4)
+export default function CoinListLandingPage() {
+  const isxs = useIsMobile();
   const target = useMemo(() => new Date("2025-10-02T13:00:00-04:00"), []);
   const t = useCountdown(target);
 
-  const [email, setEmail] = useState("");
   const [formEmail, setFormEmail] = useState("");
   const [isDeveloper, setIsDeveloper] = useState(false);
   const [formError, setFormError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showThankYou, setShowThankYou] = useState(false);
 
-  const validateEmail = (email: string) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
+  const validateEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormError("");
-
-    if (!formEmail) {
-      setFormError("Please enter your email address");
-      return;
-    }
-
-    if (!validateEmail(formEmail)) {
-      setFormError("Enter a valid email to continue");
-      return;
-    }
-
+    if (!formEmail) { setFormError("Please enter your email address"); return; }
+    if (!validateEmail(formEmail)) { setFormError("Enter a valid email to continue"); return; }
     setIsSubmitting(true);
-
     try {
-      // Create form data to match the original form structure
       const formData = new FormData();
-      formData.append('u', '9');
-      formData.append('f', '9');
-      formData.append('s', '');
-      formData.append('c', '0');
-      formData.append('m', '0');
-      formData.append('act', 'sub');
-      formData.append('v', '2');
-      formData.append('or', 'a62f1522a75f4801557d059720d472e2');
-      formData.append('email', formEmail);
-      formData.append('field[5]', isDeveloper ? 'Yes' : 'No');
-
-      const response = await fetch('https://teaxyz.activehosted.com/proc.php', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (response.ok) {
-        setShowThankYou(true);
-        setFormEmail("");
-        setIsDeveloper(false);
-      } else {
-        setFormError("Something went wrong. Please try again.");
-      }
-    } catch (error) {
-      setFormError("Network error. Please check your connection and try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
+      formData.append("u", "9"); formData.append("f", "9"); formData.append("s", "");
+      formData.append("c", "0"); formData.append("m", "0"); formData.append("act", "sub");
+      formData.append("v", "2"); formData.append("or", "a62f1522a75f4801557d059720d472e2");
+      formData.append("email", formEmail);
+      formData.append("field[5]", isDeveloper ? "Yes" : "No");
+      const response = await fetch("https://teaxyz.activehosted.com/proc.php", { method: "POST", body: formData });
+      if (response.ok) { setShowThankYou(true); setFormEmail(""); setIsDeveloper(false); }
+      else { setFormError("Something went wrong. Please try again."); }
+    } catch { setFormError("Network error. Please check your connection and try again."); }
+    finally { setIsSubmitting(false); }
   };
-
-  // reCAPTCHA handler would be implemented here in production
 
   return (
     <>
@@ -110,405 +94,166 @@ export default function TeaLandingPage() {
         <meta name="twitter:image" content={`https://${import.meta.env.VITE_HOST}/coinlist-og.jpg`} />
       </Helmet>
 
-      <Box sx={{
-        minHeight: "100dvh",
-        background: "radial-gradient(1200px 600px at 20% -10%, rgba(124,58,237,.25), transparent 55%), radial-gradient(1200px 600px at 120% 10%, rgba(14,165,233,.25), transparent 55%), linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0))",
-      }}>
+      <div
+        className="min-h-dvh"
+        style={{
+          background: "radial-gradient(1200px 600px at 20% -10%, rgba(124,58,237,.25), transparent 55%), radial-gradient(1200px 600px at 120% 10%, rgba(14,165,233,.25), transparent 55%), linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0))",
+        }}
+      >
         {/* Hero */}
-        <Container sx={{ pt: { xs: 2, md: 2 }, pb: { xs: 8, md: 12 } }}>
-          <Stack spacing={8} alignItems="flex-center">
-            <Chip label="Early Access" color="secondary" variant="outlined" sx={{ fontWeight: 700, width: 150 }} />
-            <Stack spacing={4} alignItems="center">
-              <img 
-                src={teaLogoImg} 
-                alt="tea" 
-                style={{ 
-                  height: 'auto', 
-                  width: '100%',
-                  maxWidth: '70%',
-                }} 
-              />
-              <Typography 
-                variant="h2" 
-                component="h1" 
-                sx={{ 
-                  fontWeight: 800, 
-                  letterSpacing: -0.5,
-                  fontSize: {
-                    xs: '2rem',    // 32px on mobile
-                    sm: '2.5rem',  // 40px on small screens
-                    md: '3.75rem'  // 60px on medium+ screens (h2 default)
-                  }
-                }}
-              >
+        <div className="max-w-5xl mx-auto pt-4 md:pt-4 pb-8 md:pb-12 px-4">
+          <div className="space-y-8">
+            <span className="inline-block border border-[#F26212] rounded-full px-3 py-0.5 text-[#F26212] text-sm font-bold">
+              Early Access
+            </span>
+            <div className="flex flex-col items-center gap-4">
+              <img src={teaLogoImg} alt="tea" className="w-full max-w-[70%] h-auto" />
+              <h1 className={cn("font-extrabold tracking-tight", isxs ? "text-3xl" : "text-5xl")}>
                 now available on CoinList
-              </Typography>
-            </Stack>
-            <Typography variant="h6" color="text.secondary" maxWidth={800}>
+              </h1>
+            </div>
+            <p className="text-lg text-[rgba(237,242,239,0.7)] max-w-[800px]">
               Be part of the future of open source. PKGX built tea, and now you can join the movement by participating in the official CoinList sale.
-            </Typography>
-
-            <Stack direction={{ xs: "column", sm: "row" }} spacing={2} alignItems={{ xs: "stretch", sm: "center" }}>
-              <Button size="large" variant="contained" color="primary" endIcon={<LaunchIcon />} href="https://coinlist.co" target="_blank" rel="noreferrer noopener">
-                Join the CoinList Sale
-              </Button>
-              <Button size="large" variant="outlined" color="secondary" endIcon={<ArrowOutwardIcon />} href="https://tea.xyz" target="_blank" rel="noreferrer noopener">
-                Learn more at tea.xyz
-              </Button>
-            </Stack>
-
-            <Stack direction="row" spacing={3} divider={<Box sx={{ width: 1, height: 1, opacity: 0 }} />}>
-              <Box sx={{ 
-                background: "linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(74, 222, 128, 0.05))",
-                border: "1px solid rgba(34, 197, 94, 0.2)",
-                borderRadius: 2,
-                px: 3,
-                py: 2,
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 2
-              }}>
-                <Typography variant="body2" sx={{ 
-                  color: "rgb(34, 197, 94)", 
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: 0.5,
-                  fontSize: "0.75rem"
-                }}>
-                  Sale ends in
-                </Typography>
-                <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
-                  {[
-                    { value: t.days, label: "d" },
-                    { value: t.hours, label: "h" },
-                    { value: t.minutes, label: "m" },
-                    { value: t.seconds, label: "s" }
-                  ].map((item, index) => (
-                    <Box key={item.label} sx={{ display: "flex", alignItems: "center" }}>
-                      <Box sx={{
-                        background: "rgba(34, 197, 94, 0.1)",
-                        border: "1px solid rgba(34, 197, 94, 0.3)",
-                        borderRadius: 1,
-                        px: 1.5,
-                        py: 0.5,
-                        minWidth: "40px",
-                        textAlign: "center"
-                      }}>
-                        <Typography variant="body1" sx={{ 
-                          fontWeight: 700,
-                          color: "rgb(34, 197, 94)",
-                          fontFamily: "monospace",
-                          fontSize: "1rem"
-                        }}>
-                          {item.value.toString().padStart(2, '0')}
-                        </Typography>
-                      </Box>
-                      <Typography variant="caption" sx={{ 
-                        color: "rgb(34, 197, 94)", 
-                        fontWeight: 500,
-                        ml: 0.5,
-                        fontSize: "0.7rem"
-                      }}>
-                        {item.label}
-                      </Typography>
-                      {index < 3 && (
-                        <Typography sx={{ 
-                          color: "rgba(34, 197, 94, 0.5)", 
-                          mx: 0.5,
-                          fontWeight: 600
-                        }}>
-                          :
-                        </Typography>
-                      )}
-                    </Box>
-                  ))}
-                </Box>
-              </Box>
-            </Stack>
-          </Stack>
-        </Container>
+            </p>
+            <div className={cn("flex gap-2", isxs ? "flex-col" : "flex-row items-center")}>
+              <a href="https://coinlist.co" target="_blank" rel="noreferrer noopener"
+                className="inline-flex items-center gap-2 bg-[#4156E1] text-white px-6 py-3 rounded font-medium hover:bg-[#3348c4] transition-colors no-underline">
+                Join the CoinList Sale <ExternalLink className="w-4 h-4" />
+              </a>
+              <a href="https://tea.xyz" target="_blank" rel="noreferrer noopener"
+                className="inline-flex items-center gap-2 border border-[#F26212] text-[#F26212] px-6 py-3 rounded font-medium hover:bg-[#F26212]/10 transition-colors no-underline">
+                Learn more at tea.xyz <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </div>
+            <CountdownDisplay t={t} />
+          </div>
+        </div>
 
         {/* Why tea */}
-        <Container sx={{ py: { xs: 1, md: 1 } }}>
-          <Grid container spacing={4}>
-            <Grid item xs={12} md={6}>
-              <Typography variant="h4" gutterBottom fontWeight={800}>Why tea?</Typography>
-              <Typography color="text.secondary" paragraph>
+        <div className="max-w-5xl mx-auto py-4 px-4">
+          <div className={cn("grid gap-4", isxs ? "grid-cols-1" : "grid-cols-2")}>
+            <div>
+              <h2 className="text-2xl font-extrabold mb-2">Why tea?</h2>
+              <p className="text-[rgba(237,242,239,0.7)] mb-4">
                 Open source powers the apps, tools, and platforms you use every day — but the people who build it rarely get rewarded. <strong>tea changes that.</strong>
-              </Typography>
-              <Stack spacing={1.5}>
-                <Stack direction="row" spacing={1.5} alignItems="center">
-                  <CheckCircleIcon color="primary" />
-                  <Typography>A universal app store for open source</Typography>
-                </Stack>
-                <Stack direction="row" spacing={1.5} alignItems="center">
-                  <CheckCircleIcon color="primary" />
-                  <Typography>Fair rewards for developers and maintainers</Typography>
-                </Stack>
-                <Stack direction="row" spacing={1.5} alignItems="center">
-                  <CheckCircleIcon color="primary" />
-                  <Typography>Built to scale with the next generation of software and AI</Typography>
-                </Stack>
-              </Stack>
-              <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center' }}>
-                <img src={techImg} alt="Technology Stack" style={{ maxWidth: '100%', height: 'auto' }} />
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6} sx={{ display: 'flex' }}>
-              <Card sx={{ height: "100%", background: "linear-gradient(180deg, rgba(124,58,237,.12), rgba(14,165,233,.08))", border: "1px solid rgba(255,255,255,.06)" }}>
-                <CardContent>
-                  <Typography variant="h5" gutterBottom fontWeight={800}>The CoinList Sale: Your Early Access</Typography>
-                  <Typography color="text.secondary" paragraph>
-                    The tea association has partnered with CoinList — trusted by millions of investors — to launch the tea token sale. This is your opportunity to join early and support the future of open source.
-                  </Typography>
-                  <Stack spacing={1.25}>
-                    <Stack direction="row" spacing={1.5} alignItems="center">
-                      <CalendarMonthIcon color="secondary" />
-                      <Typography>
-                        <strong>Sale ends:</strong> October 2nd, 2025 — 1 PM EST
-                      </Typography>
-                    </Stack>
-                    <Stack direction="row" spacing={1.5} alignItems="center">
-                      <DiamondIcon color="secondary" />
-                      <Typography>
-                        <strong>Token supply:</strong> Selling 4bn (Total supply 100bn)
-                      </Typography>
-                    </Stack>
-                    <Stack direction="row" spacing={1.5} alignItems="center">
-                      <VerifiedIcon color="secondary" />
-                      <Typography>
-                        <strong>How to join:</strong> Sign up on CoinList, complete verification, and participate
-                      </Typography>
-                    </Stack>
-                  </Stack>
-                  <Stack direction={{ xs: "column", sm: "row" }} spacing={2} sx={{ mt: 3 }}>
-                    <Button fullWidth variant="contained" color="primary" endIcon={<LaunchIcon />} href="https://coinlist.co" target="_blank" rel="noreferrer noopener">
-                      Go to CoinList
-                    </Button>
-                    <Button fullWidth variant="outlined" color="secondary" href="#signup">
-                      Get Updates
-                    </Button>
-                  </Stack>
-                </CardContent>
-              </Card>
-            </Grid>
-          </Grid>
-        </Container>
+              </p>
+              <div className="space-y-3">
+                {["A universal app store for open source", "Fair rewards for developers and maintainers", "Built to scale with the next generation of software and AI"].map(text => (
+                  <div key={text} className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-[#4156E1] shrink-0" />
+                    <span>{text}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-6 flex justify-center">
+                <img src={techImg} alt="Technology Stack" className="max-w-full h-auto" loading="lazy" />
+              </div>
+            </div>
+            <div className="rounded-lg border border-white/5 p-6 h-full" style={{ background: "linear-gradient(180deg, rgba(124,58,237,.12), rgba(14,165,233,.08))" }}>
+              <h3 className="text-xl font-extrabold mb-2">The CoinList Sale: Your Early Access</h3>
+              <p className="text-[rgba(237,242,239,0.7)] mb-4">
+                The tea association has partnered with CoinList — trusted by millions of investors — to launch the tea token sale.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3"><Calendar className="w-5 h-5 text-[#F26212] shrink-0" /><span><strong>Sale ends:</strong> October 2nd, 2025 — 1 PM EST</span></div>
+                <div className="flex items-center gap-3"><Diamond className="w-5 h-5 text-[#F26212] shrink-0" /><span><strong>Token supply:</strong> Selling 4bn (Total supply 100bn)</span></div>
+                <div className="flex items-center gap-3"><ShieldCheck className="w-5 h-5 text-[#F26212] shrink-0" /><span><strong>How to join:</strong> Sign up on CoinList, complete verification, and participate</span></div>
+              </div>
+              <div className={cn("flex gap-2 mt-6", isxs ? "flex-col" : "flex-row")}>
+                <a href="https://coinlist.co" target="_blank" rel="noreferrer noopener"
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-[#4156E1] text-white px-4 py-2 rounded font-medium hover:bg-[#3348c4] transition-colors no-underline">
+                  Go to CoinList <ExternalLink className="w-4 h-4" />
+                </a>
+                <a href="#signup"
+                  className="flex-1 inline-flex items-center justify-center gap-2 border border-[#F26212] text-[#F26212] px-4 py-2 rounded font-medium hover:bg-[#F26212]/10 transition-colors no-underline">
+                  Get Updates
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <Box sx={{ mt: 1, display: 'flex', justifyContent: 'center' }}>
-          <img src={tractionImg} alt="Traction" style={{ maxWidth: '60%', height: 'auto' }} />
-        </Box>
+        <div className="mt-4 flex justify-center">
+          <img src={tractionImg} alt="Traction" className="max-w-[60%] h-auto" loading="lazy" />
+        </div>
 
         {/* Backed by Builders */}
-        <Container sx={{ py: { xs: 5, md: 5 }, textAlign: 'center' }}>
-          <Typography variant="h4" fontWeight={800} gutterBottom>
-            Backed by Builders & Trusted Platforms
-          </Typography>
-          <Typography color="text.secondary" paragraph maxWidth={700} textAlign="start" sx={{ mx: 'auto' }}>
-            tea was built by <strong>PKGX</strong>, trusted across the developer ecosystem. The tea association ensures transparent, community-driven governance. With <strong>CoinList</strong>, you're participating through one of the most secure, compliant token sale platforms in crypto.
-          </Typography>
-          
-          <Box sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}>
-            <img src={partnersImg} alt="Partners" style={{ maxWidth: '80%', height: 'auto' }} />
-          </Box>
-        </Container>
+        <div className="max-w-5xl mx-auto py-10 px-4 text-center">
+          <h2 className="text-2xl font-extrabold mb-2">Backed by Builders & Trusted Platforms</h2>
+          <p className="text-[rgba(237,242,239,0.7)] max-w-[700px] mx-auto text-left mb-6">
+            tea was built by <strong>PKGX</strong>, trusted across the developer ecosystem. The tea association ensures transparent, community-driven governance.
+          </p>
+          <div className="mt-4 flex justify-center">
+            <img src={partnersImg} alt="Partners" className="max-w-[80%] h-auto" loading="lazy" />
+          </div>
+        </div>
 
-        {/* Don't Miss Out */}
-        <Container id="signup" sx={{ py: { xs: 3, md: 3 } }}>
-          <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={7}>
-              <Typography variant="h4" fontWeight={800} gutterBottom>
-                Don't Miss Out
-              </Typography>
-              <Typography color="text.secondary" paragraph>
-                This is your chance to support the future of open source — and to be early.
-              </Typography>
-              <Box sx={{ 
-                background: "linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(74, 222, 128, 0.05))",
-                border: "1px solid rgba(34, 197, 94, 0.2)",
-                borderRadius: 2,
-                px: 3,
-                py: 2,
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 2,
-                mt: 2
-              }}>
-                <Typography variant="body2" sx={{ 
-                  color: "rgb(34, 197, 94)", 
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: 0.5,
-                  fontSize: "0.75rem"
-                }}>
-                  Sale ends in
-                </Typography>
-                <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
-                  {[
-                    { value: t.days, label: "d" },
-                    { value: t.hours, label: "h" },
-                    { value: t.minutes, label: "m" },
-                    { value: t.seconds, label: "s" }
-                  ].map((item, index) => (
-                    <Box key={item.label} sx={{ display: "flex", alignItems: "center" }}>
-                      <Box sx={{
-                        background: "rgba(34, 197, 94, 0.1)",
-                        border: "1px solid rgba(34, 197, 94, 0.3)",
-                        borderRadius: 1,
-                        px: 1.5,
-                        py: 0.5,
-                        minWidth: "40px",
-                        textAlign: "center"
-                      }}>
-                        <Typography variant="body1" sx={{ 
-                          fontWeight: 700,
-                          color: "rgb(34, 197, 94)",
-                          fontFamily: "monospace",
-                          fontSize: "1rem"
-                        }}>
-                          {item.value.toString().padStart(2, '0')}
-                        </Typography>
-                      </Box>
-                      <Typography variant="caption" sx={{ 
-                        color: "rgb(34, 197, 94)", 
-                        fontWeight: 500,
-                        ml: 0.5,
-                        fontSize: "0.7rem"
-                      }}>
-                        {item.label}
-                      </Typography>
-                      {index < 3 && (
-                        <Typography sx={{ 
-                          color: "rgba(34, 197, 94, 0.5)", 
-                          mx: 0.5,
-                          fontWeight: 600
-                        }}>
-                          :
-                        </Typography>
-                      )}
-                    </Box>
-                  ))}
-                </Box>
-              </Box>
-              <Button sx={{ mt: 2 }} variant="text" color="primary" endIcon={<LaunchIcon />} href="https://coinlist.co" target="_blank" rel="noreferrer noopener">
-                Join the CoinList Sale Now
-              </Button>
-              <Typography color="text.secondary" sx={{ mt: 2 }}>
+        {/* Signup */}
+        <div id="signup" className="max-w-5xl mx-auto py-6 px-4">
+          <div className={cn("grid gap-4", isxs ? "grid-cols-1" : "grid-cols-12")}>
+            <div className={isxs ? "" : "col-span-7"}>
+              <h2 className="text-2xl font-extrabold mb-2">Don't Miss Out</h2>
+              <p className="text-[rgba(237,242,239,0.7)]">This is your chance to support the future of open source — and to be early.</p>
+              <div className="mt-4"><CountdownDisplay t={t} /></div>
+              <a href="https://coinlist.co" target="_blank" rel="noreferrer noopener"
+                className="inline-flex items-center gap-2 text-[#4156E1] hover:underline mt-4">
+                Join the CoinList Sale Now <ExternalLink className="w-4 h-4" />
+              </a>
+              <p className="text-[rgba(237,242,239,0.7)] text-sm mt-4">
                 The tea token sale is offered through CoinList. Availability subject to regulations and eligibility. Nothing here is investment advice.
-              </Typography>
-              <Stack direction="row" spacing={2} sx={{ mt: 3 }}>
-                <Button variant="text" color="secondary" endIcon={<ArrowOutwardIcon />} href="https://tea.xyz" target="_blank" rel="noreferrer noopener">
-                  tea.xyz
-                </Button>
-                <Button variant="text" color="secondary" endIcon={<ArrowOutwardIcon />} href="https://pkgx.dev" target="_blank" rel="noreferrer noopener">
-                  pkgx.dev
-                </Button>
-              </Stack>
-            </Grid>
-            <Grid item xs={12} md={5}>
-              <Container sx={{ py: { xs: 8, md: 12 } }}>
-                <Card sx={{ 
-                  maxWidth: 600, 
-                  mx: "auto", 
-                  background: "linear-gradient(180deg, rgba(2,132,199,.14), rgba(124,58,237,.12))", 
-                  border: "1px solid rgba(255,255,255,.06)" 
-                }}>
-                  <CardContent sx={{ p: 4 }}>
-                    {!showThankYou ? (
-                      <>
-                        <Typography variant="h5" fontWeight={800} gutterBottom>
-                          Stay Updated
-                        </Typography>
-                        <Typography color="text.secondary" paragraph>
-                          Get the latest updates about tea and the future of open source development.
-                        </Typography>
-                        
-                        <Box component="form" onSubmit={handleFormSubmit} noValidate>
-                          <Stack spacing={3}>
-                            <TextField
-                              fullWidth
-                              required
-                              type="email"
-                              label="Enter your email"
-                              placeholder="Enter your email"
-                              value={formEmail}
-                              onChange={(e) => setFormEmail(e.target.value)}
-                              error={!!formError && formError.includes("email")}
-                              helperText={formError && formError.includes("email") ? formError : ""}
-                            />
-
-                            <FormControlLabel
-                              control={
-                                <Switch
-                                  checked={isDeveloper}
-                                  onChange={(e) => setIsDeveloper(e.target.checked)}
-                                  color="primary"
-                                />
-                              }
-                              label="Are you a developer?"
-                              sx={{ alignSelf: "flex-start" }}
-                            />
-
-                            {formError && !formError.includes("email") && (
-                              <Alert severity="error" sx={{ mt: 1 }}>
-                                {formError}
-                              </Alert>
-                            )}
-
-                            <Button
-                              type="submit"
-                              variant="contained"
-                              color="primary"
-                              size="large"
-                              fullWidth
-                              disabled={isSubmitting}
-                              sx={{ py: 1.5 }}
-                            >
-                              {isSubmitting ? "Submitting..." : "Submit"}
-                            </Button>
-                          </Stack>
-                        </Box>
-
-                        <Typography variant="body2" color="text.secondary" sx={{ mt: 3, textAlign: "center" }}>
-                          By submitting your email, you consent with our{" "}
-                          <Button
-                            component="a"
-                            href="/privacy-policy"
-                            variant="text"
-                            color="primary"
-                            sx={{ p: 0, minWidth: 0, textDecoration: "underline" }}
-                          >
-                            Privacy Policy
-                          </Button>
-                          .
-                        </Typography>
-                      </>
-                    ) : (
-                      <Box sx={{ textAlign: "center", py: 4 }}>
-                        <CheckCircleIcon color="success" sx={{ fontSize: 48, mb: 2 }} />
-                        <Typography variant="h5" fontWeight={800} gutterBottom>
-                          Thank You!
-                        </Typography>
-                        <Typography color="text.secondary">
-                          We'll keep you updated on tea and the future of open source.
-                        </Typography>
-                        <Button
-                          variant="text"
-                          color="primary"
-                          onClick={() => setShowThankYou(false)}
-                          sx={{ mt: 2 }}
-                        >
-                          Submit Another Email
-                        </Button>
-                      </Box>
-                    )}
-                  </CardContent>
-                </Card>
-              </Container>
-            </Grid>
-          </Grid>
-        </Container>
-      </Box>
+              </p>
+              <div className="flex gap-4 mt-6">
+                <a href="https://tea.xyz" target="_blank" rel="noreferrer noopener" className="inline-flex items-center gap-1 text-[#F26212] hover:underline text-sm">
+                  tea.xyz <ArrowUpRight className="w-3 h-3" />
+                </a>
+                <a href="https://pkgx.dev" target="_blank" rel="noreferrer noopener" className="inline-flex items-center gap-1 text-[#F26212] hover:underline text-sm">
+                  pkgx.dev <ArrowUpRight className="w-3 h-3" />
+                </a>
+              </div>
+            </div>
+            <div className={isxs ? "" : "col-span-5"}>
+              <div className="rounded-lg border border-white/5 p-6" style={{ background: "linear-gradient(180deg, rgba(2,132,199,.14), rgba(124,58,237,.12))" }}>
+                {!showThankYou ? (
+                  <>
+                    <h3 className="text-xl font-extrabold mb-2">Stay Updated</h3>
+                    <p className="text-[rgba(237,242,239,0.7)] mb-4">Get the latest updates about tea and the future of open source development.</p>
+                    <form onSubmit={handleFormSubmit} noValidate className="space-y-4">
+                      <input
+                        type="email" required placeholder="Enter your email" value={formEmail}
+                        onChange={(e) => setFormEmail(e.target.value)}
+                        className="w-full bg-transparent border border-[rgba(149,178,184,0.3)] rounded px-3 py-2 text-sm text-[#EDF2EF] placeholder:text-[rgba(237,242,239,0.5)] focus:outline-none focus:border-[#4156E1]"
+                      />
+                      <label className="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" checked={isDeveloper} onChange={(e) => setIsDeveloper(e.target.checked)} className="accent-[#4156E1]" />
+                        <span className="text-sm">Are you a developer?</span>
+                      </label>
+                      {formError && <div className="bg-red-900/30 border border-red-500/30 rounded p-2 text-red-300 text-sm">{formError}</div>}
+                      <button
+                        type="submit" disabled={isSubmitting}
+                        className="w-full bg-[#4156E1] text-white py-3 rounded font-medium hover:bg-[#3348c4] transition-colors disabled:opacity-50">
+                        {isSubmitting ? "Submitting..." : "Submit"}
+                      </button>
+                    </form>
+                    <p className="text-xs text-[rgba(237,242,239,0.5)] mt-4 text-center">
+                      By submitting your email, you consent with our{" "}
+                      <a href="/privacy-policy" className="text-[#4156E1] underline">Privacy Policy</a>.
+                    </p>
+                  </>
+                ) : (
+                  <div className="text-center py-8">
+                    <CheckCircle className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                    <h3 className="text-xl font-extrabold mb-2">Thank You!</h3>
+                    <p className="text-[rgba(237,242,239,0.7)]">We'll keep you updated on tea and the future of open source.</p>
+                    <button onClick={() => setShowThankYou(false)} className="text-[#4156E1] hover:underline mt-4 bg-transparent border-0 cursor-pointer">
+                      Submit Another Email
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
