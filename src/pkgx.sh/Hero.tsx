@@ -3,6 +3,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import React, { useState } from "react";
 import HeroTypography from '../components/HeroTypography'
+import HomebrewBadge from '../components/HomebrewBadge'
 import { useSearchParams } from 'react-router-dom'
 
 export default function Hero() {
@@ -28,6 +29,7 @@ export default function Hero() {
     : undefined
 
   return <Stack spacing={6} textAlign='center' mx='auto' alignItems='center' sx={isxs ? undefined : {"&&": {mt: 22}}}>
+    <HomebrewBadge />
     <HeroTypography>
       Run Anything
     </HeroTypography>
