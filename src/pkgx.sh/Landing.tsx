@@ -56,7 +56,7 @@ export function RunAnything() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-4">
           <Card>
-            <h4 className="text-lg font-semibold">Run Any Version</h4>
+            <h3 className="text-lg font-semibold">Run Any Version</h3>
             <p className="text-[rgba(237,242,239,0.7)] my-3">
               node 16? python 2? postgres 12? <b>nps</b>.
             </p>
@@ -67,7 +67,7 @@ export function RunAnything() {
             </Terminal>
           </Card>
           <Card>
-            <h4 className="text-lg font-semibold">Zero System Impact</h4>
+            <h3 className="text-lg font-semibold">Zero System Impact</h3>
             <p className="text-[rgba(237,242,239,0.7)] my-3">
               We don't install packages. <i>We cache them</i>. Just like <code>npx</code> caches & executes node packages,{" "}
               <code>pkgx</code> caches everything else (including <code>npx</code>).
@@ -83,7 +83,7 @@ export function RunAnything() {
         </div>
         <div className="space-y-4">
           <Card>
-            <h4 className="text-lg font-semibold">Whatever You Want To Run<br /><i>Just Type It</i></h4>
+            <h3 className="text-lg font-semibold">Whatever You Want To Run<br /><i>Just Type It</i></h3>
             <p className="text-[rgba(237,242,239,0.7)] my-3">
               <code>pkgx</code> can <i>optionally</i> integrate with your shell giving it <b>pkging powers</b>.
             </p>
@@ -106,7 +106,7 @@ export function RunAnything() {
             </InfoBox>
           </Card>
           <Card>
-            <h4 className="text-lg font-semibold">Or Just Install Stuff With <code>pkgm</code></h4>
+            <h3 className="text-lg font-semibold">Or Just Install Stuff With <code>pkgm</code></h3>
             <Terminal width="100%" mb={2} mt={2}>
               <Prompt /> <Orange>pkgm</Orange> install gh<br />
               installed ~/.local/bin/gh<br />
@@ -148,21 +148,21 @@ export function RunAnywhere() {
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         <Card>
-          <h4 className="text-lg font-semibold">macOS</h4>
+          <h3 className="text-lg font-semibold">macOS</h3>
           <ul className="text-[rgba(237,242,239,0.7)] mt-1 text-sm">
             <li>&gt;= 11</li>
             <li>Intel and Apple Silicon</li>
           </ul>
         </Card>
         <Card>
-          <h4 className="text-lg font-semibold">Linux</h4>
+          <h3 className="text-lg font-semibold">Linux</h3>
           <ul className="text-[rgba(237,242,239,0.7)] mt-1 text-sm">
             <li>glibc &gt;=2.28</li>
             <li><code>x86_64</code> & <code>arm64</code></li>
           </ul>
         </Card>
         <Card>
-          <h4 className="text-lg font-semibold">Windows</h4>
+          <h3 className="text-lg font-semibold">Windows</h3>
           <ul className="text-[rgba(237,242,239,0.7)] mt-1 text-sm">
             <li>WSL2</li>
             <li><i>Native coming soon!</i></li>
@@ -173,7 +173,7 @@ export function RunAnywhere() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         <div className="md:col-span-7">
           <Card>
-            <h4 className="text-lg font-semibold">Docker</h4>
+            <h3 className="text-lg font-semibold">Docker</h3>
             <p className="text-[rgba(237,242,239,0.7)] my-3 text-sm">
               Sure you could memorize the weird naming conventions of <code>apt</code>.
             </p>
@@ -187,7 +187,7 @@ export function RunAnywhere() {
         </div>
         <div className="md:col-span-5">
           <Card className="h-full">
-            <h4 className="text-lg font-semibold">CI/CD</h4>
+            <h3 className="text-lg font-semibold">CI/CD</h3>
             <Terminal width="100%" mb={0} mt={2}>
               - <Purple>uses</Purple>: pkgxdev/setup@v1<br />
               - <Purple>run</Purple>: pkgx npm@10 start
@@ -204,7 +204,7 @@ export function RunAnywhere() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         <div className="md:col-span-4">
           <Card>
-            <h4 className="text-lg font-semibold">Editors</h4>
+            <h3 className="text-lg font-semibold">Editors</h3>
             <p className="text-[rgba(237,242,239,0.7)] my-3 text-sm">Just Works™ in VSCode? nps.</p>
             <p className="text-right mt-4">
               <a href="https://docs.pkgx.sh/run-anywhere/editors" className="inline-flex items-center gap-1 text-sm text-[rgba(237,242,239,0.7)] hover:text-[#EDF2EF] no-underline transition-colors">
@@ -215,7 +215,7 @@ export function RunAnywhere() {
         </div>
         <div className="md:col-span-8">
           <Card>
-            <h4 className="text-lg font-semibold">Scripts</h4>
+            <h3 className="text-lg font-semibold">Scripts</h3>
             <p className="text-[rgba(237,242,239,0.7)] my-3 text-sm">
               Isn't it time you had more than just Bash and POSIX in your scripts?
             </p>
@@ -287,7 +287,7 @@ export function Dev() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Card>
-          <h4 className="text-lg font-semibold">Developer Environments</h4>
+          <h3 className="text-lg font-semibold">Developer Environments</h3>
           <p className="text-[rgba(237,242,239,0.7)] my-3">
             Developer environments provide the tools you need when working in those directories. When you step away—so do they.
           </p>
@@ -299,13 +299,13 @@ export function Dev() {
         </Card>
         <div className="space-y-4">
           <Card>
-            <h4 className="text-lg font-semibold">Reading your Keyfiles</h4>
+            <h3 className="text-lg font-semibold">Reading your Keyfiles</h3>
             <p className="text-[rgba(237,242,239,0.7)] my-3">
               <code><Orange>dev</Orange></code> works by examining the <i>keyfiles</i> in your project root. If we see <code>cargo.toml</code> we know that means you want Rust.
             </p>
           </Card>
           <Card>
-            <h4 className="text-lg font-semibold">Constraining Your Dependencies</h4>
+            <h3 className="text-lg font-semibold">Constraining Your Dependencies</h3>
             <p className="text-[rgba(237,242,239,0.7)] my-3">
               You can constrain your dependencies to a specific version, or a range of versions by adding YAML front matter to your project keyfiles.
             </p>
@@ -340,7 +340,7 @@ export function Trusted() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Card>
-          <h4 className="text-lg font-semibold">Packagers Who Care ❤️</h4>
+          <h3 className="text-lg font-semibold">Packagers Who Care ❤️</h3>
           <p className="text-[rgba(237,242,239,0.7)] mt-2 mb-3 text-sm">We go the extra mile so you don't have to.</p>
           <ul className="text-[rgba(237,242,239,0.7)] mb-0 text-sm space-y-1">
             <li>Our <code>git</code> is configured to ignore <code>.DS_Store</code> files 😍</li>
@@ -354,13 +354,13 @@ export function Trusted() {
         </Card>
         <div className="space-y-4">
           <Card>
-            <h4 className="text-lg font-semibold">"The UNIX Philosophy" is in our DNA</h4>
+            <h3 className="text-lg font-semibold">"The UNIX Philosophy" is in our DNA</h3>
             <p className="text-[rgba(237,242,239,0.7)] my-2">
               We study and preach it, worship and practice it. It's 100% who we are and <code>pkgx</code> is UNIX through and through.
             </p>
           </Card>
           <Card>
-            <h4 className="text-lg font-semibold">Open Source is in our DNA too</h4>
+            <h3 className="text-lg font-semibold">Open Source is in our DNA too</h3>
             <p className="text-[rgba(237,242,239,0.7)] my-2">
               Our founder, Max Howell, created Homebrew the package manager used by tens of millions of developers around the world.
             </p>
