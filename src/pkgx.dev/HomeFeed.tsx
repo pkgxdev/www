@@ -1,10 +1,10 @@
-import Grid from '@mui/material/Grid2';
-import { useTheme, Stack, Typography, useMediaQuery, Alert, Card, CardActionArea, CardMedia, Box, Chip, CardContent, Skeleton } from '@mui/material';
-import useInfiniteScroll from 'react-infinite-scroll-hook';
-import HeroTypography from '../components/HeroTypography';
-import { useState, CSSProperties } from 'react';
-import FeedItem from '../utils/FeedItem';
-import { useAsync } from 'react-use';
+import useInfiniteScroll from "react-infinite-scroll-hook";
+import HeroTypography from "../components/HeroTypography";
+import { useState, CSSProperties } from "react";
+import { useIsMobile } from "../utils/useIsMobile";
+import FeedItem from "../utils/FeedItem";
+import { useAsync } from "react-use";
+import { cn } from "../utils/cn";
 import img_pkgx from "../assets/pkgx.webp";
 import img_mash from "../assets/mash.webp";
 import img_teaBASE from "../assets/teaBASE.webp";
@@ -13,227 +13,154 @@ import img_pkgm from "../assets/pkgm.webp";
 import img_dev from "../assets/dev.webp";
 
 export default function HomeFeed() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const isxs = useIsMobile();
 
-  return <>
-    <Stack textAlign='center' sx={{pb: 6}}>
-      <Typography variant='overline'>We are Crafters of Fine</Typography>
-      <HeroTypography>
-        Open Source
-      </HeroTypography>
-    </Stack>
+  return (
+    <>
+      <div className="text-center pb-6">
+        <p className="uppercase tracking-widest text-xs text-[rgba(237,242,239,0.7)]">
+          We are Crafters of Fine
+        </p>
+        <HeroTypography>Open Source</HeroTypography>
+      </div>
 
-    <Grid container spacing={{xs: 1, md: 2}}>
-      <Grid size={{xs: 12, sm: 6, md: 4}}>
-        <Card raised={true} sx={{ height: '100%' }}>
-          <CardActionArea href='https://github.com/pkgxdev/pkgx' sx={{ height: '100%' }}>
-            <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', textTransform: 'uppercase'}}>
-                pkgx
-              </Typography>
-              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
-                Fast, small, package runner.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-      <Grid size={{xs: 12, sm: 6, md: 4}}>
-        <Card raised={true} sx={{ height: '100%' }}>
-          <CardActionArea href='https://github.com/pkgxdev/pkgm' sx={{ height: '100%' }}>
-            <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', textTransform: 'uppercase'}}>
-                pkgm
-              </Typography>
-              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
-                Install <code>pkgx</code> packages to <code>/usr/local</code>.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-      <Grid size={{xs: 12, sm: 6, md: 4}}>
-        <Card raised={true} sx={{ height: '100%' }}>
-          <CardActionArea href='https://github.com/pkgxdev/dev' sx={{ height: '100%' }}>
-            <CardContent sx={isxs ? {p: 0.75} : undefined}>
-            <Typography variant='h3' component="h2" style={{fontFamily: 'shader', textTransform: 'uppercase'}}>
-                dev
-              </Typography>
-              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
-                Isolated, reproducible development environments.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-      <Grid size={{xs: 12, sm: 6, md: 4}}>
-        <Card raised={true} sx={{ height: '100%' }}>
-          <CardActionArea href='https://github.com/pkgxdev/mash' sx={{ height: '100%' }}>
-            <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', textTransform: 'uppercase'}}>
-                mash
-              </Typography>
-              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
-                The package manager for scripts.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-      <Grid size={{xs: 12, sm: 6, md: 4}}>
-        <Card raised={true}>
-          <CardActionArea href='https://github.com/pkgxdev/pkgo' sx={{ height: '100%' }}>
-            <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', textTransform: 'uppercase'}}>
-                pkgo
-              </Typography>
-              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
-                Package…GO! Run typically unpackagable OSS in sandboxes.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-      <Grid size={{xs: 12, sm: 6, md: 4}}>
-        <Card raised={true} sx={{ height: '100%' }}>
-          <CardActionArea href='https://github.com/pkgxdev/mcp' sx={{ height: '100%' }}>
-            <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', fontVariant: 'small-caps'}}>
-                pkgxMCP
-              </Typography>
-              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
-                Can your LLM run anything? Now it can.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-      <Grid size={{xs: 12, sm: 6, md: 4}}>
-        <Card raised={true}>
-          <CardActionArea href='https://github.com/teaxyz/teaBASE' sx={{ height: '100%' }}>
-            <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', fontVariant: 'small-caps'}}>
-                teaBASE
-              </Typography>
-              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
-                The Developer Cockpit.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-    </Grid>
+      {/* Product Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 md:gap-2">
+        {[
+          { name: "pkgx", desc: "Fast, small, package runner.", href: "https://github.com/pkgxdev/pkgx" },
+          { name: "pkgm", desc: "Install pkgx packages to /usr/local.", href: "https://github.com/pkgxdev/pkgm" },
+          { name: "dev", desc: "Isolated, reproducible development environments.", href: "https://github.com/pkgxdev/dev" },
+          { name: "mash", desc: "The package manager for scripts.", href: "https://github.com/pkgxdev/mash" },
+          { name: "pkgo", desc: "Package…GO! Run typically unpackagable OSS in sandboxes.", href: "https://github.com/pkgxdev/pkgo" },
+          { name: "pkgxMCP", desc: "Can your LLM run anything? Now it can.", href: "https://github.com/pkgxdev/mcp", variant: "small-caps" },
+          { name: "teaBASE", desc: "The Developer Cockpit.", href: "https://github.com/teaxyz/teaBASE", variant: "small-caps" },
+        ].map((product) => (
+          <a
+            key={product.name}
+            href={product.href}
+            className="block rounded-lg border border-[rgba(149,178,184,0.3)] bg-[#0D1117] hover:border-[rgba(149,178,184,0.5)] transition-all shadow-md no-underline h-full"
+          >
+            <div className={cn("p-3", isxs && "p-1.5")}>
+              <h2
+                className="text-2xl uppercase"
+                style={{
+                  fontFamily: "shader, Roboto, sans-serif",
+                  fontVariant: product.variant || "normal",
+                }}
+              >
+                {product.name}
+              </h2>
+              <p className="text-sm text-[rgba(237,242,239,0.7)]">{product.desc}</p>
+            </div>
+          </a>
+        ))}
+      </div>
 
-    <Typography variant='h4' sx={{"&&": {mt: 12}}} component='h1'>
-      What’s New?
-    </Typography>
+      <h2 className="text-xl mt-12">What's New?</h2>
 
-    <Feed />
-  </>
+      <Feed />
+    </>
+  );
 }
 
 function Feed() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
-
+  const isxs = useIsMobile();
   const { loading, items, hasNextPage, error, loadMore } = useLoadItems();
 
   const [sentryRef] = useInfiniteScroll({
     loading,
     hasNextPage,
     onLoadMore: loadMore,
-    // When there is an error, we stop infinite loading.
-    // It can be reactivated by setting "error" state as undefined.
     disabled: !!error,
-    // `rootMargin` is passed to `IntersectionObserver`.
-    // We can use it to trigger 'onLoadMore' when the sentry comes near to become
-    // visible, instead of becoming fully visible on the screen.
-    rootMargin: '0px 0px 800px 0px',
-    delayInMs: 0
+    rootMargin: "0px 0px 800px 0px",
+    delayInMs: 0,
   });
 
-  return <Grid container spacing={isxs ? 1 : 2}>
-    {items.map(item => <Grid size={{xs: 6, md: 3}}>
-      <FeedItemBox {...item} />
-    </Grid>)}
-    {(loading || hasNextPage) && <Grid size={12} ref={sentryRef}><Skeleton /></Grid>}
-    {error && <Grid size={12}><Alert severity='error'>{error.message}</Alert></Grid>}
-  </Grid>
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2">
+      {items.map((item) => (
+        <FeedItemBox key={item.url} {...item} />
+      ))}
+      {(loading || hasNextPage) && (
+        <div className="col-span-full" ref={sentryRef}>
+          <div className="h-4 bg-white/5 rounded animate-pulse" />
+        </div>
+      )}
+      {error && (
+        <div className="col-span-full">
+          <div className="bg-red-900/30 border border-red-500/30 rounded p-3 text-red-300">
+            {error.message}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 
 function useLoadItems() {
   const [index, setIndex] = useState(0);
 
-  const async = useAsync(async () => {
-    const rsp = await fetch('https://pkgx.dev/index.json')
-    if (!rsp.ok) throw new Error(rsp.statusText)
-    const data = await rsp.json() as FeedItem[]
-    setIndex(Math.min(data.length, 25))
-    return data
+  const async_result = useAsync(async () => {
+    const rsp = await fetch("https://pkgx.dev/index.json");
+    if (!rsp.ok) throw new Error(rsp.statusText);
+    const data = (await rsp.json()) as FeedItem[];
+    setIndex(Math.min(data.length, 25));
+    return data;
   });
 
   return {
-    loading: async.loading,
-    items: (async.value ?? []).slice(0, index),
-    hasNextPage: async.value ? index < async.value.length : false,
-    error: async.error,
-    loadMore: () => setIndex(index => Math.min(index + 25, async.value?.length ?? 0))
-  }
+    loading: async_result.loading,
+    items: (async_result.value ?? []).slice(0, index),
+    hasNextPage: async_result.value ? index < async_result.value.length : false,
+    error: async_result.error,
+    loadMore: () => setIndex((index) => Math.min(index + 25, async_result.value?.length ?? 0)),
+  };
 }
 
 function FeedItemBox(item: FeedItem) {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const isxs = useIsMobile();
+  const { url, title, description, type, image } = item;
 
-  const { url, title, description, type, image } = item
-  const text_style: CSSProperties = {whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden'}
-
-  const color = (() => {
-    switch (type) {
-      case 'blog': return 'secondary'
-      case 'mash': return 'primary'
-    }
-  })()
-
-  const borderColor = color ? `${color}.main` : undefined
-  const borderWidth = color ? 2 : undefined
-
-  const chip = color && <Chip
-    label={type} color={color} variant='filled' size='small'
-    sx={{
-      m: isxs ? 0.5 : 1,
-      color: color == 'secondary' ? 'background.default' : undefined,
-      fontVariant: 'small-caps'
-    }} />
+  const isBlog = type === "blog";
+  const isMash = type === "mash";
+  const borderColor = isBlog
+    ? "border-[#F26212]"
+    : isMash
+    ? "border-[#4156E1]"
+    : "border-[rgba(149,178,184,0.3)]";
+  const chipBg = isBlog ? "bg-[#F26212]" : isMash ? "bg-[#4156E1]" : "";
 
   return (
-    <Card
-      variant={color ? 'outlined' : undefined}
-      raised={!!color}
-      sx={{ borderColor, borderWidth, height: '100%' }}
+    <a
+      href={url}
+      className={cn(
+        "block rounded-lg border bg-[#0D1117] hover:border-[rgba(149,178,184,0.5)] transition-all no-underline h-full",
+        (isBlog || isMash) ? `${borderColor} border-2` : "border-[rgba(149,178,184,0.3)]",
+        (isBlog || isMash) && "shadow-md"
+      )}
     >
-      <CardActionArea href={url} sx={{ height: '100%' }}>
-        <CardMedia
-          height={isxs ? 150 : undefined}
-          sx={{aspectRatio: isxs ? undefined : '1/1'}}
-          component={Box}
-          image={image}
-          textAlign='right'
-        >
-          {chip}
-        </CardMedia>
-        <CardContent sx={isxs ? {p: 0.75} : undefined}>
-          <div>
-            <Typography variant='overline' component="h2" style={text_style}>
-              {title}
-            </Typography>
-          </div>
-          <Typography variant='caption' component="h3">
-            {description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-  )
+      <div
+        className={cn("relative bg-cover bg-center text-right", isxs ? "h-[150px]" : "aspect-square")}
+        style={{ backgroundImage: image ? `url(${image})` : undefined }}
+      >
+        {(isBlog || isMash) && (
+          <span
+            className={cn(
+              "inline-block text-xs px-2 py-0.5 rounded-full font-medium",
+              chipBg,
+              isBlog ? "text-[#0D1117]" : "text-white",
+              isxs ? "m-1" : "m-2"
+            )}
+            style={{ fontVariant: "small-caps" }}
+          >
+            {type}
+          </span>
+        )}
+      </div>
+      <div className={cn("p-2", isxs && "p-1")}>
+        <h3 className="text-xs uppercase tracking-wider truncate">{title}</h3>
+        <p className="text-xs text-[rgba(237,242,239,0.7)]">{description}</p>
+      </div>
+    </a>
+  );
 }

@@ -1,24 +1,21 @@
-import { ThemeProvider, useTheme } from '@mui/material/styles';
-import { Button, CssBaseline, Stack, useMediaQuery } from '@mui/material';
-import { RunAnything, RunAnywhere, Dev, Trusted, Quote } from "./pkgx.sh/Landing";
 import React from "react";
-import * as ReactDOM from 'react-dom/client';
-import theme from './utils/theme';
+import * as ReactDOM from "react-dom/client";
+import { useIsMobile } from "./utils/useIsMobile";
 import Masthead from "./components/Masthead";
 import Footer from "./components/Footer";
 import Hero from "./pkgx.sh/Hero";
-import './assets/main.css';
-import Stars from './components/Stars';
-import Discord from './components/Discord';
-import { BrowserRouter } from 'react-router-dom';
+import { RunAnything, RunAnywhere, Dev, Trusted, Quote } from "./pkgx.sh/Landing";
+import Stars from "./components/Stars";
+import Discord from "./components/Discord";
+import "./assets/app.css";
+import { BrowserRouter } from "react-router-dom";
 
 function Body() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const isxs = useIsMobile();
 
   return (
     <BrowserRouter>
-      <Stack maxWidth='md' p={isxs ? 1 : 4} spacing={isxs ? 8 : 16} mx='auto'>
+      <div className={`max-w-2xl mx-auto ${isxs ? "p-2 space-y-8" : "p-4 space-y-16"}`}>
         <MyMasthead />
         <Hero />
         <RunAnything />
@@ -27,29 +24,36 @@ function Body() {
         <Dev />
         <Trusted />
         <Footer />
-      </Stack>
+      </div>
     </BrowserRouter>
-  )
+  );
 }
 
 function MyMasthead() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
-  const size = isxs ? 'small' : undefined
+  const isxs = useIsMobile();
 
-  return <Masthead>
-    <Button href='https://docs.pkgx.sh' color='inherit' size={size}>docs</Button>
-    <Button href='https://pkgx.dev/pkgs/' color='inherit' size={size}>pkgs</Button>
-    <Discord />
-    <Stars hideCountIfMobile />
-  </Masthead>
+  return (
+    <Masthead>
+      <a
+        href="https://docs.pkgx.sh"
+        className={`px-2 py-1 text-[#EDF2EF] hover:bg-white/10 rounded transition-colors no-underline ${isxs ? "text-xs" : "text-sm"}`}
+      >
+        docs
+      </a>
+      <a
+        href="https://pkgx.dev/pkgs/"
+        className={`px-2 py-1 text-[#EDF2EF] hover:bg-white/10 rounded transition-colors no-underline ${isxs ? "text-xs" : "text-sm"}`}
+      >
+        pkgs
+      </a>
+      <Discord />
+      <Stars hideCountIfMobile />
+    </Masthead>
+  );
 }
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Body />
-    </ThemeProvider>
-  </React.StrictMode>,
+    <Body />
+  </React.StrictMode>
 );

@@ -1,64 +1,56 @@
-import { Button, Card, CardContent, Link, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
-import ArrowOutwardIcon from '@mui/icons-material/CallMade';
-import { Orange } from '../components/Terminal';
+import { ArrowUpRight } from "lucide-react";
+import { Orange } from "../components/Terminal";
 
 export default function Hero() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
-
-  return <Stack spacing={2}>
-    <Card>
-      <CardContent>
-        <Typography component='h1'>
-        <Orange><b>mash</b>—the package manager for scripts.</Orange>
-        </Typography>
-        <Typography mt={1}>
+  return (
+    <div className="space-y-4">
+      <div className="rounded-lg border border-[rgba(149,178,184,0.3)] bg-[#0D1117] p-4">
+        <h1>
+          <Orange><b>mash</b>—the package manager for scripts.</Orange>
+        </h1>
+        <p className="mt-2">
           Mash up millions of open source packages into monstrously powerful scripts.
-        </Typography>
-        <Typography mt={1}>
+        </p>
+        <p className="mt-2">
           <i>Bash is ancient</i>. Write scripts in any language you want and trivially distribute them to the whole world.
-        </Typography>
-        <Typography variant='body2' mt={1}>
-          We’re a community of thousands of passionate computer users who want to make the most of the fruits of open source software.
-        </Typography>
-      </CardContent>
-    </Card>
-    <Card>
-      <CardContent>
-      <Typography variant='overline' component='h2'>
-        Get Started
-      </Typography>
-      <Button href='https://github.com/pkgxdev/mash#installing-mash' variant='contained' target='github'>
-        Install Mash <ArrowOutwardIcon/>
-      </Button>
-      </CardContent>
-    </Card>
-    <Card>
-      <CardContent>
-        <Typography variant='overline' component='h2'>
-          Submitting Scripts
-        </Typography>
-        <Typography component='ol'>
-          <li><Link href='https://github.com/pkgxdev/scripthub'>Fork</Link></li>
+        </p>
+        <p className="text-sm mt-2">
+          We're a community of thousands of passionate computer users who want to make the most of the fruits of open source software.
+        </p>
+      </div>
+
+      <div className="rounded-lg border border-[rgba(149,178,184,0.3)] bg-[#0D1117] p-4">
+        <h2 className="text-xs uppercase tracking-wider mb-2">Get Started</h2>
+        <a
+          href="https://github.com/pkgxdev/mash#installing-mash"
+          target="github"
+          className="inline-flex items-center gap-1 bg-[#4156E1] text-white px-4 py-2 rounded font-medium hover:bg-[#3348c4] transition-colors no-underline"
+        >
+          Install Mash <ArrowUpRight className="w-4 h-4" />
+        </a>
+      </div>
+
+      <div className="rounded-lg border border-[rgba(149,178,184,0.3)] bg-[#0D1117] p-4">
+        <h2 className="text-xs uppercase tracking-wider mb-2">Submitting Scripts</h2>
+        <ol className="pl-4">
+          <li><a href="https://github.com/pkgxdev/scripthub" className="text-[#4156E1] hover:underline">Fork</a></li>
           <li>Push scripts</li>
           <li>Wait an hour</li>
-        </Typography>
-        <Typography variant='body2' mt={1}>
+        </ol>
+        <p className="text-sm mt-2">
           No pull request required! <i>We index the fork graph.</i>
-        </Typography>
-      </CardContent>
-    </Card>
-    <Card>
-      <CardContent>
-        <Typography variant='overline' component='h2'>
-          Improving This Website
-        </Typography>
-        <Typography variant='body2' mt={1}>
-          Even this site is Open Source!
-          If you have ideas for improving it, why not give it a go?
-          <Link href='https://github.com/pkgxdev/www'>github.com/pkgxdev/www</Link>
-        </Typography>
-      </CardContent>
-    </Card>
-  </Stack>
+        </p>
+      </div>
+
+      <div className="rounded-lg border border-[rgba(149,178,184,0.3)] bg-[#0D1117] p-4">
+        <h2 className="text-xs uppercase tracking-wider mb-2">Improving This Website</h2>
+        <p className="text-sm mt-2">
+          Even this site is Open Source! If you have ideas for improving it, why not give it a go?{" "}
+          <a href="https://github.com/pkgxdev/www" className="text-[#4156E1] hover:underline">
+            github.com/pkgxdev/www
+          </a>
+        </p>
+      </div>
+    </div>
+  );
 }

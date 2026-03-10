@@ -1,292 +1,359 @@
-import { Box, Button, Stack, Typography, Link, Alert, Skeleton, Card } from '@mui/material';
-import { S3Client, ListObjectsV2Command, _Object } from '@aws-sdk/client-s3';
-import { useParams, Link as RouterLink } from 'react-router-dom';
-import ArrowOutwardIcon from '@mui/icons-material/CallMade';
-import { isArray, isPlainObject, isString } from 'is-what';
-import Terminal from '../components/Terminal';
-import get_pkg_name from '../utils/pkg-name';
-import { useAsync } from 'react-use';
-import yaml from 'yaml';
+import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3";
+import { useParams, Link as RouterLink } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
+import { isArray, isPlainObject, isString } from "is-what";
+import Terminal from "../components/Terminal";
+import get_pkg_name from "../utils/pkg-name";
+import { useIsMobile } from "../utils/useIsMobile";
+import { useAsync } from "react-use";
+import { cn } from "../utils/cn";
+import yaml from "yaml";
+import Markdown from "../components/Markdown";
 
 function dirname(path: string | undefined) {
-  path ??= ''
-  path = path.trim().replace(/\/+$/, '');
-  const ii = path.lastIndexOf('/');
+  path ??= "";
+  path = path.trim().replace(/\/+$/, "");
+  const ii = path.lastIndexOf("/");
   return ii >= 0 ? path.slice(ii + 1) : path;
 }
 
 export default function PackageListing() {
   const { "*": splat } = useParams();
-  const project = splat?.slice(0, -1)
+  const project = splat?.slice(0, -1);
 
-  const {loading, value, error} = useAsync(async () => {
+  const { loading, value, error } = useAsync(async () => {
     const client = new S3Client({
-      region: 'us-east-1',
-      signer: { sign: async (request) => request }  // is a public bucket but the SDK barfs without this
+      region: "us-east-1",
+      signer: { sign: async (request) => request },
     });
     const command = new ListObjectsV2Command({
-      Bucket: "dist.pkgx.dev", // required
+      Bucket: "dist.pkgx.dev",
       Delimiter: `/`,
-      Prefix: splat
+      Prefix: splat,
     });
-    const data = await client.send(command)
+    const data = await client.send(command);
 
-    let ispkg = false
+    let ispkg = false;
 
-    const dirs = data.CommonPrefixes?.filter(({Prefix}) => {
-      switch (dirname(Prefix)) {
-      case 'darwin':
-      case 'linux':
-      case 'windows':
-        ispkg = true;
-        // fall through
-      case '':
-      case undefined:
-        return false
-      default:
-        return true
-      }
-    }).map(x => x.Prefix!) ?? []
+    const dirs =
+      data.CommonPrefixes?.filter(({ Prefix }) => {
+        switch (dirname(Prefix)) {
+          case "darwin":
+          case "linux":
+          case "windows":
+            ispkg = true;
+          // fall through
+          case "":
+          case undefined:
+            return false;
+          default:
+            return true;
+        }
+      }).map((x) => x.Prefix!) ?? [];
 
-    document.title = `${project || 'pkgs'} — pkgx`
+    document.title = `${project || "pkgs"} — pkgx`;
 
-    return {dirs, ispkg}
-
-  }, [splat])
+    return { dirs, ispkg };
+  }, [splat]);
 
   if (loading) {
-    return <Skeleton animation="wave" />
+    return <div className="h-6 bg-white/5 rounded animate-pulse" />;
   } else if (error) {
-    return <Package project={project!} dirs={[]} />
+    return <Package project={project!} dirs={[]} />;
   } else {
-    const {dirs, ispkg} = value!
-    return <Stack spacing={3}>
-      {ispkg
-        ? <Package project={project!} dirs={dirs} />
-        : <Listing dirs={dirs} />
-      }
-    </Stack>
+    const { dirs, ispkg } = value!;
+    return (
+      <div className="space-y-6">
+        {ispkg ? <Package project={project!} dirs={dirs} /> : <Listing dirs={dirs} />}
+      </div>
+    );
   }
 }
 
 function Listing({ dirs }: { dirs: string[] }) {
-  return <ul>
-    {dirs.map(obj => <li key={obj}>
-      <Link component={RouterLink} to={`/pkgs/${obj}`}>{obj}</Link>
-    </li>)}
-  </ul>
+  return (
+    <ul>
+      {dirs.map((obj) => (
+        <li key={obj}>
+          <RouterLink to={`/pkgs/${obj}`} className="text-[#4156E1] hover:underline">
+            {obj}
+          </RouterLink>
+        </li>
+      ))}
+    </ul>
+  );
 }
 
-function Package({ project, dirs }: { project: string, dirs: string[] }) {
+function Package({ project, dirs }: { project: string; dirs: string[] }) {
+  const isxs = useIsMobile();
+
   const { loading, error, value } = useAsync(async () => {
-    const url = `https://raw.githubusercontent.com/pkgxdev/pantry/main/projects/${project}/package.yml`
-    const rsp = await fetch(url)
-    const txt = await rsp.text()
-    const yml = yaml.parse(txt)
-    return yml
-  }, [project])
+    const url = `https://raw.githubusercontent.com/pkgxdev/pantry/main/projects/${project}/package.yml`;
+    const rsp = await fetch(url);
+    const txt = await rsp.text();
+    return yaml.parse(txt);
+  }, [project]);
 
   const description = useAsync(async () => {
-    const rsp = await fetch(`/pkgs/${project}.json`)
+    const rsp = await fetch(`/pkgs/${project}.json`);
     if (rsp.ok) {
-      return await rsp.json() as { description: string, homepage: string, github: string, displayName: string, provides: string[] }
+      return (await rsp.json()) as {
+        description: string;
+        homepage: string;
+        github: string;
+        displayName: string;
+        provides: string[];
+      };
     } else {
-      return { description: null, homepage: null, github: null, displayName: null, provides: null }
+      return { description: null, homepage: null, github: null, displayName: null, provides: null };
     }
-  }, [project])
+  }, [project]);
 
-  const buttons = description.value && <>
-    {description.value.homepage &&
-      <Button variant='outlined' href={description.value.homepage} target='_blank' rel='noreferrer' endIcon={<ArrowOutwardIcon />}>Homepage</Button>
-    }
-    {description.value.github &&
-      <Button variant='outlined' href={description.value.github} target='_blank' rel='noreferrer' endIcon={<ArrowOutwardIcon />}>GitHub</Button>
-    }
-  </>
+  const imgsrc = `/pkgs/${project}.webp`;
 
-  const imgsrc = `/pkgs/${project}.webp`
+  const buttons = description.value && (
+    <>
+      {description.value.homepage && (
+        <a
+          href={description.value.homepage}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-1 px-3 py-1.5 border border-[rgba(149,178,184,0.3)] rounded text-sm hover:bg-white/5 transition-colors no-underline"
+        >
+          Homepage <ArrowUpRight className="w-3 h-3" />
+        </a>
+      )}
+      {description.value.github && (
+        <a
+          href={description.value.github}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-1 px-3 py-1.5 border border-[rgba(149,178,184,0.3)] rounded text-sm hover:bg-white/5 transition-colors no-underline"
+        >
+          GitHub <ArrowUpRight className="w-3 h-3" />
+        </a>
+      )}
+    </>
+  );
 
-  return <Stack direction={{xs: "column", md: "row"}} spacing={4}>
-    <Card sx={{height: 'fit-content', minWidth: 375}}>
-      <img style={{display: 'block'}} src={imgsrc} width={375} height={375} />
-    </Card>
-    <Stack spacing={2}>
-      <Box>
-        <Typography mb={1} variant='h2'>{title()}</Typography>
-        {description_body()}
-        <README project={project} />
-        <Stack useFlexGap direction='row' spacing={2} mt={3}>
-          <Button variant='outlined' target='_blank' rel='noreferrer' href={`https://github.com/pkgxdev/pantry/tree/main/projects/${project}/package.yml`} endIcon={<ArrowOutwardIcon />}>View package.yml</Button>
-          {buttons}
-        </Stack>
-      </Box>
+  return (
+    <div className={cn("flex gap-6", isxs ? "flex-col" : "flex-row")}>
+      <div className="rounded-lg border border-[rgba(149,178,184,0.3)] overflow-hidden shrink-0 self-start min-w-[375px]">
+        <img src={imgsrc} width={375} height={375} className="block" alt={project} />
+      </div>
+      <div className="space-y-4 flex-1">
+        <div>
+          <h2 className="text-3xl mb-2">{title()}</h2>
+          {description_body()}
+          <README project={project} />
+          <div className="flex flex-wrap gap-2 mt-6">
+            <a
+              href={`https://github.com/pkgxdev/pantry/tree/main/projects/${project}/package.yml`}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 px-3 py-1.5 border border-[rgba(149,178,184,0.3)] rounded text-sm hover:bg-white/5 transition-colors no-underline"
+            >
+              View package.yml <ArrowUpRight className="w-3 h-3" />
+            </a>
+            {buttons}
+          </div>
+        </div>
 
-      <Terminal>
-        {codeblock()}
-      </Terminal>
+        <Terminal>{codeblock()}</Terminal>
 
-      <Box>
-        {metadata()}
-      </Box>
+        <div>{metadata()}</div>
 
-      <Box>
-        <Typography variant='h5'>Versions</Typography>
-        <Versions project={project} />
-      </Box>
+        <div>
+          <h3 className="text-lg font-semibold">Versions</h3>
+          <Versions project={project} />
+        </div>
 
-      {dirs.length > 0 && <Box>
-        <Typography variant='h5'>Subprojects</Typography>
-        <Listing dirs={dirs} />
-      </Box> }
-    </Stack>
-  </Stack>
+        {dirs.length > 0 && (
+          <div>
+            <h3 className="text-lg font-semibold">Subprojects</h3>
+            <Listing dirs={dirs} />
+          </div>
+        )}
+      </div>
+    </div>
+  );
 
   function title() {
     if (description.loading) {
-      return get_pkg_name(project)
+      return get_pkg_name(project);
     } else if (description.value?.displayName) {
-      return <>{description.value?.displayName} <Typography component='span' variant='h5' color='textSecondary'>({get_pkg_name(project)})</Typography></>
+      return (
+        <>
+          {description.value?.displayName}{" "}
+          <span className="text-lg text-[rgba(237,242,239,0.7)]">({get_pkg_name(project)})</span>
+        </>
+      );
     } else {
-      return get_pkg_name(project)
+      return get_pkg_name(project);
     }
   }
 
   function codeblock() {
     if (description.value?.provides?.length != 1) {
-      return `sh <(curl https://pkgx.sh) +${project} -- $SHELL -i`
+      return `sh <(curl https://pkgx.sh) +${project} -- $SHELL -i`;
     } else {
-      return `sh <(curl https://pkgx.sh) ${description.value!.provides[0]}`
+      return `sh <(curl https://pkgx.sh) ${description.value!.provides[0]}`;
     }
   }
 
   function description_body() {
     if (description.loading) {
-      return <Skeleton animation="wave" />
+      return <div className="h-6 bg-white/5 rounded animate-pulse" />;
     } else if (description.error) {
-      return <Alert severity="error">{description.error.message}</Alert>
+      return (
+        <div className="bg-red-900/30 border border-red-500/30 rounded p-3 text-red-300">
+          {description.error.message}
+        </div>
+      );
     } else {
-      return <Box>
-        <Typography variant='h5'>{description.value!.description}</Typography>
-      </Box>
+      return <p className="text-lg text-[rgba(237,242,239,0.7)]">{description.value!.description}</p>;
     }
   }
 
   function metadata() {
     if (description.loading) {
-      return <Skeleton animation="wave" />
+      return <div className="h-6 bg-white/5 rounded animate-pulse" />;
     } else if (description.error) {
-      return <Alert severity="error">{description.error.message}</Alert>
+      return (
+        <div className="bg-red-900/30 border border-red-500/30 rounded p-3 text-red-300">
+          {description.error.message}
+        </div>
+      );
     } else {
-      return <Stack spacing={2}>
-        <Box>
-          <Typography variant='h5'>Programs</Typography>
-          {programs()}
-        </Box>
-        <Box>
-          <Typography variant='h5'>Companions</Typography>
-          {companions()}
-        </Box>
-        <Box>
-          <Typography variant='h5'>Dependencies</Typography>
-          {deps()}
-        </Box>
-      </Stack>
+      return (
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-lg font-semibold">Programs</h3>
+            {programs()}
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Companions</h3>
+            {companions()}
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Dependencies</h3>
+            {deps()}
+          </div>
+        </div>
+      );
 
       function programs() {
-        const provides: string[] = description.value?.provides ?? []
+        const provides: string[] = description.value?.provides ?? [];
         if (!isArray(provides)) {
-          return <Alert severity="error">Unexpected error</Alert>
+          return <div className="bg-red-900/30 border border-red-500/30 rounded p-3 text-red-300">Unexpected error</div>;
         } else if (provides.length) {
-          return <ul>
-            {provides.map((program, i) => <li key={i}>
-              <code>{program.replace(/^s?bin\//g, '')}</code>
-            </li>)}
-          </ul>
+          return (
+            <ul>
+              {provides.map((program, i) => (
+                <li key={i}>
+                  <code>{program.replace(/^s?bin\//g, "")}</code>
+                </li>
+              ))}
+            </ul>
+          );
         } else {
-          return <Typography>None</Typography>
+          return <p>None</p>;
         }
       }
+
       function companions() {
-        const companions: Record<string, string> = value?.companions ?? {}
+        const companions: Record<string, string> = value?.companions ?? {};
         if (!isPlainObject(companions)) {
-          return <Alert severity="error">Unexpected error</Alert>
+          return <div className="bg-red-900/30 border border-red-500/30 rounded p-3 text-red-300">Unexpected error</div>;
         } else {
-          const entries = Object.entries(companions)
+          const entries = Object.entries(companions);
           if (entries.length) {
-            return <ul>
-              {entries.map(([companion]) => <li key={companion}>
-                <Link component={RouterLink} to={`/pkgs/${companion}/`}>{companion}</Link>
-              </li>)}
-            </ul>
+            return (
+              <ul>
+                {entries.map(([companion]) => (
+                  <li key={companion}>
+                    <RouterLink to={`/pkgs/${companion}/`} className="text-[#4156E1] hover:underline">
+                      {companion}
+                    </RouterLink>
+                  </li>
+                ))}
+              </ul>
+            );
           } else {
-            return <Typography>None</Typography>
+            return <p>None</p>;
           }
         }
       }
+
       function deps() {
-        const deps: Record<string, string> = value?.dependencies ?? {}
+        const deps: Record<string, string> = value?.dependencies ?? {};
         if (!isPlainObject(deps)) {
-          return <Alert severity="error">Unexpected error</Alert>
+          return <div className="bg-red-900/30 border border-red-500/30 rounded p-3 text-red-300">Unexpected error</div>;
         } else {
-          return entries(deps)
+          return entries(deps);
         }
 
         function entries(deps: Record<string, string>) {
-          const entries = Object.entries(deps)
-          if (entries.length) {
-            return <ul>
-              {entries.map(entry)}
-            </ul>
+          const entries_arr = Object.entries(deps);
+          if (entries_arr.length) {
+            return <ul>{entries_arr.map(entry)}</ul>;
           } else {
-            return <Typography>None</Typography>
+            return <p>None</p>;
           }
         }
 
         function entry([name, version]: [name: string, version: string | Record<string, string>]) {
           if (isPlainObject(version)) {
-            return <li key={name}>
-              {name}
-              {entries(version)}
-            </li>
+            return (
+              <li key={name}>
+                {name}
+                {entries(version)}
+              </li>
+            );
           } else {
-            return <li key={name}>
-              <Link component={RouterLink} to={`/pkgs/${name}/`}>{name}{pretty(version)}</Link>
-            </li>
+            return (
+              <li key={name}>
+                <RouterLink to={`/pkgs/${name}/`} className="text-[#4156E1] hover:underline">
+                  {name}
+                  {pretty(version)}
+                </RouterLink>
+              </li>
+            );
           }
         }
 
         function pretty(version: string) {
-          if (version == '*') {
-            return ''
-          } else if (/^\d/.test(version)) {
-            return `@${version}`
-          } else {
-            return version
-          }
+          if (version == "*") return "";
+          else if (/^\d/.test(version)) return `@${version}`;
+          else return version;
         }
       }
     }
   }
 }
 
-import Markdown from '../components/Markdown';
-
 function README({ project }: { project: string }) {
   const state = useAsync(async () => {
-    let rsp = await fetch(`https://raw.githubusercontent.com/pkgxdev/pantry/main/projects/${project}/README.md`);
+    let rsp = await fetch(
+      `https://raw.githubusercontent.com/pkgxdev/pantry/main/projects/${project}/README.md`
+    );
     if (rsp.ok) {
-      return await rsp.text()
+      return await rsp.text();
     }
   }, [project]);
 
   if (state.loading) {
-    return <Skeleton animation="wave" />
+    return <div className="h-6 bg-white/5 rounded animate-pulse" />;
   } else if (state.error) {
-    return <Alert severity="error">{state.error.message}</Alert>
+    return (
+      <div className="bg-red-900/30 border border-red-500/30 rounded p-3 text-red-300">
+        {state.error.message}
+      </div>
+    );
   } else if (state.value) {
-    return <Markdown txt={state.value} />
+    return <Markdown txt={state.value} />;
   } else {
-    return null
+    return null;
   }
 }
 
@@ -300,47 +367,47 @@ function Versions({ project }: { project: string }) {
   }, [project]);
 
   if (state.loading) {
-    return <>
-      <Skeleton animation="wave" />
-      <Skeleton animation="wave" />
-      <Skeleton animation="wave" />
-    </>
+    return (
+      <div className="space-y-2">
+        <div className="h-4 bg-white/5 rounded animate-pulse" />
+        <div className="h-4 bg-white/5 rounded animate-pulse w-3/4" />
+        <div className="h-4 bg-white/5 rounded animate-pulse w-1/2" />
+      </div>
+    );
   } else if (state.error) {
-    return <>
-      <Alert severity="error">{state.error.message}</Alert>
-    </>
+    return (
+      <div className="bg-red-900/30 border border-red-500/30 rounded p-3 text-red-300">
+        {state.error.message}
+      </div>
+    );
   } else {
-    return <>
-      <ul>
-        {state.value!.map(version => <li key={version}>{version}</li>)}
-      </ul>
-      <Typography variant="subtitle2" color='textSecondary'>
-        If you need a version we don’t have <Link href={`https://github.com/pkgxdev/pantry/issues/new?title=version+request:+${project}`}>
+    return (
+      <>
+        <ul>
+          {state.value!.map((version) => (
+            <li key={version}>{version}</li>
+          ))}
+        </ul>
+        <p className="text-sm text-[rgba(237,242,239,0.7)]">
+          If you need a version we don't have{" "}
+          <a
+            href={`https://github.com/pkgxdev/pantry/issues/new?title=version+request:+${project}`}
+            className="text-[#4156E1] hover:underline"
+          >
             request it here
-          </Link>.
-      </Typography>
-      <Typography variant="subtitle2" color='textSecondary'>
-        View package listing in <Link href={`https://dist.pkgx.dev/?prefix=${project}`}>1999 Mode</Link>
-      </Typography>
-    </>
+          </a>
+          .
+        </p>
+        <p className="text-sm text-[rgba(237,242,239,0.7)]">
+          View package listing in{" "}
+          <a
+            href={`https://dist.pkgx.dev/?prefix=${project}`}
+            className="text-[#4156E1] hover:underline"
+          >
+            1999 Mode
+          </a>
+        </p>
+      </>
+    );
   }
-}
-
-function get_provides(yml: any): string[] {
-  let provides = yml['provides']
-  if (isString(provides)) {
-    return [provides]
-  }
-  if (isPlainObject(provides)) {
-    const { darwin, linux, windows, '*': star } = provides
-    provides = []
-    const set = new Set()
-    for (const x of [darwin, linux, windows, star].flatMap(x => x)) {
-      if (!set.has(x) && x) {
-        provides.push(x)
-        set.add(x)
-      }
-    }
-  }
-  return provides ?? []
 }

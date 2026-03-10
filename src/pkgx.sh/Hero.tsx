@@ -1,85 +1,84 @@
-import { Box, InputAdornment, Button, TextField, Typography, Stack, Snackbar, Alert, Tooltip, useMediaQuery, useTheme, Tabs, Tab } from "@mui/material";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import { ArrowRight, Copy } from "lucide-react";
 import React, { useState } from "react";
-import HeroTypography from '../components/HeroTypography'
-import HomebrewBadge from '../components/HomebrewBadge'
-import { useSearchParams } from 'react-router-dom'
+import { useIsMobile } from "../utils/useIsMobile";
+import HeroTypography from "../components/HeroTypography";
+import HomebrewBadge from "../components/HomebrewBadge";
+import { useSearchParams } from "react-router-dom";
+import { cn } from "../utils/cn";
 
 export default function Hero() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
-  const [searchParams, setSearchParams] = useSearchParams({ via: 'brew' })
-
-  const [open, setOpen] = useState(false)
-  const close = () => setOpen(false)
+  const isxs = useIsMobile();
+  const [searchParams, setSearchParams] = useSearchParams({ via: "brew" });
+  const [copied, setCopied] = useState(false);
 
   const text = () =>
-    searchParams.get('via') === 'brew'
-      ? 'brew install pkgx'
-      : 'curl -Ssf https://pkgx.sh | sh'
+    searchParams.get("via") === "brew" ? "brew install pkgx" : "curl -Ssf https://pkgx.sh | sh";
 
-  const click = (event: React.MouseEvent<HTMLElement>) => {
-    navigator.clipboard.writeText(text())
-    setOpen(true)
-  }
+  const click = () => {
+    navigator.clipboard.writeText(text());
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  };
 
-  const style = isxs
-    ? { minWidth: 'fit-content', height: 'fit-content', padding: 12 }
-    : undefined
+  return (
+    <div className={cn("flex flex-col items-center text-center mx-auto gap-6", !isxs && "mt-22")}>
+      <HomebrewBadge />
+      <HeroTypography>Run Anything</HeroTypography>
 
-  return <Stack spacing={6} textAlign='center' mx='auto' alignItems='center' sx={isxs ? undefined : {"&&": {mt: 22}}}>
-    <HomebrewBadge />
-    <HeroTypography>
-      Run Anything
-    </HeroTypography>
+      <p className={cn("text-lg px-2 mt-6", !isxs && "max-w-[570px]")}>
+        <code>pkgx</code> is a blazingly fast, standalone, cross&#x2011;platform binary that <i>runs anything</i>
+      </p>
 
-    <Typography variant="h5" px={1} sx={{"&&": {mt: 6.5}}}  maxWidth={isxs ? undefined : 570}>
-      <code>pkgx</code> is a blazingly fast, standalone, cross‐platform binary that <i>runs anything</i>
-    </Typography>
-
-    <Box px={isxs ? undefined : 10} width={isxs ? '90vw' : 570}>
-      <Tooltip title="Click to Copy" placement='right' arrow>
-        <TextField
+      <div className={cn("w-full", isxs ? "w-[90vw]" : "w-[570px] px-10")}>
+        <div
+          className="halo relative flex items-center bg-transparent border border-[rgba(149,178,184,0.3)] rounded px-3 py-2 cursor-pointer hover:border-[#4156E1] transition-colors"
           onClick={click}
-          className="halo"
-          value={text()}
-          fullWidth={true}
-          InputProps={{
-            endAdornment: <InputAdornment position="end"><ContentCopyIcon /></InputAdornment>,
-            readOnly: true,
-            style: {cursor: 'default', fontFamily: 'monospace', fontSize: isxs ? 14 : undefined},
-          }}
-        />
-      </Tooltip>
+          title="Click to Copy"
+        >
+          <span className="font-mono text-sm flex-1">{text()}</span>
+          <Copy className="w-4 h-4 text-[rgba(237,242,239,0.5)] ml-2" />
+        </div>
 
-      <Snackbar open={open} autoHideDuration={1500} onClose={close} anchorOrigin={{vertical: 'top', horizontal: 'center'}}>
-        <Alert onClose={close} severity="success" variant='filled' color={'primary' as any}>
-          Copied to Clipboard
-        </Alert>
-      </Snackbar>
+        {copied && (
+          <div className="fixed top-4 left-1/2 -translate-x-1/2 bg-[#4156E1] text-white px-4 py-2 rounded shadow-lg z-50 animate-fade-in">
+            Copied to Clipboard
+          </div>
+        )}
 
-      <Tabs
-        value={searchParams.get('via')?.toLowerCase()}
-        onChange={(_, val) => setSearchParams({ via: val })}
-        style={{ paddingInline: '0.5em' }}
-      >
-        <Tab label='brew' value='brew' />
-        <Tab label='cURL' value='curl' />
-        <Box width='100%'>
-          <Stack direction='row' justifyContent='end' mt={1}>
-            <Button
-              href='https://docs.pkgx.sh/installing-w/out-brew'
-              sx={{ mt: 0.5 }}
-              size='small'
-              color='inherit'
-              endIcon={<ArrowForwardIcon />}
+        <div className="flex items-end mt-2 px-2">
+          <div className="flex">
+            <button
+              onClick={() => setSearchParams({ via: "brew" })}
+              className={cn(
+                "px-3 py-1 text-sm border-b-2 bg-transparent cursor-pointer transition-colors",
+                searchParams.get("via") === "brew"
+                  ? "border-[#4156E1] text-[#EDF2EF]"
+                  : "border-transparent text-[rgba(237,242,239,0.5)] hover:text-[#EDF2EF]"
+              )}
             >
-              other ways {isxs || 'to install'}
-            </Button>
-          </Stack>
-        </Box>
-      </Tabs>
-    </Box>
-  </Stack>
+              brew
+            </button>
+            <button
+              onClick={() => setSearchParams({ via: "curl" })}
+              className={cn(
+                "px-3 py-1 text-sm border-b-2 bg-transparent cursor-pointer transition-colors",
+                searchParams.get("via")?.toLowerCase() === "curl"
+                  ? "border-[#4156E1] text-[#EDF2EF]"
+                  : "border-transparent text-[rgba(237,242,239,0.5)] hover:text-[#EDF2EF]"
+              )}
+            >
+              cURL
+            </button>
+          </div>
+          <div className="flex-1" />
+          <a
+            href="https://docs.pkgx.sh/installing-w/out-brew"
+            className="inline-flex items-center gap-1 text-sm text-[rgba(237,242,239,0.7)] hover:text-[#EDF2EF] no-underline transition-colors mt-1"
+          >
+            other ways {isxs || "to install"} <ArrowRight className="w-3 h-3" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 }

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
 const htmlPlugin = () => {
   return {
@@ -27,7 +28,7 @@ const htmlPlugin = () => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), htmlPlugin()],
+  plugins: [tailwindcss(), react(), htmlPlugin()],
 });
 
 

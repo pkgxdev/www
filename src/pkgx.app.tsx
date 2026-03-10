@@ -1,104 +1,95 @@
-import React from "react";
-import { ThemeProvider } from '@mui/material/styles';
-import Grid from '@mui/material/Grid2';
-import { Box, Button, Card, CardContent, CssBaseline, Dialog, DialogTitle, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
-import HeroTypography from './components/HeroTypography';
-import * as ReactDOM from 'react-dom/client';
-import gui from "./assets/gui.png";
-import theme from './utils/theme';
-import Masthead from './components/Masthead';
+import React, { useState } from "react";
+import * as ReactDOM from "react-dom/client";
+import { useIsMobile } from "./utils/useIsMobile";
+import HeroTypography from "./components/HeroTypography";
+import Masthead from "./components/Masthead";
 import Footer from "./components/Footer";
-import './assets/main.css';
+import gui from "./assets/gui.png";
+import { cn } from "./utils/cn";
+import "./assets/app.css";
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Body />
-    </ThemeProvider>
-  </React.StrictMode>,
+    <Body />
+  </React.StrictMode>
 );
 
-
 function Body() {
-  const theme = useTheme();
-  const isxs = useMediaQuery(theme.breakpoints.down('md'));
+  const isxs = useIsMobile();
 
-  const imgsz = {width: '100%', height: '100%'}
+  return (
+    <div className={cn("flex flex-col max-w-2xl mx-auto", isxs ? "p-2 gap-4" : "p-4 gap-8")}>
+      <Masthead />
 
-  return <Stack direction="column" maxWidth='md' sx={{p: isxs ? 1 : 4}} mx='auto' spacing={isxs ? 4 : 8}>
-    <Masthead />
+      <div className="text-center space-y-4">
+        <HeroTypography>Open Source is a Treasure Trove</HeroTypography>
+        <p className="text-xl my-2">What jewel will you discover today?</p>
+      </div>
 
-    <Stack spacing={4} textAlign='center'>
-      <HeroTypography>
-      Open Source is a Treasure Trove
-      </HeroTypography>
-      <Typography variant="h5" my={1}>
-        What jewel will you discover today?
-      </Typography>
-    </Stack>
+      <div className="text-center">
+        <img src={gui} className="w-full h-full" alt="pkgx app" />
+      </div>
 
-    <Box textAlign='center'>
-      <img src={gui} style={imgsz} />
-    </Box>
+      <Download />
 
-    <Download />
+      <div className={cn("grid gap-4", isxs ? "grid-cols-1" : "grid-cols-2")}>
+        <div className="rounded-lg border border-[rgba(149,178,184,0.3)] bg-[#0D1117] p-4">
+          <h3 className="text-lg font-semibold">One Click Installs</h3>
+          <p className="text-[rgba(237,242,239,0.7)] my-4">
+            Say goodbye to the days of scavenging through cluttered docs. <code>oss.app</code> enables you to query our expansive pkgdb and install your desired version of any package with one click.
+          </p>
+        </div>
+        <div className="rounded-lg border border-[rgba(149,178,184,0.3)] bg-[#0D1117] p-4 h-full">
+          <h3 className="text-lg font-semibold">
+            Complementing <code>pkgx</code>
+          </h3>
+          <p className="text-[rgba(237,242,239,0.7)] my-4">
+            We believe command line interfaces and graphical user interfaces are <i>complements</i> and should not necessarily share the same features.
+          </p>
+          <p className="text-[rgba(237,242,239,0.7)] my-4">
+            Our cli is precise and powerful where our gui is optimized for discovery and batch operations.
+          </p>
+        </div>
+      </div>
 
-    <Grid container spacing={4}>
-      <Grid size={{xs: 12, md: 6}}>
-        <Card>
-          <CardContent>
-            <Typography variant="h6" component="div">
-              One Click Installs
-            </Typography>
-            <Typography color='text.secondary' my={2}>
-              Say goodbye to the days of scavenging through cluttered docs. <code>oss.app</code> enables you to query our expansive pkgdb and install your desired version of any package with one click. OpenAI, deno, youtube-dl, and hundreds more… all available to you within seconds.
-            </Typography>
-          </CardContent>
-        </Card>
-      </Grid>
-      <Grid size={{xs: 12, md: 6}}>
-        <Card sx={{height: '100%'}}>
-          <CardContent>
-            <Typography variant="h6" component="div">
-              Complementing <code>pkgx</code>
-            </Typography>
-            <Typography color='text.secondary' my={2}>
-              We believe command line interfaces and graphical user interfaces are <i>complements</i> and should not necessarily share the same features.
-            </Typography>
-            <Typography color='text.secondary' my={2}>
-              Our cli is precise and powerful where our gui is optimized for discovery and batch operations.
-            </Typography>
-          </CardContent>
-        </Card>
-      </Grid>
-    </Grid>
-
-    <Footer />
-  </Stack>
+      <Footer />
+    </div>
+  );
 }
 
 function Download() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const [open, setOpen] = useState(false);
 
   return (
-    <Box textAlign='center'>
-      <Button variant='contained' size='large' onClick={handleOpen}>
-        Download&nbsp;<code>oss.app</code>
-      </Button>
-      <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Which Platform?</DialogTitle>
-        <Stack direction='row' spacing={2} p={4} pt={0}>
-          <Button variant='contained' size='large' href='https://gui.pkgx.dev/release/ossapp-latest-arm64.dmg'>
-            Apple Silicon
-          </Button>
-          <Button variant='contained' size='large' href='https://gui.pkgx.dev/release/ossapp-latest.dmg'>
-            macOS Intel
-          </Button>
-        </Stack>
-      </Dialog>
-    </Box>
+    <div className="text-center">
+      <button
+        onClick={() => setOpen(true)}
+        className="bg-[#4156E1] text-white px-6 py-3 rounded font-medium text-lg hover:bg-[#3348c4] transition-colors cursor-pointer border-0"
+      >
+        Download <code>oss.app</code>
+      </button>
+
+      {open && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={() => setOpen(false)}>
+          <div className="bg-[#161B22] border border-[rgba(149,178,184,0.3)] rounded-lg p-6" onClick={(e) => e.stopPropagation()}>
+            <h3 className="text-lg font-semibold mb-4">Which Platform?</h3>
+            <div className="flex gap-4">
+              <a
+                href="https://gui.pkgx.dev/release/ossapp-latest-arm64.dmg"
+                className="bg-[#4156E1] text-white px-6 py-3 rounded font-medium hover:bg-[#3348c4] transition-colors no-underline"
+              >
+                Apple Silicon
+              </a>
+              <a
+                href="https://gui.pkgx.dev/release/ossapp-latest.dmg"
+                className="bg-[#4156E1] text-white px-6 py-3 rounded font-medium hover:bg-[#3348c4] transition-colors no-underline"
+              >
+                macOS Intel
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
