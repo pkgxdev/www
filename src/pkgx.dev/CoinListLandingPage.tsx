@@ -3,10 +3,10 @@ import { useEffect, useMemo, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useIsMobile } from "../utils/useIsMobile";
 import { cn } from "../utils/cn";
-import partnersImg from "../assets/partners.png";
+import partnersImg from "../assets/partners.webp";
 import tractionImg from "../assets/traction.svg";
-import techImg from "../assets/tech.png";
-import teaLogoImg from "../assets/tea-3d-logo.png";
+import techImg from "../assets/tech.webp";
+import teaLogoImg from "../assets/tea-3d-logo.webp";
 
 function useCountdown(target: Date) {
   const [now, setNow] = useState<Date>(() => new Date());
@@ -146,7 +146,7 @@ export default function CoinListLandingPage() {
                 ))}
               </div>
               <div className="mt-6 flex justify-center">
-                <img src={techImg} alt="Technology Stack" className="max-w-full h-auto" />
+                <img src={techImg} alt="Technology Stack" className="max-w-full h-auto" loading="lazy" />
               </div>
             </div>
             <div className="rounded-lg border border-white/5 p-6 h-full" style={{ background: "linear-gradient(180deg, rgba(124,58,237,.12), rgba(14,165,233,.08))" }}>
@@ -174,7 +174,7 @@ export default function CoinListLandingPage() {
         </div>
 
         <div className="mt-4 flex justify-center">
-          <img src={tractionImg} alt="Traction" className="max-w-[60%] h-auto" />
+          <img src={tractionImg} alt="Traction" className="max-w-[60%] h-auto" loading="lazy" />
         </div>
 
         {/* Backed by Builders */}
@@ -184,7 +184,7 @@ export default function CoinListLandingPage() {
             tea was built by <strong>PKGX</strong>, trusted across the developer ecosystem. The tea association ensures transparent, community-driven governance.
           </p>
           <div className="mt-4 flex justify-center">
-            <img src={partnersImg} alt="Partners" className="max-w-[80%] h-auto" />
+            <img src={partnersImg} alt="Partners" className="max-w-[80%] h-auto" loading="lazy" />
           </div>
         </div>
 

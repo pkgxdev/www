@@ -4,7 +4,7 @@ import { useIsMobile } from "./utils/useIsMobile";
 import HeroTypography from "./components/HeroTypography";
 import Masthead from "./components/Masthead";
 import Footer from "./components/Footer";
-import gui from "./assets/gui.png";
+import gui from "./assets/gui.webp";
 import { cn } from "./utils/cn";
 import "./assets/app.css";
 
@@ -27,7 +27,7 @@ function Body() {
       </div>
 
       <div className="text-center">
-        <img src={gui} className="w-full h-full" alt="pkgx app" />
+        <img src={gui} className="w-full h-full" alt="pkgx app" loading="lazy" />
       </div>
 
       <Download />
@@ -70,9 +70,19 @@ function Download() {
       </button>
 
       {open && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={() => setOpen(false)}>
-          <div className="bg-[#161B22] border border-[rgba(149,178,184,0.3)] rounded-lg p-6" onClick={(e) => e.stopPropagation()}>
-            <h3 className="text-lg font-semibold mb-4">Which Platform?</h3>
+        <div 
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" 
+          onClick={() => setOpen(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="download-dialog-title"
+        >
+          <div 
+            className="bg-[#161B22] border border-[rgba(149,178,184,0.3)] rounded-lg p-6" 
+            onClick={(e) => e.stopPropagation()}
+            role="document"
+          >
+            <h3 id="download-dialog-title" className="text-lg font-semibold mb-4">Which Platform?</h3>
             <div className="flex gap-4">
               <a
                 href="https://gui.pkgx.dev/release/ossapp-latest-arm64.dmg"

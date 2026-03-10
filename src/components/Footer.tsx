@@ -34,7 +34,7 @@ export default function Footer() {
 
         {/* Product */}
         <div className={isxs ? "col-span-1" : "col-span-2"}>
-          <h5 className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3">Product</h5>
+          <div className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3" role="heading" aria-level="2">Product</div>
           <ul className="list-none p-0 m-0 space-y-2">
             <li><a href="https://pkgx.sh" className={linkClass}>pkgx</a></li>
             <li><a href="https://pkgx.app" className={linkClass}>oss.app</a></li>
@@ -46,7 +46,7 @@ export default function Footer() {
 
         {/* Company */}
         <div className={isxs ? "col-span-1" : "col-span-2"}>
-          <h5 className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3">Company</h5>
+          <div className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3" role="heading" aria-level="2">Company</div>
           <ul className="list-none p-0 m-0 space-y-2">
             <li><a href="https://pkgx.dev" className={linkClass}>Home</a></li>
             <li><a href="https://pkgx.dev/privacy-policy" className={linkClass}>Privacy Policy</a></li>
@@ -67,7 +67,7 @@ export default function Footer() {
 
         {/* Community */}
         <div className={isxs ? "col-span-1" : "col-span-3"}>
-          <h5 className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3">Community</h5>
+          <div className="font-semibold text-xs uppercase tracking-wider text-[rgba(237,242,239,0.6)] mb-3" role="heading" aria-level="2">Community</div>
           <ul className="list-none p-0 m-0 space-y-2">
             <li>
               <a href="https://github.com/pkgxdev" className={linkClass}>

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
+import viteImagemin from 'vite-plugin-imagemin';
 
 const htmlPlugin = () => {
   return {
@@ -28,7 +29,23 @@ const htmlPlugin = () => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [tailwindcss(), react(), htmlPlugin()],
+  plugins: [
+    tailwindcss(),
+    react(),
+    htmlPlugin(),
+    viteImagemin({
+      gifsicle: { optimizationLevel: 7, interlaced: false },
+      optipng: { optimizationLevel: 7 },
+      mozjpeg: { quality: 85 },
+      svgo: {
+        plugins: [
+          { name: 'removeViewBox', active: false },
+          { name: 'removeEmptyAttrs', active: false }
+        ]
+      },
+      webp: { quality: 85 }
+    })
+  ],
   optimizeDeps: {
     // Pre-include ALL deps to prevent second-pass discovery race condition
     // This eliminates the "chunk-REFQX4J5.js missing" error
@@ -50,6 +67,22 @@ export default defineConfig({
       'tailwind-merge',
       'showdown',
     ],
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Core vendor chunk (React + Router)
+          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+          // AWS SDK (only used in PackageListing)
+          'vendor-aws': ['@aws-sdk/client-s3'],
+          // UI utilities
+          'vendor-ui': ['lucide-react', 'clsx', 'tailwind-merge', 'class-variance-authority'],
+          // Data utilities
+          'vendor-utils': ['yaml', 'showdown', 'is-what', 'react-use', 'react-helmet', 'react-infinite-scroll-hook'],
+        },
+      },
+    },
   },
   server: {
     host: '0.0.0.0',

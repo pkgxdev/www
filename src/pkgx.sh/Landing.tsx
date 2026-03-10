@@ -3,18 +3,18 @@ import Terminal, { Dim, Orange, Prompt, Purple } from "../components/Terminal";
 import { useIsMobile } from "../utils/useIsMobile";
 import { cn } from "../utils/cn";
 
-import charm from "../assets/wordmarks/charm.png";
-import node from "../assets/wordmarks/node.png";
+import charm from "../assets/wordmarks/charm.webp";
+import node from "../assets/wordmarks/node.webp";
 import openai from "../assets/wordmarks/OpenAI.svg";
-import python from "../assets/wordmarks/python.png";
+import python from "../assets/wordmarks/python.webp";
 import rust from "../assets/wordmarks/rust.svg";
 import deno from "../assets/wordmarks/deno.svg";
-import go from "../assets/wordmarks/go.png";
+import go from "../assets/wordmarks/go.webp";
 import php from "../assets/wordmarks/php.svg";
 
 function H3({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <h3 className={cn("text-center font-bold text-3xl", className)}>{children}</h3>
+    <h2 className={cn("text-center font-bold text-3xl", className)}>{children}</h2>
   );
 }
 

@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet";
 import { useIsMobile } from "../utils/useIsMobile";
 import { cn } from "../utils/cn";
 import backgroundPattern from "../assets/pkgx-bg-pattern-right.svg";
-import tea3dLogo from "../assets/tea-3d-logo.png";
-import teaGlitch from "../assets/tea-glitch.png";
+import tea3dLogo from "../assets/tea-3d-logo.webp";
+import teaGlitch from "../assets/tea-glitch.webp";
 
 const fallbackStats = {
   assam: {
@@ -145,7 +145,7 @@ const TeaProtocol = () => {
             {isxs ? null : (
               <div className="order-2 md:order-2">
                 <div className="bg-[#11111C] rounded-lg flex justify-center items-center h-full w-full min-h-[300px]">
-                  <img src={tea3dLogo} alt="tea logo" className="w-4/5 max-w-[300px]" />
+                  <img src={tea3dLogo} alt="tea logo" className="w-4/5 max-w-[300px]" loading="lazy" />
                 </div>
               </div>
             )}
@@ -179,7 +179,7 @@ const TeaProtocol = () => {
             {isxs && (
               <div className="order-2">
                 <div className="bg-[#11111C] rounded-lg flex justify-center items-center h-[300px] w-full">
-                  <img src={tea3dLogo} alt="tea logo" className="w-4/5 max-w-[300px]" />
+                  <img src={tea3dLogo} alt="tea logo" className="w-4/5 max-w-[300px]" loading="lazy" />
                 </div>
               </div>
             )}
@@ -190,7 +190,7 @@ const TeaProtocol = () => {
         <div className="max-w-5xl mx-auto py-6 md:py-10 px-4">
           <div className={cn("grid gap-4 items-start", isxs ? "grid-cols-1" : "grid-cols-12")}>
             <div className={isxs ? "" : "col-span-4"}>
-              <img src={teaGlitch} alt="tea glitch" className="w-full aspect-square rounded-lg mb-4" />
+              <img src={teaGlitch} alt="tea glitch" className="w-full aspect-square rounded-lg mb-4" loading="lazy" />
               <h2 className="text-[32px] font-extrabold text-[#EDF2EF] mb-4">
                 There's something brewing for <span className="text-[#F26212]">everyone</span>.
               </h2>
@@ -232,9 +232,10 @@ const TeaProtocol = () => {
             </div>
             <div>
               <img
-                src="/imgs/pkgx-3d-glyphs.png"
+                src="/imgs/pkgx-3d-glyphs.webp"
                 alt="PKGX 3D Glyphs"
                 className="w-full h-auto rounded-lg"
+                loading="lazy"
               />
             </div>
           </div>

@@ -39,7 +39,8 @@
     "sharp": "^0.34.5",
     "tailwindcss": "^4.2.1",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "latest",
+    "vite-plugin-imagemin": "^0.6.1"
   },
   "pkgx": "deno^1.35 node^20"
 }
