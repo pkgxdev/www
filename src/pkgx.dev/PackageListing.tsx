@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { isArray, isPlainObject } from "is-what";
 import InstallSnippets from "../components/PackageDetail/InstallSnippets";
 import QualityBadges, { MaintenanceStatus } from "../components/PackageCard/QualityBadges";
+import PackageSEO from "../components/PackageDetail/PackageSEO";
 import VersionHistory from "../components/PackageDetail/VersionHistory";
 import DependencyGraph from "../components/PackageDetail/DependencyGraph";
 import get_pkg_name from "../utils/pkg-name";
@@ -140,6 +141,13 @@ function Package({ project, dirs }: { project: string; dirs: string[] }) {
   );
 
   return (
+    <>
+    <PackageSEO
+      project={project}
+      displayName={description.value?.displayName}
+      description={description.value?.description}
+      homepage={description.value?.homepage}
+    />
     <div className={cn("flex gap-6", isxs ? "flex-col" : "flex-row")}>
       <div className="rounded-lg border border-[rgba(149,178,184,0.3)] overflow-hidden shrink-0 self-start min-w-[375px]">
         <img src={imgsrc} width={375} height={375} className="block" alt={project} />
@@ -189,6 +197,7 @@ function Package({ project, dirs }: { project: string; dirs: string[] }) {
         )}
       </div>
     </div>
+    </>
   );
 
   function title() {
