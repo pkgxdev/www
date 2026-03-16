@@ -30,9 +30,9 @@ jobs:
   indexer:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: pkgxdev/pantry
           path: pantry
@@ -46,7 +46,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: gh-pages
           path: public/pkgs
@@ -78,9 +78,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: pkgxdev/setup@v4
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: pkgxdev/pantry
           path: pantry
@@ -116,12 +116,12 @@ jobs:
     needs: indexer
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: pkgxdev/pantry
           fetch-depth: 0  # needed to get git metadata for ordering purposes
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           path: utils
 
