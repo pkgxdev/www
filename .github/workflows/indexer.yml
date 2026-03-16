@@ -40,7 +40,7 @@ jobs:
 
       - uses: pkgxdev/setup@v4
 
-      - uses: aws-actions/configure-aws-credentials@v4
+      - uses: aws-actions/configure-aws-credentials@v5
         with:
           aws-access-key-id: ${{ secrets.WWW_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
@@ -99,7 +99,7 @@ jobs:
               --pantry-path ./pantry \
             > out_index.json
 
-      - uses: aws-actions/configure-aws-credentials@v4
+      - uses: aws-actions/configure-aws-credentials@v5
         with:
           aws-access-key-id: ${{ secrets.WWW_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.WWW_AWS_SECRET_ACCESS_KEY }}
