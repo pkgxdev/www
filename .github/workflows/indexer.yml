@@ -68,7 +68,7 @@ jobs:
                --distribution-id E15VQ3SI584CSG
                --paths /pkgs /pkgs/ /pkgs/*
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: pkg-index
           path: public/pkgs/index.json
