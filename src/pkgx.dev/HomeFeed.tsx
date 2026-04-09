@@ -103,20 +103,6 @@ export default function HomeFeed() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid size={{xs: 12, sm: 6, md: 4}}>
-        <Card raised={true}>
-          <CardActionArea href='https://github.com/teaxyz/teaBASE' sx={{ height: '100%' }}>
-            <CardContent sx={isxs ? {p: 0.75} : undefined}>
-              <Typography variant='h3' component="h2" style={{fontFamily: 'shader', fontVariant: 'small-caps'}}>
-                teaBASE
-              </Typography>
-              <Typography variant='caption' component="h3" style={{fontSize: "1em"}}>
-                The Developer Cockpit.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
     </Grid>
 
     <Typography variant='h4' sx={{"&&": {mt: 12}}} component='h1'>
