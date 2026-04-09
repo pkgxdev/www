@@ -10,6 +10,7 @@ This repo creates the websites for
 
 ## How to dev
 
+macOS and Linux:
 ```sh
 $ npm i
 $ VITE_HOST=pkgx.sh npm run dev
@@ -19,6 +20,20 @@ $ VITE_HOST=pkgx.sh npm run dev
 $ cd blog
 $ hugo server --buildDrafts
 ```
+
+Windows:
+```bat
+npm i
+set VITE_HOST=pkgx.sh& npm run dev
+rem ^^ one of `pkgx.sh`, `pkgx.dev` or `pkgx.app` or `mash.pkgx.sh`
+rem there is no default! set one!
+rem there must be no space between the value of VITE_HOST and `&`
+
+cd blog
+hugo server --buildDrafts
+```
+
+`bun` can be used in place of `npm`.
 
 ## How to deploy
 

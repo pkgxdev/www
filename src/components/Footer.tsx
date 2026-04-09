@@ -1,8 +1,6 @@
 import Grid from '@mui/material/Grid2';
-import { Link, LinkProps, Typography, useTheme, useMediaQuery, Box, Button, Stack } from "@mui/material";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Link, LinkProps, Typography, useTheme, useMediaQuery, Stack } from "@mui/material";
 import ArrowOutwardIcon from '@mui/icons-material/CallMade';
-import tea from "../assets/wordmarks/tea.svg";
 import logo from "../assets/pkgx.svg";
 
 
@@ -29,16 +27,6 @@ export default function Footer() {
   const icon = <ArrowOutwardIcon fontSize="inherit" style={{transform: 'translateY(3px)'}} />
 
   return <Stack spacing={8} sx={{alignItems: 'center'}}>
-    <Stack direction={isxs ? 'column' : 'row'} spacing={isxs ? 2: 3} alignItems='center' sx={{"&&": {mt: 16}}}>
-      <Box component='img' src={tea} height='20px' />
-      <Typography>
-        pkgx is a core contributor to the tea protocol
-      </Typography>
-      <Button variant='outlined' color='inherit' href='https://tea.xyz' size='small' endIcon={<ArrowForwardIcon />}>
-        Learn More
-      </Button>
-    </Stack>
-
     <Grid container spacing={2} columns={isxs ? 12 : 11} width='100%'>
       <Grid size={{xs: 12, md: 5}}>
         <img src={logo} height={18} />
