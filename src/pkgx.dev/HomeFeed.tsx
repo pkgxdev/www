@@ -5,12 +5,6 @@ import HeroTypography from '../components/HeroTypography';
 import { useState, CSSProperties } from 'react';
 import FeedItem from '../utils/FeedItem';
 import { useAsync } from 'react-use';
-import img_pkgx from "../assets/pkgx.webp";
-import img_mash from "../assets/mash.webp";
-import img_teaBASE from "../assets/teaBASE.webp";
-import img_unpkg from "../assets/unpkg.webp";
-import img_pkgm from "../assets/pkgm.webp";
-import img_dev from "../assets/dev.webp";
 
 export default function HomeFeed() {
   const theme = useTheme();
